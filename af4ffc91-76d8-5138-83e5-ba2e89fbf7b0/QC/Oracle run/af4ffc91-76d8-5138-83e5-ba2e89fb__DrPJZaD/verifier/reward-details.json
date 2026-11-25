@@ -1,0 +1,241 @@
+{
+  "pytest": {
+    "score": 1.0,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 1.0,
+        "raw": 1.0,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 39 of 39, charged 0"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 1.0,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-port-weather-notes",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.19230769230769232,
+        "description": "[final answer] The reply says the port weather notes in the data folder (operations' daily weather lines for each port) describe the weather in the port area, not what stopped the work on board, so a rain day in those notes was not on its own taken as weather time.",
+        "reasoning": "final_message.md line 5 explicitly says the port weather notes \u201cgive the weather in the port area for planning, not what stopped the work on board,\u201d and that \u201ca rain day there is not on its own weather time.\u201d"
+      },
+      {
+        "id": "2",
+        "name": "r-weather-sheet-closures-only",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.11538461538461539,
+        "description": "[final answer] The reply says the agents' weather sheet (or the statements' weather footers) lists only hatch closures, so it is not on its own the record of which time the weather actually stopped the cargo work.",
+        "reasoning": "final_message.md line 5 says the agents\u2019 weather sheet and statement footers \u201clist hatch closures only\u201d and therefore are not, by themselves, records of when weather actually stopped cargo."
+      },
+      {
+        "id": "3",
+        "name": "r-clause17-test",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the charters' weather test it applied: time counts unless, and only for so long as, the weather actually prevents the loading or discharging (or, in the desk method's words, a minute is weather time only if, the weather apart, the cargo would have been worked).",
+        "reasoning": "final_message.md line 5 states: \u201cClause 17 of each charter makes time count unless, and only for so long as, weather actually prevents the cargo being worked.\u201d"
+      },
+      {
+        "id": "4",
+        "name": "r-genuine-closures",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that a hatch closure for rain while the cargo work was going on (the work stopped when the hatches closed and resumed when they reopened) was taken as weather time for the period the hatches were closed.",
+        "reasoning": "final_message.md line 5 says a rain hatch closure while cargo was being worked is weather time for the whole closure, with cargo figures falling to nil at closure and resuming upon reopening."
+      },
+      {
+        "id": "5",
+        "name": "r-hourly-figures",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply uses the statements' hourly cargo figures (nil or reduced hourly figures) as evidence of whether the cargo work actually stopped.",
+        "reasoning": "final_message.md line 5 explicitly relies on \u201cthe statements\u2019 hourly cargo figures\u201d falling to nil and picking up again as evidence of whether work stopped."
+      },
+      {
+        "id": "6",
+        "name": "r-fog-continuing",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that fog remarks with the cargo work continuing (for example 'Fog patches \u2014 loading continues, visibility 800 m') were not taken as weather time.",
+        "reasoning": "final_message.md line 5 explicitly says \u201cfog patches with work continuing\u201d are not weather time."
+      },
+      {
+        "id": "7",
+        "name": "r-ambient-weather-remarks",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that weather remarks recording no effect on the cargo work were not taken as weather time, naming at least one kind as an example: rain or showers 'reported in port', a weather report or forecast, 'barometer falling', or 'rain stopped \u2014 sky clearing'.",
+        "reasoning": "final_message.md line 5 says remarks having no effect on work are not weather time and names rain/showers \u201creported in port,\u201d forecasts, \u201cbarometer falling,\u201d and \u201crain stopped \u2014 sky clearing.\u201d"
+      },
+      {
+        "id": "8",
+        "name": "r-light-rain-noise",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply explains that remarks of light rain, drizzle or showers with loading or discharging continuing were not taken as weather time.",
+        "reasoning": "final_message.md line 5 says \u201cLight rain, drizzle or showers with work continuing\u201d are not weather time; lines 8, 16, and 19 reinforce this in individual calls."
+      },
+      {
+        "id": "9",
+        "name": "r-kpi-dashboard",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the finance KPI dashboard draft was not taken as a record of weather time (or of the figures), because it is a draft built automatically from the agents' sheets.",
+        "reasoning": "final_message.md line 30 says the finance KPI dashboard draft was not used as a record of weather time or figures because \u201cit is a draft built automatically from the agents\u2019 sheets.\u201d"
+      },
+      {
+        "id": "10",
+        "name": "r-meal-surveys-count",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that meal breaks, or surveys and inspections (for example an intermediate draft survey), are not exceptions under the charters, so laytime keeps running through them.",
+        "reasoning": "final_message.md line 5 says meal breaks, surveys, and inspections\u2014including an intermediate draft survey\u2014are not charter exceptions and laytime runs through them."
+      },
+      {
+        "id": "11",
+        "name": "r-shifting-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that time shifting from the anchorage to the berth (anchor aweigh to all fast) is excluded from laytime only for the part that falls after laytime has started.",
+        "reasoning": "final_message.md line 32 states shifting from anchorage to berth, from anchor aweigh to all fast, is excluded \u201conly for the part that falls after laytime has started.\u201d"
+      },
+      {
+        "id": "12",
+        "name": "r-start-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the laytime start rule it applied: laytime starts when the charter's turn time after notice of readiness has run out, or earlier at the commencement of cargo work if work began before then.",
+        "reasoning": "final_message.md line 32 states laytime begins when the charter turn time after NOR expires, or earlier when cargo work begins before that expiry."
+      },
+      {
+        "id": "13",
+        "name": "r-nor-any-time",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that under the charters notice of readiness may be tendered at any time of day or night and whether in berth or not (WIBON), so the turn time can run while the vessel waits at the anchorage.",
+        "reasoning": "final_message.md line 32 explicitly says NOR may be tendered \u201cat any time of day or night and whether in berth or not (WIBON),\u201d allowing turn time to run at anchorage."
+      },
+      {
+        "id": "14",
+        "name": "r-start-each-call",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply gives the date and time from which laytime counted.",
+        "reasoning": "Each of the twelve call entries in final_message.md lines 8-19 includes an explicit \u201cLaytime from\u201d date and time."
+      },
+      {
+        "id": "15",
+        "name": "r-exceptions-each-call",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which time other than weather it excepted from laytime (weekend or holiday hours, shifting) or that none was excepted, with the reason (for example the charter's clause).",
+        "reasoning": "Every call in final_message.md lines 8-19 has an \u201cExcepted other than weather\u201d statement, either identifying weekend, holiday, or shifting time with its charter basis, or explicitly saying none and explaining why."
+      },
+      {
+        "id": "16",
+        "name": "r-weather-each-call",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which weather time it took (the periods or minutes deducted, or that none was taken).",
+        "reasoning": "Every call in final_message.md lines 8-19 includes \u201cweather time taken\u201d followed by the deducted period or periods, with accompanying treatment of relevant non-deducted weather entries."
+      },
+      {
+        "id": "17",
+        "name": "r-disputes-explained",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For every call the reply reports as disputed, it says what the owners did differently from Merrow (a reason for the difference, not only the two amounts).",
+        "reasoning": "final_message.md line 23 lists all eight disputed calls and gives a substantive reason for each difference, such as owners counting a wind stand-down or shift, ignoring an exception, or starting at NOR."
+      },
+      {
+        "id": "18",
+        "name": "r-owners-not-source",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the owners' laytime statements were used only to compare with Merrow's figure (the Owners Figure and Agreed or Disputed), not as evidence for Merrow's own figure.",
+        "reasoning": "final_message.md line 30 says owners\u2019 statements were used \u201conly to compare with Merrow\u2019s figure\u201d for Owners Figure and status, \u201cnever as evidence for our own figure.\u201d"
+      },
+      {
+        "id": "19",
+        "name": "r-totals-merrow-figures",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that its quarter totals are made up of Merrow's own figure for every call, the disputed calls included (not the owners' amounts).",
+        "reasoning": "final_message.md line 28 explicitly says the totals use \u201cMerrow\u2019s own figure for every call, the disputed calls included, not the owners\u2019 amounts.\u201d"
+      },
+      {
+        "id": "20",
+        "name": "r-no-conversion",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply keeps the euro calls in EUR and gives its quarter totals per currency without converting between currencies.",
+        "reasoning": "final_message.md line 28 labels the totals \u201cper currency, no conversion\u201d and separately reports USD and EUR demurrage and despatch totals."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"r-port-weather-notes\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 explicitly says the port weather notes \u201cgive the weather in the port area for planning, not what stopped the work on board,\u201d and that \u201ca rain day there is not on its own weather time.\u201d\"},\"r-weather-sheet-closures-only\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 says the agents\u2019 weather sheet and statement footers \u201clist hatch closures only\u201d and therefore are not, by themselves, records of when weather actually stopped cargo.\"},\"r-clause17-test\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 states: \u201cClause 17 of each charter makes time count unless, and only for so long as, weather actually prevents the cargo being worked.\u201d\"},\"r-genuine-closures\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 says a rain hatch closure while cargo was being worked is weather time for the whole closure, with cargo figures falling to nil at closure and resuming upon reopening.\"},\"r-hourly-figures\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 explicitly relies on \u201cthe statements\u2019 hourly cargo figures\u201d falling to nil and picking up again as evidence of whether work stopped.\"},\"r-fog-continuing\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 explicitly says \u201cfog patches with work continuing\u201d are not weather time.\"},\"r-ambient-weather-remarks\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 says remarks having no effect on work are not weather time and names rain/showers \u201creported in port,\u201d forecasts, \u201cbarometer falling,\u201d and \u201crain stopped \u2014 sky clearing.\u201d\"},\"r-light-rain-noise\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 says \u201cLight rain, drizzle or showers with work continuing\u201d are not weather time; lines 8, 16, and 19 reinforce this in individual calls.\"},\"r-kpi-dashboard\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 30 says the finance KPI dashboard draft was not used as a record of weather time or figures because \u201cit is a draft built automatically from the agents\u2019 sheets.\u201d\"},\"r-meal-surveys-count\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 5 says meal breaks, surveys, and inspections\u2014including an intermediate draft survey\u2014are not charter exceptions and laytime runs through them.\"},\"r-shifting-rule\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 32 states shifting from anchorage to berth, from anchor aweigh to all fast, is excluded \u201conly for the part that falls after laytime has started.\u201d\"},\"r-start-rule\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 32 states laytime begins when the charter turn time after NOR expires, or earlier when cargo work begins before that expiry.\"},\"r-nor-any-time\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 32 explicitly says NOR may be tendered \u201cat any time of day or night and whether in berth or not (WIBON),\u201d allowing turn time to run at anchorage.\"},\"r-start-each-call\":{\"score\":\"yes\",\"reasoning\":\"Each of the twelve call entries in final_message.md lines 8-19 includes an explicit \u201cLaytime from\u201d date and time.\"},\"r-exceptions-each-call\":{\"score\":\"yes\",\"reasoning\":\"Every call in final_message.md lines 8-19 has an \u201cExcepted other than weather\u201d statement, either identifying weekend, holiday, or shifting time with its charter basis, or explicitly saying none and explaining why.\"},\"r-weather-each-call\":{\"score\":\"yes\",\"reasoning\":\"Every call in final_message.md lines 8-19 includes \u201cweather time taken\u201d followed by the deducted period or periods, with accompanying treatment of relevant non-deducted weather entries.\"},\"r-disputes-explained\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 23 lists all eight disputed calls and gives a substantive reason for each difference, such as owners counting a wind stand-down or shift, ignoring an exception, or starting at NOR.\"},\"r-owners-not-source\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 30 says owners\u2019 statements were used \u201conly to compare with Merrow\u2019s figure\u201d for Owners Figure and status, \u201cnever as evidence for our own figure.\u201d\"},\"r-totals-merrow-figures\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 28 explicitly says the totals use \u201cMerrow\u2019s own figure for every call, the disputed calls included, not the owners\u2019 amounts.\u201d\"},\"r-no-conversion\":{\"score\":\"yes\",\"reasoning\":\"final_message.md line 28 labels the totals \u201cper currency, no conversion\u201d and separately reports USD and EUR demurrage and despatch totals.\"}}",
+    "usage": {
+      "input_tokens": 64454,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 38016,
+      "output_tokens": 1757,
+      "reasoning_output_tokens": 168,
+      "total_tokens": 66211,
+      "cost_usd": 0.1560984,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 64454,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 38016,
+          "output_tokens": 1757,
+          "reasoning_output_tokens": 168,
+          "total_tokens": 66211,
+          "cost_usd": 0.1560984
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.65954f5146f14981982b9fd99b12b83e.jsonl"
+    ]
+  }
+}

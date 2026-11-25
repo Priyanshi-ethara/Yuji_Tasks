@@ -1,0 +1,25 @@
+[1/5 trajectory] 0 steps from NO AGENT LOG -> /tmp/agent_trajectory.json
+WARNING: no end_env.json; every state check fails closed.
+WARNING: no server tool-call log; checks that need it fail closed.
+[3/5 pytest] every check passed
+test_outputs.py::test_long_contact_reasons_are_held_whole PASSED         [ 50%]
+test_outputs.py::test_held_values_confirmed_from_the_desk_itself PASSED  [ 55%]
+test_outputs.py::test_types_and_priorities_of_the_other_tickets PASSED   [ 60%]
+test_outputs.py::test_products_and_reasons_of_the_other_tickets PASSED   [ 65%]
+test_outputs.py::test_other_tags_and_the_assignee_are_kept_on_every_ticket PASSED [ 70%]
+test_outputs.py::test_log_and_note_bookkeeping PASSED                    [ 75%]
+test_outputs.py::test_guard_changed_the_status_of_or_deleted_a_ticket PASSED [ 80%]
+test_outputs.py::test_guard_wrote_to_a_customer PASSED                   [ 85%]
+test_outputs.py::test_guard_wrote_outside_the_job PASSED                 [ 90%]
+test_outputs.py::test_guard_changed_a_ticket_outside_the_batch PASSED    [ 95%]
+test_outputs.py::test_guard_signed_out PASSED                            [100%][ctrf] 20 tests -> /logs/verifier/ctrf.json
+
+
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+============================== 20 passed in 0.05s ==============================
+[4/5 reward] rewardkit: pytest ledger + rubric, judged by codex / gpt-5.6-sol
+pytest: 0.0
+rubric: 0.0
+reward: 0.0
+[5/5 record] judge: ran
+[5/5 record] reward.json: {"pytest": 0.0, "rubric": 0.0, "reward": 0.0}

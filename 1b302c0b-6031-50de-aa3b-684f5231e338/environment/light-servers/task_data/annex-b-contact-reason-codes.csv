@@ -1,0 +1,35 @@
+code,family,full_tag,short_form,meaning,use_when,in_use_since
+B01,Billing,cr_bill_price_rise_query,cr_b01,Question about the annual price change,The customer asks what the April price change means for their bill; no charge is disputed.,2026-06-16
+B02,Billing,cr_bill_duplicate_charge,cr_b02,Same charge taken twice - correction not yet made,Two identical charges for one period and no refund has been issued yet (credit pending or under investigation).,2026-06-16
+B03,Billing,cr_bill_duplicate_charge_refunded,cr_b03,Same charge taken twice - already refunded,Two identical charges for one period and the duplicate has already been refunded to the card or account.,2026-07-01
+B04,Billing,cr_bill_wrong_charge,cr_b04,Charge raised in error (other),A charge raised in error that is neither a duplicate nor an early termination fee.,2026-06-16
+B05,Billing,cr_bill_invoice_query,cr_b05,Invoice explanation,"Explanation of an invoice line, VAT treatment, copy invoices; nothing is disputed.",2026-06-16
+B06,Billing,cr_bill_payment_method,cr_b06,Payment method change,"Change of card, Direct Debit set-up or failure.",2026-06-16
+B07,Billing,cr_bill_etf_dispute,cr_b07,Early termination fee disputed,"The customer disputes an early termination fee, whether or not it was raised in error.",2026-06-16
+F01,Fault,cr_fault_no_service,cr_f01,No connection at all,"A line-based service (broadband, home phone, business fibre or voice, mobile network) does not connect at all.",2026-06-16
+F02,Fault,cr_fault_intermittent,cr_f02,Service drops and returns,The service connects but drops and returns; calls cut off mid-call.,2026-06-16
+F03,Fault,cr_fault_broadband_speed,cr_f03,Speed below the guaranteed minimum - line or network,Broadband below the plan's guaranteed minimum where the line test or network shows the cause on our side.,2026-06-16
+F04,Fault,cr_fault_broadband_speed_wifi,cr_f04,Speed complaint - in-home Wi-Fi,The line tests at plan speed and the shortfall is in the customer's in-home Wi-Fi.,2026-06-16
+F05,Fault,cr_fault_device_hardware,cr_f05,Supplied device physically faulty,"A device we supplied (handset, router, TV box) is physically faulty: no power, cracked or flickering screen, failed port.",2026-06-16
+F06,Fault,cr_fault_tv_picture,cr_f06,TV - no picture or picture breaking up,"Lumen TV shows no picture, 'no signal', or a picture breaking up, with the box itself working.",2026-06-16
+F07,Fault,cr_fault_voice_quality,cr_f07,"Calls connect, poor audio","Calls connect and stay up but audio is poor (echo, one-way audio, crackle).",2026-06-16
+F08,Fault,cr_fault_email_service,cr_f08,Legacy mailbox fault,Legacy @lumenmail mailbox not sending or receiving.,2026-06-16
+M01,Moving home,cr_move_home_new_install,cr_m01,Moving home - new install on schedule,Moving home; an installation at the new address is booked and on its original date.,2026-06-16
+M02,Moving home,cr_move_home_new_install_delayed,cr_m02,Moving home - new install moved later by Lumen,Moving home; Lumen moved the installation at the new address to a later date.,2026-07-01
+M03,Moving home,cr_move_home_transfer,cr_m03,"Moving home - transfer, no install",Moving home; the service transfers to the new address with no installation.,2026-06-16
+V01,Visits,cr_visit_engineer_booked,cr_v01,Engineer visit booked,An engineer visit is booked to fix something at the premises.,2026-06-16
+V02,Visits,cr_visit_engineer_missed,cr_v02,Engineer missed appointment,An engineer did not attend a booked appointment.,2026-06-16
+P01,Porting,cr_porting_request,cr_p01,Number port on schedule,A number port in or out is in progress and on its date.,2026-06-16
+P02,Porting,cr_porting_delay_donor_network,cr_p02,Port delayed by the donor network,A port-in is late because the losing (donor) network has not released the number.,2026-07-01
+I01,Information,cr_info_product_howto,cr_i01,How to use or add to a product,"How to set up, use or add to a product the customer already has (add-on pods, extra boxes, call divert).",2026-06-16
+I02,Information,cr_info_telecare_compat,cr_i02,Telecare compatibility,"Whether a telecare, alarm or monitoring device works with a Lumen service.",2026-06-16
+I03,Information,cr_info_contract_end,cr_i03,Contract end and leaving terms,"Contract end date, minimum term, notice and leaving terms.",2026-06-16
+I04,Information,cr_info_upgrade_options,cr_i04,Upgrade or change options,What the customer could move to instead of what they have now (another plan or technology); a sales enquiry from an existing customer.,2026-06-16
+I05,Information,cr_info_tv_channels,cr_i05,TV channels and packs,"Channel line-ups, packs and boosts.",2026-06-16
+I06,Information,cr_info_coverage,cr_i06,Coverage,Network availability at an address.,2026-06-16
+A01,Account,cr_account_holder_change,cr_a01,Change of account holder,Transfer of the account to another person.,2026-06-16
+A02,Account,cr_account_close_request,cr_a02,Closing the account,The customer asks to close the account now (not a question about leaving terms).,2026-06-16
+R01,Preferences and feedback,cr_pref_marketing_optout,cr_r01,Marketing opt-out,"Stop marketing calls, mail or messages.",2026-06-16
+R02,Preferences and feedback,cr_feedback_compliment,cr_r02,Compliment,Praise for a person or a service.,2026-06-16
+R03,Preferences and feedback,cr_feedback_complaint_general,cr_r03,General complaint,A complaint about service in general that is not a fault or a billing error.,2026-06-16
+R04,Preferences and feedback,cr_pref_paper_bills,cr_r04,Paper bills preference,Switch between paper and online bills.,2026-06-16

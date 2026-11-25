@@ -1,0 +1,241 @@
+{
+  "pytest": {
+    "score": 0.0,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.0,
+        "raw": 0.0,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 0 of 49, charged 0; missed 15: test_price_change_enquiry_is_held_at_its_assistance_priority, test_pendant_enquiry_is_held_at_its_assistance_priority, test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority, test_sports_channels_enquiry_is_held_at_its_assistance_priority, test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority, test_queue_health_note_type_mix_matches_the_batch, test_queue_health_note_priority_mix_matches_the_batch, test_stables_and_household_tickets_follow_the_requesters_accounts, test_practice_tickets_follow_the_requesters_accounts, test_long_contact_reasons_are_held_whole, test_held_values_confirmed_from_the_desk_itself, test_types_and_priorities_of_the_other_tickets, test_products_and_reasons_of_the_other_tickets, test_other_tags_and_the_assignee_are_kept_on_every_ticket, test_log_and_note_bookkeeping"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.0,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "m-t11-rule",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.14705882352941177,
+        "description": "[final answer] The reply states what Lumen Desk's trigger T-11 does, in general terms: when a ticket is saved, a question on a residential (seg_res) organisation at High or Urgent priority is held at Normal. No ticket needs to be named; saying business (seg_bus) organisations are out of its scope is optional.",
+        "reasoning": "`final_message.md` says \u201c(the agent produced no final message)\u201d; therefore it does not state what trigger T-11 does."
+      },
+      {
+        "id": "2",
+        "name": "m-priority-outranks-type",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states the categorisation guide's precedence rule that priority outranks type: a ticket is never held below its matrix priority, whatever its type (citing section 5.4 is optional; no ticket needs to be named).",
+        "reasoning": "There is no final answer: `final_message.md` says \u201c(the agent produced no final message)\u201d, so the priority-over-type precedence rule is not stated."
+      },
+      {
+        "id": "3",
+        "name": "m-tag-limit",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk holds a tag only up to 24 characters and drops the rest when a ticket is saved, so a contact reason whose full Annex B tag is longer than that goes in as its Annex B short form (cr_ plus the code). No ticket needs to be named.",
+        "reasoning": "`final_message.md` contains no answer and therefore does not state the 24-character tag limit or use of Annex B short forms."
+      },
+      {
+        "id": "4",
+        "name": "m-requester-org",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk files every ticket under its requester's organisation whenever it is saved, so a ticket is categorised on the account of the customer who raised it rather than on the organisation the front line logged it under. No ticket needs to be named.",
+        "reasoning": "`final_message.md` says the agent produced no final message, so it does not explain that tickets are filed under the requester\u2019s organisation."
+      },
+      {
+        "id": "5",
+        "name": "p-tool503-live",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says the change that files tickets under the requester's organisation (TOOL-503) went live on 18 November, the day of this batch (saying it went live today or this morning counts).",
+        "reasoning": "No final answer was produced according to `final_message.md`; TOOL-503\u2019s 18 November go-live is not mentioned."
+      },
+      {
+        "id": "6",
+        "name": "p-register-extract",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply says Tobias's draft checked Priority Assistance against the register extract Customer Care sent round on 10 November, rather than against the register as it now stands on the Salesforce contacts (giving the 10 November date is required; naming any ticket is not).",
+        "reasoning": "No final answer was produced according to `final_message.md`; it does not say Tobias checked Priority Assistance against the 10 November register extract."
+      },
+      {
+        "id": "7",
+        "name": "p-business-unchecked",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Tobias's own notes or covering mail admit he had not checked the Business Assure contracts (the Business Assure uplift was left undone in his draft).",
+        "reasoning": "No final answer was produced according to `final_message.md`; Tobias\u2019s admission that Business Assure contracts were unchecked is absent."
+      },
+      {
+        "id": "8",
+        "name": "c-business-desk",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] In what it tells Carys, the reply notes that the business enquiries in the batch go to the business desk rather than to the self-service worklist.",
+        "reasoning": "`final_message.md` contains no reply to Carys or Marisol, so it does not note that business enquiries go to the business desk."
+      },
+      {
+        "id": "9",
+        "name": "c-staff-from-note",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply tells Carys (or Marisol, for Carys) to staff Thursday from the queue health note's figures rather than from Tobias's draft.",
+        "reasoning": "`final_message.md` says \u201c(the agent produced no final message)\u201d; there is no instruction to staff Thursday from the queue health note rather than Tobias\u2019s draft."
+      },
+      {
+        "id": "10",
+        "name": "m-ba-incidents-only",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that Business Assure lifts only incidents, by one priority step (normal to high, high to urgent), and does not lift enquiries or owed actions. No ticket needs to be named.",
+        "reasoning": "No final answer was produced, so `final_message.md` does not state that Business Assure lifts incidents only, by one priority step."
+      },
+      {
+        "id": "11",
+        "name": "m-pa-callback",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Priority Assistance customers are owed a callback within four hours of any contact.",
+        "reasoning": "No final answer was produced according to `final_message.md`; the four-hour Priority Assistance callback requirement is absent."
+      },
+      {
+        "id": "12",
+        "name": "p-t11-since-march",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says T-11 is not a new rule: it has been live since 2 March of this year (or names its change, TOOL-412).",
+        "reasoning": "`final_message.md` contains no answer, so it does not state that T-11 has been live since 2 March or identify TOOL-412."
+      },
+      {
+        "id": "13",
+        "name": "p-tool388",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says the 24-character tag limit is a platform limit that Desk Tooling will not raise (TOOL-388, closed as Won't Do), so the short forms are the standing answer.",
+        "reasoning": "No final answer was produced according to `final_message.md`; TOOL-388, its Won\u2019t Do status, and the standing use of short forms are not stated."
+      },
+      {
+        "id": "14",
+        "name": "p-ten-from-draft",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says that Carys's expectation of ten enquiries (or her plan for two people on Thursday) came from Tobias's draft count.",
+        "reasoning": "No final answer was produced according to `final_message.md`; it does not connect Carys\u2019s expectation of ten enquiries or two-person plan to Tobias\u2019s draft."
+      },
+      {
+        "id": "15",
+        "name": "p-annex-as-written",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Tobias's draft took the Annex B tag column as written (the full tags) for every ticket's contact reason.",
+        "reasoning": "`final_message.md` contains no answer, so it does not say Tobias used the Annex B full-tag column as written."
+      },
+      {
+        "id": "16",
+        "name": "c-tool490-open",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply tells Carys (or Marisol, for Carys) that the request to show Priority Assistance customers' task tickets on the self-service worklist (TOOL-490) has not been done yet (it is still open / in the backlog).",
+        "reasoning": "There is no reply to Carys or Marisol in `final_message.md`, so TOOL-490\u2019s open/backlog status is not conveyed."
+      },
+      {
+        "id": "17",
+        "name": "c-worklist-questions-only",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] In what it tells Carys (or Marisol, for Carys), the reply says that the self-service worklist picks up question tickets only: anything filed as a task (an owed action) stays in the owning team's queue rather than reaching the worklist, whatever the customer asked. No ticket or count needs to be named.",
+        "reasoning": "No final answer was produced, so `final_message.md` does not explain that the self-service worklist takes questions only and tasks remain in owning-team queues."
+      },
+      {
+        "id": "18",
+        "name": "m-ack-as-submitted",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk's acknowledgement of an update returns the ticket as submitted, before the business rules (triggers) have run, so the acknowledgement does not show what the ticket is held at (naming TOOL-455 is optional; no ticket needs to be named).",
+        "reasoning": "`final_message.md` says the agent produced no final message; it therefore does not explain that acknowledgements show the submitted state before triggers run."
+      },
+      {
+        "id": "19",
+        "name": "p-reporting-both-forms",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says reporting maps a contact reason's Annex B short form and its full tag to the same code, so using the short form does not break reporting.",
+        "reasoning": "No final answer was produced according to `final_message.md`; it does not state that reporting maps full and short contact-reason tags to the same code."
+      },
+      {
+        "id": "20",
+        "name": "m-segment-follows-plan",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that an organisation's segment tag (seg_res or seg_bus) follows the account's plan, not what the account name suggests (for example, a sole trader on a Home plan is residential). No ticket needs to be named.",
+        "reasoning": "`final_message.md` contains no answer, so it does not state that the organisation segment follows the account plan rather than its name."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"m-t11-rule\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` says \u201c(the agent produced no final message)\u201d; therefore it does not state what trigger T-11 does.\"},\"m-priority-outranks-type\":{\"score\":\"no\",\"reasoning\":\"There is no final answer: `final_message.md` says \u201c(the agent produced no final message)\u201d, so the priority-over-type precedence rule is not stated.\"},\"m-tag-limit\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no answer and therefore does not state the 24-character tag limit or use of Annex B short forms.\"},\"m-requester-org\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` says the agent produced no final message, so it does not explain that tickets are filed under the requester\u2019s organisation.\"},\"p-tool503-live\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; TOOL-503\u2019s 18 November go-live is not mentioned.\"},\"p-register-extract\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; it does not say Tobias checked Priority Assistance against the 10 November register extract.\"},\"p-business-unchecked\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; Tobias\u2019s admission that Business Assure contracts were unchecked is absent.\"},\"c-business-desk\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no reply to Carys or Marisol, so it does not note that business enquiries go to the business desk.\"},\"c-staff-from-note\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` says \u201c(the agent produced no final message)\u201d; there is no instruction to staff Thursday from the queue health note rather than Tobias\u2019s draft.\"},\"m-ba-incidents-only\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced, so `final_message.md` does not state that Business Assure lifts incidents only, by one priority step.\"},\"m-pa-callback\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; the four-hour Priority Assistance callback requirement is absent.\"},\"p-t11-since-march\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no answer, so it does not state that T-11 has been live since 2 March or identify TOOL-412.\"},\"p-tool388\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; TOOL-388, its Won\u2019t Do status, and the standing use of short forms are not stated.\"},\"p-ten-from-draft\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; it does not connect Carys\u2019s expectation of ten enquiries or two-person plan to Tobias\u2019s draft.\"},\"p-annex-as-written\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no answer, so it does not say Tobias used the Annex B full-tag column as written.\"},\"c-tool490-open\":{\"score\":\"no\",\"reasoning\":\"There is no reply to Carys or Marisol in `final_message.md`, so TOOL-490\u2019s open/backlog status is not conveyed.\"},\"c-worklist-questions-only\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced, so `final_message.md` does not explain that the self-service worklist takes questions only and tasks remain in owning-team queues.\"},\"m-ack-as-submitted\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` says the agent produced no final message; it therefore does not explain that acknowledgements show the submitted state before triggers run.\"},\"p-reporting-both-forms\":{\"score\":\"no\",\"reasoning\":\"No final answer was produced according to `final_message.md`; it does not state that reporting maps full and short contact-reason tags to the same code.\"},\"m-segment-follows-plan\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no answer, so it does not state that the organisation segment follows the account plan rather than its name.\"}}",
+    "usage": {
+      "input_tokens": 33215,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 16128,
+      "output_tokens": 1379,
+      "reasoning_output_tokens": 43,
+      "total_tokens": 34594,
+      "cost_usd": 0.1023792,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 33215,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 16128,
+          "output_tokens": 1379,
+          "reasoning_output_tokens": 43,
+          "total_tokens": 34594,
+          "cost_usd": 0.1023792
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.40ebce29629647bd9067b417543304f6.jsonl"
+    ]
+  }
+}

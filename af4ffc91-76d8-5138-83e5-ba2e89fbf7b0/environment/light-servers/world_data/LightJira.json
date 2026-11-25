@@ -1,0 +1,174 @@
+{
+ "users": [
+  {
+   "account_id": "u-ines",
+   "display_name": "Ines Vaarberg",
+   "email": "ines.vaarberg@merrowbulk.co.uk",
+   "active": true
+  },
+  {
+   "account_id": "u-tobias",
+   "display_name": "Tobias Wrenfield",
+   "email": "tobias.wrenfield@merrowbulk.co.uk",
+   "active": true
+  },
+  {
+   "account_id": "u-claims",
+   "display_name": "Claims Desk",
+   "email": "claims@merrowbulk.co.uk",
+   "active": true
+  },
+  {
+   "account_id": "u-priti",
+   "display_name": "Priti Halloran",
+   "email": "priti.halloran@merrowbulk.co.uk",
+   "active": true
+  }
+ ],
+ "projects": [
+  {
+   "id": "41000",
+   "key": "LTD",
+   "name": "Laytime Disputes",
+   "project_type_key": "business",
+   "lead": "u-ines",
+   "description": "One issue per call where the owners' laytime figure differs from Merrow's"
+  },
+  {
+   "id": "41100",
+   "key": "CHOPS",
+   "name": "Chartering Operations",
+   "project_type_key": "business",
+   "lead": "u-claims",
+   "description": "Voyage operations follow-ups (ops team)"
+  }
+ ],
+ "boards": [
+  {
+   "id": 410,
+   "name": "LTD board",
+   "type": "kanban",
+   "project_key": "LTD"
+  },
+  {
+   "id": 411,
+   "name": "CHOPS board",
+   "type": "kanban",
+   "project_key": "CHOPS"
+  }
+ ],
+ "issues": [
+  {
+   "id": "41001",
+   "key": "LTD-1",
+   "project_key": "LTD",
+   "issue_type": "Task",
+   "summary": "Laytime dispute PC-1103",
+   "description": "Call: PC-1103\nOwners: USD 26,500.00\nMerrow: USD 21,416.67\nOutcome: Demurrage\nOwners did not exclude the shift between piers 4 and 5. Settled at Merrow figure 2026-05-12.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "u-tobias",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-04-20T09:00:00Z",
+   "updated": "2026-04-20T09:00:00Z"
+  },
+  {
+   "id": "41002",
+   "key": "LTD-2",
+   "project_key": "LTD",
+   "issue_type": "Task",
+   "summary": "Laytime dispute PC-1106",
+   "description": "Call: PC-1106\nOwners: USD 15,416.67\nMerrow: USD 9,250.00\nOutcome: Demurrage\nOwners ignored the Saturday 12:00 exception. Settled 2026-05-15.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "u-tobias",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-04-28T09:00:00Z",
+   "updated": "2026-04-28T09:00:00Z"
+  },
+  {
+   "id": "41003",
+   "key": "LTD-3",
+   "project_key": "LTD",
+   "issue_type": "Task",
+   "summary": "Laytime dispute PC-2102",
+   "description": "Call: PC-2102\nOwners: USD 8,125.00\nMerrow: USD 6,875.00\nOutcome: Demurrage\nOwners counted the shift from Riga anchorage to berth. Settled at Merrow figure 2026-09-04.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "u-tobias",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-08-03T09:00:00Z",
+   "updated": "2026-08-03T09:00:00Z"
+  },
+  {
+   "id": "41004",
+   "key": "LTD-4",
+   "project_key": "LTD",
+   "issue_type": "Task",
+   "summary": "Laytime dispute PC-2105",
+   "description": "Call: PC-2105\nOwners: EUR 5,750.00\nMerrow: EUR 4,500.00\nOutcome: Demurrage\nOwners ran laytime from NOR without the 12-hour turn time. Settled at Merrow figure 2026-09-10.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "u-tobias",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-08-05T09:00:00Z",
+   "updated": "2026-08-05T09:00:00Z"
+  },
+  {
+   "id": "41005",
+   "key": "LTD-5",
+   "project_key": "LTD",
+   "issue_type": "Task",
+   "summary": "Laytime dispute PC-2108",
+   "description": "Call: PC-2108\nOwners: USD 4,250.00\nMerrow: USD 5,500.00\nOutcome: Despatch\nOwners stopped the clock at sailing. Settled at Merrow figure 2026-09-18.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "u-tobias",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-08-07T09:00:00Z",
+   "updated": "2026-08-07T09:00:00Z"
+  },
+  {
+   "id": "41006",
+   "key": "CHOPS-1",
+   "project_key": "CHOPS",
+   "issue_type": "Task",
+   "summary": "Gdansk quay 2 — terminal incident report filing",
+   "description": "Ops to file terminal incident reports from Q3 calls in the ops share. Not for claims.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "u-claims",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-07-22T09:00:00Z",
+   "updated": "2026-07-22T09:00:00Z"
+  },
+  {
+   "id": "41007",
+   "key": "CHOPS-2",
+   "project_key": "CHOPS",
+   "issue_type": "Task",
+   "summary": "Narvik pier 5 shiploader availability 2027 programme",
+   "description": "Ask LKAB for the 2027 maintenance windows for SL-1 and SL-2.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "u-claims",
+   "reporter": "u-tobias",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-09-03T09:00:00Z",
+   "updated": "2026-09-03T09:00:00Z"
+  }
+ ]
+}

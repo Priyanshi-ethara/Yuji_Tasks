@@ -1,0 +1,241 @@
+{
+  "pytest": {
+    "score": 0.2857,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.2857,
+        "raw": 0.285714,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 14 of 49, charged 0; missed 7: test_price_change_enquiry_is_held_at_its_assistance_priority, test_pendant_enquiry_is_held_at_its_assistance_priority, test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority, test_sports_channels_enquiry_is_held_at_its_assistance_priority, test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority, test_queue_health_note_type_mix_matches_the_batch, test_queue_health_note_priority_mix_matches_the_batch"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.5588,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "m-t11-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.14705882352941177,
+        "description": "[final answer] The reply states what Lumen Desk's trigger T-11 does, in general terms: when a ticket is saved, a question on a residential (seg_res) organisation at High or Urgent priority is held at Normal. No ticket needs to be named; saying business (seg_bus) organisations are out of its scope is optional.",
+        "reasoning": "The final answer says five \u201cresidential enquiries\u201d were filed as \u201cquestion/high\u201d and \u201cTrigger T-11 reset every one to normal on save,\u201d while business organisations are outside T-11\u2019s scope."
+      },
+      {
+        "id": "2",
+        "name": "m-priority-outranks-type",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states the categorisation guide's precedence rule that priority outranks type: a ticket is never held below its matrix priority, whatever its type (citing section 5.4 is optional; no ticket needs to be named).",
+        "reasoning": "The final answer explicitly states that section 5.4 says \u201ca ticket is never held below its matrix priority.\u201d"
+      },
+      {
+        "id": "3",
+        "name": "m-tag-limit",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk holds a tag only up to 24 characters and drops the rest when a ticket is saved, so a contact reason whose full Annex B tag is longer than that goes in as its Annex B short form (cr_ plus the code). No ticket needs to be named.",
+        "reasoning": "The final answer says the platform \u201csilently truncates tags at 24 characters\u201d and that four longer reasons were filed using \u201cAnnex B short forms.\u201d"
+      },
+      {
+        "id": "4",
+        "name": "m-requester-org",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk files every ticket under its requester's organisation whenever it is saved, so a ticket is categorised on the account of the customer who raised it rather than on the organisation the front line logged it under. No ticket needs to be named.",
+        "reasoning": "The final answer states: \u201ca ticket is re-filed under its requester's organisation on every save,\u201d and explains that categorisation followed the account where each ticket landed."
+      },
+      {
+        "id": "5",
+        "name": "p-tool503-live",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says the change that files tickets under the requester's organisation (TOOL-503) went live on 18 November, the day of this batch (saying it went live today or this morning counts).",
+        "reasoning": "The final answer says \u201cTOOL-503 went live today\u201d; the answer identifies the batch as 2026-11-18, satisfying the required timing."
+      },
+      {
+        "id": "6",
+        "name": "p-register-extract",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] The reply says Tobias's draft checked Priority Assistance against the register extract Customer Care sent round on 10 November, rather than against the register as it now stands on the Salesforce contacts (giving the 10 November date is required; naming any ticket is not).",
+        "reasoning": "The final answer says Tobias missed two Priority Assistance flags, but never says his draft was checked against Customer Care\u2019s 10 November register extract."
+      },
+      {
+        "id": "7",
+        "name": "p-business-unchecked",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Tobias's own notes or covering mail admit he had not checked the Business Assure contracts (the Business Assure uplift was left undone in his draft).",
+        "reasoning": "The final answer never states that Tobias\u2019s notes or covering mail admitted that Business Assure contracts had not been checked."
+      },
+      {
+        "id": "8",
+        "name": "c-business-desk",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] In what it tells Carys, the reply notes that the business enquiries in the batch go to the business desk rather than to the self-service worklist.",
+        "reasoning": "Under \u201cFor Carys,\u201d the final answer says: \u201cThe other three are business and go to the business desk.\u201d"
+      },
+      {
+        "id": "9",
+        "name": "c-staff-from-note",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply tells Carys (or Marisol, for Carys) to staff Thursday from the queue health note's figures rather than from Tobias's draft.",
+        "reasoning": "The final answer gives Carys the corrected figure and says she was planning from Tobias\u2019s ten, but it does not explicitly instruct her to staff Thursday from the queue-health note\u2019s figures rather than Tobias\u2019s draft."
+      },
+      {
+        "id": "10",
+        "name": "m-ba-incidents-only",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that Business Assure lifts only incidents, by one priority step (normal to high, high to urgent), and does not lift enquiries or owed actions. No ticket needs to be named.",
+        "reasoning": "The final answer applies the Business Assure uplift to incidents in examples, but it does not state the complete general rule that only incidents rise one step and enquiries or owed actions do not."
+      },
+      {
+        "id": "11",
+        "name": "m-pa-callback",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Priority Assistance customers are owed a callback within four hours of any contact.",
+        "reasoning": "The final answer says Priority Assistance tickets are \u201cstill owed a four-hour callback.\u201d"
+      },
+      {
+        "id": "12",
+        "name": "p-t11-since-march",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says T-11 is not a new rule: it has been live since 2 March of this year (or names its change, TOOL-412).",
+        "reasoning": "The final answer does not say T-11 has been live since 2 March or identify TOOL-412."
+      },
+      {
+        "id": "13",
+        "name": "p-tool388",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says the 24-character tag limit is a platform limit that Desk Tooling will not raise (TOOL-388, closed as Won't Do), so the short forms are the standing answer.",
+        "reasoning": "The final answer describes the 24-character limit but never says Desk Tooling will not raise it or that TOOL-388 was closed as Won\u2019t Do."
+      },
+      {
+        "id": "14",
+        "name": "p-ten-from-draft",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says that Carys's expectation of ten enquiries (or her plan for two people on Thursday) came from Tobias's draft count.",
+        "reasoning": "The final answer tells Carys that \u201cshe emailed yesterday assuming Tobias's ten,\u201d explicitly tying her expectation of ten to Tobias."
+      },
+      {
+        "id": "15",
+        "name": "p-annex-as-written",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says Tobias's draft took the Annex B tag column as written (the full tags) for every ticket's contact reason.",
+        "reasoning": "The final answer contrasts four submitted short forms with longer tags, but never says Tobias used Annex B\u2019s full tag column as written for every ticket."
+      },
+      {
+        "id": "16",
+        "name": "c-tool490-open",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply tells Carys (or Marisol, for Carys) that the request to show Priority Assistance customers' task tickets on the self-service worklist (TOOL-490) has not been done yet (it is still open / in the backlog).",
+        "reasoning": "The final answer does not mention TOOL-490 or say that Priority Assistance task tickets are not yet shown on the self-service worklist."
+      },
+      {
+        "id": "17",
+        "name": "c-worklist-questions-only",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.08823529411764706,
+        "description": "[final answer] In what it tells Carys (or Marisol, for Carys), the reply says that the self-service worklist picks up question tickets only: anything filed as a task (an owed action) stays in the owning team's queue rather than reaching the worklist, whatever the customer asked. No ticket or count needs to be named.",
+        "reasoning": "The final answer discusses which enquiries reach the residential worklist, but does not state the general rule that only question tickets are selected and tasks remain in the owning team\u2019s queue."
+      },
+      {
+        "id": "18",
+        "name": "m-ack-as-submitted",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that Lumen Desk's acknowledgement of an update returns the ticket as submitted, before the business rules (triggers) have run, so the acknowledgement does not show what the ticket is held at (naming TOOL-455 is optional; no ticket needs to be named).",
+        "reasoning": "The final answer does not explain that an update acknowledgement returns the submitted values before triggers run."
+      },
+      {
+        "id": "19",
+        "name": "p-reporting-both-forms",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply says reporting maps a contact reason's Annex B short form and its full tag to the same code, so using the short form does not break reporting.",
+        "reasoning": "The final answer explicitly says section 6.2 permits either tag form and \u201creporting maps both to the same code.\u201d"
+      },
+      {
+        "id": "20",
+        "name": "m-segment-follows-plan",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.029411764705882353,
+        "description": "[final answer] The reply states, in general terms, that an organisation's segment tag (seg_res or seg_bus) follows the account's plan, not what the account name suggests (for example, a sole trader on a Home plan is residential). No ticket needs to be named.",
+        "reasoning": "The final answer says segment was read from the account where the ticket landed, but it does not state that seg_res/seg_bus follows the account plan rather than the account name."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"m-t11-rule\":{\"score\":\"yes\",\"reasoning\":\"The final answer says five \u201cresidential enquiries\u201d were filed as \u201cquestion/high\u201d and \u201cTrigger T-11 reset every one to normal on save,\u201d while business organisations are outside T-11\u2019s scope.\"},\"m-priority-outranks-type\":{\"score\":\"yes\",\"reasoning\":\"The final answer explicitly states that section 5.4 says \u201ca ticket is never held below its matrix priority.\u201d\"},\"m-tag-limit\":{\"score\":\"yes\",\"reasoning\":\"The final answer says the platform \u201csilently truncates tags at 24 characters\u201d and that four longer reasons were filed using \u201cAnnex B short forms.\u201d\"},\"m-requester-org\":{\"score\":\"yes\",\"reasoning\":\"The final answer states: \u201ca ticket is re-filed under its requester's organisation on every save,\u201d and explains that categorisation followed the account where each ticket landed.\"},\"p-tool503-live\":{\"score\":\"yes\",\"reasoning\":\"The final answer says \u201cTOOL-503 went live today\u201d; the answer identifies the batch as 2026-11-18, satisfying the required timing.\"},\"p-register-extract\":{\"score\":\"no\",\"reasoning\":\"The final answer says Tobias missed two Priority Assistance flags, but never says his draft was checked against Customer Care\u2019s 10 November register extract.\"},\"p-business-unchecked\":{\"score\":\"no\",\"reasoning\":\"The final answer never states that Tobias\u2019s notes or covering mail admitted that Business Assure contracts had not been checked.\"},\"c-business-desk\":{\"score\":\"yes\",\"reasoning\":\"Under \u201cFor Carys,\u201d the final answer says: \u201cThe other three are business and go to the business desk.\u201d\"},\"c-staff-from-note\":{\"score\":\"no\",\"reasoning\":\"The final answer gives Carys the corrected figure and says she was planning from Tobias\u2019s ten, but it does not explicitly instruct her to staff Thursday from the queue-health note\u2019s figures rather than Tobias\u2019s draft.\"},\"m-ba-incidents-only\":{\"score\":\"no\",\"reasoning\":\"The final answer applies the Business Assure uplift to incidents in examples, but it does not state the complete general rule that only incidents rise one step and enquiries or owed actions do not.\"},\"m-pa-callback\":{\"score\":\"yes\",\"reasoning\":\"The final answer says Priority Assistance tickets are \u201cstill owed a four-hour callback.\u201d\"},\"p-t11-since-march\":{\"score\":\"no\",\"reasoning\":\"The final answer does not say T-11 has been live since 2 March or identify TOOL-412.\"},\"p-tool388\":{\"score\":\"no\",\"reasoning\":\"The final answer describes the 24-character limit but never says Desk Tooling will not raise it or that TOOL-388 was closed as Won\u2019t Do.\"},\"p-ten-from-draft\":{\"score\":\"yes\",\"reasoning\":\"The final answer tells Carys that \u201cshe emailed yesterday assuming Tobias's ten,\u201d explicitly tying her expectation of ten to Tobias.\"},\"p-annex-as-written\":{\"score\":\"no\",\"reasoning\":\"The final answer contrasts four submitted short forms with longer tags, but never says Tobias used Annex B\u2019s full tag column as written for every ticket.\"},\"c-tool490-open\":{\"score\":\"no\",\"reasoning\":\"The final answer does not mention TOOL-490 or say that Priority Assistance task tickets are not yet shown on the self-service worklist.\"},\"c-worklist-questions-only\":{\"score\":\"no\",\"reasoning\":\"The final answer discusses which enquiries reach the residential worklist, but does not state the general rule that only question tickets are selected and tasks remain in the owning team\u2019s queue.\"},\"m-ack-as-submitted\":{\"score\":\"no\",\"reasoning\":\"The final answer does not explain that an update acknowledgement returns the submitted values before triggers run.\"},\"p-reporting-both-forms\":{\"score\":\"yes\",\"reasoning\":\"The final answer explicitly says section 6.2 permits either tag form and \u201creporting maps both to the same code.\u201d\"},\"m-segment-follows-plan\":{\"score\":\"no\",\"reasoning\":\"The final answer says segment was read from the account where the ticket landed, but it does not state that seg_res/seg_bus follows the account plan rather than the account name.\"}}",
+    "usage": {
+      "input_tokens": 34593,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 16128,
+      "output_tokens": 1647,
+      "reasoning_output_tokens": 325,
+      "total_tokens": 36240,
+      "cost_usd": 0.1132512,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 34593,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 16128,
+          "output_tokens": 1647,
+          "reasoning_output_tokens": 325,
+          "total_tokens": 36240,
+          "cost_usd": 0.1132512
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.59ef00e93bd14ad7a63d3dd9ef17695d.jsonl"
+    ]
+  }
+}

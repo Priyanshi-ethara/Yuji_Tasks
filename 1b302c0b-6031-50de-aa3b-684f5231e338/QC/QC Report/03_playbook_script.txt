@@ -1,0 +1,229 @@
+# 10_bundle_playbook.md: every bash block run as written, re-run 2026-11-19 11:27 on the final bytes (BUNDLE = copy of TASKS/18Nov_Tasks/1b302c0b-6031-50de-aa3b-684f5231e338 without QC/; delivered run 1b302c0b-6031-50de-aa3b-684f5231e338-opus-5-20261118-054121-regraded trial 7jfiPS7; task_checksum dc3f8fd6…483b)
+
+######## block 1
+<scratch>/bundle/1b302c0b-6031-50de-aa3b-684f5231e338
+['opus-5'] ['run_1']
+
+######## block 2
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+
+######## block 3
+ground truth: test_weights | 20 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.4223, 'pytest': 0.2857, 'rubric': 0.5588}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.4223, 'report.final_reward': 0.4223, 'result.verifier_result': 0.4223, 'pass_summary.per_run.combined': 0.4223}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=20 earned=14.0 penalty=0.0 total_positive=49 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2857 vs reported 0.2857  ok
+1.5b weighted tests vs ledger rows weighted=20 ledger=20 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 7 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.5588 vs reported 0.5588 / channel 0.5588  ok
+1.5c answers                       n=20 yes=9 no=11 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           20 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=34 penalty=0 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.4223 vs reward 0.4223  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=105 last_step_source=agent
+1.5f final message                 final_message.md=5294 chars, last agent text=5294 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 6514353, 'total_completion_tokens': 65870, 'total_cached_tokens': 6267440, 'total_cost_usd': 6.323566250000001} agent_result={'n_input_tokens': 6514353, 'n_cache_tokens': 6267440, 'n_output_tokens': 65870, 'cost_usd': 6.323566250000001}
+
+######## block 4
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.4223 recomputed=0.4223 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2857 recomputed=0.2857 over 1 runs  ok
+1.6d average_rubric_score          reported=0.5588 recomputed=0.5588 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.4223 vs 0.4223
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('1b302c0b-6031-50de-aa3b-684f5231e338-opus-5-20261118-054121-regraded', 1)]
+1.6h failure modes                 ['partial']
+
+######## block 5
+== opus-5/run_1
+2.0 passed                         False  reward=0.4223 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=104 mcp=91 local=13  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        30  LightZendesk_list_comments
+        28  LightZendesk_update_ticket
+        10  terminal
+         8  LightGmail_get_message
+         3  task_tracker
+         3  LightAirtable_list_records
+         2  LightZendesk_list_tickets
+         2  LightSalesforce_list_records
+         2  LightConfluence_list_content
+         2  LightZendesk_get_ticket
+         2  LightAirtable_create_records
+         1  LightAirtable_login
+         1  LightConfluence_login
+         1  LightZendesk_login
+         1  LightSalesforce_login
+         1  LightGmail_login
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightZendesk_list_organizations
+         1  LightZendesk_list_users
+         1  LightGmail_list_messages
+         1  LightConfluence_list_spaces
+         1  LightConfluence_create_content
+2.2b per server [reads, writes]    {'(local)': [13, 0], 'LightAirtable': [6, 2], 'LightConfluence': [4, 1], 'LightZendesk': [37, 28], 'LightSalesforce': [3, 0], 'LightGmail': [10, 0]}
+2.2c wired servers never called    ['LightDatadog', 'LightGoogleCalendar', 'LightIntercom', 'LightJira', 'LightNotion', 'LightOkta', 'LightPagerDuty', 'LightSlack', 'LightStripe', 'LightTwilio']
+2.2d guards tripped                none
+2.2e positive tests missed         7: ['test_price_change_enquiry_is_held_at_its_assistance_priority', 'test_pendant_enquiry_is_held_at_its_assistance_priority', 'test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority', 'test_sports_channels_enquiry_is_held_at_its_assistance_priority', 'test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority', 'test_queue_health_note_type_mix_matches_the_batch', 'test_queue_health_note_priority_mix_matches_the_batch']
+   2.2f final message (first 1200 chars):
+      All three deliverables are done and verified. Here's my hand-back.
+      
+      Morning Marisol — batch 2026-11-18 is filed, logged and the note is published.
+      
+      One note on delivery: you asked for a short reply but also said no mail, so I've written it here rather than emailing you. Say the word if you'd rather have it in your inbox.
+      
+      **What's where**
+      - Lumen Desk: all 28 tickets (48201–48228) recategorised. Status, assignee and requester untouched, every `channel_`/`lang_`/`sla_`/`noc_` tag sent back as found, exactly one `prod_` and one `cr_` each. No comments added to any ticket — the job didn't need one.
+      - Recategorisation log: 28 rows, Batch `2026-11-18`, Logged by `Desk Quality Analyst`. Earlier batches untouched.
+      - Wiki: *Queue health - 2026-11-18*, child of Queue health notes in DESK.
+      
+      **The mix (as the tickets are held after the batch)**
+      ```
+      Type mix: question 10 · incident 14 · problem 0 · task 4
+      Priority mix: urgent 1 · high 7 · normal 18 · low 2
+      ```
+      
+      **Where I differ from Tobias's draft**
+      
+      Substantive, seven tickets:
+      
+      | Ticket | Draft | Filed | Why |
+      |---|---|---|---|
+      | 48214 | high | **urgent** | Business Assure incident, whole-site loss: 5.1 high + 5.2 one step. Calder Freight is 
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (6, 0.0882) The reply says Tobias's draft checked Priority Assistance against the register extract Customer Care sent roun
+          WHY: The final answer says Tobias missed two Priority Assistance flags, but never says his draft was checked against Customer Care’s 10 November register extract.
+      (7, 0.0294) The reply says Tobias's own notes or covering mail admit he had not checked the Business Assure contracts (the
+          WHY: The final answer never states that Tobias’s notes or covering mail admitted that Business Assure contracts had not been checked.
+      (9, 0.0294) The reply tells Carys (or Marisol, for Carys) to staff Thursday from the queue health note's figures rather th
+          WHY: The final answer gives Carys the corrected figure and says she was planning from Tobias’s ten, but it does not explicitly instruct her to staff Thursday from the queue-health note’s figures rather than Tobias’s draft.
+      (10, 0.0294) The reply states, in general terms, that Business Assure lifts only incidents, by one priority step (normal to
+          WHY: The final answer applies the Business Assure uplift to incidents in examples, but it does not state the complete general rule that only incidents rise one step and enquiries or owed actions do not.
+      (12, 0.0294) The reply says T-11 is not a new rule: it has been live since 2 March of this year (or names its change, TOOL-
+          WHY: The final answer does not say T-11 has been live since 2 March or identify TOOL-412.
+      (13, 0.0294) The reply says the 24-character tag limit is a platform limit that Desk Tooling will not raise (TOOL-388, clos
+          WHY: The final answer describes the 24-character limit but never says Desk Tooling will not raise it or that TOOL-388 was closed as Won’t Do.
+      (15, 0.0294) The reply says Tobias's draft took the Annex B tag column as written (the full tags) for every ticket's contac
+          WHY: The final answer contrasts four submitted short forms with longer tags, but never says Tobias used Annex B’s full tag column as written for every ticket.
+      (16, 0.0294) The reply tells Carys (or Marisol, for Carys) that the request to show Priority Assistance customers' task tic
+          WHY: The final answer does not mention TOOL-490 or say that Priority Assistance task tickets are not yet shown on the self-service worklist.
+      (17, 0.0882) In what it tells Carys (or Marisol, for Carys), the reply says that the self-service worklist picks up questio
+          WHY: The final answer discusses which enquiries reach the residential worklist, but does not state the general rule that only question tickets are selected and tasks remain in the owning team’s queue.
+      (18, 0.0294) The reply states, in general terms, that Lumen Desk's acknowledgement of an update returns the ticket as submi
+          WHY: The final answer does not explain that an update acknowledgement returns the submitted values before triggers run.
+      (20, 0.0294) The reply states, in general terms, that an organisation's segment tag (seg_res or seg_bus) follows the accoun
+          WHY: The final answer says segment was read from the account where the ticket landed, but it does not state that seg_res/seg_bus follows the account plan rather than the account name.
+
+######## block 6
+== opus-5/run_1
+agent steps / with reasoning       105 / 28  (40888 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 105
+verdict                            present
+
+######## block 7
+tests=20 criteria=20
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| INDEPENDENT | `test_queue_health_note_priority_mix_matches_the_batch` | 5 | 0.07 | 0.50 | 2 (+3) | The reply states the categorisation guide's precedence rule that prior |
+| INDEPENDENT | `test_queue_health_note_type_mix_matches_the_batch` | 5 | 0.05 | 0.50 | 2 (+3) | The reply states the categorisation guide's precedence rule that prior |
+| INDEPENDENT | `test_products_and_reasons_of_the_other_tickets` | 1 | 0.33 | 0.00 | 19 (+1) | The reply says reporting maps a contact reason's Annex B short form an |
+| INDEPENDENT | `test_long_contact_reasons_are_held_whole` | 3 | 0.22 | 0.00 | 3 (+3) | The reply states, in general terms, that Lumen Desk holds a tag only u |
+| INDEPENDENT | `test_types_and_priorities_of_the_other_tickets` | 1 | 0.15 | 0.00 | 2 (+3) | The reply states the categorisation guide's precedence rule that prior |
+| INDEPENDENT | `test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority` | 5 | 0.12 | 0.00 | 6 (+3) | The reply says Tobias's draft checked Priority Assistance against the  |
+| INDEPENDENT | `test_other_tags_and_the_assignee_are_kept_on_every_ticket` | 1 | 0.12 | 0.00 | 15 (+1) | The reply says Tobias's draft took the Annex B tag column as written ( |
+| INDEPENDENT | `test_sports_channels_enquiry_is_held_at_its_assistance_priority` | 5 | 0.12 | 0.00 | 6 (+3) | The reply says Tobias's draft checked Priority Assistance against the  |
+| INDEPENDENT | `test_pendant_enquiry_is_held_at_its_assistance_priority` | 5 | 0.12 | 0.00 | 1 (+5) | The reply states what Lumen Desk's trigger T-11 does, in general terms |
+| INDEPENDENT | `test_price_change_enquiry_is_held_at_its_assistance_priority` | 5 | 0.12 | 0.00 | 1 (+5) | The reply states what Lumen Desk's trigger T-11 does, in general terms |
+| INDEPENDENT | `test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority` | 5 | 0.11 | 0.00 | 1 (+5) | The reply states what Lumen Desk's trigger T-11 does, in general terms |
+| INDEPENDENT | `test_held_values_confirmed_from_the_desk_itself` | 1 | 0.10 | 0.00 | 18 (+1) | The reply states, in general terms, that Lumen Desk's acknowledgement  |
+| INDEPENDENT | `test_stables_and_household_tickets_follow_the_requesters_accounts` | 3 | 0.10 | 0.00 | 4 (+3) | The reply states, in general terms, that Lumen Desk files every ticket |
+| INDEPENDENT | `test_guard_changed_a_ticket_outside_the_batch` | -1 | 0.09 | 0.00 | 2 (+3) | The reply states the categorisation guide's precedence rule that prior |
+| INDEPENDENT | `test_log_and_note_bookkeeping` | 1 | 0.08 | 0.00 | 15 (+1) | The reply says Tobias's draft took the Annex B tag column as written ( |
+| INDEPENDENT | `test_practice_tickets_follow_the_requesters_accounts` | 3 | 0.08 | 0.00 | 7 (+1) | The reply says Tobias's own notes or covering mail admit he had not ch |
+| INDEPENDENT | `test_guard_changed_the_status_of_or_deleted_a_ticket` | -5 | 0.08 | 0.00 | 6 (+3) | The reply says Tobias's draft checked Priority Assistance against the  |
+| INDEPENDENT | `test_guard_wrote_to_a_customer` | -5 | 0.06 | 0.00 | 10 (+1) | The reply states, in general terms, that Business Assure lifts only in |
+| INDEPENDENT | `test_guard_wrote_outside_the_job` | -3 | 0.06 | 0.00 | 12 (+1) | The reply says T-11 is not a new rule: it has been live since 2 March  |
+| INDEPENDENT | `test_guard_signed_out` | -1 | 0.05 | 0.00 | 18 (+1) | The reply states, in general terms, that Lumen Desk's acknowledgement  |
+
+DOUBLE-COUNTED=0 PARTIAL=0 INDEPENDENT=20 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 20 of 20
+- (1, +5, final answer) The reply states what Lumen Desk's trigger T-11 does, in general terms: when a ticket is s
+- (2, +3, final answer) The reply states the categorisation guide's precedence rule that priority outranks type: a
+- (3, +3, final answer) The reply states, in general terms, that Lumen Desk holds a tag only up to 24 characters a
+- (4, +3, final answer) The reply states, in general terms, that Lumen Desk files every ticket under its requester
+- (5, +1, final answer) The reply says the change that files tickets under the requester's organisation (TOOL-503)
+- (6, +3, final answer) The reply says Tobias's draft checked Priority Assistance against the register extract Cus
+- (7, +1, final answer) The reply says Tobias's own notes or covering mail admit he had not checked the Business A
+- (8, +1, final answer) In what it tells Carys, the reply notes that the business enquiries in the batch go to the
+- (9, +1, final answer) The reply tells Carys (or Marisol, for Carys) to staff Thursday from the queue health note
+- (10, +1, final answer) The reply states, in general terms, that Business Assure lifts only incidents, by one prio
+- (11, +1, final answer) The reply says Priority Assistance customers are owed a callback within four hours of any 
+- (12, +1, final answer) The reply says T-11 is not a new rule: it has been live since 2 March of this year (or nam
+- (13, +1, final answer) The reply says the 24-character tag limit is a platform limit that Desk Tooling will not r
+- (14, +1, final answer) The reply says that Carys's expectation of ten enquiries (or her plan for two people on Th
+- (15, +1, final answer) The reply says Tobias's draft took the Annex B tag column as written (the full tags) for e
+- (16, +1, final answer) The reply tells Carys (or Marisol, for Carys) that the request to show Priority Assistance
+- (17, +3, final answer) In what it tells Carys (or Marisol, for Carys), the reply says that the self-service workl
+- (18, +1, final answer) The reply states, in general terms, that Lumen Desk's acknowledgement of an update returns
+- (19, +1, final answer) The reply says reporting maps a contact reason's Annex B short form and its full tag to th
+- (20, +1, final answer) The reply states, in general terms, that an organisation's segment tag (seg_res or seg_bus
+opus-5/run_1 pytest positive lost 35/49 = 71.4%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.4412/1.0000 = 44.1%; penalties charged 0.0000
+
+######## block 8
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_price_change_enquiry_is_held_at_its_assistance_priority` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_pendant_enquiry_is_held_at_its_assistance_priority` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sports_channels_enquiry_is_held_at_its_assistance_priority` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_queue_health_note_type_mix_matches_the_batch` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_queue_health_note_priority_mix_matches_the_batch` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_stables_and_household_tickets_follow_the_requesters_accounts` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_practice_tickets_follow_the_requesters_accounts` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_long_contact_reasons_are_held_whole` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_held_values_confirmed_from_the_desk_itself` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_types_and_priorities_of_the_other_tickets` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_products_and_reasons_of_the_other_tickets` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_other_tags_and_the_assignee_are_kept_on_every_ticket` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_log_and_note_bookkeeping` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_changed_the_status_of_or_deleted_a_ticket` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_to_a_customer` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_job` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_changed_a_ticket_outside_the_batch` | -1 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out` | -1 | {'opus-5/run_1': False} | - |
+
+0/20 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

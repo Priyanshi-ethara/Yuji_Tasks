@@ -1,0 +1,310 @@
+{
+ "customers": [
+  {
+   "id": "cus_LTRaman",
+   "name": "Priya Raman",
+   "email": "priya.raman@post.example",
+   "description": "Lumen account 40-119340",
+   "currency": "gbp",
+   "delinquent": false,
+   "balance": 0,
+   "created": 1746090000,
+   "phone": "",
+   "object": "customer"
+  },
+  {
+   "id": "cus_LTWilk",
+   "name": "Tomasz Wilk",
+   "email": "t.wilk@mailbox.example",
+   "description": "Lumen account 40-125581",
+   "currency": "gbp",
+   "delinquent": false,
+   "balance": 0,
+   "created": 1746090000,
+   "phone": "",
+   "object": "customer"
+  },
+  {
+   "id": "cus_LTReid",
+   "name": "Callum Reid",
+   "email": "callum.reid@mailbox.example",
+   "description": "Lumen account 40-122840",
+   "currency": "gbp",
+   "delinquent": false,
+   "balance": 0,
+   "created": 1746090000,
+   "phone": "",
+   "object": "customer"
+  },
+  {
+   "id": "cus_LTLowe",
+   "name": "Pemberton & Lowe Solicitors",
+   "email": "accounts@pembertonlowe.example",
+   "description": "Lumen account 60-203314",
+   "currency": "gbp",
+   "delinquent": false,
+   "balance": 0,
+   "created": 1746090000,
+   "phone": "",
+   "object": "customer"
+  }
+ ],
+ "charges": [
+  {
+   "id": "ch_LTRaman1101a",
+   "customer": "cus_LTRaman",
+   "amount": 3800,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": false,
+   "amount_refunded": 0,
+   "description": "Fibre Home 500 - November",
+   "payment_intent": "pi_LTRaman1101a",
+   "created": 1793513400,
+   "object": "charge"
+  },
+  {
+   "id": "ch_LTRaman1101b",
+   "customer": "cus_LTRaman",
+   "amount": 3800,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": true,
+   "amount_refunded": 3800,
+   "description": "Fibre Home 500 - November",
+   "payment_intent": "pi_LTRaman1101b",
+   "created": 1793513460,
+   "object": "charge"
+  },
+  {
+   "id": "ch_LTWilk1101a",
+   "customer": "cus_LTWilk",
+   "amount": 2950,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": false,
+   "amount_refunded": 0,
+   "description": "Fibre Home 150 - November",
+   "payment_intent": "pi_LTWilk1101a",
+   "created": 1793514000,
+   "object": "charge"
+  },
+  {
+   "id": "ch_LTWilk1101b",
+   "customer": "cus_LTWilk",
+   "amount": 2950,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": false,
+   "amount_refunded": 0,
+   "description": "Fibre Home 150 - November",
+   "payment_intent": "pi_LTWilk1101b",
+   "created": 1793514060,
+   "object": "charge"
+  },
+  {
+   "id": "ch_LTReid1102",
+   "customer": "cus_LTReid",
+   "amount": 12000,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": false,
+   "amount_refunded": 0,
+   "description": "Early termination fee",
+   "payment_intent": "pi_LTReid1102",
+   "created": 1793602800,
+   "object": "charge"
+  },
+  {
+   "id": "ch_LTLowe1001",
+   "customer": "cus_LTLowe",
+   "amount": 31200,
+   "currency": "gbp",
+   "status": "succeeded",
+   "paid": true,
+   "refunded": false,
+   "amount_refunded": 0,
+   "description": "Invoice LT-B-10419 (incl. installation)",
+   "payment_intent": "pi_LTLowe1001",
+   "created": 1791010800,
+   "object": "charge"
+  }
+ ],
+ "products": [
+  {
+   "id": "prod_LTfh150",
+   "name": "Fibre Home 150",
+   "description": "Lumen Fibre Home 150 monthly",
+   "active": true,
+   "created": 1735689600,
+   "object": "product"
+  },
+  {
+   "id": "prod_LTfh500",
+   "name": "Fibre Home 500",
+   "description": "Lumen Fibre Home 500 monthly",
+   "active": true,
+   "created": 1735689600,
+   "object": "product"
+  },
+  {
+   "id": "prod_LTfh900",
+   "name": "Fibre Home 900",
+   "description": "Lumen Fibre Home 900 monthly",
+   "active": true,
+   "created": 1735689600,
+   "object": "product"
+  },
+  {
+   "id": "prod_LTbf300",
+   "name": "Business Fibre 300",
+   "description": "Lumen Business Fibre 300 monthly",
+   "active": true,
+   "created": 1735689600,
+   "object": "product"
+  }
+ ],
+ "prices": [
+  {
+   "id": "price_LTfh150_M",
+   "product": "prod_LTfh150",
+   "unit_amount": 2950,
+   "currency": "gbp",
+   "recurring_interval": "month",
+   "active": true,
+   "nickname": "Fibre Home 150 monthly",
+   "object": "price",
+   "recurring": {
+    "interval": "month"
+   },
+   "type": "recurring"
+  },
+  {
+   "id": "price_LTfh500_M",
+   "product": "prod_LTfh500",
+   "unit_amount": 3800,
+   "currency": "gbp",
+   "recurring_interval": "month",
+   "active": true,
+   "nickname": "Fibre Home 500 monthly",
+   "object": "price",
+   "recurring": {
+    "interval": "month"
+   },
+   "type": "recurring"
+  },
+  {
+   "id": "price_LTfh900_M",
+   "product": "prod_LTfh900",
+   "unit_amount": 4900,
+   "currency": "gbp",
+   "recurring_interval": "month",
+   "active": true,
+   "nickname": "Fibre Home 900 monthly",
+   "object": "price",
+   "recurring": {
+    "interval": "month"
+   },
+   "type": "recurring"
+  },
+  {
+   "id": "price_LTbf300_M",
+   "product": "prod_LTbf300",
+   "unit_amount": 6500,
+   "currency": "gbp",
+   "recurring_interval": "month",
+   "active": true,
+   "nickname": "Business Fibre 300 monthly",
+   "object": "price",
+   "recurring": {
+    "interval": "month"
+   },
+   "type": "recurring"
+  }
+ ],
+ "subscriptions": [
+  {
+   "id": "sub_LT1",
+   "customer": "cus_LTRaman",
+   "price": "price_LTfh500_M",
+   "status": "active",
+   "quantity": 1,
+   "current_period_start": 1793491200,
+   "current_period_end": 1796083200,
+   "cancel_at_period_end": false,
+   "created": 1746090000,
+   "object": "subscription"
+  },
+  {
+   "id": "sub_LT2",
+   "customer": "cus_LTWilk",
+   "price": "price_LTfh150_M",
+   "status": "active",
+   "quantity": 1,
+   "current_period_start": 1793491200,
+   "current_period_end": 1796083200,
+   "cancel_at_period_end": false,
+   "created": 1746090000,
+   "object": "subscription"
+  },
+  {
+   "id": "sub_LT3",
+   "customer": "cus_LTLowe",
+   "price": "price_LTbf300_M",
+   "status": "active",
+   "quantity": 1,
+   "current_period_start": 1793491200,
+   "current_period_end": 1796083200,
+   "cancel_at_period_end": false,
+   "created": 1746090000,
+   "object": "subscription"
+  }
+ ],
+ "refunds": [
+  {
+   "id": "re_LT8812",
+   "object": "refund",
+   "charge": "ch_LTRaman1101b",
+   "amount": 3800,
+   "currency": "gbp",
+   "reason": "duplicate",
+   "status": "succeeded",
+   "created": 1793874600
+  }
+ ],
+ "invoices": [
+  {
+   "id": "in_LTLowe10419",
+   "customer": "cus_LTLowe",
+   "subscription": null,
+   "amount_due": 31200,
+   "amount_paid": 31200,
+   "currency": "gbp",
+   "status": "paid",
+   "number": "LT-B-10419",
+   "charge": "ch_LTLowe1001",
+   "created": 1790838000,
+   "due_date": 1792047600,
+   "object": "invoice"
+  },
+  {
+   "id": "in_LTReid1102",
+   "customer": "cus_LTReid",
+   "subscription": null,
+   "amount_due": 12000,
+   "amount_paid": 12000,
+   "currency": "gbp",
+   "status": "paid",
+   "number": "LT-R-88120",
+   "charge": "ch_LTReid1102",
+   "created": 1793602800,
+   "due_date": 1793602800,
+   "object": "invoice"
+  }
+ ]
+}

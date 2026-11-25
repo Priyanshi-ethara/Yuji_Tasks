@@ -1,0 +1,183 @@
+{
+ "profile": {
+  "emailAddress": "dq.analyst@lumentelecom.example",
+  "historyId": "461180"
+ },
+ "messages": [
+  {
+   "id": "msg-lt-001",
+   "thread_id": "thr-lt-001",
+   "from_addr": "marisol.teague@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "Batch 2026-11-18 - flags are in",
+   "snippet": "Hi,\n\nThe W46 audit is finished: 28 open tickets are flagged for tomorrow's batch (Batch = 2026-11-18 in the Audit flags ",
+   "body": "Hi,\n\nThe W46 audit is finished: 28 open tickets are flagged for tomorrow's batch (Batch = 2026-11-18 in the Audit flags table of the Desk Quality base). Tobias has been playing with a first pass, which he'll drop in the shared folder; use it if it saves you time, but the guide is what we file to.\n\nThe usual: log every ticket in the Recategorisation log, and the queue health note under Queue health notes when you're done.\n\nMarisol",
+   "date": "2026-11-16T16:45:00Z",
+   "internal_date": 1794847500000,
+   "size_estimate": 1333,
+   "labels": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-002",
+   "thread_id": "thr-lt-002",
+   "from_addr": "tobias.renwick@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "My first pass at the 18th",
+   "snippet": "Hi,\n\nI've gone through all 28 in recat-draft-trenwick (CSV in the folder). Mostly the IVR logging faults that are really",
+   "body": "Hi,\n\nI've gone through all 28 in recat-draft-trenwick (CSV in the folder). Mostly the IVR logging faults that are really questions, and the pre-June product tags. I've bumped the Priority Assistance customers to High per 5.3 and used the Annex B tags as written. I didn't get to check the business contracts properly, so have a look at the Business Assure ones.\n\nBy my count it comes out as 10 questions, 14 incidents and 4 tasks.\n\nTobias",
+   "date": "2026-11-17T15:05:00Z",
+   "internal_date": 1794927900000,
+   "size_estimate": 1338,
+   "labels": [
+    "INBOX",
+    "UNREAD"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-003",
+   "thread_id": "thr-lt-003",
+   "from_addr": "carys.llewellyn@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "Self-service staffing for Thursday",
+   "snippet": "Hi,\n\nTobias says ten enquiries come our way out of tomorrow's batch, so I've put two people on the worklist on Thursday ",
+   "body": "Hi,\n\nTobias says ten enquiries come our way out of tomorrow's batch, so I've put two people on the worklist on Thursday morning. Shout if the number changes a lot.\n\nCarys",
+   "date": "2026-11-17T15:40:00Z",
+   "internal_date": 1794930000000,
+   "size_estimate": 1070,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-004",
+   "thread_id": "thr-lt-004",
+   "from_addr": "femi.adeyemo@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "Lumen Desk monthly admin digest - October",
+   "snippet": "Hello desk,\n\nOctober changes: T-14 CSAT wording refreshed; new internal macro 'Outage - holding (internal)'; TOOL-497 (p",
+   "body": "Hello desk,\n\nOctober changes: T-14 CSAT wording refreshed; new internal macro 'Outage - holding (internal)'; TOOL-497 (portal contract end dates) in progress - Salesforce is the record for contract ends. No changes to triggers that touch fields. The instance configuration page in DESKADM is current.\n\nFemi, Desk Tooling",
+   "date": "2026-11-02T09:00:00Z",
+   "internal_date": 1793610000000,
+   "size_estimate": 1220,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-005",
+   "thread_id": "thr-lt-005",
+   "from_addr": "noor.haddad@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "WK-04 Westerby exchange - customer impact",
+   "snippet": "All,\n\nWK-04: total loss of fibre and voice access for every customer on the Westerby exchange, 07:35-15:10 today. Parent",
+   "body": "All,\n\nWK-04: total loss of fibre and voice access for every customer on the Westerby exchange, 07:35-15:10 today. Parent 48156. Customer tickets on WK are linked with the noc_wk04 tag. Business Assure customers on WK: Calder Freight.\n\nNoor, NOC",
+   "date": "2026-11-16T15:30:00Z",
+   "internal_date": 1794843000000,
+   "size_estimate": 1144,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-006",
+   "thread_id": "thr-lt-006",
+   "from_addr": "billing.ops@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "Refunds issued w/c 2 November",
+   "snippet": "Refunds issued this week:\n- 40-119340 Raman: duplicate November payment 38.00 refunded to card 5 Nov (re_LT8812)\n- 40-10",
+   "body": "Refunds issued this week:\n- 40-119340 Raman: duplicate November payment 38.00 refunded to card 5 Nov (re_LT8812)\n- 40-108812 Ashworth: overpayment 12.40 refunded 3 Nov\nStill under investigation:\n- 40-125581 Wilk: duplicate November payment 29.50, credit to follow once confirmed\n\nBilling Operations",
+   "date": "2026-11-06T17:00:00Z",
+   "internal_date": 1793984400000,
+   "size_estimate": 1198,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-007",
+   "thread_id": "thr-lt-007",
+   "from_addr": "field.ops@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "Install reschedules - engineer capacity, Kettleby patch",
+   "snippet": "Desk,\n\nCapacity in the Kettleby patch means we have moved these installs later: 40-128840 Doherty (4 Larch Close) 12 Nov",
+   "body": "Desk,\n\nCapacity in the Kettleby patch means we have moved these installs later: 40-128840 Doherty (4 Larch Close) 12 Nov -> 26 Nov; 40-114002 Hale 14 Nov -> 21 Nov. Customers texted. All other November installs stand (for example 40-130276 Asante, 24 Nov).\n\nField Operations",
+   "date": "2026-11-10T09:30:00Z",
+   "internal_date": 1794303000000,
+   "size_estimate": 1174,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-lt-008",
+   "thread_id": "thr-lt-008",
+   "from_addr": "porting.desk@lumentelecom.example",
+   "to_addr": "dq.analyst@lumentelecom.example",
+   "cc_addr": "",
+   "subject": "PO-77412 Brackenfield Dental - still blocked at Northway",
+   "snippet": "Desk,\n\nPort-in PO-77412 (two numbers, Brackenfield Dental) missed 13 Nov: Northway Telecom (donor) has not released the ",
+   "body": "Desk,\n\nPort-in PO-77412 (two numbers, Brackenfield Dental) missed 13 Nov: Northway Telecom (donor) has not released the numbers. Our side is complete. Chased twice, escalated to Northway's porting manager.\n\nPorting Desk",
+   "date": "2026-11-14T15:50:00Z",
+   "internal_date": 1794671400000,
+   "size_estimate": 1119,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  }
+ ],
+ "drafts": [],
+ "labels": [
+  {
+   "id": "INBOX",
+   "name": "INBOX",
+   "type": "system",
+   "messages_total": "8",
+   "messages_unread": "2",
+   "threads_total": "8",
+   "threads_unread": "2",
+   "messagesTotal": 8,
+   "messagesUnread": 2,
+   "threadsTotal": 8,
+   "threadsUnread": 2
+  },
+  {
+   "id": "Label_DQ",
+   "name": "Desk Quality",
+   "type": "user",
+   "messages_total": "0",
+   "messages_unread": "0",
+   "threads_total": "0",
+   "threads_unread": "0",
+   "messagesTotal": 0,
+   "messagesUnread": 0,
+   "threadsTotal": 0,
+   "threadsUnread": 0
+  }
+ ]
+}

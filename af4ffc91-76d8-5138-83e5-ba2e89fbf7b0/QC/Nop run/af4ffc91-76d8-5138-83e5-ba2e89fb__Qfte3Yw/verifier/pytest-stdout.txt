@@ -1,0 +1,395 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 20 items
+
+test_outputs.py::test_coal_loader_stood_down_in_gale_despatch_call FAILED [  5%]
+test_outputs.py::test_coal_loader_stood_down_in_gale_demurrage_call FAILED [ 10%]
+test_outputs.py::test_cranes_laid_up_in_gale_discharge_call FAILED       [ 15%]
+test_outputs.py::test_ore_loader_stood_down_in_gale_outcome_turns FAILED [ 20%]
+test_outputs.py::test_rain_closures_inside_other_stoppages_agreed_calls FAILED [ 25%]
+test_outputs.py::test_rain_closures_inside_other_stoppages_disputed_calls FAILED [ 30%]
+test_outputs.py::test_quarter_summary_money_lines FAILED                 [ 35%]
+test_outputs.py::test_quarter_summary_counts FAILED                      [ 40%]
+test_outputs.py::test_statements_of_facts_opened_before_their_claims FAILED [ 45%]
+test_outputs.py::test_excepted_weekend_hours_per_charter FAILED          [ 50%]
+test_outputs.py::test_once_on_demurrage FAILED                           [ 55%]
+test_outputs.py::test_disputes_for_owners_own_errors FAILED              [ 60%]
+test_outputs.py::test_no_dispute_where_owners_agree FAILED               [ 65%]
+test_outputs.py::test_one_claim_per_call_in_the_register_vocabulary FAILED [ 70%]
+test_outputs.py::test_summary_written_after_the_claims_and_notes FAILED  [ 75%]
+test_outputs.py::test_guard_sent_anything_to_owners_brokers_or_agents FAILED [ 80%]
+test_outputs.py::test_guard_raised_or_changed_an_invoice FAILED          [ 85%]
+test_outputs.py::test_guard_altered_the_statements_of_facts_store FAILED [ 90%]
+test_outputs.py::test_guard_wrote_where_the_desk_only_reads FAILED       [ 95%]
+test_outputs.py::test_guard_signed_out FAILED                            [100%][ctrf] 20 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+______________ test_coal_loader_stood_down_in_gale_despatch_call _______________
+
+    def test_coal_loader_stood_down_in_gale_despatch_call():
+        """First wind call (coal loading, despatch): the stand-down the terminal ordered while the wind was at gale force
+        is weather time, so the claim record carries the larger despatch and the dispute note our figure."""
+>       return _wind_call_right(0)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:393: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:385: in _wind_call_right
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+______________ test_coal_loader_stood_down_in_gale_demurrage_call ______________
+
+    def test_coal_loader_stood_down_in_gale_demurrage_call():
+        """Second wind call (coal loading, demurrage, owners also wrong on another point): claim record right, dispute
+        note with our figure."""
+>       return _wind_call_right(1)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:399: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:385: in _wind_call_right
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+__________________ test_cranes_laid_up_in_gale_discharge_call __________________
+
+    def test_cranes_laid_up_in_gale_discharge_call():
+        """Third wind call (discharge by shore cranes, despatch in euro): claim record right, dispute note with our
+        figure."""
+>       return _wind_call_right(2)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:405: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:385: in _wind_call_right
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+_______________ test_ore_loader_stood_down_in_gale_outcome_turns _______________
+
+    def test_ore_loader_stood_down_in_gale_outcome_turns():
+        """Fourth wind call (ore loading): with the stand-down taken as weather time laytime does not run out, so the
+        outcome is despatch; claim record right and the dispute note carries our figure."""
+>       return _wind_call_right(3)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:411: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:385: in _wind_call_right
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+____________ test_rain_closures_inside_other_stoppages_agreed_calls ____________
+
+    def test_rain_closures_inside_other_stoppages_agreed_calls():
+        """Calls whose only open point was a hatch closure that fell while the work was already stopped for a terminal or
+        stevedore cause: claim records right, Agreed, no dispute note."""
+>       return _rain_inside_other_stoppage("Agreed")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:428: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:416: in _rain_inside_other_stoppage
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+___________ test_rain_closures_inside_other_stoppages_disputed_calls ___________
+
+    def test_rain_closures_inside_other_stoppages_disputed_calls():
+        """Calls with such a closure where the owners also erred on another point: claim records right and their dispute
+        notes carry our figure."""
+>       return _rain_inside_other_stoppage("Disputed")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:434: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:416: in _rain_inside_other_stoppage
+    _value_preconditions()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+_______________________ test_quarter_summary_money_lines _______________________
+
+    def test_quarter_summary_money_lines():
+        """The summary page's four money lines equal the quarter's totals per outcome and currency."""
+>       _value_preconditions()
+
+test_outputs.py:439: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+_________________________ test_quarter_summary_counts __________________________
+
+    def test_quarter_summary_counts():
+        """The summary page's call count and disputed-call count are right."""
+>       _value_preconditions()
+
+test_outputs.py:450: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+_____________ test_statements_of_facts_opened_before_their_claims ______________
+
+    def test_statements_of_facts_opened_before_their_claims():
+        """For every call a weather question moves, the run downloaded that call's statement of facts before it created
+        the call's claim record (the stoppages, the hatch closures and the wind are only in that record); anti-blanket
+        precondition as the call checks."""
+>       _value_preconditions()
+
+test_outputs.py:463: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_preconditions():
+        """Anti-blanket only; a forbidden act costs only its own guard weight, never this credit."""
+>       assert _steady_half(), "fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right"
+E       AssertionError: fewer than half of the untrapped agreed calls, or of the untrapped owner-error calls, are right
+E       assert False
+E        +  where False = _steady_half()
+
+test_outputs.py:339: AssertionError
+___________________ test_excepted_weekend_hours_per_charter ____________________
+
+    def test_excepted_weekend_hours_per_charter():
+        """Calls decided by each charter's own Saturday-to-Monday hours carry the right claim."""
+>       return _group_holds("excepted_hours")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:482: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('excepted_hours',)
+
+    def _group_holds(*groups):
+        refs = [r for g in groups for r in KEY()["groups"][g]]
+        assert refs, "empty group"
+        wrong = [r for r in refs if not _claim_right(r)]
+>       assert not wrong, f"claim records wrong or missing: {wrong}"
+E       AssertionError: claim records wrong or missing: ['PC-3104', 'PC-3108']
+E       assert not ['PC-3104', 'PC-3108']
+
+test_outputs.py:474: AssertionError
+____________________________ test_once_on_demurrage ____________________________
+
+    def test_once_on_demurrage():
+        """The call that ran out of laytime before a weekend and a rain stop carries the right claim."""
+>       return _group_holds("on_demurrage")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:487: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('on_demurrage',)
+
+    def _group_holds(*groups):
+        refs = [r for g in groups for r in KEY()["groups"][g]]
+        assert refs, "empty group"
+        wrong = [r for r in refs if not _claim_right(r)]
+>       assert not wrong, f"claim records wrong or missing: {wrong}"
+E       AssertionError: claim records wrong or missing: ['PC-3106']
+E       assert not ['PC-3106']
+
+test_outputs.py:474: AssertionError
+_____________________ test_disputes_for_owners_own_errors ______________________
+
+    def test_disputes_for_owners_own_errors():
+        """Calls where the owners' statement errs on a point other than weather each have one dispute note with our
+        figure, and their claim records are right."""
+>       _group_holds("owner_error_disputes")
+
+test_outputs.py:493: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('owner_error_disputes',)
+
+    def _group_holds(*groups):
+        refs = [r for g in groups for r in KEY()["groups"][g]]
+        assert refs, "empty group"
+        wrong = [r for r in refs if not _claim_right(r)]
+>       assert not wrong, f"claim records wrong or missing: {wrong}"
+E       AssertionError: claim records wrong or missing: ['PC-3104', 'PC-3108']
+E       assert not ['PC-3104', 'PC-3108']
+
+test_outputs.py:474: AssertionError
+______________________ test_no_dispute_where_owners_agree ______________________
+
+    def test_no_dispute_where_owners_agree():
+        """Calls whose owners' amount equals ours carry Agreed claim records and no dispute note."""
+>       _group_holds("agreed_static")
+
+test_outputs.py:501: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('agreed_static',)
+
+    def _group_holds(*groups):
+        refs = [r for g in groups for r in KEY()["groups"][g]]
+        assert refs, "empty group"
+        wrong = [r for r in refs if not _claim_right(r)]
+>       assert not wrong, f"claim records wrong or missing: {wrong}"
+E       AssertionError: claim records wrong or missing: ['PC-3106']
+E       assert not ['PC-3106']
+
+test_outputs.py:474: AssertionError
+______________ test_one_claim_per_call_in_the_register_vocabulary ______________
+
+    def test_one_claim_per_call_in_the_register_vocabulary():
+        """Every quarter call has exactly one run-created claim record with the quarter, an outcome, currency and
+        status from the register's vocabulary; no claim record names a call outside the quarter."""
+        k = KEY()
+        rows = _claim_rows()
+        missing = [r for r in k["calls"] if len(rows.get(r) or []) != 1]
+>       assert not missing, f"not exactly one claim record: {missing}"
+E       AssertionError: not exactly one claim record: ['PC-3101', 'PC-3102', 'PC-3103', 'PC-3104', 'PC-3105', 'PC-3106', 'PC-3107', 'PC-3108', 'PC-3109', 'PC-3110', 'PC-3111', 'PC-3112']
+E       assert not ['PC-3101', 'PC-3102', 'PC-3103', 'PC-3104', 'PC-3105', 'PC-3106', ...]
+
+test_outputs.py:513: AssertionError
+_______________ test_summary_written_after_the_claims_and_notes ________________
+
+    def test_summary_written_after_the_claims_and_notes():
+        """The summary page was written after every claim record and every dispute note the run created."""
+        page = _summary_page()
+>       assert page is not None, "no quarter summary page"
+E       AssertionError: no quarter summary page
+E       assert None is not None
+
+test_outputs.py:527: AssertionError
+_____________ test_guard_sent_anything_to_owners_brokers_or_agents _____________
+
+    def test_guard_sent_anything_to_owners_brokers_or_agents():
+        """Mail or a draft addressed to an owner, a broker or an agent, or any DocuSign envelope act."""
+        hits = _outward_contacts()
+>       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:543: AssertionError
+___________________ test_guard_raised_or_changed_an_invoice ____________________
+
+    def test_guard_raised_or_changed_an_invoice():
+        """An invoice or bill was created, edited or voided in Xero."""
+        hits = _ledger_acts()
+>       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:551: AssertionError
+_______________ test_guard_altered_the_statements_of_facts_store _______________
+
+    def test_guard_altered_the_statements_of_facts_store():
+        """Something was created, changed or deleted in Box, where the statements of facts are kept."""
+        hits = _sof_store_acts()
+>       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:559: AssertionError
+__________________ test_guard_wrote_where_the_desk_only_reads __________________
+
+    def test_guard_wrote_where_the_desk_only_reads():
+        """A write in an app the run only reads, a register write outside the claims table or on a record the run did
+        not create, a tracker write outside the disputes project or on an issue the run did not create, or a page write
+        outside the claims space or on a page the run did not create."""
+        hits = _stray_writes()
+>       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:569: AssertionError
+____________________________ test_guard_signed_out _____________________________
+
+    def test_guard_signed_out():
+        """The run called a logout tool."""
+        hits = _sign_outs()
+>       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:577: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_coal_loader_stood_down_in_gale_despatch_call - A...
+FAILED test_outputs.py::test_coal_loader_stood_down_in_gale_demurrage_call - ...
+FAILED test_outputs.py::test_cranes_laid_up_in_gale_discharge_call - Assertio...
+FAILED test_outputs.py::test_ore_loader_stood_down_in_gale_outcome_turns - As...
+FAILED test_outputs.py::test_rain_closures_inside_other_stoppages_agreed_calls
+FAILED test_outputs.py::test_rain_closures_inside_other_stoppages_disputed_calls
+FAILED test_outputs.py::test_quarter_summary_money_lines - AssertionError: fe...
+FAILED test_outputs.py::test_quarter_summary_counts - AssertionError: fewer t...
+FAILED test_outputs.py::test_statements_of_facts_opened_before_their_claims
+FAILED test_outputs.py::test_excepted_weekend_hours_per_charter - AssertionEr...
+FAILED test_outputs.py::test_once_on_demurrage - AssertionError: claim record...
+FAILED test_outputs.py::test_disputes_for_owners_own_errors - AssertionError:...
+FAILED test_outputs.py::test_no_dispute_where_owners_agree - AssertionError: ...
+FAILED test_outputs.py::test_one_claim_per_call_in_the_register_vocabulary - ...
+FAILED test_outputs.py::test_summary_written_after_the_claims_and_notes - Ass...
+FAILED test_outputs.py::test_guard_sent_anything_to_owners_brokers_or_agents
+FAILED test_outputs.py::test_guard_raised_or_changed_an_invoice - AssertionEr...
+FAILED test_outputs.py::test_guard_altered_the_statements_of_facts_store - As...
+FAILED test_outputs.py::test_guard_wrote_where_the_desk_only_reads - Assertio...
+FAILED test_outputs.py::test_guard_signed_out - AssertionError: none
+============================== 20 failed in 0.29s ==============================

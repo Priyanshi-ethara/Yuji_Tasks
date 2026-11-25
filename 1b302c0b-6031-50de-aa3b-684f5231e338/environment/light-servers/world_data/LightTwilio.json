@@ -1,0 +1,137 @@
+{
+ "messages": [
+  {
+   "sid": "SMLT000000000000000000000000000001",
+   "from_number": "+441632960000",
+   "to_number": "+447700900310",
+   "body": "Lumen: your installation at 4 Larch Close has moved from 12 Nov to 26 Nov because of engineer availability. Reply HELP for options.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-10T09:15:00Z",
+   "date_created": "2026-11-10T09:15:00Z"
+  },
+  {
+   "sid": "SMLT000000000000000000000000000002",
+   "from_number": "+441632960000",
+   "to_number": "+447700900311",
+   "body": "Lumen: your installation at 9 Ferry Road is confirmed for 24 Nov, 8am-1pm.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-11T09:20:00Z",
+   "date_created": "2026-11-11T09:20:00Z"
+  },
+  {
+   "sid": "SMLT000000000000000000000000000003",
+   "from_number": "+441632960000",
+   "to_number": "+447700900315",
+   "body": "Lumen: we're aware of a service outage on the Westerby exchange and are working to fix it. No need to call.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-16T07:50:00Z",
+   "date_created": "2026-11-16T07:50:00Z"
+  },
+  {
+   "sid": "SMLT000000000000000000000000000004",
+   "from_number": "+441632960000",
+   "to_number": "+447700900314",
+   "body": "Lumen: service on the Westerby exchange has been restored. Thank you for your patience.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-16T15:20:00Z",
+   "date_created": "2026-11-16T15:20:00Z"
+  },
+  {
+   "sid": "SMLT000000000000000000000000000005",
+   "from_number": "+441632960000",
+   "to_number": "+447700900323",
+   "body": "Lumen: an engineer will visit on Fri 20 Nov (8am-1pm) to replace your fibre wall socket.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-13T10:05:00Z",
+   "date_created": "2026-11-13T10:05:00Z"
+  },
+  {
+   "sid": "SMLT000000000000000000000000000006",
+   "from_number": "+441632960000",
+   "to_number": "+447700900313",
+   "body": "Lumen: your number port from Northway Telecom has not completed. We are chasing Northway and will text you.",
+   "status": "delivered",
+   "direction": "outbound-api",
+   "num_segments": 1,
+   "price": -0.04,
+   "price_unit": "GBP",
+   "error_code": null,
+   "date_sent": "2026-11-14T16:00:00Z",
+   "date_created": "2026-11-14T16:00:00Z"
+  }
+ ],
+ "calls": [
+  {
+   "sid": "CALT000000000000000000000000000001",
+   "from_number": "+441632960001",
+   "to_number": "+447700900301",
+   "status": "completed",
+   "direction": "outbound-api",
+   "duration": 312,
+   "price": -0.02,
+   "price_unit": "GBP",
+   "answered_by": "human",
+   "start_time": "2026-10-21T14:00:00Z",
+   "end_time": "2026-10-21T14:00:00Z",
+   "date_created": "2026-10-21T14:00:00Z"
+  },
+  {
+   "sid": "CALT000000000000000000000000000002",
+   "from_number": "+441632960001",
+   "to_number": "+447700900302",
+   "status": "completed",
+   "direction": "outbound-api",
+   "duration": 198,
+   "price": -0.02,
+   "price_unit": "GBP",
+   "answered_by": "human",
+   "start_time": "2026-10-28T10:40:00Z",
+   "end_time": "2026-10-28T10:40:00Z",
+   "date_created": "2026-10-28T10:40:00Z"
+  }
+ ],
+ "account": {
+  "sid": "ACLT0000000000000000000000000001"
+ },
+ "phone_numbers": [
+  {
+   "sid": "PNLT001",
+   "friendly_name": "Lumen customer SMS",
+   "phone_number": "+441632960000",
+   "status": "in-use",
+   "date_created": "2026-03-01T00:00:00Z"
+  },
+  {
+   "sid": "PNLT002",
+   "friendly_name": "Priority Assistance callbacks",
+   "phone_number": "+441632960001",
+   "status": "in-use",
+   "date_created": "2026-03-01T00:00:00Z"
+  }
+ ]
+}

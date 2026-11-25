@@ -1,0 +1,209 @@
+{
+  "reward": 0.0,
+  "earned": 0.0,
+  "penalty": 0.0,
+  "total_positive": 49,
+  "guard_polarity": "pass_charges",
+  "gate": null,
+  "missed": [
+    "test_price_change_enquiry_is_held_at_its_assistance_priority",
+    "test_pendant_enquiry_is_held_at_its_assistance_priority",
+    "test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority",
+    "test_sports_channels_enquiry_is_held_at_its_assistance_priority",
+    "test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority",
+    "test_queue_health_note_type_mix_matches_the_batch",
+    "test_queue_health_note_priority_mix_matches_the_batch",
+    "test_stables_and_household_tickets_follow_the_requesters_accounts",
+    "test_practice_tickets_follow_the_requesters_accounts",
+    "test_long_contact_reasons_are_held_whole",
+    "test_held_values_confirmed_from_the_desk_itself",
+    "test_types_and_priorities_of_the_other_tickets",
+    "test_products_and_reasons_of_the_other_tickets",
+    "test_other_tags_and_the_assignee_are_kept_on_every_ticket",
+    "test_log_and_note_bookkeeping"
+  ],
+  "guards_tripped": [],
+  "errors": [],
+  "tests": [
+    {
+      "test": "test_price_change_enquiry_is_held_at_its_assistance_priority",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_pendant_enquiry_is_held_at_its_assistance_priority",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_sports_channels_enquiry_is_held_at_its_assistance_priority",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_queue_health_note_type_mix_matches_the_batch",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_queue_health_note_priority_mix_matches_the_batch",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_stables_and_household_tickets_follow_the_requesters_accounts",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_practice_tickets_follow_the_requesters_accounts",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_long_contact_reasons_are_held_whole",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_held_values_confirmed_from_the_desk_itself",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_types_and_priorities_of_the_other_tickets",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_products_and_reasons_of_the_other_tickets",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_other_tags_and_the_assignee_are_kept_on_every_ticket",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_log_and_note_bookkeeping",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_guard_changed_the_status_of_or_deleted_a_ticket",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_to_a_customer",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_outside_the_job",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_guard_changed_a_ticket_outside_the_batch",
+      "weight": -1,
+      "passed": false,
+      "tripped": false,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    },
+    {
+      "test": "test_guard_signed_out",
+      "weight": -1,
+      "passed": false,
+      "tripped": false,
+      "style": "return",
+      "reason": "returned falsy",
+      "error": null
+    }
+  ]
+}

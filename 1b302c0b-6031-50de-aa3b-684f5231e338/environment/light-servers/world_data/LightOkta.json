@@ -1,0 +1,319 @@
+{
+ "users": [
+  {
+   "id": "00uLTmteague",
+   "first_name": "Marisol",
+   "last_name": "Teague",
+   "email": "marisol.teague@lumentelecom.example",
+   "login": "marisol.teague@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTtrenwick",
+   "first_name": "Tobias",
+   "last_name": "Renwick",
+   "email": "tobias.renwick@lumentelecom.example",
+   "login": "tobias.renwick@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTfadeyemo",
+   "first_name": "Femi",
+   "last_name": "Adeyemo",
+   "email": "femi.adeyemo@lumentelecom.example",
+   "login": "femi.adeyemo@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTcllewellyn",
+   "first_name": "Carys",
+   "last_name": "Llewellyn",
+   "email": "carys.llewellyn@lumentelecom.example",
+   "login": "carys.llewellyn@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTjokoro",
+   "first_name": "Josh",
+   "last_name": "Okoro",
+   "email": "josh.okoro@lumentelecom.example",
+   "login": "josh.okoro@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTpshah",
+   "first_name": "Priti",
+   "last_name": "Shah",
+   "email": "priti.shah@lumentelecom.example",
+   "login": "priti.shah@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTnhaddad",
+   "first_name": "Noor",
+   "last_name": "Haddad",
+   "email": "noor.haddad@lumentelecom.example",
+   "login": "noor.haddad@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  },
+  {
+   "id": "00uLTdqanalyst",
+   "first_name": "Desk Quality",
+   "last_name": "Analyst",
+   "email": "dq.analyst@lumentelecom.example",
+   "login": "dq.analyst@lumentelecom.example",
+   "status": "ACTIVE",
+   "created": "2026-02-03T09:00:00.000Z",
+   "activated": "2026-02-03T09:05:00.000Z",
+   "last_login": "2026-11-17T08:30:00.000Z"
+  }
+ ],
+ "groups": [
+  {
+   "id": "00gLTdq",
+   "name": "Desk Quality",
+   "description": "Audits and recategorisation",
+   "type": "OKTA_GROUP",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "00gLTtool",
+   "name": "Desk Tooling - Lumen Desk admins",
+   "description": "Administers the Lumen Desk instance",
+   "type": "OKTA_GROUP",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "00gLTss",
+   "name": "Self-service team",
+   "description": "Residential enquiries worklist",
+   "type": "OKTA_GROUP",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "00gLTfront",
+   "name": "Front line",
+   "description": "First-line agents",
+   "type": "OKTA_GROUP",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "00gLTnoc",
+   "name": "NOC",
+   "description": "Network operations",
+   "type": "OKTA_GROUP",
+   "created": "2026-02-03T09:00:00.000Z"
+  }
+ ],
+ "memberships": [
+  {
+   "group_id": "00gLTdq",
+   "user_id": "00uLTmteague"
+  },
+  {
+   "group_id": "00gLTdq",
+   "user_id": "00uLTtrenwick"
+  },
+  {
+   "group_id": "00gLTdq",
+   "user_id": "00uLTdqanalyst"
+  },
+  {
+   "group_id": "00gLTtool",
+   "user_id": "00uLTfadeyemo"
+  },
+  {
+   "group_id": "00gLTss",
+   "user_id": "00uLTcllewellyn"
+  },
+  {
+   "group_id": "00gLTfront",
+   "user_id": "00uLTjokoro"
+  },
+  {
+   "group_id": "00gLTfront",
+   "user_id": "00uLTpshah"
+  },
+  {
+   "group_id": "00gLTnoc",
+   "user_id": "00uLTnhaddad"
+  }
+ ],
+ "apps": [
+  {
+   "id": "0oaLTdesk",
+   "name": "lumen_desk",
+   "label": "Lumen Desk (Zendesk)",
+   "status": "ACTIVE",
+   "sign_on_mode": "SAML_2_0",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "0oaLTsf",
+   "name": "salesforce",
+   "label": "Salesforce CRM",
+   "status": "ACTIVE",
+   "sign_on_mode": "SAML_2_0",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "0oaLTat",
+   "name": "airtable",
+   "label": "Airtable - Desk Quality",
+   "status": "ACTIVE",
+   "sign_on_mode": "SAML_2_0",
+   "created": "2026-02-03T09:00:00.000Z"
+  },
+  {
+   "id": "0oaLTconf",
+   "name": "confluence",
+   "label": "Confluence",
+   "status": "ACTIVE",
+   "sign_on_mode": "SAML_2_0",
+   "created": "2026-02-03T09:00:00.000Z"
+  }
+ ],
+ "app_assignments": [
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTmteague",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTtrenwick",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTfadeyemo",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTcllewellyn",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTjokoro",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTpshah",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTnhaddad",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTdesk",
+   "user_id": "00uLTdqanalyst",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTmteague",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTtrenwick",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTfadeyemo",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTcllewellyn",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTjokoro",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTpshah",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTnhaddad",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTconf",
+   "user_id": "00uLTdqanalyst",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTat",
+   "user_id": "00uLTmteague",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTat",
+   "user_id": "00uLTtrenwick",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTat",
+   "user_id": "00uLTdqanalyst",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTsf",
+   "user_id": "00uLTmteague",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTsf",
+   "user_id": "00uLTdqanalyst",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTsf",
+   "user_id": "00uLTjokoro",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTsf",
+   "user_id": "00uLTpshah",
+   "scope": "USER"
+  },
+  {
+   "app_id": "0oaLTsf",
+   "user_id": "00uLTnhaddad",
+   "scope": "USER"
+  }
+ ]
+}

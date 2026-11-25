@@ -1,0 +1,793 @@
+{
+ "bases": [
+  {
+   "id": "appMerrowClaims1",
+   "name": "Merrow Claims Register",
+   "permission_level": "create"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblPortCalls26",
+   "base_id": "appMerrowClaims1",
+   "name": "Port Calls",
+   "primaryFieldId": "fldPC01",
+   "fields": [
+    {
+     "id": "fldPC01",
+     "name": "Call Ref",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC02",
+     "name": "Quarter",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC03",
+     "name": "Vessel",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC04",
+     "name": "Port",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC05",
+     "name": "Operation",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldPC06",
+     "name": "Charter",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC07",
+     "name": "Owners",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPC08",
+     "name": "B/L Quantity (MT)",
+     "type": "number"
+    },
+    {
+     "id": "fldPC09",
+     "name": "Currency",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldPC10",
+     "name": "Completed",
+     "type": "date"
+    },
+    {
+     "id": "fldPC11",
+     "name": "SOF Filed",
+     "type": "checkbox"
+    },
+    {
+     "id": "fldPC12",
+     "name": "Desk Status",
+     "type": "singleSelect"
+    }
+   ]
+  },
+  {
+   "id": "tblLaytimeClm26",
+   "base_id": "appMerrowClaims1",
+   "name": "Laytime Claims",
+   "primaryFieldId": "fldLC01",
+   "fields": [
+    {
+     "id": "fldLC01",
+     "name": "Call Ref",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLC02",
+     "name": "Quarter",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLC03",
+     "name": "Laytime Used (hrs)",
+     "type": "number"
+    },
+    {
+     "id": "fldLC04",
+     "name": "Time Saved/Lost (hrs)",
+     "type": "number"
+    },
+    {
+     "id": "fldLC05",
+     "name": "Outcome",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldLC06",
+     "name": "Amount",
+     "type": "number"
+    },
+    {
+     "id": "fldLC07",
+     "name": "Currency",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldLC08",
+     "name": "Owners Figure",
+     "type": "number"
+    },
+    {
+     "id": "fldLC09",
+     "name": "Status",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldLC10",
+     "name": "Prepared By",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLC11",
+     "name": "Notes",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tblCharters2026",
+   "base_id": "appMerrowClaims1",
+   "name": "Charters",
+   "primaryFieldId": "fldCH01",
+   "fields": [
+    {
+     "id": "fldCH01",
+     "name": "Charter",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCH02",
+     "name": "Owners",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCH03",
+     "name": "Currency",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldCH04",
+     "name": "Clauses",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCH05",
+     "name": "In Force",
+     "type": "checkbox"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblPortCalls26": [
+   {
+    "id": "recPC201q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2101",
+     "Quarter": "2026-Q2",
+     "Vessel": "Aldwick Star",
+     "Port": "Ventspils",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 54000,
+     "Currency": "USD",
+     "Completed": "2026-06-03",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC202q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2102",
+     "Quarter": "2026-Q2",
+     "Vessel": "Aldwick Fern",
+     "Port": "Riga",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 48000,
+     "Currency": "USD",
+     "Completed": "2026-06-05",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC203q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2103",
+     "Quarter": "2026-Q2",
+     "Vessel": "Holmfirth Gale",
+     "Port": "Rouen",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 32000,
+     "Currency": "USD",
+     "Completed": "2026-06-07",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC204q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2104",
+     "Quarter": "2026-Q2",
+     "Vessel": "Holmfirth Grace",
+     "Port": "Rouen",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 30000,
+     "Currency": "USD",
+     "Completed": "2026-06-09",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC205q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2105",
+     "Quarter": "2026-Q2",
+     "Vessel": "Kestrel Bay",
+     "Port": "Antwerp",
+     "Operation": "Discharging",
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "B/L Quantity (MT)": 20000,
+     "Currency": "EUR",
+     "Completed": "2026-06-11",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC206q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2106",
+     "Quarter": "2026-Q2",
+     "Vessel": "Kestrel Wren",
+     "Port": "Ghent",
+     "Operation": "Discharging",
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "B/L Quantity (MT)": 17500,
+     "Currency": "EUR",
+     "Completed": "2026-06-13",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC207q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2107",
+     "Quarter": "2026-Q2",
+     "Vessel": "Tarnby Ore",
+     "Port": "Narvik",
+     "Operation": "Loading",
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "B/L Quantity (MT)": 90000,
+     "Currency": "USD",
+     "Completed": "2026-06-15",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC208q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2108",
+     "Quarter": "2026-Q2",
+     "Vessel": "Tarnby Fjord",
+     "Port": "Lulea",
+     "Operation": "Loading",
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "B/L Quantity (MT)": 75000,
+     "Currency": "USD",
+     "Completed": "2026-06-17",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC209q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2109",
+     "Quarter": "2026-Q2",
+     "Vessel": "Aldwick Rose",
+     "Port": "Gdansk",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 60000,
+     "Currency": "USD",
+     "Completed": "2026-06-19",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC210q2a6b7c8d",
+    "createdTime": "2026-04-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2110",
+     "Quarter": "2026-Q2",
+     "Vessel": "Holmfirth Dawn",
+     "Port": "Constanta",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 40000,
+     "Currency": "USD",
+     "Completed": "2026-06-21",
+     "SOF Filed": true,
+     "Desk Status": "Settled"
+    }
+   },
+   {
+    "id": "recPC301q3x7y8z9",
+    "createdTime": "2026-07-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3101",
+     "Quarter": "2026-Q3",
+     "Vessel": "Aldwick Star",
+     "Port": "Ventspils",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 54000,
+     "Currency": "USD",
+     "Completed": "2026-07-06",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC302q3x7y8z9",
+    "createdTime": "2026-07-13T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3102",
+     "Quarter": "2026-Q3",
+     "Vessel": "Aldwick Rose",
+     "Port": "Gdansk",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 60000,
+     "Currency": "USD",
+     "Completed": "2026-07-19",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC303q3x7y8z9",
+    "createdTime": "2026-07-20T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3103",
+     "Quarter": "2026-Q3",
+     "Vessel": "Aldwick Star",
+     "Port": "Riga",
+     "Operation": "Loading",
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "B/L Quantity (MT)": 48000,
+     "Currency": "USD",
+     "Completed": "2026-07-25",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC304q3x7y8z9",
+    "createdTime": "2026-08-01T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3104",
+     "Quarter": "2026-Q3",
+     "Vessel": "Holmfirth Grace",
+     "Port": "Rouen",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 32000,
+     "Currency": "USD",
+     "Completed": "2026-08-07",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC305q3x7y8z9",
+    "createdTime": "2026-08-11T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3105",
+     "Quarter": "2026-Q3",
+     "Vessel": "Holmfirth Dawn",
+     "Port": "Constanta",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 40000,
+     "Currency": "USD",
+     "Completed": "2026-08-19",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC306q3x7y8z9",
+    "createdTime": "2026-08-24T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3106",
+     "Quarter": "2026-Q3",
+     "Vessel": "Holmfirth Grace",
+     "Port": "Ghent",
+     "Operation": "Loading",
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "B/L Quantity (MT)": 36000,
+     "Currency": "USD",
+     "Completed": "2026-08-30",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC307q3x7y8z9",
+    "createdTime": "2026-09-02T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3107",
+     "Quarter": "2026-Q3",
+     "Vessel": "Kestrel Bay",
+     "Port": "Antwerp",
+     "Operation": "Discharging",
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "B/L Quantity (MT)": 21000,
+     "Currency": "EUR",
+     "Completed": "2026-09-09",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC308q3x7y8z9",
+    "createdTime": "2026-09-14T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3108",
+     "Quarter": "2026-Q3",
+     "Vessel": "Kestrel Wren",
+     "Port": "Ghent",
+     "Operation": "Discharging",
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "B/L Quantity (MT)": 18750,
+     "Currency": "EUR",
+     "Completed": "2026-09-17",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC309q3x7y8z9",
+    "createdTime": "2026-09-17T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3109",
+     "Quarter": "2026-Q3",
+     "Vessel": "Kestrel Tern",
+     "Port": "Rotterdam",
+     "Operation": "Discharging",
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "B/L Quantity (MT)": 20000,
+     "Currency": "EUR",
+     "Completed": "2026-09-23",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC310q3x7y8z9",
+    "createdTime": "2026-08-25T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3110",
+     "Quarter": "2026-Q3",
+     "Vessel": "Tarnby Ore",
+     "Port": "Narvik",
+     "Operation": "Loading",
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "B/L Quantity (MT)": 90000,
+     "Currency": "USD",
+     "Completed": "2026-08-31",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC311q3x7y8z9",
+    "createdTime": "2026-09-09T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3111",
+     "Quarter": "2026-Q3",
+     "Vessel": "Tarnby Fjord",
+     "Port": "Lulea",
+     "Operation": "Loading",
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "B/L Quantity (MT)": 82500,
+     "Currency": "USD",
+     "Completed": "2026-09-14",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   },
+   {
+    "id": "recPC312q3x7y8z9",
+    "createdTime": "2026-09-18T08:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-3112",
+     "Quarter": "2026-Q3",
+     "Vessel": "Tarnby Ore",
+     "Port": "Lulea",
+     "Operation": "Loading",
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "B/L Quantity (MT)": 75000,
+     "Currency": "USD",
+     "Completed": "2026-09-24",
+     "SOF Filed": true,
+     "Desk Status": "To compute"
+    }
+   }
+  ],
+  "tblLaytimeClm26": [
+   {
+    "id": "recLC201q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2101",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 94.1,
+     "Time Saved/Lost (hrs)": 13.9,
+     "Outcome": "Despatch",
+     "Amount": 4312.5,
+     "Currency": "USD",
+     "Owners Figure": 4312.5,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC202q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2102",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 107.0,
+     "Time Saved/Lost (hrs)": 11.0,
+     "Outcome": "Demurrage",
+     "Amount": 6875.0,
+     "Currency": "USD",
+     "Owners Figure": 8125.0,
+     "Status": "Disputed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": "Settled at Merrow figure."
+    }
+   },
+   {
+    "id": "recLC203q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2103",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 111.0,
+     "Time Saved/Lost (hrs)": 15.0,
+     "Outcome": "Demurrage",
+     "Amount": 11562.5,
+     "Currency": "USD",
+     "Owners Figure": 11562.5,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC204q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2104",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 85.0,
+     "Time Saved/Lost (hrs)": 5.0,
+     "Outcome": "Despatch",
+     "Amount": 1927.08,
+     "Currency": "USD",
+     "Owners Figure": 1927.08,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC205q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2105",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 105.0,
+     "Time Saved/Lost (hrs)": 9.0,
+     "Outcome": "Demurrage",
+     "Amount": 4500.0,
+     "Currency": "EUR",
+     "Owners Figure": 5750.0,
+     "Status": "Disputed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": "Settled at Merrow figure."
+    }
+   },
+   {
+    "id": "recLC206q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2106",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 71.0,
+     "Time Saved/Lost (hrs)": 13.0,
+     "Outcome": "Despatch",
+     "Amount": 3250.0,
+     "Currency": "EUR",
+     "Owners Figure": 3250.0,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC207q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2107",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 162.0,
+     "Time Saved/Lost (hrs)": 18.0,
+     "Outcome": "Demurrage",
+     "Amount": 18000.0,
+     "Currency": "USD",
+     "Owners Figure": 18000.0,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC208q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2108",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 109.0,
+     "Time Saved/Lost (hrs)": 11.0,
+     "Outcome": "Despatch",
+     "Amount": 5500.0,
+     "Currency": "USD",
+     "Owners Figure": 6750.0,
+     "Status": "Disputed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": "Settled at Merrow figure."
+    }
+   },
+   {
+    "id": "recLC209q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2109",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 125.0,
+     "Time Saved/Lost (hrs)": 5.0,
+     "Outcome": "Demurrage",
+     "Amount": 3125.0,
+     "Currency": "USD",
+     "Owners Figure": 3125.0,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   },
+   {
+    "id": "recLC210q2k4m5n6",
+    "createdTime": "2026-08-18T10:00:00.000Z",
+    "fields": {
+     "Call Ref": "PC-2110",
+     "Quarter": "2026-Q2",
+     "Laytime Used (hrs)": 131.0,
+     "Time Saved/Lost (hrs)": 11.0,
+     "Outcome": "Demurrage",
+     "Amount": 8479.17,
+     "Currency": "USD",
+     "Owners Figure": 8479.17,
+     "Status": "Agreed",
+     "Prepared By": "T. Wrenfield",
+     "Notes": ""
+    }
+   }
+  ],
+  "tblCharters2026": [
+   {
+    "id": "recCH2601ch3p4q5",
+    "createdTime": "2026-01-14T09:00:00.000Z",
+    "fields": {
+     "Charter": "MBC/ALD COA 2026",
+     "Owners": "Aldwick Shipping AS",
+     "Currency": "USD",
+     "Clauses": "14-24 laytime, demurrage, despatch",
+     "In Force": true
+    }
+   },
+   {
+    "id": "recCH2602ch3p4q5",
+    "createdTime": "2026-01-14T09:00:00.000Z",
+    "fields": {
+     "Charter": "MBC/HOL Grainvoy 2026",
+     "Owners": "Holmfirth Bulk Ltd",
+     "Currency": "USD",
+     "Clauses": "14-24 laytime, demurrage, despatch",
+     "In Force": true
+    }
+   },
+   {
+    "id": "recCH2603ch3p4q5",
+    "createdTime": "2026-01-14T09:00:00.000Z",
+    "fields": {
+     "Charter": "MBC/KES Fertvoy 2026",
+     "Owners": "Kestrel Maritime BV",
+     "Currency": "EUR",
+     "Clauses": "14-24 laytime, demurrage, despatch",
+     "In Force": true
+    }
+   },
+   {
+    "id": "recCH2604ch3p4q5",
+    "createdTime": "2026-01-14T09:00:00.000Z",
+    "fields": {
+     "Charter": "MBC/TAR Orevoy 2026",
+     "Owners": "Tarnby Carriers A/S",
+     "Currency": "USD",
+     "Clauses": "14-24 laytime, demurrage, despatch",
+     "In Force": true
+    }
+   }
+  ]
+ }
+}

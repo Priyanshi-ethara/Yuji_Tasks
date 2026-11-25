@@ -1,0 +1,86 @@
+{
+ "events": [
+  {
+   "id": "evt-mbc-01",
+   "calendar_id": "ines.vaarberg@merrowbulk.co.uk",
+   "summary": "Q3 laytime — desk work (Tobias on leave)",
+   "description": "Compute the twelve Q3 calls.",
+   "location": "Leith office",
+   "start": "2026-11-16T09:00:00+00:00",
+   "end": "2026-11-16T17:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ines.vaarberg@merrowbulk.co.uk",
+   "organizer": "ines.vaarberg@merrowbulk.co.uk",
+   "recurrence": null,
+   "visibility": "default"
+  },
+  {
+   "id": "evt-mbc-02",
+   "calendar_id": "ines.vaarberg@merrowbulk.co.uk",
+   "summary": "Finance: Q3 accrual from claims summary",
+   "description": "Priti posts the accrual.",
+   "location": "Teams",
+   "start": "2026-11-18T12:00:00+00:00",
+   "end": "2026-11-18T12:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ines.vaarberg@merrowbulk.co.uk",
+   "organizer": "ines.vaarberg@merrowbulk.co.uk",
+   "recurrence": null,
+   "visibility": "default"
+  },
+  {
+   "id": "evt-mbc-03",
+   "calendar_id": "ines.vaarberg@merrowbulk.co.uk",
+   "summary": "Owners' call — Aldwick (Ines only)",
+   "description": "After sign-off.",
+   "location": "Phone",
+   "start": "2026-11-19T10:00:00+00:00",
+   "end": "2026-11-19T11:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ines.vaarberg@merrowbulk.co.uk",
+   "organizer": "ines.vaarberg@merrowbulk.co.uk",
+   "recurrence": null,
+   "visibility": "default"
+  },
+  {
+   "id": "evt-mbc-04",
+   "calendar_id": "ines.vaarberg@merrowbulk.co.uk",
+   "summary": "Owners' call — Tarnby (Ines only)",
+   "description": "After sign-off.",
+   "location": "Phone",
+   "start": "2026-11-19T14:00:00+00:00",
+   "end": "2026-11-19T15:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ines.vaarberg@merrowbulk.co.uk",
+   "organizer": "ines.vaarberg@merrowbulk.co.uk",
+   "recurrence": null,
+   "visibility": "default"
+  }
+ ],
+ "calendars": [
+  {
+   "id": "ines.vaarberg@merrowbulk.co.uk",
+   "summary": "Ines Vaarberg",
+   "description": "Head of Claims",
+   "time_zone": "Europe/London",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "3"
+  }
+ ],
+ "attendees": {
+  "evt-mbc-03": [
+   {
+    "email": "ines.vaarberg@merrowbulk.co.uk",
+    "displayName": "Ines Vaarberg",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,241 @@
+{
+  "pytest": {
+    "score": 0.0,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.0,
+        "raw": 0.0,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 0 of 39, charged 0; missed 15: test_coal_loader_stood_down_in_gale_despatch_call, test_coal_loader_stood_down_in_gale_demurrage_call, test_cranes_laid_up_in_gale_discharge_call, test_ore_loader_stood_down_in_gale_outcome_turns, test_quarter_summary_money_lines, test_quarter_summary_counts, test_statements_of_facts_opened_before_their_claims, test_rain_closures_inside_other_stoppages_agreed_calls, test_rain_closures_inside_other_stoppages_disputed_calls, test_excepted_weekend_hours_per_charter, test_once_on_demurrage, test_disputes_for_owners_own_errors, test_no_dispute_where_owners_agree, test_one_claim_per_call_in_the_register_vocabulary, test_summary_written_after_the_claims_and_notes"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.0,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-port-weather-notes",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.19230769230769232,
+        "description": "[final answer] The reply says the port weather notes in the data folder (operations' daily weather lines for each port) describe the weather in the port area, not what stopped the work on board, so a rain day in those notes was not on its own taken as weather time.",
+        "reasoning": "`final_message.md` contains only \u201c(the agent produced no final message)\u201d, so it gives no explanation of the port weather notes."
+      },
+      {
+        "id": "2",
+        "name": "r-weather-sheet-closures-only",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11538461538461539,
+        "description": "[final answer] The reply says the agents' weather sheet (or the statements' weather footers) lists only hatch closures, so it is not on its own the record of which time the weather actually stopped the cargo work.",
+        "reasoning": "`final_message.md` contains no answer and therefore does not say that the weather sheet or footers list only hatch closures."
+      },
+      {
+        "id": "3",
+        "name": "r-clause17-test",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the charters' weather test it applied: time counts unless, and only for so long as, the weather actually prevents the loading or discharging (or, in the desk method's words, a minute is weather time only if, the weather apart, the cargo would have been worked).",
+        "reasoning": "No weather test is stated because `final_message.md` says \u201c(the agent produced no final message)\u201d."
+      },
+      {
+        "id": "4",
+        "name": "r-genuine-closures",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that a hatch closure for rain while the cargo work was going on (the work stopped when the hatches closed and resumed when they reopened) was taken as weather time for the period the hatches were closed.",
+        "reasoning": "There is no final-answer discussion of genuine rain-related hatch closures or how they were treated."
+      },
+      {
+        "id": "5",
+        "name": "r-hourly-figures",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply uses the statements' hourly cargo figures (nil or reduced hourly figures) as evidence of whether the cargo work actually stopped.",
+        "reasoning": "The absent final answer does not use nil or reduced hourly cargo figures as evidence."
+      },
+      {
+        "id": "6",
+        "name": "r-fog-continuing",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that fog remarks with the cargo work continuing (for example 'Fog patches \u2014 loading continues, visibility 800 m') were not taken as weather time.",
+        "reasoning": "There is no final-answer statement about excluding fog periods during which cargo work continued."
+      },
+      {
+        "id": "7",
+        "name": "r-ambient-weather-remarks",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that weather remarks recording no effect on the cargo work were not taken as weather time, naming at least one kind as an example: rain or showers 'reported in port', a weather report or forecast, 'barometer falling', or 'rain stopped \u2014 sky clearing'.",
+        "reasoning": "The final answer is absent, so it neither excludes ambient weather remarks nor names an example."
+      },
+      {
+        "id": "8",
+        "name": "r-light-rain-noise",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply explains that remarks of light rain, drizzle or showers with loading or discharging continuing were not taken as weather time.",
+        "reasoning": "There is no explanation in `final_message.md` concerning light rain, drizzle, or showers while work continued."
+      },
+      {
+        "id": "9",
+        "name": "r-kpi-dashboard",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the finance KPI dashboard draft was not taken as a record of weather time (or of the figures), because it is a draft built automatically from the agents' sheets.",
+        "reasoning": "The absent final answer does not discuss the finance KPI dashboard draft or why it was not evidence."
+      },
+      {
+        "id": "10",
+        "name": "r-meal-surveys-count",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that meal breaks, or surveys and inspections (for example an intermediate draft survey), are not exceptions under the charters, so laytime keeps running through them.",
+        "reasoning": "There is no final-answer statement that meal breaks, surveys, or inspections leave laytime running."
+      },
+      {
+        "id": "11",
+        "name": "r-shifting-rule",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that time shifting from the anchorage to the berth (anchor aweigh to all fast) is excluded from laytime only for the part that falls after laytime has started.",
+        "reasoning": "No shifting rule is stated in `final_message.md`."
+      },
+      {
+        "id": "12",
+        "name": "r-start-rule",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the laytime start rule it applied: laytime starts when the charter's turn time after notice of readiness has run out, or earlier at the commencement of cargo work if work began before then.",
+        "reasoning": "No laytime start rule is stated because the agent produced no final message."
+      },
+      {
+        "id": "13",
+        "name": "r-nor-any-time",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that under the charters notice of readiness may be tendered at any time of day or night and whether in berth or not (WIBON), so the turn time can run while the vessel waits at the anchorage.",
+        "reasoning": "The final answer does not mention NOR at any time of day or night, WIBON, or turn time running at anchorage."
+      },
+      {
+        "id": "14",
+        "name": "r-start-each-call",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply gives the date and time from which laytime counted.",
+        "reasoning": "No calls are reported at all, so dates and times from which laytime counted are missing for all twelve calls."
+      },
+      {
+        "id": "15",
+        "name": "r-exceptions-each-call",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which time other than weather it excepted from laytime (weekend or holiday hours, shifting) or that none was excepted, with the reason (for example the charter's clause).",
+        "reasoning": "No per-call exceptions or reasons are provided for any of the twelve calls."
+      },
+      {
+        "id": "16",
+        "name": "r-weather-each-call",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which weather time it took (the periods or minutes deducted, or that none was taken).",
+        "reasoning": "No per-call weather periods, deducted minutes, or statements that none was taken are provided."
+      },
+      {
+        "id": "17",
+        "name": "r-disputes-explained",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For every call the reply reports as disputed, it says what the owners did differently from Merrow (a reason for the difference, not only the two amounts).",
+        "reasoning": "The final answer identifies no disputed calls and gives no reasons for differences between owners and Merrow."
+      },
+      {
+        "id": "18",
+        "name": "r-owners-not-source",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the owners' laytime statements were used only to compare with Merrow's figure (the Owners Figure and Agreed or Disputed), not as evidence for Merrow's own figure.",
+        "reasoning": "There is no final-answer statement limiting owners\u2019 statements to comparison rather than evidence."
+      },
+      {
+        "id": "19",
+        "name": "r-totals-merrow-figures",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that its quarter totals are made up of Merrow's own figure for every call, the disputed calls included (not the owners' amounts).",
+        "reasoning": "No quarter totals are provided, and the final answer does not state that totals use Merrow\u2019s figures for every call."
+      },
+      {
+        "id": "20",
+        "name": "r-no-conversion",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply keeps the euro calls in EUR and gives its quarter totals per currency without converting between currencies.",
+        "reasoning": "No EUR calls or currency-specific quarter totals appear in the absent final answer, so the required no-conversion presentation is not explicit."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"r-port-weather-notes\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains only \u201c(the agent produced no final message)\u201d, so it gives no explanation of the port weather notes.\"},\"r-weather-sheet-closures-only\":{\"score\":\"no\",\"reasoning\":\"`final_message.md` contains no answer and therefore does not say that the weather sheet or footers list only hatch closures.\"},\"r-clause17-test\":{\"score\":\"no\",\"reasoning\":\"No weather test is stated because `final_message.md` says \u201c(the agent produced no final message)\u201d.\"},\"r-genuine-closures\":{\"score\":\"no\",\"reasoning\":\"There is no final-answer discussion of genuine rain-related hatch closures or how they were treated.\"},\"r-hourly-figures\":{\"score\":\"no\",\"reasoning\":\"The absent final answer does not use nil or reduced hourly cargo figures as evidence.\"},\"r-fog-continuing\":{\"score\":\"no\",\"reasoning\":\"There is no final-answer statement about excluding fog periods during which cargo work continued.\"},\"r-ambient-weather-remarks\":{\"score\":\"no\",\"reasoning\":\"The final answer is absent, so it neither excludes ambient weather remarks nor names an example.\"},\"r-light-rain-noise\":{\"score\":\"no\",\"reasoning\":\"There is no explanation in `final_message.md` concerning light rain, drizzle, or showers while work continued.\"},\"r-kpi-dashboard\":{\"score\":\"no\",\"reasoning\":\"The absent final answer does not discuss the finance KPI dashboard draft or why it was not evidence.\"},\"r-meal-surveys-count\":{\"score\":\"no\",\"reasoning\":\"There is no final-answer statement that meal breaks, surveys, or inspections leave laytime running.\"},\"r-shifting-rule\":{\"score\":\"no\",\"reasoning\":\"No shifting rule is stated in `final_message.md`.\"},\"r-start-rule\":{\"score\":\"no\",\"reasoning\":\"No laytime start rule is stated because the agent produced no final message.\"},\"r-nor-any-time\":{\"score\":\"no\",\"reasoning\":\"The final answer does not mention NOR at any time of day or night, WIBON, or turn time running at anchorage.\"},\"r-start-each-call\":{\"score\":\"no\",\"reasoning\":\"No calls are reported at all, so dates and times from which laytime counted are missing for all twelve calls.\"},\"r-exceptions-each-call\":{\"score\":\"no\",\"reasoning\":\"No per-call exceptions or reasons are provided for any of the twelve calls.\"},\"r-weather-each-call\":{\"score\":\"no\",\"reasoning\":\"No per-call weather periods, deducted minutes, or statements that none was taken are provided.\"},\"r-disputes-explained\":{\"score\":\"no\",\"reasoning\":\"The final answer identifies no disputed calls and gives no reasons for differences between owners and Merrow.\"},\"r-owners-not-source\":{\"score\":\"no\",\"reasoning\":\"There is no final-answer statement limiting owners\u2019 statements to comparison rather than evidence.\"},\"r-totals-merrow-figures\":{\"score\":\"no\",\"reasoning\":\"No quarter totals are provided, and the final answer does not state that totals use Merrow\u2019s figures for every call.\"},\"r-no-conversion\":{\"score\":\"no\",\"reasoning\":\"No EUR calls or currency-specific quarter totals appear in the absent final answer, so the required no-conversion presentation is not explicit.\"}}",
+    "usage": {
+      "input_tokens": 49980,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 32512,
+      "output_tokens": 1345,
+      "reasoning_output_tokens": 62,
+      "total_tokens": 51325,
+      "cost_usd": 0.10977680000000001,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 49980,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 32512,
+          "output_tokens": 1345,
+          "reasoning_output_tokens": 62,
+          "total_tokens": 51325,
+          "cost_usd": 0.10977680000000001
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.3aa7b2fc33e943bdb244749e8d453257.jsonl"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+ "spaces": [
+  {
+   "id": 99410,
+   "key": "CLM",
+   "name": "Claims Desk",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Merrow claims desk: method, quarter summaries, dispute practice",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "941001",
+   "type": "page",
+   "status": "current",
+   "title": "Claims Desk home",
+   "space_key": "CLM",
+   "parent_id": null,
+   "version": 4,
+   "body": "Home of the Merrow claims desk. Method: 'Laytime and demurrage — desk method (rev. 2026-03)'. Quarter summaries are child pages titled 'Laytime claims summary <year>-Q<n>'. Dispute notes live in Jira project LTD; claim records in the Airtable claims register.",
+   "created_by": "Ines Vaarberg",
+   "created_at": "2026-01-05T09:00:00Z"
+  },
+  {
+   "id": "941002",
+   "type": "page",
+   "status": "current",
+   "title": "Laytime and demurrage — desk method (rev. 2026-03)",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 3,
+   "body": "Laytime and demurrage — desk method (rev. 2026-03). Applies to every call where Merrow is charterer under the 2026 contracts.\n\n1. Sources. The charter party clauses (14-24) govern. The agents' statement of facts for the call, filed in Box (Merrow Claims / Statements of Facts / <quarter>), is the record of times. The B/L quantity is the one on the claims register (Port Calls). The owners' laytime statement is their position and is never a source for our figure.\n\n2. Laytime allowed. B/L quantity divided by the charter's daily rate, in days of 24 hours; work in minutes.\n\n3. Start. Turn time runs from the tender of NOR; laytime starts when it expires, unless cargo work started sooner, in which case from commencement (clause 15). If that moment falls in an excepted period, laytime starts when the excepted period ends.\n\n4. Excepted periods. Only the charter's exceptions interrupt laytime: the weekend and holiday hours where the charter excepts them (clause 16), shifting from anchor aweigh / letting go to all fast (clause 18), and weather under clause 17. Overlapping exceptions count once.\n\n5. Weather. Clause 17 of each charter governs: time counts unless, and only for so long as, weather actually prevents the cargo being worked. The test is one of cause: a minute is weather time only if, the weather apart, the cargo would have been worked in it. In the statements of facts it most often shows as the hatches being closed for rain and reopened when it clears. Light rain, showers or drizzle with work continuing are not deductions.\n\n6. Other stoppages. Stoppages for any other cause — a breakdown of terminal equipment, cargo not at the berth, stevedores, surveys, meal breaks, documents — are on Charterers' side under our charters and do not interrupt laytime (see the stevedoring and terminal note).\n\n7. End. Laytime ends at completion of loading or discharging (clause 19). Documents, final draft survey and sailing do not count.\n\n8. Once on demurrage. When the laytime allowed has been used up, all further time to completion is demurrage. None of the laytime exceptions (weather, weekends, holidays, shifting) applies to time on demurrage under our charters.\n\n9. Money. Demurrage = rate per day x minutes on demurrage / 1440. Despatch = half the demurrage rate x minutes of laytime saved / 1440. Round to cents (half up) at the end only. Currency as the charter says; never convert.\n\n10. Time used. Time used = laytime counted + time on demurrage. Time saved/lost = minutes on demurrage, or minutes of laytime saved. Record hours to two decimals.\n\n11. Agreement. Compare our amount with the owners' claimed amount (their laytime statement in the claims mailbox). Equal to the cent: Agreed. Any difference: Disputed, with a dispute note in Jira LTD.\n\n12. Communications. The desk never sends positions, statements or notes to owners, brokers or agents, and never touches invoices in Xero (see the communications policy).",
+   "created_by": "Ines Vaarberg",
+   "created_at": "2026-03-02T09:00:00Z"
+  },
+  {
+   "id": "941003",
+   "type": "page",
+   "status": "current",
+   "title": "Laytime claims summary 2026-Q1",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 2,
+   "body": "Calls: 8\nDemurrage USD: 41730.21\nDespatch USD: 3906.25\nDemurrage EUR: 0.00\nDespatch EUR: 2875.00\nDisputed calls: 2\n\nNotes: PC-1103 shifting between piers not excluded by owners; PC-1106 owners ignored the Saturday 12:00 exception. PC-1108 time-charter trip, not a laytime call. Prepared by T. Wrenfield, checked by I. Vaarberg.",
+   "created_by": "Tobias Wrenfield",
+   "created_at": "2026-05-19T09:00:00Z"
+  },
+  {
+   "id": "941004",
+   "type": "page",
+   "status": "current",
+   "title": "Laytime claims summary 2026-Q2",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 2,
+   "body": "Calls: 10\nDemurrage USD: 48041.67\nDespatch USD: 11739.58\nDemurrage EUR: 4500.00\nDespatch EUR: 3250.00\nDisputed calls: 3\n\n## Per call (as recorded in the claims register)\n\n| Call | Vessel | Outcome | Amount | Currency | Status |\n|---|---|---|---|---|---|\n| PC-2101 | Aldwick Star | Despatch | 4312.50 | USD | Agreed |\n| PC-2102 | Aldwick Fern | Demurrage | 6875.00 | USD | Disputed |\n| PC-2103 | Holmfirth Gale | Demurrage | 11562.50 | USD | Agreed |\n| PC-2104 | Holmfirth Grace | Despatch | 1927.08 | USD | Agreed |\n| PC-2105 | Kestrel Bay | Demurrage | 4500.00 | EUR | Disputed |\n| PC-2106 | Kestrel Wren | Despatch | 3250.00 | EUR | Agreed |\n| PC-2107 | Tarnby Ore | Demurrage | 18000.00 | USD | Agreed |\n| PC-2108 | Tarnby Fjord | Despatch | 5500.00 | USD | Disputed |\n| PC-2109 | Aldwick Rose | Demurrage | 3125.00 | USD | Agreed |\n| PC-2110 | Holmfirth Dawn | Demurrage | 8479.17 | USD | Agreed |\n\n## Notes\n- PC-2102: owners counted the shift from Riga anchorage to berth; settled at our figure on 2026-09-04.\n- PC-2105: owners ran laytime from NOR without the 12-hour turn time; settled at our figure.\n- PC-2108: owners stopped the clock at sailing instead of completion of loading; settled at our figure.\n- Weather: hatch closures for rain taken from the statements of facts as usual; no weather item disputed this quarter.\n- Totals are per currency; EUR is never converted for the summary.\n- Prepared by T. Wrenfield, checked by I. Vaarberg.",
+   "created_by": "Tobias Wrenfield",
+   "created_at": "2026-08-21T09:00:00Z"
+  },
+  {
+   "id": "941005",
+   "type": "page",
+   "status": "current",
+   "title": "Dispute notes — how the desk writes them",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 2,
+   "body": "A dispute note is a Jira issue in project LTD, one per call where the owners' amount differs from ours.\nSummary: 'Laytime dispute <call ref>'.\nDescription line 1: 'Call: <call ref>'. Line 2: 'Owners: <currency> <amount>'. Line 3: 'Merrow: <currency> <amount>'. Line 4: 'Outcome: <Demurrage or Despatch>' (ours). After line 4, free text: what the owners did differently, in a sentence or two.\nDo not raise a note where the figures agree. Do not send the note to anyone outside Merrow; the Head of Claims decides what goes to owners.\nExamples: LTD-3 (PC-2102), LTD-4 (PC-2105), LTD-5 (PC-2108).",
+   "created_by": "Ines Vaarberg",
+   "created_at": "2026-02-10T09:00:00Z"
+  },
+  {
+   "id": "941006",
+   "type": "page",
+   "status": "current",
+   "title": "Quarter close checklist (claims)",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 5,
+   "body": "Quarter close checklist (claims)\n- Every call on the claims register for the quarter has its statement of facts in Box.\n- Each call computed from the SOF and the charter; one claim record per call in Laytime Claims (Call Ref, Quarter, Laytime Used (hrs), Time Saved/Lost (hrs), Outcome, Amount, Currency, Owners Figure, Status).\n- Owners' figures taken from their laytime statements in the claims mailbox.\n- Dispute notes raised in LTD for every Disputed call.\n- Summary page 'Laytime claims summary <year>-Q<n>' in CLM with the six count/total lines, written when the claim records are complete.\n- Head of Claims signs off; only then do owners hear anything.",
+   "created_by": "Ines Vaarberg",
+   "created_at": "2026-01-20T09:00:00Z"
+  },
+  {
+   "id": "941007",
+   "type": "page",
+   "status": "current",
+   "title": "Owners and brokers — who talks to whom",
+   "space_key": "CLM",
+   "parent_id": "941001",
+   "version": 1,
+   "body": "Owners' claims departments write to claims@merrowbulk.co.uk. Brokers (Fairlead Chartering) chase figures on behalf of owners.\nRule: the desk reads and files; it does not reply. The Head of Claims replies to owners and brokers after sign-off, usually on a call.\nOwners' contacts: Aldwick — Ragnhild Saetre; Holmfirth — Dominic Pryce; Kestrel — Femke Aalders; Tarnby — Jesper Holck. Broker: Oliver Haskett, Nadia Varga.",
+   "created_by": "Ines Vaarberg",
+   "created_at": "2026-01-20T09:00:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "394001",
+   "page_id": "941002",
+   "name": "method",
+   "prefix": "global"
+  },
+  {
+   "id": "394002",
+   "page_id": "941004",
+   "name": "quarter-summary",
+   "prefix": "global"
+  },
+  {
+   "id": "394003",
+   "page_id": "941003",
+   "name": "quarter-summary",
+   "prefix": "global"
+  }
+ ],
+ "comments": [
+  {
+   "id": "294001",
+   "page_id": "941004",
+   "author": "Priti Halloran",
+   "body": "Accrual posted from these lines. Thanks.",
+   "created_at": "2026-08-21T15:00:00Z"
+  },
+  {
+   "id": "294002",
+   "page_id": "941002",
+   "author": "Tobias Wrenfield",
+   "body": "Added the minutes/rounding paragraph after the Varne Spirit settlement.",
+   "created_at": "2026-03-03T10:00:00Z"
+  }
+ ]
+}

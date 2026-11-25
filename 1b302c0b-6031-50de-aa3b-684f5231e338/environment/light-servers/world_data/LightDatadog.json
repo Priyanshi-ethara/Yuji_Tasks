@@ -1,0 +1,140 @@
+{
+ "monitors": [
+  {
+   "id": 46001,
+   "name": "Circuit LDN-KB-0417 line errors (Llanfair Mor cab 17)",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:access.crc_errors{circuit:ldn-kb-0417} > 50",
+   "message": "CRC error rate above threshold on LDN-KB-0417 since 2026-11-10. Customers on this circuit include acct 40-117604.",
+   "overall_state": "Alert",
+   "priority": 2,
+   "tags": [
+    "circuit:ldn-kb-0417",
+    "area:llanfair-mor"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-17T09:00:00+00:00"
+  },
+  {
+   "id": 46002,
+   "name": "Circuit LDN-AB-0233 line errors (Askham Bryn cab 3)",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:access.crc_errors{circuit:ldn-ab-0233} > 50",
+   "message": "No errors on LDN-AB-0233; sync at profile. Customers include acct 40-121993.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "circuit:ldn-ab-0233",
+    "area:askham-bryn"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-17T09:00:00+00:00"
+  },
+  {
+   "id": 46003,
+   "name": "Westerby exchange WK access availability",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:access.crc_errors{exchange:wk} > 50",
+   "message": "Recovered 2026-11-16 15:10 after WK-04.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "exchange:wk",
+    "area:westerby"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-17T09:00:00+00:00"
+  },
+  {
+   "id": 46004,
+   "name": "Hosted voice SBC call drops",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:access.crc_errors{service:hosted-voice} > 50",
+   "message": "Platform-wide call drop rate normal; single-site drops are site-side or circuit-side.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:hosted-voice"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-17T09:00:00+00:00"
+  },
+  {
+   "id": 46005,
+   "name": "Mobile SIM provisioning queue",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:access.crc_errors{service:mobile-core} > 50",
+   "message": "Backlog cleared 2026-11-17.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:mobile-core"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-17T09:00:00+00:00"
+  }
+ ],
+ "events": [
+  {
+   "id": 760001,
+   "title": "WK-04 Westerby exchange outage",
+   "text": "Total loss of access on WK 07:35-15:10.",
+   "alert_type": "error",
+   "priority": "normal",
+   "host": "wk-olt-01",
+   "tags": [
+    "exchange:wk"
+   ],
+   "date_happened": 1794814500
+  },
+  {
+   "id": 760002,
+   "title": "LDN-KB-0417 CRC errors",
+   "text": "Errors climbing on cab 17 circuit.",
+   "alert_type": "warning",
+   "priority": "normal",
+   "host": "lm-olt-02",
+   "tags": [
+    "circuit:ldn-kb-0417"
+   ],
+   "date_happened": 1794316500
+  }
+ ],
+ "hosts": [
+  {
+   "name": "wk-olt-01",
+   "up": true,
+   "apps": [
+    "olt"
+   ],
+   "sources": "agent",
+   "cpu_pct": 31.0,
+   "mem_pct": 44.0,
+   "last_reported": 1794906000
+  },
+  {
+   "name": "lm-olt-02",
+   "up": true,
+   "apps": [
+    "olt"
+   ],
+   "sources": "agent",
+   "cpu_pct": 28.5,
+   "mem_pct": 40.2,
+   "last_reported": 1794906000
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "lt-acc-net",
+   "title": "Access network health",
+   "description": "Exchanges, cabinets and circuits",
+   "layout_type": "ordered",
+   "author": "noor-haddad",
+   "widget_count": 9,
+   "is_read_only": true,
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-16T16:00:00+00:00"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "employees": {
+  "MBCE0001INES": {
+   "eid": "MBCE0001INES",
+   "name": "Ines Vaarberg",
+   "email": "ines.vaarberg@merrowbulk.co.uk",
+   "department": "Claims",
+   "role": "Head of Claims",
+   "hire_date": "2019-04-01",
+   "manager_id": "MBCE0006HEDD",
+   "status": "active"
+  },
+  "MBCE0002TOBI": {
+   "eid": "MBCE0002TOBI",
+   "name": "Tobias Wrenfield",
+   "email": "tobias.wrenfield@merrowbulk.co.uk",
+   "department": "Claims",
+   "role": "Claims Analyst",
+   "hire_date": "2019-04-01",
+   "manager_id": "MBCE0001INES",
+   "status": "active"
+  },
+  "MBCE0003CALL": {
+   "eid": "MBCE0003CALL",
+   "name": "Callum Dyrness",
+   "email": "callum.dyrness@merrowbulk.co.uk",
+   "department": "Chartering",
+   "role": "Chartering Manager",
+   "hire_date": "2019-04-01",
+   "manager_id": "MBCE0006HEDD",
+   "status": "active"
+  },
+  "MBCE0004PRIT": {
+   "eid": "MBCE0004PRIT",
+   "name": "Priti Halloran",
+   "email": "priti.halloran@merrowbulk.co.uk",
+   "department": "Finance",
+   "role": "Financial Controller",
+   "hire_date": "2019-04-01",
+   "manager_id": "MBCE0006HEDD",
+   "status": "active"
+  },
+  "MBCE0005SEFA": {
+   "eid": "MBCE0005SEFA",
+   "name": "Sefa Ndlovu",
+   "email": "sefa.ndlovu@merrowbulk.co.uk",
+   "department": "Operations",
+   "role": "Operations Manager",
+   "hire_date": "2019-04-01",
+   "manager_id": "MBCE0003CALL",
+   "status": "active"
+  },
+  "MBCE0006HEDD": {
+   "eid": "MBCE0006HEDD",
+   "name": "Hedda Lisle",
+   "email": "hedda.lisle@merrowbulk.co.uk",
+   "department": "Finance",
+   "role": "Chief Financial Officer",
+   "hire_date": "2019-04-01",
+   "manager_id": null,
+   "status": "active"
+  }
+ },
+ "leaves": {
+  "MBCL0001TOBI": {
+   "lid": "MBCL0001TOBI",
+   "employee_id": "MBCE0002TOBI",
+   "type": "vacation",
+   "start_date": "2026-11-16",
+   "end_date": "2026-11-27",
+   "days": 10.0,
+   "status": "approved",
+   "reason": "Annual leave."
+  }
+ },
+ "timesheets": {}
+}

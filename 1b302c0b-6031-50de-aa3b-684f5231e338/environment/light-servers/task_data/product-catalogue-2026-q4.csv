@@ -1,0 +1,23 @@
+product_tag,product,segment,description,pre_june_tag,status
+prod_fibre_home_150,Fibre Home 150,Residential,"Full-fibre broadband, 150 Mbps (guaranteed minimum 120)",prod_fttp_150,current
+prod_fibre_home_500,Fibre Home 500,Residential,"Full-fibre broadband, 500 Mbps (guaranteed minimum 400)",prod_fttp_500,current
+prod_fibre_home_900,Fibre Home 900,Residential,"Full-fibre broadband, 900 Mbps (guaranteed minimum 700)",prod_fttp_900,current
+prod_copper_bb,Copper Broadband,Residential,"Legacy ADSL/VDSL over copper, closed to new sales",prod_adsl,current
+prod_home_phone,Home Phone (digital voice),Residential,Landline delivered over the fibre router since the PSTN switch-off,prod_pstn,current
+prod_wifi_max,Wi-Fi Max,Residential,Mesh pods add-on for Fibre Home plans; pods are added from the Lumen app,prod_mesh,current
+prod_lumen_tv,Lumen TV,Residential,IPTV box and channel packs,prod_iptv,current
+prod_mobile_sim,Lumen Mobile SIM,Residential,SIM-only and the network side of handset plans,prod_sim,current
+prod_mobile_handset,Lumen Mobile Handset,Residential,"The handset supplied on a handset plan (device, warranty)",prod_handset,current
+prod_biz_fibre_300,Business Fibre 300,Business,"Business full-fibre, 300 Mbps",prod_bfttp_300,current
+prod_biz_fibre_1g,Business Fibre 1G,Business,"Business full-fibre, 1 Gbps",prod_bfttp_1g,current
+prod_biz_voip,Business Voice,Business,"Hosted VoIP lines, call divert, hunt groups, number porting",prod_bizvoice,current
+prod_biz_mobile,Business Mobile,Business,Business SIMs and devices,prod_bizsim,current
+prod_account_general,Account (no single product),Both,"The contact concerns the account or bill as a whole, not one product",prod_account,current
+,Fibre Home 70,Residential,"Withdrawn plan, customers migrated to Fibre Home 150 in 2025",prod_fttp_70,withdrawn
+,Lumen TV Classic box,Residential,Old set-top box; faults tagged prod_lumen_tv,prod_stb_classic,withdrawn
+,Business Broadband (copper),Business,Withdrawn; remaining lines tagged prod_copper_bb,prod_bizadsl,withdrawn
+,Mobile Broadband dongle,Residential,Withdrawn 2024; tag prod_mobile_sim,prod_dongle,withdrawn
+,Static IP add-on,Business,Add-on to Business Fibre; tag the fibre product,prod_staticip,folded
+,Lumen TV Sport boost,Residential,Channel boost; tag prod_lumen_tv,prod_tvsport,folded
+,Hunt group add-on,Business,Business Voice feature; tag prod_biz_voip,prod_huntgroup,folded
+,Home Phone Plus calls bundle,Residential,Calls bundle; tag prod_home_phone,prod_pstn_plus,folded

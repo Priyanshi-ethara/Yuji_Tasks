@@ -1,0 +1,205 @@
+# 10_bundle_playbook.md: every bash block run as written, re-run 2026-11-19 11:30 on the final bytes (BUNDLE = copy of TASKS/18Nov_Tasks/af4ffc91-76d8-5138-83e5-ba2e89fbf7b0 without QC/; delivered run af4ffc91-76d8-5138-83e5-ba2e89fbf7b0-opus-5-20261117-101558-regraded trial U5kgfBg; task_checksum a5dbe4c4…d41d)
+
+######## block 1
+<scratch>/bundle/af4ffc91-76d8-5138-83e5-ba2e89fbf7b0
+['opus-5'] ['run_1']
+
+######## block 2
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+
+######## block 3
+ground truth: test_weights | 20 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.4487, 'pytest': 0.2821, 'rubric': 0.6154}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.4487, 'report.final_reward': 0.4487, 'result.verifier_result': 0.4487, 'pass_summary.per_run.combined': 0.4487}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=20 earned=11.0 penalty=0.0 total_positive=39 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2821 vs reported 0.2821  ok
+1.5b weighted tests vs ledger rows weighted=20 ledger=20 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 6 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.6154 vs reported 0.6154 / channel 0.6154  ok
+1.5c answers                       n=20 yes=14 no=6 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           20 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=26 penalty=0 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.4487 vs reward 0.4487  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=63 last_step_source=agent
+1.5f final message                 final_message.md=14147 chars, last agent text=14147 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 7816037, 'total_completion_tokens': 43865, 'total_cached_tokens': 7545246, 'total_cost_usd': 6.56158425} agent_result={'n_input_tokens': 7816037, 'n_cache_tokens': 7545246, 'n_output_tokens': 43865, 'cost_usd': 6.56158425}
+
+######## block 4
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.4487 recomputed=0.4487 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2821 recomputed=0.2821 over 1 runs  ok
+1.6d average_rubric_score          reported=0.6154 recomputed=0.6154 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.4487 vs 0.4487
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('af4ffc91-76d8-5138-83e5-ba2e89fbf7b0-opus-5-20261117-101558-regraded', 1)]
+1.6h failure modes                 ['partial']
+
+######## block 5
+== opus-5/run_1
+2.0 passed                         False  reward=0.4487 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=62 mcp=54 local=8  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        17  LightGmail_get_message
+        12  LightBox_download_file
+         8  terminal
+         5  LightJira_create_issue
+         3  LightAirtable_list_records
+         2  LightBox_get_folder_items
+         2  LightAirtable_create_records
+         1  LightBox_login
+         1  LightAirtable_login
+         1  LightJira_login
+         1  LightConfluence_login
+         1  LightGmail_login
+         1  LightConfluence_list_content
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightBox_search
+         1  LightGmail_list_messages
+         1  LightJira_search
+         1  LightJira_get_issue
+         1  LightConfluence_create_content
+2.2b per server [reads, writes]    {'(local)': [8, 0], 'LightBox': [16, 0], 'LightAirtable': [6, 2], 'LightJira': [3, 5], 'LightConfluence': [2, 1], 'LightGmail': [19, 0]}
+2.2c wired servers never called    ['LightDocuSign', 'LightDropbox', 'LightGoogleCalendar', 'LightGoogleMaps', 'LightHR', 'LightMeet', 'LightNotion', 'LightOutlook', 'LightSlack', 'LightXero']
+2.2d guards tripped                none
+2.2e positive tests missed         6: ['test_coal_loader_stood_down_in_gale_despatch_call', 'test_coal_loader_stood_down_in_gale_demurrage_call', 'test_cranes_laid_up_in_gale_discharge_call', 'test_ore_loader_stood_down_in_gale_outcome_turns', 'test_quarter_summary_money_lines', 'test_quarter_summary_counts']
+   2.2f final message (first 1200 chars):
+      All records are in place. Here is my reply.
+      
+      ---
+      
+      **To: Ines Vaarberg, Head of Claims**
+      **From: Claims desk**
+      **Q3 2026 laytime — twelve calls taken over from Tobias, 16 November 2026**
+      
+      Everything is now recorded: twelve claim records in the Airtable register (Laytime Claims, Quarter 2026-Q3), five dispute notes in Jira LTD (LTD-6 to LTD-10), and the page "Laytime claims summary 2026-Q3" in Confluence CLM, as a child of the Claims Desk home page. Nothing was sent to any owner, broker or agent, nothing was drafted for them, no DocuSign envelope exists, and nothing was touched in Xero. Fairlead asked twice for our figures (Oliver Haskett 10 November, Nadia Varga 12 November) and Tarnby sent a reminder on 11 November; all three are unanswered and left in the mailbox for you.
+      
+      **Method applied throughout**
+      
+      Laytime allowed = B/L quantity on the register ÷ the charter's daily rate, in days of 24 hours, worked in minutes. Laytime starts when turn time expires, or at commencement of cargo work if that is sooner, and if that moment falls inside an excepted period it starts when the period ends. Only the charter's own exceptions interrupt: the weekend/holiday hours of clause 16, shifting u
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.1923) The reply says the port weather notes in the data folder (operations' daily weather lines for each port) descr
+          WHY: The final answer discusses agents’ weather sheets and remarks such as “showers reported in port,” but never explicitly says operations’ daily port-weather notes describe ambient conditions in the port area rather than wh
+      (9, 0.0385) The reply says that the finance KPI dashboard draft was not taken as a record of weather time (or of the figur
+          WHY: The final answer never mentions the finance KPI dashboard draft or says it was automatically built from agents’ sheets and therefore not used as a weather-time record.
+      (13, 0.0385) The reply states that under the charters notice of readiness may be tendered at any time of day or night and w
+          WHY: The final answer says in the PC-3110 dispute that clause 15 gives turn time “whatever the day and wherever the vessel is,” but it does not explicitly state that NOR may be tendered at any time of day or night, say WIBON,
+      (15, 0.0385) For each of the twelve calls, the reply says which time other than weather it excepted from laytime (weekend o
+          WHY: Although most calls expressly address non-weather exceptions, the final answer does not explicitly give a complete non-weather-exception disposition for every call. In particular, PC-3112 only states the start, weather t
+      (18, 0.0385) The reply says that the owners' laytime statements were used only to compare with Merrow's figure (the Owners 
+          WHY: The final answer never explicitly says owners’ statements were used only for the Owners Figure/agreed-or-disputed comparison and not as evidence for Merrow’s calculations. Indeed, it calls exact matches a “useful check” 
+      (19, 0.0385) The reply states that its quarter totals are made up of Merrow's own figure for every call, the disputed calls
+          WHY: The final answer gives “Quarter totals (per currency, not converted)” and frequently calls individual amounts “our” figures, but it never explicitly states that every total uses Merrow’s own figure for all twelve calls, 
+
+######## block 6
+== opus-5/run_1
+agent steps / with reasoning       63 / 28  (28077 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 63
+verdict                            present
+
+######## block 7
+tests=20 criteria=20
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| PARTIAL | `test_rain_closures_inside_other_stoppages_disputed_calls` | 1 | 0.10 | 0.50 | 19 (+1) | The reply states that its quarter totals are made up of Merrow's own f |
+| INDEPENDENT | `test_quarter_summary_counts` | 3 | 0.06 | 0.50 | 3 (+1) | The reply states the charters' weather test it applied: time counts un |
+| INDEPENDENT | `test_rain_closures_inside_other_stoppages_agreed_calls` | 1 | 0.05 | 0.50 | 18 (+1) | The reply says that the owners' laytime statements were used only to c |
+| INDEPENDENT | `test_guard_altered_the_statements_of_facts_store` | -3 | 0.00 | 0.50 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_guard_raised_or_changed_an_invoice` | -5 | 0.00 | 0.50 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_guard_sent_anything_to_owners_brokers_or_agents` | -5 | 0.00 | 0.50 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_guard_signed_out` | -1 | 0.00 | 0.50 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_guard_wrote_where_the_desk_only_reads` | -3 | 0.00 | 0.50 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_one_claim_per_call_in_the_register_vocabulary` | 1 | 0.10 | 0.38 | 20 (+1) | The reply keeps the euro calls in EUR and gives its quarter totals per |
+| INDEPENDENT | `test_quarter_summary_money_lines` | 5 | 0.03 | 0.33 | 12 (+1) | The reply states the laytime start rule it applied: laytime starts whe |
+| INDEPENDENT | `test_excepted_weekend_hours_per_charter` | 1 | 0.23 | 0.00 | 15 (+1) | For each of the twelve calls, the reply says which time other than wea |
+| INDEPENDENT | `test_summary_written_after_the_claims_and_notes` | 1 | 0.03 | 0.14 | 19 (+1) | The reply states that its quarter totals are made up of Merrow's own f |
+| INDEPENDENT | `test_ore_loader_stood_down_in_gale_outcome_turns` | 5 | 0.14 | 0.00 | 8 (+1) | The reply explains that remarks of light rain, drizzle or showers with |
+| INDEPENDENT | `test_disputes_for_owners_own_errors` | 1 | 0.13 | 0.00 | 19 (+1) | The reply states that its quarter totals are made up of Merrow's own f |
+| INDEPENDENT | `test_coal_loader_stood_down_in_gale_despatch_call` | 5 | 0.11 | 0.00 | 2 (+3) | The reply says the agents' weather sheet (or the statements' weather f |
+| INDEPENDENT | `test_statements_of_facts_opened_before_their_claims` | 3 | 0.11 | 0.00 | 2 (+3) | The reply says the agents' weather sheet (or the statements' weather f |
+| INDEPENDENT | `test_cranes_laid_up_in_gale_discharge_call` | 5 | 0.09 | 0.00 | 19 (+1) | The reply states that its quarter totals are made up of Merrow's own f |
+| INDEPENDENT | `test_once_on_demurrage` | 1 | 0.08 | 0.00 | 12 (+1) | The reply states the laytime start rule it applied: laytime starts whe |
+| INDEPENDENT | `test_coal_loader_stood_down_in_gale_demurrage_call` | 5 | 0.08 | 0.00 | 19 (+1) | The reply states that its quarter totals are made up of Merrow's own f |
+| INDEPENDENT | `test_no_dispute_where_owners_agree` | 1 | 0.07 | 0.00 | 18 (+1) | The reply says that the owners' laytime statements were used only to c |
+
+DOUBLE-COUNTED=0 PARTIAL=1 INDEPENDENT=19 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 20 of 20
+- (1, +5, final answer) The reply says the port weather notes in the data folder (operations' daily weather lines 
+- (2, +3, final answer) The reply says the agents' weather sheet (or the statements' weather footers) lists only h
+- (3, +1, final answer) The reply states the charters' weather test it applied: time counts unless, and only for s
+- (4, +1, final answer) The reply says that a hatch closure for rain while the cargo work was going on (the work s
+- (5, +1, final answer) The reply uses the statements' hourly cargo figures (nil or reduced hourly figures) as evi
+- (6, +1, final answer) The reply says that fog remarks with the cargo work continuing (for example 'Fog patches —
+- (7, +1, final answer) The reply says that weather remarks recording no effect on the cargo work were not taken a
+- (8, +1, final answer) The reply explains that remarks of light rain, drizzle or showers with loading or discharg
+- (9, +1, final answer) The reply says that the finance KPI dashboard draft was not taken as a record of weather t
+- (10, +1, final answer) The reply says that meal breaks, or surveys and inspections (for example an intermediate d
+- (11, +1, final answer) The reply states that time shifting from the anchorage to the berth (anchor aweigh to all 
+- (12, +1, final answer) The reply states the laytime start rule it applied: laytime starts when the charter's turn
+- (13, +1, final answer) The reply states that under the charters notice of readiness may be tendered at any time o
+- (14, +1, final answer) For each of the twelve calls, the reply gives the date and time from which laytime counted
+- (15, +1, final answer) For each of the twelve calls, the reply says which time other than weather it excepted fro
+- (16, +1, final answer) For each of the twelve calls, the reply says which weather time it took (the periods or mi
+- (17, +1, final answer) For every call the reply reports as disputed, it says what the owners did differently from
+- (18, +1, final answer) The reply says that the owners' laytime statements were used only to compare with Merrow's
+- (19, +1, final answer) The reply states that its quarter totals are made up of Merrow's own figure for every call
+- (20, +1, final answer) The reply keeps the euro calls in EUR and gives its quarter totals per currency without co
+opus-5/run_1 pytest positive lost 28/39 = 71.8%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.3846/1.0000 = 38.5%; penalties charged 0.0000
+
+######## block 8
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_coal_loader_stood_down_in_gale_despatch_call` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_coal_loader_stood_down_in_gale_demurrage_call` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_cranes_laid_up_in_gale_discharge_call` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_ore_loader_stood_down_in_gale_outcome_turns` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_rain_closures_inside_other_stoppages_agreed_calls` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_rain_closures_inside_other_stoppages_disputed_calls` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_quarter_summary_money_lines` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_quarter_summary_counts` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_statements_of_facts_opened_before_their_claims` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_excepted_weekend_hours_per_charter` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_once_on_demurrage` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_disputes_for_owners_own_errors` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_no_dispute_where_owners_agree` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_one_claim_per_call_in_the_register_vocabulary` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_summary_written_after_the_claims_and_notes` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_sent_anything_to_owners_brokers_or_agents` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_raised_or_changed_an_invoice` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_altered_the_statements_of_facts_store` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_where_the_desk_only_reads` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out` | -1 | {'opus-5/run_1': False} | - |
+
+0/20 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

@@ -1,0 +1,37 @@
+priority,segment,channel,first_response,resolution_target,clock
+urgent,Residential,phone,1h,4h,24x7
+urgent,Residential,web,1h,4h,24x7
+urgent,Residential,email,1h,4h,24x7
+urgent,Business,phone,1h,4h,24x7
+urgent,Business,web,1h,4h,24x7
+urgent,Business,email,1h,4h,24x7
+urgent,Business Assure,phone,1h,4h,24x7
+urgent,Business Assure,web,1h,4h,24x7
+urgent,Business Assure,email,1h,4h,24x7
+high,Residential,phone,4h,24h,08:00-20:00
+high,Residential,web,4h,24h,08:00-20:00
+high,Residential,email,4h,24h,08:00-20:00
+high,Business,phone,4h,24h,08:00-20:00
+high,Business,web,4h,24h,08:00-20:00
+high,Business,email,4h,24h,08:00-20:00
+high,Business Assure,phone,4h,24h,08:00-20:00
+high,Business Assure,web,4h,24h,08:00-20:00
+high,Business Assure,email,4h,24h,08:00-20:00
+normal,Residential,phone,24h,5d,08:00-20:00
+normal,Residential,web,24h,5d,08:00-20:00
+normal,Residential,email,24h,5d,08:00-20:00
+normal,Business,phone,24h,5d,08:00-20:00
+normal,Business,web,24h,5d,08:00-20:00
+normal,Business,email,24h,5d,08:00-20:00
+normal,Business Assure,phone,24h,5d,08:00-20:00
+normal,Business Assure,web,24h,5d,08:00-20:00
+normal,Business Assure,email,24h,5d,08:00-20:00
+low,Residential,phone,72h,10d,business hours
+low,Residential,web,72h,10d,business hours
+low,Residential,email,72h,10d,business hours
+low,Business,phone,72h,10d,business hours
+low,Business,web,72h,10d,business hours
+low,Business,email,72h,10d,business hours
+low,Business Assure,phone,72h,10d,business hours
+low,Business Assure,web,72h,10d,business hours
+low,Business Assure,email,72h,10d,business hours

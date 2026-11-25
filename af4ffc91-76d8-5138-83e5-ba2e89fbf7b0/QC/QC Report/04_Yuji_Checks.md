@@ -1,0 +1,31 @@
+# Yuji checks: af4ffc91-76d8-5138-83e5-ba2e89fbf7b0 (W08 laytime-demurrage-statement, STATIC)
+
+## VERDICT: PASS (15/15 items PASS, 0 FAIL)
+
+These checks follow `yuji_checks_image_analysis.md` item by item, on the delivered bundle
+`TASKS/18Nov_Tasks/af4ffc91-76d8-5138-83e5-ba2e89fbf7b0`. The run is `trajectories/opus-5/run_1` (job `…-opus-5-20261117-101558-regraded`, trial U5kgfBg; regraded on the final FIX3_18 bytes, 2026-11-18 round 3), task_checksum `a5dbe4c4…d41d`.
+
+## General checks (1-8)
+
+| # | Check | Result | Evidence |
+|---|---|---|---|
+| 1 | Schema / task structure symmetric across tasks | PASS | All 20 bundles in 18Nov_Tasks have the same top level, `environment instruction.md solution task.toml tests` (20 of 20 identical). This bundle's tests/ holds 11 entries, and it also carries `trajectories/` (its one run) and `QC/`. Structure QC S1-S5 found 0 BLOCKER/MAJOR/MINOR (01_Structure.md). |
+| 2 | Rubric `judge.toml`: weights, instruction-following rubrics, structure | PASS | The authoring `tests/judge.toml` has 20 criteria. It was rewritten 2026-11-18 in round 2 (independent review) and round 3 (confirming review, FIX3_18): no criterion names a call, total or decision pytest grades or states a rule only one graded call or group carries, and there are no penalties. Weights are {+5, +3, +1} only: one 5, one 3 and eighteen 1s, +26 in total, largest item 5 (< 13). The built `tests/reward/rubric/judge.toml` keeps `source_weight`; its `weight` is normalised by the harness (0.1923 = 5/26, 0.1154 = 3/26, 0.0385 = 1/26). Per 02_Ruthless C5, every criterion traces to a bullet of the reply the instruction asks for: the basis (start, exceptions, weather entries taken or not, with reasons), the owners' differences, the worksheet departure and the totals per currency. Categories: reasoning_quality 11, factual_accuracy 5, instruction_following 4 (start and weather time per call, a reason per dispute, no conversion). All target final_answer. |
+| 3 | Testcases semantic, no hard-coding unless the prompt states it, weights ±1/3/5, no always-failing test | PASS | `test_weights.json` values are {−5, −3, −1, 1, 3, 5}. Expected values come from `oracle.json["reported"]` via `KEY()`. Ruthless §1c: no rubric figure is hard-coded in test_outputs.py. Playbook §5: 0 of 20 tests flagged, and no assert or return line carries a rubric figure. No test always fails: the judged oracle passes 15/15 positives (39/39) and the nop passes 0. |
+| 4 | `ctrf.json`: pytest only passed or failed | PASS | run_1 `verifier/ctrf.json` statuses are `passed` 9 and `failed` 11; summary `pending 0, skipped 0, other 0`. Under `pass_charges`, the 5 guards are "failed" (not tripped), and 6 positives are missed. |
+| 5 | Oracle (1 or > 0.95) and nop (0) run | PASS | Judged harbor runs on the delivered bytes (`/tmp/qc/oracle_nop_20261119_112548`, copied to QC/Oracle run and QC/Nop run): oracle pytest 1.0 / rubric 1.0 / reward 1.0; nop 0.0 / 0.0 / 0.0. Judge gpt-5.6-sol via codex. Both carry checksum `a5dbe4c4…d41d…`, the same as the Opus run. |
+| 6 | Graded correctly over pytest and rubric; combined score correct | PASS | Playbook §1.5. Pytest is 11/39 = 0.2821 (recompute ok, 0 charged), and a local replay with kit `grade_local.py` gives the same value. Rubric is Σ weight·value = 0.6154: 16/26 positives, with no penalties; the recompute is ok. The judge said no to r-port-weather-notes (5), r-kpi-dashboard, r-nor-any-time, r-exceptions-each-call, r-owners-not-source and r-totals-merrow-figures (1 each). 0.5·0.2821 + 0.5·0.6154 = 0.44872, reported as 0.4487, the same in all four files (spread 0.0). |
+| 7 | No answer leaks in the bundle | PASS | `environment/Dockerfile` COPYs only `state_capture.py`. The right figures (PC-3101 5,000.00, PC-3103 7,187.50, PC-3109 3,687.50, PC-3112 1,166.67, totals 70,255.21 / 8,916.67 / 9,812.50, with and without separators) occur in none of task_data/, world_data/, light-servers/software/ or instruction.md. They appear only on the verifier/solution side (tests/oracle.json, solution/, task.toml), which the agent cannot reach (mode `separate`). There are no `/Users/` paths in task_data, world_data or instruction.md. The run shows no grader path in any tool call (playbook §2.5). |
+| 8 | Task is doable; run on Harbor before delivery | PASS | The judged harbor oracle scores 1.0. The Opus 5 run is a full harbor agent run: openhands-sdk 1.59.0, 62 tool calls (54 MCP), no exception, 0 tool errors. |
+
+## File-specific checks (1-7)
+
+| # | File | Result | Evidence |
+|---|---|---|---|
+| 1 | Trajectory: schema version, not truncated, final message, tokens, step ids | PASS | `schema_version` is ATIF-v1.5 and `session_id` is harbor-session. 65 steps, step_id 1…65 contiguous; the last step is an `agent` step with text. `final_message.md` (14,147 chars) equals the last agent text. `final_metrics`: 7,816,037 prompt / 43,865 completion / 7,545,246 cached tokens, $6.56. No timeout or max-iteration exception. |
+| 2 | `reward.json`: only the final combined reward | PASS | `trajectories/opus-5/run_1/verifier/reward.json` = `{"reward": 0.4487}`. The channels stay in report.json and reward-details.json. |
+| 3 | `config.json`: reasoning effort high | PASS | `agent = {'name': 'openhands-sdk', 'model_name': 'anthropic/claude-opus-5', 'kwargs': {'reasoning_effort': 'high'}}`. |
+| 4 | `report.json`: judge model 5.6 Sol, tokens, cost | PASS | `judge = {'ran': True, 'transport': 'codex', 'model': 'gpt-5.6-sol', 'criteria': 20, …}`. Usage: 36,663 input / 2,481 output / 39,144 total tokens, `cost_usd` 0.1387 (litellm_estimate). |
+| 5 | `result.json` / reward-details / report.json: paths masked | PASS | `/Users/` occurs 0 times in result.json, report.json, config.json, reward-details.json, trajectory.json, grade_report.json and judge.json. result.json shows `trial_uri` and `task_id.path` as `***`. |
+| 6 | `task.toml`: author aligned with the task | PASS | `authors = [{ name = "Priyanshi Joshi", email = "priyanshi.joshi@ethara.ai" }]`, the only author. `authoring_date = "2026-11-18"`. |
+| 7 | `task.toml`: only L4 | PASS | `capability_level = "L4"` appears once, with one level. `target_failure = "wrong-value-written"` and `failure_mechanism` (distractor-saturated logs; wind stand-downs on terminal order are weather time) match ROSTER5 card W08. |

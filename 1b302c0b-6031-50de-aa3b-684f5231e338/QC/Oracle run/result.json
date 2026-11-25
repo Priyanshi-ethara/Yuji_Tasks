@@ -1,0 +1,51 @@
+{
+    "id": "9b45b067-3513-4123-8949-9ad738432c26",
+    "started_at": "2026-11-19T11:22:44.783297",
+    "updated_at": "2026-11-19T11:24:18.876972",
+    "finished_at": "2026-11-19T11:24:18.876972",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "oracle__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "pytest": 1.0,
+                        "reward": 1.0,
+                        "rubric": 1.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "pytest": {
+                        "1.0": [
+                            "1b302c0b-6031-50de-aa3b-684f5231__eUzxrA5"
+                        ]
+                    },
+                    "rubric": {
+                        "1.0": [
+                            "1b302c0b-6031-50de-aa3b-684f5231__eUzxrA5"
+                        ]
+                    },
+                    "reward": {
+                        "1.0": [
+                            "1b302c0b-6031-50de-aa3b-684f5231__eUzxrA5"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

@@ -1,0 +1,244 @@
+{
+ "spaces": [
+  {
+   "id": 77101,
+   "key": "DESK",
+   "name": "Service Desk",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Lumen Telecom service desk: procedures, queues, Desk Quality notes.",
+     "representation": "plain"
+    }
+   }
+  },
+  {
+   "id": 77102,
+   "key": "DESKADM",
+   "name": "Lumen Desk Administration",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "How the Lumen Desk instance is set up, maintained by Desk Tooling.",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "520001",
+   "type": "page",
+   "status": "current",
+   "title": "Service Desk - home",
+   "space_key": "DESK",
+   "parent_id": null,
+   "version": 4,
+   "body": "Service Desk - home\nProcedures for the Lumen Telecom service desk. Desk Quality runs the weekly audit and recategorisation batches (see 'How Desk Quality runs a recategorisation batch'), publishes a queue health note per batch under 'Queue health notes', and owns the Ticket Categorisation Guide (edition 4, in force since 1 September 2026; the guide and its Annex B are kept in the Desk Quality folder).",
+   "created_by": "Marisol Teague",
+   "created_at": "2026-03-03T09:00:00Z"
+  },
+  {
+   "id": "520002",
+   "type": "page",
+   "status": "current",
+   "title": "How Desk Quality runs a recategorisation batch",
+   "space_key": "DESK",
+   "parent_id": "520001",
+   "version": 3,
+   "body": "How Desk Quality runs a recategorisation batch\n1. The weekly audit flags misfiled open tickets in the Desk Quality base (Audit flags), one batch per week.\n2. The categoriser recategorises every flagged ticket to the Ticket Categorisation Guide in force: type, product tag, priority, contact-reason tag. Tickets stay open with the owning team; Desk Quality never solves, closes or merges a ticket and never writes to the customer.\n3. One row per ticket goes into the Recategorisation log (Desk Quality base): Ticket, Batch, Type, Product, Priority, Contact reason, Logged by.\n4. The queue health note for the batch is published as a child page of 'Queue health notes' in this space once the batch is finished.\n5. Colleagues' drafts and the audit flags are inputs, not the record; the guide decides.",
+   "created_by": "Marisol Teague",
+   "created_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": "520003",
+   "type": "page",
+   "status": "current",
+   "title": "Queue health notes",
+   "space_key": "DESK",
+   "parent_id": "520001",
+   "version": 2,
+   "body": "Queue health notes\nOne note per recategorisation batch, newest last. Each note gives the batch size and the type and priority mix of the batch as the tickets are held after recategorisation, plus anything the desk should know.",
+   "created_by": "Marisol Teague",
+   "created_at": "2026-06-01T09:00:00Z"
+  },
+  {
+   "id": "520004",
+   "type": "page",
+   "status": "current",
+   "title": "Queue health - 2026-11-04",
+   "space_key": "DESK",
+   "parent_id": "520003",
+   "version": 1,
+   "body": "Queue health - 2026-11-04\nBatch: 14 tickets recategorised\nType mix: question 4 · incident 7 · problem 0 · task 3\nPriority mix: urgent 0 · high 4 · normal 8 · low 2\nNotes: two pre-June product tags still turning up on phone-logged tickets; front line reminded. Three owed actions (installs) moved out of the fault queue.",
+   "created_by": "Tobias Renwick",
+   "created_at": "2026-11-04T16:30:00Z"
+  },
+  {
+   "id": "520005",
+   "type": "page",
+   "status": "current",
+   "title": "Queue health - 2026-11-11",
+   "space_key": "DESK",
+   "parent_id": "520003",
+   "version": 1,
+   "body": "Queue health - 2026-11-11\nBatch: 12 tickets recategorised\nType mix: question 4 · incident 5 · problem 0 · task 3\nPriority mix: urgent 1 · high 2 · normal 8 · low 1\nNotes: one Business Assure outage ticket corrected to urgent; one porting ticket moved from incident to task.",
+   "created_by": "Tobias Renwick",
+   "created_at": "2026-11-11T16:45:00Z"
+  },
+  {
+   "id": "520006",
+   "type": "page",
+   "status": "current",
+   "title": "Self-service team - what we pick up",
+   "space_key": "DESK",
+   "parent_id": "520001",
+   "version": 2,
+   "body": "Self-service team - what we pick up\nThe self-service team works the Residential enquiries view: question tickets on residential organisations. Business enquiries stay with the business desk. Faults, owed actions (tasks) and NOC parents are never on our worklist. We answer at standard urgency.",
+   "created_by": "Carys Llewellyn",
+   "created_at": "2026-03-02T10:00:00Z"
+  },
+  {
+   "id": "520007",
+   "type": "page",
+   "status": "current",
+   "title": "Priority Assistance - desk quick card",
+   "space_key": "DESK",
+   "parent_id": "520001",
+   "version": 2,
+   "body": "Priority Assistance - desk quick card\nWho: customers on the Priority Assistance register (held on the Salesforce contact: Priority Assistance flag, category, date registered). Includes business account holders where the register says so (for example a sole trader living at the premises).\nWhat we owe: a callback within 4 hours on any contact, and High priority at least on every ticket (categorisation guide 5.3).\nNever mention the register to third parties.",
+   "created_by": "Marisol Teague",
+   "created_at": "2026-02-10T09:00:00Z"
+  },
+  {
+   "id": "520008",
+   "type": "page",
+   "status": "current",
+   "title": "Business Assure - desk quick card",
+   "space_key": "DESK",
+   "parent_id": "520001",
+   "version": 1,
+   "body": "Business Assure - desk quick card\nBusiness accounts with a Business Assure contract (Salesforce account flag; organisation tag ba_contract) get one priority step up on incidents (guide 5.2): a normal incident becomes high, a high incident becomes urgent. Enquiries and owed actions are not uplifted.",
+   "created_by": "Marisol Teague",
+   "created_at": "2026-02-10T09:30:00Z"
+  },
+  {
+   "id": "520101",
+   "type": "page",
+   "status": "current",
+   "title": "Lumen Desk administration - home",
+   "space_key": "DESKADM",
+   "parent_id": null,
+   "version": 2,
+   "body": "Lumen Desk administration - home\nDesk Tooling maintains the hosted Lumen Desk instance. Start with the instance configuration page (fields, storage, triggers, automations). Change requests go to the TOOL project in Jira. Admins: Femi Adeyemo (primary), Marisol Teague (deputy for Desk Quality views).",
+   "created_by": "Femi Adeyemo",
+   "created_at": "2026-03-03T09:00:00Z"
+  },
+  {
+   "id": "520102",
+   "type": "page",
+   "status": "current",
+   "title": "Lumen Desk - instance configuration",
+   "space_key": "DESKADM",
+   "parent_id": "520101",
+   "version": 18,
+   "body": "Lumen Desk - instance configuration\nOwner: Desk Tooling (Femi Adeyemo). This page is the record of how the hosted Lumen Desk instance is set up: ticket fields, field storage, business rules (triggers), time-based automations and integrations. Changes go through the TOOL project; this page is updated in place on the day a change goes live (last change: 18 November 2026, TOOL-503).\n\n1. Ticket fields\n- Status: new, open, pending, hold, solved, closed. Solved and closed are set by the owning team only; closed tickets cannot be reopened.\n- Type: question, incident, problem, task (the platform's four values; the categorisation guide says which applies).\n- Priority: urgent (P1), high (P2), normal (P3, standard urgency), low (P4). The SLA policy reads the priority held on the ticket.\n- Assignee: an agent; groups are managed in the platform console.\n- Requester: the customer who raised the ticket, a Lumen Desk user kept in step with their Salesforce contact.\n- Organisation: one organisation per Lumen account (name + account number). A ticket belongs to the account of the customer who raised it: whenever a ticket is saved, Lumen Desk files it under its requester's organisation (TOOL-503), and everything else on this page - triggers, views, the SLA policy, reporting - reads the organisation the ticket is filed under. Organisation tags carry the segment (seg_res for residential plans, seg_bus for business plans, whatever the account name suggests), ba_contract for Business Assure, and acct_<number>.\n- Drop-down fields: Product and Contact reason. On this platform a drop-down value is stored as a ticket tag (prod_..., cr_...), so the tag list is where they live; the agent workspace shows them as tags.\n\n2. Field storage\n- Tags are lowercase; a space becomes an underscore.\n- The hosted platform holds a tag of up to 24 characters. On save, every character after the 24th is dropped. No error or warning is returned. (Platform limit, TOOL-388.)\n- Comments: public comments are emailed to the requester; internal notes are not. A comment added through an update is public unless it is marked internal.\n\n3. Business rules (triggers)\nTriggers run on every save of a ticket - an agent update, a comment, an API call - once the save has been committed, top to bottom in the order below. The acknowledgement an agent or API client receives for an update reflects the ticket as submitted; the ticket as held (what a fresh view of the ticket, the queues, the SLA policy and reporting see) includes whatever the save changed (TOOL-455).\nT-01 Notify requester of receipt - on creation by email or web, sends the acknowledgement email. No field changes.\nT-02 Notify assignee on assignment - email to the new assignee. No field changes.\nT-03 Outage linking notification - tickets tagged noc_<incident> notify the NOC shift lead once. No field changes.\nT-05 Business Assure SLA policy - organisations tagged ba_contract are measured against the Business Assure SLA policy. No field changes.\nT-07 VIP notification - organisations tagged vip notify the account manager. No field changes.\nT-09 Welsh language rota - tickets tagged lang_cy notify the Welsh-speaking rota by email. No field changes.\nT-11 Self-service standardisation (since 2 March 2026, TOOL-412) - residential enquiries are answered from the standard queue by the self-service team, so a residential enquiry is never held above standard urgency. Conditions: type is question; the ticket's organisation is tagged seg_res; priority is high or urgent. Action: priority set to normal. Organisations tagged seg_bus are not in scope.\nT-12 Pending reminder - pending tickets with no update for 5 days email the requester. No field changes.\nT-14 CSAT survey - on solve, sends the satisfaction survey (wording refreshed 1 October 2026). No field changes.\n\n4. Automations (time-based, run by the platform overnight)\nA-01 Close solved tickets after 4 days. A-02 Reminder on hold tickets after 10 days (email only). A-03 Escalation email for urgent tickets unassigned after 30 minutes. None of these changes type, priority or tags.\n\n5. Integrations\nSalesforce: users and organisations sync nightly (names, account numbers, segment tag); a requester's organisation is the account their Salesforce contact belongs to. Airtable: the Desk Quality base reads ticket numbers only. Reporting: the monthly reporting pack reads type, priority, tags and organisation as held on the ticket at month end.\n",
+   "created_by": "Femi Adeyemo",
+   "created_at": "2026-03-03T09:30:00Z"
+  },
+  {
+   "id": "520103",
+   "type": "page",
+   "status": "current",
+   "title": "Lumen Desk - views and queues",
+   "space_key": "DESKADM",
+   "parent_id": "520101",
+   "version": 3,
+   "body": "Lumen Desk - views and queues\nViews used by the desk (built in the platform console):\n- Residential enquiries (self-service worklist): type question, organisation tagged seg_res, status below solved.\n- Business enquiries: type question, organisation tagged seg_bus.\n- Faults by priority: type incident, sorted by priority then age.\n- Owed actions: type task, grouped by assignee; engineer visits, ports, installs and callbacks live here.\n- NOC parents: type problem.\n- Unclassified: no prod_ tag or no cr_ tag.\nQueues follow the views. The SLA clock follows the priority held on the ticket: urgent 1 hour first response, high 4 hours, normal 24 hours, low 72 hours (business hours for low).",
+   "created_by": "Femi Adeyemo",
+   "created_at": "2026-03-02T09:00:00Z"
+  },
+  {
+   "id": "520104",
+   "type": "page",
+   "status": "current",
+   "title": "Lumen Desk change log 2026",
+   "space_key": "DESKADM",
+   "parent_id": "520101",
+   "version": 8,
+   "body": "Lumen Desk change log 2026 (Desk Tooling)\n2026-01-12 T-07 VIP notification added.\n2026-03-02 T-11 Self-service standardisation live with the residential self-service portal (TOOL-412).\n2026-04-16 TOOL-455 closed: update acknowledgement shows the submitted values; documented on the instance configuration page.\n2026-05-20 T-09 Welsh language rota notification (TOOL-473).\n2026-06-16 Product tag migration complete: pre-June prod_ tags replaced on open tickets as they are worked; catalogue Q4 names.\n2026-07-02 TOOL-388 closed Won't Do: tag length is a platform limit; Desk Quality to use short forms where needed.\n2026-10-01 T-14 CSAT wording refreshed (TOOL-470).\n2026-10-28 Macro 'Outage - holding (internal)' added (TOOL-481).\n2026-11-18 TOOL-503 live: a ticket is filed under its requester's organisation on every save.",
+   "created_by": "Femi Adeyemo",
+   "created_at": "2026-01-12T09:00:00Z"
+  },
+  {
+   "id": "520105",
+   "type": "page",
+   "status": "current",
+   "title": "Agent macros catalogue",
+   "space_key": "DESKADM",
+   "parent_id": "520101",
+   "version": 5,
+   "body": "Agent macros catalogue\n- Outage - holding (internal): adds an internal note linking the ticket to the NOC parent. Customer SMS goes from the NOC.\n- Billing - refund confirmed (internal): internal note with the refund reference.\n- Engineer visit booked (internal): internal note with the slot.\n- Move home - install date (internal): internal note with the install date at the new address.\n- Priority Assistance callback logged (internal): internal note recording the callback.\nNo macro sends a public reply; public replies are written by the owning team.",
+   "created_by": "Femi Adeyemo",
+   "created_at": "2026-10-28T09:00:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": "620001",
+   "page_id": "520102",
+   "author": "tobias.renwick",
+   "body": "Does T-11 touch business accounts too? Asking for the sole traders.",
+   "created_at": "2026-03-04T10:00:00Z"
+  },
+  {
+   "id": "620002",
+   "page_id": "520102",
+   "author": "femi.adeyemo",
+   "body": "Only organisations tagged seg_res - and the segment tag follows the plan, not the account name. A sole trader on a Home plan is seg_res.",
+   "created_at": "2026-03-04T10:40:00Z"
+  },
+  {
+   "id": "620003",
+   "page_id": "520005",
+   "author": "marisol.teague",
+   "body": "Thanks Tobias - reviewed.",
+   "created_at": "2026-11-12T09:00:00Z"
+  },
+  {
+   "id": "620004",
+   "page_id": "520102",
+   "author": "marisol.teague",
+   "body": "For categorisers: a residential enquiry the guide puts above standard urgency cannot be held as a question, so Desk Quality files it as a task (the follow-up we owe), which T-11 does not touch. Contact reasons whose full tag is longer than the platform keeps go in their Annex B short form.",
+   "created_at": "2026-07-03T09:15:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "720001",
+   "page_id": "520102",
+   "name": "lumen-desk",
+   "prefix": "global"
+  },
+  {
+   "id": "720002",
+   "page_id": "520102",
+   "name": "configuration",
+   "prefix": "global"
+  },
+  {
+   "id": "720003",
+   "page_id": "520003",
+   "name": "queue-health",
+   "prefix": "global"
+  },
+  {
+   "id": "720004",
+   "page_id": "520002",
+   "name": "desk-quality",
+   "prefix": "global"
+  }
+ ]
+}

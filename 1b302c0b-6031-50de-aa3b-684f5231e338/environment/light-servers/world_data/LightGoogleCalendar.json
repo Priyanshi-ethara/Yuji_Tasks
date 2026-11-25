@@ -1,0 +1,147 @@
+{
+ "calendars": [
+  {
+   "id": "field-ops@lumentelecom.example",
+   "summary": "Field operations",
+   "description": "Engineer installs and repairs",
+   "time_zone": "Europe/London",
+   "access_role": "reader",
+   "primary": false,
+   "color_id": "4"
+  },
+  {
+   "id": "dq.analyst@lumentelecom.example",
+   "summary": "Desk Quality Analyst",
+   "description": "Primary calendar",
+   "time_zone": "Europe/London",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "1"
+  }
+ ],
+ "events": [
+  {
+   "id": "lt-ev-01",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "Install - Doherty, 4 Larch Close (acct 40-128840)",
+   "description": "New install for a home move. Rescheduled by field ops from 12 Nov (engineer capacity).",
+   "location": "",
+   "start": "2026-11-26T08:00:00+00:00",
+   "end": "2026-11-26T13:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-02",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "Install - Asante, 9 Ferry Road (acct 40-130276)",
+   "description": "New install for a home move, booked 3 Nov, unchanged.",
+   "location": "",
+   "start": "2026-11-24T08:00:00+00:00",
+   "end": "2026-11-24T13:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-03",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "Repair - Bose, replace fibre wall socket (acct 40-127019)",
+   "description": "Socket damaged; service working.",
+   "location": "",
+   "start": "2026-11-20T08:00:00+00:00",
+   "end": "2026-11-20T13:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-04",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "Repair - Bevan, cab 17 circuit (acct 40-117604)",
+   "description": "Network team on LDN-KB-0417; no home visit needed unless errors persist.",
+   "location": "",
+   "start": "2026-11-19T09:00:00+00:00",
+   "end": "2026-11-19T12:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-05",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "WK-04 splice repair (exchange)",
+   "description": "Exchange entry duct splice.",
+   "location": "",
+   "start": "2026-11-16T08:00:00+00:00",
+   "end": "2026-11-16T15:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-06",
+   "calendar_id": "field-ops@lumentelecom.example",
+   "summary": "Install - Quayle (acct 40-114418)",
+   "description": "Completed.",
+   "location": "",
+   "start": "2026-11-17T08:00:00+00:00",
+   "end": "2026-11-17T12:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "field-ops@lumentelecom.example",
+   "organizer": "field-ops@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "lt-ev-07",
+   "calendar_id": "dq.analyst@lumentelecom.example",
+   "summary": "Recategorisation batch 2026-11-18",
+   "description": "Batch from the W46 audit flags.",
+   "location": "",
+   "start": "2026-11-18T09:00:00+00:00",
+   "end": "2026-11-18T17:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "marisol.teague@lumentelecom.example",
+   "organizer": "marisol.teague@lumentelecom.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "attendees": {
+  "lt-ev-07": [
+   {
+    "email": "marisol.teague@lumentelecom.example",
+    "displayName": "Marisol Teague",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "dq.analyst@lumentelecom.example",
+    "displayName": "Desk Quality Analyst",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ]
+ }
+}

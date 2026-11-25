@@ -1,0 +1,103 @@
+{
+  "report": "Claims KPI dashboard \u2014 Q3 2026 (draft, auto-built from agents' sheets)",
+  "built": "2026-11-09T07:00:00Z",
+  "built_by": "finance-bi pipeline v3",
+  "currency_rule": "no conversion; totals per currency",
+  "totals": {
+    "demurrage_usd": "68982.63",
+    "despatch_usd": "7567.71",
+    "demurrage_eur": "2641.67",
+    "despatch_eur": "9145.83"
+  },
+  "calls": [
+    {
+      "call_ref": "PC-3101",
+      "outcome": "Despatch",
+      "amount": "3984.38",
+      "currency": "USD",
+      "weather_hours_deducted": "4.17"
+    },
+    {
+      "call_ref": "PC-3102",
+      "outcome": "Demurrage",
+      "amount": "8750.00",
+      "currency": "USD",
+      "weather_hours_deducted": "3.17"
+    },
+    {
+      "call_ref": "PC-3103",
+      "outcome": "Demurrage",
+      "amount": "9270.83",
+      "currency": "USD",
+      "weather_hours_deducted": "1.25"
+    },
+    {
+      "call_ref": "PC-3104",
+      "outcome": "Demurrage",
+      "amount": "6552.08",
+      "currency": "USD",
+      "weather_hours_deducted": "1.50"
+    },
+    {
+      "call_ref": "PC-3105",
+      "outcome": "Demurrage",
+      "amount": "10920.14",
+      "currency": "USD",
+      "weather_hours_deducted": "3.83"
+    },
+    {
+      "call_ref": "PC-3106",
+      "outcome": "Demurrage",
+      "amount": "22739.58",
+      "currency": "USD",
+      "weather_hours_deducted": "4.00"
+    },
+    {
+      "call_ref": "PC-3107",
+      "outcome": "Demurrage",
+      "amount": "2641.67",
+      "currency": "EUR",
+      "weather_hours_deducted": "3.92"
+    },
+    {
+      "call_ref": "PC-3108",
+      "outcome": "Despatch",
+      "amount": "6125.00",
+      "currency": "EUR",
+      "weather_hours_deducted": "1.17"
+    },
+    {
+      "call_ref": "PC-3109",
+      "outcome": "Despatch",
+      "amount": "3020.83",
+      "currency": "EUR",
+      "weather_hours_deducted": "3.42"
+    },
+    {
+      "call_ref": "PC-3110",
+      "outcome": "Demurrage",
+      "amount": "9750.00",
+      "currency": "USD",
+      "weather_hours_deducted": "3.75"
+    },
+    {
+      "call_ref": "PC-3111",
+      "outcome": "Despatch",
+      "amount": "3583.33",
+      "currency": "USD",
+      "weather_hours_deducted": "3.00"
+    },
+    {
+      "call_ref": "PC-3112",
+      "outcome": "Demurrage",
+      "amount": "1000.00",
+      "currency": "USD",
+      "weather_hours_deducted": "2.50"
+    }
+  ],
+  "notes": [
+    "weather hours = hatch closures listed by agents",
+    "owners' claims not yet reconciled",
+    "draft \u2014 not for circulation outside finance"
+  ]
+}

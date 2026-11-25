@@ -1,0 +1,375 @@
+{
+ "users": [
+  {
+   "id": "U0LTMT",
+   "name": "marisol",
+   "real_name": "Marisol Teague",
+   "email": "marisol.teague@lumentelecom.example",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTTR",
+   "name": "tobias",
+   "real_name": "Tobias Renwick",
+   "email": "tobias.renwick@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTFA",
+   "name": "femi",
+   "real_name": "Femi Adeyemo",
+   "email": "femi.adeyemo@lumentelecom.example",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTCL",
+   "name": "carys",
+   "real_name": "Carys Llewellyn",
+   "email": "carys.llewellyn@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTJO",
+   "name": "josh",
+   "real_name": "Josh Okoro",
+   "email": "josh.okoro@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTPS",
+   "name": "priti",
+   "real_name": "Priti Shah",
+   "email": "priti.shah@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTNH",
+   "name": "noor",
+   "real_name": "Noor Haddad",
+   "email": "noor.haddad@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0LTDQ",
+   "name": "dq.analyst",
+   "real_name": "Desk Quality Analyst",
+   "email": "dq.analyst@lumentelecom.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "C0LTDQ",
+   "name": "desk-quality",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Recategorisation batches, audits, queue health",
+   "purpose": "Recategorisation batches, audits, queue health",
+   "creator": "U0LTMT",
+   "created": 1740992400,
+   "num_members": 5
+  },
+  {
+   "id": "C0LTTOOL",
+   "name": "desk-tooling",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Lumen Desk changes and admin notices",
+   "purpose": "Lumen Desk changes and admin notices",
+   "creator": "U0LTFA",
+   "created": 1740992400,
+   "num_members": 8
+  },
+  {
+   "id": "C0LTSS",
+   "name": "self-service",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Self-service team: residential enquiries worklist",
+   "purpose": "Self-service team: residential enquiries worklist",
+   "creator": "U0LTCL",
+   "created": 1740992400,
+   "num_members": 3
+  },
+  {
+   "id": "C0LTNOC",
+   "name": "noc-bulletins",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Network operations bulletins for the desk",
+   "purpose": "Network operations bulletins for the desk",
+   "creator": "U0LTNH",
+   "created": 1740992400,
+   "num_members": 5
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTMT"
+  },
+  {
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTTR"
+  },
+  {
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTDQ"
+  },
+  {
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTCL"
+  },
+  {
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTFA"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTMT"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTTR"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTDQ"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTJO"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTPS"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTNH"
+  },
+  {
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTCL"
+  },
+  {
+   "channel_id": "C0LTSS",
+   "user_id": "U0LTCL"
+  },
+  {
+   "channel_id": "C0LTSS",
+   "user_id": "U0LTMT"
+  },
+  {
+   "channel_id": "C0LTSS",
+   "user_id": "U0LTDQ"
+  },
+  {
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTNH"
+  },
+  {
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTJO"
+  },
+  {
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTPS"
+  },
+  {
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTDQ"
+  },
+  {
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTMT"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1772438700.000000",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA",
+   "text": "T-11 (self-service standardisation) went live this morning with the residential self-service portal. Details are on the instance configuration page in DESKADM.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1772439600.000001",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTPS",
+   "text": "Does that change anything for us on the front line?",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1772439840.000002",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA",
+   "text": "Not for logging - keep categorising to the guide. The config page has the detail.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1781631000.000003",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA",
+   "text": "Product tag migration finished: every product tag now has its prod_ name from the Q4 catalogue. Old tags stay on closed tickets; recategorise open ones as you touch them.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1790932200.000004",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA",
+   "text": "Monthly admin digest is out (mail). Main change: T-14 CSAT wording and the outage holding macro.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794816120.000005",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTJO",
+   "text": "WK-04 tickets are flooding in - is there a macro for the holding reply?",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794816360.000006",
+   "channel_id": "C0LTTOOL",
+   "user_id": "U0LTFA",
+   "text": "Yes, 'Outage - holding (internal)'. Internal note only, the customer SMS goes from the NOC.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794847200.000007",
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTMT",
+   "text": "W46 audit done: 28 tickets flagged for the 2026-11-18 batch, they're in the Desk Quality base (Audit flags).",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794928200.000008",
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTTR",
+   "text": "I've had a first go at all 28 - draft's in the shared folder (recat-draft-trenwick). Mostly type fixes and the new product tags; PA customers bumped to High per 5.3.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794929520.000009",
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTCL",
+   "text": "From Tobias's draft that's 10 questions landing on the self-service worklist after the batch - we'll staff Thursday for 10.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794931320.000010",
+   "channel_id": "C0LTDQ",
+   "user_id": "U0LTMT",
+   "text": "Thanks both. The draft is Tobias's working, not the record - the batch goes to the guide. Note under Queue health notes as usual.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794929700.000011",
+   "channel_id": "C0LTSS",
+   "user_id": "U0LTCL",
+   "text": "Heads-up team: expecting ~10 residential and business enquiries from the Desk Quality batch on Thursday.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794474000.000012",
+   "channel_id": "C0LTSS",
+   "user_id": "U0LTCL",
+   "text": "Reminder: the worklist shows Question tickets only. Anything filed as a Task stays with the owning team.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794814860.000013",
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTNH",
+   "text": "WK-04: Westerby exchange - total loss of service for fibre and voice customers on the exchange since 07:35. Parent ticket 48156.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794841920.000014",
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTNH",
+   "text": "WK-04 resolved 15:10. Customer tickets linked to 48156 stay open until the customer confirms.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794481200.000015",
+   "channel_id": "C0LTNOC",
+   "user_id": "U0LTNH",
+   "text": "Circuit LDN-KB-0417 (Llanfair Mor) raising CRC errors since 10 Nov; network team engaged.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ],
+ "team": {
+  "id": "T0LUMEN",
+  "name": "Lumen Telecom",
+  "domain": "lumen-telecom"
+ }
+}

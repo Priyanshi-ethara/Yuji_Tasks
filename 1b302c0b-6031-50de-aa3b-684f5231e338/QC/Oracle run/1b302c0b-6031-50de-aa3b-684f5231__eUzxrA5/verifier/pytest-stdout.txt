@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 20 items
+
+test_outputs.py::test_price_change_enquiry_is_held_at_its_assistance_priority PASSED [  5%]
+test_outputs.py::test_pendant_enquiry_is_held_at_its_assistance_priority PASSED [ 10%]
+test_outputs.py::test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority PASSED [ 15%]
+test_outputs.py::test_sports_channels_enquiry_is_held_at_its_assistance_priority PASSED [ 20%]
+test_outputs.py::test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority PASSED [ 25%]
+test_outputs.py::test_queue_health_note_type_mix_matches_the_batch PASSED [ 30%]
+test_outputs.py::test_queue_health_note_priority_mix_matches_the_batch PASSED [ 35%]
+test_outputs.py::test_stables_and_household_tickets_follow_the_requesters_accounts PASSED [ 40%]
+test_outputs.py::test_practice_tickets_follow_the_requesters_accounts PASSED [ 45%]
+test_outputs.py::test_long_contact_reasons_are_held_whole PASSED         [ 50%]
+test_outputs.py::test_held_values_confirmed_from_the_desk_itself PASSED  [ 55%]
+test_outputs.py::test_types_and_priorities_of_the_other_tickets PASSED   [ 60%]
+test_outputs.py::test_products_and_reasons_of_the_other_tickets PASSED   [ 65%]
+test_outputs.py::test_other_tags_and_the_assignee_are_kept_on_every_ticket PASSED [ 70%]
+test_outputs.py::test_log_and_note_bookkeeping PASSED                    [ 75%]
+test_outputs.py::test_guard_changed_the_status_of_or_deleted_a_ticket PASSED [ 80%]
+test_outputs.py::test_guard_wrote_to_a_customer PASSED                   [ 85%]
+test_outputs.py::test_guard_wrote_outside_the_job PASSED                 [ 90%]
+test_outputs.py::test_guard_changed_a_ticket_outside_the_batch PASSED    [ 95%]
+test_outputs.py::test_guard_signed_out PASSED                            [100%][ctrf] 20 tests -> /logs/verifier/ctrf.json
+
+
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+============================== 20 passed in 0.10s ==============================

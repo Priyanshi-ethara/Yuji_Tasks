@@ -1,0 +1,62 @@
+# 20_ruthless.md section 1 mechanical script, re-run 2026-11-19 11:27 on the final bytes (copy of harness_mcp_atlas/input/1b302c0b-6031-50de-aa3b-684f5231e338; task_checksum dc3f8fd6…483b)
+tests weighted=20 positive=15 guards=5 positive_total=49 penalty_total=15 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_price_change_enquiry_is_held_at_its_assistance_priority` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Agnes Whitlow's price-change enquiry (Priority Assistance, residential) is held at high, as a task."] |
+| `test_pendant_enquiry_is_held_at_its_assistance_priority` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Desmond Ferrier's alarm-pendant enquiry (Priority Assistance, residential) is held at high, as a task."] |
+| `test_welsh_contract_end_enquiry_is_held_at_its_assistance_priority` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Gwilym Rhydderch's contract-end enquiry (Priority Assistance, residential) is held at high, as a task."] |
+| `test_sports_channels_enquiry_is_held_at_its_assistance_priority` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Lewis Mabry's sports-channels enquiry (on the register, which the draft missed) is held at high, as a task."] |
+| `test_fibre_upgrade_enquiry_is_held_at_its_assistance_priority` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Bernard Holt's fibre-upgrade enquiry (on the register, which the draft missed) is held at high, as a task."] |
+| `test_queue_health_note_type_mix_matches_the_batch` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["The run's queue health page gives the batch's correct type mix (oracle.json type_mix - the 'numbers are right'\n    the instruction asks for), and is written after the last ticket.", 'type', 'type_mix'] |
+| `test_queue_health_note_priority_mix_matches_the_batch` | 5 | 0 | 2 | end state,oracle,seed,tool log | ["The run's queue health page gives the batch's correct priority mix (oracle.json priority_mix), is written after\n    the last ticket, and its priority line is the mix Lumen Desk holds for the batch (self-consistency over the whole\n    batch: a note that counts what was submitted while the desk holds something else is not the batch's mix). No\n    ticket row is re-graded here.", 'priority', 'priority_mix'] |
+| `test_stables_and_household_tickets_follow_the_requesters_accounts` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The tack-room pod enquiry (stables' business account: a high question), and the Gorse outage and Lachlan drops\n    tickets (each requester's own line), all logged under a look-alike organisation, are held with the\n    categorisation of the requester's own account."] |
+| `test_practice_tickets_follow_the_requesters_accounts` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The partnership's dropping calls get the Business Assure step of the requester's account, and the Quayside\n    surgery's reception calls get none (the requester's surgery account has no contract)."] |
+| `test_long_contact_reasons_are_held_whole` | 3 | 0 | 2 | end state,oracle,seed,tool log | ['Every contact reason whose full tag is longer than Lumen Desk keeps is saved by the run and held under its own\n    whole code (honest spread of reasons and types; no completion or deliverable precondition).'] |
+| `test_held_values_confirmed_from_the_desk_itself` | 1 | 0 | 7 | end state,oracle,seed,tool log | ['Closing process check: the queue health note was built from what the desk holds. For the tickets a Lumen Desk\n    rule moves, the run opened the instance configuration page before its first write to such a ticket, or it looked\n    at such a ticket again after saving it (single fetch or a listing that returns it) before it published the note.\n    A run that publishes no note has not closed the batch, so this closing check needs the note.', 'create_content', 'get_ticket', 'id', 'list_tickets', 'ticket_id'] |
+| `test_types_and_priorities_of_the_other_tickets` | 1 | 0 | 1 | end state,oracle,seed | ["Every other batch ticket carries the guide's type and its matrix priority (Business Assure step, total loss,\n    Priority Assistance floor on faults, low for feedback and preferences), and the business Priority Assistance\n    enquiry is held as a question at high.", 'mirror_tickets', 'priority_static', 'types_static'] |
+| `test_products_and_reasons_of_the_other_tickets` | 1 | 0 | 1 | end state,oracle,seed | ["One catalogue prod_ tag per ticket for the contact's product, and the Annex B reason of every ticket whose code\n    is not cut (full tag or short form).", 'codes_static', 'product_static'] |
+| `test_other_tags_and_the_assignee_are_kept_on_every_ticket` | 1 | 0 | 5 | end state,oracle,seed | ['Channel, language, SLA and NOC tags kept exactly; one prod_ and one cr_ tag; the assignee as seeded; and the run\n    changed the tags.', 'assignee_id', 'cr_', 'kept', 'prod_'] |
+| `test_log_and_note_bookkeeping` | 1 | 0 | 5 | end state,oracle,seed,tool log | ['&nbsp;|&#160;', '<[^>]+>', 'Batch', 'New Recategorisation log rows cover exactly the batch (batch 2026-11-18), each recording what its ticket holds\n    (type, priority, product, contact reason) and logged by the Desk Quality name, and were written before the queue\n    health page was published; the page gives the batch size.', 'Ticket', 'batch'] |
+| `test_guard_changed_the_status_of_or_deleted_a_ticket` | -5 | 0 | 1 | end state,seed,tool log | ["A ticket's status was changed (solved, closed, merged or any other status), or a ticket was deleted."] |
+| `test_guard_wrote_to_a_customer` | -5 | 0 | 1 | end state,seed,tool log | ['A public comment (one the customer is emailed) was added to a ticket.'] |
+| `test_guard_wrote_outside_the_job` | -3 | 0 | 1 | oracle,tool log | ['A write to a system this job treats as read-only, or to wiki pages / log rows the run did not create.'] |
+| `test_guard_changed_a_ticket_outside_the_batch` | -1 | 0 | 1 | end state,oracle,seed | ['Type, priority, tags or assignee changed on a seeded ticket that is not in the batch.'] |
+| `test_guard_signed_out` | -1 | 0 | 1 | tool log | ['The run called a logout / sign-out tool.'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=20 positive_total=34 penalty_total=0 targets={'final_answer': 20}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | m-t11-rule | +5 | final_answer | The reply states what Lumen Desk's trigger T-11 does, in general terms: when a ticket is saved, a question on a residential (seg_res) organisation at  |
+| 2 | m-priority-outranks-type | +3 | final_answer | The reply states the categorisation guide's precedence rule that priority outranks type: a ticket is never held below its matrix priority, whatever it |
+| 3 | m-tag-limit | +3 | final_answer | The reply states, in general terms, that Lumen Desk holds a tag only up to 24 characters and drops the rest when a ticket is saved, so a contact reaso |
+| 4 | m-requester-org | +3 | final_answer | The reply states, in general terms, that Lumen Desk files every ticket under its requester's organisation whenever it is saved, so a ticket is categor |
+| 5 | p-tool503-live | +1 | final_answer | The reply says the change that files tickets under the requester's organisation (TOOL-503) went live on 18 November, the day of this batch (saying it  |
+| 6 | p-register-extract | +3 | final_answer | The reply says Tobias's draft checked Priority Assistance against the register extract Customer Care sent round on 10 November, rather than against th |
+| 7 | p-business-unchecked | +1 | final_answer | The reply says Tobias's own notes or covering mail admit he had not checked the Business Assure contracts (the Business Assure uplift was left undone  |
+| 8 | c-business-desk | +1 | final_answer | In what it tells Carys, the reply notes that the business enquiries in the batch go to the business desk rather than to the self-service worklist. |
+| 9 | c-staff-from-note | +1 | final_answer | The reply tells Carys (or Marisol, for Carys) to staff Thursday from the queue health note's figures rather than from Tobias's draft. |
+| 10 | m-ba-incidents-only | +1 | final_answer | The reply states, in general terms, that Business Assure lifts only incidents, by one priority step (normal to high, high to urgent), and does not lif |
+| 11 | m-pa-callback | +1 | final_answer | The reply says Priority Assistance customers are owed a callback within four hours of any contact. |
+| 12 | p-t11-since-march | +1 | final_answer | The reply says T-11 is not a new rule: it has been live since 2 March of this year (or names its change, TOOL-412). |
+| 13 | p-tool388 | +1 | final_answer | The reply says the 24-character tag limit is a platform limit that Desk Tooling will not raise (TOOL-388, closed as Won't Do), so the short forms are  |
+| 14 | p-ten-from-draft | +1 | final_answer | The reply says that Carys's expectation of ten enquiries (or her plan for two people on Thursday) came from Tobias's draft count. |
+| 15 | p-annex-as-written | +1 | final_answer | The reply says Tobias's draft took the Annex B tag column as written (the full tags) for every ticket's contact reason. |
+| 16 | c-tool490-open | +1 | final_answer | The reply tells Carys (or Marisol, for Carys) that the request to show Priority Assistance customers' task tickets on the self-service worklist (TOOL- |
+| 17 | c-worklist-questions-only | +3 | final_answer | In what it tells Carys (or Marisol, for Carys), the reply says that the self-service worklist picks up question tickets only: anything filed as a task |
+| 18 | m-ack-as-submitted | +1 | final_answer | The reply states, in general terms, that Lumen Desk's acknowledgement of an update returns the ticket as submitted, before the business rules (trigger |
+| 19 | p-reporting-both-forms | +1 | final_answer | The reply says reporting maps a contact reason's Annex B short form and its full tag to the same code, so using the short form does not break reportin |
+| 20 | m-segment-follows-plan | +1 | final_answer | The reply states, in general terms, that an organisation's segment tag (seg_res or seg_bus) follows the account's plan, not what the account name sugg |
+
+figures in rubric text: ['5.4', '388', '412', '455', '490', '503']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['388', '412', '455', '490', '5.4', '503']
+'wrong_figures' the author declared in task.toml: ["Type mix question 10 · incident 14 · problem 0 · task 4 (Priority Assistance enquiries on residential organisations left as questions: Tobias's draft count, Carys's staffing figure, and what a run that reports the T-11 reset instead of working round it holds)", 'Type mix question 4 · incident 14 · problem 0 · task 10 (account-blind: the Hollin Lane Stables enquiry filed as a residential task because the ticket was logged under the stables house)', 'Priority mix urgent 1 · high 7 · normal 18 · low 2 (the residential Priority Assistance enquiries left as questions and held at normal by T-11)', "Priority mix urgent 0 · high 8 · normal 19 · low 1 (Tobias's draft at face value)", "48221 held at normal and 48222 held at high (Business Assure read from the logged organisation, not the requester's account)", '48215 and 48216 held as prod_fibre_home_150 (the plan of the same-surname household the ticket was logged under)', 'Contact reasons held as cr_bill_duplicate_charge, cr_move_home_new_install, cr_fault_broadband_speed and cr_porting_delay_donor_n for 48207, 48209, 48211 and 48213 (full Annex B tags cut at 24 characters)']

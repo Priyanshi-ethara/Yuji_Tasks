@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="11" skipped="0" tests="20" time="0.250" timestamp="2026-11-19T05:59:07.530419+00:00" hostname="d0649d494a49"><testcase classname="test_outputs" name="test_coal_loader_stood_down_in_gale_despatch_call" time="0.012"><failure message="AssertionError: PC-3101: claim record {'Amount': 3984.38, 'Call Ref': 'PC-3101', 'Currency': 'USD', 'Laytime Used (hrs)': 95.25, 'Outcome': 'Despatch', 'Owners Figure': 3984.38, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 12.75}&#10;assert False&#10; +  where False = _claim_right('PC-3101')">def test_coal_loader_stood_down_in_gale_despatch_call():
+        """First wind call (coal loading, despatch): the stand-down the terminal ordered while the wind was at gale force
+        is weather time, so the claim record carries the larger despatch and the dispute note our figure."""
+&gt;       return _wind_call_right(0)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:393: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:386: in _wind_call_right
+    return _call_right_after_its_sof(_listed("wind_calls", position))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ref = 'PC-3101'
+
+    def _call_right_after_its_sof(ref):
+        assert _sof_opened_first(ref), f"{ref}: its statement of facts was not opened before its claim record"
+&gt;       assert _claim_right(ref), f"{ref}: claim record {(_claim_rows().get(ref) or [None])[0]}"
+E       AssertionError: PC-3101: claim record {'Amount': 3984.38, 'Call Ref': 'PC-3101', 'Currency': 'USD', 'Laytime Used (hrs)': 95.25, 'Outcome': 'Despatch', 'Owners Figure': 3984.38, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 12.75}
+E       assert False
+E        +  where False = _claim_right('PC-3101')
+
+test_outputs.py:379: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_coal_loader_stood_down_in_gale_demurrage_call" time="0.002"><failure message="AssertionError: PC-3103: claim record {'Amount': 9270.83, 'Call Ref': 'PC-3103', 'Currency': 'USD', 'Laytime Used (hrs)': 110.83, 'Outcome': 'Demurrage', 'Owners Figure': 10937.5, 'Quarter': '2026-Q3', 'Status': 'Disputed', 'Time Saved/Lost (hrs)': 14.83}&#10;assert False&#10; +  where False = _claim_right('PC-3103')">def test_coal_loader_stood_down_in_gale_demurrage_call():
+        """Second wind call (coal loading, demurrage, owners also wrong on another point): claim record right, dispute
+        note with our figure."""
+&gt;       return _wind_call_right(1)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:399: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:386: in _wind_call_right
+    return _call_right_after_its_sof(_listed("wind_calls", position))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ref = 'PC-3103'
+
+    def _call_right_after_its_sof(ref):
+        assert _sof_opened_first(ref), f"{ref}: its statement of facts was not opened before its claim record"
+&gt;       assert _claim_right(ref), f"{ref}: claim record {(_claim_rows().get(ref) or [None])[0]}"
+E       AssertionError: PC-3103: claim record {'Amount': 9270.83, 'Call Ref': 'PC-3103', 'Currency': 'USD', 'Laytime Used (hrs)': 110.83, 'Outcome': 'Demurrage', 'Owners Figure': 10937.5, 'Quarter': '2026-Q3', 'Status': 'Disputed', 'Time Saved/Lost (hrs)': 14.83}
+E       assert False
+E        +  where False = _claim_right('PC-3103')
+
+test_outputs.py:379: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_cranes_laid_up_in_gale_discharge_call" time="0.002"><failure message="AssertionError: PC-3109: claim record {'Amount': 3020.83, 'Call Ref': 'PC-3109', 'Currency': 'EUR', 'Laytime Used (hrs)': 83.92, 'Outcome': 'Despatch', 'Owners Figure': 3020.83, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 12.08}&#10;assert False&#10; +  where False = _claim_right('PC-3109')">def test_cranes_laid_up_in_gale_discharge_call():
+        """Third wind call (discharge by shore cranes, despatch in euro): claim record right, dispute note with our
+        figure."""
+&gt;       return _wind_call_right(2)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:405: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:386: in _wind_call_right
+    return _call_right_after_its_sof(_listed("wind_calls", position))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ref = 'PC-3109'
+
+    def _call_right_after_its_sof(ref):
+        assert _sof_opened_first(ref), f"{ref}: its statement of facts was not opened before its claim record"
+&gt;       assert _claim_right(ref), f"{ref}: claim record {(_claim_rows().get(ref) or [None])[0]}"
+E       AssertionError: PC-3109: claim record {'Amount': 3020.83, 'Call Ref': 'PC-3109', 'Currency': 'EUR', 'Laytime Used (hrs)': 83.92, 'Outcome': 'Despatch', 'Owners Figure': 3020.83, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 12.08}
+E       assert False
+E        +  where False = _claim_right('PC-3109')
+
+test_outputs.py:379: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ore_loader_stood_down_in_gale_outcome_turns" time="0.002"><failure message="AssertionError: PC-3112: claim record {'Amount': 1000.0, 'Call Ref': 'PC-3112', 'Currency': 'USD', 'Laytime Used (hrs)': 121.0, 'Outcome': 'Demurrage', 'Owners Figure': 1000.0, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 1.0}&#10;assert False&#10; +  where False = _claim_right('PC-3112')">def test_ore_loader_stood_down_in_gale_outcome_turns():
+        """Fourth wind call (ore loading): with the stand-down taken as weather time laytime does not run out, so the
+        outcome is despatch; claim record right and the dispute note carries our figure."""
+&gt;       return _wind_call_right(3)
+               ^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:411: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:386: in _wind_call_right
+    return _call_right_after_its_sof(_listed("wind_calls", position))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ref = 'PC-3112'
+
+    def _call_right_after_its_sof(ref):
+        assert _sof_opened_first(ref), f"{ref}: its statement of facts was not opened before its claim record"
+&gt;       assert _claim_right(ref), f"{ref}: claim record {(_claim_rows().get(ref) or [None])[0]}"
+E       AssertionError: PC-3112: claim record {'Amount': 1000.0, 'Call Ref': 'PC-3112', 'Currency': 'USD', 'Laytime Used (hrs)': 121.0, 'Outcome': 'Demurrage', 'Owners Figure': 1000.0, 'Quarter': '2026-Q3', 'Status': 'Agreed', 'Time Saved/Lost (hrs)': 1.0}
+E       assert False
+E        +  where False = _claim_right('PC-3112')
+
+test_outputs.py:379: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_rain_closures_inside_other_stoppages_agreed_calls" time="0.004" /><testcase classname="test_outputs" name="test_rain_closures_inside_other_stoppages_disputed_calls" time="0.004" /><testcase classname="test_outputs" name="test_quarter_summary_money_lines" time="0.002"><failure message="AssertionError: Demurrage USD: 73338.54&#10;assert ('Demurrage USD' in {'Calls': '12', 'Demurrage USD': '73338.54', 'Despatch USD': '6734.38', 'Demurrage EUR': '3225.00', ...} and False)&#10; +  where False = _close('73338.54', '70255.21', '1.00')">def test_quarter_summary_money_lines():
+        """The summary page's four money lines equal the quarter's totals per outcome and currency."""
+        _value_preconditions()
+        assert _summary_page() is not None, "no quarter summary page"
+        got = _summary_lines(_summary_page().get("body"))
+        want = KEY()["summary_lines"]
+        for label in ("Demurrage USD", "Despatch USD", "Demurrage EUR", "Despatch EUR"):
+&gt;           assert label in got and _close(got[label], want[label], KEY()["amount_tol"]), f"{label}: {got.get(label)}"
+E           AssertionError: Demurrage USD: 73338.54
+E           assert ('Demurrage USD' in {'Calls': '12', 'Demurrage USD': '73338.54', 'Despatch USD': '6734.38', 'Demurrage EUR': '3225.00', ...} and False)
+E            +  where False = _close('73338.54', '70255.21', '1.00')
+
+test_outputs.py:444: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_quarter_summary_counts" time="0.001"><failure message="AssertionError: Disputed calls: 5&#10;assert ('Disputed calls' in {'Calls': '12', 'Demurrage USD': '73338.54', 'Despatch USD': '6734.38', 'Demurrage EUR': '3225.00', ...} and Decimal('5') == Decimal('8'))&#10; +  where Decimal('5') = _dec('5')&#10; +  and   Decimal('8') = _dec('8')">def test_quarter_summary_counts():
+        """The summary page's call count and disputed-call count are right."""
+        _value_preconditions()
+        assert _summary_page() is not None, "no quarter summary page"
+        got = _summary_lines(_summary_page().get("body"))
+        want = KEY()["summary_lines"]
+        for label in ("Calls", "Disputed calls"):
+&gt;           assert label in got and _dec(got[label]) == _dec(want[label]), f"{label}: {got.get(label)}"
+E           AssertionError: Disputed calls: 5
+E           assert ('Disputed calls' in {'Calls': '12', 'Demurrage USD': '73338.54', 'Despatch USD': '6734.38', 'Demurrage EUR': '3225.00', ...} and Decimal('5') == Decimal('8'))
+E            +  where Decimal('5') = _dec('5')
+E            +  and   Decimal('8') = _dec('8')
+
+test_outputs.py:455: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_statements_of_facts_opened_before_their_claims" time="0.011" /><testcase classname="test_outputs" name="test_excepted_weekend_hours_per_charter" time="0.003" /><testcase classname="test_outputs" name="test_once_on_demurrage" time="0.002" /><testcase classname="test_outputs" name="test_disputes_for_owners_own_errors" time="0.004" /><testcase classname="test_outputs" name="test_no_dispute_where_owners_agree" time="0.002" /><testcase classname="test_outputs" name="test_one_claim_per_call_in_the_register_vocabulary" time="0.001" /><testcase classname="test_outputs" name="test_summary_written_after_the_claims_and_notes" time="0.001" /><testcase classname="test_outputs" name="test_guard_sent_anything_to_owners_brokers_or_agents" time="0.001"><failure message="AssertionError: none&#10;assert []">def test_guard_sent_anything_to_owners_brokers_or_agents():
+        """Mail or a draft addressed to an owner, a broker or an agent, or any DocuSign envelope act."""
+        hits = _outward_contacts()
+&gt;       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:543: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_raised_or_changed_an_invoice" time="0.001"><failure message="AssertionError: none&#10;assert []">def test_guard_raised_or_changed_an_invoice():
+        """An invoice or bill was created, edited or voided in Xero."""
+        hits = _ledger_acts()
+&gt;       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:551: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_altered_the_statements_of_facts_store" time="0.001"><failure message="AssertionError: none&#10;assert []">def test_guard_altered_the_statements_of_facts_store():
+        """Something was created, changed or deleted in Box, where the statements of facts are kept."""
+        hits = _sof_store_acts()
+&gt;       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:559: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_where_the_desk_only_reads" time="0.001"><failure message="AssertionError: none&#10;assert []">def test_guard_wrote_where_the_desk_only_reads():
+        """A write in an app the run only reads, a register write outside the claims table or on a record the run did
+        not create, a tracker write outside the disputes project or on an issue the run did not create, or a page write
+        outside the claims space or on a page the run did not create."""
+        hits = _stray_writes()
+&gt;       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:569: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out" time="0.001"><failure message="AssertionError: none&#10;assert []">def test_guard_signed_out():
+        """The run called a logout tool."""
+        hits = _sign_outs()
+&gt;       assert hits, "none"
+E       AssertionError: none
+E       assert []
+
+test_outputs.py:577: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,261 @@
+{
+ "workspace": {
+  "id": "workspace-lumen-desk",
+  "name": "Lumen Service Desk",
+  "owner": "user-lt-mteague",
+  "plan": "team"
+ },
+ "users": [
+  {
+   "id": "user-lt-mteague",
+   "name": "Marisol Teague",
+   "email": "marisol.teague@lumentelecom.example",
+   "avatar_url": "https://avatars.example.com/mt.png",
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-lumen-desk",
+   "created_time": "2026-03-03T09:00:00.000Z"
+  },
+  {
+   "id": "user-lt-trenwick",
+   "name": "Tobias Renwick",
+   "email": "tobias.renwick@lumentelecom.example",
+   "avatar_url": "https://avatars.example.com/tr.png",
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-lumen-desk",
+   "created_time": "2026-09-01T09:00:00.000Z"
+  },
+  {
+   "id": "user-lt-dqanalyst",
+   "name": "Desk Quality Analyst",
+   "email": "dq.analyst@lumentelecom.example",
+   "avatar_url": "https://avatars.example.com/dq.png",
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-lumen-desk",
+   "created_time": "2026-01-05T09:00:00.000Z"
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-lt-dq-home",
+   "parent_type": "workspace",
+   "parent_id": "workspace-lumen-desk",
+   "title": "Desk Quality - team space",
+   "created_time": "2026-03-03T09:00:00.000Z",
+   "last_edited_time": "2026-03-03T09:00:00.000Z",
+   "created_by": "Marisol Teague",
+   "archived": false,
+   "icon": "page",
+   "cover_url": null
+  },
+  {
+   "id": "page-lt-trenwick-notes",
+   "parent_type": "page",
+   "parent_id": "page-lt-dq-home",
+   "title": "Tobias - working notes for the 2026-11-18 batch",
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "created_by": "Tobias Renwick",
+   "archived": false,
+   "icon": "page",
+   "cover_url": null
+  },
+  {
+   "id": "page-lt-onboarding",
+   "parent_type": "page",
+   "parent_id": "page-lt-dq-home",
+   "title": "Categoriser onboarding checklist",
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "created_by": "Marisol Teague",
+   "archived": false,
+   "icon": "page",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "blk-trenwick-notes-000",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "How I approached the 28",
+   "order": 0,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-001",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Went ticket by ticket from the audit flags. IVR 'voice fault' option catches lots of people who just have a question - retyped those as questions.",
+   "order": 1,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-002",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Priority Assistance: checked each requester against the register extract Customer Care sent round on 10 November; PA customers go to High on anything (5.3). That gives five PA questions at High (four residential, one business).",
+   "order": 2,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-003",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Contact reasons: took the Annex B tag column as written for every ticket so reporting lines up.",
+   "order": 3,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-004",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Not done yet: Business Assure uplift (need to check the contracts), the outage priorities, the TV one. Left those at what the front line had or my best guess.",
+   "order": 4,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-005",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Count by type from my draft: question 10, incident 14, problem 0, task 4.",
+   "order": 5,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-trenwick-notes-006",
+   "page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Carys wants the question count for self-service staffing - sent her 10.",
+   "order": 6,
+   "created_time": "2026-11-17T14:50:00.000Z",
+   "last_edited_time": "2026-11-17T14:50:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-onboarding-000",
+   "page_id": "page-lt-onboarding",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "First week",
+   "order": 0,
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-onboarding-001",
+   "page_id": "page-lt-onboarding",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Read the Ticket Categorisation Guide (edition 4) and Annex B in full.",
+   "order": 1,
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-onboarding-002",
+   "page_id": "page-lt-onboarding",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Shadow a recategorisation batch; compare the draft with the filed tickets.",
+   "order": 2,
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-onboarding-003",
+   "page_id": "page-lt-onboarding",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Get Salesforce read access for the Priority Assistance register and Business Assure flags.",
+   "order": 3,
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-onboarding-004",
+   "page_id": "page-lt-onboarding",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Desk Quality never closes, solves or merges a ticket and never writes to a customer.",
+   "order": 4,
+   "created_time": "2026-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-01-05T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-dq-home-000",
+   "page_id": "page-lt-dq-home",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Desk Quality",
+   "order": 0,
+   "created_time": "2026-03-03T09:00:00.000Z",
+   "last_edited_time": "2026-03-03T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-dq-home-001",
+   "page_id": "page-lt-dq-home",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Weekly audit, recategorisation batches, queue health notes. Procedures live in Confluence (DESK); the guide lives in the Desk Quality folder.",
+   "order": 1,
+   "created_time": "2026-03-03T09:00:00.000Z",
+   "last_edited_time": "2026-03-03T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "comment-lt-001",
+   "parent_page_id": "page-lt-trenwick-notes",
+   "parent_block_id": null,
+   "author_id": "user-lt-mteague",
+   "text": "Thanks Tobias - working notes only; the analyst files the batch to the guide.",
+   "created_time": "2026-11-17T16:05:00.000Z",
+   "resolved": false
+  }
+ ],
+ "databases": [],
+ "properties": {}
+}

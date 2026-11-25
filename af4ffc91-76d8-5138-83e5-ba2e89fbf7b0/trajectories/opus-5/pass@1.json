@@ -1,0 +1,22 @@
+{
+  "model": "opus-5",
+  "tasks": 1,
+  "scale": "0-1",
+  "threshold": 0.7,
+  "passed": 0,
+  "pass_rate": 0.0,
+  "mean_reward_per_trial": 0.4487,
+  "reward_per_run": {
+    "1": 0.4487
+  },
+  "failure_mode_histogram": {
+    "partial": 1
+  },
+  "attempts_per_task": 1,
+  "at": [
+    1
+  ],
+  "jobs": [
+    "af4ffc91-76d8-5138-83e5-ba2e89fbf7b0-opus-5-20261117-101558-regraded"
+  ]
+}

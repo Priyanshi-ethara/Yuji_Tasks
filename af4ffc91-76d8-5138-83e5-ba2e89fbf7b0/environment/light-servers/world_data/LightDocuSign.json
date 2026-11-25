@@ -1,0 +1,164 @@
+{
+ "envelopes": [
+  {
+   "envelope_id": "env-mbc-cp1",
+   "status": "completed",
+   "email_subject": "Please sign: MBC/ALD COA 2026",
+   "sender_name": "Hedda Lisle",
+   "sender_email": "hedda.lisle@merrowbulk.co.uk",
+   "created_time": "2026-01-14T10:00:00Z",
+   "sent_time": "2026-01-14T10:05:00Z",
+   "completed_time": "2026-01-20T10:00:00Z",
+   "template_id": null
+  },
+  {
+   "envelope_id": "env-mbc-cp2",
+   "status": "completed",
+   "email_subject": "Please sign: MBC/HOL Grainvoy 2026",
+   "sender_name": "Hedda Lisle",
+   "sender_email": "hedda.lisle@merrowbulk.co.uk",
+   "created_time": "2026-01-14T10:00:00Z",
+   "sent_time": "2026-01-14T10:05:00Z",
+   "completed_time": "2026-01-20T10:00:00Z",
+   "template_id": null
+  },
+  {
+   "envelope_id": "env-mbc-cp3",
+   "status": "completed",
+   "email_subject": "Please sign: MBC/KES Fertvoy 2026",
+   "sender_name": "Hedda Lisle",
+   "sender_email": "hedda.lisle@merrowbulk.co.uk",
+   "created_time": "2026-01-14T10:00:00Z",
+   "sent_time": "2026-01-14T10:05:00Z",
+   "completed_time": "2026-01-20T10:00:00Z",
+   "template_id": null
+  },
+  {
+   "envelope_id": "env-mbc-cp4",
+   "status": "completed",
+   "email_subject": "Please sign: MBC/TAR Orevoy 2026",
+   "sender_name": "Hedda Lisle",
+   "sender_email": "hedda.lisle@merrowbulk.co.uk",
+   "created_time": "2026-01-14T10:00:00Z",
+   "sent_time": "2026-01-14T10:05:00Z",
+   "completed_time": "2026-01-20T10:00:00Z",
+   "template_id": null
+  },
+  {
+   "envelope_id": "env-mbc-set2102",
+   "status": "completed",
+   "email_subject": "Settlement agreement — PC-2102 laytime",
+   "sender_name": "Ines Vaarberg",
+   "sender_email": "ines.vaarberg@merrowbulk.co.uk",
+   "created_time": "2026-09-04T12:00:00Z",
+   "sent_time": "2026-09-04T12:05:00Z",
+   "completed_time": "2026-09-05T09:00:00Z",
+   "template_id": "tmpl-mbc-settle"
+  },
+  {
+   "envelope_id": "env-mbc-q3draft",
+   "status": "created",
+   "email_subject": "Q3 2026 laytime positions — for owners' signature",
+   "sender_name": "Tobias Wrenfield",
+   "sender_email": "tobias.wrenfield@merrowbulk.co.uk",
+   "created_time": "2026-11-13T15:00:00Z",
+   "sent_time": null,
+   "completed_time": null,
+   "template_id": "tmpl-mbc-settle"
+  }
+ ],
+ "documents": [
+  {
+   "document_id": "doc-mbc-cp1",
+   "envelope_id": "env-mbc-cp1",
+   "name": "MBC/ALD COA 2026.pdf",
+   "document_type": "content",
+   "page_count": 38,
+   "order": 1
+  },
+  {
+   "document_id": "doc-mbc-cp2",
+   "envelope_id": "env-mbc-cp2",
+   "name": "MBC/HOL Grainvoy 2026.pdf",
+   "document_type": "content",
+   "page_count": 38,
+   "order": 1
+  },
+  {
+   "document_id": "doc-mbc-cp3",
+   "envelope_id": "env-mbc-cp3",
+   "name": "MBC/KES Fertvoy 2026.pdf",
+   "document_type": "content",
+   "page_count": 38,
+   "order": 1
+  },
+  {
+   "document_id": "doc-mbc-cp4",
+   "envelope_id": "env-mbc-cp4",
+   "name": "MBC/TAR Orevoy 2026.pdf",
+   "document_type": "content",
+   "page_count": 38,
+   "order": 1
+  },
+  {
+   "document_id": "doc-mbc-q3draft",
+   "envelope_id": "env-mbc-q3draft",
+   "name": "Q3 laytime positions (draft).pdf",
+   "document_type": "content",
+   "page_count": 4,
+   "order": 1
+  }
+ ],
+ "recipients": [
+  {
+   "recipient_id": "rcp-mbc-cp1",
+   "envelope_id": "env-mbc-cp1",
+   "name": "Ragnhild Saetre",
+   "email": "claims@aldwickshipping.no",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-01-19T12:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-mbc-cp2",
+   "envelope_id": "env-mbc-cp2",
+   "name": "Dominic Pryce",
+   "email": "demurrage@holmfirthbulk.co.uk",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-01-19T12:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-mbc-cp3",
+   "envelope_id": "env-mbc-cp3",
+   "name": "Femke Aalders",
+   "email": "claims@kestrelmaritime.nl",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-01-19T12:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-mbc-cp4",
+   "envelope_id": "env-mbc-cp4",
+   "name": "Jesper Holck",
+   "email": "laytime@tarnbycarriers.dk",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-01-19T12:00:00Z"
+  }
+ ],
+ "templates": [
+  {
+   "template_id": "tmpl-mbc-settle",
+   "name": "Laytime settlement agreement",
+   "description": "Head of Claims only",
+   "shared": false,
+   "owner_name": "Ines Vaarberg",
+   "created_time": "2026-02-01T09:00:00Z"
+  }
+ ]
+}

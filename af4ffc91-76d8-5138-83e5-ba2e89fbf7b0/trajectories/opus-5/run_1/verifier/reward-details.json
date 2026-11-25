@@ -1,0 +1,241 @@
+{
+  "pytest": {
+    "score": 0.2821,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.2821,
+        "raw": 0.282051,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 11 of 39, charged 0; missed 6: test_coal_loader_stood_down_in_gale_despatch_call, test_coal_loader_stood_down_in_gale_demurrage_call, test_cranes_laid_up_in_gale_discharge_call, test_ore_loader_stood_down_in_gale_outcome_turns, test_quarter_summary_money_lines, test_quarter_summary_counts"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.6154,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-port-weather-notes",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.19230769230769232,
+        "description": "[final answer] The reply says the port weather notes in the data folder (operations' daily weather lines for each port) describe the weather in the port area, not what stopped the work on board, so a rain day in those notes was not on its own taken as weather time.",
+        "reasoning": "The final answer discusses agents\u2019 weather sheets and remarks such as \u201cshowers reported in port,\u201d but never explicitly says operations\u2019 daily port-weather notes describe ambient conditions in the port area rather than what stopped onboard work."
+      },
+      {
+        "id": "2",
+        "name": "r-weather-sheet-closures-only",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.11538461538461539,
+        "description": "[final answer] The reply says the agents' weather sheet (or the statements' weather footers) lists only hatch closures, so it is not on its own the record of which time the weather actually stopped the cargo work.",
+        "reasoning": "In \u201cWhere I depart from Tobias\u2019s worksheet,\u201d the final answer says: \u201cThe sheet and the SOF footers are lists of when the hatches were shut, not of when weather stopped the cargo.\u201d"
+      },
+      {
+        "id": "3",
+        "name": "r-clause17-test",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the charters' weather test it applied: time counts unless, and only for so long as, the weather actually prevents the loading or discharging (or, in the desk method's words, a minute is weather time only if, the weather apart, the cargo would have been worked).",
+        "reasoning": "Under \u201cMethod applied throughout,\u201d the final answer states: \u201ca minute counts as weather time only if, the weather apart, the cargo would have been worked in it,\u201d and later connects this to clause 17\u2019s \u201cactually prevents\u201d test."
+      },
+      {
+        "id": "4",
+        "name": "r-genuine-closures",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that a hatch closure for rain while the cargo work was going on (the work stopped when the hatches closed and resumed when they reopened) was taken as weather time for the period the hatches were closed.",
+        "reasoning": "For PC-3101, the final answer deducts two rain hatch closures because \u201cloading was in progress, the hourly figures fall to nil and resume when the rain ceased.\u201d Similar genuine closures are expressly deducted on other calls."
+      },
+      {
+        "id": "5",
+        "name": "r-hourly-figures",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply uses the statements' hourly cargo figures (nil or reduced hourly figures) as evidence of whether the cargo work actually stopped.",
+        "reasoning": "The final answer expressly relies on hourly figures: PC-3101 says \u201cthe hourly figures fall to nil and resume,\u201d while PC-3104 and PC-3108 identify a \u201cnil hour\u201d as evidence supporting the weather deduction."
+      },
+      {
+        "id": "6",
+        "name": "r-fog-continuing",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that fog remarks with the cargo work continuing (for example 'Fog patches \u2014 loading continues, visibility 800 m') were not taken as weather time.",
+        "reasoning": "For PC-3101, the final answer says the \u201cfog-patch entries, where the log says work continued\u201d were not taken as weather time; PC-3103 likewise excludes \u201cfog with work continuing.\u201d"
+      },
+      {
+        "id": "7",
+        "name": "r-ambient-weather-remarks",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that weather remarks recording no effect on the cargo work were not taken as weather time, naming at least one kind as an example: rain or showers 'reported in port', a weather report or forecast, 'barometer falling', or 'rain stopped \u2014 sky clearing'.",
+        "reasoning": "For PC-3101, the final answer excludes \u201cshowers reported in port\u201d where the log says work continued, explicitly treating that ambient weather remark as non-deductible."
+      },
+      {
+        "id": "8",
+        "name": "r-light-rain-noise",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply explains that remarks of light rain, drizzle or showers with loading or discharging continuing were not taken as weather time.",
+        "reasoning": "The final answer repeatedly excludes light precipitation with continuing work: PC-3101 excludes \u201cdrizzle\u201d and \u201clight-rain\u201d entries where work continued; PC-3104 excludes \u201cloading continues under light rain\u201d; PC-3108 excludes drizzle and showers with work continuing."
+      },
+      {
+        "id": "9",
+        "name": "r-kpi-dashboard",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the finance KPI dashboard draft was not taken as a record of weather time (or of the figures), because it is a draft built automatically from the agents' sheets.",
+        "reasoning": "The final answer never mentions the finance KPI dashboard draft or says it was automatically built from agents\u2019 sheets and therefore not used as a weather-time record."
+      },
+      {
+        "id": "10",
+        "name": "r-meal-surveys-count",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that meal breaks, or surveys and inspections (for example an intermediate draft survey), are not exceptions under the charters, so laytime keeps running through them.",
+        "reasoning": "The method says \u201cOnly the charter\u2019s own exceptions interrupt.\u201d The call analyses then explicitly say \u201cMeal break 05/08 12:00\u201313:00 counts,\u201d \u201cMeal break 16/09 counts,\u201d and \u201cThe intermediate draft survey on 29 August counts against us.\u201d"
+      },
+      {
+        "id": "11",
+        "name": "r-shifting-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that time shifting from the anchorage to the berth (anchor aweigh to all fast) is excluded from laytime only for the part that falls after laytime has started.",
+        "reasoning": "PC-3109 states that a shift straddled the laytime start and \u201c1 h 20 m of it \u2014 the part after laytime started \u2014 is excluded.\u201d Other calls state that shifts completed before laytime began changed nothing."
+      },
+      {
+        "id": "12",
+        "name": "r-start-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states the laytime start rule it applied: laytime starts when the charter's turn time after notice of readiness has run out, or earlier at the commencement of cargo work if work began before then.",
+        "reasoning": "Under \u201cMethod applied throughout,\u201d the final answer states: \u201cLaytime starts when turn time expires, or at commencement of cargo work if that is sooner,\u201d with the additional treatment when the moment falls in an excepted period."
+      },
+      {
+        "id": "13",
+        "name": "r-nor-any-time",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that under the charters notice of readiness may be tendered at any time of day or night and whether in berth or not (WIBON), so the turn time can run while the vessel waits at the anchorage.",
+        "reasoning": "The final answer says in the PC-3110 dispute that clause 15 gives turn time \u201cwhatever the day and wherever the vessel is,\u201d but it does not explicitly state that NOR may be tendered at any time of day or night, say WIBON, or state that turn time may run while waiting at anchorage."
+      },
+      {
+        "id": "14",
+        "name": "r-start-each-call",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply gives the date and time from which laytime counted.",
+        "reasoning": "Each of PC-3101 through PC-3112 expressly gives a laytime-start date and time, including PC-3107 (\u201c10:30 on 3 September\u201d), PC-3108 (\u201c08:00 on 14 September\u201d), and PC-3112 (\u201c00:30 on 19 September\u201d)."
+      },
+      {
+        "id": "15",
+        "name": "r-exceptions-each-call",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which time other than weather it excepted from laytime (weekend or holiday hours, shifting) or that none was excepted, with the reason (for example the charter's clause).",
+        "reasoning": "Although most calls expressly address non-weather exceptions, the final answer does not explicitly give a complete non-weather-exception disposition for every call. In particular, PC-3112 only states the start, weather treatment, completion, and used time; it does not say which weekend/holiday or shifting time was excepted, or explicitly say none was excepted with a reason."
+      },
+      {
+        "id": "16",
+        "name": "r-weather-each-call",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For each of the twelve calls, the reply says which weather time it took (the periods or minutes deducted, or that none was taken).",
+        "reasoning": "Every call PC-3101 through PC-3112 specifies the weather period or periods deducted and also identifies relevant weather periods not deducted. Examples range from PC-3101\u2019s two closures to PC-3112\u2019s \u201c20/09 08:00\u201310:30 (2 h 30 m).\u201d"
+      },
+      {
+        "id": "17",
+        "name": "r-disputes-explained",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] For every call the reply reports as disputed, it says what the owners did differently from Merrow (a reason for the difference, not only the two amounts).",
+        "reasoning": "The section \u201cThe five disputes \u2014 what the owners did differently\u201d gives a causal explanation for every disputed call: PC-3103 counted shifting, PC-3104 ignored the weekend exception, PC-3105 allowed no weather, PC-3108 ran to sailing, and PC-3110 omitted turn time."
+      },
+      {
+        "id": "18",
+        "name": "r-owners-not-source",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply says that the owners' laytime statements were used only to compare with Merrow's figure (the Owners Figure and Agreed or Disputed), not as evidence for Merrow's own figure.",
+        "reasoning": "The final answer never explicitly says owners\u2019 statements were used only for the Owners Figure/agreed-or-disputed comparison and not as evidence for Merrow\u2019s calculations. Indeed, it calls exact matches a \u201cuseful check\u201d and cites owners\u2019 statements as supporting treatment of some terminal stoppages."
+      },
+      {
+        "id": "19",
+        "name": "r-totals-merrow-figures",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply states that its quarter totals are made up of Merrow's own figure for every call, the disputed calls included (not the owners' amounts).",
+        "reasoning": "The final answer gives \u201cQuarter totals (per currency, not converted)\u201d and frequently calls individual amounts \u201cour\u201d figures, but it never explicitly states that every total uses Merrow\u2019s own figure for all twelve calls, including disputed calls rather than owners\u2019 amounts."
+      },
+      {
+        "id": "20",
+        "name": "r-no-conversion",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.038461538461538464,
+        "description": "[final answer] The reply keeps the euro calls in EUR and gives its quarter totals per currency without converting between currencies.",
+        "reasoning": "The final answer labels the totals \u201cper currency, not converted\u201d and separately reports USD demurrage/despatch and EUR demurrage/despatch; euro calls remain denominated in EUR."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"r-port-weather-notes\":{\"score\":\"no\",\"reasoning\":\"The final answer discusses agents\u2019 weather sheets and remarks such as \u201cshowers reported in port,\u201d but never explicitly says operations\u2019 daily port-weather notes describe ambient conditions in the port area rather than what stopped onboard work.\"},\"r-weather-sheet-closures-only\":{\"score\":\"yes\",\"reasoning\":\"In \u201cWhere I depart from Tobias\u2019s worksheet,\u201d the final answer says: \u201cThe sheet and the SOF footers are lists of when the hatches were shut, not of when weather stopped the cargo.\u201d\"},\"r-clause17-test\":{\"score\":\"yes\",\"reasoning\":\"Under \u201cMethod applied throughout,\u201d the final answer states: \u201ca minute counts as weather time only if, the weather apart, the cargo would have been worked in it,\u201d and later connects this to clause 17\u2019s \u201cactually prevents\u201d test.\"},\"r-genuine-closures\":{\"score\":\"yes\",\"reasoning\":\"For PC-3101, the final answer deducts two rain hatch closures because \u201cloading was in progress, the hourly figures fall to nil and resume when the rain ceased.\u201d Similar genuine closures are expressly deducted on other calls.\"},\"r-hourly-figures\":{\"score\":\"yes\",\"reasoning\":\"The final answer expressly relies on hourly figures: PC-3101 says \u201cthe hourly figures fall to nil and resume,\u201d while PC-3104 and PC-3108 identify a \u201cnil hour\u201d as evidence supporting the weather deduction.\"},\"r-fog-continuing\":{\"score\":\"yes\",\"reasoning\":\"For PC-3101, the final answer says the \u201cfog-patch entries, where the log says work continued\u201d were not taken as weather time; PC-3103 likewise excludes \u201cfog with work continuing.\u201d\"},\"r-ambient-weather-remarks\":{\"score\":\"yes\",\"reasoning\":\"For PC-3101, the final answer excludes \u201cshowers reported in port\u201d where the log says work continued, explicitly treating that ambient weather remark as non-deductible.\"},\"r-light-rain-noise\":{\"score\":\"yes\",\"reasoning\":\"The final answer repeatedly excludes light precipitation with continuing work: PC-3101 excludes \u201cdrizzle\u201d and \u201clight-rain\u201d entries where work continued; PC-3104 excludes \u201cloading continues under light rain\u201d; PC-3108 excludes drizzle and showers with work continuing.\"},\"r-kpi-dashboard\":{\"score\":\"no\",\"reasoning\":\"The final answer never mentions the finance KPI dashboard draft or says it was automatically built from agents\u2019 sheets and therefore not used as a weather-time record.\"},\"r-meal-surveys-count\":{\"score\":\"yes\",\"reasoning\":\"The method says \u201cOnly the charter\u2019s own exceptions interrupt.\u201d The call analyses then explicitly say \u201cMeal break 05/08 12:00\u201313:00 counts,\u201d \u201cMeal break 16/09 counts,\u201d and \u201cThe intermediate draft survey on 29 August counts against us.\u201d\"},\"r-shifting-rule\":{\"score\":\"yes\",\"reasoning\":\"PC-3109 states that a shift straddled the laytime start and \u201c1 h 20 m of it \u2014 the part after laytime started \u2014 is excluded.\u201d Other calls state that shifts completed before laytime began changed nothing.\"},\"r-start-rule\":{\"score\":\"yes\",\"reasoning\":\"Under \u201cMethod applied throughout,\u201d the final answer states: \u201cLaytime starts when turn time expires, or at commencement of cargo work if that is sooner,\u201d with the additional treatment when the moment falls in an excepted period.\"},\"r-nor-any-time\":{\"score\":\"no\",\"reasoning\":\"The final answer says in the PC-3110 dispute that clause 15 gives turn time \u201cwhatever the day and wherever the vessel is,\u201d but it does not explicitly state that NOR may be tendered at any time of day or night, say WIBON, or state that turn time may run while waiting at anchorage.\"},\"r-start-each-call\":{\"score\":\"yes\",\"reasoning\":\"Each of PC-3101 through PC-3112 expressly gives a laytime-start date and time, including PC-3107 (\u201c10:30 on 3 September\u201d), PC-3108 (\u201c08:00 on 14 September\u201d), and PC-3112 (\u201c00:30 on 19 September\u201d).\"},\"r-exceptions-each-call\":{\"score\":\"no\",\"reasoning\":\"Although most calls expressly address non-weather exceptions, the final answer does not explicitly give a complete non-weather-exception disposition for every call. In particular, PC-3112 only states the start, weather treatment, completion, and used time; it does not say which weekend/holiday or shifting time was excepted, or explicitly say none was excepted with a reason.\"},\"r-weather-each-call\":{\"score\":\"yes\",\"reasoning\":\"Every call PC-3101 through PC-3112 specifies the weather period or periods deducted and also identifies relevant weather periods not deducted. Examples range from PC-3101\u2019s two closures to PC-3112\u2019s \u201c20/09 08:00\u201310:30 (2 h 30 m).\u201d\"},\"r-disputes-explained\":{\"score\":\"yes\",\"reasoning\":\"The section \u201cThe five disputes \u2014 what the owners did differently\u201d gives a causal explanation for every disputed call: PC-3103 counted shifting, PC-3104 ignored the weekend exception, PC-3105 allowed no weather, PC-3108 ran to sailing, and PC-3110 omitted turn time.\"},\"r-owners-not-source\":{\"score\":\"no\",\"reasoning\":\"The final answer never explicitly says owners\u2019 statements were used only for the Owners Figure/agreed-or-disputed comparison and not as evidence for Merrow\u2019s calculations. Indeed, it calls exact matches a \u201cuseful check\u201d and cites owners\u2019 statements as supporting treatment of some terminal stoppages.\"},\"r-totals-merrow-figures\":{\"score\":\"no\",\"reasoning\":\"The final answer gives \u201cQuarter totals (per currency, not converted)\u201d and frequently calls individual amounts \u201cour\u201d figures, but it never explicitly states that every total uses Merrow\u2019s own figure for all twelve calls, including disputed calls rather than owners\u2019 amounts.\"},\"r-no-conversion\":{\"score\":\"yes\",\"reasoning\":\"The final answer labels the totals \u201cper currency, not converted\u201d and separately reports USD demurrage/despatch and EUR demurrage/despatch; euro calls remain denominated in EUR.\"}}",
+    "usage": {
+      "input_tokens": 36663,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 16000,
+      "output_tokens": 2481,
+      "reasoning_output_tokens": 692,
+      "total_tokens": 39144,
+      "cost_usd": 0.13867200000000002,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 36663,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 16000,
+          "output_tokens": 2481,
+          "reasoning_output_tokens": 692,
+          "total_tokens": 39144,
+          "cost_usd": 0.13867200000000002
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.0d309ec450d84fe78ba994a827bbb994.jsonl"
+    ]
+  }
+}

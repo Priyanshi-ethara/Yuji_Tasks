@@ -1,0 +1,157 @@
+{
+ "users": [
+  {
+   "user_id": "PULT01",
+   "name": "Noor Haddad",
+   "email": "noor.haddad@lumentelecom.example",
+   "role": "admin",
+   "time_zone": "Europe/London",
+   "job_title": "NOC shift lead"
+  },
+  {
+   "user_id": "PULT02",
+   "name": "Gareth Pym",
+   "email": "gareth.pym@lumentelecom.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "Access network engineer"
+  },
+  {
+   "user_id": "PULT03",
+   "name": "Ines Carvalho",
+   "email": "ines.carvalho@lumentelecom.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "Core network engineer"
+  }
+ ],
+ "services": [
+  {
+   "service_id": "PSLT01",
+   "name": "Westerby exchange access",
+   "description": "Fibre and voice access, Westerby exchange (WK)",
+   "status": "active",
+   "escalation_policy_id": "EPLT01",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PSLT02",
+   "name": "Llanfair Mor access",
+   "description": "Access circuits, Llanfair Mor (LM/KB)",
+   "status": "warning",
+   "escalation_policy_id": "EPLT01",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PSLT03",
+   "name": "Mobile core",
+   "description": "Mobile packet core and SIM provisioning",
+   "status": "active",
+   "escalation_policy_id": "EPLT02",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PSLT04",
+   "name": "Hosted voice platform",
+   "description": "Business Voice SBCs and call routing",
+   "status": "active",
+   "escalation_policy_id": "EPLT02",
+   "auto_resolve_timeout": 14400
+  }
+ ],
+ "policies": [
+  {
+   "escalation_policy_id": "EPLT01",
+   "name": "Access network",
+   "num_loops": 2,
+   "tier1_user_id": "PULT02",
+   "tier2_user_id": "PULT01"
+  },
+  {
+   "escalation_policy_id": "EPLT02",
+   "name": "Core and voice",
+   "num_loops": 2,
+   "tier1_user_id": "PULT03",
+   "tier2_user_id": "PULT01"
+  }
+ ],
+ "schedules": [
+  {
+   "schedule_id": "SCHLT01",
+   "name": "NOC primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPLT01",
+   "current_oncall_user_id": "PULT02",
+   "oncall_start": "2026-11-16T08:00:00Z",
+   "oncall_end": "2026-11-23T08:00:00Z"
+  }
+ ],
+ "incidents": [
+  {
+   "incident_id": "PILT0404",
+   "incident_number": 404,
+   "title": "WK-04 Westerby exchange - total loss of fibre and voice access",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PSLT01",
+   "escalation_policy_id": "EPLT01",
+   "assigned_to": "Gareth Pym",
+   "created_at": "2026-11-16T07:35:00Z",
+   "resolved_at": "2026-11-16T15:10:00Z"
+  },
+  {
+   "incident_id": "PILT0398",
+   "incident_number": 398,
+   "title": "LDN-KB-0417 CRC errors - Llanfair Mor cabinet 17",
+   "status": "acknowledged",
+   "urgency": "low",
+   "service_id": "PSLT02",
+   "escalation_policy_id": "EPLT01",
+   "assigned_to": "Gareth Pym",
+   "created_at": "2026-11-10T13:20:00Z",
+   "resolved_at": null
+  },
+  {
+   "incident_id": "PILT0401",
+   "incident_number": 401,
+   "title": "SIM swap provisioning backlog (weekend)",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PSLT03",
+   "escalation_policy_id": "EPLT02",
+   "assigned_to": "Ines Carvalho",
+   "created_at": "2026-11-14T09:00:00Z",
+   "resolved_at": "2026-11-17T12:00:00Z"
+  },
+  {
+   "incident_id": "PILT0390",
+   "incident_number": 390,
+   "title": "Hosted voice - SBC failover test",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PSLT04",
+   "escalation_policy_id": "EPLT02",
+   "assigned_to": "Ines Carvalho",
+   "created_at": "2026-11-04T22:00:00Z",
+   "resolved_at": "2026-11-04T23:30:00Z"
+  }
+ ],
+ "notes_store": {
+  "PILT0404": [
+   {
+    "id": "PNLT01",
+    "content": "Fibre splice damage at the exchange entry duct; all WK customers without service 07:35-15:10. Desk parent ticket 48156.",
+    "created_at": "2026-11-16T09:00:00Z",
+    "user": "Noor Haddad"
+   }
+  ],
+  "PILT0401": [
+   {
+    "id": "PNLT02",
+    "content": "Weekend SIM swaps provisioned late; a few customers had no service until Monday. Re-provisioning done by 17 Nov 12:00.",
+    "created_at": "2026-11-17T12:05:00Z",
+    "user": "Ines Carvalho"
+   }
+  ]
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "users": [
+  {
+   "id": "UMBC01INES",
+   "name": "ines",
+   "real_name": "Ines Vaarberg",
+   "email": "ines.vaarberg@merrowbulk.co.uk",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "Q3 laytime",
+   "presence": "active"
+  },
+  {
+   "id": "UMBC02TOBI",
+   "name": "tobias",
+   "real_name": "Tobias Wrenfield",
+   "email": "tobias.wrenfield@merrowbulk.co.uk",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "on leave to 27 Nov",
+   "presence": "away"
+  },
+  {
+   "id": "UMBC03CALL",
+   "name": "callum",
+   "real_name": "Callum Dyrness",
+   "email": "callum.dyrness@merrowbulk.co.uk",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "fixing Q1 2027 COAs",
+   "presence": "active"
+  },
+  {
+   "id": "UMBC04PRIT",
+   "name": "priti",
+   "real_name": "Priti Halloran",
+   "email": "priti.halloran@merrowbulk.co.uk",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "Q3 close",
+   "presence": "active"
+  },
+  {
+   "id": "UMBC05SEFA",
+   "name": "sefa",
+   "real_name": "Sefa Ndlovu",
+   "email": "sefa.ndlovu@merrowbulk.co.uk",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "ops",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "CMBCCLAIMS",
+   "name": "claims-desk",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Laytime, demurrage and despatch",
+   "purpose": "Merrow claims desk",
+   "creator": "UMBC01INES",
+   "created": 1767600000,
+   "num_members": 5
+  },
+  {
+   "id": "CMBCCHOPS",
+   "name": "chartering-ops",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Voyage operations",
+   "purpose": "Chartering and ops",
+   "creator": "UMBC03CALL",
+   "created": 1767600000,
+   "num_members": 4
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC01INES"
+  },
+  {
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC02TOBI"
+  },
+  {
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC03CALL"
+  },
+  {
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC04PRIT"
+  },
+  {
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC05SEFA"
+  },
+  {
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC01INES"
+  },
+  {
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC03CALL"
+  },
+  {
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC05SEFA"
+  },
+  {
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC02TOBI"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1794454200.000001",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC02TOBI",
+   "text": "All 12 Q3 SOFs are in Box. Worksheet going into the data pack.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794454800.000002",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC03CALL",
+   "text": "Every hour the hatches were shut for rain comes off. No exceptions, owners always pad the weather.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794455400.000003",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC02TOBI",
+   "text": "Hatches closed to hatches opened, straight from the SOF — same as every quarter.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794456000.000004",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC04PRIT",
+   "text": "Finance needs Q3 totals per currency by Wednesday. No despatch invoices in Xero from the desk please.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794456600.000005",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC02TOBI",
+   "text": "Agents' weather sheet matches my hatch list. KPI dashboard shows the same hours.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794457200.000006",
+   "channel_id": "CMBCCLAIMS",
+   "user_id": "UMBC01INES",
+   "text": "Thanks. Nobody sends figures to owners or Fairlead before I sign off.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794457800.000007",
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC05SEFA",
+   "text": "Q3 terminal incident reports filed in the ops share, CHOPS-1.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794458400.000008",
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC03CALL",
+   "text": "Fairlead keeps asking for Q3 numbers. Told them next week.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794459000.000009",
+   "channel_id": "CMBCCHOPS",
+   "user_id": "UMBC05SEFA",
+   "text": "Riga berth line-up for July is in the ops share if anyone wants it.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ],
+ "team": {
+  "id": "TMBC0001",
+  "name": "Merrow Bulk Carriers"
+ }
+}

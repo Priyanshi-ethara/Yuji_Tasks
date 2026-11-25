@@ -1,0 +1,163 @@
+{
+ "contacts": [
+  {
+   "id": "con_LT01",
+   "name": "Ruth Askew",
+   "email": "ruth@hollinlanestables.example",
+   "role": "user",
+   "created_at": 1748772000,
+   "updated_at": 1794686400
+  },
+  {
+   "id": "con_LT02",
+   "name": "Elena Vasquez-Hart",
+   "email": "elena.vh@post.example",
+   "role": "user",
+   "created_at": 1748772000,
+   "updated_at": 1794686400
+  },
+  {
+   "id": "con_LT03",
+   "name": "Abena Mensah",
+   "email": "abena.mensah@post.example",
+   "role": "user",
+   "created_at": 1748772000,
+   "updated_at": 1794686400
+  },
+  {
+   "id": "con_LT04",
+   "name": "Zara Akhtar",
+   "email": "zara.akhtar@mailbox.example",
+   "role": "user",
+   "created_at": 1748772000,
+   "updated_at": 1794686400
+  }
+ ],
+ "companies": [
+  {
+   "id": "comp_LT01",
+   "name": "Hollin Lane Stables Ltd",
+   "company_id": "60-208051",
+   "plan": {
+    "name": "Business Fibre 300 + Wi-Fi Max (business)"
+   },
+   "created_at": 1748772000
+  }
+ ],
+ "conversations": [
+  {
+   "id": "conv-LT-3101",
+   "contact_id": "con_LT01",
+   "state": "closed",
+   "title": "Second Wi-Fi Max pod",
+   "created_at": "2026-11-12T10:02:00.000Z",
+   "updated_at": "2026-11-12T10:02:00.000Z",
+   "assignee_id": "admin-josh",
+   "open": false
+  },
+  {
+   "id": "conv-LT-3102",
+   "contact_id": "con_LT02",
+   "state": "closed",
+   "title": "Slow upstairs in the evening",
+   "created_at": "2026-11-14T19:40:00.000Z",
+   "updated_at": "2026-11-14T19:40:00.000Z",
+   "assignee_id": "admin-josh",
+   "open": false
+  },
+  {
+   "id": "conv-LT-3103",
+   "contact_id": "con_LT03",
+   "state": "closed",
+   "title": "No service after SIM swap",
+   "created_at": "2026-11-15T12:10:00.000Z",
+   "updated_at": "2026-11-15T12:10:00.000Z",
+   "assignee_id": "admin-josh",
+   "open": false
+  },
+  {
+   "id": "conv-LT-3104",
+   "contact_id": "con_LT04",
+   "state": "closed",
+   "title": "Orange lights",
+   "created_at": "2026-11-13T19:20:00.000Z",
+   "updated_at": "2026-11-13T19:20:00.000Z",
+   "assignee_id": "admin-josh",
+   "open": false
+  }
+ ],
+ "parts": [
+  {
+   "id": "part-LT-001",
+   "conversation_id": "conv-LT-3101",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_LT01",
+   "body": "Hi, how do we add a second pod for the tack room? Do we need an engineer?",
+   "created_at": "2026-11-12T10:02:00.000Z"
+  },
+  {
+   "id": "part-LT-002",
+   "conversation_id": "conv-LT-3101",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-josh",
+   "body": "You can add a pod from the Lumen app under Wi-Fi Max > Add pod; we can post one out. I've raised a ticket so the desk can confirm (48203).",
+   "created_at": "2026-11-12T10:02:00.000Z"
+  },
+  {
+   "id": "part-LT-003",
+   "conversation_id": "conv-LT-3102",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_LT02",
+   "body": "Upstairs we only get about 40 in the evenings on a 900 plan.",
+   "created_at": "2026-11-14T19:40:00.000Z"
+  },
+  {
+   "id": "part-LT-004",
+   "conversation_id": "conv-LT-3102",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-josh",
+   "body": "Line test from our side: 900 down / 110 up, no errors, 870 at the router. Your laptop is on 2.4 GHz with lots of neighbouring networks - try 5 GHz or a Wi-Fi Max pod upstairs. Ticket 48211.",
+   "created_at": "2026-11-14T19:40:00.000Z"
+  },
+  {
+   "id": "part-LT-005",
+   "conversation_id": "conv-LT-3103",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_LT03",
+   "body": "New SIM arrived Saturday, put it in, no calls no texts no data at all.",
+   "created_at": "2026-11-15T12:10:00.000Z"
+  },
+  {
+   "id": "part-LT-006",
+   "conversation_id": "conv-LT-3103",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-josh",
+   "body": "Weekend SIM swaps were provisioned late; I've logged it (48218).",
+   "created_at": "2026-11-15T12:10:00.000Z"
+  },
+  {
+   "id": "part-LT-007",
+   "conversation_id": "conv-LT-3104",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_LT04",
+   "body": "Router flashes orange at night.",
+   "created_at": "2026-11-13T19:20:00.000Z"
+  },
+  {
+   "id": "part-LT-008",
+   "conversation_id": "conv-LT-3104",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-josh",
+   "body": "Logged as 48151.",
+   "created_at": "2026-11-13T19:20:00.000Z"
+  }
+ ]
+}

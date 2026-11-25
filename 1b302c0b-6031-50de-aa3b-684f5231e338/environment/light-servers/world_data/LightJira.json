@@ -1,0 +1,225 @@
+{
+ "projects": [
+  {
+   "id": "10461",
+   "key": "TOOL",
+   "name": "Desk Tooling",
+   "project_type_key": "business",
+   "lead": "acc-fadeyemo",
+   "description": "Changes to the Lumen Desk instance: triggers, fields, macros, integrations."
+  }
+ ],
+ "users": [
+  {
+   "account_id": "acc-fadeyemo",
+   "display_name": "Femi Adeyemo",
+   "email": "femi.adeyemo@lumentelecom.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-mteague",
+   "display_name": "Marisol Teague",
+   "email": "marisol.teague@lumentelecom.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-trenwick",
+   "display_name": "Tobias Renwick",
+   "email": "tobias.renwick@lumentelecom.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-cllewellyn",
+   "display_name": "Carys Llewellyn",
+   "email": "carys.llewellyn@lumentelecom.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-nhaddad",
+   "display_name": "Noor Haddad",
+   "email": "noor.haddad@lumentelecom.example",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 46,
+   "name": "TOOL board",
+   "type": "kanban",
+   "project_key": "TOOL"
+  }
+ ],
+ "sprints": [
+  {
+   "id": 4601,
+   "board_id": 46,
+   "name": "TOOL November 2026",
+   "state": "active",
+   "start_date": "2026-11-02T09:00:00Z",
+   "end_date": "2026-11-27T17:00:00Z",
+   "goal": "Portal fixes and tag housekeeping"
+  }
+ ],
+ "issues": [
+  {
+   "id": "46001",
+   "key": "TOOL-388",
+   "project_key": "TOOL",
+   "issue_type": "Story",
+   "summary": "Raise the ticket tag length limit above 24 characters",
+   "description": "Desk Quality asked for longer tags because several Annex B contact reasons are longer than 24 characters and are cut when a ticket is saved. Platform limit of the hosted instance - cannot be changed. Resolution: Desk Quality uses the short form (cr_<code>) for those codes; reporting maps both forms.",
+   "status": "Won't Do",
+   "priority": "Medium",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-mteague",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-06-20T10:00:00Z",
+   "updated": "2026-07-02T14:00:00Z"
+  },
+  {
+   "id": "46002",
+   "key": "TOOL-412",
+   "project_key": "TOOL",
+   "issue_type": "Story",
+   "summary": "T-11 Self-service standardisation: residential enquiries at standard urgency",
+   "description": "With the residential self-service portal, residential enquiries are answered from the standard queue. Trigger T-11: on save, a Question on an organisation tagged seg_res with priority High or Urgent goes to Normal. Business organisations (seg_bus) are out of scope. Live 2 March 2026.",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-cllewellyn",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-02-10T09:00:00Z",
+   "updated": "2026-03-02T08:00:00Z"
+  },
+  {
+   "id": "46003",
+   "key": "TOOL-455",
+   "project_key": "TOOL",
+   "issue_type": "Bug",
+   "summary": "Update acknowledgement does not show trigger changes",
+   "description": "An agent changed priority, got the ticket back with her value, and later found it at Normal. Business rules run after the save is committed; the acknowledgement returns the ticket as submitted. Working as designed - documented on the instance configuration page. Re-open the ticket to see it as held.",
+   "status": "Done",
+   "priority": "Low",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-trenwick",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-04-14T11:00:00Z",
+   "updated": "2026-04-16T10:00:00Z"
+  },
+  {
+   "id": "46004",
+   "key": "TOOL-470",
+   "project_key": "TOOL",
+   "issue_type": "Task",
+   "summary": "T-14 CSAT survey wording refresh",
+   "description": "New wording for the CSAT survey email sent on solve.",
+   "status": "Done",
+   "priority": "Low",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-mteague",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-09-10T09:00:00Z",
+   "updated": "2026-10-01T09:00:00Z"
+  },
+  {
+   "id": "46005",
+   "key": "TOOL-473",
+   "project_key": "TOOL",
+   "issue_type": "Story",
+   "summary": "T-09 Welsh language routing notification",
+   "description": "Tickets tagged lang_cy notify the Welsh-speaking rota by email. No field changes.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-mteague",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-05-02T09:00:00Z",
+   "updated": "2026-05-20T09:00:00Z"
+  },
+  {
+   "id": "46006",
+   "key": "TOOL-481",
+   "project_key": "TOOL",
+   "issue_type": "Task",
+   "summary": "Macro: 'Outage - holding (internal)'",
+   "description": "Internal-note macro for outage tickets; customer comms go by NOC SMS.",
+   "status": "Done",
+   "priority": "Low",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-nhaddad",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-10-20T09:00:00Z",
+   "updated": "2026-10-28T09:00:00Z"
+  },
+  {
+   "id": "46007",
+   "key": "TOOL-490",
+   "project_key": "TOOL",
+   "issue_type": "Story",
+   "summary": "Show Task tickets from Priority Assistance customers on the self-service worklist",
+   "description": "Desk Quality files Priority Assistance enquiries on residential accounts as Tasks (T-11 would hold them at Normal as Questions), so they never reach the self-service worklist. Self-service would like visibility. Backlog.",
+   "status": "To Do",
+   "priority": "Low",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-cllewellyn",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-10-29T09:00:00Z",
+   "updated": "2026-10-29T09:00:00Z"
+  },
+  {
+   "id": "46008",
+   "key": "TOOL-495",
+   "project_key": "TOOL",
+   "issue_type": "Task",
+   "summary": "Archive pre-June product tags on closed tickets",
+   "description": "Old prod_ tags remain on closed tickets; no action on open tickets (Desk Quality recategorises).",
+   "status": "To Do",
+   "priority": "Low",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-mteague",
+   "sprint_id": null,
+   "story_points": 2,
+   "created": "2026-11-03T09:00:00Z",
+   "updated": "2026-11-03T09:00:00Z"
+  },
+  {
+   "id": "46009",
+   "key": "TOOL-497",
+   "project_key": "TOOL",
+   "issue_type": "Bug",
+   "summary": "Self-service portal shows wrong contract end for some accounts",
+   "description": "Portal reads contract end from billing, not Salesforce. Salesforce is the record.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-cllewellyn",
+   "sprint_id": 4601,
+   "story_points": 2,
+   "created": "2026-11-05T09:00:00Z",
+   "updated": "2026-11-13T09:00:00Z"
+  },
+  {
+   "id": "46010",
+   "key": "TOOL-503",
+   "project_key": "TOOL",
+   "issue_type": "Story",
+   "summary": "File every ticket under its requester's organisation on save",
+   "description": "Front line picks the organisation by name search and sometimes logs a ticket under a look-alike: a group head office for a branch that has its own account, a practice's old account after it re-registered, a relative's household with the same surname. Reporting, the SLA policy and the triggers then read the wrong account. From 18 November 2026 Lumen Desk sets a ticket's organisation from its requester's profile on every save, before the business rules run, so the ticket is held under the account of the customer who raised it. The update acknowledgement still shows the ticket as submitted (TOOL-455). Desk Quality: categorise against the requester's account (Salesforce contact -> account).",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "acc-fadeyemo",
+   "reporter": "acc-mteague",
+   "sprint_id": 4601,
+   "story_points": 3,
+   "created": "2026-11-04T09:00:00Z",
+   "updated": "2026-11-18T07:00:00Z"
+  }
+ ]
+}
