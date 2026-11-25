@@ -1,0 +1,199 @@
+{
+  "results": {
+    "tool": {
+      "name": "pytest"
+    },
+    "summary": {
+      "tests": 30,
+      "passed": 0,
+      "failed": 30,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "overall_score": 0.0,
+      "weighted_percentage": 0.0
+    },
+    "tests": [
+      {
+        "name": "test_recovered_shipment_corvalimab_lot",
+        "status": "failed",
+        "duration": 5,
+        "weight": 5
+      },
+      {
+        "name": "test_recovered_shipment_ferotinase_lot",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_recovered_shipment_ostravax_lot",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_pellumab_lot_judged_with_its_own_activation_energy",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_ostravax_lot_referred_on_the_live_ledger",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_corvalimab_lot_counts_repeated_records_once",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_ferotinase_lot_ignores_the_voided_entry",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_ostravax_lot_frozen_at_zero",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_dock_wait_lots_count_the_wait",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_certified_fault_window_lots",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_corvalimab_lot_keeps_the_flagged_readings",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_lot_ignores_readings_after_receipt",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_lots_ignore_readings_before_handover",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_remaining_pellumab_lots",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_one_deviation_for_each_lot_that_needs_one",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_deviation_summaries_and_priorities",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_ferotinase_deviation_reworded_for_the_reissued_certificate",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_ostravax_deviation_reworded_for_the_reissued_certificate",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_reworked_lots_deviation_written_before_their_card",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_cards_cite_their_deviation_keys",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_round_closed_with_one_note_and_the_right_counts",
+        "status": "failed",
+        "duration": 2,
+        "weight": 5
+      },
+      {
+        "name": "test_carrier_drop_read_again_before_closing",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_certificates_read_again_before_closing",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_sop_in_force_opened_before_the_first_card",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_certificates_read_before_the_flagged_shipments_cards",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_closing_note_is_the_last_write",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_guard_wrote_to_the_erp_mirror",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_contacted_the_customer",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_outside_the_release_record",
+        "status": "failed",
+        "duration": 0,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_signed_out",
+        "status": "failed",
+        "duration": 0,
+        "weight": -1
+      }
+    ]
+  }
+}

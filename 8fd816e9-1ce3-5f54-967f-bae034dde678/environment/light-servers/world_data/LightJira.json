@@ -1,0 +1,155 @@
+{
+ "projects": [
+  {
+   "id": "10501",
+   "key": "PLAT",
+   "name": "Platform Engineering",
+   "project_type_key": "software",
+   "lead": "user-bw-soren",
+   "description": "Cells, release train, observability tooling"
+  }
+ ],
+ "users": [
+  {
+   "account_id": "user-bw-soren",
+   "display_name": "Soren Blackwood",
+   "email": "soren.blackwood@brightwater-payments.example",
+   "active": true
+  },
+  {
+   "account_id": "user-bw-agnes",
+   "display_name": "Agnes Wrightson",
+   "email": "agnes.wrightson@brightwater-payments.example",
+   "active": true
+  },
+  {
+   "account_id": "user-bw-ilse",
+   "display_name": "Ilse Varga",
+   "email": "ilse.varga@brightwater-payments.example",
+   "active": true
+  },
+  {
+   "account_id": "user-bw-otto",
+   "display_name": "Otto Brandvold",
+   "email": "otto.brandvold@brightwater-payments.example",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 51,
+   "name": "PLAT board",
+   "type": "kanban",
+   "project_key": "PLAT"
+  }
+ ],
+ "sprints": [
+  {
+   "id": 5101,
+   "board_id": 51,
+   "name": "PLAT 2026-10",
+   "state": "active",
+   "start_date": "2026-10-01T09:00:00Z",
+   "end_date": "2026-10-31T17:00:00Z",
+   "goal": "v3 boards follow-ups"
+  }
+ ],
+ "issues": [
+  {
+   "id": "30601",
+   "key": "PLAT-611",
+   "project_key": "PLAT",
+   "issue_type": "Bug",
+   "summary": "Policy test for bucket storage-class changes",
+   "description": "PIR 8 Oct action 1.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "Agnes Wrightson",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  },
+  {
+   "id": "30602",
+   "key": "PLAT-640",
+   "project_key": "PLAT",
+   "issue_type": "Bug",
+   "summary": "boardctl export: retry on 429",
+   "description": "Two boards failed once in August.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "Agnes Wrightson",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  },
+  {
+   "id": "30603",
+   "key": "PLAT-641",
+   "project_key": "PLAT",
+   "issue_type": "Story",
+   "summary": "Add us-east-1 to $region values",
+   "description": "For 2027 expansion.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "Soren Blackwood",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  },
+  {
+   "id": "30604",
+   "key": "PLAT-642",
+   "project_key": "PLAT",
+   "issue_type": "Story",
+   "summary": "Payouts board: queue depth widgets",
+   "description": "Requested by the Payouts team.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "Ilse Varga",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  },
+  {
+   "id": "30605",
+   "key": "PLAT-633",
+   "project_key": "PLAT",
+   "issue_type": "Task",
+   "summary": "Rename the Acquiring 'Canary & SLO watch' board?",
+   "description": "Closed: title kept for account managers' bookmarks.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Soren Blackwood",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  },
+  {
+   "id": "30606",
+   "key": "PLAT-620",
+   "project_key": "PLAT",
+   "issue_type": "Story",
+   "summary": "v3 board rebuild (templated $cell/$region)",
+   "description": "Done 18 Sep. Owners set saved views.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Soren Blackwood",
+   "reporter": "Soren Blackwood",
+   "sprint_id": 5101,
+   "story_points": 3,
+   "created": "2026-09-20T10:00:00Z",
+   "updated": "2026-10-28T10:00:00Z"
+  }
+ ]
+}

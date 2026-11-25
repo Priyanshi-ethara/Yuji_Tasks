@@ -1,0 +1,1335 @@
+{
+ "teams": [
+  {
+   "id": "team-dsp",
+   "name": "Dispatch Core",
+   "key": "DSP",
+   "description": "Route assignment, manifests and the dispatch API. Code-host handle: @pellam/dispatch-core.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-rel",
+   "name": "Fleet Reliability",
+   "key": "REL",
+   "description": "Vehicle leases, retries, failover. Code-host handle: @pellam/fleet-reliability.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-msg",
+   "name": "Messaging",
+   "key": "MSG",
+   "description": "Driver notifications, outbox, digests, queues. Code-host handle: @pellam/messaging.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-bil",
+   "name": "Billing & Settlement",
+   "key": "BIL",
+   "description": "Quotes, invoices, ledger and settlement. Code-host handle: @pellam/billing.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-plt",
+   "name": "Platform Foundations",
+   "key": "PLT",
+   "description": "Process wiring, logging, telemetry, HTTP plumbing, third-party code. Code-host handle: @pellam/platform.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-map",
+   "name": "Maps & Routing",
+   "key": "MAP",
+   "description": "ETAs, tiles, route planning. Code-host handle: @pellam/geo (kept from Geo Services after the 31 Aug 2026 merge).",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-sim",
+   "name": "Sim Tools",
+   "key": "SIM",
+   "description": "Simulation tooling: simctl and the simkit library. Code-host handle: @pellam/sim-tools.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-api",
+   "name": "API Contracts",
+   "key": "API",
+   "description": "Protobuf contracts and generated code. Code-host handle: @pellam/api-contracts.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-ing",
+   "name": "Telematics Ingest",
+   "key": "ING",
+   "description": "Vehicle gateway sessions and frame decoding. Code-host handle: @pellam/ingest.",
+   "color": "#5E6AD2",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-drc",
+   "name": "Driver Comms",
+   "key": "DRC",
+   "description": "Driver-facing push, SMS and in-app message delivery. Code-host handle: @pellam/driver-comms.",
+   "color": "#5E6AD2",
+   "createdAt": "2026-11-02T09:00:00",
+   "updatedAt": "2026-11-02T09:00:00"
+  },
+  {
+   "id": "team-sre",
+   "name": "SRE Desk",
+   "key": "SRE",
+   "description": "SRE triage desk's own work. Routing tickets go to the owning teams, not here.",
+   "color": "#26B5CE",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-09-01T09:00:00"
+  },
+  {
+   "id": "team-geo",
+   "name": "Geo Services",
+   "key": "GEO",
+   "description": "Retired 31 Aug 2026: merged into Maps & Routing. Do not file new issues here.",
+   "color": "#999999",
+   "createdAt": "2025-02-01T09:00:00",
+   "updatedAt": "2026-08-31T17:00:00"
+  }
+ ],
+ "workflow_states": [
+  {
+   "id": "state-dsp-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-dsp",
+   "description": "Backlog for Dispatch Core"
+  },
+  {
+   "id": "state-dsp-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-dsp",
+   "description": "Todo for Dispatch Core"
+  },
+  {
+   "id": "state-dsp-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-dsp",
+   "description": "In Progress for Dispatch Core"
+  },
+  {
+   "id": "state-dsp-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-dsp",
+   "description": "Done for Dispatch Core"
+  },
+  {
+   "id": "state-dsp-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-dsp",
+   "description": "Canceled for Dispatch Core"
+  },
+  {
+   "id": "state-rel-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-rel",
+   "description": "Backlog for Fleet Reliability"
+  },
+  {
+   "id": "state-rel-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-rel",
+   "description": "Todo for Fleet Reliability"
+  },
+  {
+   "id": "state-rel-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-rel",
+   "description": "In Progress for Fleet Reliability"
+  },
+  {
+   "id": "state-rel-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-rel",
+   "description": "Done for Fleet Reliability"
+  },
+  {
+   "id": "state-rel-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-rel",
+   "description": "Canceled for Fleet Reliability"
+  },
+  {
+   "id": "state-msg-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-msg",
+   "description": "Backlog for Messaging"
+  },
+  {
+   "id": "state-msg-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-msg",
+   "description": "Todo for Messaging"
+  },
+  {
+   "id": "state-msg-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-msg",
+   "description": "In Progress for Messaging"
+  },
+  {
+   "id": "state-msg-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-msg",
+   "description": "Done for Messaging"
+  },
+  {
+   "id": "state-msg-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-msg",
+   "description": "Canceled for Messaging"
+  },
+  {
+   "id": "state-bil-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bil",
+   "description": "Backlog for Billing & Settlement"
+  },
+  {
+   "id": "state-bil-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bil",
+   "description": "Todo for Billing & Settlement"
+  },
+  {
+   "id": "state-bil-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bil",
+   "description": "In Progress for Billing & Settlement"
+  },
+  {
+   "id": "state-bil-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bil",
+   "description": "Done for Billing & Settlement"
+  },
+  {
+   "id": "state-bil-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bil",
+   "description": "Canceled for Billing & Settlement"
+  },
+  {
+   "id": "state-plt-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-plt",
+   "description": "Backlog for Platform Foundations"
+  },
+  {
+   "id": "state-plt-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-plt",
+   "description": "Todo for Platform Foundations"
+  },
+  {
+   "id": "state-plt-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-plt",
+   "description": "In Progress for Platform Foundations"
+  },
+  {
+   "id": "state-plt-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-plt",
+   "description": "Done for Platform Foundations"
+  },
+  {
+   "id": "state-plt-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-plt",
+   "description": "Canceled for Platform Foundations"
+  },
+  {
+   "id": "state-map-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-map",
+   "description": "Backlog for Maps & Routing"
+  },
+  {
+   "id": "state-map-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-map",
+   "description": "Todo for Maps & Routing"
+  },
+  {
+   "id": "state-map-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-map",
+   "description": "In Progress for Maps & Routing"
+  },
+  {
+   "id": "state-map-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-map",
+   "description": "Done for Maps & Routing"
+  },
+  {
+   "id": "state-map-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-map",
+   "description": "Canceled for Maps & Routing"
+  },
+  {
+   "id": "state-sim-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-sim",
+   "description": "Backlog for Sim Tools"
+  },
+  {
+   "id": "state-sim-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-sim",
+   "description": "Todo for Sim Tools"
+  },
+  {
+   "id": "state-sim-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-sim",
+   "description": "In Progress for Sim Tools"
+  },
+  {
+   "id": "state-sim-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-sim",
+   "description": "Done for Sim Tools"
+  },
+  {
+   "id": "state-sim-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-sim",
+   "description": "Canceled for Sim Tools"
+  },
+  {
+   "id": "state-api-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-api",
+   "description": "Backlog for API Contracts"
+  },
+  {
+   "id": "state-api-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-api",
+   "description": "Todo for API Contracts"
+  },
+  {
+   "id": "state-api-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-api",
+   "description": "In Progress for API Contracts"
+  },
+  {
+   "id": "state-api-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-api",
+   "description": "Done for API Contracts"
+  },
+  {
+   "id": "state-api-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-api",
+   "description": "Canceled for API Contracts"
+  },
+  {
+   "id": "state-ing-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-ing",
+   "description": "Backlog for Telematics Ingest"
+  },
+  {
+   "id": "state-ing-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-ing",
+   "description": "Todo for Telematics Ingest"
+  },
+  {
+   "id": "state-ing-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-ing",
+   "description": "In Progress for Telematics Ingest"
+  },
+  {
+   "id": "state-ing-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-ing",
+   "description": "Done for Telematics Ingest"
+  },
+  {
+   "id": "state-ing-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-ing",
+   "description": "Canceled for Telematics Ingest"
+  },
+  {
+   "id": "state-sre-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-sre",
+   "description": "Backlog for SRE Desk"
+  },
+  {
+   "id": "state-sre-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-sre",
+   "description": "Todo for SRE Desk"
+  },
+  {
+   "id": "state-sre-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-sre",
+   "description": "In Progress for SRE Desk"
+  },
+  {
+   "id": "state-sre-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-sre",
+   "description": "Done for SRE Desk"
+  },
+  {
+   "id": "state-sre-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-sre",
+   "description": "Canceled for SRE Desk"
+  },
+  {
+   "id": "state-geo-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-geo",
+   "description": "Backlog for Geo Services"
+  },
+  {
+   "id": "state-geo-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-geo",
+   "description": "Todo for Geo Services"
+  },
+  {
+   "id": "state-geo-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-geo",
+   "description": "In Progress for Geo Services"
+  },
+  {
+   "id": "state-geo-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-geo",
+   "description": "Done for Geo Services"
+  },
+  {
+   "id": "state-geo-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-geo",
+   "description": "Canceled for Geo Services"
+  },
+  {
+   "id": "state-drc-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-drc",
+   "description": "Backlog for Driver Comms"
+  },
+  {
+   "id": "state-drc-unstarted",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-drc",
+   "description": "Todo for Driver Comms"
+  },
+  {
+   "id": "state-drc-started",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-drc",
+   "description": "In Progress for Driver Comms"
+  },
+  {
+   "id": "state-drc-completed",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-drc",
+   "description": "Done for Driver Comms"
+  },
+  {
+   "id": "state-drc-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-drc",
+   "description": "Canceled for Driver Comms"
+  }
+ ],
+ "users": [
+  {
+   "id": "user-ines",
+   "name": "ines.varga",
+   "displayName": "Ines Varga",
+   "email": "ines.varga@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": true,
+   "teamId": "team-sre",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-tobin",
+   "name": "tobin.marsh",
+   "displayName": "Tobin Marsh",
+   "email": "tobin.marsh@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-sre",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-sade",
+   "name": "sade.akintola",
+   "displayName": "Sade Akintola",
+   "email": "sade.akintola@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-sre",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-marisol",
+   "name": "marisol.quenby",
+   "displayName": "Marisol Quenby",
+   "email": "marisol.quenby@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-dsp",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-bram",
+   "name": "bram.hoekstra",
+   "displayName": "Bram Hoekstra",
+   "email": "bram.hoekstra@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-dsp",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-anselm",
+   "name": "anselm.okoro",
+   "displayName": "Anselm Okoro",
+   "email": "anselm.okoro@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-rel",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-juno",
+   "name": "juno.takahara",
+   "displayName": "Juno Takahara",
+   "email": "juno.takahara@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-rel",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-petra",
+   "name": "petra.lindqvist",
+   "displayName": "Petra Lindqvist",
+   "email": "petra.lindqvist@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-msg",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-cassius",
+   "name": "cassius.ferreira",
+   "displayName": "Cassius Ferreira",
+   "email": "cassius.ferreira@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-msg",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-kofi",
+   "name": "kofi.mensahhart",
+   "displayName": "Kofi Mensah-Hart",
+   "email": "kofi.mensahhart@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-bil",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-ilse",
+   "name": "ilse.varkonyi",
+   "displayName": "Ilse Varkonyi",
+   "email": "ilse.varkonyi@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-bil",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-ruth",
+   "name": "ruth.calloway",
+   "displayName": "Ruth Calloway",
+   "email": "ruth.calloway@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-plt",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-nils",
+   "name": "nils.brennan",
+   "displayName": "Nils Brennan",
+   "email": "nils.brennan@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-plt",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-dev",
+   "name": "dev.arunachalam",
+   "displayName": "Dev Arunachalam",
+   "email": "dev.arunachalam@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-map",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-faye",
+   "name": "faye.oduya",
+   "displayName": "Faye Oduya",
+   "email": "faye.oduya@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-map",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-odile",
+   "name": "odile.brandt",
+   "displayName": "Odile Brandt",
+   "email": "odile.brandt@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-sim",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-mato",
+   "name": "mato.ishikawa",
+   "displayName": "Mato Ishikawa",
+   "email": "mato.ishikawa@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-sim",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-hamish",
+   "name": "hamish.tregarthen",
+   "displayName": "Hamish Tregarthen",
+   "email": "hamish.tregarthen@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-api",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-yusra",
+   "name": "yusra.bellamy",
+   "displayName": "Yusra Bellamy",
+   "email": "yusra.bellamy@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-ing",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-oren",
+   "name": "oren.saltmarsh",
+   "displayName": "Oren Saltmarsh",
+   "email": "oren.saltmarsh@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-ing",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-gwen",
+   "name": "gwen.achterberg",
+   "displayName": "Gwen Achterberg",
+   "email": "gwen.achterberg@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-map",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-leif",
+   "name": "leif.domingo",
+   "displayName": "Leif Domingo",
+   "email": "leif.domingo@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-plt",
+   "createdAt": "2025-03-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-tamsin",
+   "name": "tamsin.okafor",
+   "displayName": "Tamsin Okafor",
+   "email": "tamsin.okafor@pellam.io",
+   "avatarUrl": null,
+   "active": true,
+   "admin": false,
+   "teamId": "team-drc",
+   "createdAt": "2026-11-02T09:00:00",
+   "updatedAt": "2026-11-02T09:00:00"
+  }
+ ],
+ "labels": [
+  {
+   "id": "label-crash-routing",
+   "name": "crash-routing",
+   "color": "#eb5757",
+   "description": "Weekly crash routing ticket from the SRE desk",
+   "teamId": null,
+   "createdAt": "2026-02-01T09:00:00",
+   "updatedAt": "2026-02-01T09:00:00"
+  },
+  {
+   "id": "label-simkit",
+   "name": "simkit",
+   "color": "#f2c94c",
+   "description": "simkit library work",
+   "teamId": "team-sim",
+   "createdAt": "2026-09-08T09:00:00",
+   "updatedAt": "2026-09-08T09:00:00"
+  }
+ ],
+ "projects": [
+  {
+   "id": "proj-crash-q4",
+   "name": "Crash burn-down Q4 2026",
+   "description": "Cross-team project the weekly routing tickets roll up to for the Q4 reliability review.",
+   "state": "started",
+   "leadId": "user-ines",
+   "teamIds": [
+    "team-dsp",
+    "team-rel",
+    "team-msg",
+    "team-bil",
+    "team-plt",
+    "team-map",
+    "team-sim",
+    "team-api",
+    "team-ing"
+   ],
+   "startDate": "2026-10-01",
+   "targetDate": "2026-12-18",
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-11-09T11:00:00"
+  }
+ ],
+ "cycles": [
+  {
+   "id": "cycle-dsp-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-dsp",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-rel-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-rel",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-msg-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-msg",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-bil-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-bil",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-plt-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-plt",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-map-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-map",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-sim-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-sim",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-api-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-api",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  },
+  {
+   "id": "cycle-ing-46",
+   "name": "Cycle 46",
+   "number": 46,
+   "teamId": "team-ing",
+   "startsAt": "2026-11-16",
+   "endsAt": "2026-11-29",
+   "completedAt": null,
+   "createdAt": "2026-11-13T09:00:00",
+   "updatedAt": "2026-11-13T09:00:00"
+  }
+ ],
+ "issues": [
+  {
+   "id": "iss-w45-sim",
+   "identifier": "SIM-601",
+   "number": 601,
+   "title": "Crash routing 2026-11-09 — Sim Tools",
+   "description": "FLEETD-2QF  send on closed channel\nFLEETD-2VF  nil map write\nFLEETD-2QE  send on closed channel\nFLEETD-2VE  nil map write\nFLEETD-2QD  send on closed channel",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-sim-started",
+   "assigneeId": null,
+   "teamId": "team-sim",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 601.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-msg",
+   "identifier": "MSG-602",
+   "number": 602,
+   "title": "Crash routing 2026-11-09 — Messaging",
+   "description": "FLEETD-2TF  unbounded goroutine growth\nFLEETD-2TE  unbounded goroutine growth\nFLEETD-2TD  unbounded goroutine growth",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-msg-completed",
+   "assigneeId": null,
+   "teamId": "team-msg",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 602.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-dsp",
+   "identifier": "DSP-603",
+   "number": 603,
+   "title": "Crash routing 2026-11-09 — Dispatch Core",
+   "description": "FLEETD-2RF  nil map write\nFLEETD-2UF  typed nil returned as error\nFLEETD-2RE  nil map write",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-dsp-completed",
+   "assigneeId": null,
+   "teamId": "team-dsp",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 603.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-plt",
+   "identifier": "PLT-604",
+   "number": 604,
+   "title": "Crash routing 2026-11-09 — Platform Foundations",
+   "description": "FLEETD-2WF  slice bounds\nFLEETD-2WE  slice bounds\nFLEETD-2WD  slice bounds",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-plt-completed",
+   "assigneeId": null,
+   "teamId": "team-plt",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 604.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-ing",
+   "identifier": "ING-605",
+   "number": 605,
+   "title": "Crash routing 2026-11-09 — Telematics Ingest",
+   "description": "FLEETD-2SF  slice bounds",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-ing-completed",
+   "assigneeId": null,
+   "teamId": "team-ing",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 605.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-map",
+   "identifier": "MAP-606",
+   "number": 606,
+   "title": "Crash routing 2026-11-09 — Maps & Routing",
+   "description": "FLEETD-2XF  send on closed channel",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-map-completed",
+   "assigneeId": null,
+   "teamId": "team-map",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 606.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-w45-bil",
+   "identifier": "BIL-607",
+   "number": 607,
+   "title": "Crash routing 2026-11-09 — Billing & Settlement",
+   "description": "FLEETD-2UE  typed nil returned as error",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-bil-completed",
+   "assigneeId": null,
+   "teamId": "team-bil",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-crash-routing"
+   ],
+   "dueDate": null,
+   "sortOrder": 607.0,
+   "branchName": null,
+   "createdAt": "2026-11-09T11:00:00",
+   "updatedAt": "2026-11-12T16:00:00",
+   "startedAt": "2026-11-10T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-sim-bump",
+   "identifier": "SIM-618",
+   "number": 618,
+   "title": "simkit 0.5.0 follow-up (Reset after Stop, Window clamp)",
+   "description": "simkit 0.5.0 makes Ticker.Reset after Stop a no-op and clamps Ring.Window. fleetd still vendors 0.4.2; the bump is a fleetd PR (go get + go mod vendor) that Platform reviews.",
+   "priority": 2,
+   "estimate": 2,
+   "stateId": "state-sim-unstarted",
+   "assigneeId": "user-mato",
+   "teamId": "team-sim",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-simkit"
+   ],
+   "dueDate": "2026-11-27",
+   "sortOrder": 618.0,
+   "branchName": null,
+   "createdAt": "2026-11-13T10:00:00",
+   "updatedAt": "2026-11-13T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-rel-renewer",
+   "identifier": "REL-233",
+   "number": 233,
+   "title": "Renewer must not re-arm after Stop",
+   "description": "Follow-up 1 of the 7 Oct lease review. PR #3471.",
+   "priority": 1,
+   "estimate": 3,
+   "stateId": "state-rel-started",
+   "assigneeId": "user-juno",
+   "teamId": "team-rel",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [],
+   "dueDate": null,
+   "sortOrder": 233.0,
+   "branchName": "juno/rel-233-renewer",
+   "createdAt": "2026-10-09T10:00:00",
+   "updatedAt": "2026-11-13T10:00:00",
+   "startedAt": "2026-11-03T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "iss-drc-oncall",
+   "identifier": "DRC-12",
+   "number": 12,
+   "title": "Driver Comms on-call rotation and runbooks",
+   "description": "Set up the Driver Comms pager rotation and move the push/SMS runbooks from the Messaging space. Owner: Tamsin.",
+   "priority": 3,
+   "estimate": null,
+   "stateId": "state-drc-started",
+   "assigneeId": "user-tamsin",
+   "teamId": "team-drc",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [],
+   "dueDate": null,
+   "sortOrder": 12.0,
+   "branchName": null,
+   "createdAt": "2026-11-03T10:00:00",
+   "updatedAt": "2026-11-12T15:00:00",
+   "startedAt": "2026-11-04T09:00:00",
+   "completedAt": null,
+   "canceledAt": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "cmt-w45-sim-1",
+   "body": "Taking these; most look like callers misusing the ticker though.",
+   "issueId": "iss-w45-sim",
+   "userId": "user-odile",
+   "createdAt": "2026-11-10T09:30:00",
+   "updatedAt": "2026-11-10T09:30:00"
+  }
+ ]
+}

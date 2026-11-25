@@ -1,0 +1,63 @@
+=== S1 (8fd816e9-1ce3-5f54-967f-bae034dde678)
+missing_files   : none
+empty_files     : none
+missing_dirs    : none
+rubric_file     : ['tests/judge.toml']
+both_rubrics    : False
+world_data_json : 15 files (minimum 2): ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDatadog', 'LightGmail', 'LightGoogleCalendar', 'LightGoogleDrive', 'LightJira', 'LightLinear', 'LightOkta', 'LightPagerDuty', 'LightSentry', 'LightServiceNow', 'LightSlack', 'LightWordPress']
+data_files      : 35
+old_env.json    : True
+helper_modules  : none
+harness_owned_in_tests: none
+=== S2
+parse_errors: none
+=== S3
+harness_owned_blocks: none
+schema_version      : 1.4
+task.name           : atlas/8fd816e9-1ce3-5f54-967f-bae034dde678
+task.description    : present
+task.authors        : [{'name': 'Priyanshi Joshi', 'email': 'priyanshi.joshi@ethara.ai'}]
+metadata.mcp_servers: 15
+metadata.apps       : 6
+apps_not_wired      : []
+wired_without_world : none
+world_not_wired     : none
+metadata.category   : mcp_tool_calling
+metadata.tags       : 17
+metadata.gradeable  : True
+=== S4a
+weight_shape=flat weighted=24 defined=24 dynamic_minting=False
+weighted_but_undefined: none
+defined_but_unweighted: none
+zero_or_nonnumeric_weights: none
+positive_total=49 penalty_total=17 guards=5
+threshold=0.7 null_floor=0.0 guard_polarity=pass_charges gate=None
+threshold_ok: True 
+null_floor_ok: True
+guard_polarity_ok: True | guards_without_polarity: False
+=== S4b
+shape=authoring criteria=25
+duplicate_ids: none
+duplicate_numbers: none
+missing_description: none
+bad_weight: none
+no_polarity: none
+weight_sign_vs_polarity_mismatch: none
+negate_used: none
+non_binary_scoring: none
+bad_target: none
+positive_total=46 penalty_total=11 max_single_positive=5
+targets: {'final_answer': 25}
+=== S4c
+identity: {'uuid': '8fd816e9-1ce3-5f54-967f-bae034dde678', 'canary': '8fd816e9-1ce3-5f54-967f-bae034dde678', 'instruction_canary': '8fd816e9-1ce3-5f54-967f-bae034dde678'}
+folder_name_is_uuid: True
+instruction_canaries_found: ['8fd816e9-1ce3-5f54-967f-bae034dde678']
+canary_binding_ok: True
+harbor_canary_carriers: ['.identity.json', 'environment/Dockerfile', 'instruction.md', 'solution/gt_env.json', 'solution/solve.py', 'solution/solve.sh', 'task.toml', 'tests/judge.toml', 'tests/old_env.json', 'tests/oracle.json', 'tests/test_outputs.py']
+gt_env_shape    : flat
+gt_env_servers  : ['LightAirtable', 'LightConfluence', 'LightDatadog', 'LightLinear', 'LightPagerDuty']
+in_gt_not_world : none
+in_world_not_gt : ['LightBox', 'LightGmail', 'LightGoogleCalendar', 'LightGoogleDrive', 'LightJira', 'LightOkta', 'LightSentry', 'LightServiceNow', 'LightSlack', 'LightWordPress']
+old_env_servers : 15 not in world: none
+956K	/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/000c6a31-8570-43b2-baed-ab18c5974f3f/scratchpad/qcf_8fd816e9/input_copy/8fd816e9-1ce3-5f54-967f-bae034dde678
+slug ok

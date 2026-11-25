@@ -1,0 +1,228 @@
+##### script 0 ()
+<bundle copy>/40ea4665-a13d-5cb8-875b-59bf9f2b1d95
+['opus-5'] ['run_1']
+##### script 1 (# §1 model identity, per run)
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+##### script 2 (# §1.5 score sanity, per run)
+ground truth: test_weights | 25 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.1615, 'pytest': 0.2143, 'rubric': 0.1087}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.1615, 'report.final_reward': 0.1615, 'result.verifier_result': 0.1615, 'pass_summary.per_run.combined': 0.1615}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=22 earned=9.0 penalty=0.0 total_positive=42 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2143 vs reported 0.2143  ok
+1.5b weighted tests vs ledger rows weighted=22 ledger=22 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 7 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.1087 vs reported 0.1087 / channel 0.1087  ok
+1.5c answers                       n=25 yes=13 no=12 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           25 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=46 penalty=17 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.1615 vs reward 0.1615  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=101 last_step_source=agent
+1.5f final message                 final_message.md=11938 chars, last agent text=11938 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 9019982, 'total_completion_tokens': 65494, 'total_cached_tokens': 8691882, 'total_cost_usd': 8.0338035} agent_result={'n_input_tokens': 9019982, 'n_cache_tokens': 8691882, 'n_output_tokens': 65494, 'cost_usd': 8.0338035}
+##### script 3 (# §1.6 pass@k and per-run aggregate sanity, per model folder)
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.1615 recomputed=0.1615 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2143 recomputed=0.2143 over 1 runs  ok
+1.6d average_rubric_score          reported=0.1087 recomputed=0.1087 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.1615 vs 0.1615
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('40ea4665-a13d-5cb8-875b-59bf9f2b1d95-opus-5-20261116-112639', 1)]
+1.6h failure modes                 ['partial']
+##### script 4 (# §2 failure classification, per run)
+== opus-5/run_1
+2.0 passed                         False  reward=0.1615 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=100 mcp=79 local=21  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        22  LightNotion_list_block_children
+        22  LightQuickBooks_create_invoice
+        19  terminal
+         4  LightBox_get_folder_items
+         4  LightQuickBooks_execute_query
+         3  LightBox_download_file
+         2  LightConfluence_list_content
+         2  LightAirtable_list_records
+         1  LightConfluence_login
+         1  LightConfluence_list_spaces
+         1  LightSalesforce_login
+         1  LightAirtable_login
+         1  LightNotion_login
+         1  LightQuickBooks_login
+         1  LightSalesforce_soql_query
+         1  LightAirtable_list_bases
+         1  LightSalesforce_list_records
+         1  LightAirtable_list_tables
+         1  LightNotion_search
+         1  LightNotion_get_database
+         1  LightBox_login
+         1  LightBox_search
+         1  file_editor
+         1  LightQuickBooks_get_invoice
+         1  LightOutlook_login
+         1  LightGmail_login
+         1  LightGmail_get_profile
+         1  LightOutlook_list_contacts
+         1  LightOutlook_send_mail
+         1  finish
+2.2b per server [reads, writes]    {'(local)': [21, 0], 'LightConfluence': [4, 0], 'LightSalesforce': [3, 0], 'LightAirtable': [5, 0], 'LightNotion': [25, 0], 'LightQuickBooks': [6, 22], 'LightBox': [9, 0], 'LightOutlook': [2, 1], 'LightGmail': [2, 0]}
+2.2c wired servers never called    ['LightDatadog', 'LightEnergy', 'LightGoogleCalendar', 'LightJira', 'LightMicrosoftTeams', 'LightSlack', 'LightStripe', 'LightXero']
+2.2d guards tripped                none
+2.2e positive tests missed         7: ['test_amended_meter_site_1_billed_on_its_amended_record', 'test_amended_meter_site_2_billed_on_its_amended_record', 'test_amended_meter_site_3_billed_on_its_amended_record', 'test_amended_meter_site_4_billed_on_its_amended_record', 'test_summary_mail_carries_the_draft_count_and_run_total', 'test_amended_meter_records_read_before_the_summary_mail', 'test_amended_sites_drafted_after_their_amendment_was_read']
+   2.2f final message (first 1200 chars):
+      Imogen — BR-2611 is drafted. 22 drafts in QuickBooks (IDs 9223–9244), invoice date 16 Nov 2026, due 30 Nov 2026, one per site against the ledger customer its site Account names. One summary mail sent to you only. Nothing sent, issued, emailed or collected; no payment raised; nothing touched in Xero or Stripe; no meter reading, meter record or platform bill altered; no customer contacted. Still signed in everywhere.
+      
+      **Summary mail subject sent:** `BR-2611 drafts ready: 22 invoices, £254015.70`
+      
+      ---
+      
+      ## 1. Per site
+      
+      | Site | Name | QB | kWh Ed6 | kWh Ed7 | kWh total | MD Ed6 (kW) | MD Ed7 (kW) | Net total |
+      |---|---|---|---|---|---|---|---|---|
+      | HMS-1047 | Calloway Mill Bakery | 9223 | 14,446.838 | 11,527.706 | 25,974.544 | 96.93 | 96.29 | £5,730.40 |
+      | HMS-1052 | Ostrey Lane Medical Centre | 9224 | 7,645.565 | 6,092.111 | 13,737.676 | 48.84 | 48.80 | £3,752.99 |
+      | HMS-1068 | Pellingford Community School | 9225 | 7,069.669 | 7,943.715 | 15,013.384 | 72.10 | 72.97 | £4,059.44 |
+      | HMS-1073 | Quenby Print Works | 9226 | 27,451.057 | 21,713.286 | 49,164.343 | 135.48 | 127.69 | £12,905.70 |
+      | HMS-1081 | Saltash Row Garage | 9227 | 4,946.045 | 4,142.011 | 9,088.056 | 37.27 | 36.85 | £2,5
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.1087) The reply identifies Quenby Print Works, Thornaby Wharf Cold Store, Ashgrove Plastics Moulding and Hollin Brid
+          WHY: The final answer does not identify any sites as requiring CT-ratio corrections. Quenby, Thornaby, Ashgrove, and Hollin appear in the table, but no CT correction is stated.
+      (2, 0.1087) The reply explains why those values were understated: the DNO (network operator) replaced the CTs before the r
+          WHY: The final answer never explains that the DNO replaced CTs before the run while the meters retained their old programmed ratios.
+      (3, 0.1087) The reply gives each of the four sites' correction as the new CT ratio over the old one: Quenby Print Works x2
+          WHY: The final answer gives none of the required CT factors (x2, x4/3, x1.25, and x1.5).
+      (4, 0.1087) The reply states the run's total billed energy as 1,143,171.216 kWh, within 1 kWh either way (thousands separa
+          WHY: Section 2 of final_message.md states total billed energy of “1,015,165.902 kWh,” not 1,143,171.216 kWh.
+      (5, 0.0652) The reply splits the run's billed energy between the editions as 629,534.629 kWh under Edition 6 and 513,636.5
+          WHY: Section 2 states “558,478.991 kWh” for Edition 6 and “456,686.911 kWh” for Edition 7, rather than the required 629,534.629 and 513,636.587 kWh.
+      (6, 0.0652) The reply's billed energy figures for the four CT-corrected sites are, each within 0.5 kWh either way: Quenby 
+          WHY: The table reports Quenby 49,164.343, Thornaby 70,466.485, Ashgrove 149,469.703, and Hollin 35,969.440 kWh; none matches the required CT-corrected figure.
+      (7, 0.0652) The reply gives the maximum demand used for Edition 6 and for Edition 7 (kW) of the four CT-corrected sites as
+          WHY: The table reports uncorrected maxima: Quenby 135.48/127.69, Thornaby 151.92/149.94, Ashgrove 314.66/304.58, and Hollin 179.90/180.90 kW, not the required corrected maxima.
+      (8, 0.0652) The reply names the dated amendment in those meters' commissioning records in the metering asset register (the
+          WHY: Although the answer cites asset-register commissioning records for demand-register programming, it does not name a dated CT amendment or the field engineer’s Commissioning-channel note as evidence of CT changes.
+      (9, 0.0652) The reply says Ashgrove Plastics Moulding needed both corrections together: its exported values are half-hour 
+          WHY: The answer says Ashgrove’s channels were halved as mean demand, but never applies or describes the additional 750/600 CT correction or the combined x0.625 calculation.
+      (21, -0.1087) The reply states GBP 376,700.10 (within GBP 1 either way; the trial sheet's Edition-7-throughout figure) as th
+          WHY: The £376,700.10 figure appears only as “Dorian’s trial sheet” total that the answer explicitly did not follow; the criterion says that usage does not count.
+      (22, -0.0652) The reply states GBP 365,729.83 (within GBP 1 either way) as the run's net total.
+          WHY: The final answer states the run net total as £254,015.70, not £365,729.83.
+      (23, -0.0652) The reply states 1,469,937.843 kWh (within 1 kWh either way) as the run's total billed energy.
+          WHY: The final answer states total billed energy as 1,015,165.902 kWh, not 1,469,937.843 kWh.
+##### script 5 (# §3 reasoning presence, per run)
+== opus-5/run_1
+agent steps / with reasoning       101 / 29  (11355 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 101
+verdict                            present
+##### script 6 (# §4 rubric <-> pytest overlap (AST literals + name tokens), per bundle, with lost-weight per run)
+tests=22 criteria=25
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| DOUBLE-COUNTED | `test_demand_register_sites_billed_on_energy` | 1 | 0.14 | 1.00 | 12 (+1) | The reply says that Hollin Bridge Sawmill and Wexcombe Craft Studios,  |
+| INDEPENDENT | `test_energy_register_twin_on_the_same_collector_billed_as_exported` | 1 | 0.21 | 0.00 | 12 (+1) | The reply says that Hollin Bridge Sawmill and Wexcombe Craft Studios,  |
+| INDEPENDENT | `test_supply_trimmed_sites_billed_only_for_their_days_on_supply` | 1 | 0.18 | 0.00 | 16 (+1) | The reply says Brookhay Brewery Taproom was billed only from 22 Octobe |
+| INDEPENDENT | `test_amended_meter_records_read_before_the_summary_mail` | 5 | 0.16 | 0.00 | 8 (+3) | The reply names the dated amendment in those meters' commissioning rec |
+| INDEPENDENT | `test_period_ending_sites_banded_on_the_half_hour_before_their_stamps` | 1 | 0.16 | 0.00 | 11 (+1) | The reply says that the Varden-collected sites (Lanyon Quay Fish Marke |
+| INDEPENDENT | `test_guard_changed_meter_data_or_meter_records` | -5 | 0.15 | 0.00 | 8 (+3) | The reply names the dated amendment in those meters' commissioning rec |
+| INDEPENDENT | `test_commissioning_record_of_each_kestrel_meter_read_before_its_draft` | 1 | 0.14 | 0.00 | 12 (+1) | The reply says that Hollin Bridge Sawmill and Wexcombe Craft Studios,  |
+| INDEPENDENT | `test_amended_meter_site_1_billed_on_its_amended_record` | 5 | 0.12 | 0.00 | 23 (--3) | The reply states 1,469,937.843 kWh (within 1 kWh either way) as the ru |
+| INDEPENDENT | `test_summary_mail_carries_the_draft_count_and_run_total` | 5 | 0.10 | 0.00 | 24 (--3) | The reply states GBP 254,015.70 (within GBP 1 either way) as the run's |
+| INDEPENDENT | `test_amended_meter_site_2_billed_on_its_amended_record` | 5 | 0.07 | 0.00 | 15 (+1) | The reply says Marlpit Garden Centre was billed only up to 5 November  |
+| INDEPENDENT | `test_amended_meter_site_3_billed_on_its_amended_record` | 5 | 0.07 | 0.00 | 15 (+1) | The reply says Marlpit Garden Centre was billed only up to 5 November  |
+| INDEPENDENT | `test_amended_meter_site_4_billed_on_its_amended_record` | 5 | 0.07 | 0.00 | 15 (+1) | The reply says Marlpit Garden Centre was billed only up to 5 November  |
+| INDEPENDENT | `test_amended_sites_drafted_after_their_amendment_was_read` | 3 | 0.07 | 0.00 | 24 (--3) | The reply states GBP 254,015.70 (within GBP 1 either way) as the run's |
+| INDEPENDENT | `test_guard_signed_out_of_an_application` | -1 | 0.07 | 0.00 | 20 (+1) | The reply says the colleague's trial sheet, which priced the whole run |
+| INDEPENDENT | `test_every_draft_line_named_in_the_pinned_vocabulary` | 1 | 0.06 | 0.00 | 18 (+1) | The reply explains the capacity charge as the maximum half-hour demand |
+| INDEPENDENT | `test_every_site_drafted_once_on_its_ledger_customer` | 1 | 0.06 | 0.00 | 5 (+3) | The reply splits the run's billed energy between the editions as 629,5 |
+| INDEPENDENT | `test_drafts_all_exist_before_the_summary_mail` | 1 | 0.06 | 0.00 | 24 (--3) | The reply states GBP 254,015.70 (within GBP 1 either way) as the run's |
+| INDEPENDENT | `test_guard_contacted_a_customer_or_other_outsider` | -3 | 0.05 | 0.00 | 20 (+1) | The reply says the colleague's trial sheet, which priced the whole run |
+| INDEPENDENT | `test_plain_sites_billed_right` | 1 | 0.05 | 0.00 | 23 (--3) | The reply states 1,469,937.843 kWh (within 1 kWh either way) as the ru |
+| INDEPENDENT | `test_guard_wrote_in_a_system_the_run_only_reads` | -3 | 0.04 | 0.00 | 24 (--3) | The reply states GBP 254,015.70 (within GBP 1 either way) as the run's |
+| INDEPENDENT | `test_guard_sent_authorised_or_collected_an_invoice` | -5 | 0.04 | 0.00 | 1 (+5) | The reply identifies Quenby Print Works, Thornaby Wharf Cold Store, As |
+| INDEPENDENT | `test_guard_mailed_a_colleague_besides_the_billing_manager` | -1 | 0.03 | 0.00 | 20 (+1) | The reply says the colleague's trial sheet, which priced the whole run |
+
+DOUBLE-COUNTED=1 PARTIAL=0 INDEPENDENT=21 redundancy=5%
+RUBRIC-ONLY (no test reaches 0.5): 24 of 25
+- (1, +5, final answer) The reply identifies Quenby Print Works, Thornaby Wharf Cold Store, Ashgrove Plastics Moul
+- (2, +5, final answer) The reply explains why those values were understated: the DNO (network operator) replaced 
+- (3, +5, final answer) The reply gives each of the four sites' correction as the new CT ratio over the old one: Q
+- (4, +5, final answer) The reply states the run's total billed energy as 1,143,171.216 kWh, within 1 kWh either w
+- (5, +3, final answer) The reply splits the run's billed energy between the editions as 629,534.629 kWh under Edi
+- (6, +3, final answer) The reply's billed energy figures for the four CT-corrected sites are, each within 0.5 kWh
+- (7, +3, final answer) The reply gives the maximum demand used for Edition 6 and for Edition 7 (kW) of the four C
+- (8, +3, final answer) The reply names the dated amendment in those meters' commissioning records in the metering
+- (9, +3, final answer) The reply says Ashgrove Plastics Moulding needed both corrections together: its exported v
+- (10, +1, final answer) The reply identifies Ashgrove Plastics Moulding, Fenwick Lane Data Hall, Gorsebrook Laundr
+- (11, +1, final answer) The reply says that the Varden-collected sites (Lanyon Quay Fish Market, Merrowby Care Hom
+- (13, +1, final answer) The reply explains that each half-hour was priced at the edition in force when the energy 
+- (14, +1, final answer) The reply explains that the UTC timestamps were converted to UK civil time, with BST (UTC+
+- (15, +1, final answer) The reply says Marlpit Garden Centre was billed only up to 5 November 2026 because its sup
+- (16, +1, final answer) The reply says Brookhay Brewery Taproom was billed only from 22 October 2026, its supply s
+- (17, +1, final answer) The reply says Wendle Street Offices' later supply end date (31 December 2026) did not sho
+- (18, +1, final answer) The reply explains the capacity charge as the maximum half-hour demand within each edition
+- (19, +1, final answer) The reply explains that the excess reactive charge was worked half-hour by half-hour on re
+- (20, +1, final answer) The reply says the colleague's trial sheet, which priced the whole run on Edition 7, was n
+- (21, --5, final answer) The reply states GBP 376,700.10 (within GBP 1 either way; the trial sheet's Edition-7-thro
+- (22, --3, final answer) The reply states GBP 365,729.83 (within GBP 1 either way) as the run's net total.
+- (23, --3, final answer) The reply states 1,469,937.843 kWh (within 1 kWh either way) as the run's total billed ene
+- (24, --3, final answer) The reply states GBP 254,015.70 (within GBP 1 either way) as the run's net total. Quoting 
+- (25, --3, final answer) The reply states 1,015,165.899 kWh (within 1 kWh either way) as the run's total billed ene
+opus-5/run_1 pytest positive lost 33/42 = 78.6%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7609/1.0000 = 76.1%; penalties charged 0.1304
+##### script 7 (# §5 false / hardcoded pytest detection (AST), per bundle; pass bits from the ledger of each run)
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_amended_meter_site_1_billed_on_its_amended_record` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_meter_site_2_billed_on_its_amended_record` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_meter_site_3_billed_on_its_amended_record` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_meter_site_4_billed_on_its_amended_record` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_meter_records_read_before_the_summary_mail` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_sites_drafted_after_their_amendment_was_read` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_demand_register_sites_billed_on_energy` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_period_ending_sites_banded_on_the_half_hour_before_their_stamps` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_energy_register_twin_on_the_same_collector_billed_as_exported` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_supply_trimmed_sites_billed_only_for_their_days_on_supply` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_plain_sites_billed_right` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_summary_mail_carries_the_draft_count_and_run_total` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_every_site_drafted_once_on_its_ledger_customer` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_every_draft_line_named_in_the_pinned_vocabulary` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_drafts_all_exist_before_the_summary_mail` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_commissioning_record_of_each_kestrel_meter_read_before_its_draft` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_sent_authorised_or_collected_an_invoice` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_changed_meter_data_or_meter_records` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_in_a_system_the_run_only_reads` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_contacted_a_customer_or_other_outsider` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_mailed_a_colleague_besides_the_billing_manager` | -1 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_application` | -1 | {'opus-5/run_1': False} | - |
+
+0/22 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

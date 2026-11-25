@@ -1,0 +1,183 @@
+{
+ "spaces": [
+  {
+   "id": 98401,
+   "key": "BILL",
+   "name": "Billing & Tariffs",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Harrowmere Energy billing procedures, tariff editions and run calendar",
+     "representation": "plain"
+    }
+   }
+  },
+  {
+   "id": 98402,
+   "key": "MET",
+   "name": "Metering Services",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Harrowmere Energy metering, data collection and the asset register",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "410001",
+   "type": "page",
+   "status": "current",
+   "title": "BP-4 Billing procedure — half-hourly business accounts",
+   "space_key": "BILL",
+   "parent_id": null,
+   "version": 7,
+   "body": "<h1>BP-4 Billing procedure — half-hourly business accounts</h1>\n<p>Version 7 · 21 September 2026 · Owner: Imogen Ashdale (Billing Manager). This procedure governs every billing run of\nthe Business Half-Hourly (BHH) book. Where a handbook, a trial sheet or a customer copy differs from it, this\nprocedure and the records it names govern.</p>\n<h2>1. Scope and period</h2>\n<p>1.1 A run bills every BHH account with any supply in the run period. The run period is a span of UK civil days\n(BR-2611: 15 October to 14 November 2026 inclusive).</p>\n<h2>2. What is charged</h2>\n<p>2.1 Unit charges are priced on the active energy consumed at the metering point in each half-hour settlement\nperiod, attributed to the half-hour in which it was consumed, and banded by the time-of-use bands.</p>\n<p>2.2 The capacity charge is priced on demand: the average power drawn over a half-hour (kW), that is the\nhalf-hour's active energy in kWh multiplied by two. See \"Capacity and excess reactive charges — method\".</p>\n<p>2.3 The excess reactive charge is priced on reactive energy (kvarh) half-hour by half-hour, as the method page sets out.</p>\n<p>2.4 The standing charge is charged for each day on supply.</p>\n<h2>3. Tariff editions</h2>\n<p>3.1 Each half-hour is priced at the tariff edition in force when its energy was consumed, as each edition's page\nstates. The date of the bill does not decide the edition (internal audit 2026-H1, finding 1).</p>\n<p>3.2 Where a run period spans two editions, every charge is worked separately for the part of the period each\nedition covers and appears once per edition on the draft.</p>\n<h2>4. Time</h2>\n<p>4.1 Time-of-use bands and edition dates are written in UK civil time. The civil day of a half-hour (for its band,\nits edition, the supply dates and standing-charge days) is the UK civil date on which the half-hour begins.</p>\n<h2>5. Supply dates</h2>\n<p>5.1 Only half-hours on days the site was on supply are billed: from the Supply start date on the site account (or\nthe first day of the run period, whichever is later) to its Supply end date, the last day on supply (or the last day\nof the run period, whichever is earlier), inclusive.</p>\n<p>5.2 A Supply end date after the run period does not shorten the run period.</p>\n<h2>6. Sources of record</h2>\n<table><tr><th>What</th><th>Record</th></tr>\n<tr><td>Tariff</td><td>The edition pages in this space (rates, the consumption each edition covers).</td></tr>\n<tr><td>Site and supply</td><td>The site Account in the CRM: supply start and end, ledger customer, billing contact.</td></tr>\n<tr><td>Meter</td><td>The metering asset register (Notion): one page per meter; the page body is the meter's commissioning\nrecord (installation, measurement transformers, programming, data retrieval). The meter profiles table in the\nMetering Operations base lists each meter's collector and the export its data arrive in.</td></tr>\n<tr><td>Interval data</td><td>The collectors' exports for the run as delivered to the run folder, in the format each\ncollector's data collection agreement sets (agreements filed in Box under Metering / Data collection agreements).</td></tr>\n<tr><td>Ledger</td><td>QuickBooks. Xero is the pre-2026 archive and is read-only.</td></tr></table>\n<h2>7. Quantities and rounding</h2>\n<p>7.1 Sum each band's energy for each edition part at full precision and round the billed quantity half up to 0.001 kWh.\nExcess reactive energy is rounded half up to 0.001 kvarh. Maximum demand is rounded half up to 0.01 kW.</p>\n<p>7.2 Standing charge = days on supply in the edition part × the daily rate. Capacity charge = maximum demand ×\ndays on supply in the edition part × the rate. Unit and reactive charges = billed quantity × rate.</p>\n<p>7.3 Each line amount is converted to pounds and rounded half up to the penny. A draft's net total is the sum of\nits line amounts.</p>\n<h2>8. Drafts</h2>\n<p>8.1 One draft invoice per site in QuickBooks, against the ledger customer the site Account names; invoice date\n16 November 2026, due 30 November 2026.</p>\n<p>8.2 One line per charge per edition. The line description is \"&lt;charge name&gt; (Edition &lt;n&gt;)\" with the\ncharge name exactly as the charge schedule names it: Standing charge, Peak unit charge, Day unit charge, Night unit\ncharge, Capacity charge, Excess reactive charge. The line Amount is the charge in pounds, net of VAT. A line whose\namount is zero may be left off.</p>\n<p>8.3 To correct a draft, void your own draft and create a new one.</p>\n<h2>9. Summary mail</h2>\n<p>9.1 When every draft of the run exists, send one mail to the Billing Manager with the subject\n\"BR-yymm drafts ready: &lt;number of drafts&gt; invoices, £&lt;sum of the drafts' net totals, two decimals&gt;\".</p>\n<h2>10. What analysts do not do</h2>\n<p>10.1 Analysts do not send, issue, authorise or collect invoices, do not change meter readings or meter records,\nand do not contact customers during a run.</p>",
+   "created_by": "Imogen Ashdale",
+   "created_at": "2026-09-21T10:00:00Z"
+  },
+  {
+   "id": "410002",
+   "type": "page",
+   "status": "current",
+   "title": "BHH tariff — Edition 6",
+   "space_key": "BILL",
+   "parent_id": "410007",
+   "version": 2,
+   "body": "<h1>BHH tariff — Edition 6</h1>\n<p>Status: in force. Edition 6 prices energy consumed from 00:00 on 1 April 2026 up to 24:00 on 31 October 2026, UK\ncivil time. Published 3 March 2026 by Helena Marchbank.</p>\n<h2>Charge schedule</h2><table><tr><th>Charge</th><th>Rate</th><th>Unit</th></tr><tr><td>Standing charge</td><td>3.95</td><td>pounds per day on supply</td></tr><tr><td>Peak unit charge</td><td>34.812</td><td>pence per kWh</td></tr><tr><td>Day unit charge</td><td>24.375</td><td>pence per kWh</td></tr><tr><td>Night unit charge</td><td>16.940</td><td>pence per kWh</td></tr><tr><td>Capacity charge</td><td>4.800</td><td>pence per kW of maximum demand per day on supply</td></tr><tr><td>Excess reactive charge</td><td>2.415</td><td>pence per kvarh of excess reactive energy</td></tr></table>\n<p>Time-of-use bands, capacity and excess reactive charges are worked as the \"Time-of-use bands and civil time\" and\n\"Capacity and excess reactive charges — method\" pages set out. Rates exclude VAT and the Climate Change Levy.</p>",
+   "created_by": "Helena Marchbank",
+   "created_at": "2026-03-03T09:00:00Z"
+  },
+  {
+   "id": "410003",
+   "type": "page",
+   "status": "current",
+   "title": "BHH tariff — Edition 7",
+   "space_key": "BILL",
+   "parent_id": "410007",
+   "version": 3,
+   "body": "<h1>BHH tariff — Edition 7</h1>\n<p>Status: in force. Edition 7 prices energy consumed from 00:00 on 1 November 2026, UK civil time, until it is\nreplaced. Energy consumed before that instant remains priced at Edition 6 whatever the date of the bill that carries\nit. Published 14 September 2026 by Helena Marchbank; customer notice sent 21 September 2026.</p>\n<h2>Charge schedule</h2><table><tr><th>Charge</th><th>Rate</th><th>Unit</th></tr><tr><td>Standing charge</td><td>4.32</td><td>pounds per day on supply</td></tr><tr><td>Peak unit charge</td><td>37.905</td><td>pence per kWh</td></tr><tr><td>Day unit charge</td><td>25.610</td><td>pence per kWh</td></tr><tr><td>Night unit charge</td><td>16.940</td><td>pence per kWh</td></tr><tr><td>Capacity charge</td><td>5.350</td><td>pence per kW of maximum demand per day on supply</td></tr><tr><td>Excess reactive charge</td><td>2.780</td><td>pence per kvarh of excess reactive energy</td></tr></table>\n<p>The night unit charge is unchanged from Edition 6. Bands and methods are unchanged.</p>",
+   "created_by": "Helena Marchbank",
+   "created_at": "2026-09-14T09:00:00Z"
+  },
+  {
+   "id": "410004",
+   "type": "page",
+   "status": "current",
+   "title": "Time-of-use bands and civil time",
+   "space_key": "BILL",
+   "parent_id": "410001",
+   "version": 4,
+   "body": "<h1>Time-of-use bands and civil time</h1>\n<p>The BHH tariff has three time-of-use bands, all defined in UK civil time.</p>\n<table><tr><th>Band</th><th>When (UK civil time)</th></tr>\n<tr><td>Peak</td><td>16:00 to 19:00, Monday to Friday</td></tr>\n<tr><td>Night</td><td>00:00 to 07:00, every day</td></tr>\n<tr><td>Day</td><td>every other half-hour</td></tr></table>\n<p>A half-hour belongs to the band in which it begins. UK civil time is GMT in winter and British Summer Time (BST,\nGMT+1) from the last Sunday in March to the last Sunday in October. In 2026 the clocks went back at 02:00 BST\n(01:00 UTC) on Sunday 25 October: that civil day had 25 hours (50 half-hours) and the hour 01:00–02:00 happened\ntwice; both are Night. Bank holidays are not treated differently.</p>",
+   "created_by": "Helena Marchbank",
+   "created_at": "2025-04-01T09:00:00Z"
+  },
+  {
+   "id": "410005",
+   "type": "page",
+   "status": "current",
+   "title": "Capacity and excess reactive charges — method",
+   "space_key": "BILL",
+   "parent_id": "410001",
+   "version": 3,
+   "body": "<h1>Capacity and excess reactive charges — method</h1>\n<h2>Capacity charge</h2>\n<p>Demand in a half-hour (kW) = the half-hour's active energy (kWh) × 2. The maximum demand of an edition part is the\nhighest half-hour demand among the half-hours of that part on supply. Capacity charge = maximum demand (kW, 0.01) ×\ndays on supply in the part × the edition's rate.</p>\n<h2>Excess reactive charge</h2>\n<p>In each half-hour, excess reactive energy = the half-hour's reactive energy (kvarh) minus 0.33 × the same\nhalf-hour's active energy (kWh), where that is positive, and nil otherwise. The excess of the half-hours of an edition\npart is summed, rounded to 0.001 kvarh and charged at that edition's rate. A good power factor over the month does not\noffset a poor one in particular half-hours; the monthly-average method of Editions 1–3 was withdrawn in 2024.</p>",
+   "created_by": "Helena Marchbank",
+   "created_at": "2024-04-01T09:00:00Z"
+  },
+  {
+   "id": "410006",
+   "type": "page",
+   "status": "current",
+   "title": "Billing run calendar 2026",
+   "space_key": "BILL",
+   "parent_id": null,
+   "version": 6,
+   "body": "<h1>Billing run calendar 2026</h1>\n<table><tr><th>Run</th><th>Period (UK civil days)</th><th>Drafts</th><th>Approval</th><th>Issue</th></tr>\n<tr><td>BR-2607</td><td>15 Jun – 14 Jul</td><td>16 Jul</td><td>17 Jul</td><td>18 Jul</td></tr>\n<tr><td>BR-2608</td><td>15 Jul – 14 Aug</td><td>17 Aug</td><td>18 Aug</td><td>19 Aug</td></tr>\n<tr><td>BR-2609</td><td>15 Aug – 14 Sep</td><td>16 Sep</td><td>17 Sep</td><td>18 Sep</td></tr>\n<tr><td>BR-2610</td><td>15 Sep – 14 Oct</td><td>16 Oct</td><td>17 Oct</td><td>18 Oct</td></tr>\n<tr><td>BR-2611</td><td>15 Oct – 14 Nov</td><td>16 Nov</td><td>17 Nov</td><td>18 Nov</td></tr>\n<tr><td>BR-2612</td><td>15 Nov – 14 Dec</td><td>16 Dec</td><td>17 Dec</td><td>18 Dec</td></tr></table>\n<p>BR-2611 is the first run in which the business book crosses a tariff edition change and the October clock change.</p>",
+   "created_by": "Imogen Ashdale",
+   "created_at": "2026-01-05T09:00:00Z"
+  },
+  {
+   "id": "410007",
+   "type": "page",
+   "status": "current",
+   "title": "Tariff editions index",
+   "space_key": "BILL",
+   "parent_id": null,
+   "version": 7,
+   "body": "<h1>Tariff editions index</h1>\n<table><tr><th>Edition</th><th>Consumption covered</th><th>Status</th></tr>\n<tr><td>1</td><td>1 Apr 2023 – 30 Sep 2023</td><td>historic</td></tr>\n<tr><td>2</td><td>1 Oct 2023 – 31 Mar 2024</td><td>historic</td></tr>\n<tr><td>3</td><td>1 Apr 2024 – 30 Sep 2024</td><td>historic</td></tr>\n<tr><td>4</td><td>1 Oct 2024 – 31 Mar 2025</td><td>historic</td></tr>\n<tr><td>5</td><td>1 Apr 2025 – 31 Mar 2026</td><td>historic</td></tr>\n<tr><td>6</td><td>1 Apr 2026 – 31 Oct 2026</td><td>in force (for consumption in its dates)</td></tr>\n<tr><td>7</td><td>from 1 Nov 2026</td><td>in force</td></tr></table>",
+   "created_by": "Helena Marchbank",
+   "created_at": "2023-03-01T09:00:00Z"
+  },
+  {
+   "id": "420001",
+   "type": "page",
+   "status": "current",
+   "title": "Data collection — collectors and agreements",
+   "space_key": "MET",
+   "parent_id": null,
+   "version": 5,
+   "body": "<h1>Data collection — collectors and agreements</h1>\n<p>Owner: Tamsin Rookwood. Half-hourly data for the business book arrive from three collectors.</p>\n<table><tr><th>Collector</th><th>Meters</th><th>Agreement</th><th>Since</th></tr>\n<tr><td>Harrowmere AMR (in-house head-end)</td><td>10</td><td>internal export spec</td><td>2017</td></tr>\n<tr><td>Kestrel Data Services</td><td>6</td><td>KDS-HRM-2026</td><td>March 2026 (MOPS-1184)</td></tr>\n<tr><td>Varden Metering Services</td><td>6</td><td>VMS-DCA-2026</td><td>1 September 2026 (MOPS-1302)</td></tr></table>\n<p>The signed agreements and their schedules are filed in Box: Metering / Data collection agreements / one folder\nper collector. Exports are copied to the billing run folder on the morning after the period ends.</p>",
+   "created_by": "Tamsin Rookwood",
+   "created_at": "2026-09-02T09:00:00Z"
+  },
+  {
+   "id": "420002",
+   "type": "page",
+   "status": "current",
+   "title": "Metering asset register — how it is kept",
+   "space_key": "MET",
+   "parent_id": null,
+   "version": 2,
+   "body": "<h1>Metering asset register — how it is kept</h1>\n<p>The register is a Notion database with one page per installed meter. The properties at the top of each page (site,\nsupply number, collector, model, commissioned date) are kept for search. The body of the page is the meter's\ncommissioning record, written by the commissioning engineer and updated whenever the meter is reprogrammed, its\ntransformers are changed or its data retrieval moves.</p>",
+   "created_by": "Tamsin Rookwood",
+   "created_at": "2025-11-10T09:00:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": "430001",
+   "page_id": "410003",
+   "author": "dorian.felbrigg",
+   "body": "BR-2611 is the first run we issue after Ed7 went live - shall I price the whole run on Ed7 to keep it simple?",
+   "created_at": "2026-11-12T11:20:00Z"
+  },
+  {
+   "id": "430002",
+   "page_id": "410003",
+   "author": "helena.marchbank",
+   "body": "No. Ed7 prices energy consumed from 00:00 on 1 November; the October half of BR-2611 stays on Ed6 (BP-4 section 3).",
+   "created_at": "2026-11-12T13:05:00Z"
+  },
+  {
+   "id": "430003",
+   "page_id": "410001",
+   "author": "imogen.ashdale",
+   "body": "v7: section 8.2 line naming per edition added for BR-2611 onwards.",
+   "created_at": "2026-09-21T10:05:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "440001",
+   "page_id": "410001",
+   "name": "procedure",
+   "prefix": "global"
+  },
+  {
+   "id": "440002",
+   "page_id": "410003",
+   "name": "tariff",
+   "prefix": "global"
+  },
+  {
+   "id": "440003",
+   "page_id": "410002",
+   "name": "tariff",
+   "prefix": "global"
+  }
+ ]
+}

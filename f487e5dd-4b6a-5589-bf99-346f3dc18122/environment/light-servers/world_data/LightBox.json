@@ -1,0 +1,185 @@
+{
+ "users": [
+  {
+   "id": "11446498",
+   "name": "Design Desk (shared)",
+   "login": "designdesk@sunhollow-solar.example",
+   "role": "admin",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10995116277760,
+   "space_used": 2147483648,
+   "max_upload_size": 5368709120,
+   "job_title": "Shared engineering account",
+   "phone": "+44-1872-550100",
+   "created_at": "2024-02-01T09:00:00+00:00"
+  }
+ ],
+ "folders": [
+  {
+   "id": "71000",
+   "name": "Engineering",
+   "parent_id": "0",
+   "owner_id": "11446498",
+   "description": "Sunhollow Solar engineering library",
+   "created_at": "2024-02-01T09:00:00+00:00",
+   "modified_at": "2026-11-06T09:00:00+00:00",
+   "item_count": 2
+  },
+  {
+   "id": "71001",
+   "name": "Module datasheets",
+   "parent_id": "71000",
+   "owner_id": "11446498",
+   "description": "Controlled library of module manufacturer datasheets (DS-6 clause 2.1). Latest revision governs.",
+   "created_at": "2024-02-01T09:00:00+00:00",
+   "modified_at": "2026-09-02T11:00:00+00:00",
+   "item_count": 7
+  },
+  {
+   "id": "71002",
+   "name": "Inverter spec sheets",
+   "parent_id": "71000",
+   "owner_id": "11446498",
+   "description": "Manufacturer spec sheets for reference. Limits for reviews come from the Notion inverter catalogue.",
+   "created_at": "2024-02-01T09:00:00+00:00",
+   "modified_at": "2026-06-10T11:00:00+00:00",
+   "item_count": 3
+  }
+ ],
+ "files": [
+  {
+   "id": "7110001",
+   "name": "Halcyon_HX-405M_datasheet_revC.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Halcyon Solar HX-405M datasheet, revision C (2026-05-06)",
+   "size": 1501,
+   "extension": "md",
+   "sha1": "9f7d10180c7adc33c60f44ee947d3b1ec7403d58",
+   "created_at": "2026-05-06T10:00:00+00:00",
+   "modified_at": "2026-05-06T10:00:00+00:00"
+  },
+  {
+   "id": "7110002",
+   "name": "Corvane_CV-440B_datasheet_revB.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Corvane Energy CV-440B datasheet, revision B (2026-04-14)",
+   "size": 1516,
+   "extension": "md",
+   "sha1": "ec8084f248912da305aa20e348aabb72d6ee157b",
+   "created_at": "2026-04-14T10:00:00+00:00",
+   "modified_at": "2026-04-14T10:00:00+00:00"
+  },
+  {
+   "id": "7110003",
+   "name": "Kestrel_KP-470_datasheet_revB.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Kestrel Photonics KP-470 datasheet, revision B (2026-02-27)",
+   "size": 1498,
+   "extension": "md",
+   "sha1": "ac9ca156b67da148723c3c21d6d957c47d5acecb",
+   "created_at": "2026-02-27T10:00:00+00:00",
+   "modified_at": "2026-02-27T10:00:00+00:00"
+  },
+  {
+   "id": "7110004",
+   "name": "Orrin_OR-425_datasheet_revB.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Orrin Solar Technologies OR-425 datasheet, revision B (2026-03-18)",
+   "size": 1511,
+   "extension": "md",
+   "sha1": "b2dd158f7e5b203152a62665ad5276ae0094d3da",
+   "created_at": "2026-03-18T10:00:00+00:00",
+   "modified_at": "2026-03-18T10:00:00+00:00"
+  },
+  {
+   "id": "7110005",
+   "name": "Brava_BR-390_datasheet_revB.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Brava Modules BR-390 datasheet, revision B (2026-01-22)",
+   "size": 1498,
+   "extension": "md",
+   "sha1": "b033d5c485c2d6ab071dc0957ee0752762e16336",
+   "created_at": "2026-01-22T10:00:00+00:00",
+   "modified_at": "2026-01-22T10:00:00+00:00"
+  },
+  {
+   "id": "7110006",
+   "name": "Lumen_LM-455_datasheet_revB.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Lumen Photovoltaic LM-455 datasheet, revision B (2026-09-02)",
+   "size": 1657,
+   "extension": "md",
+   "sha1": "86bc076c9bc9aad18994afc19502e68351c28d90",
+   "created_at": "2026-09-02T10:00:00+00:00",
+   "modified_at": "2026-09-02T10:00:00+00:00"
+  },
+  {
+   "id": "7110007",
+   "name": "Lumen_LM-455_datasheet_revA.md",
+   "parent_id": "71001",
+   "owner_id": "11446498",
+   "description": "Lumen LM-455 datasheet, revision A (2026-02-10)",
+   "size": 1564,
+   "extension": "md",
+   "sha1": "0afdcdad1375740c5356bcdff49a52204109b69e",
+   "created_at": "2026-02-10T10:00:00+00:00",
+   "modified_at": "2026-02-10T10:00:00+00:00"
+  },
+  {
+   "id": "7120001",
+   "name": "Volta_8K_spec_sheet_v3.md",
+   "parent_id": "71002",
+   "owner_id": "11446498",
+   "description": "Manufacturer spec sheet (not controlled)",
+   "size": 254,
+   "extension": "md",
+   "sha1": "7eb8fb9ef8e43a7d3185a57b91a222980464cdf3",
+   "created_at": "2026-06-10T11:00:00+00:00",
+   "modified_at": "2026-06-10T11:00:00+00:00"
+  },
+  {
+   "id": "7120002",
+   "name": "Ardent_AR-6.0_spec_sheet_2026-03.md",
+   "parent_id": "71002",
+   "owner_id": "11446498",
+   "description": "Manufacturer spec sheet (not controlled)",
+   "size": 176,
+   "extension": "md",
+   "sha1": "512c9ff00fae35077e0837c406f55d2b44705674",
+   "created_at": "2026-06-10T11:00:00+00:00",
+   "modified_at": "2026-06-10T11:00:00+00:00"
+  },
+  {
+   "id": "7120003",
+   "name": "Brightline_BL-10_spec_sheet.md",
+   "parent_id": "71002",
+   "owner_id": "11446498",
+   "description": "Manufacturer spec sheet (not controlled)",
+   "size": 172,
+   "extension": "md",
+   "sha1": "5ccecb7c7b1ee3b9c347b46172c65d53ec1d9a27",
+   "created_at": "2026-06-10T11:00:00+00:00",
+   "modified_at": "2026-06-10T11:00:00+00:00"
+  }
+ ],
+ "file_blobs": {
+  "Halcyon_HX-405M_datasheet_revC.md": "# Halcyon Solar HX-405M — Product datasheet\nDocument HAL-DS-405M-C · Revision C · Issued 2026-05-06 · Previous revision B (2025-12-01)\n\nModule type: 108 half-cut mono PERC. Nominal power 405 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 405 W |\n| Open-circuit voltage Voc | 37.20 V |\n| MPP voltage Vmp | 31.10 V |\n| Short-circuit current Isc | 13.80 A |\n| MPP current Imp | 13.03 A |\n| Module efficiency | 20.8 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.34 %/°C |\n| Temperature coefficient of Voc | -0.26 %/°C |\n| Temperature coefficient of Isc | +0.050 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 305 W |\n| Open-circuit voltage | 34.97 V |\n| Short-circuit current | 11.14 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Corvane_CV-440B_datasheet_revB.md": "# Corvane Energy CV-440B — Product datasheet\nDocument CVE-440B-DS-B · Revision B · Issued 2026-04-14 · Previous revision A (2025-10-20)\n\nModule type: 108 half-cut n-type TOPCon, bifacial. Nominal power 440 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 440 W |\n| Open-circuit voltage Voc | 39.80 V |\n| MPP voltage Vmp | 33.30 V |\n| Short-circuit current Isc | 14.05 A |\n| MPP current Imp | 13.22 A |\n| Module efficiency | 22.6 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.30 %/°C |\n| Temperature coefficient of Voc | -0.25 %/°C |\n| Temperature coefficient of Isc | +0.046 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 331 W |\n| Open-circuit voltage | 37.41 V |\n| Short-circuit current | 11.34 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Kestrel_KP-470_datasheet_revB.md": "# Kestrel Photonics KP-470 — Product datasheet\nDocument KPH-470-SPEC-B · Revision B · Issued 2026-02-27 · Previous revision A (2025-09-15)\n\nModule type: 144 half-cut mono. Nominal power 470 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 470 W |\n| Open-circuit voltage Voc | 50.90 V |\n| MPP voltage Vmp | 42.60 V |\n| Short-circuit current Isc | 11.65 A |\n| MPP current Imp | 11.03 A |\n| Module efficiency | 24.1 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.30 %/°C |\n| Temperature coefficient of Voc | -138 mV/°C |\n| Temperature coefficient of Isc | +5.2 mA/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 353 W |\n| Open-circuit voltage | 47.85 V |\n| Short-circuit current | 9.40 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Orrin_OR-425_datasheet_revB.md": "# Orrin Solar Technologies OR-425 — Product datasheet\nDocument ORS-DS-0425-B · Revision B · Issued 2026-03-18 · Previous revision A (2025-11-04)\n\nModule type: 108 half-cut mono PERC. Nominal power 425 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 425 W |\n| Open-circuit voltage Voc | 38.40 V |\n| MPP voltage Vmp | 32.00 V |\n| Short-circuit current Isc | 13.95 A |\n| MPP current Imp | 13.29 A |\n| Module efficiency | 21.8 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.35 %/°C |\n| Temperature coefficient of Voc | -0.28 %/°C |\n| Temperature coefficient of Isc | +0.048 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 320 W |\n| Open-circuit voltage | 36.10 V |\n| Short-circuit current | 11.26 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Brava_BR-390_datasheet_revB.md": "# Brava Modules BR-390 — Product datasheet\nDocument BRV-390-B-B · Revision B · Issued 2026-01-22 · Previous revision A (2025-06-30)\n\nModule type: 108 half-cut mono PERC. Nominal power 390 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 390 W |\n| Open-circuit voltage Voc | 35.60 V |\n| MPP voltage Vmp | 29.80 V |\n| Short-circuit current Isc | 13.60 A |\n| MPP current Imp | 13.09 A |\n| Module efficiency | 20.0 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.37 %/°C |\n| Temperature coefficient of Voc | -0.30 %/°C |\n| Temperature coefficient of Isc | +0.052 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 293 W |\n| Open-circuit voltage | 33.46 V |\n| Short-circuit current | 10.98 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Lumen_LM-455_datasheet_revB.md": "# Lumen Photovoltaic LM-455 — Product datasheet\nDocument LPV-455-DS-B · Revision B · Issued 2026-09-02 · Previous revision A (2026-02-10)\n\nModule type: 120 half-cut n-type. Nominal power 455 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 455 W |\n| Open-circuit voltage Voc | 41.30 V |\n| MPP voltage Vmp | 34.60 V |\n| Short-circuit current Isc | 13.90 A |\n| MPP current Imp | 13.15 A |\n| Module efficiency | 23.3 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.31 %/°C |\n| Temperature coefficient of Voc | -0.27 %/°C |\n| Temperature coefficient of Isc | +0.045 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 342 W |\n| Open-circuit voltage | 38.82 V |\n| Short-circuit current | 11.22 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\n## Revision B changes\nSTC data re-stated from series production (Voc 40.90 → 41.30 V, Voc coefficient −0.25 → −0.27 %/°C). Supersedes revision A.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Lumen_LM-455_datasheet_revA.md": "# Lumen Photovoltaic LM-455 — Product datasheet\nDocument LPV-455-DS-A · Revision A · Issued 2026-02-10 · Previous revision — (first issue)\n\nModule type: 120 half-cut n-type. Nominal power 455 W (power tolerance 0/+5 W).\n\n## Electrical data at STC (1000 W/m², cell temperature 25 °C, AM 1.5)\n| Parameter | Value |\n|---|---|\n| Maximum power Pmax | 455 W |\n| Open-circuit voltage Voc | 40.90 V |\n| MPP voltage Vmp | 34.40 V |\n| Short-circuit current Isc | 13.85 A |\n| MPP current Imp | 13.15 A |\n| Module efficiency | 23.3 % |\n| Maximum system voltage | 1500 V DC (IEC) |\n| Maximum series fuse rating | 25 A |\n\n## Temperature characteristics\n| Parameter | Value |\n|---|---|\n| Temperature coefficient of Pmax | -0.31 %/°C |\n| Temperature coefficient of Voc | -0.25 %/°C |\n| Temperature coefficient of Isc | +0.045 %/°C |\n| Nominal operating cell temperature (NOCT) | 43 ± 2 °C |\n| Operating temperature range | −40 °C to +85 °C |\n\n## Electrical data at NOCT (800 W/m², ambient 20 °C, wind 1 m/s)\n| Parameter | Value |\n|---|---|\n| Maximum power | 342 W |\n| Open-circuit voltage | 38.45 V |\n| Short-circuit current | 11.18 A |\n\n## Mechanical data\nDimensions 1722 × 1134 × 30 mm · Weight 21.5 kg · Front glass 3.2 mm tempered · Junction box IP68, 3 bypass diodes · Cable 4 mm², 1200 mm · Connector MC4-compatible.\n\n## Status\nFirst issue. Values from pre-production samples.\n\nSpecifications are subject to change without notice. The current revision is published to registered installers through the installer portal and the datasheet library.\n",
+  "Volta_8K_spec_sheet_v3.md": "Volta 8K hybrid inverter — spec sheet v3 (June 2025)\n\nMax DC input voltage 600 V. MPPT range 200–550 V. Max input short-circuit current 20 A per MPPT. 2 MPPT. AC 8 kW.\nFor current limits and manufacturer notices see the Sunhollow inverter catalogue.\n",
+  "Ardent_AR-6.0_spec_sheet_2026-03.md": "Ardent AR-6.0 — spec sheet (March 2026)\n\nMax DC input voltage 600 V. MPPT range 100–500 V. Max short-circuit current 17.5 A per tracker. 2 trackers. AC 6 kW. Firmware 3.1.\n",
+  "Brightline_BL-10_spec_sheet.md": "Brightline BL-10 — spec sheet (2025)\n\nMax DC input voltage 1000 V. MPPT range 300–850 V. Max short-circuit current 30 A per tracker, two strings per tracker. AC 10 kW.\n"
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "spaces": [
+  {
+   "id": 98410,
+   "key": "RA",
+   "name": "Regulatory Affairs",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Orvane regulatory standards, submission hubs and DHF indexes",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "410001",
+   "type": "page",
+   "status": "current",
+   "title": "ORV-RA-STD-014 Technical Documentation Table of Contents - Edition 3",
+   "space_key": "RA",
+   "parent_id": null,
+   "version": 7,
+   "body": "ORV-RA-STD-014 Technical Documentation: Table of Contents, Versions and Completeness\nEdition 3 - effective 1 July 2026 - supersedes Edition 2 (March 2025). Owner: Regulatory Affairs. Approved: M. Ossendrecht, R. Montoya.\n\n1 Scope\n1.1 This standard governs the table of contents (ToC) of every Orvane IVD technical file prepared for a notified body, the index of defined terms that accompanies it, the gap list and the readiness statement.\n\n2 Records of source\n2.1 Controlled documents live in the product's controlled document store (Drive folder '<Product> Technical File (controlled)'). Each file's version history is its release record: one entry per revision, giving the revision label, whether the revision was released, routed for approval or is a working draft, its page count and its number of open content placeholders.\n2.2 The Document Control Register (Monday board '<Product> Document Control Register') records the approval status of each revision.\n2.3 Change control (ServiceNow change requests) authorises releases into the controlled store.\n2.4 The glossary register (Notion database '<Product> Glossary Register') holds the defined terms, their status and the controlled document that defines each.\n2.5 The controlled store and change control are updated as releases happen. The register is reconciled from closed change requests at the weekly register sync (QA-SOP-007 6.4). Exports, copies, chat messages and working drafts of any of these records are not records.\n\n3 Section catalogue\n3.1 The ToC has thirty sections, S01 to S30. The DHF master index (Confluence) gives, for each product, the controlled document number that satisfies each section. One document may satisfy more than one section.\n    S01 Device description and specification - satisfied by the device description and specification\n    S02 Intended purpose and indications - satisfied by the intended purpose statement\n    S03 Classification rationale - satisfied by the classification rationale\n    S04 Variants, configurations and accessories - satisfied by the variants and accessories list\n    S05 Previous and similar generations - satisfied by the generations overview\n    S06 Labels and packaging labelling - satisfied by the label and packaging labelling specification\n    S07 Instructions for use - professional user - satisfied by the instructions for use for professional users\n    S08 Instructions for use - lay user - satisfied by the instructions for use for lay users\n    S09 Design and manufacturing information - satisfied by the design and manufacturing information\n    S10 Manufacturing sites and critical suppliers - satisfied by the manufacturing sites and critical suppliers\n    S11 General safety and performance requirements checklist - satisfied by the GSPR checklist\n    S12 Risk management plan - satisfied by the risk management plan\n    S13 Risk management report - satisfied by the risk management report\n    S14 Benefit-risk determination - satisfied by the benefit-risk determination (normally a chapter of the risk management report)\n    S15 Software description and architecture - satisfied by the software description\n    S16 Software verification and validation - satisfied by the software verification and validation report\n    S17 Usability engineering file - satisfied by the usability engineering file\n    S18 Electrical safety and electromagnetic compatibility - satisfied by the electrical safety and EMC test report\n    S19 Analytical performance - precision - satisfied by the precision report\n    S20 Analytical performance - trueness and linearity - satisfied by the trueness and linearity report\n    S21 Analytical performance - interference and cross-reactivity - satisfied by the interference and cross-reactivity report\n    S22 Stability - shelf life, in-use and transport - satisfied by the stability study report\n    S23 Clinical performance study report - satisfied by the clinical performance study report\n    S24 Performance evaluation report - satisfied by the performance evaluation report\n    S25 Near-patient testing - performance with intended users - satisfied by the near-patient user performance study report\n    S26 Self-testing - lay-user performance study - satisfied by the lay-user performance study report\n    S27 Companion diagnostic - medicinal product consultation - satisfied by the medicinal product authority consultation record\n    S28 Batch verification by an EU reference laboratory - satisfied by the reference laboratory batch verification record\n    S29 Post-market surveillance plan - satisfied by the post-market surveillance plan\n    S30 Summary of safety and performance - satisfied by the summary of safety and performance\n\n4 Rules for each ToC row\n4.1 Document number: the controlled document number the DHF master index gives for the section.\n4.2 Version: the version in force, written with the store's revision label (for example 'Rev C'). The version in force is the highest revision present in the controlled store that is approved. A revision is approved when (a) the register shows it as Approved, or (b) it was released into the store under a change request that change control shows closed as implemented; the register entry for such a release follows at the next sync.\n4.3 A revision that the register shows as In approval or Draft, or that the store records as a working draft, is not approved, whatever its page count or content. A revision the store records as routed for approval is not approved until the register shows it as Approved (4.2(a)).\n4.4 A revision whose approval the register records as withdrawn is not in force, whatever else records its release or its signatures. A withdrawal does not reinstate an earlier revision unless the register shows that revision as Approved again.\n4.5 Pages: the page count the store records for the version in force.\n4.6 Completeness, one of: 'Complete' - a version is in force and its store entry records 0 open placeholders; 'Gap' - no version is in force, or the version in force records one or more open placeholders; 'Not applicable' - section 5 excludes the section for the product.\n4.7 Where no version is in force the row reads Version 'None in force', Pages 0, Completeness 'Gap'; the Document number is still given.\n4.8 Not applicable rows read Document number 'N/A', Version 'N/A', Pages 0.\n4.9 The file page total is the sum, over the distinct documents cited with a version in force, of the pages of that version. A document cited by more than one section counts once. Not applicable rows and rows with no version in force add nothing.\n\n5 Applicability by device class and intended use\n    S08 Instructions for use - lay user: self-testing devices only.\n    S25 Near-patient testing - performance with intended users: devices intended for near-patient testing (use by health professionals outside a laboratory).\n    S26 Self-testing - lay-user performance study: self-testing devices only.\n    S27 Companion diagnostic - medicinal product consultation: companion diagnostics only.\n    S28 Batch verification by an EU reference laboratory: class D devices only.\n    S30 Summary of safety and performance: class C and class D devices (Edition 2 required it for class D only).\n    All other sections: every device.\n5.1 Near-patient testing by health professionals is not self-testing. Concept documents for a possible future self-test variant do not make S08 or S26 applicable to the product being filed.\n\n6 Index of defined terms\n6.1 The index has one entry per term that the glossary register shows as Active and whose source document is cited by at least one applicable section of the ToC.\n6.2 Retired and Proposed terms are not indexed. A term whose source document is cited only by Not applicable sections, or by no section, is not indexed. A term is indexed whether or not the section citing its source document is a gap.\n6.3 Entry title: '<Term> | <Section> | <Document number>', where Section is the lowest-numbered applicable section citing the source document. Example: 'Calibrator lot | S01 | DOC-1001'.\n\n7 Gap list\n7.1 One ticket in the product's Jira project for each section whose Completeness is Gap, raised once the ToC is complete. The ticket description opens with 'TF-GAP <Section>' (for example 'TF-GAP S05') followed by the reason. No ticket is raised for Complete or Not applicable sections.\n\n8 Readiness statement\n8.1 When the ToC, the index and the gap list are in place, RA sends the readiness statement to the Director of RA only, by mail, with the subject '<Product> TF readiness: <C> complete, <G> gap, <N> not applicable, <P> pages' - C, G and N being the numbers of ToC rows by Completeness and P the file page total of 4.9. The readiness statement is the last act of the compilation.\n\n9 What RA does not do\n9.1 RA does not approve, sign, route, void or re-status controlled documents: approvals belong to document control and QA (QA-SOP-007). RA does not upload anything to a notified-body portal: the Director of RA uploads after sign-off.\n\nRevision history: Edition 1 (2024-02) first issue. Edition 2 (2025-03) added the index of defined terms. Edition 3 (2026-07) adds rule 4.2(b) on change-request releases, rule 4.4 on withdrawn approvals, the single count of shared documents in 4.9, and extends S30 to class C.",
+   "created_by": "Margit Ossendrecht",
+   "created_at": "2026-06-15T10:00:00Z"
+  },
+  {
+   "id": "410002",
+   "type": "page",
+   "status": "current",
+   "title": "Kestrel-3 DHF master index",
+   "space_key": "RA",
+   "parent_id": "410004",
+   "version": 12,
+   "body": "Kestrel-3 DHF master index - document numbers by ToC section (ORV-RA-STD-014 Edition 3). Maintained by document control. Revisions and page counts are NOT kept here: they come from the controlled store's version history and the register.\nDevice: Kestrel-3 point-of-care immunoassay analyser and cartridges. Classification: class C (rule 3). Intended use: professional near-patient testing. Not a self-testing device; not a companion diagnostic.\n\nS01 Device description and specification: DOC-1001 Device Description and Specification\nS02 Intended purpose and indications: DOC-1002 Intended Purpose Statement\nS03 Classification rationale: DOC-1003 Classification Rationale\nS04 Variants, configurations and accessories: DOC-1004 Variants, Configurations and Accessories List\nS05 Previous and similar generations: DOC-1005 Previous and Similar Generations Overview\nS06 Labels and packaging labelling: DOC-1130 Label and Packaging Labelling Specification\nS07 Instructions for use - professional user: DOC-1133 Instructions for Use - Professional\nS08 Instructions for use - lay user: no Kestrel-3 document (see STD-014 section 5)\nS09 Design and manufacturing information: DOC-1020 Design and Manufacturing Information\nS10 Manufacturing sites and critical suppliers: DOC-1021 Manufacturing Sites and Critical Suppliers\nS11 General safety and performance requirements checklist: DOC-1030 General Safety and Performance Requirements Checklist\nS12 Risk management plan: DOC-1046 Risk Management Plan\nS13 Risk management report: DOC-1047 Risk Management Report\nS14 Benefit-risk determination: DOC-1047 Risk Management Report\nS15 Software description and architecture: DOC-1102 Software Description and Architecture\nS16 Software verification and validation: DOC-1103 Software Verification and Validation Report\nS17 Usability engineering file: DOC-1074 Usability Engineering File\nS18 Electrical safety and electromagnetic compatibility: DOC-1080 Electrical Safety and EMC Test Report\nS19 Analytical performance - precision: DOC-1110 Analytical Performance Report - Precision\nS20 Analytical performance - trueness and linearity: DOC-1111 Analytical Performance Report - Trueness and Linearity\nS21 Analytical performance - interference and cross-reactivity: DOC-1112 Analytical Performance Report - Interference and Cross-reactivity\nS22 Stability - shelf life, in-use and transport: DOC-1188 Stability Study Report\nS23 Clinical performance study report: DOC-1120 Clinical Performance Study Report KS3-CPS-01\nS24 Performance evaluation report: DOC-1121 Performance Evaluation Report\nS25 Near-patient testing - performance with intended users: DOC-1162 Near-patient User Performance Study Report\nS26 Self-testing - lay-user performance study: no Kestrel-3 document (see STD-014 section 5)\nS27 Companion diagnostic - medicinal product consultation: no Kestrel-3 document (see STD-014 section 5)\nS28 Batch verification by an EU reference laboratory: no Kestrel-3 document (see STD-014 section 5)\nS29 Post-market surveillance plan: DOC-1200 Post-market Surveillance Plan\nS30 Summary of safety and performance: DOC-1205 Summary of Safety and Performance\n\nNotes: S13 and S14 are both satisfied by DOC-1047 (the benefit-risk determination is chapter 9 of the risk management report). DOC-1074 is the usability engineering file; do not confuse it with DOC-1047. DOC-1134 and DOC-1161 belong to the Home concept (uncontrolled folder) and are not part of the Kestrel-3 file. DOC-0847 and DOC-0874 are the archived Kestrel-2 documents.",
+   "created_by": "Pieter Vandamme",
+   "created_at": "2026-11-06T09:00:00Z"
+  },
+  {
+   "id": "410003",
+   "type": "page",
+   "status": "current",
+   "title": "QA-SOP-007 section 6 - Release and approval evidence",
+   "space_key": "RA",
+   "parent_id": null,
+   "version": 4,
+   "body": "QA-SOP-007 Document Control - section 6 Release and approval evidence (extract)\n6.1 A controlled revision is approved by the two-signature approval route (Director of RA, QA Manager) or released by the change control board under a change request.\n6.2 Document control routes approval envelopes. Only document control and QA change a revision's status in the Document Control Register.\n6.3 A revision is released into the controlled store by document control under a change request. The store's version history records the release, its page count and its open placeholders.\n6.4 A revision released under a change request that is closed as implemented is approved from the moment of its release. The register is reconciled from closed change requests at the weekly register sync (Fridays); until then the closed change request is the approval evidence.\n6.5 QA may withdraw an approval (for example under a CAPA). The withdrawal is recorded in the register; the signed envelope and the change request remain for the audit trail but no longer evidence approval.\n6.6 Revisions routed for approval or in draft may be stored for review but are not approved until 6.1 or 6.4 is met.",
+   "created_by": "Rafaela Montoya",
+   "created_at": "2026-03-10T09:00:00Z"
+  },
+  {
+   "id": "410004",
+   "type": "page",
+   "status": "current",
+   "title": "Kestrel-3 submission hub",
+   "space_key": "RA",
+   "parent_id": null,
+   "version": 9,
+   "body": "Kestrel-3 submission hub\nNotified body: Nordmark NB 2291. Submission planned: week of 16 November 2026 (review slot opens 18 November).\nOwner: M. Ossendrecht (Director of RA). Compilation: RA specialist. Working draft: I. Calloway (uncontrolled).\nSources for the compilation: ORV-RA-STD-014 Edition 3 and the DHF master index (this space); the controlled store (Drive, 'Kestrel-3 Technical File (controlled)'); the Kestrel-3 Document Control Register (Monday); change control (ServiceNow); the Kestrel-3 Glossary Register (Notion).\nDeliverables: ToC in Airtable 'Orvane Regulatory Submissions' / 'Kestrel-3 TF ToC'; term index in Notion 'Kestrel-3 TF Term Index'; gap list in Jira project KTF; readiness statement by mail to the Director of RA.\nPortal: uploads to the NB 2291 folder are made by the Director of RA only, after sign-off. Every upload counts as a formal submission.\nDevice facts: class C (rule 3); professional near-patient use (clinics, emergency departments, GP practices); single-use cartridges; not for self-testing; not a companion diagnostic.",
+   "created_by": "Margit Ossendrecht",
+   "created_at": "2026-11-06T09:30:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": "420001",
+   "page_id": "410001",
+   "author": "Ines Calloway",
+   "body": "Edition 2 left S30 to class D only - is that still the case for Kestrel-3?",
+   "created_at": "2026-10-01T09:10:00Z"
+  },
+  {
+   "id": "420002",
+   "page_id": "410001",
+   "author": "Margit Ossendrecht",
+   "body": "No: Edition 3 section 5 requires the SSP for class C and class D. Kestrel-3 is class C, so S30 is in.",
+   "created_at": "2026-10-01T11:40:00Z"
+  },
+  {
+   "id": "420003",
+   "page_id": "410002",
+   "author": "Pieter Vandamme",
+   "body": "Reminder: the master index gives document numbers only. Revisions and page counts come from the store's version history.",
+   "created_at": "2026-11-06T09:05:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "430001",
+   "page_id": "410001",
+   "name": "standard",
+   "prefix": "global"
+  },
+  {
+   "id": "430002",
+   "page_id": "410002",
+   "name": "kestrel-3",
+   "prefix": "global"
+  },
+  {
+   "id": "430003",
+   "page_id": "410004",
+   "name": "kestrel-3",
+   "prefix": "global"
+  }
+ ]
+}

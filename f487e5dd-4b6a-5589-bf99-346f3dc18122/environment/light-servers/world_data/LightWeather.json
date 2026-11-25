@@ -1,0 +1,191 @@
+{
+ "cities": {
+  "Ashcombe": {
+   "coords": [
+    50.412,
+    -4.902
+   ],
+   "name": "Ashcombe",
+   "tz": "GMT"
+  },
+  "Tallow Vale": {
+   "coords": [
+    50.561,
+    -4.611
+   ],
+   "name": "Tallow Vale",
+   "tz": "GMT"
+  },
+  "Saddleback": {
+   "coords": [
+    50.602,
+    -4.535
+   ],
+   "name": "Saddleback",
+   "tz": "GMT"
+  },
+  "Kilderry": {
+   "coords": [
+    50.153,
+    -5.071
+   ],
+   "name": "Kilderry",
+   "tz": "GMT"
+  },
+  "Brackenford": {
+   "coords": [
+    50.287,
+    -5.008
+   ],
+   "name": "Brackenford",
+   "tz": "GMT"
+  },
+  "Penwarden": {
+   "coords": [
+    50.121,
+    -5.532
+   ],
+   "name": "Penwarden",
+   "tz": "GMT"
+  },
+  "Cresswick": {
+   "coords": [
+    50.498,
+    -4.687
+   ],
+   "name": "Cresswick",
+   "tz": "GMT"
+  },
+  "Hollowmere": {
+   "coords": [
+    50.371,
+    -4.781
+   ],
+   "name": "Hollowmere",
+   "tz": "GMT"
+  },
+  "Fennister": {
+   "coords": [
+    50.329,
+    -4.866
+   ],
+   "name": "Fennister",
+   "tz": "GMT"
+  },
+  "Marten Cross": {
+   "coords": [
+    50.533,
+    -4.402
+   ],
+   "name": "Marten Cross",
+   "tz": "GMT"
+  }
+ },
+ "climate_samples": {
+  "Ashcombe": {
+   "avg_temp": 10.7,
+   "city": "Ashcombe",
+   "rainfall_mm": 1167
+  },
+  "Tallow Vale": {
+   "avg_temp": 9.5,
+   "city": "Tallow Vale",
+   "rainfall_mm": 1362
+  },
+  "Saddleback": {
+   "avg_temp": 8.6,
+   "city": "Saddleback",
+   "rainfall_mm": 1505
+  },
+  "Kilderry": {
+   "avg_temp": 11.1,
+   "city": "Kilderry",
+   "rainfall_mm": 1102
+  },
+  "Brackenford": {
+   "avg_temp": 10.8,
+   "city": "Brackenford",
+   "rainfall_mm": 1138
+  },
+  "Penwarden": {
+   "avg_temp": 11.3,
+   "city": "Penwarden",
+   "rainfall_mm": 1059
+  },
+  "Cresswick": {
+   "avg_temp": 9.9,
+   "city": "Cresswick",
+   "rainfall_mm": 1286
+  },
+  "Hollowmere": {
+   "avg_temp": 10.5,
+   "city": "Hollowmere",
+   "rainfall_mm": 1191
+  },
+  "Fennister": {
+   "avg_temp": 10.4,
+   "city": "Fennister",
+   "rainfall_mm": 1213
+  },
+  "Marten Cross": {
+   "avg_temp": 9.7,
+   "city": "Marten Cross",
+   "rainfall_mm": 1324
+  }
+ },
+ "stations": {
+  "st_ash": {
+   "city": "Ashcombe",
+   "id": "st_ash",
+   "name": "Ashcombe automatic station"
+  },
+  "st_tlv": {
+   "city": "Tallow Vale",
+   "id": "st_tlv",
+   "name": "Tallow Vale automatic station"
+  },
+  "st_sdl": {
+   "city": "Saddleback",
+   "id": "st_sdl",
+   "name": "Saddleback Lodge automatic station"
+  },
+  "st_kld": {
+   "city": "Kilderry",
+   "id": "st_kld",
+   "name": "Kilderry automatic station"
+  },
+  "st_brk": {
+   "city": "Brackenford",
+   "id": "st_brk",
+   "name": "Brackenford automatic station"
+  },
+  "st_pnw": {
+   "city": "Penwarden",
+   "id": "st_pnw",
+   "name": "Penwarden Quay automatic station"
+  },
+  "st_crs": {
+   "city": "Cresswick",
+   "id": "st_crs",
+   "name": "Cresswick Reservoir automatic station"
+  },
+  "st_hwm": {
+   "city": "Hollowmere",
+   "id": "st_hwm",
+   "name": "Hollowmere Airfield automatic station"
+  },
+  "st_fns": {
+   "city": "Fennister",
+   "id": "st_fns",
+   "name": "Fennister automatic station"
+  },
+  "st_mrt": {
+   "city": "Marten Cross",
+   "id": "st_mrt",
+   "name": "Marten Cross automatic station"
+  }
+ },
+ "preferences": {
+  "primary_location": "Hollowmere"
+ }
+}

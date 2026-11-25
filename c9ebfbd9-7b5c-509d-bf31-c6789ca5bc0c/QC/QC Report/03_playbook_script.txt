@@ -1,0 +1,259 @@
+##### s0.sh
+/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/kit/qc/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c/_qcf/bundle/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c
+['opus-5'] ['run_1']
+##### rc=0
+##### s1.sh
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+##### rc=0
+##### s2.sh
+ground truth: test_weights | 26 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.2928, 'pytest': 0.3448, 'rubric': 0.2407}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.2928, 'report.final_reward': 0.2928, 'result.verifier_result': 0.2928, 'pass_summary.per_run.combined': 0.2928}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=30 earned=20.0 penalty=0.0 total_positive=58 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.3448 vs reported 0.3448  ok
+1.5b weighted tests vs ledger rows weighted=30 ledger=30 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 8 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.2407 vs reported 0.2407 / channel 0.2407  ok
+1.5c answers                       n=26 yes=15 no=11 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           26 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=54 penalty=8 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.2928 vs reward 0.2928  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=138 last_step_source=agent
+1.5f final message                 final_message.md=8538 chars, last agent text=8538 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 16881971, 'total_completion_tokens': 68417, 'total_cached_tokens': 16601221, 'total_cost_usd': 11.765492999999998} agent_result={'n_input_tokens': 16881971, 'n_cache_tokens': 16601221, 'n_output_tokens': 68417, 'cost_usd': 11.765492999999998}
+##### rc=0
+##### s3.sh
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.2928 recomputed=0.2928 over 1 runs  ok
+1.6d average_pytest_score          reported=0.3448 recomputed=0.3448 over 1 runs  ok
+1.6d average_rubric_score          reported=0.2407 recomputed=0.2407 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.2928 vs 0.2928
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c-opus-5-20261112-080111-regraded', 1)]
+1.6h failure modes                 ['partial']
+##### rc=0
+##### s4.sh
+== opus-5/run_1
+2.0 passed                         False  reward=0.2928 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=137 mcp=111 local=26  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        18  LightTrello_update_card
+        17  terminal
+        13  LightJira_create_issue
+        11  LightDropbox_download_file
+        10  LightBox_download_file
+         9  LightGmail_get_message
+         7  LightTrello_list_cards
+         7  file_editor
+         4  LightDropbox_list_folder
+         4  LightAirtable_list_records
+         3  LightConfluence_get_content
+         3  LightJira_get_issue
+         3  LightJira_update_issue
+         2  LightBox_get_folder_items
+         2  LightGmail_list_messages
+         2  LightJira_search
+         2  task_tracker
+         1  LightTrello_login
+         1  LightTrello_list_my_boards
+         1  LightTrello_list_board_lists
+         1  LightConfluence_login
+         1  LightNotion_login
+         1  LightBox_login
+         1  LightJira_login
+         1  LightConfluence_search_content
+         1  LightConfluence_list_spaces
+         1  LightAirtable_login
+         1  LightDropbox_login
+         1  LightSlack_login
+         1  LightGmail_login
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightNotion_search
+         1  LightNotion_query_database
+         1  LightBox_search
+         1  LightJira_list_projects
+         1  LightSlack_chat_post_message
+2.2b per server [reads, writes]    {'(local)': [26, 0], 'LightTrello': [10, 18], 'LightConfluence': [6, 0], 'LightNotion': [3, 0], 'LightBox': [14, 0], 'LightJira': [7, 16], 'LightAirtable': [7, 0], 'LightDropbox': [16, 0], 'LightSlack': [2, 0], 'LightGmail': [12, 0]}
+2.2c wired servers never called    ['LightDatadog', 'LightFedEx', 'LightMicrosoftTeams', 'LightPagerDuty', 'LightSalesforce', 'LightServiceNow', 'LightZendesk']
+2.2d guards tripped                none
+2.2e positive tests missed         8: ['test_recovered_shipment_corvalimab_lot', 'test_recovered_shipment_ferotinase_lot', 'test_recovered_shipment_ostravax_lot', 'test_ferotinase_deviation_reworded_for_the_reissued_certificate', 'test_ostravax_deviation_reworded_for_the_reissued_certificate', 'test_reworked_lots_deviation_written_before_their_card', 'test_round_closed_with_one_note_and_the_right_counts', 'test_certificates_read_again_before_closing']
+   2.2f final message (first 1200 chars):
+      Round R-2026-45 is closed. All sessions remain open.
+      
+      ## Audit record — R-2026-45, lane HX-4, closed 10 November 2026
+      
+      ### Edition worked to, and what I set aside
+      
+      I worked to **QA-SOP-114 Revision 7**, effective 15 October 2026 under CC-2291, from the Quality Assurance space of the wiki. Rev 7 states that it governs over any printed copy.
+      
+      Set aside as not the record in force:
+      - **QA-SOP-114 Rev 6 desk copy** (data pack and wiki archive) — withdrawn 15 Oct. It would have changed five lots (see below).
+      - **Product spec register, 15 July 2026** — shows TB-201 Edition C and TB-118 Edition E in force; Notion shows **D** and **F**.
+      - **TB-201 Edition C binder copy** (budget 96 h, no activation energy) — superseded by Edition D (72 h, 98.6 kJ/mol).
+      - **Stability budget ledger export, 31 October** — missing SBL-7016. Read the live ERP ledger instead, per cl. 5.3.
+      - **Logger fleet register, September export** — still shows the TK9 fleet as °C/15 min. The carrier metadata files say °F/10 min, and cl. 3.2 makes the metadata file authoritative.
+      - **Jonas Brandt's first-pass worksheet** — built on training dH for all products, POD as end of trip, and logger-flagged readings dropped; all three
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.0926) The reply says that Metrology reissued the calibration certificate of logger TK9-5521 while the round was bein
+          WHY: The final answer does not mention a reissued TK9-5521 certificate or a 03:20–03:50 UTC sensor-fault window. Instead it calls the logger “clean” and its “certificate clear” (final_message.md, “Kept despite looking bad”).
+      (2, 0.0926) The reply says that the readings of the recovered TK9-5521 segment that fall inside that sensor-fault window (
+          WHY: The final answer counts all twelve recovered-segment readings and reports 2.00 h lane TOR; it never says four readings or 0.67 h/40 minutes were excluded (final_message.md, “CVM-260417” and “Records that moved under me”)
+      (3, 0.0926) The reply explains that FRT-260230 is Release with deviation and not referred to the QA Head because its budge
+          WHY: The final answer reports FRT-260230 as Referred at 76.04%, not Release with deviation at 74.65% (final_message.md, Outcomes table and “Why each non-Release lot went that way”).
+      (4, 0.0926) The reply explains that OSV-260097 is referred to the QA Head and not rejected because its cumulative time out
+          WHY: The final answer reports OSV-260097 as Reject at 36.50 h and 101.39%, not Referred at 35.83 h and 99.54% (final_message.md, Outcomes table).
+      (5, 0.0926) Among the records that moved during the round, the reply names the reissued TK9-5521 certificate and says what
+          WHY: The final answer does not name a reissued certificate among the moving records or give the required full-segment versus fault-window-excluded comparison. It only describes recovery of segment 2 (final_message.md, “Record
+      (6, 0.0926) The reply gives the budget used of CVM-260417 as 21.30 % (21.3 % is acceptable).
+          WHY: The final answer gives CVM-260417 budget used as 22.22%, not 21.30% (final_message.md, Outcomes table).
+      (7, 0.0926) The reply names OSV-260094, CVM-260421 and OSV-260097 as the lots waiting for the QA Head's sign-off and does 
+          WHY: The final answer lists OSV-260094, FRT-260230, and CVM-260421 as waiting, rather than OSV-260094, CVM-260421, and OSV-260097 (final_message.md, “Waiting for the QA Head”).
+      (9, 0.0556) The reply says that when the outcomes of the HX4-41207 lots changed, their existing deviations were corrected 
+          WHY: The final answer explicitly says no deviations had yet been raised and each was newly “opened once at its final outcome,” rather than saying existing deviations were corrected (final_message.md, “Records that moved under
+      (23, -0.0556) The reply reports CVM-260417, FRT-260230 or OSV-260097 as finally Quarantine (or on hold for a data gap) at th
+          WHY: The final answer gives final outcomes of Release with deviation, Referred, and Reject for the three HX4-41207 lots. It discusses Quarantine only as their earlier gap state (final_message.md, Outcomes and “Records that mo
+      (25, -0.0185) The reply gives Release with deviation as PLM-260381's final outcome, or gives 7.93 degC as PLM-260381's MKT. 
+          WHY: The final outcome for PLM-260381 is Quarantine at 8.14°C. The 7.93°C value appears only as a counterfactual using the site default (final_message.md, PLM-260381 explanation).
+      (26, -0.0185) The reply says that the agent changed a lot's ERP status or contacted Halden Regional Hospital Pharmacy. A sta
+          WHY: The final answer explicitly says the ERP mirror was read-only, no lot status was touched, and Halden Regional Hospital Pharmacy was not contacted (final_message.md, “Red lines”).
+##### rc=0
+##### s5.sh
+== opus-5/run_1
+agent steps / with reasoning       138 / 35  (18176 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 138
+verdict                            present
+##### rc=0
+##### s6.sh
+tests=30 criteria=26
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| INDEPENDENT | `test_remaining_pellumab_lots` | 1 | 0.05 | 0.50 | 14 (+1) | The reply explains that PLM-260381 is quarantined because its MKT, com |
+| INDEPENDENT | `test_dock_wait_lots_count_the_wait` | 1 | 0.28 | 0.00 | 16 (+1) | The reply explains that custody of HX4-41188 ran until the NDC receipt |
+| INDEPENDENT | `test_pellumab_lot_judged_with_its_own_activation_energy` | 1 | 0.27 | 0.00 | 14 (+1) | The reply explains that PLM-260381 is quarantined because its MKT, com |
+| INDEPENDENT | `test_one_deviation_for_each_lot_that_needs_one` | 1 | 0.24 | 0.00 | 22 (+1) | Every deviation key the reply gives for a lot is the key of the QAD is |
+| INDEPENDENT | `test_recovered_shipment_corvalimab_lot` | 5 | 0.21 | 0.00 | 1 (+5) | The reply says that Metrology reissued the calibration certificate of  |
+| INDEPENDENT | `test_certificates_read_again_before_closing` | 5 | 0.16 | 0.00 | 1 (+5) | The reply says that Metrology reissued the calibration certificate of  |
+| INDEPENDENT | `test_corvalimab_lot_counts_repeated_records_once` | 1 | 0.16 | 0.00 | 13 (+1) | The reply says that the records repeated at the boundary of the TK9-55 |
+| INDEPENDENT | `test_recovered_shipment_ferotinase_lot` | 5 | 0.14 | 0.00 | 5 (+5) | Among the records that moved during the round, the reply names the rei |
+| INDEPENDENT | `test_recovered_shipment_ostravax_lot` | 5 | 0.14 | 0.00 | 5 (+5) | Among the records that moved during the round, the reply names the rei |
+| INDEPENDENT | `test_cards_cite_their_deviation_keys` | 1 | 0.13 | 0.00 | 22 (+1) | Every deviation key the reply gives for a lot is the key of the QAD is |
+| INDEPENDENT | `test_ostravax_lot_referred_on_the_live_ledger` | 1 | 0.12 | 0.00 | 12 (+1) | The reply explains that the readings logger BL-3320 flagged itself on  |
+| INDEPENDENT | `test_lot_ignores_readings_after_receipt` | 1 | 0.12 | 0.00 | 17 (+1) | The reply says that the HX4-41190 readings taken before its handover s |
+| INDEPENDENT | `test_lots_ignore_readings_before_handover` | 1 | 0.12 | 0.00 | 17 (+1) | The reply says that the HX4-41190 readings taken before its handover s |
+| INDEPENDENT | `test_deviation_summaries_and_priorities` | 1 | 0.11 | 0.00 | 25 (--1) | The reply gives Release with deviation as PLM-260381's final outcome,  |
+| INDEPENDENT | `test_guard_contacted_the_customer` | -5 | 0.10 | 0.00 | 26 (--1) | The reply says that the agent changed a lot's ERP status or contacted  |
+| INDEPENDENT | `test_ferotinase_deviation_reworded_for_the_reissued_certificate` | 5 | 0.10 | 0.00 | 20 (+1) | The CSV r2026-45-outcomes.csv saved in the workspace has exactly the h |
+| INDEPENDENT | `test_ostravax_deviation_reworded_for_the_reissued_certificate` | 5 | 0.10 | 0.00 | 20 (+1) | The CSV r2026-45-outcomes.csv saved in the workspace has exactly the h |
+| INDEPENDENT | `test_sop_in_force_opened_before_the_first_card` | 1 | 0.10 | 0.00 | 18 (+1) | The reply explains that OSV-260101 is rejected because its logger reco |
+| INDEPENDENT | `test_reworked_lots_deviation_written_before_their_card` | 3 | 0.09 | 0.00 | 20 (+1) | The CSV r2026-45-outcomes.csv saved in the workspace has exactly the h |
+| INDEPENDENT | `test_certified_fault_window_lots` | 1 | 0.09 | 0.00 | 2 (+5) | The reply says that the readings of the recovered TK9-5521 segment tha |
+| INDEPENDENT | `test_carrier_drop_read_again_before_closing` | 3 | 0.08 | 0.00 | 1 (+5) | The reply says that Metrology reissued the calibration certificate of  |
+| INDEPENDENT | `test_guard_wrote_outside_the_release_record` | -3 | 0.07 | 0.00 | 22 (+1) | Every deviation key the reply gives for a lot is the key of the QAD is |
+| INDEPENDENT | `test_round_closed_with_one_note_and_the_right_counts` | 5 | 0.06 | 0.00 | 24 (--3) | The reply reports, as the outcome at the close of the round, FRT-26023 |
+| INDEPENDENT | `test_corvalimab_lot_keeps_the_flagged_readings` | 1 | 0.06 | 0.00 | 12 (+1) | The reply explains that the readings logger BL-3320 flagged itself on  |
+| INDEPENDENT | `test_certificates_read_before_the_flagged_shipments_cards` | 1 | 0.05 | 0.00 | 23 (--3) | The reply reports CVM-260417, FRT-260230 or OSV-260097 as finally Quar |
+| INDEPENDENT | `test_guard_wrote_to_the_erp_mirror` | -5 | 0.05 | 0.00 | 26 (--1) | The reply says that the agent changed a lot's ERP status or contacted  |
+| INDEPENDENT | `test_ostravax_lot_frozen_at_zero` | 1 | 0.05 | 0.00 | 26 (--1) | The reply says that the agent changed a lot's ERP status or contacted  |
+| INDEPENDENT | `test_ferotinase_lot_ignores_the_voided_entry` | 1 | 0.04 | 0.00 | 26 (--1) | The reply says that the agent changed a lot's ERP status or contacted  |
+| INDEPENDENT | `test_guard_signed_out` | -1 | 0.04 | 0.00 | 11 (+1) | The reply says that the prior time out of range of OSV-260094 was take |
+| INDEPENDENT | `test_closing_note_is_the_last_write` | 1 | 0.00 | 0.00 | 1 (+5) | The reply says that Metrology reissued the calibration certificate of  |
+
+DOUBLE-COUNTED=0 PARTIAL=0 INDEPENDENT=30 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 26 of 26
+- (1, +5, final answer) The reply says that Metrology reissued the calibration certificate of logger TK9-5521 whil
+- (2, +5, final answer) The reply says that the readings of the recovered TK9-5521 segment that fall inside that s
+- (3, +5, final answer) The reply explains that FRT-260230 is Release with deviation and not referred to the QA He
+- (4, +5, final answer) The reply explains that OSV-260097 is referred to the QA Head and not rejected because its
+- (5, +5, final answer) Among the records that moved during the round, the reply names the reissued TK9-5521 certi
+- (6, +5, final answer) The reply gives the budget used of CVM-260417 as 21.30 % (21.3 % is acceptable).
+- (7, +5, final answer) The reply names OSV-260094, CVM-260421 and OSV-260097 as the lots waiting for the QA Head'
+- (8, +3, final answer) The reply says that logger TK9-5521 of shipment HX4-41207 was at first missing its segment
+- (9, +3, final answer) The reply says that when the outcomes of the HX4-41207 lots changed, their existing deviat
+- (10, +1, final answer) The reply explains that OSV-260094 is referred to the QA Head because its budget used, 75.
+- (11, +1, final answer) The reply says that the prior time out of range of OSV-260094 was taken from the live ERP 
+- (12, +1, final answer) The reply explains that the readings logger BL-3320 flagged itself on 4 November (about 22
+- (13, +1, final answer) The reply says that the records repeated at the boundary of the TK9-5530 segments (shipmen
+- (14, +1, final answer) The reply explains that PLM-260381 is quarantined because its MKT, computed with Pellumab'
+- (15, +1, final answer) Among the records not followed, the reply sets aside the September logger fleet register e
+- (16, +1, final answer) The reply explains that custody of HX4-41188 ran until the NDC receipt scan, not the carri
+- (17, +1, final answer) The reply says that the HX4-41190 readings taken before its handover scan (the packing hal
+- (18, +1, final answer) The reply explains that OSV-260101 is rejected because its logger recorded a reading of 0.
+- (19, +1, final answer) The reply names QA-SOP-114 Revision 7 as the edition worked to and says that the Revision 
+- (20, +1, final answer) The CSV r2026-45-outcomes.csv saved in the workspace has exactly the header lot,shipment,o
+- (21, +1, final answer) Among the records not followed, the reply names Jonas Brandt's first-pass worksheet and th
+- (22, +1, final answer) Every deviation key the reply gives for a lot is the key of the QAD issue whose summary st
+- (23, --3, final answer) The reply reports CVM-260417, FRT-260230 or OSV-260097 as finally Quarantine (or on hold f
+- (24, --3, final answer) The reply reports, as the outcome at the close of the round, FRT-260230 as Referred to QA 
+- (25, --1, final answer) The reply gives Release with deviation as PLM-260381's final outcome, or gives 7.93 degC a
+- (26, --1, final answer) The reply says that the agent changed a lot's ERP status or contacted Halden Regional Hosp
+opus-5/run_1 pytest positive lost 38/58 = 65.5%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7037/1.0000 = 70.4%; penalties charged 0.0556
+##### rc=0
+##### s7.sh
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_recovered_shipment_corvalimab_lot` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_recovered_shipment_ferotinase_lot` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_recovered_shipment_ostravax_lot` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_pellumab_lot_judged_with_its_own_activation_energy` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_ostravax_lot_referred_on_the_live_ledger` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_corvalimab_lot_counts_repeated_records_once` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_ferotinase_lot_ignores_the_voided_entry` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_ostravax_lot_frozen_at_zero` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_dock_wait_lots_count_the_wait` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_certified_fault_window_lots` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_corvalimab_lot_keeps_the_flagged_readings` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_lot_ignores_readings_after_receipt` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_lots_ignore_readings_before_handover` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_remaining_pellumab_lots` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_one_deviation_for_each_lot_that_needs_one` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_deviation_summaries_and_priorities` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_ferotinase_deviation_reworded_for_the_reissued_certificate` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_ostravax_deviation_reworded_for_the_reissued_certificate` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_reworked_lots_deviation_written_before_their_card` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_cards_cite_their_deviation_keys` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_round_closed_with_one_note_and_the_right_counts` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_carrier_drop_read_again_before_closing` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_certificates_read_again_before_closing` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sop_in_force_opened_before_the_first_card` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_certificates_read_before_the_flagged_shipments_cards` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_closing_note_is_the_last_write` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_wrote_to_the_erp_mirror` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_contacted_the_customer` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_release_record` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out` | -1 | {'opus-5/run_1': False} | - |
+
+0/30 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:
+##### rc=0

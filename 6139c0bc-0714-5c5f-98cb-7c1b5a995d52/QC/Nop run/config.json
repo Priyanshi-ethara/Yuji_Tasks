@@ -1,0 +1,19 @@
+{
+    "job_name": "nop",
+    "jobs_dir": "/tmp/qc/oracle_nop_20261114_203752/6139c0bc-0714-5c5f-98cb-7c1b5a995d52",
+    "environment": {
+        "type": "docker",
+        "cpu_enforcement_policy": "ignore",
+        "memory_enforcement_policy": "ignore"
+    },
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/tmp/qc/oracle_nop_20261114_203752/_copies/6139c0bc-0714-5c5f-98cb-7c1b5a995d52"
+        }
+    ]
+}

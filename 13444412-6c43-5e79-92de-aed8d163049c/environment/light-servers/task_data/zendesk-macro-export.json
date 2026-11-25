@@ -1,0 +1,142 @@
+{
+ "macros": [
+  {
+   "id": 36001,
+   "title": "PC-1 Change confirmed",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_change_scheduled"
+    },
+    {
+     "field": "status",
+     "value": "solved"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36002,
+   "title": "PC-2 Cancellation confirmed",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_cancellation_scheduled"
+    },
+    {
+     "field": "status",
+     "value": "solved"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36003,
+   "title": "PC-3 Condition not met",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_condition_not_met"
+    },
+    {
+     "field": "status",
+     "value": "solved"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36004,
+   "title": "PC-4 Request withdrawn",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_withdrawn"
+    },
+    {
+     "field": "status",
+     "value": "solved"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36005,
+   "title": "PC-5 Billing contact confirmation",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_billing_contact_needed"
+    },
+    {
+     "field": "status",
+     "value": "pending"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36006,
+   "title": "PC-6 Already in place",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "pc_already_in_place"
+    },
+    {
+     "field": "status",
+     "value": "solved"
+    },
+    {
+     "field": "comment_mode_is_public",
+     "value": true
+    }
+   ],
+   "active": true,
+   "updated_at": "2026-09-01T09:00:00Z"
+  },
+  {
+   "id": 36099,
+   "title": "OLD - Plan change done (BD-STD-1)",
+   "actions": [
+    {
+     "field": "current_tags",
+     "value": "plan_done"
+    },
+    {
+     "field": "status",
+     "value": "closed"
+    }
+   ],
+   "active": false,
+   "updated_at": "2026-08-31T17:00:00Z"
+  }
+ ],
+ "exported_at": "2026-11-01T08:00:00Z",
+ "note": "Macros mirror the PC reply templates page. The API cannot run macros; apply tag, status and public reply yourself."
+}

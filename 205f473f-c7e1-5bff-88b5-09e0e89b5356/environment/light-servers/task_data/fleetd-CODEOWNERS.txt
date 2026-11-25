@@ -1,0 +1,54 @@
+# CODEOWNERS for git.pellam.io/fleetd (repository pellam/fleetd, branch main)
+# Exported by triage-export on 2026-11-16 06:00 UTC from the default branch.
+# Each line is a pattern followed by one or more owners. Order matters; see the
+# SRE crash triage handbook for how the desk reads this file.
+
+# Fallback: anything not claimed below
+*                                   @pellam/platform
+
+# Binaries and process wiring
+/cmd/                               @pellam/platform
+/internal/platform/                 @pellam/platform
+/internal/httpx/                    @pellam/platform
+
+# Telemetry: the exporter was Ingest's until the Q3 hand-over (#3433)
+/internal/telemetry/exporter/       @pellam/ingest
+/internal/telemetry/                @pellam/platform
+
+# Dispatch
+/internal/dispatch/                 @pellam/dispatch-core
+/internal/manifest/                 @pellam/dispatch-core
+/internal/dispatch/lease/           @pellam/fleet-reliability
+
+# Money
+/internal/billing/                  @pellam/billing
+
+# Device and vehicle data
+/internal/ingest/                   @pellam/ingest
+
+# Maps, ETAs, tiles (handle kept after the Geo Services merge)
+/internal/geo/                      @pellam/geo
+
+# Notifications
+/internal/notify/                   @pellam/messaging
+
+# Contracts and generated code
+/api/                               @pellam/api-contracts
+/internal/gen/                      @pellam/api-contracts
+
+# Simulation tooling
+/tools/simkit/                      @pellam/sim-tools
+/tools/simctl/                      @pellam/sim-tools
+
+# Third-party code and build plumbing
+/vendor/                            @pellam/platform
+/third_party/                       @pellam/platform
+/.github/                           @pellam/platform
+/Makefile                           @pellam/platform
+
+# Cross-cutting packages (any depth), added by #3415 and #3441
+queue/                              @pellam/messaging
+retry/                              @pellam/fleet-reliability
+
+# Docs
+/docs/                              @pellam/platform

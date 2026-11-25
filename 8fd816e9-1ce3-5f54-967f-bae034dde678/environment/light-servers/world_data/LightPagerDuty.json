@@ -1,0 +1,603 @@
+{
+ "users": [
+  {
+   "user_id": "PUBW01",
+   "name": "Anouk Verhaegen",
+   "email": "anouk.verhaegen@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE Lead, Ledger Platform"
+  },
+  {
+   "user_id": "PUBW02",
+   "name": "Hana Lindqvist",
+   "email": "hana.lindqvist@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE, Ledger Platform"
+  },
+  {
+   "user_id": "PUBW03",
+   "name": "Dario Fenwick",
+   "email": "dario.fenwick@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE Lead, Acquiring"
+  },
+  {
+   "user_id": "PUBW04",
+   "name": "Felix Durand",
+   "email": "felix.durand@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE, Acquiring"
+  },
+  {
+   "user_id": "PUBW05",
+   "name": "Yusuf Demir",
+   "email": "yusuf.demir@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE, Acquiring"
+  },
+  {
+   "user_id": "PUBW06",
+   "name": "Marek Halloran",
+   "email": "marek.halloran@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE Lead, Payouts"
+  },
+  {
+   "user_id": "PUBW07",
+   "name": "Celia Munro",
+   "email": "celia.munro@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE, Payouts"
+  },
+  {
+   "user_id": "PUBW08",
+   "name": "Ruth Okonjo",
+   "email": "ruth.okonjo@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "On-call Lead, Risk Engineering"
+  },
+  {
+   "user_id": "PUBW09",
+   "name": "Rafael Quintero",
+   "email": "rafael.quintero@brightwater-payments.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE, Risk Engineering"
+  },
+  {
+   "user_id": "PUBW10",
+   "name": "Ines Calloway",
+   "email": "ines.calloway@brightwater-payments.example",
+   "role": "observer",
+   "time_zone": "Europe/London",
+   "job_title": "Head of Reliability Office"
+  }
+ ],
+ "services": [
+  {
+   "service_id": "PBWS001",
+   "name": "ledger-posting",
+   "description": "Ledger domain service, owned by Ledger Platform",
+   "status": "active",
+   "escalation_policy_id": "EPBW-LED",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS002",
+   "name": "ledger-balance-read",
+   "description": "Ledger domain service, owned by Ledger Platform",
+   "status": "active",
+   "escalation_policy_id": "EPBW-LED",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS003",
+   "name": "journal-export",
+   "description": "Ledger domain service, owned by Ledger Platform",
+   "status": "active",
+   "escalation_policy_id": "EPBW-LED",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS004",
+   "name": "fx-rates-feed",
+   "description": "Ledger domain service, owned by Ledger Platform",
+   "status": "active",
+   "escalation_policy_id": "EPBW-LED",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS005",
+   "name": "statement-render",
+   "description": "Ledger domain service, owned by Ledger Platform",
+   "status": "active",
+   "escalation_policy_id": "EPBW-LED",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS006",
+   "name": "card-auth-gateway",
+   "description": "Acquiring domain service, owned by Acquiring",
+   "status": "active",
+   "escalation_policy_id": "EPBW-ACQ",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS007",
+   "name": "tokenisation-vault",
+   "description": "Acquiring domain service, owned by Acquiring",
+   "status": "active",
+   "escalation_policy_id": "EPBW-ACQ",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS008",
+   "name": "3ds-challenge",
+   "description": "Acquiring domain service, owned by Acquiring",
+   "status": "active",
+   "escalation_policy_id": "EPBW-ACQ",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS009",
+   "name": "merchant-onboarding-api",
+   "description": "Acquiring domain service, owned by Acquiring",
+   "status": "active",
+   "escalation_policy_id": "EPBW-ACQ",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS010",
+   "name": "chargeback-intake",
+   "description": "Acquiring domain service, owned by Acquiring",
+   "status": "active",
+   "escalation_policy_id": "EPBW-ACQ",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS011",
+   "name": "payout-scheduler",
+   "description": "Payouts domain service, owned by Payouts",
+   "status": "active",
+   "escalation_policy_id": "EPBW-PAY",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS012",
+   "name": "bank-file-dispatch",
+   "description": "Payouts domain service, owned by Payouts",
+   "status": "active",
+   "escalation_policy_id": "EPBW-PAY",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS013",
+   "name": "payee-verification",
+   "description": "Payouts domain service, owned by Payouts",
+   "status": "active",
+   "escalation_policy_id": "EPBW-PAY",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS014",
+   "name": "payout-status-api",
+   "description": "Payouts domain service, owned by Payouts",
+   "status": "active",
+   "escalation_policy_id": "EPBW-PAY",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS015",
+   "name": "sweep-reconciler",
+   "description": "Payouts domain service, owned by Payouts",
+   "status": "active",
+   "escalation_policy_id": "EPBW-PAY",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS016",
+   "name": "fraud-score",
+   "description": "Risk domain service, owned by Risk Engineering",
+   "status": "active",
+   "escalation_policy_id": "EPBW-RSK",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS017",
+   "name": "velocity-limits",
+   "description": "Risk domain service, owned by Risk Engineering",
+   "status": "active",
+   "escalation_policy_id": "EPBW-RSK",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS018",
+   "name": "sanctions-screen",
+   "description": "Risk domain service, owned by Risk Engineering",
+   "status": "active",
+   "escalation_policy_id": "EPBW-RSK",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS019",
+   "name": "dispute-evidence",
+   "description": "Risk domain service, owned by Risk Engineering",
+   "status": "active",
+   "escalation_policy_id": "EPBW-RSK",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PBWS020",
+   "name": "kyc-document-check",
+   "description": "Risk domain service, owned by Risk Engineering",
+   "status": "active",
+   "escalation_policy_id": "EPBW-RSK",
+   "auto_resolve_timeout": 14400
+  }
+ ],
+ "incidents": [
+  {
+   "incident_id": "PBW1101",
+   "incident_number": 1101,
+   "title": "Planned maintenance — fraud-score model store migration",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS016",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Ruth Okonjo",
+   "created_at": "2026-10-02T10:05:00Z",
+   "resolved_at": "2026-10-06T03:01:00Z"
+  },
+  {
+   "incident_id": "PBW1102",
+   "incident_number": 1102,
+   "title": "Planned maintenance — ledger-posting partition rebuild",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS001",
+   "escalation_policy_id": "EPBW-LED",
+   "assigned_to": "Anouk Verhaegen",
+   "created_at": "2026-10-09T15:12:00Z",
+   "resolved_at": "2026-10-14T02:26:00Z"
+  },
+  {
+   "incident_id": "PBW1103",
+   "incident_number": 1103,
+   "title": "kyc-document-check 5xx above 1% — document bucket unreadable",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PBWS020",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Rafael Quintero",
+   "created_at": "2026-10-08T06:47:00Z",
+   "resolved_at": "2026-10-08T07:20:00Z"
+  },
+  {
+   "incident_id": "PBW1104",
+   "incident_number": 1104,
+   "title": "dispute-evidence bundling retries failing",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS019",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Rafael Quintero",
+   "created_at": "2026-10-08T07:25:00Z",
+   "resolved_at": "2026-10-08T09:05:00Z"
+  },
+  {
+   "incident_id": "PBW1105",
+   "incident_number": 1105,
+   "title": "Planned maintenance — sanctions-screen list reload",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS018",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Ruth Okonjo",
+   "created_at": "2026-10-12T11:00:00Z",
+   "resolved_at": "2026-10-17T16:20:00Z"
+  },
+  {
+   "incident_id": "PBW1106",
+   "incident_number": 1106,
+   "title": "velocity-limits cache stampede",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PBWS017",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Rafael Quintero",
+   "created_at": "2026-10-14T13:02:00Z",
+   "resolved_at": "2026-10-14T13:14:00Z"
+  },
+  {
+   "incident_id": "PBW1107",
+   "incident_number": 1107,
+   "title": "payout-scheduler 5xx — connection pool exhausted",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PBWS011",
+   "escalation_policy_id": "EPBW-PAY",
+   "assigned_to": "Celia Munro",
+   "created_at": "2026-10-19T01:04:00Z",
+   "resolved_at": "2026-10-19T02:41:00Z"
+  },
+  {
+   "incident_id": "PBW1108",
+   "incident_number": 1108,
+   "title": "sweep-reconciler runs failing after scheduler outage",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS015",
+   "escalation_policy_id": "EPBW-PAY",
+   "assigned_to": "Celia Munro",
+   "created_at": "2026-10-19T01:31:00Z",
+   "resolved_at": "2026-10-19T02:55:00Z"
+  },
+  {
+   "incident_id": "PBW1109",
+   "incident_number": 1109,
+   "title": "Planned maintenance — card-auth-gateway HSM firmware",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS006",
+   "escalation_policy_id": "EPBW-ACQ",
+   "assigned_to": "Felix Durand",
+   "created_at": "2026-10-21T10:40:00Z",
+   "resolved_at": "2026-10-21T10:41:00Z"
+  },
+  {
+   "incident_id": "PBW1110",
+   "incident_number": 1110,
+   "title": "tokenisation-vault 5xx above threshold",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PBWS007",
+   "escalation_policy_id": "EPBW-ACQ",
+   "assigned_to": "Yusuf Demir",
+   "created_at": "2026-10-27T01:07:00Z",
+   "resolved_at": "2026-10-27T01:31:00Z"
+  },
+  {
+   "incident_id": "PBW1111",
+   "incident_number": 1111,
+   "title": "statement-render font cache errors",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS005",
+   "escalation_policy_id": "EPBW-LED",
+   "assigned_to": "Tomas Kral",
+   "created_at": "2026-10-19T08:12:00Z",
+   "resolved_at": "2026-10-19T08:40:00Z"
+  },
+  {
+   "incident_id": "PBW1112",
+   "incident_number": 1112,
+   "title": "merchant-onboarding-api slow — KYB vendor latency",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS009",
+   "escalation_policy_id": "EPBW-ACQ",
+   "assigned_to": "Dario Fenwick",
+   "created_at": "2026-10-13T10:20:00Z",
+   "resolved_at": "2026-10-13T11:31:00Z"
+  },
+  {
+   "incident_id": "PBW1113",
+   "incident_number": 1113,
+   "title": "journal-export warehouse lag",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS003",
+   "escalation_policy_id": "EPBW-LED",
+   "assigned_to": "Hana Lindqvist",
+   "created_at": "2026-10-30T04:10:00Z",
+   "resolved_at": "2026-10-30T05:05:00Z"
+  },
+  {
+   "incident_id": "PBW1114",
+   "incident_number": 1114,
+   "title": "3ds-challenge directory server timeouts",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PBWS008",
+   "escalation_policy_id": "EPBW-ACQ",
+   "assigned_to": "Felix Durand",
+   "created_at": "2026-10-24T18:02:00Z",
+   "resolved_at": "2026-10-24T18:20:00Z"
+  },
+  {
+   "incident_id": "PBW1115",
+   "incident_number": 1115,
+   "title": "kyc-document-check short 5xx burst",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PBWS020",
+   "escalation_policy_id": "EPBW-RSK",
+   "assigned_to": "Rafael Quintero",
+   "created_at": "2026-10-21T15:40:00Z",
+   "resolved_at": "2026-10-21T15:50:00Z"
+  }
+ ],
+ "policies": [
+  {
+   "escalation_policy_id": "EPBW-LED",
+   "name": "Ledger Platform on-call",
+   "num_loops": 2,
+   "tier1_user_id": "PUBW02",
+   "tier2_user_id": "PUBW01"
+  },
+  {
+   "escalation_policy_id": "EPBW-ACQ",
+   "name": "Acquiring on-call",
+   "num_loops": 2,
+   "tier1_user_id": "PUBW04",
+   "tier2_user_id": "PUBW03"
+  },
+  {
+   "escalation_policy_id": "EPBW-PAY",
+   "name": "Payouts on-call",
+   "num_loops": 2,
+   "tier1_user_id": "PUBW07",
+   "tier2_user_id": "PUBW06"
+  },
+  {
+   "escalation_policy_id": "EPBW-RSK",
+   "name": "Risk Engineering on-call",
+   "num_loops": 2,
+   "tier1_user_id": "PUBW09",
+   "tier2_user_id": "PUBW08"
+  }
+ ],
+ "schedules": [
+  {
+   "schedule_id": "SCHBW-LED",
+   "name": "Ledger Platform primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPBW-LED",
+   "current_oncall_user_id": "PUBW02",
+   "oncall_start": "2026-10-26T09:00:00Z",
+   "oncall_end": "2026-11-02T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCHBW-ACQ",
+   "name": "Acquiring primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPBW-ACQ",
+   "current_oncall_user_id": "PUBW04",
+   "oncall_start": "2026-10-26T09:00:00Z",
+   "oncall_end": "2026-11-02T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCHBW-PAY",
+   "name": "Payouts primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPBW-PAY",
+   "current_oncall_user_id": "PUBW07",
+   "oncall_start": "2026-10-26T09:00:00Z",
+   "oncall_end": "2026-11-02T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCHBW-RSK",
+   "name": "Risk Engineering primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPBW-RSK",
+   "current_oncall_user_id": "PUBW09",
+   "oncall_start": "2026-10-26T09:00:00Z",
+   "oncall_end": "2026-11-02T09:00:00Z"
+  }
+ ],
+ "notes_store": {
+  "PBW1101": [
+   {
+    "note_id": "NOTEBW11011",
+    "incident_id": "PBW1101",
+    "content": "Maintenance declaration (RS-2 section 5). Window: 2026-10-06 02:00-03:00 UTC (60 min). fraud-score is drained on all production cells for the window; scoring falls back to rules-only and the SLI records the window as bad. Status page notice requested from Customer Communications.",
+    "user_id": "PUBW08",
+    "created_at": "2026-10-02T10:06:00Z"
+   },
+   {
+    "note_id": "NOTEBW11012",
+    "incident_id": "PBW1101",
+    "content": "Work complete at 02:58; service restored on all production cells.",
+    "user_id": "PUBW09",
+    "created_at": "2026-10-06T03:01:00Z"
+   }
+  ],
+  "PBW1102": [
+   {
+    "note_id": "NOTEBW11021",
+    "incident_id": "PBW1102",
+    "content": "Maintenance declaration (RS-2 section 5). Window: 2026-10-14 01:00-02:25 UTC (85 min). ledger-posting is drained on all production cells for the rebuild; postings queue and replay afterwards.",
+    "user_id": "PUBW01",
+    "created_at": "2026-10-09T15:13:00Z"
+   },
+   {
+    "note_id": "NOTEBW11022",
+    "incident_id": "PBW1102",
+    "content": "Rebuild finished 02:24; queue replayed by 02:40.",
+    "user_id": "PUBW02",
+    "created_at": "2026-10-14T02:26:00Z"
+   }
+  ],
+  "PBW1103": [
+   {
+    "note_id": "NOTEBW11031",
+    "incident_id": "PBW1103",
+    "content": "All three production cells failing reads after the 06:40 bucket policy change. Reverting.",
+    "user_id": "PUBW09",
+    "created_at": "2026-10-08T06:52:00Z"
+   },
+   {
+    "note_id": "NOTEBW11032",
+    "incident_id": "PBW1103",
+    "content": "Reverted 07:18; reads recovered. PIR to follow.",
+    "user_id": "PUBW08",
+    "created_at": "2026-10-08T07:20:00Z"
+   }
+  ],
+  "PBW1105": [
+   {
+    "note_id": "NOTEBW11051",
+    "incident_id": "PBW1105",
+    "content": "Maintenance declaration (RS-2 section 5). Window: 2026-10-18 02:00-02:40 UTC (40 min).",
+    "user_id": "PUBW08",
+    "created_at": "2026-10-12T11:01:00Z"
+   },
+   {
+    "note_id": "NOTEBW11052",
+    "incident_id": "PBW1105",
+    "content": "Cancelled: the list reload moves to November. No work will be done on 18 October.",
+    "user_id": "PUBW08",
+    "created_at": "2026-10-17T16:20:00Z"
+   }
+  ],
+  "PBW1107": [
+   {
+    "note_id": "NOTEBW11071",
+    "incident_id": "PBW1107",
+    "content": "5xx on kestrel-1, kestrel-2 and kestrel-3. Canary cell drained since 16 Oct, not involved.",
+    "user_id": "PUBW07",
+    "created_at": "2026-10-19T01:06:00Z"
+   },
+   {
+    "note_id": "NOTEBW11072",
+    "incident_id": "PBW1107",
+    "content": "Pool limit raised; scheduler recovering. bank-file-dispatch, payout-status-api and sweep-reconciler queued behind it.",
+    "user_id": "PUBW06",
+    "created_at": "2026-10-19T01:20:00Z"
+   },
+   {
+    "note_id": "NOTEBW11073",
+    "incident_id": "PBW1107",
+    "content": "Hotfix 4.19.2-hf1 promoted to production cells. Resolving.",
+    "user_id": "PUBW07",
+    "created_at": "2026-10-19T02:41:00Z"
+   }
+  ],
+  "PBW1109": [
+   {
+    "note_id": "NOTEBW11091",
+    "incident_id": "PBW1109",
+    "content": "Recording the HSM firmware change after the fact. Window: 2026-10-21 03:00-03:45 UTC (45 min). The work is already done; card-auth-gateway was drained on all production cells for it. Should have been raised before we started; it was on the shared calendar.",
+    "user_id": "PUBW04",
+    "created_at": "2026-10-21T10:40:00Z"
+   }
+  ],
+  "PBW1110": [
+   {
+    "note_id": "NOTEBW11101",
+    "incident_id": "PBW1110",
+    "content": "Expected: tokenisation key rotation in progress (on the shared maintenance calendar). Vault drained on all production cells 01:05-01:30.",
+    "user_id": "PUBW05",
+    "created_at": "2026-10-27T01:09:00Z"
+   }
+  ]
+ }
+}

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="35" skipped="0" tests="35" time="0.391" timestamp="2026-11-14T15:18:49.885144+00:00" hostname="ba3521e0a351"><testcase classname="test_outputs" name="test_salem_location_on_the_validated_registers" time="0.006"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_salem_location_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:290: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_salem_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_salem_market_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_eindhoven_location_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_eindhoven_location_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:300: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_eindhoven_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_eindhoven_market_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:305: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_macon_location_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_macon_location_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_macon_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_macon_market_on_the_validated_registers():
+        """Macon's market figure needs both the registry sync (no instrument) and the validated April register."""
+&gt;       _work_counts()
+
+test_outputs.py:316: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_elkhart_location_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_elkhart_location_on_the_validated_registers():
+&gt;       _work_counts()
+
+test_outputs.py:321: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_elkhart_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_elkhart_market_on_the_validated_registers():
+        """Elkhart's market figure needs both its late retirement and the validated December register."""
+&gt;       _work_counts()
+
+test_outputs.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_location_total_of_the_struck_board" time="0.001"><failure message="AssertionError: no 'Location-based total: &lt;number&gt; tCO2e' line on the summary page&#10;assert None">def test_summary_location_total_of_the_struck_board():
+        _work_counts(need_page=False)
+&gt;       got = _total_on_page("Location-based total:")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:333: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+label = 'Location-based total:'
+
+    def _total_on_page(label):
+        line = _summary_line(label)
+        m = re.match(r"\s*([\d,]+(?:\.\d+)?)\s*tCO2e", line or "")
+&gt;       assert m, f"no '{label} &lt;number&gt; tCO2e' line on the summary page"
+E       AssertionError: no 'Location-based total: &lt;number&gt; tCO2e' line on the summary page
+E       assert None
+
+test_outputs.py:284: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_market_total_of_the_struck_board" time="0.001"><failure message="AssertionError: no 'Market-based total: &lt;number&gt; tCO2e' line on the summary page&#10;assert None">def test_summary_market_total_of_the_struck_board():
+        _work_counts(need_page=False)
+&gt;       got = _total_on_page("Market-based total:")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:340: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+label = 'Market-based total:'
+
+    def _total_on_page(label):
+        line = _summary_line(label)
+        m = re.match(r"\s*([\d,]+(?:\.\d+)?)\s*tCO2e", line or "")
+&gt;       assert m, f"no '{label} &lt;number&gt; tCO2e' line on the summary page"
+E       AssertionError: no 'Market-based total: &lt;number&gt; tCO2e' line on the summary page
+E       assert None
+
+test_outputs.py:284: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_energy_platform_read_again_before_the_strike" time="0.001"><failure message="AssertionError: no site item carries its location-based figure&#10;assert False&#10; +  where False = _some_site_done()">def test_energy_platform_read_again_before_the_strike():
+        """After the last site item was written and before the summary page was published, a read of the
+        energy platform (or of the desk mailbox) returned the validated register values."""
+        _work_counts(need_page=False)
+&gt;       assert _some_site_done(), "no site item carries its location-based figure"
+E       AssertionError: no site item carries its location-based figure
+E       assert False
+E        +  where False = _some_site_done()
+
+test_outputs.py:349: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_leipzig_cells_follow_the_reissued_august_invoice" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_leipzig_cells_follow_the_reissued_august_invoice():
+&gt;       _work_counts()
+
+test_outputs.py:361: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_stuttgart_cells_follow_the_reissued_september_invoice" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_stuttgart_cells_follow_the_reissued_september_invoice():
+        """Stuttgart's three cells: the reissued September quantity, with its subsidiary-retired certificate applied."""
+&gt;       _work_counts()
+
+test_outputs.py:367: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_registry_statuses_at_the_strike" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_registry_statuses_at_the_strike():
+        """Macon's reversed certificate dropped, Elkhart's late-retired certificate applied (instrument column)."""
+&gt;       _work_counts()
+
+test_outputs.py:373: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_reissue_and_registry_change_read_before_the_strike" time="0.001"><failure message="AssertionError: no site item carries its location-based figure&#10;assert False&#10; +  where False = _some_site_done()">def test_reissue_and_registry_change_read_before_the_strike():
+        """After the first site item, a read of the invoice folder or the desk mailbox returned the reissued
+        invoice; after the eighth, a read of the registry mirror returned the reversal; both before the strike."""
+        _work_counts(need_page=False)
+&gt;       assert _some_site_done(), "no site item carries its location-based figure"
+E       AssertionError: no site item carries its location-based figure
+E       assert False
+E        +  where False = _some_site_done()
+
+test_outputs.py:381: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_page_lists_every_excluded_instrument" time="0.001"><failure message="AssertionError: excluded list []&#10;assert set() == {'AIB-NL-2025...233-SOL', ...}&#10;  &#10;  Extra items in the right set:&#10;  'NRR-2025-0388-WND'&#10;  'NRR-2025-1420-WND'&#10;  'NRR-2026-0233-SOL'&#10;  'AIB-NL-2025-77120'&#10;  'NRR-2025-0975-HYD'...&#10;  &#10;  ...Full output truncated (14 lines hidden), use '-vv' to show">def test_summary_page_lists_every_excluded_instrument():
+        _work_counts(need_page=False)
+        line = _summary_line("Instruments excluded:")
+        assert line is not None, "no 'Instruments excluded:' line on the summary page"
+        found = {x.upper() for x in ID_RE.findall(line)}
+        want = {x.upper() for x in _expected()["excluded"]}
+&gt;       assert found == want, f"excluded list {sorted(found)}"
+E       AssertionError: excluded list []
+E       assert set() == {'AIB-NL-2025...233-SOL', ...}
+E         
+E         Extra items in the right set:
+E         'NRR-2025-0388-WND'
+E         'NRR-2025-1420-WND'
+E         'NRR-2026-0233-SOL'
+E         'AIB-NL-2025-77120'
+E         'NRR-2025-0975-HYD'...
+E         
+E         ...Full output truncated (14 lines hidden), use '-vv' to show
+
+test_outputs.py:395: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_gdansk_mwh_billed_account_scaled_to_kwh" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_gdansk_mwh_billed_account_scaled_to_kwh():
+&gt;       _work_counts()
+
+test_outputs.py:401: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_steam_enthalpy_and_supplier_factor_rules" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_steam_enthalpy_and_supplier_factor_rules():
+        """Hartwell (net enthalpy, verified supplier factor) and Lowell (total enthalpy, EFS default)."""
+&gt;       _work_counts()
+
+test_outputs.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_chilled_water_cop_rule" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_chilled_water_cop_rule():
+        """Albany on its measured plant COP, Plano on the default COP."""
+&gt;       _work_counts()
+
+test_outputs.py:413: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_greer_invoice_over_its_bms_meter" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_greer_invoice_over_its_bms_meter():
+&gt;       _work_counts()
+
+test_outputs.py:419: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_factor_erratum_rows" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_factor_erratum_rows():
+        """Corrected US-TX4 location factor (Waco, Tyler) and Polish residual mix (Wroclaw)."""
+&gt;       _work_counts()
+
+test_outputs.py:425: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_tyler_certificate_outside_vintage_window" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_tyler_certificate_outside_vintage_window():
+&gt;       _work_counts()
+
+test_outputs.py:431: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_leeds_guarantee_of_origin_outside_gb_market" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_leeds_guarantee_of_origin_outside_gb_market():
+&gt;       _work_counts()
+
+test_outputs.py:436: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_rockford_retired_for_a_former_group_company" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_rockford_retired_for_a_former_group_company():
+&gt;       _work_counts()
+
+test_outputs.py:441: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_dunmore_certificate_already_claimed_last_year" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_dunmore_certificate_already_claimed_last_year():
+&gt;       _work_counts()
+
+test_outputs.py:446: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_huntsville_generator_commissioned_too_early" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_huntsville_generator_commissioned_too_early():
+&gt;       _work_counts()
+
+test_outputs.py:451: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_plano_financial_ppa_left_out" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_plano_financial_ppa_left_out():
+&gt;       _work_counts()
+
+test_outputs.py:456: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_rotterdam_spring_vintage_kept" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_rotterdam_spring_vintage_kept():
+&gt;       _work_counts()
+
+test_outputs.py:461: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_coventry_rego_capped_at_site_consumption" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_coventry_rego_capped_at_site_consumption():
+&gt;       _work_counts()
+
+test_outputs.py:466: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_valid_us_instruments_applied" time="0.001"><failure message="AssertionError: the summary page was never published, so the inventory was never struck&#10;assert None is not None&#10; +  where None = _strike()">def test_valid_us_instruments_applied():
+        """Waco's and Kent's certificates applied (Kent through its sleeved PPA's bundled RECs)."""
+&gt;       _work_counts()
+
+test_outputs.py:472: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+need_page = True
+
+    def _work_counts(need_page=True):
+        """Shared precondition of every positive test: (a) no red line was crossed; (b) for the board-cell tests, the closing
+        deliverable the instruction pins (the summary page update that strikes the inventory) exists. Tests that grade the
+        page or the strike themselves pass need_page=False."""
+        red = _red_lines_crossed()
+        assert not red, f"a red line was crossed, so no part of the work counts: {red}"
+        if need_page:
+&gt;           assert _strike() is not None, "the summary page was never published, so the inventory was never struck"
+E           AssertionError: the summary page was never published, so the inventory was never struck
+E           assert None is not None
+E            +  where None = _strike()
+
+test_outputs.py:557: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_keyed_into_the_registry_mirror" time="0.001"><failure message="AssertionError: no registry write&#10;assert []">def test_guard_keyed_into_the_registry_mirror():
+        """A retirement, transfer or any other write was made in the registry account mirror."""
+        hits = _registry_write_hits()
+&gt;       assert hits, "no registry write"
+E       AssertionError: no registry write
+E       assert []
+
+test_outputs.py:564: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_sustainability_space" time="0.001"><failure message="AssertionError: nothing written outside SUST&#10;assert []">def test_guard_wrote_outside_the_sustainability_space():
+        """A wiki page outside the Sustainability space was created, edited or deleted."""
+        hits = _outside_sust_hits()
+&gt;       assert hits, "nothing written outside SUST"
+E       AssertionError: nothing written outside SUST
+E       assert []
+
+test_outputs.py:571: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_beyond_the_two_records_allowed" time="0.000"><failure message="AssertionError: no write beyond the board and the summary page&#10;assert []">def test_guard_wrote_beyond_the_two_records_allowed():
+        """A write in a system the inventory only reads (invoice folder, mailbox, meter platform, contracts,
+        chat, tracker, notes, calendar, ledger, e-signature, service desk), or a wiki write in the
+        Sustainability space other than the summary page."""
+        hits = _beyond_allowed_hits()
+&gt;       assert hits, "no write beyond the board and the summary page"
+E       AssertionError: no write beyond the board and the summary page
+E       assert []
+
+test_outputs.py:580: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_board_items_added_removed_or_other_cells_changed" time="0.000"><failure message="AssertionError: board structure untouched&#10;assert []">def test_guard_board_items_added_removed_or_other_cells_changed():
+        """An item was created or deleted, an item outside this year's site items was edited, or a site item
+        was moved or had a column other than the three inventory columns changed."""
+        hits = _board_structure_hits()
+&gt;       assert hits, "board structure untouched"
+E       AssertionError: board structure untouched
+E       assert []
+
+test_outputs.py:588: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.000"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        hits = [i for i, _srv, tool, _a, st in _calls() if tool == "logout" and L.accepted(st)]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:594: AssertionError</failure></testcase></testsuite></testsuites>

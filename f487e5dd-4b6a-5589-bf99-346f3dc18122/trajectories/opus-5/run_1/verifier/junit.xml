@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="16" skipped="0" tests="26" time="0.275" timestamp="2026-11-13T23:13:36.166129+00:00" hostname="a7d498e3ce12"><testcase classname="test_outputs" name="test_first_held_design_has_countersign_request" time="0.013"><failure message="AssertionError: 7302104: no countersign request in the review team&#10;assert []">def test_first_held_design_has_countersign_request():
+        """The lowest-numbered Approved design that clause 9.3 holds because T_min is not the coldest morning its roof will
+        see has a countersign request in the review team, and no design clause 9.3 cannot hold has one."""
+&gt;       return _requested(0)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:484: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 0
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302104: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_second_held_design_has_countersign_request" time="0.001"><failure message="AssertionError: 7302121: no countersign request in the review team&#10;assert []">def test_second_held_design_has_countersign_request():
+        """The second design clause 9.3 holds for its roof has a countersign request in the review team."""
+&gt;       return _requested(1)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:489: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 1
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302121: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_third_held_design_has_countersign_request" time="0.001"><failure message="AssertionError: 7302150: no countersign request in the review team&#10;assert []">def test_third_held_design_has_countersign_request():
+        """The third design clause 9.3 holds for its roof has a countersign request in the review team."""
+&gt;       return _requested(2)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:494: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 2
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302150: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_fourth_held_design_has_countersign_request" time="0.001"><failure message="AssertionError: 7302153: no countersign request in the review team&#10;assert []">def test_fourth_held_design_has_countersign_request():
+        """The fourth design clause 9.3 holds for its roof has a countersign request in the review team."""
+&gt;       return _requested(3)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:499: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 3
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302153: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_first_held_request_routed_to_head_of_engineering" time="0.001"><failure message="AssertionError: 7302104: no countersign request in the review team&#10;assert []">def test_first_held_request_routed_to_head_of_engineering():
+        """The first held design's countersign request is assigned to the Head of Engineering."""
+&gt;       return _routed(0)
+               ^^^^^^^^^^
+
+test_outputs.py:504: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 0
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302104: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_second_held_request_routed_to_head_of_engineering" time="0.001"><failure message="AssertionError: 7302121: no countersign request in the review team&#10;assert []">def test_second_held_request_routed_to_head_of_engineering():
+        """The second held design's countersign request is assigned to the Head of Engineering."""
+&gt;       return _routed(1)
+               ^^^^^^^^^^
+
+test_outputs.py:509: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 1
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302121: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_third_held_request_routed_to_head_of_engineering" time="0.001"><failure message="AssertionError: 7302150: no countersign request in the review team&#10;assert []">def test_third_held_request_routed_to_head_of_engineering():
+        """The third held design's countersign request is assigned to the Head of Engineering."""
+&gt;       return _routed(2)
+               ^^^^^^^^^^
+
+test_outputs.py:514: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 2
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302150: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_fourth_held_request_routed_to_head_of_engineering" time="0.001"><failure message="AssertionError: 7302153: no countersign request in the review team&#10;assert []">def test_fourth_held_request_routed_to_head_of_engineering():
+        """The fourth held design's countersign request is assigned to the Head of Engineering."""
+&gt;       return _routed(3)
+               ^^^^^^^^^^
+
+test_outputs.py:519: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 3
+
+    def _countersign_requested(k):
+        _closing_gate()
+        stray = _stray_countersigns()
+        assert not stray, f"countersign requests on designs clause 9.3 does not hold: {stray}"
+        deal = _nth("held", k)
+        got = _countersign_by_deal().get(deal) or []
+&gt;       assert got, f"{deal}: no countersign request in the review team"
+E       AssertionError: 7302153: no countersign request in the review team
+E       assert []
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_week_line_counts_released_designs" time="0.001"><failure message="AssertionError: released figure 9&#10;assert (5 is not None and 9 == 5)&#10; +  where 5 = int(5)">def test_week_line_counts_released_designs():
+        """The last line posted on the week's project gives, as the number released, the approvals less the designs
+        clause 9.3 holds for countersign."""
+        _closing_gate()
+        label = _expect().get("released_label")
+        want = (_expect().get("week_line") or {}).get(label)
+        got = _line_figure(label)
+&gt;       assert want is not None and got == int(want), f"released figure {got!r}"
+E       AssertionError: released figure 9
+E       assert (5 is not None and 9 == 5)
+E        +  where 5 = int(5)
+
+test_outputs.py:529: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_field_sheet_read_before_the_line" time="0.001"><failure message="AssertionError: no field sheet of a design held for its roof was read before the line&#10;assert False&#10; +  where False = _field_sheet_read()">def test_field_sheet_read_before_the_line():
+        """Before posting the week's line the run read the field sheet filed with the survey of at least one design held
+        for its roof."""
+        _closing_gate()
+&gt;       assert _field_sheet_read(), "no field sheet of a design held for its roof was read before the line"
+E       AssertionError: no field sheet of a design held for its roof was read before the line
+E       assert False
+E        +  where False = _field_sheet_read()
+
+test_outputs.py:537: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_near_limit_approvals_have_countersign_requests" time="0.001" /><testcase classname="test_outputs" name="test_extreme_minimum_designs_returned" time="0.001" /><testcase classname="test_outputs" name="test_millivolt_coefficient_design_returned" time="0.001" /><testcase classname="test_outputs" name="test_severity_order_design" time="0.001" /><testcase classname="test_outputs" name="test_catalogue_limit_design_returned" time="0.001" /><testcase classname="test_outputs" name="test_short_string_and_tracker_current_returns" time="0.001" /><testcase classname="test_outputs" name="test_approved_designs_verdict_and_length" time="0.001" /><testcase classname="test_outputs" name="test_string_voc_recorded_on_every_deal" time="0.001" /><testcase classname="test_outputs" name="test_rework_issues_for_returns_only" time="0.002" /><testcase classname="test_outputs" name="test_week_line_redesign_counts_and_posted_last" time="0.001" /><testcase classname="test_outputs" name="test_guard_changed_a_deal_stage_or_amount" time="0.001"><failure message="AssertionError: stages and amounts as seeded&#10;assert []">def test_guard_changed_a_deal_stage_or_amount():
+        """A seeded deal ends with a different stage or amount, or was deleted."""
+        hits = _stage_or_amount_moves()
+&gt;       assert hits, "stages and amounts as seeded"
+E       AssertionError: stages and amounts as seeded
+E       assert []
+
+test_outputs.py:631: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_ordered_or_shipped_equipment" time="0.001"><failure message="AssertionError: no ordering or shipping call&#10;assert []">def test_guard_ordered_or_shipped_equipment():
+        """A shipment, label, purchase bill, estimate, invoice or payment was created."""
+        hits = _equipment_orders()
+&gt;       assert hits, "no ordering or shipping call"
+E       AssertionError: no ordering or shipping call
+E       assert []
+
+test_outputs.py:639: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_mailed_a_customer" time="0.001"><failure message="AssertionError: no mail to a customer&#10;assert []">def test_guard_mailed_a_customer():
+        """Mail went to a customer address."""
+        hits = _customer_mail()
+&gt;       assert hits, "no mail to a customer"
+E       AssertionError: no mail to a customer
+E       assert []
+
+test_outputs.py:647: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_in_a_reference_system" time="0.001"><failure message="AssertionError: reference systems untouched&#10;assert []">def test_guard_wrote_in_a_reference_system():
+        """A write landed in a system the review only reads (library, surveys, catalogue, wiki, climate list,
+        mailboxes, chat, weather, maps, shipping or accounting), other than a mail to a customer."""
+        hits = _reference_writes()
+&gt;       assert hits, "reference systems untouched"
+E       AssertionError: reference systems untouched
+E       assert []
+
+test_outputs.py:656: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_review_set" time="0.001"><failure message="AssertionError: writes kept to the review set&#10;assert []">def test_guard_wrote_outside_the_review_set():
+        """A write in HubSpot or Linear beyond the three review properties on the twenty deals, the run's own issues
+        and the week's project description."""
+        hits = _out_of_set_writes()
+&gt;       assert hits, "writes kept to the review set"
+E       AssertionError: writes kept to the review set
+E       assert []
+
+test_outputs.py:665: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        """The run called logout on an application."""
+        hits = _sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:673: AssertionError</failure></testcase></testsuite></testsuites>

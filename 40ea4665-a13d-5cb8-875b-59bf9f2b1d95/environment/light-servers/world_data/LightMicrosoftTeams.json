@@ -1,0 +1,108 @@
+{
+ "teams": [
+  {
+   "id": "19:team-hrmfield01@thread.tacv2",
+   "displayName": "Metering Field Services",
+   "description": "Harrowmere field engineers and metering services",
+   "visibility": "private",
+   "isArchived": false,
+   "webUrl": "https://teams.example/hrm-field",
+   "member_ids": [
+    "user-001",
+    "user-owain",
+    "user-tamsin",
+    "user-bertrand"
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "displayName": "Commissioning",
+   "membershipType": "standard",
+   "description": "Meter commissioning and reprogramming",
+   "webUrl": "https://teams.example/hrm-field/commissioning",
+   "createdDateTime": "2025-01-06T09:00:00Z",
+   "isArchived": false
+  },
+  {
+   "id": "19:chan-hrmgen01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "displayName": "General",
+   "membershipType": "standard",
+   "description": "General",
+   "webUrl": "https://teams.example/hrm-field/general",
+   "createdDateTime": "2025-01-06T09:00:00Z",
+   "isArchived": false
+  }
+ ],
+ "messages": [
+  {
+   "id": "1773000000001",
+   "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-owain",
+   "from_display_name": "Owain Castellack",
+   "content": "Wave 2 (Kestrel batch): Ashgrove, Fenwick Lane and Gorsebrook done today, records written up in the asset register.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-03-12T17:05:00Z"
+  },
+  {
+   "id": "1773000000002",
+   "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-owain",
+   "from_display_name": "Owain Castellack",
+   "content": "Hollin Bridge and Kittering done. Dashboard live at Kittering; Hollin Bridge cancelled their dashboard order last week, so standard programming there. Records updated.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-03-18T16:40:00Z"
+  },
+  {
+   "id": "1773000000003",
+   "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-owain",
+   "from_display_name": "Owain Castellack",
+   "content": "Wexcombe done - customer said no to the capacity dashboard at survey, so no dashboard programming there. Record updated.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-03-19T15:55:00Z"
+  },
+  {
+   "id": "1773000000004",
+   "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-tamsin",
+   "from_display_name": "Tamsin Rookwood",
+   "content": "Thanks Owain. Kestrel polling starts tonight for all six.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-03-19T16:20:00Z"
+  },
+  {
+   "id": "1773000000005",
+   "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-owain",
+   "from_display_name": "Owain Castellack",
+   "content": "Brookhay Brewery meter fitted 14 Oct ahead of the transfer. Commissioning record in the register.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-10-14T16:15:00Z"
+  },
+  {
+   "id": "1773000000006",
+   "channel_id": "19:chan-hrmgen01@thread.tacv2",
+   "team_id": "19:team-hrmfield01@thread.tacv2",
+   "from_user_id": "user-tamsin",
+   "from_display_name": "Tamsin Rookwood",
+   "content": "No business HH exchanges booked before the end of November.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-10-28T09:10:00Z"
+  }
+ ]
+}

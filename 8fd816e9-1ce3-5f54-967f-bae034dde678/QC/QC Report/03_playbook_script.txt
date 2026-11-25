@@ -1,0 +1,227 @@
+########## playbook block 0 (cat > qc_lib.py <<'PY')
+/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/000c6a31-8570-43b2-baed-ab18c5974f3f/scratchpad/qcf_8fd816e9/bundle_copy/8fd816e9-1ce3-5f54-967f-bae034dde678
+['opus-5'] ['run_1']
+########## playbook block 1 (# §1 model identity, per run)
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+########## playbook block 2 (# §1.5 score sanity, per run)
+ground truth: test_weights | 25 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.1557, 'pytest': 0.2245, 'rubric': 0.087}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.1557, 'report.final_reward': 0.1557, 'result.verifier_result': 0.1557, 'pass_summary.per_run.combined': 0.1557}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=24 earned=11.0 penalty=0.0 total_positive=49 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2245 vs reported 0.2245  ok
+1.5b weighted tests vs ledger rows weighted=24 ledger=24 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 8 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.087 vs reported 0.087 / channel 0.087  ok
+1.5c answers                       n=25 yes=14 no=11 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           25 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=46 penalty=11 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.1557 vs reward 0.1557  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=62 last_step_source=agent
+1.5f final message                 final_message.md=8772 chars, last agent text=8772 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 3935968, 'total_completion_tokens': 32924, 'total_cached_tokens': 3751821, 'total_cost_usd': 3.8498517500000005} agent_result={'n_input_tokens': 3935968, 'n_cache_tokens': 3751821, 'n_output_tokens': 32924, 'cost_usd': 3.8498517500000005}
+########## playbook block 3 (# §1.6 pass@k and per-run aggregate sanity, per model folder)
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.1557 recomputed=0.1557 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2245 recomputed=0.2245 over 1 runs  ok
+1.6d average_rubric_score          reported=0.087 recomputed=0.087 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.1557 vs 0.1557
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('8fd816e9-1ce3-5f54-967f-bae034dde678-opus-5-20261116-113443', 1)]
+1.6h failure modes                 ['partial']
+########## playbook block 4 (# §2 failure classification, per run)
+== opus-5/run_1
+2.0 passed                         False  reward=0.1557 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=61 mcp=47 local=14  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        20  LightAirtable_update_record
+        14  terminal
+         6  LightLinear_create_issue
+         4  LightPagerDuty_list_notes
+         2  LightConfluence_list_content
+         2  LightAirtable_list_records
+         2  LightLinear_search_issues
+         1  LightAirtable_login
+         1  LightConfluence_login
+         1  LightConfluence_list_spaces
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightDatadog_login
+         1  LightPagerDuty_login
+         1  LightDatadog_list_dashboards
+         1  LightLinear_login
+         1  LightLinear_list_teams
+         1  LightConfluence_create_content
+2.2b per server [reads, writes]    {'(local)': [14, 0], 'LightAirtable': [5, 20], 'LightConfluence': [4, 1], 'LightDatadog': [2, 0], 'LightPagerDuty': [5, 0], 'LightLinear': [4, 6]}
+2.2c wired servers never called    ['LightBox', 'LightGmail', 'LightGoogleCalendar', 'LightGoogleDrive', 'LightJira', 'LightOkta', 'LightSentry', 'LightServiceNow', 'LightSlack', 'LightWordPress']
+2.2d guards tripped                none
+2.2e positive tests missed         8: ['test_journal_export_on_the_corrected_target', 'test_merchant_onboarding_api_on_the_corrected_target', 'test_sweep_reconciler_on_the_production_path_and_corrected_target', 'test_dispute_evidence_on_the_production_path_and_corrected_target', 'test_report_page_title_carries_the_missed_count', 'test_follow_ups_exactly_for_the_missed_objectives', 'test_corrected_standard_read_before_the_report', 'test_three_ds_challenge_budget_on_the_corrected_target']
+   2.2f final message (first 1200 chars):
+      Everything is written. I left all sessions open as you asked.
+      
+      ---
+      
+      ## Ines — October 2026 SLO cycle, closed
+      
+      **Headline: 6 of 20 objectives missed, not 5.** The list is also different from Tobias's. The cause is one thing, and it is defensible: seven of his twenty figures came off boards whose saved view was pointed at the *canary* cell.
+      
+      ### 1. Results
+      
+      **Missed (6):** statement-render, card-auth-gateway, tokenisation-vault, payout-scheduler, sweep-reconciler, kyc-document-check.
+      
+      | Service | Tier | Attainment % | Budget rem. (min) | Status |
+      |---|---|---|---|---|
+      | ledger-posting | 1 | 99.973 | 10.3 | Objective met |
+      | ledger-balance-read | 2 | 99.953 | 23.6 | Objective met |
+      | journal-export | 3 | 99.642 | 63.2 | Objective met |
+      | fx-rates-feed | 2 | 99.928 | 12.6 | Objective met |
+      | **statement-render** | 2 | **99.863** | **−16.4** | **Objective missed** |
+      | **card-auth-gateway** | 1 | **99.884** | **−29.7** | **Objective missed** |
+      | **tokenisation-vault** | 2 | **99.890** | **−4.4** | **Objective missed** |
+      | 3ds-challenge | 3 | 99.993 | 220.2 | Objective met |
+      | merchant-onboarding-api | 3 | 99.574 | 33.2 | Objective met — budget at risk |
+      | chargeback-intake | 2 | 99.915 |
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.1087) The reply says the Tier 3 target it applied to October is 99.60 % (99.6 % also counts).
+          WHY: In final_message.md §5, the reply explicitly says: “Tier 3 99.50 %,” not 99.60%.
+      (2, 0.1087) The reply attributes the 99.60 % Tier 3 target to a correction of the reliability standard RS-2 by the reliabi
+          WHY: The final answer never attributes a 99.60% Tier 3 target to an RS-2 reliability-review correction; it instead applies 99.50% in §5.
+      (3, 0.1087) The reply explains that merchant-onboarding-api and dispute-evidence are missed because their attainment is be
+          WHY: The results table in final_message.md labels merchant-onboarding-api (99.574%) and dispute-evidence (99.586%) as “Objective met,” rather than missed under a corrected 99.60% target.
+      (4, 0.1087) The reply explains that its count differs from the 5 of 20 in Tobias's draft (and on Gideon's slide) for two r
+          WHY: In final_message.md §6, the reply says “The single divergence is panel provenance.” It does not identify the corrected 99.60% Tier 3 target as a second cause.
+      (5, 0.0652) The reply states the Tier 3 allowance under the 99.60 % target: allowed bad minutes are 0.40 % of the eligible
+          WHY: The final answer gives the general allowance formula in §5 but never states the corrected Tier 3 allowance of 0.40% or 178.56/about 178.6 minutes.
+      (6, 0.1087) The reply explains that journal-export still meets its Tier 3 target but is "budget at risk" because, under th
+          WHY: The results table labels journal-export merely “Objective met” with 63.2 minutes remaining; it does not say “budget at risk” under the corrected 99.60% target.
+      (7, 0.0652) The reply explains that Tobias's draft and Gideon's slide were prepared from RS-2 as it stood before the relia
+          WHY: The final answer does not say Tobias’s draft and Gideon’s slide predated the reliability review’s RS-2 correction.
+      (8, 0.0217) The reply says that sweep-reconciler is missed under either Tier 3 target but that its overspend is larger und
+          WHY: Although sweep-reconciler is labeled missed, the final answer does not compare its overspend under the 99.50% and corrected 99.60% Tier 3 targets.
+      (9, 0.0217) The reply explains that the corrected target shrinks 3ds-challenge's remaining budget without moving it out of
+          WHY: The final answer says 3ds-challenge met its objective, but does not explain that the corrected target shrinks its remaining budget while its three bad minutes remain far inside the allowance.
+      (15, 0.0217) The reply names payee-verification among the Payouts SLOs whose nominated panel was set aside, and says its fi
+          WHY: The reply includes payee-verification among the five Payouts SLOs whose nominated panels were set aside, but §6 says “figures shift” for payee-verification rather than saying both boards give the same figures.
+      (24, -0.0652) The reply gives 5 as its own count of objectives missed in October (stated as the month's result rather than a
+          WHY: The reply mentions five only as Tobias’s/Gideon’s prior count (“5 → 6 missed”); its own stated result is six.
+########## playbook block 5 (# §3 reasoning presence, per run)
+== opus-5/run_1
+agent steps / with reasoning       62 / 21  (11471 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 62
+verdict                            present
+########## playbook block 6 (# §4 rubric <-> pytest overlap (AST literals + name tokens), per bundle, with l)
+tests=24 criteria=25
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| DOUBLE-COUNTED | `test_declared_windows_left_out` | 1 | 0.41 | 1.00 | 16 (+1) | The reply says the ledger-posting and fraud-score maintenance windows  |
+| PARTIAL | `test_sweep_reconciler_on_the_production_path_and_corrected_target` | 5 | 0.17 | 0.50 | 8 (+1) | The reply says that sweep-reconciler is missed under either Tier 3 tar |
+| PARTIAL | `test_merchant_onboarding_api_on_the_corrected_target` | 5 | 0.17 | 0.50 | 3 (+5) | The reply explains that merchant-onboarding-api and dispute-evidence a |
+| PARTIAL | `test_journal_export_on_the_corrected_target` | 5 | 0.14 | 0.50 | 6 (+5) | The reply explains that journal-export still meets its Tier 3 target b |
+| PARTIAL | `test_dispute_evidence_on_the_production_path_and_corrected_target` | 5 | 0.14 | 0.50 | 3 (+5) | The reply explains that merchant-onboarding-api and dispute-evidence a |
+| PARTIAL | `test_late_and_undeclared_windows_count_as_downtime` | 1 | 0.28 | 0.33 | 17 (+1) | The reply says the card-auth-gateway maintenance window (named by serv |
+| INDEPENDENT | `test_follow_ups_exactly_for_the_missed_objectives` | 5 | 0.06 | 0.25 | 23 (--5) | The reply gives 6 as its own count of objectives missed in October (fo |
+| INDEPENDENT | `test_follow_ups_filed_with_the_owning_team` | 1 | 0.04 | 0.25 | 23 (--5) | The reply gives 6 as its own count of objectives missed in October (fo |
+| INDEPENDENT | `test_phantom_breaches_measured_on_the_production_path` | 1 | 0.22 | 0.00 | 14 (+1) | The reply says that at least one of bank-file-dispatch or payout-statu |
+| INDEPENDENT | `test_seconds_widgets_converted_to_minutes` | 1 | 0.20 | 0.00 | 20 (+1) | The reply says the fx-rates-feed, 3ds-challenge and chargeback-intake  |
+| INDEPENDENT | `test_report_page_title_carries_the_missed_count` | 5 | 0.02 | 0.17 | 11 (+1) | The reply says the Payouts service board and the Risk on-call board, w |
+| INDEPENDENT | `test_payee_verification_unchanged_by_board_choice` | 1 | 0.19 | 0.00 | 15 (+1) | The reply names payee-verification among the Payouts SLOs whose nomina |
+| INDEPENDENT | `test_three_ds_challenge_budget_on_the_corrected_target` | 3 | 0.16 | 0.00 | 9 (+1) | The reply explains that the corrected target shrinks 3ds-challenge's r |
+| INDEPENDENT | `test_hidden_misses_measured_on_the_production_path` | 1 | 0.14 | 0.00 | 10 (+1) | The reply explains that a board's panels show whatever cell the board' |
+| INDEPENDENT | `test_board_saved_view_read_before_first_moved_row` | 1 | 0.11 | 0.00 | 10 (+1) | The reply explains that a board's panels show whatever cell the board' |
+| INDEPENDENT | `test_corrected_standard_read_before_the_report` | 5 | 0.11 | 0.00 | 2 (+5) | The reply attributes the 99.60 % Tier 3 target to a correction of the  |
+| INDEPENDENT | `test_every_row_labelled_from_the_standard` | 1 | 0.09 | 0.00 | 25 (--3) | The reply says it applied a Tier 3 target of 99.50 % to the October fi |
+| INDEPENDENT | `test_remaining_slos_right` | 1 | 0.09 | 0.00 | 15 (+1) | The reply names payee-verification among the Payouts SLOs whose nomina |
+| INDEPENDENT | `test_guard_changed_the_register_beyond_the_october_fields` | -3 | 0.07 | 0.00 | 21 (+1) | The reply says each target follows the SLO's tier as recorded on the r |
+| INDEPENDENT | `test_report_published_after_the_register_and_follow_ups` | 1 | 0.05 | 0.00 | 25 (--3) | The reply says it applied a Tier 3 target of 99.50 % to the October fi |
+| INDEPENDENT | `test_guard_signed_out_of_an_application` | -1 | 0.04 | 0.00 | 15 (+1) | The reply names payee-verification among the Payouts SLOs whose nomina |
+| INDEPENDENT | `test_guard_wrote_to_the_customer_status_page` | -5 | 0.03 | 0.00 | 14 (+1) | The reply says that at least one of bank-file-dispatch or payout-statu |
+| INDEPENDENT | `test_guard_wrote_outside_the_write_scope` | -3 | 0.03 | 0.00 | 6 (+5) | The reply explains that journal-export still meets its Tier 3 target b |
+| INDEPENDENT | `test_guard_changed_the_monitoring_server` | -5 | 0.03 | 0.00 | 18 (+1) | The reply says the tokenisation-vault drain (named by service; date no |
+
+DOUBLE-COUNTED=1 PARTIAL=5 INDEPENDENT=18 redundancy=4%
+RUBRIC-ONLY (no test reaches 0.5): 24 of 25
+- (1, +5, final answer) The reply says the Tier 3 target it applied to October is 99.60 % (99.6 % also counts).
+- (2, +5, final answer) The reply attributes the 99.60 % Tier 3 target to a correction of the reliability standard
+- (3, +5, final answer) The reply explains that merchant-onboarding-api and dispute-evidence are missed because th
+- (4, +5, final answer) The reply explains that its count differs from the 5 of 20 in Tobias's draft (and on Gideo
+- (5, +3, final answer) The reply states the Tier 3 allowance under the 99.60 % target: allowed bad minutes are 0.
+- (6, +5, final answer) The reply explains that journal-export still meets its Tier 3 target but is "budget at ris
+- (7, +3, final answer) The reply explains that Tobias's draft and Gideon's slide were prepared from RS-2 as it st
+- (8, +1, final answer) The reply says that sweep-reconciler is missed under either Tier 3 target but that its ove
+- (9, +1, final answer) The reply explains that the corrected target shrinks 3ds-challenge's remaining budget with
+- (10, +1, final answer) The reply explains that a board's panels show whatever cell the board's saved $cell view i
+- (11, +1, final answer) The reply says the Payouts service board and the Risk on-call board, whose panels the regi
+- (12, +1, final answer) The reply says the Ledger on-call board and the Acquiring on-call board each show a single
+- (13, +1, final answer) The reply explains that the canary-saved panels miss production outages, citing at least o
+- (14, +1, final answer) The reply says that at least one of bank-file-dispatch or payout-status-api shows more bad
+- (15, +1, final answer) The reply names payee-verification among the Payouts SLOs whose nominated panel was set as
+- (17, +1, final answer) The reply says the card-auth-gateway maintenance window (named by service; date not requir
+- (18, +1, final answer) The reply says the tokenisation-vault drain (named by service; date not required) was neve
+- (19, +1, final answer) The reply says the sanctions-screen maintenance window (named by service; date not require
+- (20, +1, final answer) The reply says the fx-rates-feed, 3ds-challenge and chargeback-intake panels report bad ti
+- (21, +1, final answer) The reply says each target follows the SLO's tier as recorded on the register, not the cri
+- (22, +1, final answer) The reply explains the budget as allowed bad minutes = (1 - target) x eligible minutes and
+- (23, --5, final answer) The reply gives 6 as its own count of objectives missed in October (for example "6 of 20 o
+- (24, --3, final answer) The reply gives 5 as its own count of objectives missed in October (stated as the month's 
+- (25, --3, final answer) The reply says it applied a Tier 3 target of 99.50 % to the October figures.
+opus-5/run_1 pytest positive lost 38/49 = 77.6%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7391/1.0000 = 73.9%; penalties charged 0.1739
+########## playbook block 7 (# §5 false / hardcoded pytest detection (AST), per bundle; pass bits from the l)
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_journal_export_on_the_corrected_target` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_merchant_onboarding_api_on_the_corrected_target` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sweep_reconciler_on_the_production_path_and_corrected_target` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_dispute_evidence_on_the_production_path_and_corrected_target` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_three_ds_challenge_budget_on_the_corrected_target` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_corrected_standard_read_before_the_report` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_hidden_misses_measured_on_the_production_path` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_phantom_breaches_measured_on_the_production_path` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_payee_verification_unchanged_by_board_choice` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_report_page_title_carries_the_missed_count` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_follow_ups_exactly_for_the_missed_objectives` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_follow_ups_filed_with_the_owning_team` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_report_published_after_the_register_and_follow_ups` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_declared_windows_left_out` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_late_and_undeclared_windows_count_as_downtime` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_seconds_widgets_converted_to_minutes` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_remaining_slos_right` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_every_row_labelled_from_the_standard` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_board_saved_view_read_before_first_moved_row` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_changed_the_monitoring_server` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_to_the_customer_status_page` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_changed_the_register_beyond_the_october_fields` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_write_scope` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_application` | -1 | {'opus-5/run_1': False} | - |
+
+0/24 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

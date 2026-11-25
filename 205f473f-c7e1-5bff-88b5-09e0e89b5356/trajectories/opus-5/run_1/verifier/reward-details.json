@@ -1,0 +1,259 @@
+{
+  "pytest": {
+    "score": 0.2391,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.2391,
+        "raw": 0.23913,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 11 of 46, charged 0; missed 7: test_3s6_fanout_oom_follows_the_notify_line_on_main, test_4h6_outbox_publisher_follows_the_notify_line_on_main, test_5m2_digest_scheduler_follows_the_notify_line_on_main, test_ticket_for_the_team_that_took_the_notify_groups, test_ticket_for_the_team_that_kept_only_its_queue_groups, test_merged_ownership_change_looked_at_before_the_summary, test_summary_follows_the_corrected_rows_and_tickets"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.2093,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-notify-merge",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11627906976744186,
+        "description": "[final answer] The reply explains that the ownership file on main changed after the morning export was taken: a CODEOWNERS change merged on main moved the /internal/notify/ line from Messaging to Driver Comms, so the file on main, not the export copy in the desk folder, is what decides. The pull request number, the merge time and the code-host handles are not required.",
+        "reasoning": "The final answer never explains that main changed after the morning export or that a merged CODEOWNERS change moved `/internal/notify/` from Messaging to Driver Comms. Instead it says Driver Comms \u201cis *not* in the ownership file\u201d and routes notification groups to Messaging (`final_message.md`)."
+      },
+      {
+        "id": "2",
+        "name": "r-notify-scope",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11627906976744186,
+        "description": "[final answer] The reply explains that the merged change replaced only the /internal/notify/ line and left every other rule of the ownership file as it was in the export, so the change re-routed only groups whose deciding frame falls under that line and under no later rule.",
+        "reasoning": "The final answer does not state that the merged change replaced only `/internal/notify/`, preserved all other rules, and affected only groups decided by that line with no later matching rule (`final_message.md`)."
+      },
+      {
+        "id": "3",
+        "name": "r-5m2-both",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11627906976744186,
+        "description": "[final answer] For FLEETD-5M2 the reply gives both steps: the simkit wheel frames are stepped over as a dependency, and the digest scheduler frame below them (internal/notify/digest) is decided by the /internal/notify/ line in its merged form on main.",
+        "reasoning": "The answer does step over `simkit.(*Wheel).Schedule` and identifies `internal/notify/digest/scheduler.go:60`, but assigns it to Messaging without explaining that the deciding `/internal/notify/` line is its merged form on main (`final_message.md`, simkit table)."
+      },
+      {
+        "id": "4",
+        "name": "r-4h6-both",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06976744186046512,
+        "description": "[final answer] For FLEETD-4H6 the reply gives both steps: the kafka-go frames are stepped over as a dependency, and the outbox publisher frame (internal/notify/outbox) is decided by the /internal/notify/ line in its merged form on main.",
+        "reasoning": "The answer says \u201c4H6 \u2014 `segmentio/kafka-go` \u2192 `internal/notify/outbox/publisher.go:74` (Messaging),\u201d but does not connect that frame to the merged `/internal/notify/` rule on main (`final_message.md`)."
+      },
+      {
+        "id": "5",
+        "name": "r-retry-after-merge",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11627906976744186,
+        "description": "[final answer] The reply makes clear that FLEETD-4T7 (internal/notify/retry) is still decided by the retry/ rule after the notifications line changed on main, because retry/ comes later in the file than the /internal/notify/ line.",
+        "reasoning": "The answer says `retry/` sits after `/internal/notify/` and routes 4T7 to Fleet Reliability, but never makes clear this remains true after the notification-line change on main (`final_message.md`, \u201cPrecedence rulings\u201d)."
+      },
+      {
+        "id": "6",
+        "name": "r-queue-after-merge",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06976744186046512,
+        "description": "[final answer] The reply makes clear that the settlement-queue groups (internal/billing/queue) are still decided by the later queue/ rule after the notifications line changed on main, because that change did not touch the queue/ rule.",
+        "reasoning": "Although the answer explains the later `queue/` rule, it does not say that settlement-queue routing remains unchanged after the notifications-line merge because that merge did not touch `queue/` (`final_message.md`)."
+      },
+      {
+        "id": "7",
+        "name": "r-export-not-followed",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.11627906976744186,
+        "description": "[final answer] Among what it did not follow, the reply names the morning export's /internal/notify/ line (the copy of the ownership file in the desk folder) for the notifications groups, because the ownership file on main changed after the export was taken.",
+        "reasoning": "The list of things not followed does not name the morning export\u2019s `/internal/notify/` line or explain that it was stale because main changed after export (`final_message.md`, \u201cThings I was handed or told and did not follow\u201d)."
+      },
+      {
+        "id": "8",
+        "name": "r-simkit-module",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply explains that tools/simkit is a separate Go module with its own go.mod, which fleetd requires and vendors, so the simkit frames are dependency frames even though their import path begins with the fleetd module path, and they were stepped over. Any wording that says simkit is a separate, vendored module whose frames are dependency frames satisfies this.",
+        "reasoning": "The answer explicitly says PR #3318 added `tools/simkit/go.mod`, simkit \u201cis no longer part of the fleetd module,\u201d fleetd vendors version 0.4.2, and therefore simkit frames are stepped over as a vendored dependency (`final_message.md`, \u201cThe simkit ruling\u201d)."
+      },
+      {
+        "id": "9",
+        "name": "r-simkit-groups",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply names at least four of FLEETD-5KQ, FLEETD-5P7, FLEETD-5R3, FLEETD-5T9 and FLEETD-5V4 as groups decided by a frame below the simkit frames rather than by the simkit frame itself.",
+        "reasoning": "The simkit table names six qualifying groups\u20145KQ, 5V4, 5M2, 5P7, 5R3, and 5T9\u2014and gives a deciding frame beneath each simkit frame (`final_message.md`)."
+      },
+      {
+        "id": "10",
+        "name": "r-lease",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says the internal/dispatch/lease files (FLEETD-5KQ and/or FLEETD-4P2) are decided by the later /internal/dispatch/lease/ rule overriding the earlier /internal/dispatch/ rule.",
+        "reasoning": "The answer states `/internal/dispatch/lease/` sits after `/internal/dispatch/` and therefore routes 4P2 and 5KQ to Fleet Reliability (`final_message.md`, \u201cPrecedence rulings\u201d)."
+      },
+      {
+        "id": "11",
+        "name": "r-telemetry",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says the internal/telemetry/exporter files (FLEETD-5P7 and/or FLEETD-4S3) are decided by the later /internal/telemetry/ rule rather than the earlier /internal/telemetry/exporter/ line.",
+        "reasoning": "The answer says `/internal/telemetry/` comes after the narrower `/internal/telemetry/exporter/` line and routes 4S3 and 5P7 to Platform Foundations rather than Telematics Ingest (`final_message.md`)."
+      },
+      {
+        "id": "12",
+        "name": "r-queue",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says the internal/billing/queue files (FLEETD-5R3 and/or FLEETD-4Q9) are decided by the queue/ rule rather than /internal/billing/, because it has no leading slash (matches at any depth) and comes later.",
+        "reasoning": "The answer explicitly says `queue/` has \u201cno leading slash, any depth\u201d and sits after `/internal/billing/`, routing 4Q9 and 5R3 to Messaging rather than Billing (`final_message.md`)."
+      },
+      {
+        "id": "13",
+        "name": "r-vendored-third-party",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says the vendored third-party frames on top of FLEETD-4J1 (pgx / pgxpool) and FLEETD-4K8 (pellam-oss/queue) were stepped over as dependency code, so the first fleetd frame below them decided each group.",
+        "reasoning": "The answer says 4J1 steps over `jackc/pgx/v5/pgxpool` to the billing ledger frame and 4K8 steps over `pellam-oss/queue` to the platform logging frame, explaining that vendored dependencies go to their callers (`final_message.md`)."
+      },
+      {
+        "id": "14",
+        "name": "r-generated",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says the generated internal/gen frames (the fleetpb validator) on top of FLEETD-4M5 were stepped over because generated code is not an owner's code, and that the route planner handler frame below them decided the group.",
+        "reasoning": "The answer says 4M5 steps over generated `internal/gen/fleetpb` to `internal/geo/planner/handler.go:35`, and separately explains API Contracts owns nothing because that generated top frame was stepped over (`final_message.md`)."
+      },
+      {
+        "id": "15",
+        "name": "r-simctl",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply explains that FLEETD-4ZD (simctl replay) is decided by its own frame under the /tools/simctl/ rule because tools/simctl, unlike simkit, is still part of the fleetd module.",
+        "reasoning": "The answer explains that 4ZD\u2019s `tools/simctl/replay` frame stays because simctl \u201cwas *not* split out,\u201d is absent from the vendored module list, and builds from the fleetd module, making Sim Tools the owner (`final_message.md`, \u201c4ZD stayed put\u201d)."
+      },
+      {
+        "id": "16",
+        "name": "r-decline",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply explains that FLEETD-4X2 is a plain nil pointer dereference rather than a typed nil returned as error because Error() is called directly on the concrete *DeclineError field (no error interface is involved), while FLEETD-4V1 and FLEETD-4W6 return a nil pointer through the error interface.",
+        "reasoning": "The answer distinguishes 4X2 as a direct call to `s.last.Error()` on a concrete nil `*DeclineError` with \u201cNo interface conversion,\u201d while 4V1 and 4W6 return nil pointers through `error` interfaces (`final_message.md`, nil-pointer discussion)."
+      },
+      {
+        "id": "17",
+        "name": "r-nil-direct",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply explains FLEETD-4J1 and FLEETD-5T9 as plain nil pointer dereferences because a nil pointer (the pgx pool, the simkit clock) is used directly, with no error interface involved.",
+        "reasoning": "The answer calls 4J1 and 5T9 plain nil-pointer dereferences because a nil `*pgxpool.Pool` and nil `*simkit.Clock` are used directly, with no interface involved (`final_message.md`)."
+      },
+      {
+        "id": "18",
+        "name": "r-billing-request",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says it did not follow Billing's request (in chat or mail) to route internal/billing/queue crashes to Billing & Settlement, because the ownership file's queue/ rule decides those files.",
+        "reasoning": "The answer says it rejected Kofi\u2019s requests that `internal/billing/queue` crashes go to Billing because the later `queue/` rule routes 4Q9 and 5R3 to Messaging (`final_message.md`, things not followed)."
+      },
+      {
+        "id": "19",
+        "name": "r-draft",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.023255813953488372,
+        "description": "[final answer] The reply says it did not follow Tobin's culprit-based draft (or routing by the culprit / top frame) and gives a reason.",
+        "reasoning": "The answer explicitly rejects \u201cTobin\u2019s draft and cheat sheet,\u201d including culprit/top-frame shortcuts, because they conflict with handbook \u00a71 and mishandle dependency frames (`final_message.md`)."
+      },
+      {
+        "id": "20",
+        "name": "r-pen-sim7",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.11627906976744186,
+        "description": "[final answer] The reply states that Sim Tools owns 7 groups this week (the culprit-based figure) as the routing result.",
+        "reasoning": "The answer does not state Sim Tools owns seven as the routing result; it explicitly says \u201cSim Tools gets 1, not 7\u201d and lists only 4ZD (`final_message.md`)."
+      },
+      {
+        "id": "21",
+        "name": "r-pen-msg5",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": -0.06976744186046512,
+        "description": "[final answer] The reply states that Messaging owns 5 groups this week (the morning export's figure) as the routing result.",
+        "reasoning": "The routing-results table explicitly states \u201cMessaging | 5 \u2014 3S6, 4H6, 4Q9, 5M2, 5R3\u201d (`final_message.md`, \u201cGroups per team\u201d)."
+      },
+      {
+        "id": "22",
+        "name": "r-pen-msg3",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.06976744186046512,
+        "description": "[final answer] The reply states that Messaging owns 3 groups this week as the routing result.",
+        "reasoning": "The answer states Messaging owns five groups, not three (`final_message.md`, \u201cGroups per team\u201d)."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "***********************",
+      "isolated": false,
+      "atif_trajectory": "***************************************",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"r-notify-merge\":{\"score\":\"no\",\"reasoning\":\"The final answer never explains that main changed after the morning export or that a merged CODEOWNERS change moved `/internal/notify/` from Messaging to Driver Comms. Instead it says Driver Comms \u201cis *not* in the ownership file\u201d and routes notification groups to Messaging (`final_message.md`).\"},\"r-notify-scope\":{\"score\":\"no\",\"reasoning\":\"The final answer does not state that the merged change replaced only `/internal/notify/`, preserved all other rules, and affected only groups decided by that line with no later matching rule (`final_message.md`).\"},\"r-5m2-both\":{\"score\":\"no\",\"reasoning\":\"The answer does step over `simkit.(*Wheel).Schedule` and identifies `internal/notify/digest/scheduler.go:60`, but assigns it to Messaging without explaining that the deciding `/internal/notify/` line is its merged form on main (`final_message.md`, simkit table).\"},\"r-4h6-both\":{\"score\":\"no\",\"reasoning\":\"The answer says \u201c4H6 \u2014 `segmentio/kafka-go` \u2192 `internal/notify/outbox/publisher.go:74` (Messaging),\u201d but does not connect that frame to the merged `/internal/notify/` rule on main (`final_message.md`).\"},\"r-retry-after-merge\":{\"score\":\"no\",\"reasoning\":\"The answer says `retry/` sits after `/internal/notify/` and routes 4T7 to Fleet Reliability, but never makes clear this remains true after the notification-line change on main (`final_message.md`, \u201cPrecedence rulings\u201d).\"},\"r-queue-after-merge\":{\"score\":\"no\",\"reasoning\":\"Although the answer explains the later `queue/` rule, it does not say that settlement-queue routing remains unchanged after the notifications-line merge because that merge did not touch `queue/` (`final_message.md`).\"},\"r-export-not-followed\":{\"score\":\"no\",\"reasoning\":\"The list of things not followed does not name the morning export\u2019s `/internal/notify/` line or explain that it was stale because main changed after export (`final_message.md`, \u201cThings I was handed or told and did not follow\u201d).\"},\"r-simkit-module\":{\"score\":\"yes\",\"reasoning\":\"The answer explicitly says PR #3318 added `tools/simkit/go.mod`, simkit \u201cis no longer part of the fleetd module,\u201d fleetd vendors version 0.4.2, and therefore simkit frames are stepped over as a vendored dependency (`final_message.md`, \u201cThe simkit ruling\u201d).\"},\"r-simkit-groups\":{\"score\":\"yes\",\"reasoning\":\"The simkit table names six qualifying groups\u20145KQ, 5V4, 5M2, 5P7, 5R3, and 5T9\u2014and gives a deciding frame beneath each simkit frame (`final_message.md`).\"},\"r-lease\":{\"score\":\"yes\",\"reasoning\":\"The answer states `/internal/dispatch/lease/` sits after `/internal/dispatch/` and therefore routes 4P2 and 5KQ to Fleet Reliability (`final_message.md`, \u201cPrecedence rulings\u201d).\"},\"r-telemetry\":{\"score\":\"yes\",\"reasoning\":\"The answer says `/internal/telemetry/` comes after the narrower `/internal/telemetry/exporter/` line and routes 4S3 and 5P7 to Platform Foundations rather than Telematics Ingest (`final_message.md`).\"},\"r-queue\":{\"score\":\"yes\",\"reasoning\":\"The answer explicitly says `queue/` has \u201cno leading slash, any depth\u201d and sits after `/internal/billing/`, routing 4Q9 and 5R3 to Messaging rather than Billing (`final_message.md`).\"},\"r-vendored-third-party\":{\"score\":\"yes\",\"reasoning\":\"The answer says 4J1 steps over `jackc/pgx/v5/pgxpool` to the billing ledger frame and 4K8 steps over `pellam-oss/queue` to the platform logging frame, explaining that vendored dependencies go to their callers (`final_message.md`).\"},\"r-generated\":{\"score\":\"yes\",\"reasoning\":\"The answer says 4M5 steps over generated `internal/gen/fleetpb` to `internal/geo/planner/handler.go:35`, and separately explains API Contracts owns nothing because that generated top frame was stepped over (`final_message.md`).\"},\"r-simctl\":{\"score\":\"yes\",\"reasoning\":\"The answer explains that 4ZD\u2019s `tools/simctl/replay` frame stays because simctl \u201cwas *not* split out,\u201d is absent from the vendored module list, and builds from the fleetd module, making Sim Tools the owner (`final_message.md`, \u201c4ZD stayed put\u201d).\"},\"r-decline\":{\"score\":\"yes\",\"reasoning\":\"The answer distinguishes 4X2 as a direct call to `s.last.Error()` on a concrete nil `*DeclineError` with \u201cNo interface conversion,\u201d while 4V1 and 4W6 return nil pointers through `error` interfaces (`final_message.md`, nil-pointer discussion).\"},\"r-nil-direct\":{\"score\":\"yes\",\"reasoning\":\"The answer calls 4J1 and 5T9 plain nil-pointer dereferences because a nil `*pgxpool.Pool` and nil `*simkit.Clock` are used directly, with no interface involved (`final_message.md`).\"},\"r-billing-request\":{\"score\":\"yes\",\"reasoning\":\"The answer says it rejected Kofi\u2019s requests that `internal/billing/queue` crashes go to Billing because the later `queue/` rule routes 4Q9 and 5R3 to Messaging (`final_message.md`, things not followed).\"},\"r-draft\":{\"score\":\"yes\",\"reasoning\":\"The answer explicitly rejects \u201cTobin\u2019s draft and cheat sheet,\u201d including culprit/top-frame shortcuts, because they conflict with handbook \u00a71 and mishandle dependency frames (`final_message.md`).\"},\"r-pen-sim7\":{\"score\":\"no\",\"reasoning\":\"The answer does not state Sim Tools owns seven as the routing result; it explicitly says \u201cSim Tools gets 1, not 7\u201d and lists only 4ZD (`final_message.md`).\"},\"r-pen-msg5\":{\"score\":\"yes\",\"reasoning\":\"The routing-results table explicitly states \u201cMessaging | 5 \u2014 3S6, 4H6, 4Q9, 5M2, 5R3\u201d (`final_message.md`, \u201cGroups per team\u201d).\"},\"r-pen-msg3\":{\"score\":\"no\",\"reasoning\":\"The answer states Messaging owns five groups, not three (`final_message.md`, \u201cGroups per team\u201d).\"}}",
+    "usage": {
+      "input_tokens": 36828,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 16640,
+      "output_tokens": 2266,
+      "reasoning_output_tokens": 205,
+      "total_tokens": 39094,
+      "cost_usd": 0.132728,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 36828,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 16640,
+          "output_tokens": 2266,
+          "reasoning_output_tokens": 205,
+          "total_tokens": 39094,
+          "cost_usd": 0.132728
+        }
+      }
+    },
+    "judge_logs": [
+      "********************************************************************************"
+    ]
+  }
+}

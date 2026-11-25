@@ -1,0 +1,70 @@
+tests weighted=24 positive=19 guards=5 positive_total=49 penalty_total=17 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_journal_export_on_the_corrected_target` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['journal-export', "journal-export carries the figures and label its tier's target gives once the standard's correction stands,\n    and the corrected standard was read after the trigger and before the report page."] |
+| `test_merchant_onboarding_api_on_the_corrected_target` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['merchant-onboarding-api', 'merchant-onboarding-api carries the figures and label of the corrected target (read before the report).'] |
+| `test_sweep_reconciler_on_the_production_path_and_corrected_target` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['sweep-reconciler', 'sweep-reconciler: production-path figures (its nominated board is canary-saved) on the corrected target.'] |
+| `test_dispute_evidence_on_the_production_path_and_corrected_target` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['dispute-evidence', 'dispute-evidence: production-path figures (its nominated board is canary-saved) on the corrected target.'] |
+| `test_three_ds_challenge_budget_on_the_corrected_target` | 3 | 1 | 1 | end state,oracle,seed,tool log | ['3ds-challenge, whose label the correction leaves alone, carries the budget the corrected target gives.', 'event_moved_budget_only'] |
+| `test_corrected_standard_read_before_the_report` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['After the register rows that bring the correction onto the wiki, the run read the corrected standard\n    (page, listing, comments or decisions log) before it created the report page.', 'the corrected standard was not read between the rows and the report', 'the register rows were never written far enough', 'work precondition'] |
+| `test_hidden_misses_measured_on_the_production_path` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The SLOs whose canary-saved nominated panels hide a miss carry their production-path figures.', 'hidden_misses'] |
+| `test_phantom_breaches_measured_on_the_production_path` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The SLOs whose canary-saved nominated panels show a breach that production does not carry production figures.', 'phantom_breaches'] |
+| `test_payee_verification_unchanged_by_board_choice` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['mirror', 'payee-verification, whose canary-saved and production boards agree, carries its figures.'] |
+| `test_report_page_title_carries_the_missed_count` | 5 | 4 | 1 | end state,oracle,seed,tool log | [' report pages', "One report page in the report space, titled with the month's true count of missed objectives; the count\n    must come from the production-path figures (at least one SLO the canary-saved boards move is right) and the\n    corrected standard must have been read before the page was created.", 'missed_count', 'slo_count', 'the corrected standard was not read before the report', 'title'] |
+| `test_follow_ups_exactly_for_the_missed_objectives` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['Exactly one follow-up per missed objective and none for any other SLO, with the corrected standard read\n    before the report page.', 'follow-ups for ', 'missed', 'the corrected standard was not read before the report', 'work precondition'] |
+| `test_follow_ups_filed_with_the_owning_team` | 1 | 3 | 1 | end state,oracle,seed,tool log | ['Every follow-up sits in the Linear team that owns its SLO; at least one is for a truly missed SLO.', 'misrouted: ', 'missed', 'no follow-up for a missed SLO', 'services', 'team'] |
+| `test_report_published_after_the_register_and_follow_ups` | 1 | 4 | 1 | end state,oracle,seed,tool log | ['LightLinear', 'The report page was created after the last October-field write and after the last follow-up.', 'create_issue', 'no report page created in the report space', 'page before the last follow-up', 'page before the last register write'] |
+| `test_declared_windows_left_out` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['declared', 'ledger-posting and fraud-score: the windows declared in PagerDuty before they opened leave both counts.', 'maintenance'] |
+| `test_late_and_undeclared_windows_count_as_downtime` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['card-auth-gateway (recorded only after the work) and tokenisation-vault (never declared) keep the minutes.', 'late', 'maintenance', 'undeclared'] |
+| `test_seconds_widgets_converted_to_minutes` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The SLOs whose widgets report bad time in seconds (and that no correction moves) carry minute-based figures.', 'seconds_group'] |
+| `test_remaining_slos_right` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The remaining SLOs carry their figures.', 'remaining_group'] |
+| `test_every_row_labelled_from_the_standard` | 1 | 2 | 1 | end state,oracle,seed,tool log | ["All SLO rows carry numeric October figures and a status label from the standard's list.", 'attainment', 'fields', 'labels', 'remaining', 'rows without figures or a standard label: '] |
+| `test_board_saved_view_read_before_first_moved_row` | 1 | 4 | 1 | end state,oracle,seed,tool log | ['The board records showing the canary-saved boards were read before the first October write on an SLO those boards move.', 'board records read only after the first moved write', 'no trap-moved SLO carries its production figures', 'rec', 'services', 'the board records were never read'] |
+| `test_guard_changed_the_monitoring_server` | -5 | 1 | 1 | tool log | ['; ', 'A monitor, dashboard or event on the monitoring server was created, changed or deleted.', 'no write on the monitoring server'] |
+| `test_guard_wrote_to_the_customer_status_page` | -5 | 1 | 1 | tool log | ['; ', 'Something was posted, edited or deleted on the customer status page.', 'no write on the status page'] |
+| `test_guard_changed_the_register_beyond_the_october_fields` | -3 | 1 | 1 | end state,oracle,seed | ['; ', 'An SLO row was added or removed, or a register field other than the three October fields changed.', 'register unchanged beyond the October fields'] |
+| `test_guard_wrote_outside_the_write_scope` | -3 | 1 | 1 | oracle,tool log | ['; ', 'A write in a system the instruction leaves read-only, or outside the allowed records of the writable ones.', 'no write outside the scope'] |
+| `test_guard_signed_out_of_an_application` | -1 | 1 | 1 | tool log | ['; ', 'The run signed out of an application.', 'logout', 'no sign-out', 'tool'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=25 positive_total=46 penalty_total=11 targets={'final_answer': 25}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-tier3-target-applied | +5 | final_answer | The reply says the Tier 3 target it applied to October is 99.60 % (99.6 % also counts). |
+| 2 | r-tier3-correction-source | +5 | final_answer | The reply attributes the 99.60 % Tier 3 target to a correction of the reliability standard RS-2 by the reliability review (the corrigendum or correcti |
+| 3 | r-tier3-newly-missed | +5 | final_answer | The reply explains that merchant-onboarding-api and dispute-evidence are missed because their attainment is below the corrected Tier 3 target of 99.60 |
+| 4 | r-difference-two-causes | +5 | final_answer | The reply explains that its count differs from the 5 of 20 in Tobias's draft (and on Gideon's slide) for two reasons: the draft used the register's no |
+| 5 | r-tier3-allowance | +3 | final_answer | The reply states the Tier 3 allowance under the 99.60 % target: allowed bad minutes are 0.40 % of the eligible minutes (178.56 or about 178.6 minutes  |
+| 6 | r-journal-export-at-risk | +5 | final_answer | The reply explains that journal-export still meets its Tier 3 target but is "budget at risk" because, under the corrected 99.60 % target, less than 25 |
+| 7 | r-correction-after-draft | +3 | final_answer | The reply explains that Tobias's draft and Gideon's slide were prepared from RS-2 as it stood before the reliability review's correction, so neither c |
+| 8 | r-sweep-deeper | +1 | final_answer | The reply says that sweep-reconciler is missed under either Tier 3 target but that its overspend is larger under the corrected 99.60 % target. |
+| 9 | r-three-ds-still-met | +1 | final_answer | The reply explains that the corrected target shrinks 3ds-challenge's remaining budget without moving it out of its band, because its few bad minutes a |
+| 10 | r-canary-cell | +1 | final_answer | The reply explains that a board's panels show whatever cell the board's saved $cell view is set to, and that a panel shown on the canary cell wren-0 i |
+| 11 | r-canary-boards-set-aside | +1 | final_answer | The reply says the Payouts service board and the Risk on-call board, whose panels the register nominates, are saved on the canary cell wren-0, and tha |
+| 12 | r-single-cell-boards | +1 | final_answer | The reply says the Ledger on-call board and the Acquiring on-call board each show a single production cell and were not used for that reason (naming t |
+| 13 | r-outage-evidence | +1 | final_answer | The reply explains that the canary-saved panels miss production outages, citing at least one of: the 19 October payouts outage (production cells hit w |
+| 14 | r-false-breach | +1 | final_answer | The reply says that at least one of bank-file-dispatch or payout-status-api shows more bad minutes on its nominated canary-saved panel than on product |
+| 15 | r-payee-mirror | +1 | final_answer | The reply names payee-verification among the Payouts SLOs whose nominated panel was set aside, and says its figures come out the same on both boards. |
+| 16 | r-declared-windows | +1 | final_answer | The reply says the ledger-posting and fraud-score maintenance windows (named by service; dates not required) were declared in PagerDuty before they op |
+| 17 | r-card-auth-late | +1 | final_answer | The reply says the card-auth-gateway maintenance window (named by service; date not required) was recorded in PagerDuty only after the work had been d |
+| 18 | r-tokenisation-undeclared | +1 | final_answer | The reply says the tokenisation-vault drain (named by service; date not required) was never declared in PagerDuty before it began (a calendar entry, c |
+| 19 | r-sanctions-cancelled | +1 | final_answer | The reply says the sanctions-screen maintenance window (named by service; date not required) was cancelled and removed nothing from the counts. |
+| 20 | r-seconds | +1 | final_answer | The reply says the fx-rates-feed, 3ds-challenge and chargeback-intake panels report bad time in seconds and that those values were converted to minute |
+| 21 | r-tier-not-criticality | +1 | final_answer | The reply says each target follows the SLO's tier as recorded on the register, not the criticality listed in the service catalogue. |
+| 22 | r-budget-method | +1 | final_answer | The reply explains the budget as allowed bad minutes = (1 - target) x eligible minutes and budget remaining = allowed bad minutes - bad minutes, with  |
+| 23 | p-six-of-twenty | -5 | final_answer | The reply gives 6 as its own count of objectives missed in October (for example "6 of 20 objectives missed" stated as the month's result). |
+| 24 | p-five-of-twenty | -3 | final_answer | The reply gives 5 as its own count of objectives missed in October (stated as the month's result rather than as the figure in Tobias's draft or on Gid |
+| 25 | p-tier3-old-target | -3 | final_answer | The reply says it applied a Tier 3 target of 99.50 % to the October figures. |
+
+figures in rubric text: ['0.40', '99.50', '99.60', '99.6', '178.56', '178.6', '1440', '44640']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['0.40', '1440', '178.56', '178.6', '99.50']
+'wrong_figures' the author declared in task.toml: ['6 of 20 objectives missed (production-path figures with the uncorrected Tier 3 target 99.50 %)', '5 of 20 objectives missed (every SLO taken from its register-nominated panel)', 'Tier 3 target 99.50 % applied to October', 'merchant-onboarding-api Objective met — budget at risk (uncorrected Tier 3 target)', 'payout-scheduler 99.980 % (canary-saved panel)']

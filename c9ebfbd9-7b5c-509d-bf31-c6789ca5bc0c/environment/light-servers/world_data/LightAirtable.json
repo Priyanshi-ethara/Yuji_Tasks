@@ -1,0 +1,1206 @@
+{
+ "bases": [
+  {
+   "id": "appTWKerp0045mir",
+   "name": "Tarnwick ERP mirror - batch release (read-only for QA)",
+   "permission_level": "read"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblLots0000000045",
+   "base_id": "appTWKerp0045mir",
+   "name": "Lots",
+   "primaryFieldId": "fldLot",
+   "fields": [
+    {
+     "id": "fldLot",
+     "name": "Lot",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldProd",
+     "name": "Product code",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldPn",
+     "name": "Product",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldShp",
+     "name": "Shipment",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldQty",
+     "name": "Units",
+     "type": "number"
+    },
+    {
+     "id": "fldSt",
+     "name": "ERP status",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldExp",
+     "name": "Expiry",
+     "type": "date"
+    }
+   ]
+  },
+  {
+   "id": "tblShipments00045",
+   "base_id": "appTWKerp0045mir",
+   "name": "Shipments",
+   "primaryFieldId": "fldShip",
+   "fields": [
+    {
+     "id": "fldShip",
+     "name": "Shipment",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLane",
+     "name": "Lane",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCar",
+     "name": "Carrier",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLog",
+     "name": "Logger",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldHo",
+     "name": "Handover scan (UTC)",
+     "type": "dateTime"
+    },
+    {
+     "id": "fldRc",
+     "name": "NDC receipt scan (UTC)",
+     "type": "dateTime"
+    },
+    {
+     "id": "fldPal",
+     "name": "Pallets",
+     "type": "number"
+    },
+    {
+     "id": "fldNote",
+     "name": "Note",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tblBudgetLedger45",
+   "base_id": "appTWKerp0045mir",
+   "name": "Stability budget ledger",
+   "primaryFieldId": "fldEnt",
+   "fields": [
+    {
+     "id": "fldEnt",
+     "name": "Entry",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLl",
+     "name": "Lot",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLeg",
+     "name": "Leg",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLd",
+     "name": "Leg date",
+     "type": "date"
+    },
+    {
+     "id": "fldH",
+     "name": "TOR hours",
+     "type": "number"
+    },
+    {
+     "id": "fldEs",
+     "name": "Entry status",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldRef",
+     "name": "Reference",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldLn",
+     "name": "Note",
+     "type": "multilineText"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblLots0000000045": [
+   {
+    "id": "recLot45000000001",
+    "createdTime": "2026-11-03T08:55:00.000Z",
+    "fields": {
+     "Lot": "CVM-260412",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41188",
+     "Units": 1840,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-01-28"
+    }
+   },
+   {
+    "id": "recLot45000000002",
+    "createdTime": "2026-11-03T08:55:00.000Z",
+    "fields": {
+     "Lot": "PLM-260377",
+     "Product code": "TB-118",
+     "Product": "Pellumab 150 mg/mL prefilled syringe",
+     "Shipment": "HX4-41188",
+     "Units": 960,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-02-28"
+    }
+   },
+   {
+    "id": "recLot45000000003",
+    "createdTime": "2026-11-03T13:20:00.000Z",
+    "fields": {
+     "Lot": "FRT-260221",
+     "Product code": "TB-305",
+     "Product": "Ferotinase 5 mg powder for solution",
+     "Shipment": "HX4-41190",
+     "Units": 2400,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-03-28"
+    }
+   },
+   {
+    "id": "recLot45000000004",
+    "createdTime": "2026-11-03T13:20:00.000Z",
+    "fields": {
+     "Lot": "OSV-260090",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "HX4-41190",
+     "Units": 5000,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-04-28"
+    }
+   },
+   {
+    "id": "recLot45000000005",
+    "createdTime": "2026-11-03T18:40:00.000Z",
+    "fields": {
+     "Lot": "PLM-260381",
+     "Product code": "TB-118",
+     "Product": "Pellumab 150 mg/mL prefilled syringe",
+     "Shipment": "HX4-41195",
+     "Units": 1200,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-05-28"
+    }
+   },
+   {
+    "id": "recLot45000000006",
+    "createdTime": "2026-11-04T16:10:00.000Z",
+    "fields": {
+     "Lot": "CVM-260415",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41199",
+     "Units": 1600,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-06-28"
+    }
+   },
+   {
+    "id": "recLot45000000007",
+    "createdTime": "2026-11-04T16:10:00.000Z",
+    "fields": {
+     "Lot": "FRT-260224",
+     "Product code": "TB-305",
+     "Product": "Ferotinase 5 mg powder for solution",
+     "Shipment": "HX4-41199",
+     "Units": 2200,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-07-28"
+    }
+   },
+   {
+    "id": "recLot45000000008",
+    "createdTime": "2026-11-05T12:00:00.000Z",
+    "fields": {
+     "Lot": "OSV-260094",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "HX4-41203",
+     "Units": 4800,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-08-28"
+    }
+   },
+   {
+    "id": "recLot45000000009",
+    "createdTime": "2026-11-05T12:00:00.000Z",
+    "fields": {
+     "Lot": "CVM-260419",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41203",
+     "Units": 1720,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-09-28"
+    }
+   },
+   {
+    "id": "recLot45000000010",
+    "createdTime": "2026-11-06T09:30:00.000Z",
+    "fields": {
+     "Lot": "CVM-260417",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41207",
+     "Units": 1680,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-10-28"
+    }
+   },
+   {
+    "id": "recLot45000000011",
+    "createdTime": "2026-11-06T09:30:00.000Z",
+    "fields": {
+     "Lot": "FRT-260230",
+     "Product code": "TB-305",
+     "Product": "Ferotinase 5 mg powder for solution",
+     "Shipment": "HX4-41207",
+     "Units": 2350,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-11-28"
+    }
+   },
+   {
+    "id": "recLot45000000012",
+    "createdTime": "2026-11-06T09:30:00.000Z",
+    "fields": {
+     "Lot": "OSV-260097",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "HX4-41207",
+     "Units": 5200,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-12-28"
+    }
+   },
+   {
+    "id": "recLot45000000013",
+    "createdTime": "2026-11-06T15:45:00.000Z",
+    "fields": {
+     "Lot": "PLM-260385",
+     "Product code": "TB-118",
+     "Product": "Pellumab 150 mg/mL prefilled syringe",
+     "Shipment": "HX4-41211",
+     "Units": 1100,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-01-28"
+    }
+   },
+   {
+    "id": "recLot45000000014",
+    "createdTime": "2026-11-06T15:45:00.000Z",
+    "fields": {
+     "Lot": "CVM-260421",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41211",
+     "Units": 1500,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-02-28"
+    }
+   },
+   {
+    "id": "recLot45000000015",
+    "createdTime": "2026-11-06T11:10:00.000Z",
+    "fields": {
+     "Lot": "FRT-260233",
+     "Product code": "TB-305",
+     "Product": "Ferotinase 5 mg powder for solution",
+     "Shipment": "HX4-41215",
+     "Units": 2050,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-03-28"
+    }
+   },
+   {
+    "id": "recLot45000000016",
+    "createdTime": "2026-11-06T11:10:00.000Z",
+    "fields": {
+     "Lot": "PLM-260389",
+     "Product code": "TB-118",
+     "Product": "Pellumab 150 mg/mL prefilled syringe",
+     "Shipment": "HX4-41215",
+     "Units": 900,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-04-28"
+    }
+   },
+   {
+    "id": "recLot45000000017",
+    "createdTime": "2026-11-06T20:05:00.000Z",
+    "fields": {
+     "Lot": "CVM-260425",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41219",
+     "Units": 1900,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-05-28"
+    }
+   },
+   {
+    "id": "recLot45000000018",
+    "createdTime": "2026-11-07T07:50:00.000Z",
+    "fields": {
+     "Lot": "OSV-260101",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "HX4-41223",
+     "Units": 5100,
+     "ERP status": "QA Hold",
+     "Expiry": "2028-06-28"
+    }
+   },
+   {
+    "id": "recLot44000000001",
+    "createdTime": "2026-10-30T10:00:00.000Z",
+    "fields": {
+     "Lot": "CVM-260398",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "HX4-41150",
+     "Units": 1500,
+     "ERP status": "Released",
+     "Expiry": "2028-06-30"
+    }
+   },
+   {
+    "id": "recLot44000000002",
+    "createdTime": "2026-10-30T10:00:00.000Z",
+    "fields": {
+     "Lot": "OSV-260083",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "HX4-41158",
+     "Units": 1500,
+     "ERP status": "Released",
+     "Expiry": "2028-06-30"
+    }
+   },
+   {
+    "id": "recLot44000000003",
+    "createdTime": "2026-10-30T10:00:00.000Z",
+    "fields": {
+     "Lot": "CVM-260404",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "LX2-30874",
+     "Units": 1500,
+     "ERP status": "Quarantined",
+     "Expiry": "2028-06-30"
+    }
+   },
+   {
+    "id": "recLot44000000004",
+    "createdTime": "2026-10-30T10:00:00.000Z",
+    "fields": {
+     "Lot": "CVM-260214",
+     "Product code": "TB-201",
+     "Product": "Corvalimab 100 mg/mL solution for injection",
+     "Shipment": "LX2-30802",
+     "Units": 1500,
+     "ERP status": "Released",
+     "Expiry": "2028-06-30"
+    }
+   },
+   {
+    "id": "recLot44000000005",
+    "createdTime": "2026-10-30T10:00:00.000Z",
+    "fields": {
+     "Lot": "OSV-260904",
+     "Product code": "TB-440",
+     "Product": "Ostravax adjuvanted suspension",
+     "Shipment": "LX2-30866",
+     "Units": 1500,
+     "ERP status": "Released",
+     "Expiry": "2028-06-30"
+    }
+   }
+  ],
+  "tblShipments00045": [
+   {
+    "id": "recShp45000000001",
+    "createdTime": "2026-11-01T21:00:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41188",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3301",
+     "Handover scan (UTC)": "2026-11-01T21:00:00Z",
+     "NDC receipt scan (UTC)": "2026-11-03T08:55:00Z",
+     "Pallets": 4,
+     "Note": "Gate scanner down 06:30-08:50 UTC; pallets scanned in by handheld."
+    }
+   },
+   {
+    "id": "recShp45000000002",
+    "createdTime": "2026-11-02T04:00:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41190",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3307",
+     "Handover scan (UTC)": "2026-11-02T04:00:00Z",
+     "NDC receipt scan (UTC)": "2026-11-03T13:20:00Z",
+     "Pallets": 5,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000003",
+    "createdTime": "2026-11-02T08:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41195",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3312",
+     "Handover scan (UTC)": "2026-11-02T08:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-03T18:40:00Z",
+     "Pallets": 2,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000004",
+    "createdTime": "2026-11-03T10:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41199",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3315",
+     "Handover scan (UTC)": "2026-11-03T10:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-04T16:10:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000005",
+    "createdTime": "2026-11-04T05:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41203",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3320",
+     "Handover scan (UTC)": "2026-11-04T05:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-05T12:00:00Z",
+     "Pallets": 5,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000006",
+    "createdTime": "2026-11-04T14:20:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41207",
+     "Lane": "HX-4",
+     "Carrier": "Polar Arc Logistics",
+     "Logger": "TK9-5521",
+     "Handover scan (UTC)": "2026-11-04T14:20:00Z",
+     "NDC receipt scan (UTC)": "2026-11-06T09:30:00Z",
+     "Pallets": 7,
+     "Note": "Polar Arc reports logger upload incomplete (gateway restart)."
+    }
+   },
+   {
+    "id": "recShp45000000007",
+    "createdTime": "2026-11-05T06:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41211",
+     "Lane": "HX-4",
+     "Carrier": "Polar Arc Logistics",
+     "Logger": "TK9-5530",
+     "Handover scan (UTC)": "2026-11-05T06:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-06T15:45:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000008",
+    "createdTime": "2026-11-05T09:20:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41215",
+     "Lane": "HX-4",
+     "Carrier": "Polar Arc Logistics",
+     "Logger": "TK9-5534",
+     "Handover scan (UTC)": "2026-11-05T09:20:00Z",
+     "NDC receipt scan (UTC)": "2026-11-06T11:10:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000009",
+    "createdTime": "2026-11-05T16:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41219",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3324",
+     "Handover scan (UTC)": "2026-11-05T16:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-06T20:05:00Z",
+     "Pallets": 2,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp45000000010",
+    "createdTime": "2026-11-06T02:30:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41223",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3329",
+     "Handover scan (UTC)": "2026-11-06T02:30:00Z",
+     "NDC receipt scan (UTC)": "2026-11-07T07:50:00Z",
+     "Pallets": 3,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp44000000001",
+    "createdTime": "2026-10-29T08:00:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41150",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3290",
+     "Handover scan (UTC)": "2026-10-28T06:00:00Z",
+     "NDC receipt scan (UTC)": "2026-10-29T12:00:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp44000000002",
+    "createdTime": "2026-10-29T08:00:00.000Z",
+    "fields": {
+     "Shipment": "HX4-41158",
+     "Lane": "HX-4",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "TK9-5509",
+     "Handover scan (UTC)": "2026-10-28T06:00:00Z",
+     "NDC receipt scan (UTC)": "2026-10-29T12:00:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp44000000003",
+    "createdTime": "2026-10-29T08:00:00.000Z",
+    "fields": {
+     "Shipment": "LX2-30874",
+     "Lane": "LX-2",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3230",
+     "Handover scan (UTC)": "2026-10-28T06:00:00Z",
+     "NDC receipt scan (UTC)": "2026-10-29T12:00:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   },
+   {
+    "id": "recShp44000000004",
+    "createdTime": "2026-10-29T08:00:00.000Z",
+    "fields": {
+     "Shipment": "LX2-30871",
+     "Lane": "LX-2",
+     "Carrier": "Brightline Cold Freight",
+     "Logger": "BL-3295",
+     "Handover scan (UTC)": "2026-10-28T06:00:00Z",
+     "NDC receipt scan (UTC)": "2026-10-29T12:00:00Z",
+     "Pallets": 4,
+     "Note": ""
+    }
+   }
+  ],
+  "tblBudgetLedger45": [
+   {
+    "id": "recSbl45000000001",
+    "createdTime": "2026-10-09T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7001",
+     "Lot": "CVM-260412",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-09",
+     "TOR hours": 6.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-351"
+    }
+   },
+   {
+    "id": "recSbl45000000002",
+    "createdTime": "2026-10-10T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7002",
+     "Lot": "CVM-260412",
+     "Leg": "Packing re-work",
+     "Leg date": "2026-10-10",
+     "TOR hours": 4.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-352"
+    }
+   },
+   {
+    "id": "recSbl45000000003",
+    "createdTime": "2026-10-11T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7003",
+     "Lot": "PLM-260377",
+     "Leg": "Packing re-work",
+     "Leg date": "2026-10-11",
+     "TOR hours": 12.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-353"
+    }
+   },
+   {
+    "id": "recSbl45000000004",
+    "createdTime": "2026-10-12T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7004",
+     "Lot": "PLM-260377",
+     "Leg": "Corran Mill cold store",
+     "Leg date": "2026-10-12",
+     "TOR hours": 10.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-354"
+    }
+   },
+   {
+    "id": "recSbl45000000005",
+    "createdTime": "2026-10-13T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7005",
+     "Lot": "FRT-260221",
+     "Leg": "Corran Mill cold store",
+     "Leg date": "2026-10-13",
+     "TOR hours": 8.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-355"
+    }
+   },
+   {
+    "id": "recSbl45000000006",
+    "createdTime": "2026-10-14T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7006",
+     "Lot": "OSV-260090",
+     "Leg": "CM-QC hold",
+     "Leg date": "2026-10-14",
+     "TOR hours": 11.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-356"
+    }
+   },
+   {
+    "id": "recSbl45000000007",
+    "createdTime": "2026-10-15T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7007",
+     "Lot": "OSV-260090",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-15",
+     "TOR hours": 6.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-357"
+    }
+   },
+   {
+    "id": "recSbl45000000008",
+    "createdTime": "2026-10-16T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7008",
+     "Lot": "PLM-260381",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-16",
+     "TOR hours": 25.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-358"
+    }
+   },
+   {
+    "id": "recSbl45000000009",
+    "createdTime": "2026-10-17T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7009",
+     "Lot": "PLM-260381",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-17",
+     "TOR hours": 16.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-359"
+    }
+   },
+   {
+    "id": "recSbl45000000010",
+    "createdTime": "2026-10-18T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7010",
+     "Lot": "CVM-260415",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-18",
+     "TOR hours": 3.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-360"
+    }
+   },
+   {
+    "id": "recSbl45000000011",
+    "createdTime": "2026-10-19T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7011",
+     "Lot": "FRT-260224",
+     "Leg": "Corran Mill cold store",
+     "Leg date": "2026-10-19",
+     "TOR hours": 12.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-361"
+    }
+   },
+   {
+    "id": "recSbl45000000012",
+    "createdTime": "2026-10-20T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7012",
+     "Lot": "FRT-260224",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-20",
+     "TOR hours": 8.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-362"
+    }
+   },
+   {
+    "id": "recSbl45000000013",
+    "createdTime": "2026-10-21T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7013",
+     "Lot": "FRT-260224",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-21",
+     "TOR hours": 12.0,
+     "Entry status": "Voided",
+     "Reference": "QAD-363",
+     "Note": "logger BL-3188 probe fault confirmed by Metrology; entry voided"
+    }
+   },
+   {
+    "id": "recSbl45000000014",
+    "createdTime": "2026-10-22T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7014",
+     "Lot": "OSV-260094",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-22",
+     "TOR hours": 14.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-364"
+    }
+   },
+   {
+    "id": "recSbl45000000015",
+    "createdTime": "2026-10-23T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7015",
+     "Lot": "OSV-260094",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-23",
+     "TOR hours": 8.25,
+     "Entry status": "Posted",
+     "Reference": "QAD-365"
+    }
+   },
+   {
+    "id": "recSbl45000000016",
+    "createdTime": "2026-11-01T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7016",
+     "Lot": "OSV-260094",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-11-01",
+     "TOR hours": 4.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-366"
+    }
+   },
+   {
+    "id": "recSbl45000000017",
+    "createdTime": "2026-10-25T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7017",
+     "Lot": "CVM-260419",
+     "Leg": "Corran Mill cold store",
+     "Leg date": "2026-10-25",
+     "TOR hours": 5.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-367"
+    }
+   },
+   {
+    "id": "recSbl45000000018",
+    "createdTime": "2026-10-26T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7018",
+     "Lot": "CVM-260417",
+     "Leg": "CM-QC hold",
+     "Leg date": "2026-10-26",
+     "TOR hours": 9.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-368"
+    }
+   },
+   {
+    "id": "recSbl45000000019",
+    "createdTime": "2026-10-27T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7019",
+     "Lot": "CVM-260417",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-27",
+     "TOR hours": 5.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-369"
+    }
+   },
+   {
+    "id": "recSbl45000000020",
+    "createdTime": "2026-10-08T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7020",
+     "Lot": "FRT-260230",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-08",
+     "TOR hours": 20.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-370"
+    }
+   },
+   {
+    "id": "recSbl45000000021",
+    "createdTime": "2026-10-09T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7021",
+     "Lot": "FRT-260230",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-09",
+     "TOR hours": 14.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-371"
+    }
+   },
+   {
+    "id": "recSbl45000000022",
+    "createdTime": "2026-10-10T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7022",
+     "Lot": "OSV-260097",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-10",
+     "TOR hours": 18.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-372"
+    }
+   },
+   {
+    "id": "recSbl45000000023",
+    "createdTime": "2026-10-11T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7023",
+     "Lot": "OSV-260097",
+     "Leg": "CM-QC hold",
+     "Leg date": "2026-10-11",
+     "TOR hours": 10.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-373"
+    }
+   },
+   {
+    "id": "recSbl45000000024",
+    "createdTime": "2026-10-12T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7024",
+     "Lot": "OSV-260097",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-12",
+     "TOR hours": 6.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-374"
+    }
+   },
+   {
+    "id": "recSbl45000000025",
+    "createdTime": "2026-10-13T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7025",
+     "Lot": "PLM-260385",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-13",
+     "TOR hours": 32.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-375"
+    }
+   },
+   {
+    "id": "recSbl45000000026",
+    "createdTime": "2026-10-14T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7026",
+     "Lot": "PLM-260385",
+     "Leg": "Packing re-work",
+     "Leg date": "2026-10-14",
+     "TOR hours": 28.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-376"
+    }
+   },
+   {
+    "id": "recSbl45000000027",
+    "createdTime": "2026-10-15T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7027",
+     "Lot": "CVM-260421",
+     "Leg": "Packing re-work",
+     "Leg date": "2026-10-15",
+     "TOR hours": 40.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-377"
+    }
+   },
+   {
+    "id": "recSbl45000000028",
+    "createdTime": "2026-10-16T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7028",
+     "Lot": "CVM-260421",
+     "Leg": "Corran Mill cold store",
+     "Leg date": "2026-10-16",
+     "TOR hours": 22.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-378"
+    }
+   },
+   {
+    "id": "recSbl45000000029",
+    "createdTime": "2026-10-17T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7029",
+     "Lot": "CVM-260421",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-17",
+     "TOR hours": 8.5,
+     "Entry status": "Posted",
+     "Reference": "QAD-379"
+    }
+   },
+   {
+    "id": "recSbl45000000030",
+    "createdTime": "2026-10-18T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7030",
+     "Lot": "FRT-260233",
+     "Leg": "CM-QC hold",
+     "Leg date": "2026-10-18",
+     "TOR hours": 18.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-380"
+    }
+   },
+   {
+    "id": "recSbl45000000031",
+    "createdTime": "2026-10-19T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7031",
+     "Lot": "FRT-260233",
+     "Leg": "HX3-40977",
+     "Leg date": "2026-10-19",
+     "TOR hours": 12.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-381"
+    }
+   },
+   {
+    "id": "recSbl45000000032",
+    "createdTime": "2026-10-20T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7032",
+     "Lot": "FRT-260233",
+     "Leg": "HX3 transfer",
+     "Leg date": "2026-10-20",
+     "TOR hours": 9.0,
+     "Entry status": "Voided",
+     "Reference": "QAD-382",
+     "Note": "logger BL-3188 probe fault confirmed by Metrology; entry voided"
+    }
+   },
+   {
+    "id": "recSbl45000000033",
+    "createdTime": "2026-10-21T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7033",
+     "Lot": "PLM-260389",
+     "Leg": "Packing re-work",
+     "Leg date": "2026-10-21",
+     "TOR hours": 12.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-383"
+    }
+   },
+   {
+    "id": "recSbl45000000034",
+    "createdTime": "2026-10-22T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7034",
+     "Lot": "OSV-260101",
+     "Leg": "LX-2 return",
+     "Leg date": "2026-10-22",
+     "TOR hours": 4.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-384"
+    }
+   },
+   {
+    "id": "recSbl45000000035",
+    "createdTime": "2026-10-23T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7035",
+     "Lot": "OSV-260101",
+     "Leg": "CM-QC hold",
+     "Leg date": "2026-10-23",
+     "TOR hours": 2.0,
+     "Entry status": "Posted",
+     "Reference": "QAD-385"
+    }
+   },
+   {
+    "id": "recSbl45000000036",
+    "createdTime": "2026-10-24T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7036",
+     "Lot": "CVM-260214",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-24",
+     "TOR hours": 30.0,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000037",
+    "createdTime": "2026-10-25T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7037",
+     "Lot": "OSV-260904",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-25",
+     "TOR hours": 20.0,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000038",
+    "createdTime": "2026-10-26T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7038",
+     "Lot": "FRT-260203",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-26",
+     "TOR hours": 11.0,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000039",
+    "createdTime": "2026-10-27T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7039",
+     "Lot": "PLM-260318",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-27",
+     "TOR hours": 44.0,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000040",
+    "createdTime": "2026-10-08T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7040",
+     "Lot": "CVM-260398",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-08",
+     "TOR hours": 9.5,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000041",
+    "createdTime": "2026-10-09T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7041",
+     "Lot": "OSV-260083",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-09",
+     "TOR hours": 28.5,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000042",
+    "createdTime": "2026-10-10T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7042",
+     "Lot": "CVM-260401",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-10",
+     "TOR hours": 21.25,
+     "Entry status": "Posted"
+    }
+   },
+   {
+    "id": "recSbl45000000043",
+    "createdTime": "2026-10-11T18:00:00.000Z",
+    "fields": {
+     "Entry": "SBL-7043",
+     "Lot": "FRT-260320",
+     "Leg": "HX4 lane",
+     "Leg date": "2026-10-11",
+     "TOR hours": 6.0,
+     "Entry status": "Voided"
+    }
+   }
+  ]
+ }
+}

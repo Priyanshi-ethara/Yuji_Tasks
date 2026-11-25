@@ -1,0 +1,200 @@
+{
+ "boards": [
+  {
+   "id": "60bsor000000000000000047",
+   "name": "Launch week 47 prep",
+   "desc": "Emeka's first-pass checks for the 19 Nov window (not the record; the registry and RB-ML-014 are).",
+   "closed": false,
+   "id_organization": "5e0sor000000000000000001",
+   "url": "https://trello.example/b/sorw47/launch-week-47-prep",
+   "member_ids": [
+    "5f1sor000000000000000000",
+    "5f1sor000000000000000001",
+    "5f1sor000000000000000002",
+    "5f1sor000000000000000003"
+   ],
+   "prefs": {
+    "permissionLevel": "org"
+   }
+  }
+ ],
+ "lists": [
+  {
+   "id": "61csor000000000000000001",
+   "id_board": "60bsor000000000000000047",
+   "name": "To check",
+   "closed": false,
+   "pos": 1
+  },
+  {
+   "id": "61csor000000000000000002",
+   "id_board": "60bsor000000000000000047",
+   "name": "Checked (first pass)",
+   "closed": false,
+   "pos": 2
+  },
+  {
+   "id": "61csor000000000000000003",
+   "id_board": "60bsor000000000000000047",
+   "name": "Raised",
+   "closed": false,
+   "pos": 3
+  }
+ ],
+ "members": [
+  {
+   "id": "5f1sor000000000000000000",
+   "fullName": "Emeka Rowntree",
+   "username": "emekarowntree",
+   "email": "emeka.rowntree@sorrel-insurance.example"
+  },
+  {
+   "id": "5f1sor000000000000000001",
+   "fullName": "Halvard Quist",
+   "username": "halvardquist",
+   "email": "halvard.quist@sorrel-insurance.example"
+  },
+  {
+   "id": "5f1sor000000000000000002",
+   "fullName": "Noor Bassi",
+   "username": "noorbassi",
+   "email": "noor.bassi@sorrel-insurance.example"
+  },
+  {
+   "id": "5f1sor000000000000000003",
+   "fullName": "ML Launch Desk",
+   "username": "ml-launch-desk",
+   "email": "ml-launch-desk@sorrel-insurance.example"
+  }
+ ],
+ "cards": [
+  {
+   "id": "62dsor000000000000000101",
+   "name": "FT-CLM-07 geometry",
+   "desc": "4 x 8 x 16 = 512 sequences per update; RCP-CLM-3 says 512. OK. Reservation 6 h, 96 GPU-h (dry run 5.10 s at accumulation 8).",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000002",
+   "pos": 16384.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  },
+  {
+   "id": "62dsor000000000000000102",
+   "name": "FT-UW-03 data",
+   "desc": "Dedup PASS on both sources, PII Pass. OK. 5 h, 40 GPU-h.",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000002",
+   "pos": 32768.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  },
+  {
+   "id": "62dsor000000000000000103",
+   "name": "FT-FNOL-11 context 2560",
+   "desc": "Tokens per update +25% vs RCP-FNOL-4: sign-off from Ifeoma and LR rescale. 11 h, 88 GPU-h.",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000001",
+   "pos": 49152.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  },
+  {
+   "id": "62dsor000000000000000104",
+   "name": "FT-SUB-02",
+   "desc": "2 x 8 x 16 = 256, matches RCP-SUB-1. Paraphrase set PII Pass. 8 h, 128 GPU-h.",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000002",
+   "pos": 65536.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  },
+  {
+   "id": "62dsor000000000000000105",
+   "name": "Window total",
+   "desc": "96 + 40 + 88 + 128 = 352 GPU-h for the four runs.",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000002",
+   "pos": 81920.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  },
+  {
+   "id": "62dsor000000000000000106",
+   "name": "Readiness note to Odile",
+   "desc": "After tickets and reservations are in.",
+   "id_board": "60bsor000000000000000047",
+   "id_list": "61csor000000000000000001",
+   "pos": 98304.0,
+   "due": "2026-11-18T16:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1sor000000000000000000"
+   ],
+   "labels": [
+    "week-47"
+   ]
+  }
+ ],
+ "checklists": [
+  {
+   "id": "cl_sor_0001",
+   "id_card": "62dsor000000000000000106",
+   "id_board": "60bsor000000000000000047",
+   "name": "Before the note",
+   "pos": 1000,
+   "check_items": [
+    {
+     "id": "ci_sor_01",
+     "id_checklist": "cl_sor_0001",
+     "name": "Change tickets raised",
+     "state": "incomplete",
+     "pos": 1000
+    },
+    {
+     "id": "ci_sor_02",
+     "id_checklist": "cl_sor_0001",
+     "name": "Reservations on the calendar",
+     "state": "incomplete",
+     "pos": 2000
+    },
+    {
+     "id": "ci_sor_03",
+     "id_checklist": "cl_sor_0001",
+     "name": "Registry rows complete",
+     "state": "incomplete",
+     "pos": 3000
+    }
+   ]
+  }
+ ]
+}

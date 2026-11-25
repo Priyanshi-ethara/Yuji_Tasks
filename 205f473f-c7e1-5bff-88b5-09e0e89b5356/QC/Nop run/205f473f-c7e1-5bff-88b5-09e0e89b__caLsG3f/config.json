@@ -1,0 +1,18 @@
+{
+    "task": {
+        "path": "/tmp/qc/oracle_nop_20261116_163724/_copies/205f473f-c7e1-5bff-88b5-09e0e89b5356"
+    },
+    "trial_name": "205f473f-c7e1-5bff-88b5-09e0e89b__caLsG3f",
+    "trials_dir": "/tmp/qc/oracle_nop_20261116_163724/205f473f-c7e1-5bff-88b5-09e0e89b5356/nop",
+    "agent": {
+        "name": "nop"
+    },
+    "environment": {
+        "type": "docker",
+        "cpu_enforcement_policy": "limit",
+        "memory_enforcement_policy": "limit",
+        "override_cpus": 2,
+        "override_memory_mb": 4096
+    },
+    "job_id": "49103379-902c-4a07-998a-d70d73e393ee"
+}

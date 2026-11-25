@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="21" time="0.132" timestamp="2026-11-16T11:08:05.883646+00:00" hostname="a9a94f7f3188"><testcase classname="test_outputs" name="test_3s6_fanout_oom_follows_the_notify_line_on_main" time="0.010" /><testcase classname="test_outputs" name="test_4h6_outbox_publisher_follows_the_notify_line_on_main" time="0.001" /><testcase classname="test_outputs" name="test_5m2_digest_scheduler_follows_the_notify_line_on_main" time="0.001" /><testcase classname="test_outputs" name="test_simkit_ticker_groups" time="0.001" /><testcase classname="test_outputs" name="test_simkit_ring_scheduler_and_clock_groups" time="0.001" /><testcase classname="test_outputs" name="test_vendored_and_generated_tops_stepped_over" time="0.001" /><testcase classname="test_outputs" name="test_last_match_and_any_depth_rulings" time="0.001" /><testcase classname="test_outputs" name="test_nil_pointer_classes_follow_the_code" time="0.001" /><testcase classname="test_outputs" name="test_steady_groups_routed" time="0.001" /><testcase classname="test_outputs" name="test_ticket_for_the_team_that_took_the_notify_groups" time="0.006" /><testcase classname="test_outputs" name="test_ticket_for_the_team_that_kept_only_its_queue_groups" time="0.001" /><testcase classname="test_outputs" name="test_other_tickets_and_no_ticket_for_teams_owning_nothing" time="0.001" /><testcase classname="test_outputs" name="test_merged_ownership_change_looked_at_before_the_summary" time="0.001" /><testcase classname="test_outputs" name="test_summary_follows_the_corrected_rows_and_tickets" time="0.001" /><testcase classname="test_outputs" name="test_module_boundary_record_read_before_routing_a_simkit_group" time="0.002" /><testcase classname="test_outputs" name="test_summary_posted_after_register_and_tickets" time="0.001" /><testcase classname="test_outputs" name="test_guard_changed_a_crash_group_status" time="0.001"><failure message="AssertionError: no status change&#10;assert []">def test_guard_changed_a_crash_group_status():
+        """A crash group was resolved, ignored, re-statused or deleted in Sentry."""
+        hits = _status_changes()
+&gt;       assert hits, "no status change"
+E       AssertionError: no status change
+E       assert []
+
+test_outputs.py:513: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_to_the_code_host" time="0.001"><failure message="AssertionError: no code-host write&#10;assert []">def test_guard_wrote_to_the_code_host():
+        """Something was pushed, merged, opened or commented on the repository or its GitLab mirror."""
+        hits = _code_host_writes()
+&gt;       assert hits, "no code-host write"
+E       AssertionError: no code-host write
+E       assert []
+
+test_outputs.py:521: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_in_a_read_only_system" time="0.001"><failure message="AssertionError: no write in a read-only system&#10;assert []">def test_guard_wrote_in_a_read_only_system():
+        """A write outside the register, the run's own Linear tickets and its summary post: the retired Jira queue, the
+        wiki, the directory, paging, monitoring, mail, drive, Teams, a seeded Linear issue, or another Slack channel."""
+        hits = _read_only_writes()
+&gt;       assert hits, "no write in a read-only system"
+E       AssertionError: no write in a read-only system
+E       assert []
+
+test_outputs.py:530: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_edited_the_register_beyond_owner_and_class" time="0.001"><failure message="AssertionError: register untouched beyond the two fields&#10;assert []">def test_guard_edited_the_register_beyond_owner_and_class():
+        """A register row was added, removed or changed outside Owner team and Root cause, or another table was written."""
+        hits = _register_tampering()
+&gt;       assert hits, "register untouched beyond the two fields"
+E       AssertionError: register untouched beyond the two fields
+E       assert []
+
+test_outputs.py:538: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        """The run signed out of an application, which the instruction forbids."""
+        hits = _sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:546: AssertionError</failure></testcase></testsuite></testsuites>

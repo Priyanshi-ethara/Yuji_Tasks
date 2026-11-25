@@ -1,0 +1,176 @@
+{
+ "users": [
+  {
+   "id": "U0TSLMAREN",
+   "name": "maren",
+   "real_name": "Maren Holt",
+   "email": "maren.holt@tessellate.studio",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "on desk",
+   "presence": "active"
+  },
+  {
+   "id": "U0TSLTOM",
+   "name": "tom",
+   "real_name": "Tom Achterberg",
+   "email": "tom.achterberg@tessellate.studio",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "away"
+  },
+  {
+   "id": "U0TSLHUGO",
+   "name": "hugo",
+   "real_name": "Hugo Barnes",
+   "email": "hugo.barnes@tessellate.studio",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "AM",
+   "presence": "active"
+  },
+  {
+   "id": "U0TSLPRIS",
+   "name": "priscilla",
+   "real_name": "Priscilla Vane",
+   "email": "priscilla.vane@tessellate.studio",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "CS",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "C0TSLDESK",
+   "name": "billing-desk",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Plan changes queue",
+   "purpose": "Billing desk working channel",
+   "creator": "U0TSLMAREN",
+   "created": 1705276800,
+   "num_members": 4
+  },
+  {
+   "id": "C0TSLCS",
+   "name": "customer-success",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Renewals and saves",
+   "purpose": "CS and AM coordination",
+   "creator": "U0TSLPRIS",
+   "created": 1705276800,
+   "num_members": 3
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1794744001.000001",
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLTOM",
+   "text": "Cobalt Wren qualifies - Mosaic annual is £29/seat/month on the price list, under their £30. Put it in the draft for 8 Jan.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794744002.000002",
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLTOM",
+   "text": "Hollis Marlow and Tamsin Ode both go through too (Grid annual is £20/mo). Mistral: Grid's not going up, so no cancellation.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794744003.000003",
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLTOM",
+   "text": "Draft total: 17 changes scheduled, 1 cancellation. Sheet's in the data folder.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794657604.000004",
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLHUGO",
+   "text": "Desk - please don't let Mistral cancel, I'm seeing them on the 20th.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794571205.000005",
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLPRIS",
+   "text": "Can someone just refund Inkwell's October charge? £144, easy win.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794571206.000006",
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLMAREN",
+   "text": "Reminder: held forwards stay pending until the billing contact answers. Two today.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794484807.000007",
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLMAREN",
+   "text": "Pemberton Hale: we have two customers with that name - check which one the sender belongs to.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLMAREN"
+  },
+  {
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLTOM"
+  },
+  {
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLHUGO"
+  },
+  {
+   "channel_id": "C0TSLDESK",
+   "user_id": "U0TSLPRIS"
+  },
+  {
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLMAREN"
+  },
+  {
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLTOM"
+  },
+  {
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLHUGO"
+  },
+  {
+   "channel_id": "C0TSLCS",
+   "user_id": "U0TSLPRIS"
+  }
+ ],
+ "team": {
+  "id": "T0TSL",
+  "name": "Tessellate Studio",
+  "domain": "tessellate"
+ }
+}

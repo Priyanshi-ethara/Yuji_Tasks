@@ -1,0 +1,1185 @@
+{
+ "vendors": [
+  {
+   "Id": "61",
+   "DisplayName": "Kerrow Electrical Distribution",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@kerrow-electrical.example"
+   },
+   "PrimaryPhone": {
+    "FreeFormNumber": "01209 55061"
+   },
+   "Balance": 0.0,
+   "Active": true,
+   "Notes": "PV equipment supplier"
+  },
+  {
+   "Id": "62",
+   "DisplayName": "Orrin Solar Technologies",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@orrin-solar.example"
+   },
+   "PrimaryPhone": {
+    "FreeFormNumber": "01209 55062"
+   },
+   "Balance": 0.0,
+   "Active": true,
+   "Notes": "PV equipment supplier"
+  },
+  {
+   "Id": "63",
+   "DisplayName": "Kestrel Photonics",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@kestrel-photonics.example"
+   },
+   "PrimaryPhone": {
+    "FreeFormNumber": "01209 55063"
+   },
+   "Balance": 0.0,
+   "Active": true,
+   "Notes": "PV equipment supplier"
+  },
+  {
+   "Id": "64",
+   "DisplayName": "Halcyon Solar UK",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@halcyon-solar.example"
+   },
+   "PrimaryPhone": {
+    "FreeFormNumber": "01209 55064"
+   },
+   "Balance": 0.0,
+   "Active": true,
+   "Notes": "PV equipment supplier"
+  },
+  {
+   "Id": "65",
+   "DisplayName": "Volta Power Electronics",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@volta-power.example"
+   },
+   "PrimaryPhone": {
+    "FreeFormNumber": "01209 55065"
+   },
+   "Balance": 0.0,
+   "Active": true,
+   "Notes": "PV equipment supplier"
+  }
+ ],
+ "items": [
+  {
+   "Id": "300",
+   "Name": "Halcyon HX-405M",
+   "Description": "Halcyon HX-405M — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 101.51,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "301",
+   "Name": "Corvane CV-440B",
+   "Description": "Corvane CV-440B — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 122.1,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "302",
+   "Name": "Kestrel KP-470",
+   "Description": "Kestrel KP-470 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 137.28,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "303",
+   "Name": "Orrin OR-425",
+   "Description": "Orrin OR-425 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 107.18,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "304",
+   "Name": "Brava BR-390",
+   "Description": "Brava BR-390 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 92.14,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "305",
+   "Name": "Lumen LM-455",
+   "Description": "Lumen LM-455 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 125.53,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "306",
+   "Name": "Volta 8K",
+   "Description": "Volta 8K — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 1874.4,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "307",
+   "Name": "Volta 8K HV",
+   "Description": "Volta 8K HV — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 2230.8,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "308",
+   "Name": "Volta 5K",
+   "Description": "Volta 5K — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 1425.6,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "309",
+   "Name": "Ardent AR-6.0",
+   "Description": "Ardent AR-6.0 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 1603.8,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "310",
+   "Name": "Brightline BL-10",
+   "Description": "Brightline BL-10 — trade price Q4 2026",
+   "Type": "Inventory",
+   "UnitPrice": 2494.8,
+   "IncomeAccountRef": {
+    "value": "41",
+    "name": "Equipment sales"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-10-01 08:00:00",
+    "LastUpdatedTime": "2026-10-01 08:00:00"
+   },
+   "SyncToken": "0"
+  }
+ ],
+ "customers": [
+  {
+   "Id": "500",
+   "DisplayName": "Aldous Penhale",
+   "PrimaryEmailAddr": {
+    "Address": "aldous.penhale@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302104"
+  },
+  {
+   "Id": "501",
+   "DisplayName": "Morwenna Treloar",
+   "PrimaryEmailAddr": {
+    "Address": "morwenna.treloar@mailbrook.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302107"
+  },
+  {
+   "Id": "502",
+   "DisplayName": "Gideon Varcoe",
+   "PrimaryEmailAddr": {
+    "Address": "gideon.varcoe@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302111"
+  },
+  {
+   "Id": "503",
+   "DisplayName": "Tamsin Rowe",
+   "PrimaryEmailAddr": {
+    "Address": "tamsin.rowe@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302112"
+  },
+  {
+   "Id": "504",
+   "DisplayName": "Ewan Chenoweth",
+   "PrimaryEmailAddr": {
+    "Address": "ewan.chenoweth@mailbrook.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302116"
+  },
+  {
+   "Id": "505",
+   "DisplayName": "Lowenna Pascoe-Hart",
+   "PrimaryEmailAddr": {
+    "Address": "lowenna.pascoehart@tidewater.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302118"
+  },
+  {
+   "Id": "506",
+   "DisplayName": "Caspar Nancarrow",
+   "PrimaryEmailAddr": {
+    "Address": "caspar.nancarrow@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302121"
+  },
+  {
+   "Id": "507",
+   "DisplayName": "Ysolde Kitto",
+   "PrimaryEmailAddr": {
+    "Address": "ysolde.kitto@tidewater.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302123"
+  },
+  {
+   "Id": "508",
+   "DisplayName": "Bramwell Hocking",
+   "PrimaryEmailAddr": {
+    "Address": "bramwell.hocking@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302125"
+  },
+  {
+   "Id": "509",
+   "DisplayName": "Senara Polglase",
+   "PrimaryEmailAddr": {
+    "Address": "senara.polglase@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302128"
+  },
+  {
+   "Id": "510",
+   "DisplayName": "Jory Angwin",
+   "PrimaryEmailAddr": {
+    "Address": "jory.angwin@mailbrook.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302130"
+  },
+  {
+   "Id": "511",
+   "DisplayName": "Demelza Rickard",
+   "PrimaryEmailAddr": {
+    "Address": "demelza.rickard@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302133"
+  },
+  {
+   "Id": "512",
+   "DisplayName": "Piran Hendy",
+   "PrimaryEmailAddr": {
+    "Address": "piran.hendy@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302135"
+  },
+  {
+   "Id": "513",
+   "DisplayName": "Kerensa Bolitho",
+   "PrimaryEmailAddr": {
+    "Address": "kerensa.bolitho@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302136"
+  },
+  {
+   "Id": "514",
+   "DisplayName": "Tristan Opie",
+   "PrimaryEmailAddr": {
+    "Address": "tristan.opie@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302139"
+  },
+  {
+   "Id": "515",
+   "DisplayName": "Wenna Trethewey",
+   "PrimaryEmailAddr": {
+    "Address": "wenna.trethewey@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302142"
+  },
+  {
+   "Id": "516",
+   "DisplayName": "Hedra Curnow",
+   "PrimaryEmailAddr": {
+    "Address": "hedra.curnow@postbox-sw.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302144"
+  },
+  {
+   "Id": "517",
+   "DisplayName": "Mawgan Tregear",
+   "PrimaryEmailAddr": {
+    "Address": "mawgan.tregear@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302147"
+  },
+  {
+   "Id": "518",
+   "DisplayName": "Elowen Jenkin",
+   "PrimaryEmailAddr": {
+    "Address": "elowen.jenkin@kernowmail.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302150"
+  },
+  {
+   "Id": "519",
+   "DisplayName": "Locryn Spargo",
+   "PrimaryEmailAddr": {
+    "Address": "locryn.spargo@tidewater.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Deal 7302153"
+  }
+ ],
+ "estimates": [
+  {
+   "Id": "4600",
+   "DocNumber": "Q-2026-4604",
+   "TxnDate": "2026-10-20",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "500",
+    "name": "Aldous Penhale"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 13850.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Halcyon HX-405M array with Volta 8K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Halcyon HX-405M"
+      },
+      "UnitPrice": 13850.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 13850.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4601",
+   "DocNumber": "Q-2026-4607",
+   "TxnDate": "2026-10-21",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "501",
+    "name": "Morwenna Treloar"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 15420.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Halcyon HX-405M array with Volta 8K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Halcyon HX-405M"
+      },
+      "UnitPrice": 15420.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 15420.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4602",
+   "DocNumber": "Q-2026-4611",
+   "TxnDate": "2026-10-22",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "502",
+    "name": "Gideon Varcoe"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 9960.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Kestrel KP-470 array with Volta 5K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Kestrel KP-470"
+      },
+      "UnitPrice": 9960.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 9960.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4603",
+   "DocNumber": "Q-2026-4612",
+   "TxnDate": "2026-10-23",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "503",
+    "name": "Tamsin Rowe"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 12480.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Halcyon HX-405M array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Halcyon HX-405M"
+      },
+      "UnitPrice": 12480.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 12480.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4604",
+   "DocNumber": "Q-2026-4616",
+   "TxnDate": "2026-10-24",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "504",
+    "name": "Ewan Chenoweth"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 16210.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Halcyon HX-405M array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Halcyon HX-405M"
+      },
+      "UnitPrice": 16210.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 16210.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4605",
+   "DocNumber": "Q-2026-4618",
+   "TxnDate": "2026-10-25",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "505",
+    "name": "Lowenna Pascoe-Hart"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 8740.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Orrin OR-425 array with Ardent AR-6.0",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Orrin OR-425"
+      },
+      "UnitPrice": 8740.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 8740.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4606",
+   "DocNumber": "Q-2026-4621",
+   "TxnDate": "2026-10-26",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "506",
+    "name": "Caspar Nancarrow"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 14990.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Lumen LM-455 array with Volta 8K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Lumen LM-455"
+      },
+      "UnitPrice": 14990.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 14990.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4607",
+   "DocNumber": "Q-2026-4623",
+   "TxnDate": "2026-10-27",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "507",
+    "name": "Ysolde Kitto"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 11860.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Corvane CV-440B array with Volta 8K HV",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Corvane CV-440B"
+      },
+      "UnitPrice": 11860.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 11860.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4608",
+   "DocNumber": "Q-2026-4625",
+   "TxnDate": "2026-10-28",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "508",
+    "name": "Bramwell Hocking"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 8120.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Brava BR-390 array with Volta 5K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Brava BR-390"
+      },
+      "UnitPrice": 8120.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 8120.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4609",
+   "DocNumber": "Q-2026-4628",
+   "TxnDate": "2026-10-20",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "509",
+    "name": "Senara Polglase"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 10230.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Lumen LM-455 array with Ardent AR-6.0",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Lumen LM-455"
+      },
+      "UnitPrice": 10230.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 10230.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4610",
+   "DocNumber": "Q-2026-4630",
+   "TxnDate": "2026-10-21",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "510",
+    "name": "Jory Angwin"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 13310.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Kestrel KP-470 array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Kestrel KP-470"
+      },
+      "UnitPrice": 13310.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 13310.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4611",
+   "DocNumber": "Q-2026-4633",
+   "TxnDate": "2026-10-22",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "511",
+    "name": "Demelza Rickard"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 9480.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Orrin OR-425 array with Volta 5K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Orrin OR-425"
+      },
+      "UnitPrice": 9480.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 9480.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4612",
+   "DocNumber": "Q-2026-4635",
+   "TxnDate": "2026-10-23",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "512",
+    "name": "Piran Hendy"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 11040.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Corvane CV-440B array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Corvane CV-440B"
+      },
+      "UnitPrice": 11040.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 11040.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4613",
+   "DocNumber": "Q-2026-4636",
+   "TxnDate": "2026-10-24",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "513",
+    "name": "Kerensa Bolitho"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 16880.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Corvane CV-440B array with Volta 8K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Corvane CV-440B"
+      },
+      "UnitPrice": 16880.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 16880.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4614",
+   "DocNumber": "Q-2026-4639",
+   "TxnDate": "2026-10-25",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "514",
+    "name": "Tristan Opie"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 13140.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Brava BR-390 array with Volta 8K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Brava BR-390"
+      },
+      "UnitPrice": 13140.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 13140.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4615",
+   "DocNumber": "Q-2026-4642",
+   "TxnDate": "2026-10-26",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "515",
+    "name": "Wenna Trethewey"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 6930.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Brava BR-390 array with Volta 8K HV",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Brava BR-390"
+      },
+      "UnitPrice": 6930.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 6930.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4616",
+   "DocNumber": "Q-2026-4644",
+   "TxnDate": "2026-10-27",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "516",
+    "name": "Hedra Curnow"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 10650.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Lumen LM-455 array with Volta 5K",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Lumen LM-455"
+      },
+      "UnitPrice": 10650.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 10650.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4617",
+   "DocNumber": "Q-2026-4647",
+   "TxnDate": "2026-10-28",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "517",
+    "name": "Mawgan Tregear"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 14760.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Corvane CV-440B array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Corvane CV-440B"
+      },
+      "UnitPrice": 14760.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 14760.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4618",
+   "DocNumber": "Q-2026-4650",
+   "TxnDate": "2026-10-20",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "518",
+    "name": "Elowen Jenkin"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 12920.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Orrin OR-425 array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Orrin OR-425"
+      },
+      "UnitPrice": 12920.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 12920.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  },
+  {
+   "Id": "4619",
+   "DocNumber": "Q-2026-4653",
+   "TxnDate": "2026-10-21",
+   "ExpirationDate": "2026-12-31",
+   "CustomerRef": {
+    "value": "519",
+    "name": "Locryn Spargo"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 10190.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Supply and install Brava BR-390 array with Brightline BL-10",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "300",
+       "name": "Brava BR-390"
+      },
+      "UnitPrice": 10190.0,
+      "Qty": 1
+     }
+    }
+   ],
+   "TotalAmt": 10190.0,
+   "TxnStatus": "Accepted",
+   "AcceptedDate": "2026-10-30",
+   "MetaData": {
+    "CreateTime": "2026-10-20 08:00:00",
+    "LastUpdatedTime": "2026-10-30 08:00:00"
+   }
+  }
+ ],
+ "bills": [
+  {
+   "Id": "3461",
+   "DocNumber": "KER-INV-77104",
+   "VendorRef": {
+    "value": "61",
+    "name": "Kerrow Electrical Distribution"
+   },
+   "TxnDate": "2026-10-02",
+   "DueDate": "2026-11-30",
+   "Line": [
+    {
+     "Amount": 17040.0,
+     "Description": "12 x Volta 8K (DN-77104)",
+     "AccountBasedExpenseLineDetail": {
+      "AccountRef": {
+       "name": "Stock purchases",
+       "value": "51"
+      }
+     }
+    }
+   ],
+   "TotalAmt": 17040.0,
+   "Balance": 17040.0,
+   "PrivateNote": "Volta 8K stock for W45-W47."
+  }
+ ],
+ "company_info": {
+  "CompanyName": "Sunhollow Solar Ltd",
+  "LegalName": "Sunhollow Solar Ltd",
+  "Country": "GB"
+ }
+}

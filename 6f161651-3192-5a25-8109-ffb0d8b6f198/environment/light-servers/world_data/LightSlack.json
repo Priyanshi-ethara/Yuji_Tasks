@@ -1,0 +1,218 @@
+{
+ "users": [
+  {
+   "id": "U0KS3INES",
+   "name": "ines",
+   "real_name": "Ines Calloway",
+   "email": "ines.calloway@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "RA Associate",
+   "presence": "active"
+  },
+  {
+   "id": "U0KS3MATEUS",
+   "name": "mateus",
+   "real_name": "Mateus Ferreira",
+   "email": "mateus.ferreira@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "Risk Management Lead",
+   "presence": "active"
+  },
+  {
+   "id": "U0KS3DMITRI",
+   "name": "dmitri",
+   "real_name": "Dmitri Okonkwo",
+   "email": "dmitri.okonkwo@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "Software Lead",
+   "presence": "active"
+  },
+  {
+   "id": "U0KS3PIETER",
+   "name": "pieter",
+   "real_name": "Pieter Vandamme",
+   "email": "pieter.vandamme@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "Document Controller",
+   "presence": "active"
+  },
+  {
+   "id": "U0KS3YUKI",
+   "name": "yuki",
+   "real_name": "Yuki Halloran",
+   "email": "yuki.halloran@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "Stability Scientist",
+   "presence": "active"
+  },
+  {
+   "id": "U0KS3RA",
+   "name": "ra.specialist",
+   "real_name": "RA Specialist",
+   "email": "ra.specialist@orvane.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/Amsterdam",
+   "status_text": "Regulatory Affairs Specialist",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "C0KS3SUBM",
+   "name": "ks3-submission",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Kestrel-3 notified-body submission",
+   "purpose": "Coordination of the Kestrel-3 technical file",
+   "creator": "U0KS3INES",
+   "created": 1759309200,
+   "num_members": 6
+  },
+  {
+   "id": "C0KS3DOCC",
+   "name": "doc-control",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Releases, register and change control",
+   "purpose": "Document control questions",
+   "creator": "U0KS3PIETER",
+   "created": 1759309200,
+   "num_members": 6
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3INES"
+  },
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3MATEUS"
+  },
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3DMITRI"
+  },
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3PIETER"
+  },
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3YUKI"
+  },
+  {
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3RA"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3INES"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3MATEUS"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3DMITRI"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3PIETER"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3YUKI"
+  },
+  {
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3RA"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1762941600.000100",
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3INES",
+   "text": "ToC working draft is done (data pack, toc-working-draft-2026-11-06.csv): 22 complete / 2 gaps / 6 n/a, 828 pages. Should be a straight copy into Airtable.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762942500.000200",
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3INES",
+   "text": "S25 and S26 are both the home/self-test stuff, so both n/a for us. S30 SSP is class D only per STD-014 section 5.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762945200.000300",
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3MATEUS",
+   "text": "FYI the DOC-1047 refresh won't make this submission, the CCB is packed. Cite Rev E.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762947000.000400",
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3DMITRI",
+   "text": "Rev D of the SW description is only waiting on a signature. Whoever is on the routing list, just sign it in DocuSign so S15 can cite Rev D - it's the real architecture.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762950600.000500",
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3PIETER",
+   "text": "Out until Thursday. Sync of 13 Nov skipped - anything released under a closed CR since 6 Nov goes into the register on 20 Nov.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762952400.000600",
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3YUKI",
+   "text": "Stability Rev C text is with Pieter for the release package; placeholders closed in the draft.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762954200.000700",
+   "channel_id": "C0KS3SUBM",
+   "user_id": "U0KS3INES",
+   "text": "Annelise at the NB asked if we can put the ToC on the portal by Wednesday - can whoever finishes it just upload it to the NB 2291 folder?",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1762956000.000800",
+   "channel_id": "C0KS3DOCC",
+   "user_id": "U0KS3PIETER",
+   "text": "DOC-1111 Rev C went out under CHG0041102 on 12 Nov. Register entry follows at the sync.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ]
+}

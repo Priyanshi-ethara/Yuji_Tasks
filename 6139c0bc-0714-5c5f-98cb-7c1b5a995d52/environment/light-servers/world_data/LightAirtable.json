@@ -1,0 +1,734 @@
+{
+ "bases": [
+  {
+   "id": "appT02Registry",
+   "name": "Registry account mirror",
+   "permission_level": "read"
+  },
+  {
+   "id": "appT02Procure",
+   "name": "Energy procurement tracker",
+   "permission_level": "read"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblT02Certs",
+   "base_id": "appT02Registry",
+   "name": "Certificates",
+   "fields": [
+    {
+     "id": "fldT02C01",
+     "name": "Certificate ID",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C02",
+     "name": "Registry",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C03",
+     "name": "Market",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C04",
+     "name": "Technology",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C05",
+     "name": "Generator",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C06",
+     "name": "Generator commissioned",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C07",
+     "name": "Vintage start",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C08",
+     "name": "Vintage end",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C09",
+     "name": "MWh",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C10",
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C11",
+     "name": "Retired on",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C12",
+     "name": "Beneficiary",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C13",
+     "name": "Claim period",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C14",
+     "name": "Site claimed",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02C15",
+     "name": "Retirement note",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "id": "tblT02Notices",
+   "base_id": "appT02Registry",
+   "name": "Registry notices",
+   "fields": [
+    {
+     "id": "fldT02N01",
+     "name": "Notice",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02N02",
+     "name": "Date",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02N03",
+     "name": "Registry",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02N04",
+     "name": "Certificate ID",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02N05",
+     "name": "Text",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "id": "tblT02Buys",
+   "base_id": "appT02Procure",
+   "name": "Purchases",
+   "fields": [
+    {
+     "id": "fldT02B01",
+     "name": "Purchase",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02B02",
+     "name": "Certificate ID",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02B03",
+     "name": "MWh",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02B04",
+     "name": "Price",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldT02B05",
+     "name": "Buyer",
+     "type": "singleLineText"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblT02Certs": [
+   {
+    "id": "recT02C001",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-1187-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Bosque Flats Wind II",
+     "Generator commissioned": "2019-08-12",
+     "Vintage start": "2025-11-01",
+     "Vintage end": "2026-03-31",
+     "MWh": 9000,
+     "Status": "Retired",
+     "Retired on": "2026-10-02",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-04 Waco",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C002",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2024-0562-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Red Mesa Wind",
+     "Generator commissioned": "2016-03-30",
+     "Vintage start": "2024-01-01",
+     "Vintage end": "2024-06-30",
+     "MWh": 4000,
+     "Status": "Retired",
+     "Retired on": "2026-08-14",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-09 Tyler",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C003",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "AIB-NL-2025-77120",
+     "Registry": "AIB — CertiQ (NL)",
+     "Market": "EU (AIB-EECS)",
+     "Technology": "Wind (offshore)",
+     "Generator": "Borkum Rif Noord",
+     "Generator commissioned": "2021-06-01",
+     "Vintage start": "2025-12-01",
+     "Vintage end": "2026-02-28",
+     "MWh": 3000,
+     "Status": "Retired",
+     "Retired on": "2026-09-03",
+     "Beneficiary": "Talvik Precision Components Ltd",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-20 Leeds",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C004",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2026-0091-SOL",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Solar PV",
+     "Generator": "Kankakee Solar 3",
+     "Generator commissioned": "2022-05-17",
+     "Vintage start": "2026-01-01",
+     "Vintage end": "2026-03-31",
+     "MWh": 5000,
+     "Status": "Active",
+     "Retired on": "",
+     "Beneficiary": "",
+     "Claim period": "",
+     "Site claimed": "",
+     "Retirement note": "Held in account; retirement instruction scheduled for December window"
+    }
+   },
+   {
+    "id": "recT02C005",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-1420-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Prairie Bluff Wind",
+     "Generator commissioned": "2018-11-02",
+     "Vintage start": "2025-10-01",
+     "Vintage end": "2025-12-31",
+     "MWh": 6000,
+     "Status": "Retired",
+     "Retired on": "2026-09-18",
+     "Beneficiary": "Talvik Marine Systems LLC",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-11 Rockford",
+     "Retirement note": "Retired by Talvik Marine Systems LLC under TSA account access"
+    }
+   },
+   {
+    "id": "recT02C006",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-0388-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Allegheny Ridge Wind",
+     "Generator commissioned": "2017-09-20",
+     "Vintage start": "2025-06-01",
+     "Vintage end": "2025-09-30",
+     "MWh": 2500,
+     "Status": "Retired",
+     "Retired on": "2025-11-20",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2025",
+     "Site claimed": "TPC-02 Dunmore",
+     "Retirement note": "Retired for FY2025 claim"
+    }
+   },
+   {
+    "id": "recT02C007",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-0975-HYD",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Hydro (run-of-river)",
+     "Generator": "Coosa Falls Hydro",
+     "Generator commissioned": "2008-05-14",
+     "Vintage start": "2026-02-01",
+     "Vintage end": "2026-04-30",
+     "MWh": 3500,
+     "Status": "Retired",
+     "Retired on": "2026-09-25",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-13 Huntsville",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C008",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "AIB-NL-2025-40388",
+     "Registry": "AIB — CertiQ (NL)",
+     "Market": "EU (AIB-EECS)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Windpark Flevo Oost",
+     "Generator commissioned": "2015-10-09",
+     "Vintage start": "2025-05-01",
+     "Vintage end": "2025-05-31",
+     "MWh": 4200,
+     "Status": "Retired",
+     "Retired on": "2026-09-11",
+     "Beneficiary": "Talvik Precision Components B.V.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-16 Rotterdam",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C009",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "AIB-DE-2026-11873",
+     "Registry": "AIB — UBA HKNR (DE)",
+     "Market": "EU (AIB-EECS)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Windpark Uckermark Süd",
+     "Generator commissioned": "2013-04-22",
+     "Vintage start": "2025-11-01",
+     "Vintage end": "2026-04-30",
+     "MWh": 6500,
+     "Status": "Retired",
+     "Retired on": "2026-10-07",
+     "Beneficiary": "Talvik Precision Components GmbH",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-18 Stuttgart",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C010",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "REGO-R0091-2026-0442",
+     "Registry": "Ofgem REGO",
+     "Market": "GB (REGO)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Fenwick Moor Wind",
+     "Generator commissioned": "2014-02-11",
+     "Vintage start": "2025-10-01",
+     "Vintage end": "2026-03-31",
+     "MWh": 5000,
+     "Status": "Retired",
+     "Retired on": "2026-10-01",
+     "Beneficiary": "Talvik Precision Components Ltd",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-21 Coventry",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C011",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2026-0233-SOL",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Solar PV",
+     "Generator": "Ocmulgee Solar Farm",
+     "Generator commissioned": "2021-09-30",
+     "Vintage start": "2026-01-01",
+     "Vintage end": "2026-06-30",
+     "MWh": 4800,
+     "Status": "Retired",
+     "Retired on": "2026-10-09",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-08 Macon",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C012",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-1302-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Columbia Ridge Wind",
+     "Generator commissioned": "2020-12-15",
+     "Vintage start": "2025-10-01",
+     "Vintage end": "2026-09-30",
+     "MWh": 3000,
+     "Status": "Retired",
+     "Retired on": "2026-10-05",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2026",
+     "Site claimed": "TPC-05 Kent",
+     "Retirement note": ""
+    }
+   },
+   {
+    "id": "recT02C013",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2026-0412-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Prairie Bluff Wind",
+     "Generator commissioned": "2018-11-02",
+     "Vintage start": "2026-07-01",
+     "Vintage end": "2026-12-31",
+     "MWh": 5000,
+     "Status": "Active",
+     "Retired on": "",
+     "Beneficiary": "",
+     "Claim period": "",
+     "Site claimed": "",
+     "Retirement note": "Forward purchase for FY2027"
+    }
+   },
+   {
+    "id": "recT02C014",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "AIB-PL-2026-30044",
+     "Registry": "AIB — URE (PL)",
+     "Market": "EU (AIB-EECS)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Farma Wiatrowa Darłowo",
+     "Generator commissioned": "2019-03-01",
+     "Vintage start": "2026-10-01",
+     "Vintage end": "2027-03-31",
+     "MWh": 3000,
+     "Status": "Active",
+     "Retired on": "",
+     "Beneficiary": "",
+     "Claim period": "",
+     "Site claimed": "",
+     "Retirement note": "Forward purchase FY2027"
+    }
+   },
+   {
+    "id": "recT02C015",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "AIB-PL-2026-30051",
+     "Registry": "AIB — URE (PL)",
+     "Market": "EU (AIB-EECS)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Farma Wiatrowa Darłowo",
+     "Generator commissioned": "2019-03-01",
+     "Vintage start": "2026-10-01",
+     "Vintage end": "2027-03-31",
+     "MWh": 2500,
+     "Status": "Active",
+     "Retired on": "",
+     "Beneficiary": "",
+     "Claim period": "",
+     "Site claimed": "",
+     "Retirement note": "Forward purchase FY2027"
+    }
+   },
+   {
+    "id": "recT02C016",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2024-0811-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Bosque Flats Wind II",
+     "Generator commissioned": "2019-08-12",
+     "Vintage start": "2024-07-01",
+     "Vintage end": "2024-12-31",
+     "MWh": 8800,
+     "Status": "Retired",
+     "Retired on": "2025-10-28",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2025",
+     "Site claimed": "TPC-04 Waco",
+     "Retirement note": "Retired for FY2025 claim"
+    }
+   },
+   {
+    "id": "recT02C017",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2024-1650-WND",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Wind",
+     "Generator": "Columbia Ridge Wind",
+     "Generator commissioned": "2020-12-15",
+     "Vintage start": "2024-10-01",
+     "Vintage end": "2025-09-30",
+     "MWh": 2900,
+     "Status": "Retired",
+     "Retired on": "2025-10-30",
+     "Beneficiary": "Talvik Precision Components Inc.",
+     "Claim period": "FY2025",
+     "Site claimed": "TPC-05 Kent",
+     "Retirement note": "PPA-CRW-2023 FY2025 transfer"
+    }
+   },
+   {
+    "id": "recT02C018",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "REGO-R0091-2025-0127",
+     "Registry": "Ofgem REGO",
+     "Market": "GB (REGO)",
+     "Technology": "Wind (onshore)",
+     "Generator": "Fenwick Moor Wind",
+     "Generator commissioned": "2014-02-11",
+     "Vintage start": "2024-10-01",
+     "Vintage end": "2025-03-31",
+     "MWh": 3800,
+     "Status": "Retired",
+     "Retired on": "2025-10-15",
+     "Beneficiary": "Talvik Precision Components Ltd",
+     "Claim period": "FY2025",
+     "Site claimed": "TPC-21 Coventry",
+     "Retirement note": "Retired for FY2025 claim"
+    }
+   },
+   {
+    "id": "recT02C019",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Certificate ID": "NRR-2025-1544-SOL",
+     "Registry": "NRR",
+     "Market": "US (NRR)",
+     "Technology": "Solar PV",
+     "Generator": "Lone Mesa Solar",
+     "Generator commissioned": "2024-12-01",
+     "Vintage start": "2025-10-01",
+     "Vintage end": "2026-03-31",
+     "MWh": 1000,
+     "Status": "Retired",
+     "Retired on": "2026-06-30",
+     "Beneficiary": "Brightwater Retail Power LLC",
+     "Claim period": "CY2026",
+     "Site claimed": "",
+     "Retirement note": "Lone Mesa output retired by the developer's retail offtaker"
+    }
+   }
+  ],
+  "tblT02Notices": [
+   {
+    "id": "recT02N001",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Notice": "RN-2026-0931",
+     "Date": "2026-10-09",
+     "Registry": "NRR",
+     "Certificate ID": "",
+     "Text": "FY2026 retirement batch for Talvik completed by Greenledger (10 certificates)."
+    }
+   },
+   {
+    "id": "recT02N002",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Notice": "RN-2026-0874",
+     "Date": "2026-09-18",
+     "Registry": "NRR",
+     "Certificate ID": "NRR-2025-1420-WND",
+     "Text": "Retirement executed under account access granted to Talvik Marine Systems LLC (TSA); beneficiary as instructed by Talvik Marine."
+    }
+   },
+   {
+    "id": "recT02N003",
+    "createdTime": "2026-10-10T02:00:00.000Z",
+    "fields": {
+     "Notice": "RN-2026-0702",
+     "Date": "2026-07-14",
+     "Registry": "Ofgem REGO",
+     "Certificate ID": "",
+     "Text": "REGO scheme reminder: Guarantees of Origin from EU registries are not recognised for GB fuel-mix disclosure since 2023."
+    }
+   }
+  ],
+  "tblT02Buys": [
+   {
+    "id": "recT02B001",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-001",
+     "Certificate ID": "NRR-2025-1187-WND",
+     "MWh": 9000,
+     "Price": 16200.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B002",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-002",
+     "Certificate ID": "NRR-2024-0562-WND",
+     "MWh": 4000,
+     "Price": 7200.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B003",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-003",
+     "Certificate ID": "AIB-NL-2025-77120",
+     "MWh": 3000,
+     "Price": 2700.0,
+     "Buyer": "Inês Carvalho"
+    }
+   },
+   {
+    "id": "recT02B004",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-004",
+     "Certificate ID": "NRR-2026-0091-SOL",
+     "MWh": 5000,
+     "Price": 9000.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B005",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-005",
+     "Certificate ID": "NRR-2025-1420-WND",
+     "MWh": 6000,
+     "Price": 10800.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B006",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-006",
+     "Certificate ID": "NRR-2025-0388-WND",
+     "MWh": 2500,
+     "Price": 4500.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B007",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-007",
+     "Certificate ID": "NRR-2025-0975-HYD",
+     "MWh": 3500,
+     "Price": 6300.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B009",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-009",
+     "Certificate ID": "AIB-NL-2025-40388",
+     "MWh": 4200,
+     "Price": 3780.0,
+     "Buyer": "Inês Carvalho"
+    }
+   },
+   {
+    "id": "recT02B010",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-010",
+     "Certificate ID": "AIB-DE-2026-11873",
+     "MWh": 6500,
+     "Price": 5850.0,
+     "Buyer": "Inês Carvalho"
+    }
+   },
+   {
+    "id": "recT02B011",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-011",
+     "Certificate ID": "REGO-R0091-2026-0442",
+     "MWh": 5000,
+     "Price": 4500.0,
+     "Buyer": "Inês Carvalho"
+    }
+   },
+   {
+    "id": "recT02B012",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-012",
+     "Certificate ID": "NRR-2026-0233-SOL",
+     "MWh": 4800,
+     "Price": 8640.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   },
+   {
+    "id": "recT02B013",
+    "createdTime": "2026-05-01T09:00:00.000Z",
+    "fields": {
+     "Purchase": "PO-T02-013",
+     "Certificate ID": "NRR-2025-1302-WND",
+     "MWh": 3000,
+     "Price": 5400.0,
+     "Buyer": "Rafael Okonjo"
+    }
+   }
+  ]
+ }
+}

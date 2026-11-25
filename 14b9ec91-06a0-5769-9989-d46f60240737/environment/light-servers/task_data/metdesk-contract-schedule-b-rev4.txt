@@ -1,0 +1,14 @@
+METDESK FELLSIDE LTD - NORTHFELL GRID PLC
+CONTRACT FOR STATION FORECAST SERVICES - SCHEDULE B (TECHNICAL), REVISION 4
+Effective: 1 March 2025
+
+B1  Stations. Seven automatic weather stations: Skelwith Edge, Coldfell Moor, Harrowgate Pike, Lunsdale,
+    Brackmoor, Tarnholme, Oxenrigg.
+B2  Parameters. Air temperature (deg C), 10 m mean wind speed, wind direction, precipitation probability.
+B3  Units. B3.1 Temperature in degrees Celsius. B3.2 Wind speed in knots (international knot, 1 kn = 1852 m/h,
+    i.e. 0.5144 m/s). B3.3 This revision withdraws the metres-per-second wind delivery of revision 3.
+B4  Update cycle. Routine runs 00Z, 06Z, 12Z. Station reissues and duty forecaster amendments at any time; the
+    service always holds the current forecast for each station.
+B5  Notification. Amendments are mailed to ratings-desk@northfell-grid.example. Station reissues after sensor
+    faults are notified to the met liaison.
+B6  Liability. MetDesk does not set or advise on circuit ratings.

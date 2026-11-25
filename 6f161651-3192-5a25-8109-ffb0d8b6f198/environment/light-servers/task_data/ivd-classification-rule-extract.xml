@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classification product="Kestrel-3" document="DOC-1003" revision="Rev B">
+  <rule id="3" applies="true">
+    <text>Devices intended for detecting markers of acute cardiac events where an erroneous result could lead to a life-threatening decision.</text>
+    <class>C</class>
+  </rule>
+  <rule id="1" applies="false"><text>Transfusion, transplantation, high-risk transmissible agents.</text><class>D</class></rule>
+  <rule id="4" applies="false"><text>Devices intended for self-testing.</text><class>C</class><note>Kestrel-3 is not for self-testing.</note></rule>
+  <rule id="3f" applies="false"><text>Companion diagnostics.</text><class>C</class><note>No Kestrel-3 assay is a companion diagnostic.</note></rule>
+  <outcome class="C" use="professional near-patient testing" selfTesting="false" companionDiagnostic="false"/>
+</classification>

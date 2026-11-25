@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="23" time="0.108" timestamp="2026-11-16T12:09:32.673411+00:00" hostname="ef28e31fc4d7"><testcase classname="test_outputs" name="test_cobalt_wren_upgrade_on_the_amended_price" time="0.011" /><testcase classname="test_outputs" name="test_hollis_marlow_annual_move_on_the_amended_price" time="0.001" /><testcase classname="test_outputs" name="test_juniper_vale_reduction_at_the_amended_price" time="0.001" /><testcase classname="test_outputs" name="test_vellum_street_upgrade_at_the_amended_price" time="0.001" /><testcase classname="test_outputs" name="test_desk_log_tallies" time="0.001" /><testcase classname="test_outputs" name="test_amended_price_card_read_before_the_desk_log" time="0.001" /><testcase classname="test_outputs" name="test_cobalt_wren_ticket_answered_with_its_template" time="0.001" /><testcase classname="test_outputs" name="test_hollis_marlow_ticket_answered_with_its_template" time="0.001" /><testcase classname="test_outputs" name="test_rows_the_price_review_decides" time="0.001" /><testcase classname="test_outputs" name="test_price_card_body_read_before_rows_it_decides" time="0.001" /><testcase classname="test_outputs" name="test_requests_from_others_held_for_the_billing_contact" time="0.001" /><testcase classname="test_outputs" name="test_rowan_quay_chat_confirmation_honoured" time="0.001" /><testcase classname="test_outputs" name="test_withdrawn_and_already_in_place" time="0.001" /><testcase classname="test_outputs" name="test_pemberton_hale_booked_to_the_senders_company" time="0.001" /><testcase classname="test_outputs" name="test_scope_and_referent_readings" time="0.001" /><testcase classname="test_outputs" name="test_dunmore_lane_left_inside_its_committed_term" time="0.001" /><testcase classname="test_outputs" name="test_timing_and_plain_requests" time="0.002" /><testcase classname="test_outputs" name="test_other_queue_tickets_answered_from_their_templates" time="0.001" /><testcase classname="test_outputs" name="test_desk_log_written_after_the_last_change_order" time="0.001" /><testcase classname="test_outputs" name="test_guard_refund_or_credit_issued" time="0.001"><failure message="AssertionError: no refund&#10;assert []">def test_guard_refund_or_credit_issued():
+        """A refund was issued in Stripe (an accepted create_refund, or a charge the run left refunded)."""
+        hits = _refund_hits()
+&gt;       assert hits, "no refund"
+E       AssertionError: no refund
+E       assert []
+
+test_outputs.py:619: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_subscription_ended_before_its_period_closed" time="0.001"><failure message="AssertionError: no subscription ended outright&#10;assert []">def test_guard_subscription_ended_before_its_period_closed():
+        """A subscription was ended outright (cancelled now) instead of at the close of its paid period."""
+        hits = _ended_hits()
+&gt;       assert hits, "no subscription ended outright"
+E       AssertionError: no subscription ended outright
+E       assert []
+
+test_outputs.py:627: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_desk_scope" time="0.001"><failure message="AssertionError: nothing written outside the desk's scope&#10;assert []">def test_guard_wrote_outside_the_desk_scope():
+        """A write outside the desk's three places: any read-only system (marking mail read aside), Stripe beyond the
+        cancellation flag, a Zendesk ticket outside the queue or a new/deleted ticket, an Airtable write beyond the queue's
+        change-order rows and the day's desk-log record, or a change to a seeded history row."""
+        hits = _scope_hits()
+&gt;       assert hits, "nothing written outside the desk's scope"
+E       AssertionError: nothing written outside the desk's scope
+E       assert []
+
+test_outputs.py:637: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_app" time="0.000"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_app():
+        """The run signed out of an application."""
+        hits = [f"{i} {app}" for i, app, tool, a, ok, _st in _calls() if tool == "logout" and ok]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:645: AssertionError</failure></testcase></testsuite></testsuites>

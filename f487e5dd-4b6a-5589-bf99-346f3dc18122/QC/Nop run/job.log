@@ -1,0 +1,6 @@
+Agent 'nop' does not declare an options_model; leftover kwargs are ignored
+Skipping image OS validation for hb__d15fcc3700b327b21ef4158cfbc2b5e8: docker inspect returned 1
+Collecting main service artifacts
+Running collect hook in service 'main': 'python3 /harness/atlas/state_capture.py'
+Collect hook in service 'main' completed
+Skipping image OS validation for hb__c02cbdf21e2458dd9ba914389609a818: docker inspect returned 1

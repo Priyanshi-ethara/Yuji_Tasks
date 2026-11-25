@@ -1,0 +1,44 @@
+{
+  "ran": true,
+  "transport": "codex",
+  "model": "gpt-5.6-sol",
+  "reason": null,
+  "criteria": 24,
+  "configured": {
+    "agent": "codex",
+    "model": "gpt-5.6-sol",
+    "version": null,
+    "reasoning_effort": null,
+    "timeout": 1200,
+    "cwd": "/logs/verifier/judge_ws",
+    "isolated": false,
+    "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+    "mode": "batched",
+    "mcp_servers": [],
+    "samples": 1,
+    "guard": "off"
+  },
+  "usage": {
+    "input_tokens": 35736,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 29312,
+    "output_tokens": 1833,
+    "reasoning_output_tokens": 74,
+    "total_tokens": 37569,
+    "cost_usd": 0.0740808,
+    "cost_source": "litellm_estimate",
+    "models": {
+      "gpt-5.6-sol": {
+        "input_tokens": 35736,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 29312,
+        "output_tokens": 1833,
+        "reasoning_output_tokens": 74,
+        "total_tokens": 37569,
+        "cost_usd": 0.0740808
+      }
+    }
+  },
+  "rewardkit": "0.2.3",
+  "codex": "codex-cli 0.154.0"
+}

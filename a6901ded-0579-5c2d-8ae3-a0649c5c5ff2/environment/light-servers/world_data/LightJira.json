@@ -1,0 +1,453 @@
+{
+ "projects": [
+  {
+   "id": "11410",
+   "key": "LCH",
+   "name": "Launch changes",
+   "project_type_key": "service_desk",
+   "lead": "acc-halvard-quist",
+   "description": "One change ticket per fine-tune launch (RB-ML-014 section 7)."
+  },
+  {
+   "id": "11411",
+   "key": "MLR",
+   "name": "Model review",
+   "project_type_key": "software",
+   "lead": "acc-ravi-castellanos",
+   "description": "Reviewer sign-off requests for runs that depart from an approved recipe."
+  },
+  {
+   "id": "11412",
+   "key": "CAP",
+   "name": "GPU capacity",
+   "project_type_key": "service_desk",
+   "lead": "acc-joaquim-brandao",
+   "description": "Capacity approval requests for launches charged above the per-launch allowance."
+  },
+  {
+   "id": "11413",
+   "key": "DQ",
+   "name": "Data quality",
+   "project_type_key": "software",
+   "lead": "acc-bastien-achterberg",
+   "description": "Data issues that block training or evaluation: PII, contamination, lineage, schema."
+  }
+ ],
+ "users": [
+  {
+   "account_id": "acc-odile-marchetti",
+   "display_name": "Odile Marchetti",
+   "email": "odile.marchetti@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-ml-launch-desk",
+   "display_name": "ML Launch Desk",
+   "email": "ml-launch-desk@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-halvard-quist",
+   "display_name": "Halvard Quist",
+   "email": "halvard.quist@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-noor-bassi",
+   "display_name": "Noor Bassi",
+   "email": "noor.bassi@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-teodora-lindqvist",
+   "display_name": "Teodora Lindqvist",
+   "email": "teodora.lindqvist@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-joaquim-brandao",
+   "display_name": "Joaquim Brandão",
+   "email": "joaquim.brandao@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-henrike-solberg",
+   "display_name": "Henrike Solberg",
+   "email": "henrike.solberg@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-ravi-castellanos",
+   "display_name": "Ravi Castellanos",
+   "email": "ravi.castellanos@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-wen-ashdown",
+   "display_name": "Wen Ashdown",
+   "email": "wen.ashdown@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-ifeoma-hartley",
+   "display_name": "Ifeoma Hartley",
+   "email": "ifeoma.hartley@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-lucian-petrov",
+   "display_name": "Lucian Petrov",
+   "email": "lucian.petrov@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-greta-holmqvist",
+   "display_name": "Greta Holmqvist",
+   "email": "greta.holmqvist@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-dario-fenwick",
+   "display_name": "Dario Fenwick",
+   "email": "dario.fenwick@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-paloma-reyes-hart",
+   "display_name": "Paloma Reyes-Hart",
+   "email": "paloma.reyes-hart@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-marta-szabo",
+   "display_name": "Marta Szabo",
+   "email": "marta.szabo@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-bastien-achterberg",
+   "display_name": "Bastien Achterberg",
+   "email": "bastien.achterberg@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-mireille-dufresne",
+   "display_name": "Mireille Dufresne",
+   "email": "mireille.dufresne@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-tobias-wren",
+   "display_name": "Tobias Wren",
+   "email": "tobias.wren@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-saoirse-kimani",
+   "display_name": "Saoirse Kimani",
+   "email": "saoirse.kimani@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-anika-oyelaran",
+   "display_name": "Anika Oyelaran",
+   "email": "anika.oyelaran@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-emeka-rowntree",
+   "display_name": "Emeka Rowntree",
+   "email": "emeka.rowntree@sorrel-insurance.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-ines-kowalczyk",
+   "display_name": "Ines Kowalczyk",
+   "email": "ines.kowalczyk@sorrel-insurance.example",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 41,
+   "name": "LCH board",
+   "type": "kanban",
+   "project_key": "LCH"
+  },
+  {
+   "id": 42,
+   "name": "MLR board",
+   "type": "kanban",
+   "project_key": "MLR"
+  }
+ ],
+ "sprints": [
+  {
+   "id": 4101,
+   "board_id": 41,
+   "name": "Launch week 47",
+   "state": "active",
+   "start_date": "2026-11-16T09:00:00Z",
+   "end_date": "2026-11-20T18:00:00Z",
+   "goal": "Thursday 19 Nov window"
+  }
+ ],
+ "issues": [
+  {
+   "id": "90001",
+   "key": "LCH-141",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-SUB-01 — 2026-10-15",
+   "description": "Recipe RCP-SUB-1, 16 GPUs ft-pool-north, reserved 7 h, charged 112 GPU-h. Ready to launch.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-noor-bassi",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-13T10:00:00Z",
+   "updated": "2026-10-13T10:00:00Z"
+  },
+  {
+   "id": "90002",
+   "key": "LCH-142",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-UW-02 — 2026-10-22",
+   "description": "Recipe RCP-UW-2, 8 GPUs ft-pool-north, reserved 5 h, charged 40 GPU-h. Ready to launch.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-teodora-lindqvist",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-20T10:00:00Z",
+   "updated": "2026-10-20T10:00:00Z"
+  },
+  {
+   "id": "90003",
+   "key": "LCH-143",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-FNOL-10 — 2026-10-29",
+   "description": "Recipe RCP-FNOL-4, 8 GPUs ft-pool-north, reserved 6 h, charged 48 GPU-h. Ready to launch.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-halvard-quist",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-27T10:00:00Z",
+   "updated": "2026-10-27T10:00:00Z"
+  },
+  {
+   "id": "90004",
+   "key": "LCH-144",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-CLM-06 — 2026-11-05",
+   "description": "Recipe RCP-CLM-3, 16 GPUs ft-pool-north, reserved 6 h, charged 96 GPU-h. Ready to launch.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-noor-bassi",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-03T10:00:00Z",
+   "updated": "2026-11-03T10:00:00Z"
+  },
+  {
+   "id": "90005",
+   "key": "LCH-145",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-RISK-04 — 2026-11-12",
+   "description": "Recipe RCP-RISK-2, 8 GPUs ft-pool-north, reserved 9 h, charged 72 GPU-h. Held for sign-off until 11 Nov, then Ready to launch.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-noor-bassi",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-09T10:00:00Z",
+   "updated": "2026-11-09T10:00:00Z"
+  },
+  {
+   "id": "90006",
+   "key": "LCH-146",
+   "project_key": "LCH",
+   "issue_type": "Change",
+   "summary": "Launch FT-RISK-05 — 2026-11-26",
+   "description": "Booked by Risk Analytics; readiness review not started.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": null,
+   "reporter": "acc-ines-kowalczyk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-13T15:20:00Z",
+   "updated": "2026-11-13T15:20:00Z"
+  },
+  {
+   "id": "90007",
+   "key": "MLR-84",
+   "project_key": "MLR",
+   "issue_type": "Review",
+   "summary": "Sign-off: FT-UW-02 shorter warm-up",
+   "description": "Warm-up 100 instead of 200 updates; approved.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-wen-ashdown",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-19T10:00:00Z",
+   "updated": "2026-10-19T10:00:00Z"
+  },
+  {
+   "id": "90008",
+   "key": "MLR-86",
+   "project_key": "MLR",
+   "issue_type": "Review",
+   "summary": "Sign-off: FT-SUB-01 accumulation 4 at micro-batch 4",
+   "description": "Matched RCP-SUB-1 at the time; recorded for the audit trail.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-lucian-petrov",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-13T11:00:00Z",
+   "updated": "2026-10-13T11:00:00Z"
+  },
+  {
+   "id": "90009",
+   "key": "MLR-85",
+   "project_key": "MLR",
+   "issue_type": "Review",
+   "summary": "Sign-off: FT-FNOL-10 on RCP-FNOL-4 (no departure)",
+   "description": "Raised in error; FNOL-10 matched its recipe. Closed without action.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-ifeoma-hartley",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-26T10:00:00Z",
+   "updated": "2026-10-26T10:00:00Z"
+  },
+  {
+   "id": "90010",
+   "key": "MLR-87",
+   "project_key": "MLR",
+   "issue_type": "Review",
+   "summary": "Sign-off: FT-RISK-04 warm-up 150 updates vs RCP-RISK-2's 100",
+   "description": "Schedule departure only; after the 9 Nov spec change to accumulation 3 the run is at the recipe's 192 sequences per update and keeps its peak LR of 2.5e-5. Approved 11 Nov.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-ines-kowalczyk",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-09T10:30:00Z",
+   "updated": "2026-11-09T10:30:00Z"
+  },
+  {
+   "id": "90011",
+   "key": "MLR-88",
+   "project_key": "MLR",
+   "issue_type": "Review",
+   "summary": "Sign-off: FT-CLM-07a shorter schedule",
+   "description": "Ablation halves the step count; awaiting review for the 26 Nov window.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "acc-ravi-castellanos",
+   "reporter": "acc-mireille-dufresne",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-12T09:00:00Z",
+   "updated": "2026-11-12T09:00:00Z"
+  },
+  {
+   "id": "90012",
+   "key": "CAP-31",
+   "project_key": "CAP",
+   "issue_type": "Capacity request",
+   "summary": "Capacity: FT-SUB-01 on ft-pool-north",
+   "description": "Charged 112 GPU-h, under allowance at the time (allowance then 120). Approved.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-joaquim-brandao",
+   "reporter": "acc-ml-launch-desk",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-12T09:00:00Z",
+   "updated": "2026-10-12T09:00:00Z"
+  },
+  {
+   "id": "90013",
+   "key": "CAP-32",
+   "project_key": "CAP",
+   "issue_type": "Capacity request",
+   "summary": "Capacity: Pricing batch backfill on ft-pool-south 19 Nov",
+   "description": "Not a fine-tune; reserved directly by Pricing.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "acc-henrike-solberg",
+   "reporter": "acc-henrike-solberg",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-10T09:00:00Z",
+   "updated": "2026-11-10T09:00:00Z"
+  },
+  {
+   "id": "90014",
+   "key": "DQ-19",
+   "project_key": "DQ",
+   "issue_type": "Data issue",
+   "summary": "uw-qa-train-v4 failed PII scan (broker notes)",
+   "description": "Superseded for training by uw-qa-train-v5 (DS-2207).",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-paloma-reyes-hart",
+   "reporter": "acc-bastien-achterberg",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-08-02T09:00:00Z",
+   "updated": "2026-08-02T09:00:00Z"
+  },
+  {
+   "id": "90015",
+   "key": "DQ-20",
+   "project_key": "DQ",
+   "issue_type": "Data issue",
+   "summary": "claims-faq-paraphrase-v1: 31 rewrites changed the policy number",
+   "description": "Retired v1; v2 rebuilt with --keep-answers and an entity check.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-greta-holmqvist",
+   "reporter": "acc-dario-fenwick",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-02T09:00:00Z",
+   "updated": "2026-10-02T09:00:00Z"
+  },
+  {
+   "id": "90016",
+   "key": "DQ-22",
+   "project_key": "DQ",
+   "issue_type": "Data issue",
+   "summary": "claims-notes-sum-v3: 14 summaries with truncated text",
+   "description": "Fixed in the v3 export of 6 Nov.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-dario-fenwick",
+   "reporter": "acc-mireille-dufresne",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-04T09:00:00Z",
+   "updated": "2026-11-04T09:00:00Z"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "users": [
+  {
+   "user_id": "PU-SOR-01",
+   "name": "Halvard Quist",
+   "email": "halvard.quist@sorrel-insurance.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "ML Platform engineer"
+  },
+  {
+   "user_id": "PU-SOR-02",
+   "name": "Noor Bassi",
+   "email": "noor.bassi@sorrel-insurance.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "ML Platform engineer"
+  },
+  {
+   "user_id": "PU-SOR-03",
+   "name": "Teodora Lindqvist",
+   "email": "teodora.lindqvist@sorrel-insurance.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "ML Platform engineer"
+  },
+  {
+   "user_id": "PU-SOR-04",
+   "name": "Joaquim Brandão",
+   "email": "joaquim.brandao@sorrel-insurance.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "Capacity manager, north pool"
+  },
+  {
+   "user_id": "PU-SOR-05",
+   "name": "Henrike Solberg",
+   "email": "henrike.solberg@sorrel-insurance.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "Capacity manager, south pool"
+  }
+ ],
+ "services": [
+  {
+   "service_id": "PS-SOR-1",
+   "name": "ml-platform-launcher",
+   "description": "Fine-tune launcher and GPU pools",
+   "status": "active",
+   "escalation_policy_id": "EP-SOR-1",
+   "auto_resolve_timeout": 14400
+  }
+ ],
+ "policies": [
+  {
+   "escalation_policy_id": "EP-SOR-1",
+   "name": "ML Platform on-call",
+   "num_loops": 2,
+   "tier1_user_id": "PU-SOR-01",
+   "tier2_user_id": "PU-SOR-03"
+  }
+ ],
+ "schedules": [
+  {
+   "schedule_id": "SCH-SOR-46P",
+   "name": "ML Platform primary — week 46",
+   "time_zone": "UTC",
+   "escalation_policy_id": "EP-SOR-1",
+   "current_oncall_user_id": "PU-SOR-02",
+   "oncall_start": "2026-11-09T09:00:00Z",
+   "oncall_end": "2026-11-16T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCH-SOR-47P",
+   "name": "ML Platform primary — week 47",
+   "time_zone": "UTC",
+   "escalation_policy_id": "EP-SOR-1",
+   "current_oncall_user_id": "PU-SOR-01",
+   "oncall_start": "2026-11-16T09:00:00Z",
+   "oncall_end": "2026-11-23T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCH-SOR-47S",
+   "name": "ML Platform secondary — week 47",
+   "time_zone": "UTC",
+   "escalation_policy_id": "EP-SOR-1",
+   "current_oncall_user_id": "PU-SOR-03",
+   "oncall_start": "2026-11-16T09:00:00Z",
+   "oncall_end": "2026-11-23T09:00:00Z"
+  },
+  {
+   "schedule_id": "SCH-SOR-48P",
+   "name": "ML Platform primary — week 48",
+   "time_zone": "UTC",
+   "escalation_policy_id": "EP-SOR-1",
+   "current_oncall_user_id": "PU-SOR-02",
+   "oncall_start": "2026-11-23T09:00:00Z",
+   "oncall_end": "2026-11-30T09:00:00Z"
+  }
+ ],
+ "incidents": [
+  {
+   "incident_id": "PI-SOR-071",
+   "incident_number": 2071,
+   "title": "FT-RISK-04 ran past its reservation",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PS-SOR-1",
+   "escalation_policy_id": "EP-SOR-1",
+   "assigned_to": "PU-SOR-02",
+   "created_at": "2026-11-12T15:05:00Z",
+   "resolved_at": "2026-11-12T16:30:00Z"
+  },
+  {
+   "incident_id": "PI-SOR-064",
+   "incident_number": 2064,
+   "title": "gpu-north-03 XID 79",
+   "status": "resolved",
+   "urgency": "low",
+   "service_id": "PS-SOR-1",
+   "escalation_policy_id": "EP-SOR-1",
+   "assigned_to": "PU-SOR-02",
+   "created_at": "2026-11-08T03:13:00Z",
+   "resolved_at": "2026-11-08T03:40:00Z"
+  }
+ ],
+ "notes_store": {
+  "PI-SOR-071": [
+   {
+    "id": "note-sor-1",
+    "user_id": "PU-SOR-02",
+    "content": "Dry run was taken at accumulation 2; the spec launched at 3. Reservation was sized from the dry run unscaled.",
+    "created_at": "2026-11-12T16:20:00Z"
+   }
+  ]
+ }
+}

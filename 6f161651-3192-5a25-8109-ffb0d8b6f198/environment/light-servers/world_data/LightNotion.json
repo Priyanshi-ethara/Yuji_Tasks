@@ -1,0 +1,940 @@
+{
+ "users": [
+  {
+   "id": "user-orv-ines",
+   "name": "Ines Calloway",
+   "email": "ines.calloway@orvane.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-orbit-labs",
+   "created_time": "2025-10-01T09:00:00.000Z"
+  },
+  {
+   "id": "user-orv-tomas",
+   "name": "Tomas Reinholt",
+   "email": "tomas.reinholt@orvane.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-orbit-labs",
+   "created_time": "2025-10-01T09:00:00.000Z"
+  },
+  {
+   "id": "user-orv-ra",
+   "name": "RA Specialist",
+   "email": "ra.specialist@orvane.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-orbit-labs",
+   "created_time": "2025-10-01T09:00:00.000Z"
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-ks3-ra-home",
+   "parent_type": "workspace",
+   "parent_id": "workspace-orbit-labs",
+   "title": "Orvane RA - Kestrel-3 submission workspace",
+   "created_time": "2025-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-11-06T10:00:00.000Z",
+   "created_by": "user-orv-ines",
+   "archived": false,
+   "icon": "book",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-gloss-guide",
+   "parent_type": "page",
+   "parent_id": "page-ks3-ra-home",
+   "title": "Glossary register - how terms are maintained",
+   "created_time": "2025-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "info",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-01",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Analytical sensitivity",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-02",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Precision profile",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-03",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Calibrator lot",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-04",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Cartridge",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-05",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Hazardous situation",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-06",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Benefit-risk ratio",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-07",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Use error",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-08",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Intended user",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-09",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Near-patient testing",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-10",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Linearity range",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-11",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Interferent",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-12",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Shelf life",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-13",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Software item",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-14",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Unique device identifier",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-15",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Clinical performance",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-16",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Post-market surveillance",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-17",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Lay user",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-18",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Self-test result",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-19",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Reagent pack",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-20",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Measuring interval",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  },
+  {
+   "id": "page-ks3-term-21",
+   "parent_type": "database",
+   "parent_id": "db-ks3-glossary",
+   "title": "Residual risk acceptability matrix",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "archived": false,
+   "icon": "",
+   "cover_url": null
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-ks3-glossary",
+   "title": "Kestrel-3 Glossary Register",
+   "parent_page_id": "page-ks3-ra-home",
+   "created_time": "2025-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "created_by": "user-orv-tomas",
+   "icon": "book",
+   "archived": false
+  },
+  {
+   "id": "db-ks3-term-index",
+   "title": "Kestrel-3 TF Term Index",
+   "parent_page_id": "page-ks3-ra-home",
+   "created_time": "2026-11-06T10:05:00.000Z",
+   "last_edited_time": "2026-11-06T10:05:00.000Z",
+   "created_by": "user-orv-ines",
+   "icon": "list",
+   "archived": false
+  }
+ ],
+ "properties": {
+  "page-ks3-term-01": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1110"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The lowest concentration of the measurand that the analyser reliably distinguishes from zero, expressed as the limit of detection."
+   }
+  },
+  "page-ks3-term-02": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1110"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The coefficient of variation of repeated measurements plotted across the measuring interval of each assay cartridge."
+   }
+  },
+  "page-ks3-term-03": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1001"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A batch of calibrator material manufactured under one batch record and assigned one set of target values."
+   }
+  },
+  "page-ks3-term-04": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1001"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The single-use test unit holding the reagents for one Kestrel-3 assay run; replaces the term reagent pack."
+   }
+  },
+  "page-ks3-term-05": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1047"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A circumstance in which a patient, user or other person is exposed to one or more hazards from the analyser or its results."
+   }
+  },
+  "page-ks3-term-06": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1047"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The weighing of the clinical benefit of a Kestrel-3 result against the residual risks that remain after all risk control measures."
+   }
+  },
+  "page-ks3-term-07": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1074"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A user action or lack of action that leads to a different result than intended by the manufacturer or expected by the user."
+   }
+  },
+  "page-ks3-term-08": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1002"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A health professional trained to operate the analyser at the point of care: nurse, physician or laboratory technician."
+   }
+  },
+  "page-ks3-term-09": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1162"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "Testing performed outside a laboratory environment by a health professional, close to the patient."
+   }
+  },
+  "page-ks3-term-10": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1111"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The interval over which results are proportional to the concentration of the measurand within the stated deviation."
+   }
+  },
+  "page-ks3-term-11": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1112"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A substance in the sample other than the measurand that changes the measured result."
+   }
+  },
+  "page-ks3-term-12": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1188"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The period during which an unopened cartridge, stored as labelled, keeps its stated performance."
+   }
+  },
+  "page-ks3-term-13": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1102"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "Any identifiable part of the Kestrel-3 embedded or companion software, at any level of decomposition."
+   }
+  },
+  "page-ks3-term-14": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1130"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The series of numeric or alphanumeric characters on the label that identifies the analyser or cartridge model and production unit."
+   }
+  },
+  "page-ks3-term-15": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1121"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The ability of the analyser to yield results correlated with a particular clinical condition in the target population."
+   }
+  },
+  "page-ks3-term-16": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1200"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "The activities that collect and review experience with the Kestrel-3 placed on the market to identify any need for action."
+   }
+  },
+  "page-ks3-term-17": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1134"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A person without formal training in a relevant field of health care who performs a test at home."
+   }
+  },
+  "page-ks3-term-18": {
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1161"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "A result produced and read by a lay user without professional supervision."
+   }
+  },
+  "page-ks3-term-19": {
+   "Status": {
+    "type": "status",
+    "value": "Retired"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1001"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "Former name of the single-use test unit; retired 2026-11-05 in favour of Cartridge."
+   }
+  },
+  "page-ks3-term-20": {
+   "Status": {
+    "type": "status",
+    "value": "Retired"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1110"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "Former term for the reportable range; retired 2026-10-22, the analytical reports now use linearity range."
+   }
+  },
+  "page-ks3-term-21": {
+   "Status": {
+    "type": "status",
+    "value": "Proposed"
+   },
+   "Source document": {
+    "type": "rich_text",
+    "value": "DOC-1047"
+   },
+   "Definition": {
+    "type": "rich_text",
+    "value": "Proposed term for the matrix that maps residual risk to acceptability; not yet adopted by the glossary board."
+   }
+  }
+ },
+ "blocks": [
+  {
+   "id": "block-ks3-gg-1",
+   "page_id": "page-ks3-gloss-guide",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Each term page carries Status (Active, Retired or Proposed), Source document (the controlled document that defines the term) and Definition. Only the glossary board changes Status.",
+   "created_time": "2025-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-gg-2",
+   "page_id": "page-ks3-gloss-guide",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 1,
+   "text": "Retired terms stay in the register for traceability with the term that replaced them. Proposed terms wait for the next glossary board and are not used in submissions.",
+   "created_time": "2025-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-gg-3",
+   "page_id": "page-ks3-gloss-guide",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 2,
+   "text": "Board of 5 Nov 2026: 'Reagent pack' retired (use 'Cartridge'); 'Residual risk acceptability matrix' left as Proposed pending the RM report refresh.",
+   "created_time": "2026-11-05T15:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-01",
+   "page_id": "page-ks3-term-01",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The lowest concentration of the measurand that the analyser reliably distinguishes from zero, expressed as the limit of detection.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-02",
+   "page_id": "page-ks3-term-02",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The coefficient of variation of repeated measurements plotted across the measuring interval of each assay cartridge.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-03",
+   "page_id": "page-ks3-term-03",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A batch of calibrator material manufactured under one batch record and assigned one set of target values.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-04",
+   "page_id": "page-ks3-term-04",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The single-use test unit holding the reagents for one Kestrel-3 assay run; replaces the term reagent pack.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-05",
+   "page_id": "page-ks3-term-05",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A circumstance in which a patient, user or other person is exposed to one or more hazards from the analyser or its results.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-06",
+   "page_id": "page-ks3-term-06",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The weighing of the clinical benefit of a Kestrel-3 result against the residual risks that remain after all risk control measures.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-07",
+   "page_id": "page-ks3-term-07",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A user action or lack of action that leads to a different result than intended by the manufacturer or expected by the user.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-08",
+   "page_id": "page-ks3-term-08",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A health professional trained to operate the analyser at the point of care: nurse, physician or laboratory technician.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-09",
+   "page_id": "page-ks3-term-09",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Testing performed outside a laboratory environment by a health professional, close to the patient.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-10",
+   "page_id": "page-ks3-term-10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The interval over which results are proportional to the concentration of the measurand within the stated deviation.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-11",
+   "page_id": "page-ks3-term-11",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A substance in the sample other than the measurand that changes the measured result.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-12",
+   "page_id": "page-ks3-term-12",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The period during which an unopened cartridge, stored as labelled, keeps its stated performance.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-13",
+   "page_id": "page-ks3-term-13",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Any identifiable part of the Kestrel-3 embedded or companion software, at any level of decomposition.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-14",
+   "page_id": "page-ks3-term-14",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The series of numeric or alphanumeric characters on the label that identifies the analyser or cartridge model and production unit.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-15",
+   "page_id": "page-ks3-term-15",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The ability of the analyser to yield results correlated with a particular clinical condition in the target population.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-16",
+   "page_id": "page-ks3-term-16",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "The activities that collect and review experience with the Kestrel-3 placed on the market to identify any need for action.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-17",
+   "page_id": "page-ks3-term-17",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A person without formal training in a relevant field of health care who performs a test at home.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-18",
+   "page_id": "page-ks3-term-18",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "A result produced and read by a lay user without professional supervision.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-10-22T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-19",
+   "page_id": "page-ks3-term-19",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Former name of the single-use test unit; retired 2026-11-05 in favour of Cartridge.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-20",
+   "page_id": "page-ks3-term-20",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Former term for the reportable range; retired 2026-10-22, the analytical reports now use linearity range.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-ks3-term-21",
+   "page_id": "page-ks3-term-21",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "order": 0,
+   "text": "Proposed term for the matrix that maps residual risk to acceptability; not yet adopted by the glossary board.",
+   "created_time": "2025-11-12T09:00:00.000Z",
+   "last_edited_time": "2026-11-05T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "comment-ks3-01",
+   "parent_page_id": "page-ks3-term-19",
+   "parent_block_id": null,
+   "author_id": "user-orv-tomas",
+   "text": "Retired at the 5 Nov board - the IFU and labels now say Cartridge throughout.",
+   "created_time": "2026-11-05T15:10:00.000Z",
+   "resolved": false
+  },
+  {
+   "id": "comment-ks3-02",
+   "parent_page_id": "page-ks3-term-17",
+   "parent_block_id": null,
+   "author_id": "user-orv-ines",
+   "text": "Only used in the Home concept documents for now.",
+   "created_time": "2026-10-23T10:00:00.000Z",
+   "resolved": false
+  }
+ ]
+}

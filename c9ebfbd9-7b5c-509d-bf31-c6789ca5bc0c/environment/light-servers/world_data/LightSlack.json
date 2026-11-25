@@ -1,0 +1,249 @@
+{
+ "users": [
+  {
+   "id": "U0ICALLOWAY",
+   "name": "ines.calloway",
+   "real_name": "Ines Calloway",
+   "is_admin": true,
+   "is_bot": false,
+   "profile": {
+    "title": "QA Operations Lead",
+    "email": "ines.calloway@tarnwick-bio.example"
+   }
+  },
+  {
+   "id": "U0JBRANDT",
+   "name": "jonas.brandt",
+   "real_name": "Jonas Brandt",
+   "is_admin": false,
+   "is_bot": false,
+   "profile": {
+    "title": "QA Release Specialist",
+    "email": "jonas.brandt@tarnwick-bio.example"
+   }
+  },
+  {
+   "id": "U0TWIERZB",
+   "name": "tomasz.w",
+   "real_name": "Tomasz Wierzbicki",
+   "is_admin": false,
+   "is_bot": false,
+   "profile": {
+    "title": "NDC Receiving Supervisor",
+    "email": "tomasz.wierzbicki@tarnwick-bio.example"
+   }
+  },
+  {
+   "id": "U0AHUNE",
+   "name": "aleksander.hune",
+   "real_name": "Aleksander Hune",
+   "is_admin": false,
+   "is_bot": false,
+   "profile": {
+    "title": "Cold-Chain Logistics Coordinator",
+    "email": "aleksander.hune@tarnwick-bio.example"
+   }
+  },
+  {
+   "id": "U0RACHTER",
+   "name": "rowan.achterberg",
+   "real_name": "Dr Rowan Achterberg",
+   "is_admin": false,
+   "is_bot": false,
+   "profile": {
+    "title": "Head of Quality (QA Head)",
+    "email": "rowan.achterberg@tarnwick-bio.example"
+   }
+  }
+ ],
+ "channels": [
+  {
+   "id": "C0QAREL45",
+   "name": "qa-release-desk",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Release rounds - closing notes only",
+   "purpose": "One closing note per round",
+   "creator": "U0ICALLOWAY",
+   "created": 1767225600,
+   "num_members": 4
+  },
+  {
+   "id": "C0CCOPS01",
+   "name": "coldchain-ops",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Lanes, carriers, loggers",
+   "purpose": "Cold-chain logistics chatter",
+   "creator": "U0AHUNE",
+   "created": 1767225600,
+   "num_members": 5
+  },
+  {
+   "id": "C0NDCRCV1",
+   "name": "ndc-receiving",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Gate, dock, cold rooms",
+   "purpose": "NDC receiving",
+   "creator": "U0TWIERZB",
+   "created": 1767225600,
+   "num_members": 3
+  },
+  {
+   "id": "C0TWKGEN1",
+   "name": "tarnwick-general",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Company",
+   "purpose": "Everyone",
+   "creator": "U0RACHTER",
+   "created": 1767225600,
+   "num_members": 5
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1793720400.000100",
+   "channel_id": "C0QAREL45",
+   "user_id": "U0JBRANDT",
+   "text": "R-2026-44 closed: 6 Release, 2 Release with deviation, 1 Quarantine, 0 Reject, 1 Referred to QA Head",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1793696280.000100",
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0TWIERZB",
+   "text": "Gate scanner back up. HX4-41188 sat on the dock from about 06:40 until we scanned it at 08:55 with the handheld.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1794024300.000100",
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0TWIERZB",
+   "text": "CR2 alarm overnight (door ajar), resolved 03:52. HX4-41219 pallets were in CR2 since receipt; NDC stock assessment NDC-INV-2211 opened.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1793961000.000100",
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0AHUNE",
+   "text": "Polar Arc: TK9-5521 (HX4-41207) seg 2 lost in a gateway restart, they are recovering it from flash into the drop.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1794243720.000100",
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0JBRANDT",
+   "text": "First-pass worksheet for R-2026-45 is in the data pack. Training dH across the board, POD as end of trip, logger-flagged readings dropped. Mostly clean, the Polar lots I left alone.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1794244800.000100",
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0AHUNE",
+   "text": "FYI Polar Arc's TK9 exports changed with firmware 4.2.1 - check their meta files before you read the numbers.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  },
+  {
+   "ts": "1793610000.000100",
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0RACHTER",
+   "text": "Reminder: inspection prep at Corran Mill 9-12 Nov.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": ""
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C0QAREL45",
+   "user_id": "U0ICALLOWAY"
+  },
+  {
+   "channel_id": "C0QAREL45",
+   "user_id": "U0JBRANDT"
+  },
+  {
+   "channel_id": "C0QAREL45",
+   "user_id": "U0AHUNE"
+  },
+  {
+   "channel_id": "C0QAREL45",
+   "user_id": "U0RACHTER"
+  },
+  {
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0ICALLOWAY"
+  },
+  {
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0JBRANDT"
+  },
+  {
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0AHUNE"
+  },
+  {
+   "channel_id": "C0CCOPS01",
+   "user_id": "U0RACHTER"
+  },
+  {
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0ICALLOWAY"
+  },
+  {
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0JBRANDT"
+  },
+  {
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0AHUNE"
+  },
+  {
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0RACHTER"
+  },
+  {
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0ICALLOWAY"
+  },
+  {
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0JBRANDT"
+  },
+  {
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0AHUNE"
+  },
+  {
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0RACHTER"
+  },
+  {
+   "channel_id": "C0NDCRCV1",
+   "user_id": "U0TWIERZB"
+  },
+  {
+   "channel_id": "C0TWKGEN1",
+   "user_id": "U0TWIERZB"
+  }
+ ],
+ "team": {
+  "id": "T0TARNWICK",
+  "name": "Tarnwick Biologics",
+  "domain": "tarnwick-bio"
+ }
+}

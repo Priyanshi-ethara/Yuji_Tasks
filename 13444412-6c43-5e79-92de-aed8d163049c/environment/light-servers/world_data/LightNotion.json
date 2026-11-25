@@ -1,0 +1,896 @@
+{
+ "users": [
+  {
+   "id": "user-tsl-maren",
+   "name": "Maren Holt",
+   "email": "maren.holt@tessellate.studio",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-tessellate",
+   "created_time": "2024-01-10T09:00:00.000Z"
+  },
+  {
+   "id": "user-tsl-anouk",
+   "name": "Anouk Brennan-Price",
+   "email": "anouk.brennanprice@tessellate.studio",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-tessellate",
+   "created_time": "2024-01-10T09:00:00.000Z"
+  },
+  {
+   "id": "user-tsl-tom",
+   "name": "Tom Achterberg",
+   "email": "tom.achterberg@tessellate.studio",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-tessellate",
+   "created_time": "2025-02-03T09:00:00.000Z"
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-tsl-pricebook",
+   "title": "Price book",
+   "parent_page_id": "page-tsl-revops",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "icon": "tag",
+   "archived": false
+  },
+  {
+   "id": "db-tsl-plans",
+   "title": "Plan features",
+   "parent_page_id": "page-tsl-revops",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-06-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "icon": "list",
+   "archived": false
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-tsl-revops",
+   "parent_type": "workspace",
+   "parent_id": "workspace-tessellate",
+   "title": "Revenue Operations",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "chart",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-line-monthly",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Line — Monthly",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-line-annual",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Line — Annual",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-grid-monthly",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Grid — Monthly",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-grid-annual",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Grid — Annual",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-mosaic-monthly",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Mosaic — Monthly",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-pb-mosaic-annual",
+   "parent_type": "database",
+   "parent_id": "db-tsl-pricebook",
+   "title": "Mosaic — Annual",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "tag",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-feat-line",
+   "parent_type": "database",
+   "parent_id": "db-tsl-plans",
+   "title": "Line features",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-06-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "list",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-feat-grid",
+   "parent_type": "database",
+   "parent_id": "db-tsl-plans",
+   "title": "Grid features",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-06-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "list",
+   "cover_url": null
+  },
+  {
+   "id": "page-tsl-feat-mosaic",
+   "parent_type": "database",
+   "parent_id": "db-tsl-plans",
+   "title": "Mosaic features",
+   "created_time": "2024-02-01T09:00:00.000Z",
+   "last_edited_time": "2026-06-01T09:00:00.000Z",
+   "created_by": "user-tsl-anouk",
+   "archived": false,
+   "icon": "list",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "block-tsl-001",
+   "page_id": "page-tsl-revops",
+   "parent_block_id": null,
+   "type": "heading_1",
+   "text": "Revenue Operations",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-002",
+   "page_id": "page-tsl-revops",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Home of the price book, plan features and the pricing committee's decisions. The billing desk and Sales read prices from here.",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-003",
+   "page_id": "page-tsl-revops",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Price book entries are owned by Anouk Brennan-Price (RevOps). Each entry is one plan and billing interval; a pricing committee decision is entered on the price card it changes on the day it is taken.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-004",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Line Monthly — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-005",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £12.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-006",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-007",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-008",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "No change: the Line Monthly list price holds at £12.00 per seat per month for periods starting on or after 1 January 2027 (PRC-2026-09).",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-009",
+   "page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-010",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Line Annual — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-011",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £120.00 per seat per year (£10.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-012",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-013",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-014",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "No change: the Line Annual list price holds at £120.00 per seat per year for periods starting on or after 1 January 2027 (PRC-2026-09).",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-015",
+   "page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-016",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Grid Monthly — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-017",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £24.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-018",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-019",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-020",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "From 1 January 2027 the Grid Monthly list price is £26.00 per seat per month. It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-021",
+   "page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-022",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Grid Annual — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-023",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £240.00 per seat per year (£20.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-024",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-025",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-026",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "From 1 January 2027 the Grid Annual list price is £258.00 per seat per year (£21.50 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-027",
+   "page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-028",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Mosaic Monthly — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-029",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £35.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-030",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-031",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-032",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "From 1 January 2027 the Mosaic Monthly list price is £37.00 per seat per month. It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-033",
+   "page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-034",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Mosaic Annual — price card",
+   "order": 0,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-035",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "List price £348.00 per seat per year (£29.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+   "order": 1,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-036",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+   "order": 2,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-037",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Price review 2027",
+   "order": 3,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-038",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "From 1 January 2027 the Mosaic Annual list price is £372.00 per seat per year (£31.00 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+   "order": 4,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "block-tsl-039",
+   "page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+   "order": 5,
+   "created_time": "2026-10-01T09:00:00.000Z",
+   "last_edited_time": "2026-10-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "comment-tsl-line-monthly",
+   "parent_page_id": "page-tsl-pb-line-monthly",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "Reviewed for 2027 (PRC-2026-09): unchanged."
+  },
+  {
+   "id": "comment-tsl-line-annual",
+   "parent_page_id": "page-tsl-pb-line-annual",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "Reviewed for 2027 (PRC-2026-09): unchanged."
+  },
+  {
+   "id": "comment-tsl-grid-monthly",
+   "parent_page_id": "page-tsl-pb-grid-monthly",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+  },
+  {
+   "id": "comment-tsl-grid-annual",
+   "parent_page_id": "page-tsl-pb-grid-annual",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+  },
+  {
+   "id": "comment-tsl-mosaic-monthly",
+   "parent_page_id": "page-tsl-pb-mosaic-monthly",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+  },
+  {
+   "id": "comment-tsl-mosaic-annual",
+   "parent_page_id": "page-tsl-pb-mosaic-annual",
+   "parent_block_id": null,
+   "author_id": "user-tsl-anouk",
+   "created_time": "2026-10-01T09:30:00.000Z",
+   "resolved": false,
+   "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+  }
+ ],
+ "properties": {
+  "page-tsl-pb-line-monthly": {
+   "Plan": {
+    "type": "select",
+    "value": "Line"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Monthly"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 12.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per month"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_line_m"
+   }
+  },
+  "page-tsl-pb-line-annual": {
+   "Plan": {
+    "type": "select",
+    "value": "Line"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Annual"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 120.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per year"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_line_a"
+   }
+  },
+  "page-tsl-pb-grid-monthly": {
+   "Plan": {
+    "type": "select",
+    "value": "Grid"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Monthly"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 24.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per month"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_grid_m"
+   }
+  },
+  "page-tsl-pb-grid-annual": {
+   "Plan": {
+    "type": "select",
+    "value": "Grid"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Annual"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 240.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per year"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_grid_a"
+   }
+  },
+  "page-tsl-pb-mosaic-monthly": {
+   "Plan": {
+    "type": "select",
+    "value": "Mosaic"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Monthly"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 35.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per month"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_mosaic_m"
+   }
+  },
+  "page-tsl-pb-mosaic-annual": {
+   "Plan": {
+    "type": "select",
+    "value": "Mosaic"
+   },
+   "Interval": {
+    "type": "select",
+    "value": "Annual"
+   },
+   "List price (GBP)": {
+    "type": "number",
+    "value": 348.0
+   },
+   "Per": {
+    "type": "select",
+    "value": "seat per year"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Published"
+   },
+   "Stripe price": {
+    "type": "rich_text",
+    "value": "price_tsl_mosaic_a"
+   }
+  },
+  "page-tsl-feat-line": {
+   "Plan": {
+    "type": "select",
+    "value": "Line"
+   },
+   "Features": {
+    "type": "rich_text",
+    "value": "Boards, comments, shared libraries, email sign-in"
+   }
+  },
+  "page-tsl-feat-grid": {
+   "Plan": {
+    "type": "select",
+    "value": "Grid"
+   },
+   "Features": {
+    "type": "rich_text",
+    "value": "Line + review tools, SSO, team spaces"
+   }
+  },
+  "page-tsl-feat-mosaic": {
+   "Plan": {
+    "type": "select",
+    "value": "Mosaic"
+   },
+   "Features": {
+    "type": "rich_text",
+    "value": "Grid + version branching, client review rooms, asset vault"
+   }
+  }
+ },
+ "workspace": {
+  "id": "workspace-tessellate",
+  "name": "Tessellate Studio"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "monitors": [
+  {
+   "id": 7101,
+   "name": "MDM ingest - Varden Schedule 3 file",
+   "type": "event alert",
+   "query": "events('source:mdm collector:varden status:error').rollup('count').last('1d') > 0",
+   "message": "Varden file failed ingest. Notify @data-collection.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "collector:varden",
+    "team:data-collection"
+   ],
+   "created": "2026-08-25T10:00:00+00:00",
+   "modified": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": 7102,
+   "name": "MDM ingest - Kestrel file",
+   "type": "event alert",
+   "query": "events('source:mdm collector:kestrel status:error').rollup('count').last('1d') > 0",
+   "message": "Kestrel file failed ingest.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "collector:kestrel",
+    "team:data-collection"
+   ],
+   "created": "2026-03-01T10:00:00+00:00",
+   "modified": "2026-03-20T09:00:00+00:00"
+  },
+  {
+   "id": 7103,
+   "name": "AMR head-end clock drift",
+   "type": "metric alert",
+   "query": "max(last_1h):max:amr.clock.drift_seconds{*} > 10",
+   "message": "AMR clock drift above 10 s.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "collector:amr"
+   ],
+   "created": "2025-01-10T10:00:00+00:00",
+   "modified": "2025-01-10T10:00:00+00:00"
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "hrm-mdm-01",
+   "title": "MDM ingest",
+   "description": "Collector file ingest for billing runs",
+   "layout_type": "ordered",
+   "author": "bertrand-ilsley",
+   "widget_count": 6,
+   "is_read_only": true,
+   "created": "2025-01-10T10:00:00+00:00",
+   "modified": "2026-09-01T09:00:00+00:00"
+  }
+ ],
+ "events": [
+  {
+   "id": 900101,
+   "title": "MDM ingest OK: varden-sched3-HRM-20261115.csv",
+   "text": "6 MPANs, 9000 rows, 0 estimated. Loaded to staging.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "mdm-01",
+   "tags": [
+    "source:mdm",
+    "collector:varden",
+    "run:BR-2611"
+   ],
+   "date_happened": 1794723600
+  },
+  {
+   "id": 900102,
+   "title": "MDM ingest OK: kestrel-hh-delivery-HRM-2611.csv",
+   "text": "6 meters, 9000 rows, all qual V.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "mdm-01",
+   "tags": [
+    "source:mdm",
+    "collector:kestrel",
+    "run:BR-2611"
+   ],
+   "date_happened": 1794723900
+  },
+  {
+   "id": 900103,
+   "title": "MDM ingest OK: amr-hh-export-br2611-batch-a.csv / batch-b.csv",
+   "text": "10 meters, 15000 rows.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "mdm-01",
+   "tags": [
+    "source:mdm",
+    "collector:amr",
+    "run:BR-2611"
+   ],
+   "date_happened": 1794724200
+  },
+  {
+   "id": 900104,
+   "title": "AMR, Kestrel, Varden clocks steady over the 25 Oct clock change",
+   "text": "All collectors UTC; no gaps or duplicates.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "mdm-01",
+   "tags": [
+    "source:mdm"
+   ],
+   "date_happened": 1792908000
+  }
+ ],
+ "hosts": [
+  {
+   "name": "mdm-01",
+   "up": true,
+   "apps": [
+    "mdm-loader"
+   ],
+   "sources": "agent",
+   "cpu_pct": 22.0,
+   "mem_pct": 41.0,
+   "last_reported": 1794812400
+  }
+ ]
+}

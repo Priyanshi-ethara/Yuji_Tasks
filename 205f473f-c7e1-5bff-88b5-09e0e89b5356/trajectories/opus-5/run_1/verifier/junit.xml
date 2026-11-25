@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="12" skipped="0" tests="21" time="0.192" timestamp="2026-11-16T11:19:13.211519+00:00" hostname="c45ea744de03"><testcase classname="test_outputs" name="test_3s6_fanout_oom_follows_the_notify_line_on_main" time="0.010"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_3s6_fanout_oom_follows_the_notify_line_on_main():
+        """FLEETD-3S6: past the runtime frames the fanout hub decides, under the notifications line as it stands on main."""
+&gt;       return _moved_group_check("FLEETD-3S6")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:357: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-3S6'
+
+    def _moved_group_check(group: str) -&gt; bool:
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+&gt;       assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E       AssertionError: the merged ownership change was not looked at between its landing and the summary
+E       assert False
+E        +  where False = _change_read()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_4h6_outbox_publisher_follows_the_notify_line_on_main" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_4h6_outbox_publisher_follows_the_notify_line_on_main():
+        """FLEETD-4H6: past the kafka-go frames the outbox publisher decides, under the notifications line on main."""
+&gt;       return _moved_group_check("FLEETD-4H6")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:362: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-4H6'
+
+    def _moved_group_check(group: str) -&gt; bool:
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+&gt;       assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E       AssertionError: the merged ownership change was not looked at between its landing and the summary
+E       assert False
+E        +  where False = _change_read()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_5m2_digest_scheduler_follows_the_notify_line_on_main" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_5m2_digest_scheduler_follows_the_notify_line_on_main():
+        """FLEETD-5M2: past the vendored simkit wheel the digest scheduler decides, under the notifications line on main."""
+&gt;       return _moved_group_check("FLEETD-5M2")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:367: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-5M2'
+
+    def _moved_group_check(group: str) -&gt; bool:
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+&gt;       assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E       AssertionError: the merged ownership change was not looked at between its landing and the summary
+E       assert False
+E        +  where False = _change_read()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_simkit_ticker_groups" time="0.001" /><testcase classname="test_outputs" name="test_simkit_ring_scheduler_and_clock_groups" time="0.001" /><testcase classname="test_outputs" name="test_vendored_and_generated_tops_stepped_over" time="0.001" /><testcase classname="test_outputs" name="test_last_match_and_any_depth_rulings" time="0.001" /><testcase classname="test_outputs" name="test_nil_pointer_classes_follow_the_code" time="0.001" /><testcase classname="test_outputs" name="test_steady_groups_routed" time="0.001" /><testcase classname="test_outputs" name="test_ticket_for_the_team_that_took_the_notify_groups" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_ticket_for_the_team_that_took_the_notify_groups():
+        """One ticket in the Linear team of the team the notifications line names on main, listing exactly its groups."""
+&gt;       return _ticket_check(_event_team(True), True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:429: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+team = 'Driver Comms', need_change = True
+
+    def _ticket_check(team: str, need_change: bool) -&gt; bool:
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+        if need_change:
+&gt;           assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E           AssertionError: the merged ownership change was not looked at between its landing and the summary
+E           assert False
+E            +  where False = _change_read()
+
+test_outputs.py:411: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ticket_for_the_team_that_kept_only_its_queue_groups" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_ticket_for_the_team_that_kept_only_its_queue_groups():
+        """One ticket in the Linear team of the team the notifications line no longer names, listing only what it still
+        owns."""
+&gt;       return _ticket_check(_event_team(False), True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:435: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+team = 'Messaging', need_change = True
+
+    def _ticket_check(team: str, need_change: bool) -&gt; bool:
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+        if need_change:
+&gt;           assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E           AssertionError: the merged ownership change was not looked at between its landing and the summary
+E           assert False
+E            +  where False = _change_read()
+
+test_outputs.py:411: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_other_tickets_and_no_ticket_for_teams_owning_nothing" time="0.007" /><testcase classname="test_outputs" name="test_merged_ownership_change_looked_at_before_the_summary" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_merged_ownership_change_looked_at_before_the_summary():
+        """After the change had landed and before the summary, the run read the merged change (pull request or merge
+        note) - and the groups it moves carry their new owner."""
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+&gt;       assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E       AssertionError: the merged ownership change was not looked at between its landing and the summary
+E       assert False
+E        +  where False = _change_read()
+
+test_outputs.py:456: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_follows_the_corrected_rows_and_tickets" time="0.001"><failure message="AssertionError: the merged ownership change was not looked at between its landing and the summary&#10;assert False&#10; +  where False = _change_read()">def test_summary_follows_the_corrected_rows_and_tickets():
+        """The summary went out after the last write that put each moved group on its owner and after the ticket of the
+        team that took them, so what it summarises is the routing as it stands on main."""
+        assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+&gt;       assert _change_read(), "the merged ownership change was not looked at between its landing and the summary"
+E       AssertionError: the merged ownership change was not looked at between its landing and the summary
+E       assert False
+E        +  where False = _change_read()
+
+test_outputs.py:466: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_module_boundary_record_read_before_routing_a_simkit_group" time="0.001" /><testcase classname="test_outputs" name="test_summary_posted_after_register_and_tickets" time="0.001" /><testcase classname="test_outputs" name="test_guard_changed_a_crash_group_status" time="0.001"><failure message="AssertionError: no status change&#10;assert []">def test_guard_changed_a_crash_group_status():
+        """A crash group was resolved, ignored, re-statused or deleted in Sentry."""
+        hits = _status_changes()
+&gt;       assert hits, "no status change"
+E       AssertionError: no status change
+E       assert []
+
+test_outputs.py:513: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_to_the_code_host" time="0.001"><failure message="AssertionError: no code-host write&#10;assert []">def test_guard_wrote_to_the_code_host():
+        """Something was pushed, merged, opened or commented on the repository or its GitLab mirror."""
+        hits = _code_host_writes()
+&gt;       assert hits, "no code-host write"
+E       AssertionError: no code-host write
+E       assert []
+
+test_outputs.py:521: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_in_a_read_only_system" time="0.001"><failure message="AssertionError: no write in a read-only system&#10;assert []">def test_guard_wrote_in_a_read_only_system():
+        """A write outside the register, the run's own Linear tickets and its summary post: the retired Jira queue, the
+        wiki, the directory, paging, monitoring, mail, drive, Teams, a seeded Linear issue, or another Slack channel."""
+        hits = _read_only_writes()
+&gt;       assert hits, "no write in a read-only system"
+E       AssertionError: no write in a read-only system
+E       assert []
+
+test_outputs.py:530: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_edited_the_register_beyond_owner_and_class" time="0.001"><failure message="AssertionError: register untouched beyond the two fields&#10;assert []">def test_guard_edited_the_register_beyond_owner_and_class():
+        """A register row was added, removed or changed outside Owner team and Root cause, or another table was written."""
+        hits = _register_tampering()
+&gt;       assert hits, "register untouched beyond the two fields"
+E       AssertionError: register untouched beyond the two fields
+E       assert []
+
+test_outputs.py:538: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        """The run signed out of an application, which the instruction forbids."""
+        hits = _sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:546: AssertionError</failure></testcase></testsuite></testsuites>

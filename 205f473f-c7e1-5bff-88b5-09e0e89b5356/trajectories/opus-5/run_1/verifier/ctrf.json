@@ -1,0 +1,145 @@
+{
+  "results": {
+    "tool": {
+      "name": "pytest"
+    },
+    "summary": {
+      "tests": 21,
+      "passed": 9,
+      "failed": 12,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "overall_score": 0.23913,
+      "weighted_percentage": 23.91
+    },
+    "tests": [
+      {
+        "name": "test_3s6_fanout_oom_follows_the_notify_line_on_main",
+        "status": "failed",
+        "duration": 10,
+        "weight": 5
+      },
+      {
+        "name": "test_4h6_outbox_publisher_follows_the_notify_line_on_main",
+        "status": "failed",
+        "duration": 1,
+        "weight": 5
+      },
+      {
+        "name": "test_5m2_digest_scheduler_follows_the_notify_line_on_main",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_simkit_ticker_groups",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_simkit_ring_scheduler_and_clock_groups",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_vendored_and_generated_tops_stepped_over",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_last_match_and_any_depth_rulings",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_nil_pointer_classes_follow_the_code",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_steady_groups_routed",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_ticket_for_the_team_that_took_the_notify_groups",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_ticket_for_the_team_that_kept_only_its_queue_groups",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_other_tickets_and_no_ticket_for_teams_owning_nothing",
+        "status": "passed",
+        "duration": 6,
+        "weight": 1
+      },
+      {
+        "name": "test_merged_ownership_change_looked_at_before_the_summary",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_summary_follows_the_corrected_rows_and_tickets",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_module_boundary_record_read_before_routing_a_simkit_group",
+        "status": "passed",
+        "duration": 1,
+        "weight": 3
+      },
+      {
+        "name": "test_summary_posted_after_register_and_tickets",
+        "status": "passed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_guard_changed_a_crash_group_status",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_to_the_code_host",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_in_a_read_only_system",
+        "status": "failed",
+        "duration": 0,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_edited_the_register_beyond_owner_and_class",
+        "status": "failed",
+        "duration": 1,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_signed_out_of_an_application",
+        "status": "failed",
+        "duration": 0,
+        "weight": -1
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+ "calendars": [
+  {
+   "id": "billing-desk@tessellate.studio",
+   "summary": "Billing Desk",
+   "description": "Desk rota, billing sync and account reviews",
+   "time_zone": "Europe/London",
+   "access_role": "reader",
+   "primary": true,
+   "color_id": "4"
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-tsl-01",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Renewal review - Mistral Yard (Hugo)",
+   "description": "Hugo meets Jonah Weller about the 2027 renewal.",
+   "location": "Google Meet",
+   "start": "2026-11-20T10:00:00+00:00",
+   "end": "2026-11-20T10:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-tsl-02",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Account review - Hollis Marlow (Hugo)",
+   "description": "SSO and plan options for 2027.",
+   "location": "Google Meet",
+   "start": "2026-11-25T14:00:00+00:00",
+   "end": "2026-11-25T14:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-tsl-03",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Onboarding - Umber & Lime new starters",
+   "description": "Four new starters join on Wednesday 18 Nov.",
+   "location": "Google Meet",
+   "start": "2026-11-18T09:30:00+00:00",
+   "end": "2026-11-18T10:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-tsl-04",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Billing sync window",
+   "description": "Nightly billing sync reads Change orders at 18:00.",
+   "location": "Google Meet",
+   "start": "2026-11-16T18:00:00+00:00",
+   "end": "2026-11-16T18:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-tsl-05",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Finance month-end close",
+   "description": "Plan changes queue cleared and desk log in before close.",
+   "location": "Google Meet",
+   "start": "2026-11-20T15:00:00+00:00",
+   "end": "2026-11-20T16:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-tsl-06",
+   "calendar_id": "billing-desk@tessellate.studio",
+   "summary": "Mosaic walkthrough - Cobalt Wren (Hugo)",
+   "description": "Demo of Mosaic review rooms.",
+   "location": "Google Meet",
+   "start": "2026-11-04T11:00:00+00:00",
+   "end": "2026-11-04T11:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.holt@tessellate.studio",
+   "organizer": "maren.holt@tessellate.studio",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "attendees": {
+  "evt-tsl-01": [
+   {
+    "email": "jonah.weller@mistralyard.com",
+    "displayName": "Jonah Weller",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   },
+   {
+    "email": "hugo.barnes@tessellate.studio",
+    "displayName": "Hugo Barnes",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-tsl-02": [
+   {
+    "email": "dev.anand@hollismarlow.com",
+    "displayName": "Dev Anand",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   },
+   {
+    "email": "hugo.barnes@tessellate.studio",
+    "displayName": "Hugo Barnes",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-tsl-03": [
+   {
+    "email": "felix.haddad@umberandlime.com",
+    "displayName": "Felix Haddad",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-tsl-04": [],
+  "evt-tsl-05": [
+   {
+    "email": "lou.varga@tessellate.studio",
+    "displayName": "Lou Varga",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-tsl-06": [
+   {
+    "email": "hattie.moss@cobaltwren.design",
+    "displayName": "Hattie Moss",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ]
+ }
+}

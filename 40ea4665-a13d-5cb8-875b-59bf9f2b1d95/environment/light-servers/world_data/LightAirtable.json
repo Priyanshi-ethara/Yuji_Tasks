@@ -1,0 +1,545 @@
+{
+ "bases": [
+  {
+   "id": "appHRMmetops01",
+   "name": "Metering Operations",
+   "permission_level": "read"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblMeterProfiles",
+   "base_id": "appHRMmetops01",
+   "name": "Meter profiles",
+   "fields": [
+    {
+     "id": "fldMP00",
+     "name": "Site ref",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP01",
+     "name": "Site name",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP02",
+     "name": "Supply number",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP03",
+     "name": "MSN",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP04",
+     "name": "Collector",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP05",
+     "name": "Export file",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP06",
+     "name": "Profile class",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP07",
+     "name": "Commissioning record",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMP08",
+     "name": "Status",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "id": "tblDeliveries",
+   "base_id": "appHRMmetops01",
+   "name": "Collector deliveries",
+   "fields": [
+    {
+     "id": "fldCD00",
+     "name": "Delivery ref",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCD01",
+     "name": "Collector",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCD02",
+     "name": "File",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCD03",
+     "name": "Rows",
+     "type": "number"
+    },
+    {
+     "id": "fldCD04",
+     "name": "Received",
+     "type": "date"
+    },
+    {
+     "id": "fldCD05",
+     "name": "SHA-256",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCD06",
+     "name": "Run",
+     "type": "singleLineText"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblMeterProfiles": [
+   {
+    "id": "recMP009667e8ea5",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1047",
+     "Site name": "Calloway Mill Bakery",
+     "Supply number": "HM19 4100 7300",
+     "MSN": "E19H40731",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-a.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E19H40731",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP01462283b75",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1052",
+     "Site name": "Ostrey Lane Medical Centre",
+     "Supply number": "HM19 4137 7353",
+     "MSN": "E19H40776",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-a.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E19H40776",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP0221193cf4b",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1068",
+     "Site name": "Pellingford Community School",
+     "Supply number": "HM19 4174 7406",
+     "MSN": "E20H11502",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-a.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E20H11502",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP0319a441149",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1073",
+     "Site name": "Quenby Print Works",
+     "Supply number": "HM19 4211 7459",
+     "MSN": "E18H93314",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-a.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E18H93314",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP041b4148d1b",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1081",
+     "Site name": "Saltash Row Garage",
+     "Supply number": "HM19 4248 7512",
+     "MSN": "E21H02287",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-a.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E21H02287",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP0583248f08c",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1094",
+     "Site name": "Thornaby Wharf Cold Store",
+     "Supply number": "HM19 4285 7565",
+     "MSN": "E17H66120",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-b.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E17H66120",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP06699d309e7",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1102",
+     "Site name": "Harrowmere Leisure Pool",
+     "Supply number": "HM19 4322 7618",
+     "MSN": "E19H51849",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-b.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E19H51849",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP0703c3b2163",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1115",
+     "Site name": "Wendle Street Offices",
+     "Supply number": "HM19 4359 7671",
+     "MSN": "E20H30915",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-b.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E20H30915",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP08e0dcaecc6",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1123",
+     "Site name": "Marlpit Garden Centre",
+     "Supply number": "HM19 4396 7724",
+     "MSN": "E21H17468",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-b.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E21H17468",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP0993746d111",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1139",
+     "Site name": "Brookhay Brewery Taproom",
+     "Supply number": "HM19 4433 7777",
+     "MSN": "E22H00932",
+     "Collector": "Harrowmere AMR",
+     "Export file": "amr-hh-export-br2611-batch-b.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E22H00932",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP10f0cab9d2f",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1146",
+     "Site name": "Ashgrove Plastics Moulding",
+     "Supply number": "HM19 4470 7830",
+     "MSN": "K24C10417",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10417",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP114ffe53953",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1158",
+     "Site name": "Fenwick Lane Data Hall",
+     "Supply number": "HM19 4507 7883",
+     "MSN": "K24C10452",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10452",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP12917aa19ff",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1160",
+     "Site name": "Gorsebrook Laundry Services",
+     "Supply number": "HM19 4544 7936",
+     "MSN": "K24C10488",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10488",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP13544e5034c",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1177",
+     "Site name": "Hollin Bridge Sawmill",
+     "Supply number": "HM19 4581 7989",
+     "MSN": "K24C10503",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10503",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP14c47bd3e06",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1183",
+     "Site name": "Kittering Foods Packing",
+     "Supply number": "HM19 4618 8042",
+     "MSN": "K24C10519",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10519",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP1584c1eee8c",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1191",
+     "Site name": "Wexcombe Craft Studios",
+     "Supply number": "HM19 4655 8095",
+     "MSN": "K24C10541",
+     "Collector": "Kestrel Data Services",
+     "Export file": "kestrel-hh-delivery-HRM-2611.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page K24C10541",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP16c14e3dde3",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1204",
+     "Site name": "Lanyon Quay Fish Market",
+     "Supply number": "HM19 4692 8148",
+     "MSN": "E18H72206",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E18H72206",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP178d3f0cd0c",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1212",
+     "Site name": "Merrowby Care Home",
+     "Supply number": "HM19 4729 8201",
+     "MSN": "E20H45573",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E20H45573",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP1824d6a942a",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1229",
+     "Site name": "Netherfold Veterinary Hospital",
+     "Supply number": "HM19 4766 8254",
+     "MSN": "E19H38861",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E19H38861",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP19dea2084d0",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1235",
+     "Site name": "Orchard Rise Hotel",
+     "Supply number": "HM19 4803 8307",
+     "MSN": "E21H09946",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E21H09946",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP2045ed871fb",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1248",
+     "Site name": "Penhallow Tool Hire",
+     "Supply number": "HM19 4840 8360",
+     "MSN": "E20H52708",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E20H52708",
+     "Status": "Live"
+    }
+   },
+   {
+    "id": "recMP21874146faa",
+    "createdTime": "2026-09-02T09:00:00.000Z",
+    "fields": {
+     "Site ref": "HMS-1256",
+     "Site name": "Ravensworth Bowls Club",
+     "Supply number": "HM19 4877 8413",
+     "MSN": "E19H64413",
+     "Collector": "Varden Metering Services",
+     "Export file": "varden-sched3-HRM-20261115.csv",
+     "Profile class": "HH business (BHH)",
+     "Commissioning record": "Asset register page E19H64413",
+     "Status": "Live"
+    }
+   }
+  ],
+  "tblDeliveries": [
+   {
+    "id": "recCD00b6589fc6a",
+    "createdTime": "2026-10-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2610-HAR",
+     "Collector": "Harrowmere AMR",
+     "File": "amr-hh-export-br2610-batch-a.csv",
+     "Rows": 7400,
+     "Received": "2026-10-15",
+     "SHA-256": "0e9cde5708766232eb3041c1e063da90dacc1303",
+     "Run": "BR-2610"
+    }
+   },
+   {
+    "id": "recCD01356a192b7",
+    "createdTime": "2026-10-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2610-HAR",
+     "Collector": "Harrowmere AMR",
+     "File": "amr-hh-export-br2610-batch-b.csv",
+     "Rows": 5920,
+     "Received": "2026-10-15",
+     "SHA-256": "2061ff07185293d5798a94585279eba236ef4d42",
+     "Run": "BR-2610"
+    }
+   },
+   {
+    "id": "recCD02da4b9237b",
+    "createdTime": "2026-10-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2610-KES",
+     "Collector": "Kestrel Data Services",
+     "File": "kestrel-hh-delivery-HRM-2610.csv",
+     "Rows": 8880,
+     "Received": "2026-10-15",
+     "SHA-256": "98fc85ddb8d9c6458920b413eddf9108acceb154",
+     "Run": "BR-2610"
+    }
+   },
+   {
+    "id": "recCD0377de68dae",
+    "createdTime": "2026-10-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2610-VAR",
+     "Collector": "Varden Metering Services",
+     "File": "varden-sched3-HRM-20261015.csv",
+     "Rows": 8880,
+     "Received": "2026-10-15",
+     "SHA-256": "dd57ce8c5d88fff7d30f69a039661a847e2ad601",
+     "Run": "BR-2610"
+    }
+   },
+   {
+    "id": "recCD041b6453892",
+    "createdTime": "2026-11-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2611-HAR",
+     "Collector": "Harrowmere AMR",
+     "File": "amr-hh-export-br2611-batch-a.csv",
+     "Rows": 7500,
+     "Received": "2026-11-15",
+     "SHA-256": "d95349c5ffb64d09286348c05806719eeed59af0",
+     "Run": "BR-2611"
+    }
+   },
+   {
+    "id": "recCD05ac3478d69",
+    "createdTime": "2026-11-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2611-HAR",
+     "Collector": "Harrowmere AMR",
+     "File": "amr-hh-export-br2611-batch-b.csv",
+     "Rows": 7500,
+     "Received": "2026-11-15",
+     "SHA-256": "07d636f9e607caddf78d9884faa3fef97fdbf05e",
+     "Run": "BR-2611"
+    }
+   },
+   {
+    "id": "recCD06c1dfd96ee",
+    "createdTime": "2026-11-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2611-KES",
+     "Collector": "Kestrel Data Services",
+     "File": "kestrel-hh-delivery-HRM-2611.csv",
+     "Rows": 9000,
+     "Received": "2026-11-15",
+     "SHA-256": "0bb90cf17e82dd576c94b7bf02125d93a786066b",
+     "Run": "BR-2611"
+    }
+   },
+   {
+    "id": "recCD07902ba3cda",
+    "createdTime": "2026-11-15T06:30:00.000Z",
+    "fields": {
+     "Delivery ref": "BR-2611-VAR",
+     "Collector": "Varden Metering Services",
+     "File": "varden-sched3-HRM-20261115.csv",
+     "Rows": 9000,
+     "Received": "2026-11-15",
+     "SHA-256": "7d05984c6f726f180b8b092dbad40586cce1813d",
+     "Run": "BR-2611"
+    }
+   }
+  ]
+ }
+}

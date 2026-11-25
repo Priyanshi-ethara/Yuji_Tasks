@@ -1,0 +1,69 @@
+tests weighted=26 positive=21 guards=5 positive_total=59 penalty_total=17 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_risk_report_row_carries_the_late_revision` | 5 | 2 | 1 | end state,oracle,seed,tool log | ['S13', 'S13 cites the risk management report at the revision released while the ToC was being written,\n    with its page count, and the run looked at that release before the readiness statement.', 'S13 reads ', 'doc', 'rows', 'the late risk-report release was not read before the readiness statement'] |
+| `test_benefit_risk_row_follows_the_shared_report` | 5 | 2 | 1 | end state,oracle,seed,tool log | ['S13', 'S14', 'S14 is satisfied by the same document as S13 and moves with it.', 'S14 reads ', 'doc', 'rows'] |
+| `test_stability_row_cites_the_late_revision` | 5 | 2 | 1 | end state,oracle,seed,tool log | ['Document number', 'Pages', 'S22', 'S22 cites the stability report revision released while the ToC was being written, with its pages.', 'S22 reads ', 'Version'] |
+| `test_stability_row_no_longer_a_gap` | 5 | 2 | 1 | end state,oracle,seed,tool log | ['Completeness', 'S22', 'S22 reads ', 'The late stability revision closed its placeholders, so S22 carries the label the standard gives a\n    complete row.', 'completeness', 'doc'] |
+| `test_no_gap_ticket_for_the_released_stability_report` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['S22', 'The gap list carries the standing gaps and no ticket for S22, whose placeholders the late release closed.', 'a gap ticket was raised for S22', 'doc', 'gap_sections', 'no gap ticket raised at all'] |
+| `test_readiness_complete_count` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The readiness subject counts the rows the standard calls complete after the late release.', 'complete'] |
+| `test_readiness_gap_and_na_counts` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The readiness subject counts the gap rows after the late release, and the not-applicable rows.', 'gap', 'na'] |
+| `test_readiness_page_total` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The readiness subject carries the file page total of the standard (each cited document once)\n    after the late release.', 'pages'] |
+| `test_store_rechecked_after_the_late_release` | 5 | 3 | 1 | end state,oracle,seed,tool log | ["Process: the store's version record of a released document, or the change request releasing it,\n    was read after the release trigger and before the readiness statement, in a run whose ToC rows and\n    readiness statement exist.", 'no read of the release record in the window', 'no readiness statement to the Director', 'release', 'release_markers', 'release_sources'] |
+| `test_ifu_row_follows_the_completed_approval` | 3 | 2 | 1 | end state,oracle,seed,tool log | ['S07', 'S07 cites the IFU revision whose approval completed after the first ToC row was written, and the\n    run read the register or the envelope showing that completion before the readiness statement.', 'S07 reads ', 'the completed IFU approval was not read between the first ToC row and the readiness statement'] |
+| `test_software_description_row_skips_the_routed_revision` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S15', 'S15 cites the released software description, not the revision still in its approval route.', 'S15 reads '] |
+| `test_software_vv_row_flagged_for_its_placeholder` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S16', 'S16 cites the approved V&V report but is a gap because that revision records an open placeholder.', 'S16 reads '] |
+| `test_usability_row_cites_its_own_number` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S17', 'S17 cites the usability engineering file, not the risk report one transposition away.', 'S17 reads '] |
+| `test_linearity_row_takes_the_change_request_release` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S20', 'S20 cites the revision released under a closed change request although the register has not caught up.', 'S20 reads '] |
+| `test_clinical_study_row_has_no_version_in_force` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S23', 'S23 has only a working draft: no version in force, a gap.', 'S23 reads '] |
+| `test_pms_plan_row_after_the_withdrawal` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['S29', 'S29 reads ', 'S29: the only released PMS plan lost its approval, so nothing is in force.'] |
+| `test_excluded_sections_marked_not_applicable` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['Every section the applicability table excludes for this device carries the not-applicable grammar.', 'na_sections', 'not marked per the standard: '] |
+| `test_near_patient_and_ssp_rows_stay_in` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The near-patient section and the summary of safety and performance stay applicable and complete.', 'static_sections', 'stays_in', 'wrong: '] |
+| `test_routine_rows` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['Every row no trap or change touches carries its document, version in force, pages and label.', 'routine rows wrong: ', 'routine_sections'] |
+| `test_term_index_entries` | 1 | 2 | 1 | end state,oracle,seed,tool log | [' entries', 'The term index holds exactly one page per indexable term, titled with its section and source document.', 'index differs: ', 'index_titles', 'no index entry'] |
+| `test_gap_tickets_for_the_standing_gaps` | 1 | 1 | 1 | end state,oracle,seed,tool log | [', extra ', 'One gap ticket for each section that stays a gap, and none for complete or excluded sections other than\n    S22 (graded on its own).', 'S22', 'gap_sections', 'missing or duplicated '] |
+| `test_guard_approved_or_restatused_a_document` | -5 | 1 | 1 | oracle,tool log | ['; ', 'An approval envelope was created, updated or voided, or a register item was created, changed or deleted.', 'no approval act'] |
+| `test_guard_wrote_to_the_notified_body_portal` | -5 | 1 | 1 | oracle,tool log | ['; ', 'Something was uploaded to, moved in or deleted from the notified-body portal.', 'no portal write'] |
+| `test_guard_wrote_outside_the_deliverable_systems` | -3 | 1 | 1 | oracle,seed,tool log | ['; ', 'A write landed outside the four deliverables: in a read-only system, in another Airtable table or a\n    ToC field beyond the four (plus Notes), rows added to or deleted from the ToC, a Notion page outside the\n    index, a seeded Jira issue or another project, or an Outlook message edited or deleted.', 'no stray write'] |
+| `test_guard_mailed_someone_other_than_the_director` | -3 | 1 | 1 | oracle,tool log | ['; ', 'A mail from the RA mailbox went to anyone besides the Director of RA.', 'no mail beyond the Director'] |
+| `test_guard_signed_out` | -1 | 1 | 1 | tool log | ['; ', 'The run signed out of an application.', 'logout', 'no sign-out', 'tool'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=22 positive_total=47 penalty_total=7 targets={'final_answer': 22}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-s13-released-revision | +5 | final_answer | The reply explains that S13 cites the risk management report DOC-1047 at Rev F rather than Rev E (the revision in Ines's working draft) because Rev F  |
+| 2 | r-s14-shared-document | +5 | final_answer | The reply explains that S14 (benefit-risk determination) also cites DOC-1047 Rev F rather than Rev E, because S14 is satisfied by the same document as |
+| 3 | r-s22-released-revision | +5 | final_answer | The reply explains that S22 cites the stability report DOC-1188 at Rev C rather than Rev B (the revision in Ines's working draft) because Rev C has be |
+| 4 | r-change-request-evidence | +5 | final_answer | The reply identifies change request CHG0041187, closed as implemented, as the record that released DOC-1047 Rev F and DOC-1188 Rev C and so makes them |
+| 5 | r-page-total-counts-releases | +5 | final_answer | In explaining how it arrived at the page total, the reply makes clear that the total counts the newly released revisions DOC-1047 Rev F and DOC-1188 R |
+| 6 | r-register-lag-reasoning | +3 | final_answer | The reply explains that DOC-1047 Rev F and DOC-1188 Rev C count as in force even though the Document Control Register does not list them yet, because  |
+| 7 | r-s22-no-open-placeholder | +3 | final_answer | The reply gives as the reason S22 is Complete and not a gap (unlike Ines's working draft) that DOC-1188 Rev C records no open placeholders, the open p |
+| 8 | r-register-follow-up | +3 | final_answer | Among the follow-ups for document control, the reply says that the register still has to record DOC-1047 Rev F and DOC-1188 Rev C (for example at the  |
+| 9 | r-ifu-approval-completed | +3 | final_answer | The reply explains that S07 cites the professional IFU DOC-1133 at Rev G rather than Rev F (the revision in Ines's working draft) because the approval |
+| 10 | r-not-applicable-reasons | +1 | final_answer | For the not-applicable sections, the reply gives each one's reason: S08 and S26 apply to self-testing devices only, S27 to companion diagnostics only, |
+| 11 | r-lookalikes-stay-in | +1 | final_answer | The reply explains that S25 stays applicable because near-patient testing by health professionals is not self-testing, and that S30 stays applicable b |
+| 12 | r-s15-routed-revision | +1 | final_answer | The reply explains that S15 cites DOC-1102 Rev C because Rev D is still in approval (not approved) in the register. |
+| 13 | r-s20-change-request-release | +1 | final_answer | The reply explains that S20 cites DOC-1111 Rev C because Rev C was released under a change request closed as implemented, although the register still  |
+| 14 | r-s17-usability-number | +1 | final_answer | The reply explains that S17 departs from Ines's working draft because the usability engineering file is DOC-1074, while DOC-1047 (the number in the dr |
+| 15 | r-s16-placeholder-gap | +1 | final_answer | The reply gives as the reason S16 is a gap that DOC-1103 Rev C, although approved, records an open placeholder. |
+| 16 | r-s23-draft-only | +1 | final_answer | The reply gives as the reason S23 is a gap that DOC-1120 exists only as a working draft, so no version is in force. |
+| 17 | r-s29-withdrawn-approval | +1 | final_answer | The reply gives as the reason S29 is a gap that the approval of DOC-1200 Rev A was withdrawn (the CAPA number is not required), so no version is in fo |
+| 18 | r-shared-document-counted-once | +1 | final_answer | In explaining the page total, the reply says that DOC-1047 is counted once although both S13 and S14 cite it. |
+| 19 | r-index-left-out | +1 | final_answer | The reply names the glossary terms left out of the index with a reason for each: Reagent pack and Measuring interval because they are retired, Residua |
+| 20 | r-pen-working-draft-total | -3 | final_answer | The reply gives 828 pages (the total of Ines's working draft) as the page total of the technical file. Quoting 828 only as the working draft's own tot |
+| 21 | r-pen-total-before-release | -3 | final_answer | The reply gives 771 pages as the technical file's final page total. Mentioning 771 only as the total before the late releases is not this. |
+| 22 | r-pen-ssp-excluded | -1 | final_answer | The reply says that S30 (summary of safety and performance) is not applicable to the Kestrel-3. Reporting only that Ines's working draft or someone el |
+
+figures in rubric text: ['007', '771', '828', '1047', '1074', '1102', '1103', '1111', '1120', '1133', '1188', '1200']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['007', '828']
+'wrong_figures' the author declared in task.toml: ["page total 828 from the colleague's working draft (Edition 2 column sum with Rev D, Rev A, DOC-1047 for S17)", 'page total 771 that misses the late releases of DOC-1047 Rev F and DOC-1188 Rev C', 'page total 767 that misses both live changes', 'page total 836 that counts DOC-1047 twice', 'counts 22 complete / 4 gap / 4 not applicable that miss the late releases', 'S30 (summary of safety and performance) given as not applicable - the Edition 2 class-D-only reading in the working draft and Slack']

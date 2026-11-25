@@ -1,0 +1,23 @@
+window,run,team,pool,gpus,steps,sec_per_update,hours,gpu_hours,status,source
+2026-11-19,FT-CLM-07,Applied ML,ft-pool-north,16,3600,5.1,6,96,under allowance,Emeka draft
+2026-11-19,FT-UW-03,Applied ML,ft-pool-north,8,4000,3.7,5,40,under allowance,Emeka draft
+2026-11-19,FT-FNOL-11,Applied ML,ft-pool-south,8,5000,7.6,11,88,under allowance,Emeka draft
+2026-11-19,FT-SUB-02,Applied ML,ft-pool-north,16,4000,6.9,8,128,under allowance,Emeka draft
+2026-11-19,Pricing backfill,Pricing,ft-pool-south,16,,,12,,not a fine-tune,CAP-32
+2026-11-05,FT-CLM-06,Applied ML,ft-pool-north,16,3600,5.02,6,96,history,ledger
+2026-11-12,FT-RISK-04,Risk Analytics,ft-pool-north,8,3000,8.1,7,56,history,ledger
+2026-10-29,FT-FNOL-10,Applied ML,ft-pool-north,8,5000,3.95,6,48,history,ledger
+2026-10-22,FT-UW-02,Applied ML,ft-pool-north,8,4000,3.64,5,40,history,ledger
+2026-10-15,FT-SUB-01,Applied ML,ft-pool-north,16,4000,6.12,7,112,history,ledger
+2026-10-08,FT-CLM-05,Applied ML,ft-pool-north,16,3000,4.8,4,64,history,ledger
+2026-10-01,FT-RISK-03,Risk Analytics,ft-pool-north,8,3000,7.7,7,56,history,ledger
+2026-09-24,FT-UW-01,Applied ML,ft-pool-north,8,3500,3.6,4,32,history,ledger
+2026-09-17,FT-FNOL-09,Applied ML,ft-pool-north,8,5000,3.9,6,48,history,ledger
+2026-09-10,FT-CLM-04,Applied ML,ft-pool-north,16,3000,4.7,4,64,history,ledger
+2026-09-03,FT-SUB-00,Applied ML,ft-pool-north,16,3000,6.0,5,80,history,ledger
+2026-08-27,FT-RISK-02,Risk Analytics,ft-pool-north,8,2800,7.9,7,56,history,ledger
+2026-11-26,FT-CLM-07a,Applied ML,ft-pool-north,16,1800,5.1,3,48,planning,Emeka draft
+2026-11-26,FT-RISK-05,Risk Analytics,ft-pool-north,8,3000,8.1,7,56,planning,Emeka draft
+2026-12-03,FT-UW-04 (tentative),Applied ML,ft-pool-north,8,4000,3.7,5,40,planning,Emeka draft
+2026-12-03,FT-SUB-03 (tentative),Applied ML,ft-pool-north,16,4000,6.9,8,128,planning,Emeka draft
+2026-11-19,WINDOW TOTAL (Applied ML),Applied ML,,48,,,,352,,Emeka draft

@@ -1,0 +1,386 @@
+{
+ "bases": [
+  {
+   "id": "appOrvRegSub01",
+   "name": "Orvane Regulatory Submissions",
+   "permission_level": "create"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblKs3TfToc",
+   "base_id": "appOrvRegSub01",
+   "name": "Kestrel-3 TF ToC",
+   "fields": [
+    {
+     "id": "fldKs3Sec",
+     "name": "Section",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldKs3Tit",
+     "name": "Title",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldKs3Doc",
+     "name": "Document number",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldKs3Ver",
+     "name": "Version",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldKs3Pag",
+     "name": "Pages",
+     "type": "number"
+    },
+    {
+     "id": "fldKs3Cmp",
+     "name": "Completeness",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldKs3Not",
+     "name": "Notes",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tblNbSubLog",
+   "base_id": "appOrvRegSub01",
+   "name": "NB Submission Log",
+   "fields": [
+    {
+     "id": "fldNbSub",
+     "name": "Submission",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldNbBody",
+     "name": "Notified body",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldNbDate",
+     "name": "Submitted",
+     "type": "date"
+    },
+    {
+     "id": "fldNbPag",
+     "name": "Pages",
+     "type": "number"
+    },
+    {
+     "id": "fldNbOut",
+     "name": "Outcome",
+     "type": "singleLineText"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblKs3TfToc": [
+   {
+    "id": "recKs3TocS01",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S01",
+     "Title": "Device description and specification"
+    }
+   },
+   {
+    "id": "recKs3TocS02",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S02",
+     "Title": "Intended purpose and indications"
+    }
+   },
+   {
+    "id": "recKs3TocS03",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S03",
+     "Title": "Classification rationale"
+    }
+   },
+   {
+    "id": "recKs3TocS04",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S04",
+     "Title": "Variants, configurations and accessories"
+    }
+   },
+   {
+    "id": "recKs3TocS05",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S05",
+     "Title": "Previous and similar generations"
+    }
+   },
+   {
+    "id": "recKs3TocS06",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S06",
+     "Title": "Labels and packaging labelling"
+    }
+   },
+   {
+    "id": "recKs3TocS07",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S07",
+     "Title": "Instructions for use - professional user"
+    }
+   },
+   {
+    "id": "recKs3TocS08",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S08",
+     "Title": "Instructions for use - lay user"
+    }
+   },
+   {
+    "id": "recKs3TocS09",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S09",
+     "Title": "Design and manufacturing information"
+    }
+   },
+   {
+    "id": "recKs3TocS10",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S10",
+     "Title": "Manufacturing sites and critical suppliers"
+    }
+   },
+   {
+    "id": "recKs3TocS11",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S11",
+     "Title": "General safety and performance requirements checklist"
+    }
+   },
+   {
+    "id": "recKs3TocS12",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S12",
+     "Title": "Risk management plan"
+    }
+   },
+   {
+    "id": "recKs3TocS13",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S13",
+     "Title": "Risk management report"
+    }
+   },
+   {
+    "id": "recKs3TocS14",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S14",
+     "Title": "Benefit-risk determination"
+    }
+   },
+   {
+    "id": "recKs3TocS15",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S15",
+     "Title": "Software description and architecture"
+    }
+   },
+   {
+    "id": "recKs3TocS16",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S16",
+     "Title": "Software verification and validation"
+    }
+   },
+   {
+    "id": "recKs3TocS17",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S17",
+     "Title": "Usability engineering file"
+    }
+   },
+   {
+    "id": "recKs3TocS18",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S18",
+     "Title": "Electrical safety and electromagnetic compatibility"
+    }
+   },
+   {
+    "id": "recKs3TocS19",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S19",
+     "Title": "Analytical performance - precision"
+    }
+   },
+   {
+    "id": "recKs3TocS20",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S20",
+     "Title": "Analytical performance - trueness and linearity"
+    }
+   },
+   {
+    "id": "recKs3TocS21",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S21",
+     "Title": "Analytical performance - interference and cross-reactivity"
+    }
+   },
+   {
+    "id": "recKs3TocS22",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S22",
+     "Title": "Stability - shelf life, in-use and transport"
+    }
+   },
+   {
+    "id": "recKs3TocS23",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S23",
+     "Title": "Clinical performance study report"
+    }
+   },
+   {
+    "id": "recKs3TocS24",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S24",
+     "Title": "Performance evaluation report"
+    }
+   },
+   {
+    "id": "recKs3TocS25",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S25",
+     "Title": "Near-patient testing - performance with intended users"
+    }
+   },
+   {
+    "id": "recKs3TocS26",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S26",
+     "Title": "Self-testing - lay-user performance study"
+    }
+   },
+   {
+    "id": "recKs3TocS27",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S27",
+     "Title": "Companion diagnostic - medicinal product consultation"
+    }
+   },
+   {
+    "id": "recKs3TocS28",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S28",
+     "Title": "Batch verification by an EU reference laboratory"
+    }
+   },
+   {
+    "id": "recKs3TocS29",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S29",
+     "Title": "Post-market surveillance plan"
+    }
+   },
+   {
+    "id": "recKs3TocS30",
+    "createdTime": "2026-11-06T10:00:00.000Z",
+    "fields": {
+     "Section": "S30",
+     "Title": "Summary of safety and performance"
+    }
+   }
+  ],
+  "tblNbSubLog": [
+   {
+    "id": "recNbLog0001",
+    "createdTime": "2026-10-15T09:00:00.000Z",
+    "fields": {
+     "Submission": "Kestrel-2 technical file",
+     "Notified body": "Nordmark NB 2291",
+     "Submitted": "2024-06-11",
+     "Pages": 702,
+     "Outcome": "Certificate issued 2025-01-20"
+    }
+   },
+   {
+    "id": "recNbLog0002",
+    "createdTime": "2026-10-15T09:00:00.000Z",
+    "fields": {
+     "Submission": "Kestrel-2 change notification CN-07",
+     "Notified body": "Nordmark NB 2291",
+     "Submitted": "2025-04-02",
+     "Pages": 64,
+     "Outcome": "Accepted"
+    }
+   },
+   {
+    "id": "recNbLog0003",
+    "createdTime": "2026-10-15T09:00:00.000Z",
+    "fields": {
+     "Submission": "Kestrel-3 dry-run ToC (internal)",
+     "Notified body": "internal",
+     "Submitted": "2026-09-14",
+     "Pages": 688,
+     "Outcome": "Closed - superseded by the November compilation"
+    }
+   },
+   {
+    "id": "recNbLog0004",
+    "createdTime": "2026-10-15T09:00:00.000Z",
+    "fields": {
+     "Submission": "Kestrel-3 pre-submission meeting pack",
+     "Notified body": "Nordmark NB 2291",
+     "Submitted": "2026-10-15",
+     "Pages": 41,
+     "Outcome": "Meeting held 2026-10-29"
+    }
+   },
+   {
+    "id": "recNbLog0005",
+    "createdTime": "2026-10-15T09:00:00.000Z",
+    "fields": {
+     "Submission": "Kestrel-3 technical file",
+     "Notified body": "Nordmark NB 2291",
+     "Submitted": "",
+     "Pages": 0,
+     "Outcome": "Planned - upload by the Director after sign-off"
+    }
+   }
+  ]
+ }
+}

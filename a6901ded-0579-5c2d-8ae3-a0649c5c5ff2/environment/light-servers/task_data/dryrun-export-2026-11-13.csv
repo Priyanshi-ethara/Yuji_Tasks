@@ -1,0 +1,27 @@
+run,namespace,micro_batch,grad_accum,seq_len,median_s_per_update,measured_updates,date,status
+FT-CLM-07,ft-pool-north,4,8,4096,5.1,40,2026-11-12/13,OK
+FT-UW-03,ft-pool-north,8,4,2048,3.7,40,2026-11-12/13,OK
+FT-FNOL-11,ft-pool-south,8,2,2560,7.6,40,2026-11-12/13,OK
+FT-SUB-02,ft-pool-north,2,8,4096,6.9,40,2026-11-12/13,OK
+FT-FNOL-1-trial0,ft-pool-north,4,2,2048,5.03,40,2026-08-14,OK
+FT-FNOL-2-trial1,ft-pool-north,8,2,4096,5.45,40,2026-08-15,OOM at warm-up
+FT-FNOL-4-trial2,ft-pool-north,4,8,4096,7.19,40,2026-10-21,OK
+FT-UW-01-trial3,ft-pool-north,4,4,2048,8.23,40,2026-09-26,OK
+FT-SUB-05-trial4,ft-pool-north,4,8,2048,7.23,40,2026-10-24,OK
+FT-FNOL-2-trial5,ft-pool-north,4,8,2048,6.05,40,2026-08-27,OK
+FT-CLM-02-trial6,ft-pool-north,4,3,4096,6.0,40,2026-10-06,OK
+FT-UW-03-trial7,ft-pool-north,2,8,4096,6.74,40,2026-10-22,OK
+FT-CLM-06-trial8,ft-pool-north,4,8,2048,7.48,40,2026-08-20,OOM at warm-up
+FT-UW-04-trial9,ft-pool-north,8,8,2048,4.49,40,2026-08-03,OK
+FT-RISK-04-trial10,ft-pool-north,2,4,2048,2.69,40,2026-10-26,OOM at warm-up
+FT-SUB-02-trial11,ft-pool-north,8,4,4096,6.02,40,2026-10-18,OK
+FT-SUB-04-trial12,ft-pool-north,4,8,2048,6.52,40,2026-09-09,OK
+FT-CLM-04-trial13,ft-pool-north,4,8,2048,5.64,40,2026-09-15,OK
+FT-FNOL-1-trial14,ft-pool-north,2,3,2048,4.9,40,2026-08-14,OK
+FT-CLM-02-trial15,ft-pool-north,8,3,4096,2.53,40,2026-08-28,OK
+FT-SUB-06-trial16,ft-pool-north,4,8,2048,3.35,40,2026-09-02,OOM at warm-up
+FT-FNOL-1-trial17,ft-pool-north,4,4,4096,6.62,40,2026-08-06,OK
+FT-UW-03-trial18,ft-pool-north,2,4,2048,7.3,40,2026-09-27,OK
+FT-FNOL-5-trial19,ft-pool-north,8,2,2048,2.31,40,2026-08-22,OOM at warm-up
+FT-UW-02-trial20,ft-pool-north,4,2,2048,6.36,40,2026-08-24,OK
+FT-UW-01-trial21,ft-pool-north,4,8,4096,5.32,40,2026-09-04,OK

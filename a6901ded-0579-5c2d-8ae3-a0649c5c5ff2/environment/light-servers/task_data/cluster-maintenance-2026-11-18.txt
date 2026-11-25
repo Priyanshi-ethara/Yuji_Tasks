@@ -1,0 +1,7 @@
+CLUSTER MAINTENANCE NOTICE — ft-pool-south
+Change: CHG0004706 (normal), owner Henrike Solberg
+When: Wednesday 18 November 2026, 20:00-23:00 UTC
+What: fleet firmware and driver update on the four south-pool HGX nodes (gpu-south-01 to gpu-south-04); nodes cordoned and drained from 19:45 UTC
+Impact: no fine-tune or batch job may run on ft-pool-south during the window; staged trainers stay at zero replicas
+Back in service: by 23:30 UTC Wednesday, verified with a burn-in job; the 06:00 UTC Thursday launch window is unaffected
+Contact: #gpu-capacity

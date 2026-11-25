@@ -1,0 +1,187 @@
+{
+ "users": [
+  {
+   "id": "UT02MAREN",
+   "name": "maren",
+   "real_name": "Maren Ostrowski",
+   "email": "maren.ostrowski@talvik.example",
+   "is_admin": true,
+   "is_bot": false,
+   "presence": "active",
+   "title": "Head of Sustainability Reporting"
+  },
+  {
+   "id": "UT02DESK",
+   "name": "carbon-desk",
+   "real_name": "Carbon Accounting Desk",
+   "email": "alex.carter@contoso.com",
+   "is_admin": false,
+   "is_bot": false,
+   "presence": "active",
+   "title": "Analyst"
+  },
+  {
+   "id": "UT02DEV",
+   "name": "dev",
+   "real_name": "Dev Rautela",
+   "email": "dev.rautela@talvik.example",
+   "is_admin": false,
+   "is_bot": false,
+   "presence": "active",
+   "title": "Sustainability analyst"
+  },
+  {
+   "id": "UT02PRIYA",
+   "name": "priya",
+   "real_name": "Priya Venkataraman",
+   "email": "priya.venkataraman@talvik.example",
+   "is_admin": false,
+   "is_bot": false,
+   "presence": "away",
+   "title": "EFS data steward"
+  },
+  {
+   "id": "UT02HOLLIS",
+   "name": "hollis",
+   "real_name": "Hollis Brandt",
+   "email": "hollis.brandt@talvik.example",
+   "is_admin": false,
+   "is_bot": false,
+   "presence": "active",
+   "title": "Facilities energy manager"
+  },
+  {
+   "id": "UT02INES",
+   "name": "ines",
+   "real_name": "Inês Carvalho",
+   "email": "ines.carvalho@talvik.example",
+   "is_admin": false,
+   "is_bot": false,
+   "presence": "active",
+   "title": "Energy procurement EU/UK"
+  }
+ ],
+ "channels": [
+  {
+   "id": "CT02SUST",
+   "name": "sustainability-reporting",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "FY2026 inventory",
+   "purpose": "Group Sustainability Reporting",
+   "creator": "UT02MAREN",
+   "created": 1767225600,
+   "num_members": 5
+  },
+  {
+   "id": "CT02ENERGY",
+   "name": "energy-managers",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Sites and meters",
+   "purpose": "Facilities energy",
+   "creator": "UT02HOLLIS",
+   "created": 1767225600,
+   "num_members": 4
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1786437000.000100",
+   "channel_id": "CT02SUST",
+   "user_id": "UT02PRIYA",
+   "text": "EFS-2026.1 is published (CSV in the usual place). Reminder: which edition serves which year is Schedule A's call, and EFS-2025 has had two errata.",
+   "thread_ts": null,
+   "reply_count": 1,
+   "reactions": []
+  },
+  {
+   "ts": "1786437300.000200",
+   "channel_id": "CT02SUST",
+   "user_id": "UT02DEV",
+   "text": "Nice, newer grid data — I'll use 2026.1 for my FY2026 draft then.",
+   "thread_ts": "1786437000.000100",
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1791010000.000100",
+   "channel_id": "CT02SUST",
+   "user_id": "UT02INES",
+   "text": "Leeds GO is retired in CertiQ, so Leeds is green for FY2026 :tada:",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1791620000.000100",
+   "channel_id": "CT02SUST",
+   "user_id": "UT02MAREN",
+   "text": "Board for FY2026 is up, 22 items. Desk fills the three columns, then the summary page in SUST. Nobody keys anything in the registry mirror, ever.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1790500000.000100",
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02HOLLIS",
+   "text": "Greer BMS meter still reads the tenant CT set — don't use it for anything billing-related until the FY2027 rewire.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1790600000.000100",
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02DEV",
+   "text": "Why is Gdańsk so small on the ledger? 400-something a month vs 400k elsewhere. Small warehouse?",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "CT02SUST",
+   "user_id": "UT02MAREN"
+  },
+  {
+   "channel_id": "CT02SUST",
+   "user_id": "UT02DESK"
+  },
+  {
+   "channel_id": "CT02SUST",
+   "user_id": "UT02DEV"
+  },
+  {
+   "channel_id": "CT02SUST",
+   "user_id": "UT02PRIYA"
+  },
+  {
+   "channel_id": "CT02SUST",
+   "user_id": "UT02INES"
+  },
+  {
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02HOLLIS"
+  },
+  {
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02DESK"
+  },
+  {
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02DEV"
+  },
+  {
+   "channel_id": "CT02ENERGY",
+   "user_id": "UT02MAREN"
+  }
+ ],
+ "team": {
+  "id": "TT02TALVIK",
+  "name": "Talvik Precision Components",
+  "domain": "talvik"
+ }
+}

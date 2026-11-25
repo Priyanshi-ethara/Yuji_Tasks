@@ -1,0 +1,259 @@
+{
+  "pytest": {
+    "score": 1.0,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 1.0,
+        "raw": 1.0,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 59 of 59, charged 0"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 1.0,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-s13-released-revision",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.10638297872340426,
+        "description": "[final answer] The reply explains that S13 cites the risk management report DOC-1047 at Rev F rather than Rev E (the revision in Ines's working draft) because Rev F has been released into the controlled store and is now the version in force. Page counts are not required, and it does not matter whether the reply describes this as a change that happened during the work.",
+        "reasoning": "final_message.md says the controlled store received DOC-1047 Rev F under closed-as-implemented CHG0041187 and that \u201cS13 ... now cites DOC-1047 Rev F ... instead of Rev E.\u201d It also treats the released version as in force in its page-total explanation."
+      },
+      {
+        "id": "2",
+        "name": "r-s14-shared-document",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.10638297872340426,
+        "description": "[final answer] The reply explains that S14 (benefit-risk determination) also cites DOC-1047 Rev F rather than Rev E, because S14 is satisfied by the same document as S13.",
+        "reasoning": "final_message.md explicitly says: \u201cS14 is satisfied by the same document DOC-1047, so it also cites Rev F.\u201d"
+      },
+      {
+        "id": "3",
+        "name": "r-s22-released-revision",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.10638297872340426,
+        "description": "[final answer] The reply explains that S22 cites the stability report DOC-1188 at Rev C rather than Rev B (the revision in Ines's working draft) because Rev C has been released into the controlled store and is now the version in force. Page counts are not required, and it does not matter whether the reply describes this as a change that happened during the work.",
+        "reasoning": "final_message.md says the controlled store received DOC-1188 Rev C under CHG0041187 and that \u201cS22 ... now cites DOC-1188 Rev C\u201d instead of the Rev B version described immediately before it."
+      },
+      {
+        "id": "4",
+        "name": "r-change-request-evidence",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.10638297872340426,
+        "description": "[final answer] The reply identifies change request CHG0041187, closed as implemented, as the record that released DOC-1047 Rev F and DOC-1188 Rev C and so makes them the versions in force.",
+        "reasoning": "final_message.md identifies \u201cchange request CHG0041187 (closed as implemented)\u201d as releasing both DOC-1047 Rev F and DOC-1188 Rev C into the controlled store."
+      },
+      {
+        "id": "5",
+        "name": "r-page-total-counts-releases",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.10638297872340426,
+        "description": "[final answer] In explaining how it arrived at the page total, the reply makes clear that the total counts the newly released revisions DOC-1047 Rev F and DOC-1188 Rev C - for example by giving their page counts in the breakdown, by saying the total includes them, or by saying that they add 13 pages to the earlier figure.",
+        "reasoning": "final_message.md states: \u201cThe page total rose from 771 to 784 pages (+13) because of these two late releases,\u201d referring to DOC-1047 Rev F and DOC-1188 Rev C."
+      },
+      {
+        "id": "6",
+        "name": "r-register-lag-reasoning",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.06382978723404255,
+        "description": "[final answer] The reply explains that DOC-1047 Rev F and DOC-1188 Rev C count as in force even though the Document Control Register does not list them yet, because the standard or QA-SOP-007 accepts a release under a change request closed as implemented as approval evidence until the register is reconciled. No rule or clause number is required.",
+        "reasoning": "final_message.md explicitly explains that STD-014 and QA-SOP-007 \u201caccept a release under a change request closed as implemented as approval evidence until the weekly register sync,\u201d despite the register not listing the revisions yet."
+      },
+      {
+        "id": "7",
+        "name": "r-s22-no-open-placeholder",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.06382978723404255,
+        "description": "[final answer] The reply gives as the reason S22 is Complete and not a gap (unlike Ines's working draft) that DOC-1188 Rev C records no open placeholders, the open placeholders of Rev B having been closed.",
+        "reasoning": "final_message.md says DOC-1188 Rev C has \u201copen placeholders 0\u201d and \u201cclosed the open placeholders of Rev B, so S22 is Complete instead of a gap.\u201d"
+      },
+      {
+        "id": "8",
+        "name": "r-register-follow-up",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.06382978723404255,
+        "description": "[final answer] Among the follow-ups for document control, the reply says that the register still has to record DOC-1047 Rev F and DOC-1188 Rev C (for example at the next register sync).",
+        "reasoning": "final_message.md says: \u201cthe register still needs to record DOC-1047 Rev F and DOC-1188 Rev C ... at the next sync.\u201d"
+      },
+      {
+        "id": "9",
+        "name": "r-ifu-approval-completed",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.06382978723404255,
+        "description": "[final answer] The reply explains that S07 cites the professional IFU DOC-1133 at Rev G rather than Rev F (the revision in Ines's working draft) because the approval of Rev G has completed (the register shows it Approved, or its approval envelope is completed). It does not matter whether the reply describes this as a change that happened during the work.",
+        "reasoning": "final_message.md says \u201cthe approval of the professional IFU DOC-1133 Rev G completed\u201d and therefore \u201cS07 ... cites Rev G ... instead of Rev F.\u201d"
+      },
+      {
+        "id": "10",
+        "name": "r-not-applicable-reasons",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] For the not-applicable sections, the reply gives each one's reason: S08 and S26 apply to self-testing devices only, S27 to companion diagnostics only, S28 to class D devices only.",
+        "reasoning": "final_message.md gives every required reason: S08 and S26 are \u201cself-testing devices only,\u201d S27 is \u201ccompanion diagnostics only,\u201d and S28 is \u201cclass D devices only.\u201d"
+      },
+      {
+        "id": "11",
+        "name": "r-lookalikes-stay-in",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply explains that S25 stays applicable because near-patient testing by health professionals is not self-testing, and that S30 stays applicable because Edition 3 requires the summary of safety and performance for class C devices.",
+        "reasoning": "final_message.md says S25 remains applicable because \u201cnear-patient testing by health professionals is not self-testing,\u201d and S30 remains applicable because Edition 3 requires SSP for class C as well as class D."
+      },
+      {
+        "id": "12",
+        "name": "r-s15-routed-revision",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply explains that S15 cites DOC-1102 Rev C because Rev D is still in approval (not approved) in the register.",
+        "reasoning": "final_message.md says S15 cites DOC-1102 Rev C because Rev D \u201cis stored for its approval route but the register still shows it In approval, so it is not in force.\u201d"
+      },
+      {
+        "id": "13",
+        "name": "r-s20-change-request-release",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply explains that S20 cites DOC-1111 Rev C because Rev C was released under a change request closed as implemented, although the register still shows Rev B as the approved revision.",
+        "reasoning": "final_message.md says S20 cites DOC-1111 Rev C, released under closed change request CHG0041102, while \u201cthe register still shows Rev B only.\u201d"
+      },
+      {
+        "id": "14",
+        "name": "r-s17-usability-number",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply explains that S17 departs from Ines's working draft because the usability engineering file is DOC-1074, while DOC-1047 (the number in the draft) is the risk management report.",
+        "reasoning": "final_message.md says S17 cites DOC-1074, \u201cthe usability engineering file,\u201d rather than DOC-1047, \u201cthe risk management report,\u201d and notes the working draft transposed the number."
+      },
+      {
+        "id": "15",
+        "name": "r-s16-placeholder-gap",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply gives as the reason S16 is a gap that DOC-1103 Rev C, although approved, records an open placeholder.",
+        "reasoning": "final_message.md identifies S16 as a remaining gap because approved, in-force DOC-1103 Rev C \u201crecords an open placeholder.\u201d"
+      },
+      {
+        "id": "16",
+        "name": "r-s23-draft-only",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply gives as the reason S23 is a gap that DOC-1120 exists only as a working draft, so no version is in force.",
+        "reasoning": "final_message.md says S23 is a gap because \u201cDOC-1120 exists only as a working draft (Rev A); no version is in force.\u201d"
+      },
+      {
+        "id": "17",
+        "name": "r-s29-withdrawn-approval",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply gives as the reason S29 is a gap that the approval of DOC-1200 Rev A was withdrawn (the CAPA number is not required), so no version is in force.",
+        "reasoning": "final_message.md says S29 is a gap because \u201cthe approval of DOC-1200 Rev A was withdrawn ... so no PMS plan is in force.\u201d"
+      },
+      {
+        "id": "18",
+        "name": "r-shared-document-counted-once",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] In explaining the page total, the reply says that DOC-1047 is counted once although both S13 and S14 cite it.",
+        "reasoning": "final_message.md explicitly says: \u201cDOC-1047 is cited by both S13 and S14 but counted once.\u201d"
+      },
+      {
+        "id": "19",
+        "name": "r-index-left-out",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.02127659574468085,
+        "description": "[final answer] The reply names the glossary terms left out of the index with a reason for each: Reagent pack and Measuring interval because they are retired, Residual risk acceptability matrix because it is only proposed, and Lay user and Self-test result because their source documents are not cited by any applicable section.",
+        "reasoning": "final_message.md names all five exclusions and their reasons: Lay user and Self-test result have sources not cited by applicable sections; Reagent pack and Measuring interval are Retired; Residual risk acceptability matrix is Proposed."
+      },
+      {
+        "id": "20",
+        "name": "r-pen-working-draft-total",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.06382978723404255,
+        "description": "[final answer] The reply gives 828 pages (the total of Ines's working draft) as the page total of the technical file. Quoting 828 only as the working draft's own total, for example in a comparison of the draft with the reply's total, is not this.",
+        "reasoning": "final_message.md gives 784 pages as the technical-file total and never gives 828 pages as that total."
+      },
+      {
+        "id": "21",
+        "name": "r-pen-total-before-release",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.06382978723404255,
+        "description": "[final answer] The reply gives 771 pages as the technical file's final page total. Mentioning 771 only as the total before the late releases is not this.",
+        "reasoning": "final_message.md mentions 771 only as the earlier value in \u201crose from 771 to 784 pages\u201d; it gives 784, not 771, as the final total."
+      },
+      {
+        "id": "22",
+        "name": "r-pen-ssp-excluded",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.02127659574468085,
+        "description": "[final answer] The reply says that S30 (summary of safety and performance) is not applicable to the Kestrel-3. Reporting only that Ines's working draft or someone else marked S30 not applicable, while the reply itself keeps S30 applicable, is not this.",
+        "reasoning": "final_message.md explicitly keeps S30 applicable: \u201cS30 ... stays applicable: Edition 3 requires the SSP for class C.\u201d"
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "/logs/verifier/judge_ws",
+      "isolated": false,
+      "atif_trajectory": "/logs/verifier/judge_ws/trajectory.json",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\"r-s13-released-revision\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says the controlled store received DOC-1047 Rev F under closed-as-implemented CHG0041187 and that \u201cS13 ... now cites DOC-1047 Rev F ... instead of Rev E.\u201d It also treats the released version as in force in its page-total explanation.\"},\"r-s14-shared-document\":{\"score\":\"yes\",\"reasoning\":\"final_message.md explicitly says: \u201cS14 is satisfied by the same document DOC-1047, so it also cites Rev F.\u201d\"},\"r-s22-released-revision\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says the controlled store received DOC-1188 Rev C under CHG0041187 and that \u201cS22 ... now cites DOC-1188 Rev C\u201d instead of the Rev B version described immediately before it.\"},\"r-change-request-evidence\":{\"score\":\"yes\",\"reasoning\":\"final_message.md identifies \u201cchange request CHG0041187 (closed as implemented)\u201d as releasing both DOC-1047 Rev F and DOC-1188 Rev C into the controlled store.\"},\"r-page-total-counts-releases\":{\"score\":\"yes\",\"reasoning\":\"final_message.md states: \u201cThe page total rose from 771 to 784 pages (+13) because of these two late releases,\u201d referring to DOC-1047 Rev F and DOC-1188 Rev C.\"},\"r-register-lag-reasoning\":{\"score\":\"yes\",\"reasoning\":\"final_message.md explicitly explains that STD-014 and QA-SOP-007 \u201caccept a release under a change request closed as implemented as approval evidence until the weekly register sync,\u201d despite the register not listing the revisions yet.\"},\"r-s22-no-open-placeholder\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says DOC-1188 Rev C has \u201copen placeholders 0\u201d and \u201cclosed the open placeholders of Rev B, so S22 is Complete instead of a gap.\u201d\"},\"r-register-follow-up\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says: \u201cthe register still needs to record DOC-1047 Rev F and DOC-1188 Rev C ... at the next sync.\u201d\"},\"r-ifu-approval-completed\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says \u201cthe approval of the professional IFU DOC-1133 Rev G completed\u201d and therefore \u201cS07 ... cites Rev G ... instead of Rev F.\u201d\"},\"r-not-applicable-reasons\":{\"score\":\"yes\",\"reasoning\":\"final_message.md gives every required reason: S08 and S26 are \u201cself-testing devices only,\u201d S27 is \u201ccompanion diagnostics only,\u201d and S28 is \u201cclass D devices only.\u201d\"},\"r-lookalikes-stay-in\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S25 remains applicable because \u201cnear-patient testing by health professionals is not self-testing,\u201d and S30 remains applicable because Edition 3 requires SSP for class C as well as class D.\"},\"r-s15-routed-revision\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S15 cites DOC-1102 Rev C because Rev D \u201cis stored for its approval route but the register still shows it In approval, so it is not in force.\u201d\"},\"r-s20-change-request-release\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S20 cites DOC-1111 Rev C, released under closed change request CHG0041102, while \u201cthe register still shows Rev B only.\u201d\"},\"r-s17-usability-number\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S17 cites DOC-1074, \u201cthe usability engineering file,\u201d rather than DOC-1047, \u201cthe risk management report,\u201d and notes the working draft transposed the number.\"},\"r-s16-placeholder-gap\":{\"score\":\"yes\",\"reasoning\":\"final_message.md identifies S16 as a remaining gap because approved, in-force DOC-1103 Rev C \u201crecords an open placeholder.\u201d\"},\"r-s23-draft-only\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S23 is a gap because \u201cDOC-1120 exists only as a working draft (Rev A); no version is in force.\u201d\"},\"r-s29-withdrawn-approval\":{\"score\":\"yes\",\"reasoning\":\"final_message.md says S29 is a gap because \u201cthe approval of DOC-1200 Rev A was withdrawn ... so no PMS plan is in force.\u201d\"},\"r-shared-document-counted-once\":{\"score\":\"yes\",\"reasoning\":\"final_message.md explicitly says: \u201cDOC-1047 is cited by both S13 and S14 but counted once.\u201d\"},\"r-index-left-out\":{\"score\":\"yes\",\"reasoning\":\"final_message.md names all five exclusions and their reasons: Lay user and Self-test result have sources not cited by applicable sections; Reagent pack and Measuring interval are Retired; Residual risk acceptability matrix is Proposed.\"},\"r-pen-working-draft-total\":{\"score\":\"no\",\"reasoning\":\"final_message.md gives 784 pages as the technical-file total and never gives 828 pages as that total.\"},\"r-pen-total-before-release\":{\"score\":\"no\",\"reasoning\":\"final_message.md mentions 771 only as the earlier value in \u201crose from 771 to 784 pages\u201d; it gives 784, not 771, as the final total.\"},\"r-pen-ssp-excluded\":{\"score\":\"no\",\"reasoning\":\"final_message.md explicitly keeps S30 applicable: \u201cS30 ... stays applicable: Edition 3 requires the SSP for class C.\u201d\"}}",
+    "usage": {
+      "input_tokens": 34380,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 28416,
+      "output_tokens": 1859,
+      "reasoning_output_tokens": 193,
+      "total_tokens": 36239,
+      "cost_usd": 0.0724024,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 34380,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 28416,
+          "output_tokens": 1859,
+          "reasoning_output_tokens": 193,
+          "total_tokens": 36239,
+          "cost_usd": 0.0724024
+        }
+      }
+    },
+    "judge_logs": [
+      "/logs/verifier/trajectory.codex.batched-1.45c601b50c3c4e91bfc29c4c9d42c728.jsonl"
+    ]
+  }
+}

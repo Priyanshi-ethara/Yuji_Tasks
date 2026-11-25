@@ -1,0 +1,59 @@
+# simcheck batch16
+== instruction: 15 tasks, max cosine 0.110
+        40ea4665 ~ 93feedc5: cosine 0.110, shared 6-grams 0
+        13444412 ~ 40ea4665: cosine 0.106, shared 6-grams 1
+        40ea4665 ~ a6901ded: cosine 0.106, shared 6-grams 1
+        40ea4665 ~ 8fd816e9: cosine 0.097, shared 6-grams 1
+        40ea4665 ~ 6332b1ca: cosine 0.094, shared 6-grams 1
+        14b9ec91 ~ 40ea4665: cosine 0.092, shared 6-grams 0
+        40ea4665 ~ cba95ebc: cosine 0.092, shared 6-grams 4
+        40ea4665 ~ d47feee8: cosine 0.090, shared 6-grams 1
+== rubric: 15 tasks, max cosine 0.082
+        40ea4665 ~ 93feedc5: cosine 0.082, shared 6-grams 0
+        40ea4665 ~ cba95ebc: cosine 0.075, shared 6-grams 0
+        40ea4665 ~ a6901ded: cosine 0.073, shared 6-grams 0
+        40ea4665 ~ d47feee8: cosine 0.071, shared 6-grams 0
+        40ea4665 ~ ecbf6af4: cosine 0.069, shared 6-grams 0
+        40ea4665 ~ 8fd816e9: cosine 0.068, shared 6-grams 0
+        14b9ec91 ~ 40ea4665: cosine 0.064, shared 6-grams 0
+        40ea4665 ~ 6f161651: cosine 0.061, shared 6-grams 0
+== pytest: 15 tasks, max cosine 0.167
+        40ea4665 ~ 93feedc5: cosine 0.167, shared 6-grams 176
+        40ea4665 ~ d47feee8: cosine 0.153, shared 6-grams 269
+        14b9ec91 ~ 40ea4665: cosine 0.151, shared 6-grams 244
+        13444412 ~ 40ea4665: cosine 0.151, shared 6-grams 201
+        40ea4665 ~ cba95ebc: cosine 0.148, shared 6-grams 176
+        40ea4665 ~ 6332b1ca: cosine 0.144, shared 6-grams 235
+        40ea4665 ~ 8fd816e9: cosine 0.141, shared 6-grams 220
+        40ea4665 ~ 6f161651: cosine 0.138, shared 6-grams 154
+0 flagged pair(s)
+
+# simcheck batch75
+== instruction: 75 tasks, max cosine 0.082
+        21be9c80 ~ 40ea4665: cosine 0.082, shared 6-grams 0
+        40ea4665 ~ 6139c0bc: cosine 0.082, shared 6-grams 2
+        40ea4665 ~ 51ff146a: cosine 0.077, shared 6-grams 0
+        13444412 ~ 40ea4665: cosine 0.076, shared 6-grams 1
+        356c0b72 ~ 40ea4665: cosine 0.074, shared 6-grams 0
+        40ea4665 ~ 93feedc5: cosine 0.073, shared 6-grams 0
+        40ea4665 ~ f487e5dd: cosine 0.071, shared 6-grams 7
+        40ea4665 ~ 61594653: cosine 0.069, shared 6-grams 0
+== rubric: 75 tasks, max cosine 0.059
+        40ea4665 ~ 6139c0bc: cosine 0.059, shared 6-grams 1
+        40ea4665 ~ 98eabf4d: cosine 0.055, shared 6-grams 0
+        21be9c80 ~ 40ea4665: cosine 0.054, shared 6-grams 0
+        356c0b72 ~ 40ea4665: cosine 0.052, shared 6-grams 2
+        40ea4665 ~ 93feedc5: cosine 0.051, shared 6-grams 0
+        40ea4665 ~ ee5f9fa6: cosine 0.050, shared 6-grams 1
+        40ea4665 ~ 8bf4fdc9: cosine 0.050, shared 6-grams 0
+        40ea4665 ~ 51ff146a: cosine 0.049, shared 6-grams 0
+== pytest: 75 tasks, max cosine 0.132
+        21be9c80 ~ 40ea4665: cosine 0.132, shared 6-grams 283
+        40ea4665 ~ 93feedc5: cosine 0.118, shared 6-grams 176
+        40ea4665 ~ 51ff146a: cosine 0.116, shared 6-grams 236
+        40ea4665 ~ d383abbb: cosine 0.106, shared 6-grams 146
+        40ea4665 ~ 6d61805b: cosine 0.103, shared 6-grams 211
+        40ea4665 ~ 7a2f4154: cosine 0.098, shared 6-grams 205
+        13444412 ~ 40ea4665: cosine 0.098, shared 6-grams 201
+        40ea4665 ~ cba95ebc: cosine 0.098, shared 6-grams 176
+0 flagged pair(s)

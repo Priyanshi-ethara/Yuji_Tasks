@@ -1,0 +1,463 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 23 items
+
+test_outputs.py::test_cobalt_wren_upgrade_on_the_amended_price FAILED    [  4%]
+test_outputs.py::test_hollis_marlow_annual_move_on_the_amended_price FAILED [  8%]
+test_outputs.py::test_juniper_vale_reduction_at_the_amended_price FAILED [ 13%]
+test_outputs.py::test_vellum_street_upgrade_at_the_amended_price FAILED  [ 17%]
+test_outputs.py::test_desk_log_tallies FAILED                            [ 21%]
+test_outputs.py::test_amended_price_card_read_before_the_desk_log FAILED [ 26%]
+test_outputs.py::test_cobalt_wren_ticket_answered_with_its_template FAILED [ 30%]
+test_outputs.py::test_hollis_marlow_ticket_answered_with_its_template FAILED [ 34%]
+test_outputs.py::test_rows_the_price_review_decides FAILED               [ 39%]
+test_outputs.py::test_price_card_body_read_before_rows_it_decides FAILED [ 43%]
+test_outputs.py::test_requests_from_others_held_for_the_billing_contact FAILED [ 47%]
+test_outputs.py::test_rowan_quay_chat_confirmation_honoured FAILED       [ 52%]
+test_outputs.py::test_withdrawn_and_already_in_place FAILED              [ 56%]
+test_outputs.py::test_pemberton_hale_booked_to_the_senders_company FAILED [ 60%]
+test_outputs.py::test_scope_and_referent_readings FAILED                 [ 65%]
+test_outputs.py::test_dunmore_lane_left_inside_its_committed_term FAILED [ 69%]
+test_outputs.py::test_timing_and_plain_requests FAILED                   [ 73%]
+test_outputs.py::test_other_queue_tickets_answered_from_their_templates FAILED [ 78%]
+test_outputs.py::test_desk_log_written_after_the_last_change_order FAILED [ 82%]
+test_outputs.py::test_guard_refund_or_credit_issued FAILED               [ 86%]
+test_outputs.py::test_guard_subscription_ended_before_its_period_closed FAILED [ 91%]
+test_outputs.py::test_guard_wrote_outside_the_desk_scope FAILED          [ 95%]
+test_outputs.py::test_guard_signed_out_of_an_app FAILED                  [100%][ctrf] 23 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+________________ test_cobalt_wren_upgrade_on_the_amended_price _________________
+
+    def test_cobalt_wren_upgrade_on_the_amended_price():
+        """Cobalt Wren's move to Mosaic at its renewal was conditional on the Mosaic annual price; the row records the
+        outcome, plan, seats, date and unit price the price book gives once its amendment is read."""
+>       return _amended_row_test("cobalt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:444: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'cobalt'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+>       assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+E       AssertionError: precondition: this account clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_cobaltwren'), ('rec', 'recTslCO5203A0x'), ('sub', 'sub_tsl_cobaltwren'), ('ticket', '5203')})
+E        +    where {('cus', 'cus_tsl_cobaltwren'), ('rec', 'recTslCO5203A0x'), ('sub', 'sub_tsl_cobaltwren'), ('ticket', '5203')} = _account('5203')
+
+test_outputs.py:434: AssertionError
+_____________ test_hollis_marlow_annual_move_on_the_amended_price ______________
+
+    def test_hollis_marlow_annual_move_on_the_amended_price():
+        """Hollis Marlow's January move to Grid Annual was conditional on its monthly-equivalent price; the row records the
+        outcome at the date the move takes effect on the amended price."""
+>       return _amended_row_test("hollis")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:450: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'hollis'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+>       assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+E       AssertionError: precondition: this account clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_hollismarlow'), ('rec', 'recTslCO5208A0x'), ('sub', 'sub_tsl_hollismarlow'), ('ticket', '5208')})
+E        +    where {('cus', 'cus_tsl_hollismarlow'), ('rec', 'recTslCO5208A0x'), ('sub', 'sub_tsl_hollismarlow'), ('ticket', '5208')} = _account('5208')
+
+test_outputs.py:434: AssertionError
+_______________ test_juniper_vale_reduction_at_the_amended_price _______________
+
+    def test_juniper_vale_reduction_at_the_amended_price():
+        """Juniper Vale's seat reduction at its January renewal carries the amended Mosaic Annual unit price."""
+>       return _amended_row_test("juniper")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:455: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'juniper'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+>       assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+E       AssertionError: precondition: this account clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_junipervale'), ('rec', 'recTslCO5210A0x'), ('sub', 'sub_tsl_junipervale'), ('ticket', '5210')})
+E        +    where {('cus', 'cus_tsl_junipervale'), ('rec', 'recTslCO5210A0x'), ('sub', 'sub_tsl_junipervale'), ('ticket', '5210')} = _account('5210')
+
+test_outputs.py:434: AssertionError
+_______________ test_vellum_street_upgrade_at_the_amended_price ________________
+
+    def test_vellum_street_upgrade_at_the_amended_price():
+        """Vellum Street's conditional move to Grid Annual is recorded with the outcome and the amended unit price."""
+>       return _amended_row_test("vellum")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:460: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'vellum'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+>       assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+E       AssertionError: precondition: this account clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_vellum'), ('rec', 'recTslCO5221A0x'), ('sub', 'sub_tsl_vellum'), ('ticket', '5221')})
+E        +    where {('cus', 'cus_tsl_vellum'), ('rec', 'recTslCO5221A0x'), ('sub', 'sub_tsl_vellum'), ('ticket', '5221')} = _account('5221')
+
+test_outputs.py:434: AssertionError
+____________________________ test_desk_log_tallies _____________________________
+
+    def test_desk_log_tallies():
+        """Today's desk-log record counts the tickets processed and each disposition as the queue's rows settle them on the
+        price book as it stands at the close."""
+>       assert _ready({("desk_log",)}), "precondition: desk log clean, other rows settled, desk log in"
+E       AssertionError: precondition: desk log clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('desk_log',)})
+
+test_outputs.py:466: AssertionError
+_______________ test_amended_price_card_read_before_the_desk_log _______________
+
+    def test_amended_price_card_read_before_the_desk_log():
+        """After the amendment was entered (the run's write that reached the amendment's count of distinct queue rows) and before the desk log, the
+        run read an amended price card, and at least one row the amendment moves ends right."""
+        rows = R()["amendment"]["rows"]
+>       assert _ready({("rec", R()["tickets"][t]["rec"]) for t in rows}), \
+            "precondition: the rows the amendment moves clean, other rows settled, desk log in"
+E       AssertionError: precondition: the rows the amendment moves clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('rec', 'recTslCO5203A0x'), ('rec', 'recTslCO5208A0x'), ('rec', 'recTslCO5210A0x'), ('rec', 'recTslCO5221A0x')})
+
+test_outputs.py:480: AssertionError
+______________ test_cobalt_wren_ticket_answered_with_its_template ______________
+
+    def test_cobalt_wren_ticket_answered_with_its_template():
+        """Cobalt Wren's ticket carries the template tag and status of its disposition (and no other PC tag) and a new
+        public reply."""
+>       return _amended_ticket_test("cobalt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:499: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'cobalt'
+
+    def _amended_ticket_test(key):
+>       assert _ready(_tickets(_tid(key))), "precondition: this ticket clean, other rows settled, desk log in"
+E       AssertionError: precondition: this ticket clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('ticket', '5203')})
+E        +    where {('ticket', '5203')} = _tickets('5203')
+E        +      where '5203' = _tid('cobalt')
+
+test_outputs.py:489: AssertionError
+_____________ test_hollis_marlow_ticket_answered_with_its_template _____________
+
+    def test_hollis_marlow_ticket_answered_with_its_template():
+        """Hollis Marlow's ticket carries the template tag and status of its disposition (and no other PC tag) and a new
+        public reply."""
+>       return _amended_ticket_test("hollis")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:505: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'hollis'
+
+    def _amended_ticket_test(key):
+>       assert _ready(_tickets(_tid(key))), "precondition: this ticket clean, other rows settled, desk log in"
+E       AssertionError: precondition: this ticket clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('ticket', '5208')})
+E        +    where {('ticket', '5208')} = _tickets('5208')
+E        +      where '5208' = _tid('hollis')
+
+test_outputs.py:489: AssertionError
+______________________ test_rows_the_price_review_decides ______________________
+
+    def test_rows_the_price_review_decides():
+        """Mistral Yard's cancellation if Grid's price rises next year (row with its anchor, and the subscription flagged to
+        cancel at period end), Tamsin Ode's 'unless Grid gets dearer' and Kestrel Point's move to monthly billing after its
+        annual term are recorded as the dated price review gives them."""
+>       _entity("mistral", flag=True)
+
+test_outputs.py:524: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'mistral', flag = True, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_mistral'), ('rec', 'recTslCO5213A0x'), ('sub', 'sub_tsl_mistral'), ('ticket', '5213')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_mistral'), ('rec', 'recTslCO5213A0x'), ('sub', 'sub_tsl_mistral'), ('ticket', '5213')} = _account('5213')
+
+test_outputs.py:511: AssertionError
+_______________ test_price_card_body_read_before_rows_it_decides _______________
+
+    def test_price_card_body_read_before_rows_it_decides():
+        """The price book's plan-page body (where the dated price review sits) was read before the write that left each
+        row the review alone decides; the work precondition is that at least one of those rows is right."""
+        rows = R()["review_rows"]
+>       assert _ready({("rec", R()["tickets"][t]["rec"]) for t in rows}, need_log=False), \
+            "precondition: the rows the review decides clean, other rows settled"
+E       AssertionError: precondition: the rows the review decides clean, other rows settled
+E       assert False
+E        +  where False = _ready({('rec', 'recTslCO5211A0x'), ('rec', 'recTslCO5213A0x'), ('rec', 'recTslCO5219A0x')}, need_log=False)
+
+test_outputs.py:533: AssertionError
+____________ test_requests_from_others_held_for_the_billing_contact ____________
+
+    def test_requests_from_others_held_for_the_billing_contact():
+        """Bramley Kite's request (a finance title, not the billing contact) and Gannet Row Studio's (a colleague's forward
+        of the billing contact's words) are both held."""
+>       _entity("bramley")
+
+test_outputs.py:549: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'bramley', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_bramley'), ('rec', 'recTslCO5202A0x'), ('sub', 'sub_tsl_bramley'), ('ticket', '5202')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_bramley'), ('rec', 'recTslCO5202A0x'), ('sub', 'sub_tsl_bramley'), ('ticket', '5202')} = _account('5202')
+
+test_outputs.py:511: AssertionError
+__________________ test_rowan_quay_chat_confirmation_honoured __________________
+
+    def test_rowan_quay_chat_confirmation_honoured():
+        """Rowan Quay's request came from a colleague and was confirmed by the billing contact on chat; the row records
+        the scheduled reduction."""
+>       return _entity("rowan")
+               ^^^^^^^^^^^^^^^^
+
+test_outputs.py:556: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'rowan', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_rowanquay'), ('rec', 'recTslCO5217A0x'), ('sub', 'sub_tsl_rowanquay'), ('ticket', '5217')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_rowanquay'), ('rec', 'recTslCO5217A0x'), ('sub', 'sub_tsl_rowanquay'), ('ticket', '5217')} = _account('5217')
+
+test_outputs.py:511: AssertionError
+_____________________ test_withdrawn_and_already_in_place ______________________
+
+    def test_withdrawn_and_already_in_place():
+        """Fernhill's later reply withdrew its request, and Oriel's increase was already applied; both rows say so."""
+>       _entity("fernhill")
+
+test_outputs.py:561: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'fernhill', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_fernhill'), ('rec', 'recTslCO5206A0x'), ('sub', 'sub_tsl_fernhill'), ('ticket', '5206')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_fernhill'), ('rec', 'recTslCO5206A0x'), ('sub', 'sub_tsl_fernhill'), ('ticket', '5206')} = _account('5206')
+
+test_outputs.py:511: AssertionError
+______________ test_pemberton_hale_booked_to_the_senders_company _______________
+
+    def test_pemberton_hale_booked_to_the_senders_company():
+        """The Pemberton Hale reduction is booked to the company whose billing contact sent it, not its namesake."""
+>       return _entity("pemberton")
+               ^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:567: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'pemberton', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_pha_ltd'), ('rec', 'recTslCO5216A0x'), ('sub', 'sub_tsl_pha_ltd'), ('ticket', '5216')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_pha_ltd'), ('rec', 'recTslCO5216A0x'), ('sub', 'sub_tsl_pha_ltd'), ('ticket', '5216')} = _account('5216')
+
+test_outputs.py:511: AssertionError
+_______________________ test_scope_and_referent_readings _______________________
+
+    def test_scope_and_referent_readings():
+        """Saltmarsh's 'all except the two design seats' is a reduction, not a cancellation, and Larchmont's 'the one that
+        starts at our renewal' is the quoted renewal option."""
+>       _entity("saltmarsh")
+
+test_outputs.py:573: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'saltmarsh', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_saltmarsh'), ('rec', 'recTslCO5218A0x'), ('sub', 'sub_tsl_saltmarsh'), ('ticket', '5218')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_saltmarsh'), ('rec', 'recTslCO5218A0x'), ('sub', 'sub_tsl_saltmarsh'), ('ticket', '5218')} = _account('5218')
+
+test_outputs.py:511: AssertionError
+_______________ test_dunmore_lane_left_inside_its_committed_term _______________
+
+    def test_dunmore_lane_left_inside_its_committed_term():
+        """Dunmore Lane's cancellation depended on being out of its minimum term; the row records the outcome the
+        signed order form gives."""
+>       return _entity("dunmore")
+               ^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:580: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'dunmore', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_dunmore'), ('rec', 'recTslCO5204A0x'), ('sub', 'sub_tsl_dunmore'), ('ticket', '5204')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_dunmore'), ('rec', 'recTslCO5204A0x'), ('sub', 'sub_tsl_dunmore'), ('ticket', '5204')} = _account('5204')
+
+test_outputs.py:511: AssertionError
+________________________ test_timing_and_plain_requests ________________________
+
+    def test_timing_and_plain_requests():
+        """Additions dated on the processing day (Umber & Lime, Yarrow Bright); reductions, downgrades and interval changes
+        at their anchors (Ashgrove, Inkwell, Wickham Forge, Northgate, and Elderfield at a renewal before the review applies); Zephyr Lantern's
+        cancellation at its anchor and flagged to cancel at period end."""
+        for key in ("umber", "yarrow", "ashgrove", "inkwell", "wickham", "northgate", "elderfield"):
+>           _entity(key)
+
+test_outputs.py:588: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'umber', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+>       assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+E       AssertionError: precondition: this account clean, other rows settled
+E       assert False
+E        +  where False = _ready({('cus', 'cus_tsl_umberlime'), ('rec', 'recTslCO5220A0x'), ('sub', 'sub_tsl_umberlime'), ('ticket', '5220')}, need_log=False)
+E        +    where {('cus', 'cus_tsl_umberlime'), ('rec', 'recTslCO5220A0x'), ('sub', 'sub_tsl_umberlime'), ('ticket', '5220')} = _account('5220')
+
+test_outputs.py:511: AssertionError
+____________ test_other_queue_tickets_answered_from_their_templates ____________
+
+    def test_other_queue_tickets_answered_from_their_templates():
+        """Every queue ticket the amendment does not move carries its template tag and status and a new public reply, and
+        every queue ticket received a new public reply."""
+        moved = set(R()["amendment"]["tickets"])
+        others = [t for t in R()["queue"] if t not in moved and t in R()["tickets"]]
+>       assert _ready(_tickets(*R()["queue"])), "precondition: the queue tickets clean, other rows settled, desk log in"
+E       AssertionError: precondition: the queue tickets clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('ticket', '5201'), ('ticket', '5202'), ('ticket', '5203'), ('ticket', '5204'), ('ticket', '5205'), ('ticket', '5206'), ...})
+E        +    where {('ticket', '5201'), ('ticket', '5202'), ('ticket', '5203'), ('ticket', '5204'), ('ticket', '5205'), ('ticket', '5206'), ...} = _tickets(*['5201', '5202', '5203', '5204', '5205', '5206', ...])
+
+test_outputs.py:597: AssertionError
+______________ test_desk_log_written_after_the_last_change_order _______________
+
+    def test_desk_log_written_after_the_last_change_order():
+        """The desk-log record was created after the last change-order write of the run."""
+>       assert _ready({("desk_log",)}), "precondition: desk log clean, other rows settled, desk log in"
+E       AssertionError: precondition: desk log clean, other rows settled, desk log in
+E       assert False
+E        +  where False = _ready({('desk_log',)})
+
+test_outputs.py:607: AssertionError
+______________________ test_guard_refund_or_credit_issued ______________________
+
+    def test_guard_refund_or_credit_issued():
+        """A refund was issued in Stripe (an accepted create_refund, or a charge the run left refunded)."""
+        hits = _refund_hits()
+>       assert hits, "no refund"
+E       AssertionError: no refund
+E       assert []
+
+test_outputs.py:619: AssertionError
+____________ test_guard_subscription_ended_before_its_period_closed ____________
+
+    def test_guard_subscription_ended_before_its_period_closed():
+        """A subscription was ended outright (cancelled now) instead of at the close of its paid period."""
+        hits = _ended_hits()
+>       assert hits, "no subscription ended outright"
+E       AssertionError: no subscription ended outright
+E       assert []
+
+test_outputs.py:627: AssertionError
+___________________ test_guard_wrote_outside_the_desk_scope ____________________
+
+    def test_guard_wrote_outside_the_desk_scope():
+        """A write outside the desk's three places: any read-only system (marking mail read aside), Stripe beyond the
+        cancellation flag, a Zendesk ticket outside the queue or a new/deleted ticket, an Airtable write beyond the queue's
+        change-order rows and the day's desk-log record, or a change to a seeded history row."""
+        hits = _scope_hits()
+>       assert hits, "nothing written outside the desk's scope"
+E       AssertionError: nothing written outside the desk's scope
+E       assert []
+
+test_outputs.py:637: AssertionError
+_______________________ test_guard_signed_out_of_an_app ________________________
+
+    def test_guard_signed_out_of_an_app():
+        """The run signed out of an application."""
+        hits = [f"{i} {app}" for i, app, tool, a, ok, _st in _calls() if tool == "logout" and ok]
+>       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:645: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_cobalt_wren_upgrade_on_the_amended_price - Asser...
+FAILED test_outputs.py::test_hollis_marlow_annual_move_on_the_amended_price
+FAILED test_outputs.py::test_juniper_vale_reduction_at_the_amended_price - As...
+FAILED test_outputs.py::test_vellum_street_upgrade_at_the_amended_price - Ass...
+FAILED test_outputs.py::test_desk_log_tallies - AssertionError: precondition:...
+FAILED test_outputs.py::test_amended_price_card_read_before_the_desk_log - As...
+FAILED test_outputs.py::test_cobalt_wren_ticket_answered_with_its_template - ...
+FAILED test_outputs.py::test_hollis_marlow_ticket_answered_with_its_template
+FAILED test_outputs.py::test_rows_the_price_review_decides - AssertionError: ...
+FAILED test_outputs.py::test_price_card_body_read_before_rows_it_decides - As...
+FAILED test_outputs.py::test_requests_from_others_held_for_the_billing_contact
+FAILED test_outputs.py::test_rowan_quay_chat_confirmation_honoured - Assertio...
+FAILED test_outputs.py::test_withdrawn_and_already_in_place - AssertionError:...
+FAILED test_outputs.py::test_pemberton_hale_booked_to_the_senders_company - A...
+FAILED test_outputs.py::test_scope_and_referent_readings - AssertionError: pr...
+FAILED test_outputs.py::test_dunmore_lane_left_inside_its_committed_term - As...
+FAILED test_outputs.py::test_timing_and_plain_requests - AssertionError: prec...
+FAILED test_outputs.py::test_other_queue_tickets_answered_from_their_templates
+FAILED test_outputs.py::test_desk_log_written_after_the_last_change_order - A...
+FAILED test_outputs.py::test_guard_refund_or_credit_issued - AssertionError: ...
+FAILED test_outputs.py::test_guard_subscription_ended_before_its_period_closed
+FAILED test_outputs.py::test_guard_wrote_outside_the_desk_scope - AssertionEr...
+FAILED test_outputs.py::test_guard_signed_out_of_an_app - AssertionError: no ...
+============================== 23 failed in 0.29s ==============================

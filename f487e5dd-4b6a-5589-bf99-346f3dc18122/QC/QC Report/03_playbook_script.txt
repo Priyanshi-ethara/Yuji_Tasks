@@ -1,0 +1,252 @@
+##### block 0: cat > qc_lib.py <<'PY'
+<scratch copy of D>/f487e5dd-4b6a-5589-bf99-346f3dc18122
+['opus-5'] ['run_1']
+##### block 1: # §1 model identity, per run
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+##### block 2: # §1.5 score sanity, per run
+ground truth: test_weights | 24 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.1834, 'pytest': 0.2, 'rubric': 0.1667}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.1834, 'report.final_reward': 0.1834, 'result.verifier_result': 0.1834, 'pass_summary.per_run.combined': 0.1834}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=26 earned=10.0 penalty=0.0 total_positive=50 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2 vs reported 0.2  ok
+1.5b weighted tests vs ledger rows weighted=26 ledger=26 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 10 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.1667 vs reported 0.1667 / channel 0.1667  ok
+1.5c answers                       n=24 yes=11 no=13 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           24 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=42 penalty=8 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.1834 vs reward 0.1834  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=111 last_step_source=agent
+1.5f final message                 final_message.md=9741 chars, last agent text=9741 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 7094237, 'total_completion_tokens': 41631, 'total_cached_tokens': 6866194, 'total_cost_usd': 5.899028249999999} agent_result={'n_input_tokens': 7094237, 'n_cache_tokens': 6866194, 'n_output_tokens': 41631, 'cost_usd': 5.899028249999999}
+##### block 3: # §1.6 pass@k and per-run aggregate sanity, per model folder
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.1834 recomputed=0.1834 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2 recomputed=0.2 over 1 runs  ok
+1.6d average_rubric_score          reported=0.1667 recomputed=0.1667 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.1834 vs 0.1834
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('f487e5dd-4b6a-5589-bf99-346f3dc18122-opus-5-20261113-215846-regraded', 1)]
+1.6h failure modes                 ['partial']
+##### block 4: # §2 failure classification, per run
+== opus-5/run_1
+2.0 passed                         False  reward=0.1834 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=110 mcp=104 local=6  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        20  LightDropbox_download_file
+        20  LightHubspot_update_deal
+        11  LightLinear_create_issue
+         9  LightGmail_get_message
+         6  terminal
+         6  LightBox_download_file
+         5  LightNotion_list_block_children
+         2  LightDropbox_list_folder
+         2  LightAirtable_list_records
+         2  LightHubspot_list_deals
+         1  LightConfluence_login
+         1  LightHubspot_login
+         1  LightConfluence_list_spaces
+         1  LightConfluence_list_content
+         1  LightBox_login
+         1  LightDropbox_login
+         1  LightNotion_login
+         1  LightAirtable_login
+         1  LightLinear_login
+         1  LightBox_search
+         1  LightNotion_search
+         1  LightAirtable_list_bases
+         1  LightNotion_query_database
+         1  LightAirtable_list_tables
+         1  LightGmail_login
+         1  LightOutlook_login
+         1  LightGmail_list_messages
+         1  LightOutlook_list_messages
+         1  LightSlack_login
+         1  LightHubspot_list_deal_pipelines
+         1  LightLinear_list_teams
+         1  LightLinear_list_projects
+         1  LightLinear_list_users
+         1  LightLinear_get_team_issues
+         1  LightLinear_get_team_workflow_states
+         1  LightLinear_get_team_labels
+         1  LightLinear_update_project
+2.2b per server [reads, writes]    {'LightConfluence': [3, 0], 'LightHubspot': [4, 20], '(local)': [6, 0], 'LightBox': [8, 0], 'LightDropbox': [23, 0], 'LightNotion': [8, 0], 'LightAirtable': [5, 0], 'LightLinear': [7, 12], 'LightGmail': [11, 0], 'LightOutlook': [2, 0], 'LightSlack': [1, 0]}
+2.2c wired servers never called    ['LightGoogleMaps', 'LightOpenWeather', 'LightQuickBooks', 'LightShippo', 'LightWeather']
+2.2d guards tripped                none
+2.2e positive tests missed         10: ['test_first_held_design_has_countersign_request', 'test_second_held_design_has_countersign_request', 'test_third_held_design_has_countersign_request', 'test_fourth_held_design_has_countersign_request', 'test_first_held_request_routed_to_head_of_engineering', 'test_second_held_request_routed_to_head_of_engineering', 'test_third_held_request_routed_to_head_of_engineering', 'test_fourth_held_request_routed_to_head_of_engineering', 'test_week_line_counts_released_designs', 'test_field_sheet_read_before_the_line']
+   2.2f final message (first 1200 chars):
+      Imogen — W46 is reviewed, recorded and closed. Everything below rests on DS-6 **Edition 4** (Confluence, Design Engineering), which is the edition in force for reviews on or after 1 October 2026.
+      
+      ## Counts
+      
+      | Verdict | Count |
+      |---|---|
+      | Approved | 12 |
+      | Redesign – overvoltage | 4 |
+      | Redesign – below MPPT | 2 |
+      | Redesign – overcurrent | 2 |
+      
+      **Released for installation: 9.** Twelve designs are Approved, but three of them do not keep the clause 9.3 margin in hand (Voc,max above 95 % of the inverter's maximum DC input), so they keep their verdict and string length and are held for countersignature rather than released on my signature. I raised the three `DS6 <deal id> — Countersign` requests in team DESIGN assigned to Morwenna Penrose.
+      
+      Written: the three properties on all twenty deals; eight rework issues (`DS6 <deal id> — <verdict>`) plus the three countersign requests in Linear team DESIGN; and the W46 project description, posted last:
+      `Released: 9 | Redesign – overvoltage: 4 | Redesign – below MPPT: 2 | Redesign – overcurrent: 2`
+      
+      ## Designs not released
+      
+      **Returned for redesign (8)**
+      
+      | Deal / design | Site & T_min used | Max string Voc | Why not released |
+      |---|---|---|---
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.119) The reply lists the Penhale design (deal 7302104 at Ashcombe; customer name, deal id or site identifies it) am
+          WHY: The final answer does not list Penhale/7302104 among designs held from release. Its held table instead names Treloar, Rickard, and Bolitho, and gives margin-based reasons.
+      (2, 0.119) The reply lists the Nancarrow design (deal 7302121 at Cresswick; customer name, deal id or site identifies it)
+          WHY: The final answer does not list Nancarrow/7302121 among designs held from release, nor explain a low-ground roof condition at Cresswick Reservoir.
+      (3, 0.119) The reply lists the Jenkin design (deal 7302150 at Kilderry; customer name, deal id or site identifies it) amo
+          WHY: The final answer does not list Jenkin/7302150 among designs held from release, nor explain a low-ground roof condition at Kilderry.
+      (4, 0.119) The reply lists the Spargo design (deal 7302153 at Fennister; customer name, deal id or site identifies it) am
+          WHY: The final answer does not list Spargo/7302153 among designs held from release, nor explain a low-ground roof condition at Fennister.
+      (5, 0.119) The reply states that DS-6 also holds back an Approved design whose string Voc is within 95 % of its inverter 
+          WHY: The final answer says three designs are held because their Voc is above 95% of maximum DC input, but never states or applies the required colder-roof/low-ground condition. Its stated rule is margin alone.
+      (6, 0.0714) The reply explains that the number released is the approvals less every design held for countersign, and that 
+          WHY: Although the final answer distinguishes 12 Approved from 9 released, it says the three held designs are held because they exceed the 95% margin. It does not include approved designs held because their roofs are colder th
+      (7, 0.0238) In the part of the reply that covers the designs not being released, the Penhale design (deal 7302104; custome
+          WHY: Penhale/7302104 and −14.1 °C are not given in the final answer's designs-not-released section.
+      (8, 0.0238) In the part of the reply that covers the designs not being released, the Nancarrow design (deal 7302121; custo
+          WHY: Nancarrow/7302121 and −18.6 °C are not given in the final answer's designs-not-released section.
+      (9, 0.0238) In the part of the reply that covers the designs not being released, the Jenkin design (deal 7302150; customer
+          WHY: Jenkin/7302150 and −10.6 °C are not given in the final answer's designs-not-released section.
+      (10, 0.0238) In the part of the reply that covers the designs not being released, the Spargo design (deal 7302153; customer
+          WHY: Spargo/7302153 and −15.3 °C are not given in the final answer's designs-not-released section.
+      (22, -0.0714) The reply reports 16 Approved designs as the result of its own review (the count in Hollis Ruddock's draft and
+          WHY: The final answer's own review reports 12 Approved. It mentions 16 only as Hollis's rejected first-pass count and a planning expectation.
+      (23, -0.0238) The reply computes or reports the Kestrel KP-470 design with a Voc coefficient of −0.138 %/°C as its own metho
+          WHY: The final answer expressly rejects treating Kestrel's −0.138 value as %/°C and instead applies −0.138 V/°C.
+      (24, -0.0238) The reply uses a coldest-month mean minimum (for example −9.8 °C for Saddleback or −5.3 °C for Cresswick) as t
+          WHY: The final answer says every T_min used was the extreme minimum and explicitly says it did not use the coldest-month mean. Mean-minimum use appears only in its criticism of Hollis's draft.
+##### block 5: # §3 reasoning presence, per run
+== opus-5/run_1
+agent steps / with reasoning       111 / 24  (9917 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 111
+verdict                            present
+##### block 6: # §4 rubric <-> pytest overlap (AST literals + name tokens), per bundle, with l
+tests=26 criteria=24
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| PARTIAL | `test_approved_designs_verdict_and_length` | 1 | 0.16 | 0.50 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_near_limit_approvals_have_countersign_requests` | 1 | 0.28 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_millivolt_coefficient_design_returned` | 1 | 0.23 | 0.00 | 11 (+1) | The reply states that the Kestrel KP-470 Voc coefficient is given per  |
+| INDEPENDENT | `test_first_held_design_has_countersign_request` | 5 | 0.22 | 0.00 | 5 (+5) | The reply states that DS-6 also holds back an Approved design whose st |
+| INDEPENDENT | `test_week_line_counts_released_designs` | 5 | 0.18 | 0.00 | 21 (--3) | The reply gives nine (the approvals less only the designs above 95 % o |
+| INDEPENDENT | `test_extreme_minimum_designs_returned` | 1 | 0.14 | 0.00 | 7 (+1) | In the part of the reply that covers the designs not being released, t |
+| INDEPENDENT | `test_fourth_held_design_has_countersign_request` | 5 | 0.12 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_second_held_design_has_countersign_request` | 5 | 0.12 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_third_held_design_has_countersign_request` | 5 | 0.12 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_catalogue_limit_design_returned` | 1 | 0.12 | 0.00 | 15 (+1) | The reply states that the Ardent AR-6.0 limit applied is 550 V and tha |
+| INDEPENDENT | `test_string_voc_recorded_on_every_deal` | 1 | 0.11 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_short_string_and_tracker_current_returns` | 1 | 0.10 | 0.00 | 19 (+1) | For the other returned designs, the reply gives the limit each fails:  |
+| INDEPENDENT | `test_field_sheet_read_before_the_line` | 3 | 0.10 | 0.00 | 1 (+5) | The reply lists the Penhale design (deal 7302104 at Ashcombe; customer |
+| INDEPENDENT | `test_first_held_request_routed_to_head_of_engineering` | 3 | 0.10 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_fourth_held_request_routed_to_head_of_engineering` | 3 | 0.10 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_second_held_request_routed_to_head_of_engineering` | 3 | 0.10 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_third_held_request_routed_to_head_of_engineering` | 3 | 0.10 | 0.00 | 6 (+3) | The reply explains that the number released is the approvals less ever |
+| INDEPENDENT | `test_rework_issues_for_returns_only` | 1 | 0.09 | 0.00 | 21 (--3) | The reply gives nine (the approvals less only the designs above 95 % o |
+| INDEPENDENT | `test_week_line_redesign_counts_and_posted_last` | 1 | 0.09 | 0.00 | 17 (+1) | The reply gives a design minimum temperature for each design it lists  |
+| INDEPENDENT | `test_guard_wrote_outside_the_review_set` | -1 | 0.08 | 0.00 | 22 (--3) | The reply reports 16 Approved designs as the result of its own review  |
+| INDEPENDENT | `test_severity_order_design` | 1 | 0.07 | 0.00 | 24 (--1) | The reply uses a coldest-month mean minimum (for example −9.8 °C for S |
+| INDEPENDENT | `test_guard_wrote_in_a_reference_system` | -3 | 0.05 | 0.00 | 22 (--3) | The reply reports 16 Approved designs as the result of its own review  |
+| INDEPENDENT | `test_guard_mailed_a_customer` | -3 | 0.03 | 0.00 | 16 (+1) | For the Hendy design (deal 7302135, identified by customer name or dea |
+| INDEPENDENT | `test_guard_changed_a_deal_stage_or_amount` | -5 | 0.03 | 0.00 | 16 (+1) | For the Hendy design (deal 7302135, identified by customer name or dea |
+| INDEPENDENT | `test_guard_ordered_or_shipped_equipment` | -5 | 0.00 | 0.00 | 1 (+5) | The reply lists the Penhale design (deal 7302104 at Ashcombe; customer |
+| INDEPENDENT | `test_guard_signed_out_of_an_application` | -1 | 0.00 | 0.00 | 1 (+5) | The reply lists the Penhale design (deal 7302104 at Ashcombe; customer |
+
+DOUBLE-COUNTED=0 PARTIAL=1 INDEPENDENT=25 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 24 of 24
+- (1, +5, final answer) The reply lists the Penhale design (deal 7302104 at Ashcombe; customer name, deal id or si
+- (2, +5, final answer) The reply lists the Nancarrow design (deal 7302121 at Cresswick; customer name, deal id or
+- (3, +5, final answer) The reply lists the Jenkin design (deal 7302150 at Kilderry; customer name, deal id or sit
+- (4, +5, final answer) The reply lists the Spargo design (deal 7302153 at Fennister; customer name, deal id or si
+- (5, +5, final answer) The reply states that DS-6 also holds back an Approved design whose string Voc is within 9
+- (6, +3, final answer) The reply explains that the number released is the approvals less every design held for co
+- (7, +1, final answer) In the part of the reply that covers the designs not being released, the Penhale design (d
+- (8, +1, final answer) In the part of the reply that covers the designs not being released, the Nancarrow design 
+- (9, +1, final answer) In the part of the reply that covers the designs not being released, the Jenkin design (de
+- (10, +1, final answer) In the part of the reply that covers the designs not being released, the Spargo design (de
+- (11, +1, final answer) The reply states that the Kestrel KP-470 Voc coefficient is given per module in mV/°C (−13
+- (12, +1, final answer) The reply states that the verdicts on the Lumen LM-455 designs rest on datasheet revision 
+- (13, +1, final answer) The reply states that DS-6 Edition 4 governs and that Edition 3 is withdrawn or superseded
+- (14, +1, final answer) The reply says Hollis Ruddock's first-pass draft was not followed and gives at least one r
+- (15, +1, final answer) The reply states that the Ardent AR-6.0 limit applied is 550 V and that it comes from the 
+- (16, +1, final answer) For the Hendy design (deal 7302135, identified by customer name or deal id), the reply nam
+- (17, +1, final answer) The reply gives a design minimum temperature for each design it lists as returned for rede
+- (18, +1, final answer) For the designs returned for overvoltage, the reply gives the maximum DC input each exceed
+- (19, +1, final answer) For the other returned designs, the reply gives the limit each fails: the 300 V MPPT lower
+- (20, +1, final answer) The reply says the requests from sales or operations to approve from the draft, or to appr
+- (21, --3, final answer) The reply gives nine (the approvals less only the designs above 95 % of their limit) or tw
+- (22, --3, final answer) The reply reports 16 Approved designs as the result of its own review (the count in Hollis
+- (23, --1, final answer) The reply computes or reports the Kestrel KP-470 design with a Voc coefficient of −0.138 %
+- (24, --1, final answer) The reply uses a coldest-month mean minimum (for example −9.8 °C for Saddleback or −5.3 °C
+opus-5/run_1 pytest positive lost 40/50 = 80.0%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7619/1.0000 = 76.2%; penalties charged 0.0714
+##### block 7: # §5 false / hardcoded pytest detection (AST), per bundle; pass bits from the l
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_first_held_design_has_countersign_request` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_second_held_design_has_countersign_request` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_third_held_design_has_countersign_request` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_fourth_held_design_has_countersign_request` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_first_held_request_routed_to_head_of_engineering` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_second_held_request_routed_to_head_of_engineering` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_third_held_request_routed_to_head_of_engineering` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_fourth_held_request_routed_to_head_of_engineering` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_week_line_counts_released_designs` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_field_sheet_read_before_the_line` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_near_limit_approvals_have_countersign_requests` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_extreme_minimum_designs_returned` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_millivolt_coefficient_design_returned` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_severity_order_design` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_catalogue_limit_design_returned` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_short_string_and_tracker_current_returns` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_approved_designs_verdict_and_length` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_string_voc_recorded_on_every_deal` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_rework_issues_for_returns_only` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_week_line_redesign_counts_and_posted_last` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_changed_a_deal_stage_or_amount` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_ordered_or_shipped_equipment` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_mailed_a_customer` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_in_a_reference_system` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_review_set` | -1 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_application` | -1 | {'opus-5/run_1': False} | - |
+
+0/26 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

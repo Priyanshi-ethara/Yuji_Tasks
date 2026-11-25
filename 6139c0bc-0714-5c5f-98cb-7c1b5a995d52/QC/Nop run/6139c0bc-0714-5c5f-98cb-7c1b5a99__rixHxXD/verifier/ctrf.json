@@ -1,0 +1,229 @@
+{
+  "results": {
+    "tool": {
+      "name": "pytest"
+    },
+    "summary": {
+      "tests": 35,
+      "passed": 0,
+      "failed": 35,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "overall_score": 0.0,
+      "weighted_percentage": 0.0
+    },
+    "tests": [
+      {
+        "name": "test_salem_location_on_the_validated_registers",
+        "status": "failed",
+        "duration": 6,
+        "weight": 5
+      },
+      {
+        "name": "test_salem_market_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_eindhoven_location_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_eindhoven_market_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_macon_location_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_macon_market_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_elkhart_location_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_elkhart_market_on_the_validated_registers",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_summary_location_total_of_the_struck_board",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_summary_market_total_of_the_struck_board",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_energy_platform_read_again_before_the_strike",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_leipzig_cells_follow_the_reissued_august_invoice",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_stuttgart_cells_follow_the_reissued_september_invoice",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_registry_statuses_at_the_strike",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_reissue_and_registry_change_read_before_the_strike",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_summary_page_lists_every_excluded_instrument",
+        "status": "failed",
+        "duration": 1,
+        "weight": 3
+      },
+      {
+        "name": "test_gdansk_mwh_billed_account_scaled_to_kwh",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_steam_enthalpy_and_supplier_factor_rules",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_chilled_water_cop_rule",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_greer_invoice_over_its_bms_meter",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_factor_erratum_rows",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_tyler_certificate_outside_vintage_window",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_leeds_guarantee_of_origin_outside_gb_market",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_rockford_retired_for_a_former_group_company",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_dunmore_certificate_already_claimed_last_year",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_huntsville_generator_commissioned_too_early",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_plano_financial_ppa_left_out",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_rotterdam_spring_vintage_kept",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_coventry_rego_capped_at_site_consumption",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_valid_us_instruments_applied",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_guard_keyed_into_the_registry_mirror",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_outside_the_sustainability_space",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_beyond_the_two_records_allowed",
+        "status": "failed",
+        "duration": 0,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_board_items_added_removed_or_other_cells_changed",
+        "status": "failed",
+        "duration": 0,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_signed_out_of_an_application",
+        "status": "failed",
+        "duration": 0,
+        "weight": -1
+      }
+    ]
+  }
+}

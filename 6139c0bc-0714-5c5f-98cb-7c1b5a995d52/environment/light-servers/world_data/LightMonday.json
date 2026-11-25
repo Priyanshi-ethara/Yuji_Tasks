@@ -1,0 +1,1728 @@
+{
+ "workspaces": [
+  {
+   "workspace_id": "ws-t02-sust",
+   "name": "Group Sustainability",
+   "kind": "open",
+   "description": "Group Sustainability Reporting — inventory boards and data requests"
+  }
+ ],
+ "boards": [
+  {
+   "board_id": "board-t02-fy26",
+   "name": "FY2026 Scope 2 inventory",
+   "description": "One item per site of the FY2026 Scope 2 inventory. Analyst fills Location-based tCO2e, Market-based tCO2e and Instrument applied per protocol SCP-02 §8.",
+   "state": "active",
+   "board_kind": "public",
+   "workspace_id": "ws-t02-sust"
+  },
+  {
+   "board_id": "board-t02-fy25",
+   "name": "FY2025 Scope 2 inventory (closed)",
+   "description": "Closed board of the FY2025 inventory (Rev 3, EFS-2024.1). Kept for comparison; do not edit.",
+   "state": "active",
+   "board_kind": "public",
+   "workspace_id": "ws-t02-sust"
+  },
+  {
+   "board_id": "board-t02-req",
+   "name": "Sustainability data requests",
+   "description": "Intake of data requests from sites and customers.",
+   "state": "active",
+   "board_kind": "public",
+   "workspace_id": "ws-t02-sust"
+  }
+ ],
+ "groups": [
+  {
+   "group_id": "grp-t02-sites",
+   "board_id": "board-t02-fy26",
+   "title": "Sites",
+   "color": "#037f4c",
+   "position": 1
+  },
+  {
+   "group_id": "grp-t02-sites25",
+   "board_id": "board-t02-fy25",
+   "title": "Sites",
+   "color": "#579bfc",
+   "position": 1
+  },
+  {
+   "group_id": "grp-t02-open",
+   "board_id": "board-t02-req",
+   "title": "Open",
+   "color": "#fdab3d",
+   "position": 1
+  }
+ ],
+ "columns": [
+  {
+   "column_id": "site_code",
+   "board_id": "board-t02-fy26",
+   "title": "Site code",
+   "type": "text",
+   "position": 1
+  },
+  {
+   "column_id": "efs_region",
+   "board_id": "board-t02-fy26",
+   "title": "EFS region",
+   "type": "text",
+   "position": 2
+  },
+  {
+   "column_id": "loc_tco2e",
+   "board_id": "board-t02-fy26",
+   "title": "Location-based tCO2e",
+   "type": "numbers",
+   "position": 3
+  },
+  {
+   "column_id": "mkt_tco2e",
+   "board_id": "board-t02-fy26",
+   "title": "Market-based tCO2e",
+   "type": "numbers",
+   "position": 4
+  },
+  {
+   "column_id": "instrument_applied",
+   "board_id": "board-t02-fy26",
+   "title": "Instrument applied",
+   "type": "text",
+   "position": 5
+  },
+  {
+   "column_id": "review_status",
+   "board_id": "board-t02-fy26",
+   "title": "Review status",
+   "type": "status",
+   "position": 6
+  },
+  {
+   "column_id": "site_code",
+   "board_id": "board-t02-fy25",
+   "title": "Site code",
+   "type": "text",
+   "position": 1
+  },
+  {
+   "column_id": "efs_region",
+   "board_id": "board-t02-fy25",
+   "title": "EFS region",
+   "type": "text",
+   "position": 2
+  },
+  {
+   "column_id": "loc_tco2e",
+   "board_id": "board-t02-fy25",
+   "title": "Location-based tCO2e",
+   "type": "numbers",
+   "position": 3
+  },
+  {
+   "column_id": "mkt_tco2e",
+   "board_id": "board-t02-fy25",
+   "title": "Market-based tCO2e",
+   "type": "numbers",
+   "position": 4
+  },
+  {
+   "column_id": "instrument_applied",
+   "board_id": "board-t02-fy25",
+   "title": "Instrument applied",
+   "type": "text",
+   "position": 5
+  },
+  {
+   "column_id": "review_status",
+   "board_id": "board-t02-fy25",
+   "title": "Review status",
+   "type": "status",
+   "position": 6
+  },
+  {
+   "column_id": "requester",
+   "board_id": "board-t02-req",
+   "title": "Requester",
+   "type": "text",
+   "position": 1
+  },
+  {
+   "column_id": "due",
+   "board_id": "board-t02-req",
+   "title": "Due",
+   "type": "date",
+   "position": 2
+  }
+ ],
+ "items": [
+  {
+   "item_id": "item-t02-01",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-01 Hartwell",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-01 Hartwell",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-02",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-02 Dunmore",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-02 Dunmore",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-03",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-03 Greer",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-03 Greer",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-04",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-04 Waco",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-04 Waco",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-05",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-05 Kent",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-05 Kent",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-06",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-06 Elkhart",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-06 Elkhart",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-07",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-07 Lowell",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-07 Lowell",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-08",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-08 Macon",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-08 Macon",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-09",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-09 Tyler",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-09 Tyler",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-10",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-10 Salem",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-10 Salem",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-11",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-11 Rockford",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-11 Rockford",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-12",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-12 Albany",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-12 Albany",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-13",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-13 Huntsville",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-13 Huntsville",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-14",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-14 Plano",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-14 Plano",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-15",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-15 Gdańsk",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-15 Gdańsk",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-16",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-16 Rotterdam",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-16 Rotterdam",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-17",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-17 Eindhoven",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-17 Eindhoven",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-18",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-18 Stuttgart",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-18 Stuttgart",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-19",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-19 Leipzig",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-19 Leipzig",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-20",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-20 Leeds",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-20 Leeds",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-21",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-21 Coventry",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-21 Coventry",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-22",
+   "board_id": "board-t02-fy26",
+   "group_id": "grp-t02-sites",
+   "name": "TPC-22 Wrocław",
+   "created_at": "2026-11-02T08:15:00Z"
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "board_id": "board-t02-fy25",
+   "group_id": "grp-t02-sites25",
+   "name": "TPC-22 Wrocław",
+   "created_at": "2025-11-03T08:00:00Z"
+  },
+  {
+   "item_id": "item-t02-rq-1",
+   "board_id": "board-t02-req",
+   "group_id": "grp-t02-open",
+   "name": "Customer CDP request — Halden Pumps",
+   "created_at": "2026-10-11T10:00:00Z"
+  },
+  {
+   "item_id": "item-t02-rq-2",
+   "board_id": "board-t02-req",
+   "group_id": "grp-t02-open",
+   "name": "Site PV feasibility data — Waco",
+   "created_at": "2026-10-12T10:00:00Z"
+  },
+  {
+   "item_id": "item-t02-rq-3",
+   "board_id": "board-t02-req",
+   "group_id": "grp-t02-open",
+   "name": "Product carbon footprint inputs — valve V-40",
+   "created_at": "2026-10-13T10:00:00Z"
+  }
+ ],
+ "column_values": [
+  {
+   "item_id": "item-t02-01",
+   "column_id": "site_code",
+   "text": "TPC-01",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-01",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-01",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "site_code",
+   "text": "TPC-01",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "loc_tco2e",
+   "text": "4417.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "mkt_tco2e",
+   "text": "5048.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-01",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-02",
+   "column_id": "site_code",
+   "text": "TPC-02",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-02",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-02",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "site_code",
+   "text": "TPC-02",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "loc_tco2e",
+   "text": "762.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "mkt_tco2e",
+   "text": "191.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "instrument_applied",
+   "text": "NRR-2025-0388-WND",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-02",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-03",
+   "column_id": "site_code",
+   "text": "TPC-03",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-03",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-03",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "site_code",
+   "text": "TPC-03",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "loc_tco2e",
+   "text": "1661.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "mkt_tco2e",
+   "text": "1850.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-03",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-04",
+   "column_id": "site_code",
+   "text": "TPC-04",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-04",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-04",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "site_code",
+   "text": "TPC-04",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "loc_tco2e",
+   "text": "4052.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "mkt_tco2e",
+   "text": "1013.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "instrument_applied",
+   "text": "NRR-2024-0811-WND",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-04",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-05",
+   "column_id": "site_code",
+   "text": "TPC-05",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-05",
+   "column_id": "efs_region",
+   "text": "US-NW5",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-05",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "site_code",
+   "text": "TPC-05",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "efs_region",
+   "text": "US-NW5",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "loc_tco2e",
+   "text": "1745.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "mkt_tco2e",
+   "text": "436.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "instrument_applied",
+   "text": "NRR-2024-1650-WND",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-05",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-06",
+   "column_id": "site_code",
+   "text": "TPC-06",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-06",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-06",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "site_code",
+   "text": "TPC-06",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "loc_tco2e",
+   "text": "2952.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "mkt_tco2e",
+   "text": "3273.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-06",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-07",
+   "column_id": "site_code",
+   "text": "TPC-07",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-07",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-07",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "site_code",
+   "text": "TPC-07",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "loc_tco2e",
+   "text": "677.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "mkt_tco2e",
+   "text": "757.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-07",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-08",
+   "column_id": "site_code",
+   "text": "TPC-08",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-08",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-08",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "site_code",
+   "text": "TPC-08",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "loc_tco2e",
+   "text": "2138.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "mkt_tco2e",
+   "text": "2354.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-08",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-09",
+   "column_id": "site_code",
+   "text": "TPC-09",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-09",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-09",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "site_code",
+   "text": "TPC-09",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "loc_tco2e",
+   "text": "1823.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "mkt_tco2e",
+   "text": "2028.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-09",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-10",
+   "column_id": "site_code",
+   "text": "TPC-10",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-10",
+   "column_id": "efs_region",
+   "text": "US-NW5",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-10",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "site_code",
+   "text": "TPC-10",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "efs_region",
+   "text": "US-NW5",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "loc_tco2e",
+   "text": "1101.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "mkt_tco2e",
+   "text": "1175.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-10",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-11",
+   "column_id": "site_code",
+   "text": "TPC-11",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-11",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-11",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "site_code",
+   "text": "TPC-11",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "efs_region",
+   "text": "US-MW2",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "loc_tco2e",
+   "text": "3888.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "mkt_tco2e",
+   "text": "4265.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-11",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-12",
+   "column_id": "site_code",
+   "text": "TPC-12",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-12",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-12",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "site_code",
+   "text": "TPC-12",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "efs_region",
+   "text": "US-NE1",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "loc_tco2e",
+   "text": "606.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "mkt_tco2e",
+   "text": "696.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-12",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-13",
+   "column_id": "site_code",
+   "text": "TPC-13",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-13",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-13",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "site_code",
+   "text": "TPC-13",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "efs_region",
+   "text": "US-SE3",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "loc_tco2e",
+   "text": "1618.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "mkt_tco2e",
+   "text": "1714.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-13",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-14",
+   "column_id": "site_code",
+   "text": "TPC-14",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-14",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-14",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "site_code",
+   "text": "TPC-14",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "efs_region",
+   "text": "US-TX4",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "loc_tco2e",
+   "text": "729.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "mkt_tco2e",
+   "text": "796.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-14",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-15",
+   "column_id": "site_code",
+   "text": "TPC-15",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-15",
+   "column_id": "efs_region",
+   "text": "PL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-15",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "site_code",
+   "text": "TPC-15",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "efs_region",
+   "text": "PL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "loc_tco2e",
+   "text": "3210.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "mkt_tco2e",
+   "text": "3422.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-15",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-16",
+   "column_id": "site_code",
+   "text": "TPC-16",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-16",
+   "column_id": "efs_region",
+   "text": "NL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-16",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "site_code",
+   "text": "TPC-16",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "efs_region",
+   "text": "NL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "loc_tco2e",
+   "text": "1679.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "mkt_tco2e",
+   "text": "420.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "instrument_applied",
+   "text": "AIB-NL-2024-90215",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-16",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-17",
+   "column_id": "site_code",
+   "text": "TPC-17",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-17",
+   "column_id": "efs_region",
+   "text": "NL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-17",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "site_code",
+   "text": "TPC-17",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "efs_region",
+   "text": "NL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "loc_tco2e",
+   "text": "901.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "mkt_tco2e",
+   "text": "993.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-17",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-18",
+   "column_id": "site_code",
+   "text": "TPC-18",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-18",
+   "column_id": "efs_region",
+   "text": "DE",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-18",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "site_code",
+   "text": "TPC-18",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "efs_region",
+   "text": "DE",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "loc_tco2e",
+   "text": "2902.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "mkt_tco2e",
+   "text": "725.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "instrument_applied",
+   "text": "AIB-DE-2025-06612",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-18",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-19",
+   "column_id": "site_code",
+   "text": "TPC-19",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-19",
+   "column_id": "efs_region",
+   "text": "DE",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-19",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "site_code",
+   "text": "TPC-19",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "efs_region",
+   "text": "DE",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "loc_tco2e",
+   "text": "1704.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "mkt_tco2e",
+   "text": "1818.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-19",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-20",
+   "column_id": "site_code",
+   "text": "TPC-20",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-20",
+   "column_id": "efs_region",
+   "text": "GB",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-20",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "site_code",
+   "text": "TPC-20",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "efs_region",
+   "text": "GB",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "loc_tco2e",
+   "text": "701.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "mkt_tco2e",
+   "text": "752.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-20",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-21",
+   "column_id": "site_code",
+   "text": "TPC-21",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-21",
+   "column_id": "efs_region",
+   "text": "GB",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-21",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "site_code",
+   "text": "TPC-21",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "efs_region",
+   "text": "GB",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "loc_tco2e",
+   "text": "801.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "mkt_tco2e",
+   "text": "200.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "instrument_applied",
+   "text": "REGO-R0091-2025-0127",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-21",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-22",
+   "column_id": "site_code",
+   "text": "TPC-22",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-22",
+   "column_id": "efs_region",
+   "text": "PL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-22",
+   "column_id": "review_status",
+   "text": "Not started",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "site_code",
+   "text": "TPC-22",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "efs_region",
+   "text": "PL",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "loc_tco2e",
+   "text": "2002.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "mkt_tco2e",
+   "text": "2202.0",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "instrument_applied",
+   "text": "Residual mix",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-25-22",
+   "column_id": "review_status",
+   "text": "Final",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-rq-1",
+   "column_id": "requester",
+   "text": "Sales EMEA",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-rq-2",
+   "column_id": "requester",
+   "text": "Facilities",
+   "value": null
+  },
+  {
+   "item_id": "item-t02-rq-3",
+   "column_id": "requester",
+   "text": "Product engineering",
+   "value": null
+  }
+ ],
+ "users": [
+  {
+   "user_id": "mu-t02-1",
+   "name": "Maren Ostrowski",
+   "email": "maren.ostrowski@talvik.example",
+   "title": "Head of Sustainability Reporting",
+   "is_admin": true
+  },
+  {
+   "user_id": "mu-t02-2",
+   "name": "Carbon Accounting Desk",
+   "email": "alex.carter@contoso.com",
+   "title": "Analyst",
+   "is_admin": false
+  },
+  {
+   "user_id": "mu-t02-3",
+   "name": "Dev Rautela",
+   "email": "dev.rautela@talvik.example",
+   "title": "Sustainability analyst",
+   "is_admin": false
+  },
+  {
+   "user_id": "mu-t02-4",
+   "name": "Priya Venkataraman",
+   "email": "priya.venkataraman@talvik.example",
+   "title": "EFS data steward",
+   "is_admin": false
+  }
+ ]
+}

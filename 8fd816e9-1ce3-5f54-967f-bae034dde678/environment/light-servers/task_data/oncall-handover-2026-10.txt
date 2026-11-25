@@ -1,0 +1,23 @@
+=== Handover week 2026-10-05 .. 2026-10-11 ===
+- Ledger: quiet. journal-export slow on 2 Oct warehouse lag, self-recovered.
+- Acquiring: tokenisation-vault p99 wobble 5 Oct (HSM pool). 3ds directory server timeouts 10 Oct, ~12 min.
+- Payouts: 4.19.0 promoted 3 Oct after soak; 4.19.1 promoted 10 Oct.
+- Risk: fraud-score model store migration done in its declared window 6 Oct 02:00-03:00. KYC/dispute outage 8 Oct (PIR filed).
+
+=== Handover week 2026-10-12 .. 2026-10-18 ===
+- Ledger: ledger-posting partition rebuild 14 Oct 01:00-02:25 as declared. fx-rates-feed stale for ~10 min 11 Oct.
+- Acquiring: merchant-onboarding-api slow 13 Oct (KYB vendor).
+- Payouts: 4.19.2 soak rolled back 16 Oct 23:10, wren-0 drained until 20 Oct.
+- Risk: velocity-limits cache stampede 14 Oct, 11 min. sanctions-screen reload cancelled (moved to Nov).
+
+=== Handover week 2026-10-19 .. 2026-10-25 ===
+- Ledger: statement-render font cache errors 19 Oct.
+- Acquiring: card-auth-gateway HSM firmware 21 Oct 03:00-03:45 (Felix; PD record raised after). chargeback-intake slow 20 Oct.
+- Payouts: SEV-2 19 Oct 00:52-01:19, all prod cells; sweep-reconciler failing until 02:40.
+- Risk: kyc 21 Oct short blip (9 min).
+
+=== Handover week 2026-10-26 .. 2026-11-01 ===
+- Ledger: journal-export warehouse lag 30 Oct.
+- Acquiring: tokenisation key rotation 27 Oct 01:05-01:30, vault drained on all prod cells. Not raised in PD - Yusuf says it was on the calendar.
+- Payouts: bank-file-dispatch partner SFTP slow 29 Oct.
+- Risk: dispute-evidence bundling backlog 29 Oct.

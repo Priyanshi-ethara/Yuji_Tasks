@@ -1,0 +1,51 @@
+{
+    "id": "d43bc11f-237f-4b9b-b65c-df36a5760198",
+    "started_at": "2026-11-16T16:42:50.999103",
+    "updated_at": "2026-11-16T16:44:26.702110",
+    "finished_at": "2026-11-16T16:44:26.702110",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "pytest": 0.0,
+                        "reward": 0.0,
+                        "rubric": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "pytest": {
+                        "0.0": [
+                            "a6901ded-0579-5c2d-8ae3-a0649c5c__RQAQ7rc"
+                        ]
+                    },
+                    "rubric": {
+                        "0.0": [
+                            "a6901ded-0579-5c2d-8ae3-a0649c5c__RQAQ7rc"
+                        ]
+                    },
+                    "reward": {
+                        "0.0": [
+                            "a6901ded-0579-5c2d-8ae3-a0649c5c__RQAQ7rc"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

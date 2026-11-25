@@ -1,0 +1,243 @@
+######## pb_0
+<scratch>/13444412-6c43-5e79-92de-aed8d163049c
+['opus-5'] ['run_1']
+######## pb_1
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+######## pb_2
+ground truth: test_weights | 25 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.154, 'pytest': 0.2128, 'rubric': 0.0952}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.154, 'report.final_reward': 0.154, 'result.verifier_result': 0.154, 'pass_summary.per_run.combined': 0.154}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=23 earned=10.0 penalty=0.0 total_positive=47 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2128 vs reported 0.2128  ok
+1.5b weighted tests vs ledger rows weighted=23 ledger=23 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 9 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.0952 vs reported 0.0952 / channel 0.0952  ok
+1.5c answers                       n=25 yes=14 no=11 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           25 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=42 penalty=11 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.154 vs reward 0.154  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=149 last_step_source=agent
+1.5f final message                 final_message.md=13778 chars, last agent text=13778 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 7842610, 'total_completion_tokens': 68887, 'total_cached_tokens': 7567301, 'total_cost_usd': 7.2263917499999994} agent_result={'n_input_tokens': 7842610, 'n_cache_tokens': 7567301, 'n_output_tokens': 68887, 'cost_usd': 7.2263917499999994}
+######## pb_3
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.154 recomputed=0.154 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2128 recomputed=0.2128 over 1 runs  ok
+1.6d average_rubric_score          reported=0.0952 recomputed=0.0952 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.154 vs 0.154
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('13444412-6c43-5e79-92de-aed8d163049c-opus-5-20261116-114232-regraded', 1)]
+1.6h failure modes                 ['partial']
+######## pb_4
+== opus-5/run_1
+2.0 passed                         False  reward=0.154 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=148 mcp=138 local=10  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        27  LightZendesk_list_comments
+        24  LightAirtable_update_record
+        24  LightZendesk_update_ticket
+         8  terminal
+         8  LightIntercom_get_conversation
+         7  LightNotion_list_block_children
+         7  LightDocuSign_list_documents
+         7  LightGmail_get_message
+         3  LightZendesk_list_tickets
+         2  task_tracker
+         2  LightSalesforce_list_records
+         2  LightAirtable_list_records
+         2  LightStripe_update_subscription
+         1  LightConfluence_login
+         1  LightZendesk_login
+         1  LightConfluence_list_spaces
+         1  LightConfluence_list_content
+         1  LightNotion_login
+         1  LightNotion_search
+         1  LightNotion_query_database
+         1  LightNotion_get_database
+         1  LightZendesk_list_users
+         1  LightZendesk_list_organizations
+         1  LightStripe_login
+         1  LightSalesforce_login
+         1  LightStripe_list_customers
+         1  LightStripe_list_subscriptions
+         1  LightDocuSign_login
+         1  LightDocuSign_list_envelopes
+         1  LightIntercom_login
+         1  LightGmail_login
+         1  LightIntercom_list_conversations
+         1  LightGmail_list_messages
+         1  LightIntercom_list_contacts
+         1  LightAirtable_login
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightAirtable_create_records
+2.2b per server [reads, writes]    {'(local)': [10, 0], 'LightConfluence': [3, 0], 'LightZendesk': [33, 24], 'LightNotion': [11, 0], 'LightStripe': [3, 2], 'LightSalesforce': [3, 0], 'LightDocuSign': [9, 0], 'LightIntercom': [11, 0], 'LightGmail': [9, 0], 'LightAirtable': [5, 25]}
+2.2c wired servers never called    ['LightGoogleCalendar', 'LightGoogleDrive', 'LightJira', 'LightMailchimp', 'LightQuickBooks', 'LightSlack']
+2.2d guards tripped                none
+2.2e positive tests missed         9: ['test_cobalt_wren_upgrade_on_the_amended_price', 'test_hollis_marlow_annual_move_on_the_amended_price', 'test_juniper_vale_reduction_at_the_amended_price', 'test_vellum_street_upgrade_at_the_amended_price', 'test_desk_log_tallies', 'test_amended_price_card_read_before_the_desk_log', 'test_cobalt_wren_ticket_answered_with_its_template', 'test_hollis_marlow_ticket_answered_with_its_template', 'test_timing_and_plain_requests']
+   2.2f final message (first 1200 chars):
+      Queue cleared and the desk log is in. Here's your handover.
+      
+      ---
+      
+      ## Plan changes queue — Monday 16 November 2026
+      
+      **Tallies.** 24 tickets processed: 14 changes scheduled, 2 cancellations scheduled, 4 no change — condition not met, 1 no change — withdrawn, 1 no change — already in place, 2 needs billing-contact confirmation. Change orders 5201–5224 are all filled; the desk log for today went in last.
+      
+      ### Where the prices came from — and the one thing that changed the day
+      
+      Every price I recorded, quoted or compared came from the Revenue Operations price book in Notion, which BD-STD-2 section 6 makes the source of record. The important find is that the price book carries a pricing-committee decision, PRC-2026-09, taken on 30 September and notified to customers on 5 October: **for periods starting on or after 1 January 2027, Grid Monthly goes £24.00 → £26.00, Grid Annual £240.00 → £258.00 (£21.50 a seat a month), Mosaic Monthly £35.00 → £37.00 and Mosaic Annual £348.00 → £372.00 (£31.00 a seat a month). Line is unchanged on both intervals.** That 2027 review sits in the body of each price card, not in the card's price field, so anything that reads only the field or an export shows ju
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.119) The reply says the price book's 2027 annual prices had been amended (a pricing committee amendment of the 2027
+          WHY: The final answer describes PRC-2026-09 as the pricing-committee decision and says it used the resulting 2027 card, but never says this was an amendment to the initially published 2027 review or that amended figures super
+      (2, 0.119) The reply says Cobalt Wren Design's condition for moving to Mosaic (Mosaic on annual billing under £30 per sea
+          WHY: The final answer reaches the opposite conclusion: “£372.00 a year, which is £31.00 a month. Not under £30, so condition not met.”
+      (3, 0.119) The reply says Hollis Marlow Partners' condition (Grid annual no more than £21 per seat per month) is met beca
+          WHY: The final answer says Grid Annual is “£258.00 a year, £21.50 a month,” so Hollis Marlow’s condition was not met, rather than met at £21.00.
+      (4, 0.0714) The reply says Vellum Street's condition (Grid annual under £22 per seat per month) holds at its January 2027 
+          WHY: The final answer says Vellum Street’s January price is “£258.00 a year, £21.50 a month,” not £21.00.
+      (5, 0.0714) The reply says Mistral Yard's condition for cancelling (Grid's price going up next year) is met because Grid A
+          WHY: Although the final answer says Grid’s price rises and Mistral’s condition is met, it gives the rise as £240 to £258, not £252 (or £20 to £21).
+      (6, 0.0714) The reply says Tamsin Ode Studio stays on Mosaic because Grid becomes more expensive before the studio's 2027 
+          WHY: The final answer says Tamsin stays on Mosaic because Grid becomes more expensive, but gives the relevant 2027 Grid price as £258/£21.50, not £252/£21.00.
+      (7, 0.0714) The reply says which 2027 prices the amendment changed: the annual prices of Grid and Mosaic (the monthly pric
+          WHY: The final answer does not identify an amendment limited to Grid Annual and Mosaic Annual. Instead it says Grid Monthly, Grid Annual, Mosaic Monthly, and Mosaic Annual all change.
+      (8, 0.0714) The reply says Juniper Vale Design's January 2027 seat reduction on Mosaic Annual, a change with no condition 
+          WHY: The final answer mentions “Juniper Vale £372.00” as a 2027 price but does not say Juniper’s reduction used an amended Mosaic Annual price rather than the review’s first-published figure.
+      (18, 0.0238) The reply says added seats (Umber & Lime) or a move to a higher plan (Yarrow Bright) take effect on the day th
+          WHY: The final answer does not say an added-seat or higher-plan change takes effect on 16 November 2026. For Umber & Lime it instead says the customer’s later requested date governs: “18 November.”
+      (23, -0.0714) The reply says Grid's price is not going up or is holding for 2027, or that Grid Annual will still be £240 per
+          WHY: The final answer says the opposite: Grid Annual rises from £240 to £258 for 2027. It mentions Tom incorrectly read the price as holding, but explicitly rejects that view.
+      (24, -0.0238) The reply gives 17 as the number of changes scheduled today. A figure stated only as someone else's (Tom's dra
+          WHY: The final answer gives 17 only as Tom’s incorrect tally: “He had 17 changes.” Its own tally is 14, so the excluded someone-else’s-figure case applies.
+######## pb_5
+== opus-5/run_1
+agent steps / with reasoning       149 / 25  (25635 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 149
+verdict                            present
+######## pb_6
+tests=23 criteria=25
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| PARTIAL | `test_requests_from_others_held_for_the_billing_contact` | 1 | 0.48 | 0.50 | 13 (+1) | The reply says Bramley Kite Studio's and Gannet Row Studio's requests  |
+| PARTIAL | `test_withdrawn_and_already_in_place` | 1 | 0.39 | 0.50 | 14 (+1) | The reply says Fernhill Motion's request was withdrawn by the customer |
+| PARTIAL | `test_juniper_vale_reduction_at_the_amended_price` | 5 | 0.29 | 0.50 | 8 (+3) | The reply says Juniper Vale Design's January 2027 seat reduction on Mo |
+| PARTIAL | `test_dunmore_lane_left_inside_its_committed_term` | 1 | 0.29 | 0.50 | 11 (+1) | The reply says Dunmore Lane Architects was not cancelled because its s |
+| PARTIAL | `test_rowan_quay_chat_confirmation_honoured` | 1 | 0.27 | 0.50 | 12 (+1) | The reply says Rowan Quay Media's request was sent by someone who is n |
+| PARTIAL | `test_hollis_marlow_annual_move_on_the_amended_price` | 5 | 0.21 | 0.50 | 3 (+5) | The reply says Hollis Marlow Partners' condition (Grid annual no more  |
+| PARTIAL | `test_scope_and_referent_readings` | 1 | 0.19 | 0.50 | 17 (+1) | The reply says Larchmont Type Foundry's 'go ahead' referred to the quo |
+| PARTIAL | `test_pemberton_hale_booked_to_the_senders_company` | 1 | 0.18 | 0.50 | 15 (+1) | The reply says the Pemberton Hale ticket belongs to Pemberton Hale Arc |
+| PARTIAL | `test_cobalt_wren_upgrade_on_the_amended_price` | 5 | 0.17 | 0.50 | 2 (+5) | The reply says Cobalt Wren Design's condition for moving to Mosaic (Mo |
+| PARTIAL | `test_vellum_street_upgrade_at_the_amended_price` | 5 | 0.17 | 0.50 | 4 (+3) | The reply says Vellum Street's condition (Grid annual under £22 per se |
+| PARTIAL | `test_cobalt_wren_ticket_answered_with_its_template` | 3 | 0.11 | 0.50 | 2 (+5) | The reply says Cobalt Wren Design's condition for moving to Mosaic (Mo |
+| PARTIAL | `test_hollis_marlow_ticket_answered_with_its_template` | 3 | 0.10 | 0.50 | 3 (+5) | The reply says Hollis Marlow Partners' condition (Grid annual no more  |
+| INDEPENDENT | `test_price_card_body_read_before_rows_it_decides` | 1 | 0.04 | 0.14 | 13 (+1) | The reply says Bramley Kite Studio's and Gannet Row Studio's requests  |
+| INDEPENDENT | `test_desk_log_tallies` | 5 | 0.05 | 0.12 | 12 (+1) | The reply says Rowan Quay Media's request was sent by someone who is n |
+| INDEPENDENT | `test_rows_the_price_review_decides` | 1 | 0.17 | 0.00 | 5 (+3) | The reply says Mistral Yard's condition for cancelling (Grid's price g |
+| INDEPENDENT | `test_amended_price_card_read_before_the_desk_log` | 5 | 0.13 | 0.00 | 1 (+5) | The reply says the price book's 2027 annual prices had been amended (a |
+| INDEPENDENT | `test_timing_and_plain_requests` | 1 | 0.11 | 0.00 | 18 (+1) | The reply says added seats (Umber & Lime) or a move to a higher plan ( |
+| INDEPENDENT | `test_other_queue_tickets_answered_from_their_templates` | 1 | 0.09 | 0.00 | 15 (+1) | The reply says the Pemberton Hale ticket belongs to Pemberton Hale Arc |
+| INDEPENDENT | `test_guard_wrote_outside_the_desk_scope` | -3 | 0.09 | 0.00 | 10 (+1) | The reply says the account manager's request to hold Mistral Yard's ca |
+| INDEPENDENT | `test_guard_signed_out_of_an_app` | -1 | 0.07 | 0.00 | 11 (+1) | The reply says Dunmore Lane Architects was not cancelled because its s |
+| INDEPENDENT | `test_guard_subscription_ended_before_its_period_closed` | -5 | 0.06 | 0.00 | 11 (+1) | The reply says Dunmore Lane Architects was not cancelled because its s |
+| INDEPENDENT | `test_desk_log_written_after_the_last_change_order` | 1 | 0.03 | 0.00 | 11 (+1) | The reply says Dunmore Lane Architects was not cancelled because its s |
+| INDEPENDENT | `test_guard_refund_or_credit_issued` | -5 | 0.02 | 0.00 | 19 (+1) | The reply says Inkwell Harbour's request for a refund goes to Finance  |
+
+DOUBLE-COUNTED=0 PARTIAL=12 INDEPENDENT=11 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 25 of 25
+- (1, +5, final answer) The reply says the price book's 2027 annual prices had been amended (a pricing committee a
+- (2, +5, final answer) The reply says Cobalt Wren Design's condition for moving to Mosaic (Mosaic on annual billi
+- (3, +5, final answer) The reply says Hollis Marlow Partners' condition (Grid annual no more than £21 per seat pe
+- (4, +3, final answer) The reply says Vellum Street's condition (Grid annual under £22 per seat per month) holds 
+- (5, +3, final answer) The reply says Mistral Yard's condition for cancelling (Grid's price going up next year) i
+- (6, +3, final answer) The reply says Tamsin Ode Studio stays on Mosaic because Grid becomes more expensive befor
+- (7, +3, final answer) The reply says which 2027 prices the amendment changed: the annual prices of Grid and Mosa
+- (8, +3, final answer) The reply says Juniper Vale Design's January 2027 seat reduction on Mosaic Annual, a chang
+- (9, +1, final answer) The reply says Elderfield Print Co's condition (annual billing under £21 per seat per mont
+- (10, +1, final answer) The reply says the account manager's request to hold Mistral Yard's cancellation was not f
+- (11, +1, final answer) The reply says Dunmore Lane Architects was not cancelled because its signed order form (in
+- (12, +1, final answer) The reply says Rowan Quay Media's request was sent by someone who is not the billing conta
+- (13, +1, final answer) The reply says Bramley Kite Studio's and Gannet Row Studio's requests were held because ne
+- (14, +1, final answer) The reply says Fernhill Motion's request was withdrawn by the customer's later reply on th
+- (15, +1, final answer) The reply says the Pemberton Hale ticket belongs to Pemberton Hale Architecture Ltd, not t
+- (16, +1, final answer) The reply says Saltmarsh Collective's 'cancel all seats except the two design seats' was r
+- (17, +1, final answer) The reply says Larchmont Type Foundry's 'go ahead' referred to the quoted option that star
+- (18, +1, final answer) The reply says added seats (Umber & Lime) or a move to a higher plan (Yarrow Bright) take 
+- (19, +1, final answer) The reply says Inkwell Harbour's request for a refund goes to Finance and gives a reason i
+- (20, +1, final answer) The reply names at least one working copy or colleague's note on prices or dispositions th
+- (21, --3, final answer) The reply says Cobalt Wren Design's move to Mosaic was not made, or its condition was not 
+- (22, --3, final answer) The reply says Hollis Marlow Partners' move to Grid Annual was not made, or its condition 
+- (23, --3, final answer) The reply says Grid's price is not going up or is holding for 2027, or that Grid Annual wi
+- (24, --1, final answer) The reply gives 17 as the number of changes scheduled today. A figure stated only as someo
+- (25, --1, final answer) The reply gives 14 as the number of changes scheduled today, or 4 as the number of request
+opus-5/run_1 pytest positive lost 37/47 = 78.7%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7381/1.0000 = 73.8%; penalties charged 0.1667
+######## pb_7
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_cobalt_wren_upgrade_on_the_amended_price` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_hollis_marlow_annual_move_on_the_amended_price` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_juniper_vale_reduction_at_the_amended_price` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_vellum_street_upgrade_at_the_amended_price` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_desk_log_tallies` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_amended_price_card_read_before_the_desk_log` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_cobalt_wren_ticket_answered_with_its_template` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_hollis_marlow_ticket_answered_with_its_template` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_rows_the_price_review_decides` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_price_card_body_read_before_rows_it_decides` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_requests_from_others_held_for_the_billing_contact` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_rowan_quay_chat_confirmation_honoured` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_withdrawn_and_already_in_place` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_pemberton_hale_booked_to_the_senders_company` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_scope_and_referent_readings` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_dunmore_lane_left_inside_its_committed_term` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_timing_and_plain_requests` | 1 | {'opus-5/run_1': False} | - |
+| ok `test_other_queue_tickets_answered_from_their_templates` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_desk_log_written_after_the_last_change_order` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_refund_or_credit_issued` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_subscription_ended_before_its_period_closed` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_desk_scope` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_app` | -1 | {'opus-5/run_1': False} | - |
+
+0/23 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:
+
+######## §2.5 (verifier mode, grader-path grep, marker timeline; script in the report)
+verifier_environment_mode: separate
+grader-path hits in tool-call args: none
+first observation carrying PRC-2026-11: None
+trigger (23rd distinct row write): (115, 'recTslCO5223A0x')
+Notion calls at steps: [12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+desk log create at: [149]
+logout calls: []
+unknown in trajectory.json: 0

@@ -1,0 +1,105 @@
+{
+ "users": [
+  {
+   "sys_id": "sn_t02_hollis",
+   "user_name": "hollis.brandt",
+   "first_name": "Hollis",
+   "last_name": "Brandt",
+   "email": "hollis.brandt@talvik.example",
+   "active": "true",
+   "title": "Facilities energy manager"
+  }
+ ],
+ "incidents": [
+  {
+   "sys_id": "inc-t02-0001",
+   "number": "INC0042217",
+   "short_description": "Greer BMS main meter reads tenant CT set",
+   "description": "M-03-01 wired through tenant CT set since April 2025 retrofit; BMS total exceeds revenue meter by ~9%. Rewire planned FY2027.",
+   "state": "2",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2025-05-02T09:00:00Z",
+   "updated_at": "2025-05-02T09:00:00Z"
+  },
+  {
+   "sys_id": "inc-t02-0002",
+   "number": "INC0043980",
+   "short_description": "Salem AMR outage Jan–Feb 2026",
+   "description": "Manual register reads taken at month-end and loaded to the energy platform.",
+   "state": "6",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2026-01-31T18:00:00Z",
+   "updated_at": "2026-01-31T18:00:00Z"
+  },
+  {
+   "sys_id": "inc-t02-0003",
+   "number": "INC0045112",
+   "short_description": "Eindhoven meter platform gap June 2026",
+   "description": "Backfilled from meter internal log 2026-07-09.",
+   "state": "6",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2026-07-02T08:00:00Z",
+   "updated_at": "2026-07-02T08:00:00Z"
+  },
+  {
+   "sys_id": "inc-t02-0005",
+   "number": "INC0044306",
+   "short_description": "Macon AMR modem failure April 2026",
+   "description": "Modem on M-08-01 failed 2026-04-21; April month-end register read manually and loaded to the energy platform; modem replaced 2026-05-06.",
+   "state": "6",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2026-04-21T13:00:00Z",
+   "updated_at": "2026-04-21T13:00:00Z"
+  },
+  {
+   "sys_id": "inc-t02-0006",
+   "number": "INC0041775",
+   "short_description": "Elkhart AMR head-end migration December 2025",
+   "description": "No remote reads on M-06-01 during the Northgate head-end migration; December month-end register read manually and loaded to the energy platform.",
+   "state": "6",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2025-12-15T10:00:00Z",
+   "updated_at": "2025-12-15T10:00:00Z"
+  },
+  {
+   "sys_id": "inc-t02-0004",
+   "number": "INC0045890",
+   "short_description": "Leipzig substation metering transformer replaced",
+   "description": "New CT 250/5 fitted 2026-08-03; supplier billing system may still use 200/5.",
+   "state": "2",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "3",
+   "category": "facilities",
+   "assigned_to": "Facilities Shared Services",
+   "opened_by": "sn_t02_hollis",
+   "opened_at": "2026-08-04T10:00:00Z",
+   "updated_at": "2026-08-04T10:00:00Z"
+  }
+ ]
+}

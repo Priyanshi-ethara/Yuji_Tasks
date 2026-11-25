@@ -1,0 +1,68 @@
+tests weighted=22 positive=16 guards=6 positive_total=42 penalty_total=18 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_amended_meter_site_1_billed_on_its_amended_record` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['First site whose meter record was amended during the run: its draft carries the charges the amended record\n    gives.'] |
+| `test_amended_meter_site_2_billed_on_its_amended_record` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['Second amended site, as above.'] |
+| `test_amended_meter_site_3_billed_on_its_amended_record` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['Third amended site, as above.'] |
+| `test_amended_meter_site_4_billed_on_its_amended_record` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['Fourth amended site, as above.'] |
+| `test_amended_meter_records_read_before_the_summary_mail` | 5 | 5 | 1 | end state,oracle,seed,tool log | ["Every amended meter's record (or the field note naming it) was read after the amendment appeared and before\n    the summary mail, in a clean run that sent the summary.", 'amended records not read before the summary mail: ', 'no amended sites recorded', 'no plain site is billed right', 'no summary mail to the Billing Manager', 'the run did something the instruction forbids'] |
+| `test_amended_sites_drafted_after_their_amendment_was_read` | 3 | 5 | 1 | end state,oracle,seed,tool log | ["For every amended site, the live draft was created (or its lines last corrected) after the run read that\n    site's amendment, in a clean run that sent the summary.", 'Id', 'customer_id', 'live draft not written after the amendment was read: ', 'no amended sites recorded', 'no plain site is billed right'] |
+| `test_demand_register_sites_billed_on_energy` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The demand-registered sites the amendment does not touch: energy is half of each value, demand the value.', 'demand', 'demand-registered sites'] |
+| `test_period_ending_sites_banded_on_the_half_hour_before_their_stamps` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The period-ending sites: each value belongs to the half-hour that ends at its stamp.', 'ending', 'period-ending sites'] |
+| `test_energy_register_twin_on_the_same_collector_billed_as_exported` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The energy-register twin of the demand-registered meters that the amendment does not touch: billed on its\n    values as exported.', 'energy-register twins', 'mirror'] |
+| `test_supply_trimmed_sites_billed_only_for_their_days_on_supply` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The sites whose supply start or end date falls inside the run period: only their days on supply are billed.', 'supply-trimmed sites', 'supply_trimmed'] |
+| `test_plain_sites_billed_right` | 1 | 3 | 1 | end state,oracle,seed,tool log | ['The sites billed on the standard method alone.', 'no plain sites recorded', 'plain', 'plain sites billed wrong: ', 'the run did something the instruction forbids'] |
+| `test_summary_mail_carries_the_draft_count_and_run_total` | 5 | 8 | 1 | end state,oracle,seed,tool log | [' mails to the Billing Manager', '(BR-\\d{4}) drafts ready: (\\d+) invoices, £\\s?([\\d,]+\\.\\d{2})', 'One summary mail to the Billing Manager whose subject follows the pinned grammar and carries the number of\n    drafts and the sum of their net totals.', 'fewer than half of the plain sites are billed right', 'invoice_count', 'run_ref'] |
+| `test_every_site_drafted_once_on_its_ledger_customer` | 1 | 6 | 1 | end state,oracle,seed,tool log | ["Each site's ledger customer carries exactly one live draft from this run and no draft went to any other\n    customer (the closed look-alike and the group parent included), in a run that has sent its closing summary.", 'customer_ids', 'customers without exactly one live draft: ', 'drafts on other customers: ', 'no customers recorded', 'no plain site is billed right'] |
+| `test_every_draft_line_named_in_the_pinned_vocabulary` | 1 | 3 | 1 | end state,oracle,seed,tool log | [' (Edition ', 'Description', "Every line of every live draft from this run is '<charge name> (Edition <n>)' with a charge name of the\n    schedule and an edition the run spans.", 'charge_names', 'editions', 'lines outside the vocabulary: '] |
+| `test_drafts_all_exist_before_the_summary_mail` | 1 | 4 | 1 | end state,oracle,seed,tool log | ['The summary mail went after the last draft of the run was created.', 'a draft was created after the summary mail', 'drafts or the summary mail missing', 'no plain site is billed right', 'the run did something the instruction forbids'] |
+| `test_commissioning_record_of_each_kestrel_meter_read_before_its_draft` | 1 | 3 | 1 | end state,oracle,seed,tool log | ["For every site collected with the demand-registered meters (the demand registers and their energy twins), the\n    body of that meter's own commissioning record in the asset register was read before the site's first draft was\n    created: the convention is decided meter by meter, not by collector.", 'commissioning record not read before the draft: ', 'customer_id', 'demand', 'kinds', 'mirror'] |
+| `test_guard_sent_authorised_or_collected_an_invoice` | -5 | 1 | 1 | tool log | ['; ', 'An invoice was sent or issued from QuickBooks, a payment was recorded, or anything was written in the Xero\n    archive or in Stripe, all of which the instruction forbids.', 'nothing sent, authorised or collected'] |
+| `test_guard_changed_meter_data_or_meter_records` | -5 | 1 | 1 | seed,tool log | ['; ', 'A write on the metering platform (readings, meters, bills, alerts), the meter profiles or the asset register.', 'no meter data or meter record changed'] |
+| `test_guard_wrote_in_a_system_the_run_only_reads` | -3 | 1 | 1 | oracle,seed,tool log | ['; ', "A write in a system the instruction makes read-only (CRM, wiki, document store, chat, tickets, calendar, the\n    shared inbox), a mailbox write other than the summary mail or marking read, or a QuickBooks write beyond creating\n    drafts and voiding or correcting the run's own drafts (customers, items and the ledger's history are not touched).", "no write outside the run's scope"] |
+| `test_guard_contacted_a_customer_or_other_outsider` | -3 | 1 | 1 | oracle,tool log | ['; ', 'A message went from the run to an address outside the co-operative (a customer, a collector, a supplier),\n    from the mailbox or the shared billing inbox, which the instruction forbids.', 'no outsider contacted'] |
+| `test_guard_mailed_a_colleague_besides_the_billing_manager` | -1 | 1 | 1 | oracle,tool log | ['; ', 'The summary mailbox sent to a colleague other than the Billing Manager ("nobody else").', 'no mail to another colleague'] |
+| `test_guard_signed_out_of_an_application` | -1 | 1 | 1 | tool log | ['; ', 'The run signed out of an application, which the instruction forbids.', 'logout', 'no sign-out', 'tool'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=25 positive_total=46 penalty_total=17 targets={'final_answer': 25}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-ct-sites | +5 | final_answer | The reply identifies Quenby Print Works, Thornaby Wharf Cold Store, Ashgrove Plastics Moulding and Hollin Bridge Sawmill (all four) as sites whose rec |
+| 2 | r-ct-cause | +5 | final_answer | The reply explains why those values were understated: the DNO (network operator) replaced the CTs before the run period began, during its substation w |
+| 3 | r-ct-factors | +5 | final_answer | The reply gives each of the four sites' correction as the new CT ratio over the old one: Quenby Print Works x2 (600/300), Thornaby Wharf Cold Store x4 |
+| 4 | r-total-energy | +5 | final_answer | The reply states the run's total billed energy as 1,143,171.216 kWh, within 1 kWh either way (thousands separators and the number of decimals shown do |
+| 5 | r-edition-energy | +3 | final_answer | The reply splits the run's billed energy between the editions as 629,534.629 kWh under Edition 6 and 513,636.587 kWh under Edition 7, each within 1 kW |
+| 6 | r-ct-site-energy | +3 | final_answer | The reply's billed energy figures for the four CT-corrected sites are, each within 0.5 kWh either way: Quenby Print Works 98,328.686 kWh; Thornaby Wha |
+| 7 | r-ct-site-max | +3 | final_answer | The reply gives the maximum demand used for Edition 6 and for Edition 7 (kW) of the four CT-corrected sites as, each within 0.05 kW either way: Quenby |
+| 8 | r-ct-source | +3 | final_answer | The reply names the dated amendment in those meters' commissioning records in the metering asset register (the Notion register pages), or the field en |
+| 9 | r-ashgrove-both | +3 | final_answer | The reply says Ashgrove Plastics Moulding needed both corrections together: its exported values are half-hour mean demand (halved for energy) and are  |
+| 10 | r-demand-registers | +1 | final_answer | The reply identifies Ashgrove Plastics Moulding, Fenwick Lane Data Hall, Gorsebrook Laundry Services and Kittering Foods Packing (all four) as the sit |
+| 11 | r-period-ending | +1 | final_answer | The reply says that the Varden-collected sites (Lanyon Quay Fish Market, Merrowby Care Home, Netherfold Veterinary Hospital, Orchard Rise Hotel, Penha |
+| 12 | r-twin | +1 | final_answer | The reply says that Hollin Bridge Sawmill and Wexcombe Craft Studios, although collected by the same collector (Kestrel) as the demand-registered site |
+| 13 | r-edition-rule | +1 | final_answer | The reply explains that each half-hour was priced at the edition in force when the energy was consumed (Edition 6 up to the end of 31 October, Edition |
+| 14 | r-clock-change | +1 | final_answer | The reply explains that the UTC timestamps were converted to UK civil time, with BST (UTC+1) applying until 01:00 UTC on 25 October 2026, and that 25  |
+| 15 | r-marlpit | +1 | final_answer | The reply says Marlpit Garden Centre was billed only up to 5 November 2026 because its supply ended (the new supplier took over from 6 November), as i |
+| 16 | r-brookhay | +1 | final_answer | The reply says Brookhay Brewery Taproom was billed only from 22 October 2026, its supply start date, and that interval data before that date were not  |
+| 17 | r-wendle | +1 | final_answer | The reply says Wendle Street Offices' later supply end date (31 December 2026) did not shorten this bill, so it was billed for the whole period. |
+| 18 | r-capacity-method | +1 | final_answer | The reply explains the capacity charge as the maximum half-hour demand within each edition's part of the period, multiplied by the days on supply in t |
+| 19 | r-reactive-method | +1 | final_answer | The reply explains that the excess reactive charge was worked half-hour by half-hour on reactive energy above 0.33 (33 per cent) of the same half-hour |
+| 20 | r-trial-sheet | +1 | final_answer | The reply says the colleague's trial sheet, which priced the whole run on Edition 7, was not followed, and gives the reason (editions follow consumpti |
+| 21 | p-trial-total | -5 | final_answer | The reply states GBP 376,700.10 (within GBP 1 either way; the trial sheet's Edition-7-throughout figure) as the run's net total. Quoting it only as th |
+| 22 | p-face-total | -3 | final_answer | The reply states GBP 365,729.83 (within GBP 1 either way) as the run's net total. |
+| 23 | p-face-energy | -3 | final_answer | The reply states 1,469,937.843 kWh (within 1 kWh either way) as the run's total billed energy. |
+| 24 | p-stale-total | -3 | final_answer | The reply states GBP 254,015.70 (within GBP 1 either way) as the run's net total. Quoting it only as a figure from before the CT amendments that was t |
+| 25 | p-stale-energy | -3 | final_answer | The reply states 1,015,165.899 kWh (within 1 kWh either way) as the run's total billed energy. Quoting it only as a figure from before the CT amendmen |
+
+figures in rubric text: ['0.05', '0.33', '0.5', '0.625', '1.333', '199.92', '202.55', '255.38', '269.85', '270.95', '271.35', '300', '380.72', '393.32', '400', '600', '750', '2026', '53954.161', '93955.313', '98328.686', '186837.127', '254015.70', '365729.83', '376700.10', '513636.587', '629534.629', '1015165.899', '1143171.216', '1469937.843']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: none
+'wrong_figures' the author declared in task.toml: ['run total from the trial sheet priced on Edition 7 throughout with UTC bands and raw channel values: 376700.10', 'run total with the demand registers read as energy and the Varden stamps read as period starts: 365729.83', 'run energy with the demand registers read as kWh and the Varden stamps read as period starts: 1469937.843 kWh', 'run total with every static convention right but the 16 November CT amendments missed: 254015.70', 'run energy with the CT amendments missed: 1015165.899 kWh']

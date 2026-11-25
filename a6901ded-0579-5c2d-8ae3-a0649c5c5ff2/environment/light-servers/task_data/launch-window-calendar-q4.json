@@ -1,0 +1,58 @@
+{
+  "timezone": "UTC",
+  "opens_at": "06:00",
+  "calendar": "cluster-reservations@sorrel-insurance.example",
+  "windows": [
+    {
+      "date": "2026-11-05",
+      "opens": "2026-11-05T06:00:00Z",
+      "booked": [
+        "FT-CLM-06"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "opens": "2026-11-12T06:00:00Z",
+      "booked": [
+        "FT-RISK-04"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "opens": "2026-11-19T06:00:00Z",
+      "booked": [
+        "FT-CLM-07",
+        "FT-UW-03",
+        "FT-FNOL-11",
+        "FT-SUB-02"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "opens": "2026-11-26T06:00:00Z",
+      "booked": [
+        "FT-CLM-07a",
+        "FT-RISK-05"
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "opens": "2026-12-03T06:00:00Z",
+      "booked": []
+    },
+    {
+      "date": "2026-12-10",
+      "opens": "2026-12-10T06:00:00Z",
+      "booked": []
+    },
+    {
+      "date": "2026-12-17",
+      "opens": "2026-12-17T06:00:00Z",
+      "booked": []
+    }
+  ],
+  "freeze": {
+    "from": "2026-12-21",
+    "to": "2027-01-04"
+  }
+}

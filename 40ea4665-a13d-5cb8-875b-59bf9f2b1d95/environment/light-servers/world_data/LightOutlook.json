@@ -1,0 +1,187 @@
+{
+ "messages": [
+  {
+   "id": "AAMkHRM0001",
+   "subject": "BR-2611 - drafts please",
+   "from_name": "Imogen Ashdale",
+   "from_address": "imogen.ashdale@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "Alex, the collector files for BR-2611 are all in. Please draft the 22 BHH invoices in QuickBooks today and send me the summary mail when they are all there - BP-4 has the method, the line names and the subject line. Nothing goes to customers until I have approved on Tuesday. Thanks, Imogen",
+   "contentType": "text",
+   "isRead": false,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-16T08:05:00Z"
+  },
+  {
+   "id": "AAMkHRM0002",
+   "subject": "BR-2611 trial sheet",
+   "from_name": "Dorian Felbrigg",
+   "from_address": "dorian.felbrigg@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "Hi Alex - my trial sheet for BR-2611 is in the run folder (br2611-draft-run-sheet-dfelbrigg.csv). I priced it on Ed7 throughout since it's the first run issued after the launch, banded straight off the export timestamps. It comes to £376,700.10 net. Customer names and line names are right, use them. Dorian",
+   "contentType": "text",
+   "isRead": true,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-13T16:42:00Z"
+  },
+  {
+   "id": "AAMkHRM0003",
+   "subject": "BR-2611 collector files in",
+   "from_name": "Bertrand Ilsley",
+   "from_address": "bertrand.ilsley@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "Morning - AMR batches A and B, Kestrel and Varden files are in the run folder. Row counts: 1,500 per meter including the usual margins. Checksums posted on the deliveries table. Bertrand",
+   "contentType": "text",
+   "isRead": true,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-15T07:20:00Z"
+  },
+  {
+   "id": "AAMkHRM0004",
+   "subject": "Edition 7 - effective time",
+   "from_name": "Helena Marchbank",
+   "from_address": "helena.marchbank@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "All - Edition 7 is published in the tariff space. It prices energy consumed from 00:00 on 1 November (UK time). Anything consumed before then stays on Edition 6, even on a bill issued after the 1st. Helena",
+   "contentType": "text",
+   "isRead": true,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-02T09:30:00Z"
+  },
+  {
+   "id": "AAMkHRM0005",
+   "subject": "BR-2611 direct debits",
+   "from_name": "Ffion Gethin",
+   "from_address": "ffion.gethin@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "Hi both - BR-2611 direct debits will be collected from 1 December after approval and issue. Please don't raise anything in Stripe from the billing side. Ffion",
+   "contentType": "text",
+   "isRead": true,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-13T12:10:00Z"
+  },
+  {
+   "id": "AAMkHRM0006",
+   "subject": "Re: Marlpit final bill",
+   "from_name": "Imogen Ashdale",
+   "from_address": "imogen.ashdale@harrowmere-energy.example",
+   "to_name": "Alex Carter",
+   "to_address": "alex.carter@contoso.com",
+   "bodyPreview": "Alex - Marlpit's switch completed; the account has the loss date. Final bill runs to their last day on supply. I.",
+   "contentType": "text",
+   "isRead": true,
+   "importance": "normal",
+   "receivedDateTime": "2026-11-09T14:00:00Z"
+  }
+ ],
+ "contacts": [
+  {
+   "id": "oc_hrm_00",
+   "displayName": "Imogen Ashdale",
+   "givenName": "Imogen",
+   "surname": "Ashdale",
+   "email": "imogen.ashdale@harrowmere-energy.example",
+   "jobTitle": "Billing Manager",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900400"
+  },
+  {
+   "id": "oc_hrm_01",
+   "displayName": "Dorian Felbrigg",
+   "givenName": "Dorian",
+   "surname": "Felbrigg",
+   "email": "dorian.felbrigg@harrowmere-energy.example",
+   "jobTitle": "Billing Analyst",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900401"
+  },
+  {
+   "id": "oc_hrm_02",
+   "displayName": "Helena Marchbank",
+   "givenName": "Helena",
+   "surname": "Marchbank",
+   "email": "helena.marchbank@harrowmere-energy.example",
+   "jobTitle": "Tariff and Pricing Lead",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900402"
+  },
+  {
+   "id": "oc_hrm_03",
+   "displayName": "Tamsin Rookwood",
+   "givenName": "Tamsin",
+   "surname": "Rookwood",
+   "email": "tamsin.rookwood@harrowmere-energy.example",
+   "jobTitle": "Metering Services Lead",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900403"
+  },
+  {
+   "id": "oc_hrm_04",
+   "displayName": "Owain Castellack",
+   "givenName": "Owain",
+   "surname": "Castellack",
+   "email": "owain.castellack@harrowmere-energy.example",
+   "jobTitle": "Metering Field Engineer",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900404"
+  },
+  {
+   "id": "oc_hrm_05",
+   "displayName": "Bertrand Ilsley",
+   "givenName": "Bertrand",
+   "surname": "Ilsley",
+   "email": "bertrand.ilsley@harrowmere-energy.example",
+   "jobTitle": "Data Collection Analyst",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900405"
+  },
+  {
+   "id": "oc_hrm_06",
+   "displayName": "Ffion Gethin",
+   "givenName": "Ffion",
+   "surname": "Gethin",
+   "email": "ffion.gethin@harrowmere-energy.example",
+   "jobTitle": "Credit Control Officer",
+   "companyName": "Harrowmere Energy Co-operative",
+   "mobilePhone": "+44 7700 900406"
+  }
+ ],
+ "events": [
+  {
+   "id": "ev_hrm_01",
+   "subject": "BR-2611 approval",
+   "isAllDay": false,
+   "isOnlineMeeting": true,
+   "start": "2026-11-17T14:00:00",
+   "end": "2026-11-17T15:00:00",
+   "location": "Billing room / Teams",
+   "organizer_name": "Imogen Ashdale",
+   "organizer_address": "imogen.ashdale@harrowmere-energy.example",
+   "attendees": [
+    "alex.carter@contoso.com",
+    "dorian.felbrigg@harrowmere-energy.example"
+   ]
+  },
+  {
+   "id": "ev_hrm_02",
+   "subject": "BR-2611 kickoff",
+   "isAllDay": false,
+   "isOnlineMeeting": false,
+   "start": "2026-11-12T10:00:00",
+   "end": "2026-11-12T10:45:00",
+   "location": "Billing room",
+   "organizer_name": "Imogen Ashdale",
+   "organizer_address": "imogen.ashdale@harrowmere-energy.example",
+   "attendees": [
+    "alex.carter@contoso.com",
+    "dorian.felbrigg@harrowmere-energy.example",
+    "bertrand.ilsley@harrowmere-energy.example"
+   ]
+  }
+ ]
+}

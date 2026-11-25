@@ -1,0 +1,23 @@
+group,title,culprit,proposed_owner_team,proposed_root_cause,how
+FLEETD-5KQ,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,from culprit
+FLEETD-5M2,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,from culprit
+FLEETD-5P7,panic: runtime error: slice bounds out of range [:512] with capacity 2,git.pellam.io/fleetd/tools/simkit.(*Ring).Window,Sim Tools,slice bounds,from culprit
+FLEETD-5R3,fatal error: runtime: out of memory,git.pellam.io/fleetd/tools/simkit.(*Scheduler).After,Sim Tools,unbounded goroutine growth,from culprit
+FLEETD-5T9,panic: runtime error: invalid memory address or nil pointer dereferenc,git.pellam.io/fleetd/tools/simkit.(*Clock).Now,Sim Tools,nil pointer dereference,from culprit
+FLEETD-5V4,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,from culprit
+FLEETD-4ZD,panic: runtime error: index out of range [3] with length 3,git.pellam.io/fleetd/tools/simctl/replay.(*Cursor).Step,Sim Tools,slice bounds,from culprit (matches last week)
+FLEETD-4H6,panic: runtime error: slice bounds out of range [:-1],github.com/segmentio/kafka-go.(*Writer).partition,Platform Foundations,slice bounds,from culprit
+FLEETD-4J1,panic: runtime error: invalid memory address or nil pointer dereferenc,github.com/jackc/pgx/v5/pgxpool.(*Pool).Acquire,Platform Foundations,nil pointer dereference,from culprit
+FLEETD-4K8,panic: send on closed channel,github.com/pellam-oss/queue.(*Ring[...]).Push,Platform Foundations,send on closed channel,from culprit (matches last week)
+FLEETD-4M5,panic: runtime error: index out of range [0] with length 0,git.pellam.io/fleetd/internal/gen/fleetpb.(*RouteRequest).validate,API Contracts,slice bounds,from culprit
+FLEETD-4P2,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/lease.(*Table).Grant,Fleet Reliability,nil map write,from culprit (matches last week)
+FLEETD-4Q9,panic: send on closed channel,git.pellam.io/fleetd/internal/billing/queue.(*Flusher).Accept,Messaging,send on closed channel,from culprit (matches last week)
+FLEETD-4S3,panic: runtime error: slice bounds out of range [4096:2048],git.pellam.io/fleetd/internal/telemetry/exporter.(*Encoder).Frame,Platform Foundations,slice bounds,from culprit (matches last week)
+FLEETD-4T7,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/retry.(*Backoff).Schedule,Fleet Reliability,unbounded goroutine growth,from culprit (matches last week)
+FLEETD-4V1,panic: runtime error: invalid memory address or nil pointer dereferenc,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,from culprit (matches last week)
+FLEETD-4W6,panic: runtime error: invalid memory address or nil pointer dereferenc,git.pellam.io/fleetd/internal/billing/invoice.(*RateError).Error,Billing & Settlement,typed nil returned as error,from culprit (matches last week)
+FLEETD-4X2,panic: runtime error: invalid memory address or nil pointer dereferenc,git.pellam.io/fleetd/internal/billing/quote.(*DeclineError).Error,Billing & Settlement,typed nil returned as error,from culprit (matches last week)
+FLEETD-3N4,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,from culprit (matches last week)
+FLEETD-3P8,panic: runtime error: slice bounds out of range [:530] with capacity 5,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,Telematics Ingest,slice bounds,from culprit (matches last week)
+FLEETD-3R1,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,Maps & Routing,send on closed channel,from culprit (matches last week)
+FLEETD-3S6,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,Messaging,unbounded goroutine growth,from culprit (matches last week)

@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "***/40ea4665-a13d-5cb8-875b-59bf9f2b1d95"
+    },
+    "trial_name": "40ea4665-a13d-5cb8-875b-59bf9f2b__C9Cx4WD",
+    "trials_dir": "***",
+    "agent_setup_timeout_multiplier": 3.0,
+    "agent": {
+        "name": "openhands-sdk",
+        "model_name": "anthropic/claude-opus-5",
+        "kwargs": {
+            "reasoning_effort": "high"
+        }
+    },
+    "job_id": "bf22e406-31d4-4e18-ad97-ef1af6071c3f"
+}

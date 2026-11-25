@@ -1,0 +1,20 @@
+{
+    "task": {
+        "path": "***/f487e5dd-4b6a-5589-bf99-346f3dc18122"
+    },
+    "trial_name": "f487e5dd-4b6a-5589-bf99-346f3dc1__fwYYGti",
+    "trials_dir": "***",
+    "agent": {
+        "name": "openhands-sdk",
+        "model_name": "anthropic/claude-opus-5",
+        "kwargs": {
+            "reasoning_effort": "high"
+        }
+    },
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "de791ec1-a148-4120-b3d9-457873dd0b18",
+        "path": "***/f487e5dd-4b6a-5589-bf99-346f3dc18122-opus-5-20261113-215846/f487e5dd-4b6a-5589-bf99-346f3dc1__fwYYGti"
+    }
+}

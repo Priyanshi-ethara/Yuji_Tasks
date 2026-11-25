@@ -1,0 +1,150 @@
+{
+ "monitors": [
+  {
+   "id": 74012,
+   "name": "fleetd-workers goroutines > 250k",
+   "type": "metric alert",
+   "query": "max(last_5m):max:go.goroutines{service:fleetd-workers} > 250000",
+   "message": "Goroutine count high on fleetd-workers. Check Sentry for OOM groups. @slack-sre-triage",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:fleetd-workers",
+    "team:platform"
+   ],
+   "created": "2026-02-01T10:00:00+00:00",
+   "modified": "2026-11-13T19:40:00+00:00"
+  },
+  {
+   "id": 74019,
+   "name": "fleetd exporter frame overflow",
+   "type": "metric alert",
+   "query": "sum(last_15m):sum:exporter.frame.overflow{service:fleetd-workers} > 0",
+   "message": "Exporter frames overflow the encoder buffer.",
+   "overall_state": "Warn",
+   "priority": 3,
+   "tags": [
+    "service:fleetd-workers",
+    "team:platform"
+   ],
+   "created": "2026-10-04T10:00:00+00:00",
+   "modified": "2026-11-11T09:00:00+00:00"
+  },
+  {
+   "id": 74031,
+   "name": "gateway session churn",
+   "type": "metric alert",
+   "query": "avg(last_10m):avg:gateway.sessions.closed{service:ingest-gateway} > 400",
+   "message": "Gateway churn.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:ingest-gateway",
+    "team:ingest"
+   ],
+   "created": "2026-03-01T10:00:00+00:00",
+   "modified": "2026-11-11T07:05:00+00:00"
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "flt-crash-wk",
+   "title": "fleetd crashes by week",
+   "description": "Sentry fatal counts by release",
+   "layout_type": "ordered",
+   "author": "sade-akintola",
+   "widget_count": 6,
+   "is_read_only": true,
+   "created": "2026-03-01T10:00:00+00:00",
+   "modified": "2026-11-14T10:00:00+00:00"
+  }
+ ],
+ "events": [
+  {
+   "id": 9100001,
+   "title": "Deployed fleetd 4.12.0",
+   "text": "fleetd 4.12.0 to production (-mod=vendor -trimpath)",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "fleetd-api-1",
+   "tags": [
+    "service:fleetd",
+    "event:deploy"
+   ],
+   "date_happened": 1794305705
+  },
+  {
+   "id": 9100002,
+   "title": "Deployed fleetd 4.12.1",
+   "text": "fleetd 4.12.1 to production",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "fleetd-api-1",
+   "tags": [
+    "service:fleetd",
+    "event:deploy"
+   ],
+   "date_happened": 1794569518
+  },
+  {
+   "id": 9100003,
+   "title": "fleetd-workers-2 restarted (OOM)",
+   "text": "Kubelet restarted fleetd-workers-2 after OOMKilled",
+   "alert_type": "error",
+   "priority": "normal",
+   "host": "fleetd-workers-2",
+   "tags": [
+    "service:fleetd-workers"
+   ],
+   "date_happened": 1794625800
+  }
+ ],
+ "hosts": [
+  {
+   "name": "fleetd-workers-1",
+   "up": true,
+   "apps": [
+    "fleetd"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1763280000
+  },
+  {
+   "name": "fleetd-workers-2",
+   "up": true,
+   "apps": [
+    "fleetd"
+   ],
+   "sources": "agent",
+   "cpu_pct": 39.5,
+   "mem_pct": 61.2,
+   "last_reported": 1763280000
+  },
+  {
+   "name": "fleetd-api-1",
+   "up": true,
+   "apps": [
+    "fleetd"
+   ],
+   "sources": "agent",
+   "cpu_pct": 22.0,
+   "mem_pct": 33.0,
+   "last_reported": 1763280000
+  }
+ ],
+ "metrics": [
+  {
+   "metric": "go.goroutines",
+   "scope": "service:fleetd-workers",
+   "base_value": 4300.0,
+   "amplitude": 900.0,
+   "unit": "goroutine",
+   "tags": [
+    "service:fleetd-workers"
+   ],
+   "_pk": "go.goroutines|service:fleetd-workers"
+  }
+ ]
+}

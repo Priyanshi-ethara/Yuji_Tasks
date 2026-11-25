@@ -1,0 +1,172 @@
+{
+ "calendars": [
+  {
+   "id": "billing-team@harrowmere-energy.example",
+   "summary": "Billing team",
+   "description": "Harrowmere billing team calendar",
+   "time_zone": "Europe/London",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "5"
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-hrm-01",
+   "calendar_id": "billing-team@harrowmere-energy.example",
+   "summary": "BR-2611 kickoff",
+   "description": "Run kickoff: data, tariff, accounts.",
+   "location": "Harrowmere House, Billing",
+   "start": "2026-11-12T10:00:00+00:00",
+   "end": "2026-11-12T10:45:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "imogen.ashdale@harrowmere-energy.example",
+   "organizer": "imogen.ashdale@harrowmere-energy.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-hrm-02",
+   "calendar_id": "billing-team@harrowmere-energy.example",
+   "summary": "BR-2611 drafts due",
+   "description": "22 drafts in QuickBooks and the summary mail to Imogen.",
+   "location": "Harrowmere House, Billing",
+   "start": "2026-11-16T09:00:00+00:00",
+   "end": "2026-11-16T17:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "imogen.ashdale@harrowmere-energy.example",
+   "organizer": "imogen.ashdale@harrowmere-energy.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-hrm-03",
+   "calendar_id": "billing-team@harrowmere-energy.example",
+   "summary": "BR-2611 approval",
+   "description": "Billing Manager approval of drafts.",
+   "location": "Harrowmere House, Billing",
+   "start": "2026-11-17T14:00:00+00:00",
+   "end": "2026-11-17T15:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "imogen.ashdale@harrowmere-energy.example",
+   "organizer": "imogen.ashdale@harrowmere-energy.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-hrm-04",
+   "calendar_id": "billing-team@harrowmere-energy.example",
+   "summary": "Clocks go back",
+   "description": "BST ends 02:00 -> 01:00.",
+   "location": "Harrowmere House, Billing",
+   "start": "2026-10-25T01:00:00+00:00",
+   "end": "2026-10-25T02:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "imogen.ashdale@harrowmere-energy.example",
+   "organizer": "imogen.ashdale@harrowmere-energy.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-hrm-05",
+   "calendar_id": "billing-team@harrowmere-energy.example",
+   "summary": "Edition 7 in force",
+   "description": "BHH Edition 7 prices consumption from 00:00 today.",
+   "location": "Harrowmere House, Billing",
+   "start": "2026-11-01T00:00:00+00:00",
+   "end": "2026-11-01T00:30:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "imogen.ashdale@harrowmere-energy.example",
+   "organizer": "imogen.ashdale@harrowmere-energy.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "attendees": {
+  "evt-hrm-01": [
+   {
+    "email": "imogen.ashdale@harrowmere-energy.example",
+    "displayName": "Imogen Ashdale",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "alex.carter@contoso.com",
+    "displayName": "Alex Carter",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-hrm-02": [
+   {
+    "email": "imogen.ashdale@harrowmere-energy.example",
+    "displayName": "Imogen Ashdale",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "alex.carter@contoso.com",
+    "displayName": "Alex Carter",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-hrm-03": [
+   {
+    "email": "imogen.ashdale@harrowmere-energy.example",
+    "displayName": "Imogen Ashdale",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "alex.carter@contoso.com",
+    "displayName": "Alex Carter",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-hrm-04": [
+   {
+    "email": "imogen.ashdale@harrowmere-energy.example",
+    "displayName": "Imogen Ashdale",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "alex.carter@contoso.com",
+    "displayName": "Alex Carter",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ],
+  "evt-hrm-05": [
+   {
+    "email": "imogen.ashdale@harrowmere-energy.example",
+    "displayName": "Imogen Ashdale",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   },
+   {
+    "email": "alex.carter@contoso.com",
+    "displayName": "Alex Carter",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ]
+ }
+}

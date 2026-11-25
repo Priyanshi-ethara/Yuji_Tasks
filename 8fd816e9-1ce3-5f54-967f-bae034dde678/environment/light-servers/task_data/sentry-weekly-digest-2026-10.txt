@@ -1,0 +1,27 @@
+Week 2026-10-05..2026-10-11 — top new issues (production environment)
+  ledger-posting: TimeoutError x120
+  ledger-balance-read: PoolExhausted x157
+  journal-export: HTTP 503 upstream x194
+  fx-rates-feed: S3 AccessDenied x231
+  statement-render: StaleRead x268
+
+Week 2026-10-12..2026-10-18 — top new issues (production environment)
+  card-auth-gateway: TimeoutError x131
+  tokenisation-vault: PoolExhausted x168
+  3ds-challenge: HTTP 503 upstream x205
+  merchant-onboarding-api: S3 AccessDenied x242
+  chargeback-intake: StaleRead x279
+
+Week 2026-10-19..2026-10-25 — top new issues (production environment)
+  payout-scheduler: TimeoutError x142
+  bank-file-dispatch: PoolExhausted x179
+  payee-verification: HTTP 503 upstream x216
+  payout-status-api: S3 AccessDenied x253
+  sweep-reconciler: StaleRead x290
+
+Week 2026-10-26..2026-11-01 — top new issues (production environment)
+  fraud-score: TimeoutError x153
+  velocity-limits: PoolExhausted x190
+  sanctions-screen: HTTP 503 upstream x227
+  dispute-evidence: S3 AccessDenied x264
+  kyc-document-check: StaleRead x301

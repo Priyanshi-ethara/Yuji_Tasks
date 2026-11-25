@@ -1,0 +1,6 @@
+Agent 'oracle' does not declare an options_model; leftover kwargs are ignored
+Skipping image OS validation for hb__8387b659ee8e588a75d7e12cf132e91b: docker inspect returned 1
+Collecting main service artifacts
+Running collect hook in service 'main': 'python3 /harness/atlas/state_capture.py'
+Collect hook in service 'main' completed
+Skipping image OS validation for hb__709c1f26826c7c8ddc40907dcc3c4a5c: docker inspect returned 1

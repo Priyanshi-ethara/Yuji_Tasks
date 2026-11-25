@@ -1,0 +1,157 @@
+{
+  "results": {
+    "tool": {
+      "name": "pytest"
+    },
+    "summary": {
+      "tests": 23,
+      "passed": 0,
+      "failed": 23,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "overall_score": 0.0,
+      "weighted_percentage": 0.0
+    },
+    "tests": [
+      {
+        "name": "test_cobalt_wren_upgrade_on_the_amended_price",
+        "status": "failed",
+        "duration": 7,
+        "weight": 5
+      },
+      {
+        "name": "test_hollis_marlow_annual_move_on_the_amended_price",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_juniper_vale_reduction_at_the_amended_price",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_vellum_street_upgrade_at_the_amended_price",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_desk_log_tallies",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_amended_price_card_read_before_the_desk_log",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_cobalt_wren_ticket_answered_with_its_template",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_hollis_marlow_ticket_answered_with_its_template",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_rows_the_price_review_decides",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_price_card_body_read_before_rows_it_decides",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_requests_from_others_held_for_the_billing_contact",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_rowan_quay_chat_confirmation_honoured",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_withdrawn_and_already_in_place",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_pemberton_hale_booked_to_the_senders_company",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_scope_and_referent_readings",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_dunmore_lane_left_inside_its_committed_term",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_timing_and_plain_requests",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_other_queue_tickets_answered_from_their_templates",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_desk_log_written_after_the_last_change_order",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_guard_refund_or_credit_issued",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_subscription_ended_before_its_period_closed",
+        "status": "failed",
+        "duration": 0,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_wrote_outside_the_desk_scope",
+        "status": "failed",
+        "duration": 0,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_signed_out_of_an_app",
+        "status": "failed",
+        "duration": 0,
+        "weight": -1
+      }
+    ]
+  }
+}

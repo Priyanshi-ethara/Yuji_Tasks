@@ -1,0 +1,177 @@
+{
+ "spaces": [
+  {
+   "id": 77001,
+   "key": "SUST",
+   "name": "Group Sustainability",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Controlled documents of Group Sustainability Reporting",
+     "representation": "plain"
+    }
+   }
+  },
+  {
+   "id": 77002,
+   "key": "FAC",
+   "name": "Facilities & Energy",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Facilities energy managers' working space",
+     "representation": "plain"
+    }
+   }
+  },
+  {
+   "id": 77003,
+   "key": "FIN",
+   "name": "Group Finance",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Finance policies and entity register",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "88120001",
+   "type": "page",
+   "status": "current",
+   "title": "Group Sustainability — home",
+   "space_key": "SUST",
+   "parent_id": null,
+   "version": 3,
+   "body": "<h1>Group Sustainability</h1>\n<p>Controlled documents of Group Sustainability Reporting: the Scope 2 inventory protocol, the emission factor set and\nits errata, inventory summary pages by year. Facilities and Finance keep their own spaces.</p>\n",
+   "created_by": "maren.ostrowski",
+   "created_at": "2024-02-01T09:00:00Z"
+  },
+  {
+   "id": "88120010",
+   "type": "page",
+   "status": "current",
+   "title": "SCP-02 Scope 2 Inventory Protocol — Rev 4",
+   "space_key": "SUST",
+   "parent_id": "88120001",
+   "version": 6,
+   "body": "<h1>SCP-02 Scope 2 Inventory Protocol — Revision 4</h1>\n<p>Controlled copy. Owner: Group Sustainability Reporting. Approved by the Sustainability Steering Committee on 2026-06-18.\nIn force from 2026-07-01 for every Scope 2 inventory struck on or after that date (FY2026 onwards). Supersedes Revision 3\n(2025-03-04). Word or PDF copies outside this space are uncontrolled; the April 2026 consultation draft is withdrawn.</p>\n\n<h2>1 Scope</h2>\n<p>1.1 The inventory covers purchased electricity, purchased district steam and purchased chilled water of Talvik\nPrecision Components Inc. and the subsidiaries in Schedule C, under operational control, for the 22 sites of the site\nregister.</p>\n<p>1.2 The fiscal year runs 1 October to 30 September. FY2026 is 2025-10-01 to 2026-09-30.</p>\n<p>1.3 Every site reports a location-based and a market-based figure in t CO2e.</p>\n\n<h2>2 Records of the inventory and the strike date</h2>\n<p>2.1 The inventory board (monday.com, one item per site) and the summary page in this space are the records of the\ninventory.</p>\n<p>2.2 The inventory is struck when the summary page is published. Activity data, certificate status and factors are\ntaken as the records of reference stand at that moment; a change that reaches a record of reference before the strike\nis part of the inventory.</p>\n\n<h2>3 Emission factors</h2>\n<p>3.1 Factors come from the Talvik Emission Factor Set (EFS) edition and revision that Schedule A names for the\ninventory year. A revision includes every erratum issued for it; errata are published as child pages of the EFS page in\nthis space and are not merged into the distributed CSV, so the CSV of an edition is read together with its errata.</p>\n<p>3.2 An edition published during or after the fiscal year does not apply to that year unless Schedule A says so.</p>\n<p>3.3 The location factor is the EFS \"location\" row of the site's EFS region (site register); the residual mix is the\n\"residual_mix\" row of the same region.</p>\n\n<h2>4 Activity data — purchased electricity</h2>\n<p>4.1 The source of record is the supplier invoice, as filed by Facilities in the Box folder \"Facilities — Utility\ninvoices FY2026\" (the invoice ledger and any reissued invoice filed beside it). Exports of the ledger kept elsewhere are\nworking copies.</p>\n<p>4.2 Where an invoice and a site meter disagree, the invoice governs. The desk raises the discrepancy with the\nsupplier; the invoice stands as billed until the supplier reissues it.</p>\n<p>4.3 Exception for estimated invoices: an invoice month with read type E is replaced by the metered consumption of the\nsame period from the energy platform, i.e. the difference between the main meter's month-end register readings that\nbound the billing period.</p>\n<p>4.4 A reissued invoice replaces the invoice it corrects for the whole of its billing period from the moment it is\nfiled in the invoice folder.</p>\n<p>4.5 Quantities are taken in the unit the supplier bills; the ledger data dictionary records the accounts not billed in\nkWh. Convert to MWh before applying factors.</p>\n\n<h2>5 Activity data — thermal carriers</h2>\n<p>5.1 Steam quantities are the pounds (lb) on the supplier's monthly statement lines; chilled water quantities are the\nton-hours on the supplier's monthly statement lines.</p>\n<p>5.2 Steam energy: MMBtu = lb × enthalpy (Btu/lb) ÷ 1,000,000.</p>\n<p>5.3 Enthalpy: where the site returns condensate to the supplier and the supplier credits it (site register\n\"condensate_return\" = Yes), use the supplier's net delivered enthalpy; otherwise use the total enthalpy of the delivered\nsteam. Both come from the supplier's enthalpy note for the period.</p>\n<p>5.4 Steam factors: the location-based figure uses the EFS district-steam default of the revision in force. The\nmarket-based figure uses the supplier's plant-specific factor only where that factor has been verified by an\nindependent third party; an unverified, preliminary or indicative supplier factor is not used and the EFS default\napplies.</p>\n<p>5.5 Chilled water: kWh-equivalent = ton-hours × 12,000 ÷ 3,412.14 ÷ COP, where COP is the plant's measured annual\ncoefficient of performance for the fiscal year as stated in the supplier's annual statement. Design, nameplate or\n\"up to\" efficiencies are not a measured COP. Where the statement gives no measured COP, use the Schedule B default.</p>\n<p>5.6 Chilled water takes the location factor and the residual mix of the site's EFS region. Contractual instruments\nare not applied to chilled water.</p>\n\n<h2>6 Contractual instruments — quality criteria for the market-based figure</h2>\n<p>An instrument reduces a site's market-based electricity only if it satisfies every clause below. The registry status\nis read in the registry account mirror (Airtable), which Greenledger syncs from the registries.</p>\n<p>6.1 Instruments apply to purchased electricity only.</p>\n<p>6.2 Vintage: the generation period on the certificate lies wholly within 1 April 2025 to 31 December 2026 (six months\nbefore the fiscal year to three months after it).</p>\n<p>6.3 Market boundary: the certificate is issued in the market where the site consumes. US sites: NRR RECs. Sites in\nGermany, the Netherlands and Poland: EECS Guarantees of Origin issued through AIB member registries. Sites in Great\nBritain: Ofgem REGOs only; Guarantees of Origin are not accepted for GB consumption.</p>\n<p>6.4 Retirement: the registry shows the certificate as Retired at the strike date. Active, instructed, scheduled,\npending or reversed retirements do not qualify.</p>\n<p>6.5 Beneficiary: the certificate is retired on behalf of Talvik Precision Components Inc. or one of the subsidiaries\nin Schedule C. Retirements for any other party, including former group companies, do not qualify.</p>\n<p>6.6 No double claim: a certificate claimed in any earlier inventory (a claim period of an earlier fiscal year, or a\nlisting in that year's final inventory) is not claimed again.</p>\n<p>6.7 Generator age: the generating facility was commissioned on or after 1 January 2011.</p>\n<p>6.8 Power purchase agreements count only through the certificates they convey to Talvik, and those certificates must\nthemselves meet 6.2 to 6.7. A contract that settles financially without conveying the attributes to Talvik is not an\ninstrument, whatever volume it names.</p>\n<p>6.9 Site and volume: an instrument covers only the site named in its registry retirement record (\"Site claimed\"), up\nto that site's purchased electricity for the year. Volume above that is not carried to another site or to another year.</p>\n<p>6.10 Every excluded instrument is recorded with the clause it fails.</p>\n\n<h2>7 Calculation</h2>\n<p>7.1 Location-based t CO2e = (electricity MWh + chilled-water MWh-equivalent) × location factor + steam MMBtu × EFS\ndistrict-steam default ÷ 1,000.</p>\n<p>7.2 Market-based t CO2e = (electricity MWh − MWh covered by qualifying instruments) × residual mix + chilled-water\nMWh-equivalent × residual mix + steam MMBtu × market-based steam factor ÷ 1,000.</p>\n<p>7.3 Where the EFS revision in force publishes no residual-mix factor for a region, the location factor of that region\nis used in its place.</p>\n<p>7.4 Carry full precision through the calculation and round each site figure to one decimal place at the end. Totals\nare the sum of the rounded site figures as entered on the board.</p>\n\n<h2>8 Reporting</h2>\n<p>8.1 On the board, each site item carries \"Location-based tCO2e\" and \"Market-based tCO2e\" as numbers to one decimal\nplace, and \"Instrument applied\": the registry Certificate ID of every qualifying instrument for the site, in ascending\norder, separated by a semicolon and a space; or the words <code>Residual mix</code> where no instrument qualifies.</p>\n<p>8.2 The summary page states the two totals and lists every excluded instrument by its registry Certificate ID, or by\nits contract reference where no certificate was conveyed.</p>\n\n<h2>Schedule A — EFS edition and revision by inventory year</h2>\n<table>\n<tr><th>Inventory year</th><th>EFS edition</th><th>Revision in force</th><th>Note</th></tr>\n<tr><td>FY2024</td><td>EFS-2023</td><td>2023.3</td><td></td></tr>\n<tr><td>FY2025</td><td>EFS-2024</td><td>2024.1</td><td></td></tr>\n<tr><td>FY2026</td><td>EFS-2025</td><td>2025.2 (Erratum 2 of 2026-02-17)</td><td>EFS-2026 was published 2026-08-14, after the start of FY2026; it is not used for FY2026.</td></tr>\n<tr><td>FY2027</td><td>EFS-2026</td><td>2026.1</td><td></td></tr>\n</table>\n\n<h2>Schedule B — constants</h2>\n<p>12,000 Btu per ton-hour; 3,412.14 Btu per kWh; default chilled-water plant COP 4.0; 1 MWh = 1,000 kWh; 1 t = 1,000 kg.</p>\n\n<h2>Schedule C — subsidiaries in the organisational boundary (FY2026)</h2>\n<p>Talvik Precision Components GmbH (DE); Talvik Precision Components B.V. (NL); Talvik Precision Components Sp. z o.o.\n(PL); Talvik Precision Components Ltd (GB). Talvik Marine Systems LLC was divested on 2025-06-30 and is outside the\nboundary from FY2026.</p>\n<p>Revision history: Rev 3 2025-03-04; Rev 4 2026-06-18 (precedence of invoices, steam enthalpy, measured COP, GB\nmarket boundary, site-bound instruments, no residual mix fallback to location factor, Schedule A).</p>\n",
+   "created_by": "maren.ostrowski",
+   "created_at": "2026-06-18T09:00:00Z"
+  },
+  {
+   "id": "88120020",
+   "type": "page",
+   "status": "current",
+   "title": "Talvik Emission Factor Set (EFS)",
+   "space_key": "SUST",
+   "parent_id": "88120001",
+   "version": 9,
+   "body": "<h1>Talvik Emission Factor Set (EFS)</h1>\n<p>The EFS is Talvik's single source of grid, residual-mix and district-energy factors. Each edition is distributed as a\nCSV by the data steward; errata for an edition are child pages of this page. Which edition and revision applies to an\ninventory year is fixed by the Scope 2 protocol, Schedule A.</p>\n<ul><li>EFS-2026, revision 2026.1 — published 2026-08-14.</li>\n<li>EFS-2025, revision 2025.2 — published 2025-08-29 as 2025.1; Erratum 1 2025-10-03 (editorial); Erratum 2 2026-02-17.</li>\n<li>EFS-2024, revision 2024.1 — published 2024-08-30.</li></ul>\n",
+   "created_by": "priya.venkataraman",
+   "created_at": "2023-08-30T09:00:00Z"
+  },
+  {
+   "id": "88120021",
+   "type": "page",
+   "status": "current",
+   "title": "EFS-2025 Erratum 2 — corrected rows",
+   "space_key": "SUST",
+   "parent_id": "88120020",
+   "version": 1,
+   "body": "<h1>EFS-2025 Erratum 2 — corrected rows (revision 2025.2)</h1>\n<p>Issued 2026-02-17 by the EFS data steward (Priya Venkataraman). Raises EFS-2025 from revision 2025.1 to 2025.2. The\ndistributed CSV <code>emission-factor-set-EFS-2025.1.csv</code> is not regenerated; apply these rows on top of it.</p>\n<table>\n<tr><th>Factor id (2025.1)</th><th>Region</th><th>Type</th><th>2025.1 value</th><th>2025.2 value</th><th>Reason</th></tr>\n<tr><td>EFS2025.1-L007</td><td>US-TX4</td><td>location</td><td>0.3842</td><td>0.4127 t CO2e/MWh</td><td>2024 generation data for the Brazos balancing area double-counted a retired wind farm's output.</td></tr>\n<tr><td>EFS2025.1-R016</td><td>PL</td><td>residual_mix</td><td>0.8130</td><td>0.8466 t CO2e/MWh</td><td>AIB 2024 residual-mix release corrected for Poland (export of attributes under-recorded).</td></tr>\n<tr><td>EFS2025.1-R006</td><td>US-SE3</td><td>residual_mix</td><td>0.4410</td><td>withdrawn — no residual mix published</td><td>Tracking-system coverage in US-SE3 below the publication threshold for 2024; the 2025.1 value was computed on incomplete data.</td></tr>\n</table>\n<p>All other rows of revision 2025.1 are unchanged in revision 2025.2, including the district-steam default (66.33 kg CO2e/MMBtu).</p>\n<p>Erratum 1 (2025-10-03) corrected the unit label of the hot-water row only and did not change any value.</p>\n",
+   "created_by": "priya.venkataraman",
+   "created_at": "2026-02-17T14:00:00Z"
+  },
+  {
+   "id": "88120022",
+   "type": "page",
+   "status": "current",
+   "title": "EFS-2025 Erratum 1 — unit label",
+   "space_key": "SUST",
+   "parent_id": "88120020",
+   "version": 1,
+   "body": "<h1>EFS-2025 Erratum 1</h1><p>Unit label of district_hot_water_default corrected to kg CO2e/MMBtu. No value changed.</p>",
+   "created_by": "priya.venkataraman",
+   "created_at": "2025-10-03T10:00:00Z"
+  },
+  {
+   "id": "88120030",
+   "type": "page",
+   "status": "current",
+   "title": "FY2025 Scope 2 inventory — final",
+   "space_key": "SUST",
+   "parent_id": "88120001",
+   "version": 4,
+   "body": "<h1>FY2025 Scope 2 inventory — final</h1>\n<p>Struck 2025-12-04 under protocol Revision 3 with EFS-2024 revision 2024.1; restated 2026-03-12 after internal audit\nmemo IA-2026-04 (Coventry REGO surplus no longer applied to Leeds).</p>\n<p>Location-based total: 44,918 tCO2e. Market-based total (restated): 41,207 tCO2e.</p>\n<h2>Instruments claimed in FY2025</h2>\n<ul>\n<li>NRR-2024-0811-WND — TPC-04 Waco — 8,800 MWh</li>\n<li>NRR-2025-0388-WND — TPC-02 Dunmore — 2,500 MWh (claim period FY2025, retired 2025-11-20)</li>\n<li>NRR-2024-1650-WND — TPC-05 Kent — 2,900 MWh (Columbia Ridge PPA)</li>\n<li>AIB-DE-2025-06612 — TPC-18 Stuttgart — 6,000 MWh</li>\n<li>AIB-NL-2024-90215 — TPC-16 Rotterdam — 4,000 MWh</li>\n<li>REGO-R0091-2025-0127 — TPC-21 Coventry — 3,800 MWh (capped at site consumption on restatement)</li>\n</ul>\n",
+   "created_by": "maren.ostrowski",
+   "created_at": "2025-12-04T16:00:00Z"
+  },
+  {
+   "id": "88120041",
+   "type": "page",
+   "status": "current",
+   "title": "FY2026 Scope 2 inventory — summary",
+   "space_key": "SUST",
+   "parent_id": "88120001",
+   "version": 1,
+   "body": "<h1>FY2026 Scope 2 inventory — summary</h1>\n<p>Status: not yet published. The carbon accounting desk completes this page when the board is filled.</p>\n<p>Location-based total: (pending) tCO2e</p>\n<p>Market-based total: (pending) tCO2e</p>\n<p>Instruments excluded: (pending)</p>\n",
+   "created_by": "maren.ostrowski",
+   "created_at": "2026-11-02T08:20:00Z"
+  },
+  {
+   "id": "88120050",
+   "type": "page",
+   "status": "current",
+   "title": "Scope 2 protocol Rev 4 — consultation draft (withdrawn)",
+   "space_key": "SUST",
+   "parent_id": "88120001",
+   "version": 2,
+   "body": "<h1>Consultation draft (withdrawn 2026-06-18)</h1><p>This draft proposed keeping the newest EFS edition rule of Rev 3 and the meter-first precedence. Both proposals were rejected in consultation. See the Rev 4 controlled copy.</p>",
+   "created_by": "maren.ostrowski",
+   "created_at": "2026-04-09T09:00:00Z"
+  },
+  {
+   "id": "88130010",
+   "type": "page",
+   "status": "current",
+   "title": "FY2026 Scope 2 inventory — summary (facilities draft)",
+   "space_key": "FAC",
+   "parent_id": null,
+   "version": 2,
+   "body": "<h1>FY2026 Scope 2 inventory — summary (facilities draft)</h1>\n<p>Draft by Facilities energy managers for the October energy review, built from meter-platform totals and the EFS-2026.1\nCSV. Not the sustainability record.</p>\n<p>Location-based total: 43,911 tCO2e</p>\n<p>Market-based total: 31,780 tCO2e</p>\n",
+   "created_by": "hollis.brandt",
+   "created_at": "2026-10-21T15:00:00Z"
+  },
+  {
+   "id": "88130020",
+   "type": "page",
+   "status": "current",
+   "title": "Meter estate notes FY2026",
+   "space_key": "FAC",
+   "parent_id": null,
+   "version": 5,
+   "body": "<h1>Meter estate notes FY2026</h1>\n<ul>\n<li>Greer M-03-01: BMS main meter wired through the tenant CT set since April 2025 retrofit; reads high vs the revenue meter. Rewire FY2027 (INC0042217).</li>\n<li>Salem M-10-01: AMR outage January–February 2026; register reads were taken manually on the last day of each month and loaded to the platform.</li>\n<li>Eindhoven M-17-01: platform gap June 2026 backfilled from the meter's internal log on 2026-07-09.</li>\n<li>Macon M-08-01: AMR modem failed 2026-04-21 and was replaced 2026-05-06; the April month-end register was read manually on site and loaded to the platform.</li>\n<li>Elkhart M-06-01: Northgate AMR head-end migration in December 2025, no remote reads; the December month-end register was read manually and loaded to the platform.</li>\n<li>Leipzig M-19-01: new metering transformer at the substation 2026-08-03 (CT 250/5).</li>\n</ul>\n",
+   "created_by": "hollis.brandt",
+   "created_at": "2026-07-10T09:00:00Z"
+  },
+  {
+   "id": "88140010",
+   "type": "page",
+   "status": "current",
+   "title": "Group entity register — FY2026",
+   "space_key": "FIN",
+   "parent_id": null,
+   "version": 3,
+   "body": "<h1>Group entity register — FY2026 (Finance)</h1>\n<p>Consolidated subsidiaries: Talvik Precision Components GmbH, B.V., Sp. z o.o., Ltd. Divestments: Talvik Marine Systems\nLLC sold to Harbor Gate Industrial Partners on 2025-06-30; transitional services (IT, payroll, energy procurement\nadmin) until 2026-12-31. Retirements or purchases made by Talvik Marine after the sale are for its own account.</p>\n",
+   "created_by": "finance.controller",
+   "created_at": "2025-07-01T09:00:00Z"
+  }
+ ]
+}

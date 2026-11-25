@@ -1,0 +1,12 @@
+# NDC building management - cold room alarm log, November 2026 (export 2026-11-09 07:00)
+# columns: timestamp_utc | room | probe | value_c | event
+2026-11-02T14:10:00Z | Cold Room 2 | CR2-P1 | 7.9 | pre-alarm
+2026-11-02T14:25:00Z | Cold Room 2 | CR2-P1 | 6.1 | clear
+2026-11-07T01:08:00Z | Cold Room 2 | CR2-P1 | 8.6 | HIGH alarm raised (PagerDuty)
+2026-11-07T01:40:00Z | Cold Room 2 | CR2-P1 | 10.9 | HIGH alarm escalated
+2026-11-07T02:30:00Z | Cold Room 2 | CR2-P1 | 11.3 | door found ajar, closed
+2026-11-07T03:45:00Z | Cold Room 2 | CR2-P1 | 7.8 | clear
+2026-11-07T03:52:00Z | Cold Room 2 | CR2-P1 | 6.4 | alarm resolved
+2026-11-08T09:12:00Z | Cold Room 2 | CR2-P1 | 7.7 | pre-alarm (defrost)
+2026-11-08T09:40:00Z | Cold Room 2 | CR2-P1 | 5.2 | clear
+# stock in CR2 during the 7 Nov alarm: HX4-41219 pallets (received 2026-11-06 20:05Z), NDC stock assessment NDC-INV-2211

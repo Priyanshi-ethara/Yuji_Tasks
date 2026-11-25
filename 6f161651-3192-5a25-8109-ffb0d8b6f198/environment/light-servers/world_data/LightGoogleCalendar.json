@@ -1,0 +1,108 @@
+{
+ "events": [
+  {
+   "id": "evt-ks3-01",
+   "calendar_id": "ra.specialist@orvane.example",
+   "summary": "NB 2291 pre-submission review (Margit off-site)",
+   "description": "Margit at Nordmark, Aarhus. Readiness statement to her by mail.",
+   "location": "Aarhus",
+   "start": "2026-11-16T08:00:00+01:00",
+   "end": "2026-11-17T17:00:00+01:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "margit.ossendrecht@orvane.example",
+   "organizer": "margit.ossendrecht@orvane.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-ks3-02",
+   "calendar_id": "ra.specialist@orvane.example",
+   "summary": "Kestrel-3 CCB",
+   "description": "Change control board - Kestrel-3 document releases",
+   "location": "Lindqvist room",
+   "start": "2026-11-13T14:00:00+01:00",
+   "end": "2026-11-13T15:30:00+01:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "margit.ossendrecht@orvane.example",
+   "organizer": "margit.ossendrecht@orvane.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-ks3-03",
+   "calendar_id": "ra.specialist@orvane.example",
+   "summary": "Register weekly sync (postponed)",
+   "description": "Document control register reconciled from closed change requests",
+   "location": "",
+   "start": "2026-11-20T15:00:00+01:00",
+   "end": "2026-11-20T16:00:00+01:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "margit.ossendrecht@orvane.example",
+   "organizer": "margit.ossendrecht@orvane.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-ks3-04",
+   "calendar_id": "ra.specialist@orvane.example",
+   "summary": "NB review slot opens",
+   "description": "Notified body review window for the Kestrel-3 file",
+   "location": "",
+   "start": "2026-11-18T09:00:00+01:00",
+   "end": "2026-11-18T09:30:00+01:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "margit.ossendrecht@orvane.example",
+   "organizer": "margit.ossendrecht@orvane.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-ks3-05",
+   "calendar_id": "ra.specialist@orvane.example",
+   "summary": "Orvane all-hands",
+   "description": "Quarterly quality metrics",
+   "location": "Lindqvist room",
+   "start": "2026-11-19T15:00:00+01:00",
+   "end": "2026-11-19T16:00:00+01:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "margit.ossendrecht@orvane.example",
+   "organizer": "margit.ossendrecht@orvane.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "calendars": [
+  {
+   "id": "ra.specialist@orvane.example",
+   "summary": "RA Specialist",
+   "description": "Primary calendar",
+   "time_zone": "Europe/Amsterdam",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "4"
+  }
+ ],
+ "attendees": {
+  "evt-ks3-02": [
+   {
+    "email": "pieter.vandamme@orvane.example",
+    "displayName": "Pieter Vandamme",
+    "responseStatus": "declined",
+    "optional": false,
+    "organizer": false
+   },
+   {
+    "email": "mateus.ferreira@orvane.example",
+    "displayName": "Mateus Ferreira",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ]
+ }
+}

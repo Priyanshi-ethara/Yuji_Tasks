@@ -1,0 +1,133 @@
+{
+ "tables": {
+  "Account": [
+   {
+    "Id": "001T02000000000001",
+    "Name": "Columbia Ridge Wind LLC",
+    "Industry": "Energy",
+    "attributes": {
+     "type": "Account",
+     "url": "/services/data/v59.0/sobjects/Account/001T02000000000001"
+    }
+   },
+   {
+    "Id": "001T02000000000002",
+    "Name": "Lone Mesa Solar Holdings",
+    "Industry": "Energy",
+    "attributes": {
+     "type": "Account",
+     "url": "/services/data/v59.0/sobjects/Account/001T02000000000002"
+    }
+   },
+   {
+    "Id": "001T02000000000003",
+    "Name": "Greenledger Attribute Services",
+    "Industry": "Energy services",
+    "attributes": {
+     "type": "Account",
+     "url": "/services/data/v59.0/sobjects/Account/001T02000000000003"
+    }
+   },
+   {
+    "Id": "001T02000000000004",
+    "Name": "Brazos Retail Energy",
+    "Industry": "Utilities",
+    "attributes": {
+     "type": "Account",
+     "url": "/services/data/v59.0/sobjects/Account/001T02000000000004"
+    }
+   },
+   {
+    "Id": "001T02000000000005",
+    "Name": "Kessler Energie Vertrieb GmbH",
+    "Industry": "Utilities",
+    "attributes": {
+     "type": "Account",
+     "url": "/services/data/v59.0/sobjects/Account/001T02000000000005"
+    }
+   }
+  ],
+  "Opportunity": [
+   {
+    "Id": "006T02000000000001",
+    "Name": "PPA-CRW-2023 — Columbia Ridge Wind — sleeved PPA (TPC-05 Kent)",
+    "AccountId": "001T02000000000001",
+    "StageName": "Closed Won",
+    "CloseDate": "2023-10-01",
+    "Type": "Physical PPA (sleeved)",
+    "Contract_Number__c": "PPA-CRW-2023",
+    "Contract_Start__c": "2023-10-01",
+    "Contract_End__c": "2033-09-30",
+    "Description": "3,000 MWh/yr delivered through Cascade Public Utility. Environmental attributes: bundled NRR RECs transferred to Talvik Precision Components Inc.'s NRR account quarterly and retired for the site served.",
+    "attributes": {
+     "type": "Opportunity",
+     "url": "/services/data/v59.0/sobjects/Opportunity/006T02000000000001"
+    }
+   },
+   {
+    "Id": "006T02000000000002",
+    "Name": "PPA-LMS-2024 — Lone Mesa Solar — virtual PPA (ERCOT hub swap)",
+    "AccountId": "001T02000000000002",
+    "StageName": "Closed Won",
+    "CloseDate": "2024-12-01",
+    "Type": "Virtual PPA (financial)",
+    "Contract_Number__c": "PPA-LMS-2024",
+    "Contract_Start__c": "2024-12-01",
+    "Contract_End__c": "2036-11-30",
+    "Description": "Fixed-for-floating settlement on 2,000 MWh/yr notional. Environmental attributes: retained by Seller and not conveyed to Buyer (clause 9.2). No physical delivery. Talvik receives financial settlement only.",
+    "attributes": {
+     "type": "Opportunity",
+     "url": "/services/data/v59.0/sobjects/Opportunity/006T02000000000002"
+    }
+   },
+   {
+    "Id": "006T02000000000003",
+    "Name": "BRE-SA-2025 — Brazos Retail Energy — supply agreement (Texas sites)",
+    "AccountId": "001T02000000000004",
+    "StageName": "Closed Won",
+    "CloseDate": "2025-01-01",
+    "Type": "Retail supply",
+    "Contract_Number__c": "BRE-SA-2025",
+    "Contract_Start__c": "2025-01-01",
+    "Contract_End__c": "2027-12-31",
+    "Description": "Standard grid supply for TPC-04, TPC-09, TPC-14. No renewable content claims.",
+    "attributes": {
+     "type": "Opportunity",
+     "url": "/services/data/v59.0/sobjects/Opportunity/006T02000000000003"
+    }
+   },
+   {
+    "Id": "006T02000000000004",
+    "Name": "GL-SVC-2024 — Greenledger — registry services",
+    "AccountId": "001T02000000000003",
+    "StageName": "Closed Won",
+    "CloseDate": "2024-01-01",
+    "Type": "Services",
+    "Contract_Number__c": "GL-SVC-2024",
+    "Contract_Start__c": "2024-01-01",
+    "Contract_End__c": "2026-12-31",
+    "Description": "Account management in NRR, AIB member registries and Ofgem REGO; retirements only on written instruction of the Head of Sustainability Reporting.",
+    "attributes": {
+     "type": "Opportunity",
+     "url": "/services/data/v59.0/sobjects/Opportunity/006T02000000000004"
+    }
+   },
+   {
+    "Id": "006T02000000000005",
+    "Name": "KEV-SA-2026 — Kessler Energie — Stromliefervertrag Leipzig/Stuttgart",
+    "AccountId": "001T02000000000005",
+    "StageName": "Closed Won",
+    "CloseDate": "2026-01-01",
+    "Type": "Retail supply",
+    "Contract_Number__c": "KEV-SA-2026",
+    "Contract_Start__c": "2026-01-01",
+    "Contract_End__c": "2027-12-31",
+    "Description": "Grid supply; invoices monthly on actual reads; corrections by reissued invoice.",
+    "attributes": {
+     "type": "Opportunity",
+     "url": "/services/data/v59.0/sobjects/Opportunity/006T02000000000005"
+    }
+   }
+  ]
+ }
+}

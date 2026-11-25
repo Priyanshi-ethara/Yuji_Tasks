@@ -1,0 +1,199 @@
+{
+ "projects": [
+  {
+   "id": "13001",
+   "key": "MOPS",
+   "name": "Metering Operations",
+   "project_type_key": "business",
+   "lead": "user-tamsin",
+   "description": "Meter installs, collector changes and metering faults"
+  },
+  {
+   "id": "13002",
+   "key": "BILL",
+   "name": "Billing Runs",
+   "project_type_key": "business",
+   "lead": "user-imogen",
+   "description": "Billing run tickets for the business book"
+  }
+ ],
+ "users": [
+  {
+   "account_id": "user-imogen",
+   "display_name": "Imogen Ashdale",
+   "email": "imogen.ashdale@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-dorian",
+   "display_name": "Dorian Felbrigg",
+   "email": "dorian.felbrigg@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-helena",
+   "display_name": "Helena Marchbank",
+   "email": "helena.marchbank@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-tamsin",
+   "display_name": "Tamsin Rookwood",
+   "email": "tamsin.rookwood@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-owain",
+   "display_name": "Owain Castellack",
+   "email": "owain.castellack@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-bertrand",
+   "display_name": "Bertrand Ilsley",
+   "email": "bertrand.ilsley@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-ffion",
+   "display_name": "Ffion Gethin",
+   "email": "ffion.gethin@harrowmere-energy.example",
+   "active": true
+  },
+  {
+   "account_id": "user-alex",
+   "display_name": "Alex Carter",
+   "email": "alex.carter@contoso.com",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 31,
+   "name": "MOPS board",
+   "type": "kanban",
+   "project_key": "MOPS"
+  },
+  {
+   "id": 32,
+   "name": "BILL board",
+   "type": "kanban",
+   "project_key": "BILL"
+  }
+ ],
+ "sprints": [],
+ "issues": [
+  {
+   "id": "30001",
+   "key": "MOPS-1184",
+   "project_key": "MOPS",
+   "issue_type": "Task",
+   "summary": "Wave 2 commissioning - Brannagh QM-7 batch (Kestrel)",
+   "description": "Commission six Brannagh QM-7 meters polled by Kestrel Data Services, 10-19 March 2026, for the capacity monitoring service (dashboards for subscribing sites). Programming per site is recorded in each meter's commissioning record in the asset register.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-owain",
+   "reporter": "user-tamsin",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-02-20T09:00:00Z",
+   "updated": "2026-03-20T10:00:00Z"
+  },
+  {
+   "id": "30002",
+   "key": "MOPS-1302",
+   "project_key": "MOPS",
+   "issue_type": "Task",
+   "summary": "Transfer of six western sites to Varden Metering Services",
+   "description": "From 1 Sep 2026 Varden retrieves HMS-1204, HMS-1212, HMS-1229, HMS-1235, HMS-1248, HMS-1256 under VMS-DCA-2026. File format per Schedule 3 (Box). Asset register pages updated.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-bertrand",
+   "reporter": "user-tamsin",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-07-20T09:00:00Z",
+   "updated": "2026-09-02T10:00:00Z"
+  },
+  {
+   "id": "30003",
+   "key": "MOPS-1351",
+   "project_key": "MOPS",
+   "issue_type": "Task",
+   "summary": "Marlpit Garden Centre - change of supplier",
+   "description": "Loss registered: new supplier from 00:00 on 6 Nov 2026. Final read taken at the cut-over and held on the metering platform. CRM account updated.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-bertrand",
+   "reporter": "user-imogen",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-28T09:00:00Z",
+   "updated": "2026-11-06T09:00:00Z"
+  },
+  {
+   "id": "30004",
+   "key": "MOPS-1360",
+   "project_key": "MOPS",
+   "issue_type": "Task",
+   "summary": "Brookhay Brewery Taproom - new registration",
+   "description": "Meter fitted 14 Oct 2026 ahead of the transfer; supply registered to Harrowmere from 22 Oct 2026. Start read on the metering platform.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-owain",
+   "reporter": "user-tamsin",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-05T09:00:00Z",
+   "updated": "2026-10-22T09:00:00Z"
+  },
+  {
+   "id": "30005",
+   "key": "BILL-2611",
+   "project_key": "BILL",
+   "issue_type": "Task",
+   "summary": "Billing run BR-2611 - 22 BHH drafts",
+   "description": "Draft the BR-2611 invoices in QuickBooks per BP-4 and send the summary mail to the Billing Manager. Approval 17 Nov.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "user-alex",
+   "reporter": "user-imogen",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-12T11:00:00Z",
+   "updated": "2026-11-16T08:00:00Z"
+  },
+  {
+   "id": "30006",
+   "key": "BILL-2602",
+   "project_key": "BILL",
+   "issue_type": "Task",
+   "summary": "Load BHH Edition 7 into the tariff space",
+   "description": "Edition 7 page published; consumption from 00:00 1 Nov 2026 (UK time). Edition 6 page kept in force for October consumption.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-helena",
+   "reporter": "user-imogen",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-09-10T09:00:00Z",
+   "updated": "2026-09-14T09:30:00Z"
+  },
+  {
+   "id": "30007",
+   "key": "BILL-2588",
+   "project_key": "BILL",
+   "issue_type": "Task",
+   "summary": "Billing run BR-2610 - 21 BHH drafts",
+   "description": "Issued 18 Oct 2026.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "user-dorian",
+   "reporter": "user-imogen",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-12T11:00:00Z",
+   "updated": "2026-10-18T09:00:00Z"
+  }
+ ]
+}

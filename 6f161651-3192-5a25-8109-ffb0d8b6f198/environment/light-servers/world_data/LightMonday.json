@@ -1,0 +1,3772 @@
+{
+ "workspaces": [
+  {
+   "workspace_id": "ws-orv-qr",
+   "name": "Orvane Quality & Regulatory",
+   "kind": "open",
+   "description": "Document control, CAPA and submission boards for Orvane Diagnostics"
+  }
+ ],
+ "boards": [
+  {
+   "board_id": "board-ks3-dcr",
+   "workspace_id": "ws-orv-qr",
+   "name": "Kestrel-3 Document Control Register",
+   "description": "Approval status of every Kestrel-3 controlled document revision. Source of record for approval status (QA-SOP-007). Reconciled from closed change requests at the weekly register sync.",
+   "state": "active",
+   "board_kind": "public"
+  },
+  {
+   "board_id": "board-orv-capa",
+   "workspace_id": "ws-orv-qr",
+   "name": "CAPA Log 2026",
+   "description": "Corrective and preventive actions opened in 2026",
+   "state": "active",
+   "board_kind": "public"
+  }
+ ],
+ "groups": [
+  {
+   "group_id": "grp-approved",
+   "board_id": "board-ks3-dcr",
+   "title": "Approved",
+   "color": "#00c875",
+   "position": 1
+  },
+  {
+   "group_id": "grp-inapproval",
+   "board_id": "board-ks3-dcr",
+   "title": "In approval",
+   "color": "#fdab3d",
+   "position": 2
+  },
+  {
+   "group_id": "grp-draft",
+   "board_id": "board-ks3-dcr",
+   "title": "Draft",
+   "color": "#c4c4c4",
+   "position": 3
+  },
+  {
+   "group_id": "grp-withdrawn",
+   "board_id": "board-ks3-dcr",
+   "title": "Approval withdrawn",
+   "color": "#e2445c",
+   "position": 4
+  },
+  {
+   "group_id": "grp-superseded",
+   "board_id": "board-ks3-dcr",
+   "title": "Superseded",
+   "color": "#808080",
+   "position": 5
+  },
+  {
+   "group_id": "grp-capa-open",
+   "board_id": "board-orv-capa",
+   "title": "Open",
+   "color": "#e2445c",
+   "position": 1
+  },
+  {
+   "group_id": "grp-capa-closed",
+   "board_id": "board-orv-capa",
+   "title": "Closed",
+   "color": "#00c875",
+   "position": 2
+  }
+ ],
+ "columns": [
+  {
+   "column_id": "doc_no",
+   "board_id": "board-ks3-dcr",
+   "title": "Document number",
+   "type": "text",
+   "position": 1
+  },
+  {
+   "column_id": "revision",
+   "board_id": "board-ks3-dcr",
+   "title": "Revision",
+   "type": "text",
+   "position": 2
+  },
+  {
+   "column_id": "doc_title",
+   "board_id": "board-ks3-dcr",
+   "title": "Title",
+   "type": "text",
+   "position": 3
+  },
+  {
+   "column_id": "status",
+   "board_id": "board-ks3-dcr",
+   "title": "Status",
+   "type": "status",
+   "position": 4
+  },
+  {
+   "column_id": "approved_on",
+   "board_id": "board-ks3-dcr",
+   "title": "Approved on",
+   "type": "date",
+   "position": 5
+  },
+  {
+   "column_id": "approval_ref",
+   "board_id": "board-ks3-dcr",
+   "title": "Approval reference",
+   "type": "text",
+   "position": 6
+  },
+  {
+   "column_id": "capa_title",
+   "board_id": "board-orv-capa",
+   "title": "Summary",
+   "type": "text",
+   "position": 1
+  },
+  {
+   "column_id": "capa_status",
+   "board_id": "board-orv-capa",
+   "title": "Status",
+   "type": "status",
+   "position": 2
+  },
+  {
+   "column_id": "capa_owner",
+   "board_id": "board-orv-capa",
+   "title": "Owner",
+   "type": "text",
+   "position": 3
+  }
+ ],
+ "items": [
+  {
+   "item_id": "item-ks3-1001a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1001 Rev A - Device Description and Specification",
+   "created_at": "2025-11-20T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1001 Rev B - Device Description and Specification",
+   "created_at": "2026-02-11T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1001 Rev C - Device Description and Specification",
+   "created_at": "2026-05-06T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1001 Rev D - Device Description and Specification",
+   "created_at": "2026-08-19T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1002 Rev A - Intended Purpose Statement",
+   "created_at": "2025-11-20T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1002 Rev B - Intended Purpose Statement",
+   "created_at": "2026-03-02T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1002 Rev C - Intended Purpose Statement",
+   "created_at": "2026-07-08T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1003 Rev A - Classification Rationale",
+   "created_at": "2025-12-04T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1003 Rev B - Classification Rationale",
+   "created_at": "2026-07-08T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1004 Rev A - Variants, Configurations and Accessories List",
+   "created_at": "2026-01-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1004 Rev B - Variants, Configurations and Accessories List",
+   "created_at": "2026-04-22T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1004 Rev C - Variants, Configurations and Accessories List",
+   "created_at": "2026-09-09T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1005 Rev A - Previous and Similar Generations Overview",
+   "created_at": "2026-01-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1005 Rev B - Previous and Similar Generations Overview",
+   "created_at": "2026-06-17T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1130 Rev A - Label and Packaging Labelling Specification",
+   "created_at": "2025-12-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1130 Rev B - Label and Packaging Labelling Specification",
+   "created_at": "2026-02-25T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1130 Rev C - Label and Packaging Labelling Specification",
+   "created_at": "2026-04-29T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1130 Rev D - Label and Packaging Labelling Specification",
+   "created_at": "2026-07-01T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1130 Rev E - Label and Packaging Labelling Specification",
+   "created_at": "2026-09-23T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1133 Rev A - Instructions for Use - Professional",
+   "created_at": "2025-12-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1133 Rev B - Instructions for Use - Professional",
+   "created_at": "2026-02-25T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1133 Rev C - Instructions for Use - Professional",
+   "created_at": "2026-04-08T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1133 Rev D - Instructions for Use - Professional",
+   "created_at": "2026-05-27T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1133 Rev E - Instructions for Use - Professional",
+   "created_at": "2026-07-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1133 Rev F - Instructions for Use - Professional",
+   "created_at": "2026-08-26T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-inapproval",
+   "name": "DOC-1133 Rev G - Instructions for Use - Professional",
+   "created_at": "2026-11-12T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-draft",
+   "name": "DOC-1134 Rev A - Instructions for Use - Lay User (Home concept)",
+   "created_at": "2026-10-14T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1020 Rev A - Design and Manufacturing Information",
+   "created_at": "2025-11-27T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1020 Rev B - Design and Manufacturing Information",
+   "created_at": "2026-01-28T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1020 Rev C - Design and Manufacturing Information",
+   "created_at": "2026-03-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1020 Rev D - Design and Manufacturing Information",
+   "created_at": "2026-05-20T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1020 Rev E - Design and Manufacturing Information",
+   "created_at": "2026-07-22T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1020 Rev F - Design and Manufacturing Information",
+   "created_at": "2026-09-30T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1021 Rev A - Manufacturing Sites and Critical Suppliers",
+   "created_at": "2025-12-11T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1021 Rev B - Manufacturing Sites and Critical Suppliers",
+   "created_at": "2026-03-11T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1021 Rev C - Manufacturing Sites and Critical Suppliers",
+   "created_at": "2026-06-03T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1021 Rev D - Manufacturing Sites and Critical Suppliers",
+   "created_at": "2026-10-07T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev A - General Safety and Performance Requirements Checklist",
+   "created_at": "2025-12-04T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev B - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-01-21T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev C - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-03-04T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev D - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-04-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev E - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-06-10T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1030 Rev F - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-08-05T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1030 Rev G - General Safety and Performance Requirements Checklist",
+   "created_at": "2026-10-14T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1046 Rev A - Risk Management Plan",
+   "created_at": "2025-10-30T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1046 Rev B - Risk Management Plan",
+   "created_at": "2026-02-04T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1046 Rev C - Risk Management Plan",
+   "created_at": "2026-06-24T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1047 Rev A - Risk Management Report",
+   "created_at": "2026-01-14T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1047 Rev B - Risk Management Report",
+   "created_at": "2026-03-25T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1047 Rev C - Risk Management Report",
+   "created_at": "2026-06-03T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1047 Rev D - Risk Management Report",
+   "created_at": "2026-08-12T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1047 Rev E - Risk Management Report",
+   "created_at": "2026-10-21T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1102 Rev A - Software Description and Architecture",
+   "created_at": "2026-02-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1102 Rev B - Software Description and Architecture",
+   "created_at": "2026-05-13T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1102 Rev C - Software Description and Architecture",
+   "created_at": "2026-08-26T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-inapproval",
+   "name": "DOC-1102 Rev D - Software Description and Architecture",
+   "created_at": "2026-11-05T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1103 Rev A - Software Verification and Validation Report",
+   "created_at": "2026-03-11T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1103 Rev B - Software Verification and Validation Report",
+   "created_at": "2026-06-24T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1103 Rev C - Software Verification and Validation Report",
+   "created_at": "2026-10-09T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1074 Rev A - Usability Engineering File",
+   "created_at": "2026-01-28T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1074 Rev B - Usability Engineering File",
+   "created_at": "2026-04-08T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1074 Rev C - Usability Engineering File",
+   "created_at": "2026-07-01T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1074 Rev D - Usability Engineering File",
+   "created_at": "2026-09-16T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1080 Rev A - Electrical Safety and EMC Test Report",
+   "created_at": "2026-04-01T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1080 Rev B - Electrical Safety and EMC Test Report",
+   "created_at": "2026-08-19T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1110 Rev A - Analytical Performance Report - Precision",
+   "created_at": "2026-03-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1110 Rev B - Analytical Performance Report - Precision",
+   "created_at": "2026-06-17T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1110 Rev C - Analytical Performance Report - Precision",
+   "created_at": "2026-09-02T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1111 Rev A - Analytical Performance Report - Trueness and Linearity",
+   "created_at": "2026-04-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1111 Rev B - Analytical Performance Report - Trueness and Linearity",
+   "created_at": "2026-08-12T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1112 Rev A - Analytical Performance Report - Interference and Cross-reactivity",
+   "created_at": "2026-05-06T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1112 Rev B - Analytical Performance Report - Interference and Cross-reactivity",
+   "created_at": "2026-08-26T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1188 Rev A - Stability Study Report",
+   "created_at": "2026-06-02T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1188 Rev B - Stability Study Report",
+   "created_at": "2026-09-18T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-draft",
+   "name": "DOC-1120 Rev A - Clinical Performance Study Report KS3-CPS-01",
+   "created_at": "2026-10-30T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1121 Rev A - Performance Evaluation Report",
+   "created_at": "2026-05-27T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1121 Rev B - Performance Evaluation Report",
+   "created_at": "2026-10-07T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1162 Rev A - Near-patient User Performance Study Report",
+   "created_at": "2026-09-09T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-draft",
+   "name": "DOC-1161 Rev A - Lay-user Performance Study Protocol (Home concept)",
+   "created_at": "2026-10-21T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-withdrawn",
+   "name": "DOC-1200 Rev A - Post-market Surveillance Plan",
+   "created_at": "2026-09-30T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-superseded",
+   "name": "DOC-1205 Rev A - Summary of Safety and Performance",
+   "created_at": "2026-07-15T17:00:00Z"
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "board_id": "board-ks3-dcr",
+   "group_id": "grp-approved",
+   "name": "DOC-1205 Rev B - Summary of Safety and Performance",
+   "created_at": "2026-10-01T17:00:00Z"
+  },
+  {
+   "item_id": "item-capa-0912",
+   "board_id": "board-orv-capa",
+   "group_id": "grp-capa-open",
+   "name": "CAPA-0912",
+   "created_at": "2026-11-11T09:00:00Z"
+  },
+  {
+   "item_id": "item-capa-0874",
+   "board_id": "board-orv-capa",
+   "group_id": "grp-capa-closed",
+   "name": "CAPA-0874",
+   "created_at": "2026-09-02T09:00:00Z"
+  },
+  {
+   "item_id": "item-capa-0899",
+   "board_id": "board-orv-capa",
+   "group_id": "grp-capa-open",
+   "name": "CAPA-0899",
+   "created_at": "2026-09-02T09:00:00Z"
+  }
+ ],
+ "column_values": [
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "doc_no",
+   "text": "DOC-1001",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "doc_title",
+   "text": "Device Description and Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "approved_on",
+   "text": "2025-11-20",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001a",
+   "column_id": "approval_ref",
+   "text": "CHG0039120 closed; env-ks3-1001a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "doc_no",
+   "text": "DOC-1001",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "doc_title",
+   "text": "Device Description and Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "approved_on",
+   "text": "2026-02-11",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001b",
+   "column_id": "approval_ref",
+   "text": "CHG0039544 closed; env-ks3-1001b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "doc_no",
+   "text": "DOC-1001",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "doc_title",
+   "text": "Device Description and Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "approved_on",
+   "text": "2026-05-06",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001c",
+   "column_id": "approval_ref",
+   "text": "CHG0039987 closed; env-ks3-1001c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "doc_no",
+   "text": "DOC-1001",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "doc_title",
+   "text": "Device Description and Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "approved_on",
+   "text": "2026-08-19",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1001d",
+   "column_id": "approval_ref",
+   "text": "CHG0040580 closed; env-ks3-1001d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "doc_no",
+   "text": "DOC-1002",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "doc_title",
+   "text": "Intended Purpose Statement",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "approved_on",
+   "text": "2025-11-20",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002a",
+   "column_id": "approval_ref",
+   "text": "CHG0039120 closed; env-ks3-1002a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "doc_no",
+   "text": "DOC-1002",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "doc_title",
+   "text": "Intended Purpose Statement",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "approved_on",
+   "text": "2026-03-02",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002b",
+   "column_id": "approval_ref",
+   "text": "CHG0039610 closed; env-ks3-1002b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "doc_no",
+   "text": "DOC-1002",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "doc_title",
+   "text": "Intended Purpose Statement",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "approved_on",
+   "text": "2026-07-08",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1002c",
+   "column_id": "approval_ref",
+   "text": "CHG0040312 closed; env-ks3-1002c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "doc_no",
+   "text": "DOC-1003",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "doc_title",
+   "text": "Classification Rationale",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "approved_on",
+   "text": "2025-12-04",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003a",
+   "column_id": "approval_ref",
+   "text": "CHG0039201 closed; env-ks3-1003a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "doc_no",
+   "text": "DOC-1003",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "doc_title",
+   "text": "Classification Rationale",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "approved_on",
+   "text": "2026-07-08",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1003b",
+   "column_id": "approval_ref",
+   "text": "CHG0040312 closed; env-ks3-1003b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "doc_no",
+   "text": "DOC-1004",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "doc_title",
+   "text": "Variants, Configurations and Accessories List",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "approved_on",
+   "text": "2026-01-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004a",
+   "column_id": "approval_ref",
+   "text": "CHG0039377 closed; env-ks3-1004a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "doc_no",
+   "text": "DOC-1004",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "doc_title",
+   "text": "Variants, Configurations and Accessories List",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "approved_on",
+   "text": "2026-04-22",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004b",
+   "column_id": "approval_ref",
+   "text": "CHG0039902 closed; env-ks3-1004b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "doc_no",
+   "text": "DOC-1004",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "doc_title",
+   "text": "Variants, Configurations and Accessories List",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "approved_on",
+   "text": "2026-09-09",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1004c",
+   "column_id": "approval_ref",
+   "text": "CHG0040688 closed; env-ks3-1004c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "doc_no",
+   "text": "DOC-1005",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "doc_title",
+   "text": "Previous and Similar Generations Overview",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "approved_on",
+   "text": "2026-01-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005a",
+   "column_id": "approval_ref",
+   "text": "CHG0039377 closed; env-ks3-1005a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "doc_no",
+   "text": "DOC-1005",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "doc_title",
+   "text": "Previous and Similar Generations Overview",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "approved_on",
+   "text": "2026-06-17",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1005b",
+   "column_id": "approval_ref",
+   "text": "CHG0040204 closed; env-ks3-1005b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "doc_no",
+   "text": "DOC-1130",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "doc_title",
+   "text": "Label and Packaging Labelling Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "approved_on",
+   "text": "2025-12-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130a",
+   "column_id": "approval_ref",
+   "text": "CHG0039255 closed; env-ks3-1130a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "doc_no",
+   "text": "DOC-1130",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "doc_title",
+   "text": "Label and Packaging Labelling Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "approved_on",
+   "text": "2026-02-25",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130b",
+   "column_id": "approval_ref",
+   "text": "CHG0039588 closed; env-ks3-1130b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "doc_no",
+   "text": "DOC-1130",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "doc_title",
+   "text": "Label and Packaging Labelling Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "approved_on",
+   "text": "2026-04-29",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130c",
+   "column_id": "approval_ref",
+   "text": "CHG0039931 closed; env-ks3-1130c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "doc_no",
+   "text": "DOC-1130",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "doc_title",
+   "text": "Label and Packaging Labelling Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "approved_on",
+   "text": "2026-07-01",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130d",
+   "column_id": "approval_ref",
+   "text": "CHG0040290 closed; env-ks3-1130d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "doc_no",
+   "text": "DOC-1130",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "revision",
+   "text": "Rev E",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "doc_title",
+   "text": "Label and Packaging Labelling Specification",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "approved_on",
+   "text": "2026-09-23",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1130e",
+   "column_id": "approval_ref",
+   "text": "CHG0040760 closed; env-ks3-1130e completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "approved_on",
+   "text": "2025-12-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133a",
+   "column_id": "approval_ref",
+   "text": "CHG0039255 closed; env-ks3-1133a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "approved_on",
+   "text": "2026-02-25",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133b",
+   "column_id": "approval_ref",
+   "text": "CHG0039588 closed; env-ks3-1133b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "approved_on",
+   "text": "2026-04-08",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133c",
+   "column_id": "approval_ref",
+   "text": "CHG0039851 closed; env-ks3-1133c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "approved_on",
+   "text": "2026-05-27",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133d",
+   "column_id": "approval_ref",
+   "text": "CHG0040107 closed; env-ks3-1133d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "revision",
+   "text": "Rev E",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "approved_on",
+   "text": "2026-07-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133e",
+   "column_id": "approval_ref",
+   "text": "CHG0040355 closed; env-ks3-1133e completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "revision",
+   "text": "Rev F",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "approved_on",
+   "text": "2026-08-26",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133f",
+   "column_id": "approval_ref",
+   "text": "CHG0040611 closed; env-ks3-1133f completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "doc_no",
+   "text": "DOC-1133",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "revision",
+   "text": "Rev G",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Professional",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "status",
+   "text": "In approval",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "approved_on",
+   "text": "",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1133g",
+   "column_id": "approval_ref",
+   "text": "env-ks3-1133g (sent 2026-11-12)",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "doc_no",
+   "text": "DOC-1134",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "doc_title",
+   "text": "Instructions for Use - Lay User (Home concept)",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "status",
+   "text": "Draft",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "approved_on",
+   "text": "",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1134a",
+   "column_id": "approval_ref",
+   "text": "not routed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "approved_on",
+   "text": "2025-11-27",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020a",
+   "column_id": "approval_ref",
+   "text": "CHG0039150 closed; env-ks3-1020a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "approved_on",
+   "text": "2026-01-28",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020b",
+   "column_id": "approval_ref",
+   "text": "CHG0039455 closed; env-ks3-1020b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "approved_on",
+   "text": "2026-03-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020c",
+   "column_id": "approval_ref",
+   "text": "CHG0039722 closed; env-ks3-1020c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "approved_on",
+   "text": "2026-05-20",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020d",
+   "column_id": "approval_ref",
+   "text": "CHG0040071 closed; env-ks3-1020d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "revision",
+   "text": "Rev E",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "approved_on",
+   "text": "2026-07-22",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020e",
+   "column_id": "approval_ref",
+   "text": "CHG0040401 closed; env-ks3-1020e completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "doc_no",
+   "text": "DOC-1020",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "revision",
+   "text": "Rev F",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "doc_title",
+   "text": "Design and Manufacturing Information",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "approved_on",
+   "text": "2026-09-30",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1020f",
+   "column_id": "approval_ref",
+   "text": "CHG0040801 closed; env-ks3-1020f completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "doc_no",
+   "text": "DOC-1021",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "doc_title",
+   "text": "Manufacturing Sites and Critical Suppliers",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "approved_on",
+   "text": "2025-12-11",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021a",
+   "column_id": "approval_ref",
+   "text": "CHG0039230 closed; env-ks3-1021a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "doc_no",
+   "text": "DOC-1021",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "doc_title",
+   "text": "Manufacturing Sites and Critical Suppliers",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "approved_on",
+   "text": "2026-03-11",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021b",
+   "column_id": "approval_ref",
+   "text": "CHG0039680 closed; env-ks3-1021b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "doc_no",
+   "text": "DOC-1021",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "doc_title",
+   "text": "Manufacturing Sites and Critical Suppliers",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "approved_on",
+   "text": "2026-06-03",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021c",
+   "column_id": "approval_ref",
+   "text": "CHG0040166 closed; env-ks3-1021c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "doc_no",
+   "text": "DOC-1021",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "doc_title",
+   "text": "Manufacturing Sites and Critical Suppliers",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "approved_on",
+   "text": "2026-10-07",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1021d",
+   "column_id": "approval_ref",
+   "text": "CHG0040870 closed; env-ks3-1021d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "approved_on",
+   "text": "2025-12-04",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030a",
+   "column_id": "approval_ref",
+   "text": "CHG0039201 closed; env-ks3-1030a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "approved_on",
+   "text": "2026-01-21",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030b",
+   "column_id": "approval_ref",
+   "text": "CHG0039410 closed; env-ks3-1030b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "approved_on",
+   "text": "2026-03-04",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030c",
+   "column_id": "approval_ref",
+   "text": "CHG0039633 closed; env-ks3-1030c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "approved_on",
+   "text": "2026-04-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030d",
+   "column_id": "approval_ref",
+   "text": "CHG0039877 closed; env-ks3-1030d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "revision",
+   "text": "Rev E",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "approved_on",
+   "text": "2026-06-10",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030e",
+   "column_id": "approval_ref",
+   "text": "CHG0040188 closed; env-ks3-1030e completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "revision",
+   "text": "Rev F",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "approved_on",
+   "text": "2026-08-05",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030f",
+   "column_id": "approval_ref",
+   "text": "CHG0040488 closed; env-ks3-1030f completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "doc_no",
+   "text": "DOC-1030",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "revision",
+   "text": "Rev G",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "doc_title",
+   "text": "General Safety and Performance Requirements Checklist",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "approved_on",
+   "text": "2026-10-14",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1030g",
+   "column_id": "approval_ref",
+   "text": "CHG0040896 closed; env-ks3-1030g completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "doc_no",
+   "text": "DOC-1046",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "doc_title",
+   "text": "Risk Management Plan",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "approved_on",
+   "text": "2025-10-30",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046a",
+   "column_id": "approval_ref",
+   "text": "CHG0039044 closed; env-ks3-1046a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "doc_no",
+   "text": "DOC-1046",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "doc_title",
+   "text": "Risk Management Plan",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "approved_on",
+   "text": "2026-02-04",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046b",
+   "column_id": "approval_ref",
+   "text": "CHG0039501 closed; env-ks3-1046b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "doc_no",
+   "text": "DOC-1046",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "doc_title",
+   "text": "Risk Management Plan",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "approved_on",
+   "text": "2026-06-24",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1046c",
+   "column_id": "approval_ref",
+   "text": "CHG0040233 closed; env-ks3-1046c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "doc_no",
+   "text": "DOC-1047",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "doc_title",
+   "text": "Risk Management Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "approved_on",
+   "text": "2026-01-14",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047a",
+   "column_id": "approval_ref",
+   "text": "CHG0039366 closed; env-ks3-1047a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "doc_no",
+   "text": "DOC-1047",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "doc_title",
+   "text": "Risk Management Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "approved_on",
+   "text": "2026-03-25",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047b",
+   "column_id": "approval_ref",
+   "text": "CHG0039760 closed; env-ks3-1047b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "doc_no",
+   "text": "DOC-1047",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "doc_title",
+   "text": "Risk Management Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "approved_on",
+   "text": "2026-06-03",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047c",
+   "column_id": "approval_ref",
+   "text": "CHG0040166 closed; env-ks3-1047c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "doc_no",
+   "text": "DOC-1047",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "doc_title",
+   "text": "Risk Management Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "approved_on",
+   "text": "2026-08-12",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047d",
+   "column_id": "approval_ref",
+   "text": "CHG0040522 closed; env-ks3-1047d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "doc_no",
+   "text": "DOC-1047",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "revision",
+   "text": "Rev E",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "doc_title",
+   "text": "Risk Management Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "approved_on",
+   "text": "2026-10-21",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1047e",
+   "column_id": "approval_ref",
+   "text": "CHG0040738 closed; env-ks3-1047e completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "doc_no",
+   "text": "DOC-1102",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "doc_title",
+   "text": "Software Description and Architecture",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "approved_on",
+   "text": "2026-02-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102a",
+   "column_id": "approval_ref",
+   "text": "CHG0039566 closed; env-ks3-1102a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "doc_no",
+   "text": "DOC-1102",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "doc_title",
+   "text": "Software Description and Architecture",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "approved_on",
+   "text": "2026-05-13",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102b",
+   "column_id": "approval_ref",
+   "text": "CHG0040033 closed; env-ks3-1102b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "doc_no",
+   "text": "DOC-1102",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "doc_title",
+   "text": "Software Description and Architecture",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "approved_on",
+   "text": "2026-08-26",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102c",
+   "column_id": "approval_ref",
+   "text": "CHG0040611 closed; env-ks3-1102c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "doc_no",
+   "text": "DOC-1102",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "doc_title",
+   "text": "Software Description and Architecture",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "status",
+   "text": "In approval",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "approved_on",
+   "text": "",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1102d",
+   "column_id": "approval_ref",
+   "text": "env-ks3-1102d (sent 2026-11-05)",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "doc_no",
+   "text": "DOC-1103",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "doc_title",
+   "text": "Software Verification and Validation Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "approved_on",
+   "text": "2026-03-11",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103a",
+   "column_id": "approval_ref",
+   "text": "CHG0039680 closed; env-ks3-1103a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "doc_no",
+   "text": "DOC-1103",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "doc_title",
+   "text": "Software Verification and Validation Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "approved_on",
+   "text": "2026-06-24",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103b",
+   "column_id": "approval_ref",
+   "text": "CHG0040233 closed; env-ks3-1103b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "doc_no",
+   "text": "DOC-1103",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "doc_title",
+   "text": "Software Verification and Validation Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "approved_on",
+   "text": "2026-10-09",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1103c",
+   "column_id": "approval_ref",
+   "text": "CHG0040877 closed; env-ks3-1103c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "doc_no",
+   "text": "DOC-1074",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "doc_title",
+   "text": "Usability Engineering File",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "approved_on",
+   "text": "2026-01-28",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074a",
+   "column_id": "approval_ref",
+   "text": "CHG0039455 closed; env-ks3-1074a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "doc_no",
+   "text": "DOC-1074",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "doc_title",
+   "text": "Usability Engineering File",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "approved_on",
+   "text": "2026-04-08",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074b",
+   "column_id": "approval_ref",
+   "text": "CHG0039851 closed; env-ks3-1074b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "doc_no",
+   "text": "DOC-1074",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "doc_title",
+   "text": "Usability Engineering File",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "approved_on",
+   "text": "2026-07-01",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074c",
+   "column_id": "approval_ref",
+   "text": "CHG0040290 closed; env-ks3-1074c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "doc_no",
+   "text": "DOC-1074",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "revision",
+   "text": "Rev D",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "doc_title",
+   "text": "Usability Engineering File",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "approved_on",
+   "text": "2026-09-16",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1074d",
+   "column_id": "approval_ref",
+   "text": "CHG0040733 closed; env-ks3-1074d completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "doc_no",
+   "text": "DOC-1080",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "doc_title",
+   "text": "Electrical Safety and EMC Test Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "approved_on",
+   "text": "2026-04-01",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080a",
+   "column_id": "approval_ref",
+   "text": "CHG0039822 closed; env-ks3-1080a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "doc_no",
+   "text": "DOC-1080",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "doc_title",
+   "text": "Electrical Safety and EMC Test Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "approved_on",
+   "text": "2026-08-19",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1080b",
+   "column_id": "approval_ref",
+   "text": "CHG0040580 closed; env-ks3-1080b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "doc_no",
+   "text": "DOC-1110",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Precision",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "approved_on",
+   "text": "2026-03-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110a",
+   "column_id": "approval_ref",
+   "text": "CHG0039722 closed; env-ks3-1110a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "doc_no",
+   "text": "DOC-1110",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Precision",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "approved_on",
+   "text": "2026-06-17",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110b",
+   "column_id": "approval_ref",
+   "text": "CHG0040204 closed; env-ks3-1110b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "doc_no",
+   "text": "DOC-1110",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "revision",
+   "text": "Rev C",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Precision",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "approved_on",
+   "text": "2026-09-02",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1110c",
+   "column_id": "approval_ref",
+   "text": "CHG0040655 closed; env-ks3-1110c completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "doc_no",
+   "text": "DOC-1111",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Trueness and Linearity",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "approved_on",
+   "text": "2026-04-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111a",
+   "column_id": "approval_ref",
+   "text": "CHG0039877 closed; env-ks3-1111a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "doc_no",
+   "text": "DOC-1111",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Trueness and Linearity",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "approved_on",
+   "text": "2026-08-12",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1111b",
+   "column_id": "approval_ref",
+   "text": "CHG0040522 closed; env-ks3-1111b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "doc_no",
+   "text": "DOC-1112",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Interference and Cross-reactivity",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "approved_on",
+   "text": "2026-05-06",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112a",
+   "column_id": "approval_ref",
+   "text": "CHG0039987 closed; env-ks3-1112a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "doc_no",
+   "text": "DOC-1112",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "doc_title",
+   "text": "Analytical Performance Report - Interference and Cross-reactivity",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "approved_on",
+   "text": "2026-08-26",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1112b",
+   "column_id": "approval_ref",
+   "text": "CHG0040611 closed; env-ks3-1112b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "doc_no",
+   "text": "DOC-1188",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "doc_title",
+   "text": "Stability Study Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "approved_on",
+   "text": "2026-06-02",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188a",
+   "column_id": "approval_ref",
+   "text": "CHG0040150 closed; env-ks3-1188a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "doc_no",
+   "text": "DOC-1188",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "doc_title",
+   "text": "Stability Study Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "approved_on",
+   "text": "2026-09-18",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1188b",
+   "column_id": "approval_ref",
+   "text": "CHG0040815 closed; env-ks3-1188b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "doc_no",
+   "text": "DOC-1120",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "doc_title",
+   "text": "Clinical Performance Study Report KS3-CPS-01",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "status",
+   "text": "Draft",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "approved_on",
+   "text": "",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1120a",
+   "column_id": "approval_ref",
+   "text": "not routed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "doc_no",
+   "text": "DOC-1121",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "doc_title",
+   "text": "Performance Evaluation Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "approved_on",
+   "text": "2026-05-27",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121a",
+   "column_id": "approval_ref",
+   "text": "CHG0040107 closed; env-ks3-1121a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "doc_no",
+   "text": "DOC-1121",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "doc_title",
+   "text": "Performance Evaluation Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "approved_on",
+   "text": "2026-10-07",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1121b",
+   "column_id": "approval_ref",
+   "text": "CHG0040870 closed; env-ks3-1121b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "doc_no",
+   "text": "DOC-1162",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "doc_title",
+   "text": "Near-patient User Performance Study Report",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "approved_on",
+   "text": "2026-09-09",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1162a",
+   "column_id": "approval_ref",
+   "text": "CHG0040688 closed; env-ks3-1162a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "doc_no",
+   "text": "DOC-1161",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "doc_title",
+   "text": "Lay-user Performance Study Protocol (Home concept)",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "status",
+   "text": "Draft",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "approved_on",
+   "text": "",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1161a",
+   "column_id": "approval_ref",
+   "text": "not routed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "doc_no",
+   "text": "DOC-1200",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "doc_title",
+   "text": "Post-market Surveillance Plan",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "status",
+   "text": "Approval withdrawn",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "approved_on",
+   "text": "2026-09-30",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1200a",
+   "column_id": "approval_ref",
+   "text": "CHG0040990 closed; approval withdrawn 2026-11-11 under CAPA-0912",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "doc_no",
+   "text": "DOC-1205",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "revision",
+   "text": "Rev A",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "doc_title",
+   "text": "Summary of Safety and Performance",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "status",
+   "text": "Superseded",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "approved_on",
+   "text": "2026-07-15",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205a",
+   "column_id": "approval_ref",
+   "text": "CHG0040355 closed; env-ks3-1205a completed",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "doc_no",
+   "text": "DOC-1205",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "revision",
+   "text": "Rev B",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "doc_title",
+   "text": "Summary of Safety and Performance",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "status",
+   "text": "Approved",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "approved_on",
+   "text": "2026-10-01",
+   "value": null
+  },
+  {
+   "item_id": "item-ks3-1205b",
+   "column_id": "approval_ref",
+   "text": "CHG0040820 closed; env-ks3-1205b completed",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0912",
+   "column_id": "capa_title",
+   "text": "CAPA-0912 PMS plan omits field-safety trend thresholds",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0912",
+   "column_id": "capa_status",
+   "text": "Open",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0912",
+   "column_id": "capa_owner",
+   "text": "Rafaela Montoya",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0874",
+   "column_id": "capa_title",
+   "text": "CAPA-0874 Cartridge label contrast below ISO 15223 legibility",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0874",
+   "column_id": "capa_status",
+   "text": "Closed",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0874",
+   "column_id": "capa_owner",
+   "text": "Pieter Vandamme",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0899",
+   "column_id": "capa_title",
+   "text": "CAPA-0899 Supplier audit overdue for optics module vendor",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0899",
+   "column_id": "capa_status",
+   "text": "Open",
+   "value": null
+  },
+  {
+   "item_id": "item-capa-0899",
+   "column_id": "capa_owner",
+   "text": "Rafaela Montoya",
+   "value": null
+  }
+ ],
+ "users": [
+  {
+   "user_id": "usr-orv-pv",
+   "name": "Pieter Vandamme",
+   "email": "pieter.vandamme@orvane.example",
+   "title": "Document Controller",
+   "is_admin": true
+  },
+  {
+   "user_id": "usr-orv-rm",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "title": "QA Manager",
+   "is_admin": true
+  },
+  {
+   "user_id": "usr-orv-ra",
+   "name": "RA Specialist (you)",
+   "email": "ra.specialist@orvane.example",
+   "title": "Regulatory Affairs Specialist",
+   "is_admin": false
+  }
+ ]
+}

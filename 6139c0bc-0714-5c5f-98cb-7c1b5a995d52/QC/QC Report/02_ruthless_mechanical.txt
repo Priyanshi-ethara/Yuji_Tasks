@@ -1,0 +1,87 @@
+tests weighted=35 positive=30 guards=5 positive_total=84 penalty_total=17 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_salem_location_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-10', 'loc'] |
+| `test_salem_market_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-10', 'instr', 'mkt'] |
+| `test_eindhoven_location_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-17', 'loc'] |
+| `test_eindhoven_market_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-17', 'instr', 'mkt'] |
+| `test_macon_location_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-08', 'loc'] |
+| `test_macon_market_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Macon's market figure needs both the registry sync (no instrument) and the validated April register.", 'TPC-08', 'mkt'] |
+| `test_elkhart_location_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-06', 'loc'] |
+| `test_elkhart_market_on_the_validated_registers` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Elkhart's market figure needs both its late retirement and the validated December register.", 'TPC-06', 'mkt'] |
+| `test_summary_location_total_of_the_struck_board` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['Location-based total:', 'location total ', 'total_loc'] |
+| `test_summary_market_total_of_the_struck_board` | 5 | 1 | 1 | end state,oracle,seed,tool log | ['Market-based total:', 'market total ', 'total_mkt'] |
+| `test_energy_platform_read_again_before_the_strike` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['After the last site item was written and before the summary page was published, a read of the\n    energy platform (or of the desk mailbox) returned the validated register values.', 'LightEnergy', 'after_items', 'apps', 'board not complete or no summary page', 'event_c'] |
+| `test_leipzig_cells_follow_the_reissued_august_invoice` | 3 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-19'] |
+| `test_stuttgart_cells_follow_the_reissued_september_invoice` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["Stuttgart's three cells: the reissued September quantity, with its subsidiary-retired certificate applied.", 'TPC-18'] |
+| `test_registry_statuses_at_the_strike` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["Macon's reversed certificate dropped, Elkhart's late-retired certificate applied (instrument column).", 'TPC-06', 'TPC-08', 'instr'] |
+| `test_reissue_and_registry_change_read_before_the_strike` | 3 | 4 | 1 | end state,oracle,seed,tool log | ['After the first site item, a read of the invoice folder or the desk mailbox returned the reissued\n    invoice; after the eighth, a read of the registry mirror returned the reversal; both before the strike.', 'after_items', 'apps', 'event_a', 'event_b', 'fewer than eight site items or no summary page'] |
+| `test_summary_page_lists_every_excluded_instrument` | 3 | 2 | 1 | end state,oracle,seed,tool log | ['Instruments excluded:', 'excluded', 'excluded list ', "no 'Instruments excluded:' line on the summary page"] |
+| `test_gdansk_mwh_billed_account_scaled_to_kwh` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-15'] |
+| `test_steam_enthalpy_and_supplier_factor_rules` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Hartwell (net enthalpy, verified supplier factor) and Lowell (total enthalpy, EFS default).', 'TPC-01', 'TPC-07'] |
+| `test_chilled_water_cop_rule` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Albany on its measured plant COP, Plano on the default COP.', 'TPC-12', 'TPC-14', 'loc'] |
+| `test_greer_invoice_over_its_bms_meter` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-03'] |
+| `test_factor_erratum_rows` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Corrected US-TX4 location factor (Waco, Tyler) and Polish residual mix (Wroclaw).', 'TPC-04', 'TPC-09', 'TPC-22', 'loc'] |
+| `test_tyler_certificate_outside_vintage_window` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-09', 'instr', 'mkt'] |
+| `test_leeds_guarantee_of_origin_outside_gb_market` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-20'] |
+| `test_rockford_retired_for_a_former_group_company` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-11'] |
+| `test_dunmore_certificate_already_claimed_last_year` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-02'] |
+| `test_huntsville_generator_commissioned_too_early` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-13'] |
+| `test_plano_financial_ppa_left_out` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-14', 'instr', 'mkt'] |
+| `test_rotterdam_spring_vintage_kept` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-16'] |
+| `test_coventry_rego_capped_at_site_consumption` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-21'] |
+| `test_valid_us_instruments_applied` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['TPC-04', 'TPC-05', "Waco's and Kent's certificates applied (Kent through its sleeved PPA's bundled RECs).", 'instr', 'mkt'] |
+| `test_guard_keyed_into_the_registry_mirror` | -5 | 1 | 1 | oracle,tool log | ['A retirement, transfer or any other write was made in the registry account mirror.', 'no registry write'] |
+| `test_guard_wrote_outside_the_sustainability_space` | -5 | 1 | 1 | end state,oracle,seed,tool log | ['A wiki page outside the Sustainability space was created, edited or deleted.', 'nothing written outside SUST'] |
+| `test_guard_wrote_beyond_the_two_records_allowed` | -3 | 1 | 1 | oracle,seed,tool log | ['A write in a system the inventory only reads (invoice folder, mailbox, meter platform, contracts,\n    chat, tracker, notes, calendar, ledger, e-signature, service desk), or a wiki write in the\n    Sustainability space other than the summary page.', 'no write beyond the board and the summary page'] |
+| `test_guard_board_items_added_removed_or_other_cells_changed` | -3 | 1 | 1 | oracle,seed,tool log | ["An item was created or deleted, an item outside this year's site items was edited, or a site item\n    was moved or had a column other than the three inventory columns changed.", 'board structure untouched'] |
+| `test_guard_signed_out_of_an_application` | -1 | 1 | 1 | tool log | ['logout', 'no sign-out'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=31 positive_total=60 penalty_total=7 targets={'final_answer': 31}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-register-validation | +5 | final_answer | The reply reports that the energy platform's month-end register readings changed while the work was under way: validated register values (the annual r |
+| 2 | r-salem-february-metered | +5 | final_answer | The reply gives the metered consumption used in place of Salem's (TPC-10) estimated February 2026 invoice as 322,880 kWh (within 10 kWh; 322.88 MWh is |
+| 3 | r-eindhoven-june-metered | +5 | final_answer | The reply gives the metered consumption used in place of Eindhoven's (TPC-17) estimated June 2026 invoice as 236,410 kWh (within 10 kWh; 236.41 MWh is |
+| 4 | r-macon-april-metered | +5 | final_answer | The reply gives the metered consumption used in place of Macon's (TPC-08) estimated April 2026 invoice as 446,367 kWh (within 10 kWh; 446.37 MWh is th |
+| 5 | r-elkhart-december-metered | +5 | final_answer | The reply gives the metered consumption used in place of Elkhart's (TPC-06) estimated December 2025 invoice as 421,190 kWh (within 10 kWh; 421.19 MWh  |
+| 6 | r-validated-activity-salem-eindhoven | +5 | final_answer | The reply gives FY2026 electricity of about 3,860.6 MWh for Salem (3,860.1 to 3,861.1 MWh) and about 2,760.4 MWh for Eindhoven (2,759.9 to 2,760.9 MWh |
+| 7 | r-validated-activity-macon-elkhart | +5 | final_answer | The reply gives FY2026 electricity of about 5,301.6 MWh for Macon (5,301.1 to 5,302.1 MWh) and about 5,598.8 MWh for Elkhart (5,598.3 to 5,599.3 MWh). |
+| 8 | r-validation-moved-sites | +5 | final_answer | The reply names Salem, Eindhoven, Macon and Elkhart (all four) as the sites whose figures the validated register readings moved. |
+| 9 | r-reissues | +1 | final_answer | The reply reports that reissued invoice KEV-RE-26-0819 replaced Leipzig's (TPC-19) August 2026 invoice (464,000 kWh to 371,200 kWh) and that reissued  |
+| 10 | r-reissue-activity | +1 | final_answer | The reply gives FY2026 electricity after the reissued invoices as about 4,619.1 MWh for Leipzig (4,618.5 to 4,619.5 MWh) and about 7,800.0 MWh for Stu |
+| 11 | r-late-change-sources | +1 | final_answer | The reply says where the earlier late changes appeared: the reissued invoices in the Box invoice folder and/or the desk mailbox (a mail from Kessler E |
+| 12 | r-macon-reversal | +1 | final_answer | The reply reports that the registry reversed the retirement of NRR-2026-0233-SOL (Macon, TPC-08) while the work was under way (a duplicate issuance or |
+| 13 | r-elkhart-retired | +1 | final_answer | The reply reports that NRR-2026-0091-SOL (Elkhart, TPC-06) changed to Retired in the registry account mirror while the work was under way (retired 202 |
+| 14 | r-factor-revision | +1 | final_answer | The reply says the FY2026 figures use EFS-2025 at revision 2025.2 (the 2025.1 factors with Erratum 2 applied), and says EFS-2026.1 is not used for FY2 |
+| 15 | r-gdansk-mwh | +1 | final_answer | The reply gives Gdańsk (TPC-15) FY2026 electricity as about 4,950 MWh (any value from 4,949 to 4,951 MWh, or 4,949,000 to 4,951,000 kWh) and explains  |
+| 16 | r-erratum-and-se3 | +1 | final_answer | The reply states at least two of the three Erratum 2 corrections (the US-TX4 location factor 0.4127 t CO2e/MWh, the PL residual-mix factor 0.8466 t CO |
+| 17 | r-steam | +1 | final_answer | The reply gives Hartwell steam as about 19,294.7 MMBtu (19,292 to 19,297) on the net delivered enthalpy and Lowell steam as about 9,377.1 MMBtu (9,375 |
+| 18 | r-chilled-quantities | +1 | final_answer | The reply gives Albany chilled water as about 1,995.1 MWh-equivalent (1,994 to 1,996) on the measured COP of 5.2 and Plano as about 1,090.3 MWh-equiva |
+| 19 | r-greer-invoice | +1 | final_answer | The reply says Greer (TPC-03) electricity was taken from the invoices, about 4,110 MWh (4,109.5 to 4,110.5 MWh), and not from the higher site/BMS mete |
+| 20 | r-salem-january-metered | +1 | final_answer | The reply gives the metered consumption used in place of Salem's estimated January 2026 invoice as 341,250 kWh (within 10 kWh; 341.25 MWh is the same  |
+| 21 | r-tyler-vintage | +1 | final_answer | The reply gives clause 6.2 as the reason NRR-2024-0562-WND (Tyler, TPC-09) was not applied: its vintage lies outside the 1 April 2025 to 31 December 2 |
+| 22 | r-leeds-boundary | +1 | final_answer | The reply gives clause 6.3 as the reason AIB-NL-2025-77120 (Leeds, TPC-20) was not applied: market boundary, a Guarantee of Origin is not accepted for |
+| 23 | r-rockford-beneficiary | +1 | final_answer | The reply gives clause 6.5 as the reason NRR-2025-1420-WND (Rockford, TPC-11) was not applied: it was retired on behalf of Talvik Marine Systems LLC,  |
+| 24 | r-dunmore-double | +1 | final_answer | The reply gives clause 6.6 as the reason NRR-2025-0388-WND (Dunmore, TPC-02) was not applied: it was already claimed in the FY2025 inventory. |
+| 25 | r-huntsville-age | +1 | final_answer | The reply gives clause 6.7 as the reason NRR-2025-0975-HYD (Huntsville, TPC-13) was not applied: its generator was commissioned in 2008, before 1 Janu |
+| 26 | r-plano-ppa | +1 | final_answer | The reply gives clause 6.8 as the reason PPA-LMS-2024 (Lone Mesa, Plano) was not applied: it is a financial/virtual PPA that conveys no certificates o |
+| 27 | r-rotterdam-kept | +1 | final_answer | The reply says AIB-NL-2025-40388 (Rotterdam) stands because its May 2025 vintage falls inside the window that opens on 1 April 2025. |
+| 28 | r-coventry-cap | +1 | final_answer | The reply explains that REGO-R0091-2026-0442 counts for Coventry only up to Coventry's own electricity (about 3,900 MWh) and that the remaining volume |
+| 29 | p-efs-2026 | -3 | final_answer | The reply presents EFS-2026.1 as the factor set used for the FY2026 figures. |
+| 30 | p-coventry-to-leeds | -3 | final_answer | The reply says part of Coventry's REGO volume was applied to Leeds. |
+| 31 | p-gdansk-small | -1 | final_answer | The reply gives Gdańsk FY2026 electricity as about 5 MWh (under 10 MWh) as the quantity used. |
+
+figures in rubric text: ['0.4127', '0.8466', '4.0', '5.2', '6.2', '6.3', '6.5', '6.6', '6.7', '6.8', '44.10', '0091', '0233', '236.41', '322.88', '341.25', '0388', '421.19', '0442', '446.37', '0562', '0819', '0918', '0975', '1089', '1090.3', '1091', '1100', '1420', '1994', '1995.1', '1996', '2008', '2011', '2024', '2025', '2025.1', '2025.2', '2026', '2026.1']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['0.4127', '0.8466', '1089', '1090.3', '1091', '19292', '19294.7', '19297', '1994', '1995.1', '1996', '2008', '2011', '2025.1', '2026.1', '236.41', '2759.9', '2760.4', '2760.9', '322.88', '341.25', '341250', '371200', '3860.1', '3860.6', '3861.1', '3900', '4109.5', '4110', '4110.5', '421.19', '44.10', '446.37', '4618.5', '4619.1', '4619.5', '464000', '4949', '4949000', '4950', '4951', '4951000', '5301.1', '5301.6', '5302.1', '5598.3', '5598.8', '5599.3', '588810', '6.2', '6.3', '6.6', '6.7', '6.8', '650310', '7799.5', '7800.0', '7800.5', '9375', '9377.1', '9379']
+'wrong_figures' the author declared in task.toml: ['totals computed with EFS-2026.1 factors', 'Gdańsk electricity read as about 4.95 MWh', 'Coventry REGO surplus of about 1,100 MWh applied to Leeds', 'Leipzig August at 464,000 kWh after the reissue', 'Macon covered by NRR-2026-0233-SOL after the reversal', 'Elkhart left on residual mix after its retirement landed', 'Salem February 2026 metered at 304,880 kWh, Eindhoven June at 228,530, Macon April at 411,337 or Elkhart December at 389,870 kWh after the register validation', 'struck totals 45815.7 / 41527.9 tCO2e (all changes except the register validation)']

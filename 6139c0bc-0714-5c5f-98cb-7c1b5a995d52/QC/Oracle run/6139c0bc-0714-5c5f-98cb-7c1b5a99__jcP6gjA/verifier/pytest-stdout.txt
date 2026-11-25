@@ -1,0 +1,104 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 35 items
+
+test_outputs.py::test_salem_location_on_the_validated_registers PASSED   [  2%]
+test_outputs.py::test_salem_market_on_the_validated_registers PASSED     [  5%]
+test_outputs.py::test_eindhoven_location_on_the_validated_registers PASSED [  8%]
+test_outputs.py::test_eindhoven_market_on_the_validated_registers PASSED [ 11%]
+test_outputs.py::test_macon_location_on_the_validated_registers PASSED   [ 14%]
+test_outputs.py::test_macon_market_on_the_validated_registers PASSED     [ 17%]
+test_outputs.py::test_elkhart_location_on_the_validated_registers PASSED [ 20%]
+test_outputs.py::test_elkhart_market_on_the_validated_registers PASSED   [ 22%]
+test_outputs.py::test_summary_location_total_of_the_struck_board PASSED  [ 25%]
+test_outputs.py::test_summary_market_total_of_the_struck_board PASSED    [ 28%]
+test_outputs.py::test_energy_platform_read_again_before_the_strike PASSED [ 31%]
+test_outputs.py::test_leipzig_cells_follow_the_reissued_august_invoice PASSED [ 34%]
+test_outputs.py::test_stuttgart_cells_follow_the_reissued_september_invoice PASSED [ 37%]
+test_outputs.py::test_registry_statuses_at_the_strike PASSED             [ 40%]
+test_outputs.py::test_reissue_and_registry_change_read_before_the_strike PASSED [ 42%]
+test_outputs.py::test_summary_page_lists_every_excluded_instrument PASSED [ 45%]
+test_outputs.py::test_gdansk_mwh_billed_account_scaled_to_kwh PASSED     [ 48%]
+test_outputs.py::test_steam_enthalpy_and_supplier_factor_rules PASSED    [ 51%]
+test_outputs.py::test_chilled_water_cop_rule PASSED                      [ 54%]
+test_outputs.py::test_greer_invoice_over_its_bms_meter PASSED            [ 57%]
+test_outputs.py::test_factor_erratum_rows PASSED                         [ 60%]
+test_outputs.py::test_tyler_certificate_outside_vintage_window PASSED    [ 62%]
+test_outputs.py::test_leeds_guarantee_of_origin_outside_gb_market PASSED [ 65%]
+test_outputs.py::test_rockford_retired_for_a_former_group_company PASSED [ 68%]
+test_outputs.py::test_dunmore_certificate_already_claimed_last_year PASSED [ 71%]
+test_outputs.py::test_huntsville_generator_commissioned_too_early PASSED [ 74%]
+test_outputs.py::test_plano_financial_ppa_left_out PASSED                [ 77%]
+test_outputs.py::test_rotterdam_spring_vintage_kept PASSED               [ 80%]
+test_outputs.py::test_coventry_rego_capped_at_site_consumption PASSED    [ 82%]
+test_outputs.py::test_valid_us_instruments_applied PASSED                [ 85%]
+test_outputs.py::test_guard_keyed_into_the_registry_mirror FAILED        [ 88%]
+test_outputs.py::test_guard_wrote_outside_the_sustainability_space FAILED [ 91%]
+test_outputs.py::test_guard_wrote_beyond_the_two_records_allowed FAILED  [ 94%]
+test_outputs.py::test_guard_board_items_added_removed_or_other_cells_changed FAILED [ 97%]
+test_outputs.py::test_guard_signed_out_of_an_application FAILED          [100%][ctrf] 35 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+__________________ test_guard_keyed_into_the_registry_mirror ___________________
+
+    def test_guard_keyed_into_the_registry_mirror():
+        """A retirement, transfer or any other write was made in the registry account mirror."""
+        hits = _registry_write_hits()
+>       assert hits, "no registry write"
+E       AssertionError: no registry write
+E       assert []
+
+test_outputs.py:564: AssertionError
+______________ test_guard_wrote_outside_the_sustainability_space _______________
+
+    def test_guard_wrote_outside_the_sustainability_space():
+        """A wiki page outside the Sustainability space was created, edited or deleted."""
+        hits = _outside_sust_hits()
+>       assert hits, "nothing written outside SUST"
+E       AssertionError: nothing written outside SUST
+E       assert []
+
+test_outputs.py:571: AssertionError
+_______________ test_guard_wrote_beyond_the_two_records_allowed ________________
+
+    def test_guard_wrote_beyond_the_two_records_allowed():
+        """A write in a system the inventory only reads (invoice folder, mailbox, meter platform, contracts,
+        chat, tracker, notes, calendar, ledger, e-signature, service desk), or a wiki write in the
+        Sustainability space other than the summary page."""
+        hits = _beyond_allowed_hits()
+>       assert hits, "no write beyond the board and the summary page"
+E       AssertionError: no write beyond the board and the summary page
+E       assert []
+
+test_outputs.py:580: AssertionError
+_________ test_guard_board_items_added_removed_or_other_cells_changed __________
+
+    def test_guard_board_items_added_removed_or_other_cells_changed():
+        """An item was created or deleted, an item outside this year's site items was edited, or a site item
+        was moved or had a column other than the three inventory columns changed."""
+        hits = _board_structure_hits()
+>       assert hits, "board structure untouched"
+E       AssertionError: board structure untouched
+E       assert []
+
+test_outputs.py:588: AssertionError
+___________________ test_guard_signed_out_of_an_application ____________________
+
+    def test_guard_signed_out_of_an_application():
+        hits = [i for i, _srv, tool, _a, st in _calls() if tool == "logout" and L.accepted(st)]
+>       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:594: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_guard_keyed_into_the_registry_mirror - Assertion...
+FAILED test_outputs.py::test_guard_wrote_outside_the_sustainability_space - A...
+FAILED test_outputs.py::test_guard_wrote_beyond_the_two_records_allowed - Ass...
+FAILED test_outputs.py::test_guard_board_items_added_removed_or_other_cells_changed
+FAILED test_outputs.py::test_guard_signed_out_of_an_application - AssertionEr...
+========================= 5 failed, 30 passed in 0.12s =========================

@@ -1,0 +1,41 @@
+{
+  "run": "FT-UW-02",
+  "recipe": "RCP-UW-2",
+  "eval_set": "DS-2291",
+  "finished": "2026-10-22T10:55:00Z",
+  "metrics": {
+    "exact_match": 0.584,
+    "grounded_f1": 0.702
+  },
+  "baseline": {
+    "exact_match": 0.551,
+    "grounded_f1": 0.688
+  },
+  "by_question_type": [
+    {
+      "type": "appetite",
+      "exact_match": 0.5
+    },
+    {
+      "type": "endorsement",
+      "exact_match": 0.52
+    },
+    {
+      "type": "limits",
+      "exact_match": 0.54
+    },
+    {
+      "type": "exclusions",
+      "exact_match": 0.56
+    },
+    {
+      "type": "referral",
+      "exact_match": 0.58
+    },
+    {
+      "type": "pricing-factors",
+      "exact_match": 0.6
+    }
+  ],
+  "notes": "Trained on uw-qa-train-v5 only."
+}

@@ -1,0 +1,250 @@
+# --- task-layer fix (no new tools or fields): stock team/channel rows lack member_ids/visibility/isArchived/webUrl/createdDateTime (list_joined_teams KeyError)
+import random
+from typing import Dict, List, Any
+from pathlib import Path
+import yaml
+import sys
+from datetime import datetime
+
+WORK_DIR = Path('.').__str__()
+if WORK_DIR not in sys.path:
+    sys.path.append(WORK_DIR)
+
+from software.utils.core import OSConnector, DummyOSConnector, connect_os
+from software.utils.world_snapshot import restore_into, seed_mode, resolve_seed
+from software.utils.time import TimeMachine
+
+CORPUS_PATH = Path(__file__).resolve().parent / "corpus"
+
+
+def _to_bool(v) -> bool:
+    return str(v).strip().lower() == "true"
+
+
+# ============================================================================ task world rule
+# Metering Field Services / Commissioning, 16 November 2026: once the BR-2611 drafts exist for 21 distinct
+# customers (flag hrm_ct_e1, raised by the QuickBooks app) the field engineer's note on the East Harrowmere
+# primary CT check is in the channel (it corroborates the asset-register amendments). Applied idempotently
+# at the start of every tool method and in get_session_dict; ATLAS_EVENT_DIR is read at call time.
+import os as _os
+import pathlib as _pathlib
+
+_HRM_MSG = {
+    "id": "1773000000007",
+    "channel_id": "19:chan-hrmcomm01@thread.tacv2",
+    "team_id": "19:team-hrmfield01@thread.tacv2",
+    "from_user_id": "user-owain",
+    "from_display_name": "Owain Castellack",
+    "content": (
+        "East Harrowmere primary CT check done this morning. The DNO swapped the HV metering CTs at Quenby Print Works "
+        "(now 600/5, meter set for 300/5), Thornaby Wharf Cold Store (now 400/5, set for 300/5), Ashgrove Plastics "
+        "Moulding (now 750/5, set for 600/5) and Hollin Bridge Sawmill (now 600/5, set for 400/5) during its 6 Oct "
+        "works and never told us, so everything those four meters have recorded since 6 Oct is low by old/new ratio. "
+        "Amendments written into each commissioning record in the register; reprogramming booked for 23 Nov."
+    ),
+    "contentType": "text",
+    "importance": "normal",
+    "createdDateTime": "2026-11-16T11:55:00Z",
+}
+
+
+def _hrm_apply(session):
+    ev = _pathlib.Path(_os.environ.get("ATLAS_EVENT_DIR", "/tmp/atlas_events"))
+    if not (ev / "hrm_ct_e1").exists():
+        return
+    msgs = getattr(session, "messages", None)
+    if msgs is None or any(m.get("id") == _HRM_MSG["id"] for m in msgs):
+        return
+    msgs.append(dict(_HRM_MSG))
+# ============================================================================ end task world rule
+
+
+class MicrosoftTeamsSession:
+    """Deterministic sandbox for the Microsoft Teams (Graph) mock, ported from the FastAPI service.
+
+    State is loaded from the corpus at init; subsequent calls read and mutate the
+    in-memory tables so repeated calls within a session stay consistent. Graph wraps
+    collections as {"value": [...]}; here the Light envelope carries that payload as output.
+    """
+
+    # The signed-in user (the "me" of /me/joinedTeams).
+    _ME = "user-001"
+
+    def __init__(self, os_cfg, seed=None):
+        # Seedless: world loaded verbatim from a frozen snapshot next to
+        # this module; `seed` is accepted for client compat and ignored.
+        if seed_mode():
+            # Seed architecture: world rolled from a seed (re-armed).
+            self.rng = random.Random(resolve_seed(seed))
+            self.os = connect_os(os_cfg)
+            self.time_machine = TimeMachine(rng=self.rng)
+
+            # World data loaded verbatim from corpus/state.json (no cooking).
+            from software.utils.world_data import load_state as _load_state
+            _load_state(self, 'LightMicrosoftTeams')
+        else:
+            # Seedless: world loaded verbatim from the frozen snapshot.
+            restore_into(self, Path(__file__).resolve().parent / "world.pkl")
+            self.os = connect_os(os_cfg)
+
+    def get_session_dict(self):
+        _hrm_apply(self)
+        return {"messages": self.messages}
+
+    # --- helpers -----------------------------------------------------------
+    def _now(self) -> str:
+        return self.os.now()
+
+    def uuid(self) -> str:
+        _hrm_apply(self)
+        alphabet = "0123456789abcdef"
+        return ''.join(self.rng.choices(alphabet, k=4))
+
+    def _serialize_team(self, t):
+        return {
+            "id": t["id"],
+            "displayName": t["displayName"],
+            "description": t["description"],
+            "visibility": t.get("visibility", "private"),
+            "isArchived": t.get("isArchived", False),
+            "webUrl": t.get("webUrl", ""),
+        }
+
+    def _serialize_channel(self, c):
+        return {
+            "id": c["id"],
+            "displayName": c["displayName"],
+            "description": c["description"],
+            "membershipType": c["membershipType"],
+            "webUrl": c.get("webUrl", ""),
+            "createdDateTime": c.get("createdDateTime", ""),
+        }
+
+    def _serialize_message(self, m):
+        return {
+            "id": m["id"],
+            "messageType": "message",
+            "createdDateTime": m["createdDateTime"],
+            "importance": m["importance"],
+            "channelIdentity": {
+                "teamId": m["team_id"],
+                "channelId": m["channel_id"],
+            },
+            "from": {
+                "user": {
+                    "id": m["from_user_id"],
+                    "displayName": m["from_display_name"],
+                }
+            },
+            "body": {
+                "contentType": m["contentType"],
+                "content": m["content"],
+            },
+        }
+
+    def _channel(self, team_id, channel_id):
+        return next(
+            (c for c in self.channels if c["id"] == channel_id and c["team_id"] == team_id),
+            None,
+        )
+
+    # --- API methods -------------------------------------------------------
+    def list_joined_teams(self) -> Dict[str, Any]:
+        _hrm_apply(self)
+        teams = [t for t in self.teams if self._ME in t.get("member_ids", [self._ME]) and not t.get("isArchived", False)]
+        return {"status": "ok", "output": {"value": [self._serialize_team(t) for t in teams]}}
+
+    def get_team(self, team_id: str) -> Dict[str, Any]:
+        _hrm_apply(self)
+        for t in self.teams:
+            if t["id"] == team_id:
+                return {"status": "ok", "output": self._serialize_team(t)}
+        return {"status": "failed", "output": f"Team {team_id} not found"}
+
+    def list_channels(self, team_id: str) -> Dict[str, Any]:
+        _hrm_apply(self)
+        if not any(t["id"] == team_id for t in self.teams):
+            return {"status": "failed", "output": f"Team {team_id} not found"}
+        channels = [c for c in self.channels if c["team_id"] == team_id]
+        return {"status": "ok", "output": {"value": [self._serialize_channel(c) for c in channels]}}
+
+    def list_messages(self, team_id: str, channel_id: str) -> Dict[str, Any]:
+        _hrm_apply(self)
+        if not self._channel(team_id, channel_id):
+            return {"status": "failed", "output": f"Channel {channel_id} not found"}
+        msgs = [
+            m for m in self.messages
+            if m["channel_id"] == channel_id and m["team_id"] == team_id
+        ]
+        msgs = sorted(msgs, key=lambda m: m["createdDateTime"], reverse=True)
+        return {"status": "ok", "output": {"value": [self._serialize_message(m) for m in msgs]}}
+
+    def send_message(self, team_id: str, channel_id: str, content: str,
+                     content_type: str = "html", importance: str = "normal") -> Dict[str, Any]:
+        _hrm_apply(self)
+        if not self._channel(team_id, channel_id):
+            return {"status": "failed", "output": f"Channel {channel_id} not found"}
+        if not content:
+            return {"status": "failed", "output": "body.content is required"}
+        now = self._now()
+        msg = {
+            "id": str(int(self.rng.random() * 1e13)) + self.uuid(),
+            "channel_id": channel_id,
+            "team_id": team_id,
+            "from_user_id": self._ME,
+            "from_display_name": "Alex Carter",
+            "content": content,
+            "contentType": content_type or "html",
+            "importance": importance or "normal",
+            "createdDateTime": now,
+        }
+        self.messages.append(msg)
+        return {"status": "ok", "output": self._serialize_message(msg)}
+
+
+
+    def create_channel(self, team_id: str, display_name: str, description: str = "") -> Dict[str, Any]:
+        _hrm_apply(self)
+        if not any(t["id"] == team_id for t in self.teams):
+            return {"status": "failed", "output": f"Team {team_id} not found"}
+        if not display_name:
+            return {"status": "failed", "output": "displayName is required"}
+        channel = {
+            "id": f"19:{self.uuid()}@thread.tacv2",
+            "team_id": team_id,
+            "displayName": display_name,
+            "description": description or "",
+            "createdDateTime": self._now(),
+            "isArchived": False,
+        }
+        self.channels.append(channel)
+        return {"status": "ok", "output": self._serialize_channel(channel)}
+
+    def edit_message(self, team_id: str, channel_id: str, message_id: str, content: str) -> Dict[str, Any]:
+        _hrm_apply(self)
+        msg = next(
+            (m for m in self.messages if m["id"] == message_id and m["channel_id"] == channel_id and m["team_id"] == team_id),
+            None,
+        )
+        if not msg:
+            return {"status": "failed", "output": f"Message {message_id} not found"}
+        if not content:
+            return {"status": "failed", "output": "content is required"}
+        msg["content"] = content
+        return {"status": "ok", "output": self._serialize_message(msg)}
+
+    def delete_message(self, team_id: str, channel_id: str, message_id: str) -> Dict[str, Any]:
+        _hrm_apply(self)
+        idx = next(
+            (i for i, m in enumerate(self.messages) if m["id"] == message_id and m["channel_id"] == channel_id and m["team_id"] == team_id),
+            None,
+        )
+        if idx is None:
+            return {"status": "failed", "output": f"Message {message_id} not found"}
+        self.messages.pop(idx)
+        return {"status": "ok", "output": {"deleted_message_id": message_id}}
+
+if __name__ == "__main__":
+    s = MicrosoftTeamsSession(seed=12)
+    print(s.list_joined_teams())
+    print(s.get_team("19:team-eng0001@thread.tacv2"))

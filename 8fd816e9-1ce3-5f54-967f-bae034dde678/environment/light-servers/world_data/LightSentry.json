@@ -1,0 +1,509 @@
+{
+ "organizations": [
+  {
+   "id": 77,
+   "slug": "brightwater",
+   "name": "Brightwater Payments",
+   "status": "active",
+   "date_created": "2025-11-01T10:00:00.000Z"
+  }
+ ],
+ "projects": [
+  {
+   "id": 901,
+   "slug": "ledger-posting",
+   "name": "ledger-posting",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 902,
+   "slug": "ledger-balance-read",
+   "name": "ledger-balance-read",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 903,
+   "slug": "journal-export",
+   "name": "journal-export",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 904,
+   "slug": "fx-rates-feed",
+   "name": "fx-rates-feed",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 905,
+   "slug": "statement-render",
+   "name": "statement-render",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 906,
+   "slug": "card-auth-gateway",
+   "name": "card-auth-gateway",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 907,
+   "slug": "tokenisation-vault",
+   "name": "tokenisation-vault",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 908,
+   "slug": "3ds-challenge",
+   "name": "3ds-challenge",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 909,
+   "slug": "merchant-onboarding-api",
+   "name": "merchant-onboarding-api",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 910,
+   "slug": "chargeback-intake",
+   "name": "chargeback-intake",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 911,
+   "slug": "payout-scheduler",
+   "name": "payout-scheduler",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 912,
+   "slug": "bank-file-dispatch",
+   "name": "bank-file-dispatch",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 913,
+   "slug": "payee-verification",
+   "name": "payee-verification",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 914,
+   "slug": "payout-status-api",
+   "name": "payout-status-api",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 915,
+   "slug": "sweep-reconciler",
+   "name": "sweep-reconciler",
+   "org_slug": "brightwater",
+   "platform": "kotlin",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 916,
+   "slug": "fraud-score",
+   "name": "fraud-score",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 917,
+   "slug": "velocity-limits",
+   "name": "velocity-limits",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 918,
+   "slug": "sanctions-screen",
+   "name": "sanctions-screen",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 919,
+   "slug": "dispute-evidence",
+   "name": "dispute-evidence",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  },
+  {
+   "id": 920,
+   "slug": "kyc-document-check",
+   "name": "kyc-document-check",
+   "org_slug": "brightwater",
+   "platform": "go",
+   "status": "active",
+   "date_created": "2026-01-15T10:00:00.000Z"
+  }
+ ],
+ "issues": [
+  {
+   "id": 61001,
+   "short_id": "PAYOUT-1",
+   "org_slug": "brightwater",
+   "project_slug": "payout-scheduler",
+   "title": "PoolExhaustedException: HikariPool-1 - Connection is not available",
+   "culprit": "payout-scheduler",
+   "level": "error",
+   "status": "resolved",
+   "count": 18422,
+   "user_count": 2046,
+   "first_seen": "2026-10-19T00:52:00.000Z",
+   "last_seen": "2026-10-19T00:52:00.000Z"
+  },
+  {
+   "id": 61002,
+   "short_id": "SWEEP--2",
+   "org_slug": "brightwater",
+   "project_slug": "sweep-reconciler",
+   "title": "ReconciliationRunFailed: upstream schedule unavailable",
+   "culprit": "sweep-reconciler",
+   "level": "error",
+   "status": "resolved",
+   "count": 912,
+   "user_count": 101,
+   "first_seen": "2026-10-19T00:58:00.000Z",
+   "last_seen": "2026-10-19T00:58:00.000Z"
+  },
+  {
+   "id": 61003,
+   "short_id": "PAYOUT-3",
+   "org_slug": "brightwater",
+   "project_slug": "payout-status-api",
+   "title": "TimeoutError calling payout-scheduler",
+   "culprit": "payout-status-api",
+   "level": "error",
+   "status": "resolved",
+   "count": 4410,
+   "user_count": 490,
+   "first_seen": "2026-10-19T00:55:00.000Z",
+   "last_seen": "2026-10-19T00:55:00.000Z"
+  },
+  {
+   "id": 61004,
+   "short_id": "BANK-F-4",
+   "org_slug": "brightwater",
+   "project_slug": "bank-file-dispatch",
+   "title": "SFTPTimeout: partner gateway slow",
+   "culprit": "bank-file-dispatch",
+   "level": "error",
+   "status": "resolved",
+   "count": 207,
+   "user_count": 23,
+   "first_seen": "2026-10-29T13:10:00.000Z",
+   "last_seen": "2026-10-29T13:10:00.000Z"
+  },
+  {
+   "id": 61005,
+   "short_id": "KYC-DO-5",
+   "org_slug": "brightwater",
+   "project_slug": "kyc-document-check",
+   "title": "S3 AccessDenied reading kyc-docs",
+   "culprit": "kyc-document-check",
+   "level": "error",
+   "status": "resolved",
+   "count": 6120,
+   "user_count": 680,
+   "first_seen": "2026-10-08T06:44:00.000Z",
+   "last_seen": "2026-10-08T06:44:00.000Z"
+  },
+  {
+   "id": 61006,
+   "short_id": "DISPUT-6",
+   "org_slug": "brightwater",
+   "project_slug": "dispute-evidence",
+   "title": "BundleAssemblyError: object unreadable",
+   "culprit": "dispute-evidence",
+   "level": "error",
+   "status": "resolved",
+   "count": 2311,
+   "user_count": 256,
+   "first_seen": "2026-10-08T06:46:00.000Z",
+   "last_seen": "2026-10-08T06:46:00.000Z"
+  },
+  {
+   "id": 61007,
+   "short_id": "CARD-A-7",
+   "org_slug": "brightwater",
+   "project_slug": "card-auth-gateway",
+   "title": "HSMUnavailable during firmware update",
+   "culprit": "card-auth-gateway",
+   "level": "error",
+   "status": "resolved",
+   "count": 30881,
+   "user_count": 3431,
+   "first_seen": "2026-10-21T03:00:00.000Z",
+   "last_seen": "2026-10-21T03:00:00.000Z"
+  },
+  {
+   "id": 61008,
+   "short_id": "TOKENI-8",
+   "org_slug": "brightwater",
+   "project_slug": "tokenisation-vault",
+   "title": "KeyVersionNotFound during rotation",
+   "culprit": "tokenisation-vault",
+   "level": "error",
+   "status": "resolved",
+   "count": 5240,
+   "user_count": 582,
+   "first_seen": "2026-10-27T01:05:00.000Z",
+   "last_seen": "2026-10-27T01:05:00.000Z"
+  },
+  {
+   "id": 61009,
+   "short_id": "STATEM-9",
+   "org_slug": "brightwater",
+   "project_slug": "statement-render",
+   "title": "FontCacheMiss rendering PDF",
+   "culprit": "statement-render",
+   "level": "error",
+   "status": "resolved",
+   "count": 381,
+   "user_count": 42,
+   "first_seen": "2026-10-19T08:10:00.000Z",
+   "last_seen": "2026-10-19T08:10:00.000Z"
+  },
+  {
+   "id": 61010,
+   "short_id": "MERCHA-10",
+   "org_slug": "brightwater",
+   "project_slug": "merchant-onboarding-api",
+   "title": "KYBVendorTimeout",
+   "culprit": "merchant-onboarding-api",
+   "level": "error",
+   "status": "resolved",
+   "count": 655,
+   "user_count": 72,
+   "first_seen": "2026-10-13T10:18:00.000Z",
+   "last_seen": "2026-10-13T10:18:00.000Z"
+  },
+  {
+   "id": 61011,
+   "short_id": "FX-RAT-11",
+   "org_slug": "brightwater",
+   "project_slug": "fx-rates-feed",
+   "title": "StaleRateWarning: feed older than 90 s",
+   "culprit": "fx-rates-feed",
+   "level": "error",
+   "status": "resolved",
+   "count": 120,
+   "user_count": 13,
+   "first_seen": "2026-10-11T07:40:00.000Z",
+   "last_seen": "2026-10-11T07:40:00.000Z"
+  },
+  {
+   "id": 61012,
+   "short_id": "VELOCI-12",
+   "org_slug": "brightwater",
+   "project_slug": "velocity-limits",
+   "title": "CacheStampede: lock wait exceeded",
+   "culprit": "velocity-limits",
+   "level": "error",
+   "status": "resolved",
+   "count": 1990,
+   "user_count": 221,
+   "first_seen": "2026-10-14T13:01:00.000Z",
+   "last_seen": "2026-10-14T13:01:00.000Z"
+  }
+ ],
+ "events": [
+  {
+   "id": 62001,
+   "issue_id": 61001,
+   "event_id": "01ababababababababababababababab",
+   "message": "PoolExhaustedException: HikariPool-1 - Connection is not available",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "payout-scheduler@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-19T00:52:00.000Z"
+  },
+  {
+   "id": 62002,
+   "issue_id": 61002,
+   "event_id": "02ababababababababababababababab",
+   "message": "ReconciliationRunFailed: upstream schedule unavailable",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "sweep-reconciler@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-19T00:58:00.000Z"
+  },
+  {
+   "id": 62003,
+   "issue_id": 61003,
+   "event_id": "03ababababababababababababababab",
+   "message": "TimeoutError calling payout-scheduler",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "payout-status-api@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-19T00:55:00.000Z"
+  },
+  {
+   "id": 62004,
+   "issue_id": 61004,
+   "event_id": "04ababababababababababababababab",
+   "message": "SFTPTimeout: partner gateway slow",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "bank-file-dispatch@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-29T13:10:00.000Z"
+  },
+  {
+   "id": 62005,
+   "issue_id": 61005,
+   "event_id": "05ababababababababababababababab",
+   "message": "S3 AccessDenied reading kyc-docs",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "kyc-document-check@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-08T06:44:00.000Z"
+  },
+  {
+   "id": 62006,
+   "issue_id": 61006,
+   "event_id": "06ababababababababababababababab",
+   "message": "BundleAssemblyError: object unreadable",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "dispute-evidence@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-08T06:46:00.000Z"
+  },
+  {
+   "id": 62007,
+   "issue_id": 61007,
+   "event_id": "07ababababababababababababababab",
+   "message": "HSMUnavailable during firmware update",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "card-auth-gateway@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-21T03:00:00.000Z"
+  },
+  {
+   "id": 62008,
+   "issue_id": 61008,
+   "event_id": "08ababababababababababababababab",
+   "message": "KeyVersionNotFound during rotation",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "tokenisation-vault@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-27T01:05:00.000Z"
+  },
+  {
+   "id": 62009,
+   "issue_id": 61009,
+   "event_id": "09ababababababababababababababab",
+   "message": "FontCacheMiss rendering PDF",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "statement-render@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-19T08:10:00.000Z"
+  },
+  {
+   "id": 62010,
+   "issue_id": 61010,
+   "event_id": "10ababababababababababababababab",
+   "message": "KYBVendorTimeout",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "merchant-onboarding-api@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-13T10:18:00.000Z"
+  },
+  {
+   "id": 62011,
+   "issue_id": 61011,
+   "event_id": "11ababababababababababababababab",
+   "message": "StaleRateWarning: feed older than 90 s",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "fx-rates-feed@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-11T07:40:00.000Z"
+  },
+  {
+   "id": 62012,
+   "issue_id": 61012,
+   "event_id": "12ababababababababababababababab",
+   "message": "CacheStampede: lock wait exceeded",
+   "platform": "jvm",
+   "environment": "production",
+   "release": "velocity-limits@2026.10",
+   "user_email": "",
+   "date_created": "2026-10-14T13:01:00.000Z"
+  }
+ ],
+ "releases": [
+  {
+   "version": "payout-scheduler@4.19.2",
+   "org_slug": "brightwater",
+   "project_slug": "payout-scheduler",
+   "ref": "4192abc",
+   "status": "open",
+   "new_groups": 1,
+   "date_created": "2026-10-16T09:00:00.000Z",
+   "date_released": "2026-10-19T02:40:00.000Z"
+  }
+ ]
+}

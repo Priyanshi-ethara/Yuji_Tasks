@@ -1,0 +1,25 @@
+id,date,service,event,estimated_affected_txns,credit_view,owner
+CI-2610,2026-10-08,kyc-document-check,KYC document upload failing,120,credit not due,Finance
+CI-2611,2026-10-08,dispute-evidence,Evidence upload error,167,credit under review,Finance
+CI-2612,2026-10-14,ledger-posting,Balance not updating overnight (maintenance notice seen),214,no contractual credit,Finance
+CI-2613,2026-10-19,payout-scheduler,Payout not received on schedule,261,credit not due,Finance
+CI-2614,2026-10-19,payout-status-api,Payout status stuck 'pending',308,credit under review,Finance
+CI-2615,2026-10-19,bank-file-dispatch,Bank file late,355,no contractual credit,Finance
+CI-2616,2026-10-19,sweep-reconciler,Sweep report missing,402,credit not due,Finance
+CI-2617,2026-10-21,card-auth-gateway,Declines spike early morning,449,credit under review,Finance
+CI-2618,2026-10-27,tokenisation-vault,Saved cards unavailable ~01:10,496,no contractual credit,Finance
+CI-2619,2026-10-13,merchant-onboarding-api,Onboarding form timing out,543,credit not due,Finance
+CI-2620,2026-10-20,chargeback-intake,Chargeback upload slow,590,credit under review,Finance
+CI-2621,2026-10-08,kyc-document-check,KYC document upload failing,637,no contractual credit,Finance
+CI-2622,2026-10-08,dispute-evidence,Evidence upload error,684,credit not due,Finance
+CI-2623,2026-10-14,ledger-posting,Balance not updating overnight (maintenance notice seen),731,credit under review,Finance
+CI-2624,2026-10-19,payout-scheduler,Payout not received on schedule,778,no contractual credit,Finance
+CI-2625,2026-10-19,payout-status-api,Payout status stuck 'pending',825,credit not due,Finance
+CI-2626,2026-10-19,bank-file-dispatch,Bank file late,872,credit under review,Finance
+CI-2627,2026-10-19,sweep-reconciler,Sweep report missing,919,no contractual credit,Finance
+CI-2628,2026-10-21,card-auth-gateway,Declines spike early morning,966,credit not due,Finance
+CI-2629,2026-10-27,tokenisation-vault,Saved cards unavailable ~01:10,1013,credit under review,Finance
+CI-2630,2026-10-13,merchant-onboarding-api,Onboarding form timing out,1060,no contractual credit,Finance
+CI-2631,2026-10-20,chargeback-intake,Chargeback upload slow,1107,credit not due,Finance
+CI-2632,2026-10-08,kyc-document-check,KYC document upload failing,1154,credit under review,Finance
+CI-2633,2026-10-08,dispute-evidence,Evidence upload error,1201,no contractual credit,Finance

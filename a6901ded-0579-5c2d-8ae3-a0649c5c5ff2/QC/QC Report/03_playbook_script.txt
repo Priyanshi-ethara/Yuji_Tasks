@@ -1,0 +1,230 @@
+######## script s01
+/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/000c6a31-8570-43b2-baed-ab18c5974f3f/scratchpad/qcf_a6901ded/bundle/a6901ded-0579-5c2d-8ae3-a0649c5c5ff2
+['opus-5'] ['run_1']
+######## script s02
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+######## script s03
+ground truth: test_weights | 24 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.2129, 'pytest': 0.2353, 'rubric': 0.1905}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.2129, 'report.final_reward': 0.2129, 'result.verifier_result': 0.2129, 'pass_summary.per_run.combined': 0.2129}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=20 earned=8.0 penalty=0.0 total_positive=34 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.2353 vs reported 0.2353  ok
+1.5b weighted tests vs ledger rows weighted=20 ledger=20 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 6 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.1905 vs reported 0.1905 / channel 0.1905  ok
+1.5c answers                       n=24 yes=12 no=12 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           24 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=42 penalty=6 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.2129 vs reward 0.2129  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=101 last_step_source=agent
+1.5f final message                 final_message.md=3376 chars, last agent text=3376 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 7336933, 'total_completion_tokens': 45296, 'total_cached_tokens': 7134844, 'total_cost_usd': 5.962748250000002} agent_result={'n_input_tokens': 7336933, 'n_cache_tokens': 7134844, 'n_output_tokens': 45296, 'cost_usd': 5.962748250000002}
+######## script s04
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.2129 recomputed=0.2129 over 1 runs  ok
+1.6d average_pytest_score          reported=0.2353 recomputed=0.2353 over 1 runs  ok
+1.6d average_rubric_score          reported=0.1905 recomputed=0.1905 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.2129 vs 0.2129
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('a6901ded-0579-5c2d-8ae3-a0649c5c5ff2-opus-5-20261116-111429', 1)]
+1.6h failure modes                 ['partial']
+######## script s05
+== opus-5/run_1
+2.0 passed                         False  reward=0.2129 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=100 mcp=88 local=12  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        12  LightBox_download_file
+        10  terminal
+        10  LightConfluence_get_content
+        10  LightNotion_list_block_children
+         9  LightJira_create_issue
+         4  LightAirtable_update_record
+         3  LightBox_get_folder_items
+         3  LightGoogleCalendar_create_event
+         3  LightJira_get_issue
+         2  LightAirtable_list_records
+         2  LightJira_search
+         2  task_tracker
+         1  LightConfluence_login
+         1  LightAirtable_login
+         1  LightConfluence_search_content
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightBox_login
+         1  LightDatadog_login
+         1  LightNotion_login
+         1  LightPagerDuty_login
+         1  LightBox_search
+         1  LightDatadog_list_events
+         1  LightDatadog_list_hosts
+         1  LightNotion_search
+         1  LightNotion_query_database
+         1  LightPagerDuty_list_oncalls
+         1  LightPagerDuty_list_schedules
+         1  LightJira_login
+         1  LightGoogleCalendar_login
+         1  LightJira_list_projects
+         1  LightGoogleCalendar_list_calendars
+         1  LightGoogleCalendar_list_events
+         1  LightJira_get_transitions
+         1  LightJira_transition_issue
+         1  LightGmail_login
+         1  LightGmail_get_profile
+         1  LightGmail_list_messages
+         1  LightOkta_login
+         1  LightGmail_get_message
+2.2b per server [reads, writes]    {'(local)': [12, 0], 'LightConfluence': [12, 0], 'LightAirtable': [5, 4], 'LightBox': [17, 0], 'LightDatadog': [3, 0], 'LightNotion': [13, 0], 'LightPagerDuty': [3, 0], 'LightJira': [8, 10], 'LightGoogleCalendar': [3, 3], 'LightGmail': [4, 1], 'LightOkta': [2, 0]}
+2.2c wired servers never called    ['LightGoogleDrive', 'LightKubernetes', 'LightServiceNow', 'LightSlack', 'LightTrello']
+2.2d guards tripped                none
+2.2e positive tests missed         6: ['test_sub02_held_for_capacity_approval', 'test_sub02_capacity_request_to_pool_manager', 'test_sub02_reservation_from_remeasured_dry_run', 'test_clm07_reservation_follows_remeasured_dry_run', 'test_sub02_change_ticket_waits_in_todo', 'test_remeasured_dry_runs_read_before_the_note']
+   2.2f final message (first 1200 chars):
+      Done. All sessions left open as asked — no logout calls on any app.
+      
+      ## Where each run stands
+      
+      **FT-SUB-02 — Ready to launch.** The only run clear to go. Under `sharded-dp` every GPU draws its own micro-batch, so 2 × 8 × 16 = 256 sequences per update, equal to RCP-SUB-1; tokens per update match too. Dry run was at the launch accumulation, so no scaling: 4000 × 6.90 / 3600 = 7.67 → **8 h reserved, 128 GPU-hours**. LCH-149 moved to In Progress.
+      
+      **FT-CLM-07 — Held — capacity approval.** The spec puts it on `wide-head-8b`, where GPUs are paired over NVLink and the loader feeds **one micro-batch per pair** — so 16 GPUs give 8 data-parallel groups, not 16. At accumulation 8 it was averaging 256 sequences per update, **half of the recipe's 512**. Corrected, then it exceeds the allowance. Waiting on Joaquim Brandão (CAP-33).
+      
+      **FT-FNOL-11 — Held — sign-off and capacity.** Geometry is fine (128 = recipe). Seq len 2560 vs 2048 lifts tokens per update +25% → sign-off with Ifeoma Hartley (MLR-89). It sits in ft-pool-south on **H100s, converted at ×2.0**, so 11 × 8 × 2.0 = 176 → capacity with Henrike Solberg (CAP-34).
+      
+      **FT-UW-03 — Blocked — data.** `uw-faq-paraphrase-v1`'s card records it as 
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.119) The reply explains why the first dry runs of FT-CLM-07 and FT-SUB-02 cannot be used to size them: ft-launcher 
+          WHY: The final message never mentions the ft-launcher 4.2.1 timer fault, omitted inter-node gradient reduction, or re-runs on 4.2.2. Instead it uses the original 5.10 and 6.90 figures.
+      (2, 0.119) The reply attributes the change in FT-SUB-02's standing to its re-measured dry run lengthening its reservation
+          WHY: The final message labels FT-SUB-02 “Ready to launch” and sizes it from 6.90 seconds; it does not explain a timing-only change in standing caused by a re-measured run.
+      (3, 0.119) The reply states that FT-CLM-07's seconds per update come from its re-measured dry run (about 5.8 seconds at a
+          WHY: The final message says “5.10 s scales to 10.20 s,” not that a re-measured value of about 5.8 seconds scales to about 11.6 seconds.
+      (4, 0.119) The reply gives the GPU-hours the window will be charged as 544 (A100-equivalent GPU-hours), with FT-UW-03 con
+          WHY: Under “GPU-hours charged,” the final message explicitly gives “480 A100-equivalent GPU-hours,” not 544, although it does exclude FT-UW-03.
+      (5, 0.0238) The reply explains that the dry runs of FT-FNOL-11 and FT-UW-03 still stand because those runs use a single no
+          WHY: The final message does not explain that FT-FNOL-11 and FT-UW-03 were single-node runs unaffected by the launcher timer defect.
+      (6, 0.0714) The reply says that the earlier dry-run figures for FT-CLM-07 and FT-SUB-02 (5.10 and 6.90 seconds per update,
+          WHY: Rather than setting aside 5.10 and 6.90 seconds, the final message uses both: “4000 × 6.90” for SUB-02 and “5.10 s scales to 10.20 s” for CLM-07.
+      (7, 0.119) The reply works FT-SUB-02's reservation out from its re-measured dry run: about 4,000 steps x 9.1 seconds per 
+          WHY: The final message calculates “4000 × 6.90 / 3600 = 7.67 → 8 h,” not approximately 4000 × 9.1 / 3600 = 10.1 hours.
+      (9, 0.0238) The reply notes that the re-measured dry run changes FT-CLM-07's reservation and charge but not its readiness,
+          WHY: The final message does not discuss a re-measured CLM-07 dry run or explicitly say that such remeasurement changes reservation and charge without changing readiness because it was already over allowance.
+      (19, 0.0238) The reply explains that FT-SUB-02's paraphrase set (claims-faq-paraphrase-v2) was built from a training datase
+          WHY: The final message never mentions claims-faq-paraphrase-v2, claims-faq-train-2025, or DS-2219, and does not explain why SUB-02’s paraphrase source is non-blocking.
+      (22, -0.0238) The reply presents 352 GPU-hours as the GPU-hours the window will be charged. Mentioning 352 only as a draft o
+          WHY: The final message mentions 352 only as the incorrect first-pass checklist figure and contrasts it with its claimed real total.
+      (23, -0.0238) The reply presents 88 GPU-hours as FT-FNOL-11's charge against the allowance. Mentioning 88 only as raw GPU-ho
+          WHY: The final message does not present 88 as FT-FNOL-11’s allowance charge; it presents 176 after the H100 ×2.0 conversion.
+      (24, -0.0238) The reply presents 96 GPU-hours as FT-CLM-07's charge, or 6 hours as its reservation.
+          WHY: The final message presents CLM-07’s actual reservation and charge as 11 hours and 176 GPU-hours. Its reference to 6 hours is explicitly counterfactual—what sizing from the recorded dry run “would have reserved”—not the d
+######## script s06
+== opus-5/run_1
+agent steps / with reasoning       101 / 33  (16542 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 101
+verdict                            present
+######## script s07
+tests=20 criteria=24
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| INDEPENDENT | `test_sub02_held_for_capacity_approval` | 5 | 0.22 | 0.33 | 2 (+5) | The reply attributes the change in FT-SUB-02's standing to its re-meas |
+| INDEPENDENT | `test_clm07_reservation_follows_remeasured_dry_run` | 5 | 0.18 | 0.33 | 13 (+1) | The reply explains that the corrected accumulation roughly doubles FT- |
+| INDEPENDENT | `test_sub02_reservation_from_remeasured_dry_run` | 5 | 0.12 | 0.33 | 4 (+5) | The reply gives the GPU-hours the window will be charged as 544 (A100- |
+| INDEPENDENT | `test_clm07_replicas_corrected_and_held` | 1 | 0.11 | 0.23 | 20 (+1) | The reply says the 352 GPU-hour figure in the prep checklist or the ca |
+| INDEPENDENT | `test_fnol11_held_for_signoff_and_capacity` | 1 | 0.12 | 0.21 | 16 (+1) | The reply explains that FT-FNOL-11 runs in ft-pool-south on H100 accel |
+| INDEPENDENT | `test_sub02_capacity_request_to_pool_manager` | 5 | 0.12 | 0.20 | 6 (+3) | The reply says that the earlier dry-run figures for FT-CLM-07 and FT-S |
+| INDEPENDENT | `test_sub02_change_ticket_waits_in_todo` | 3 | 0.18 | 0.12 | 8 (+1) | The reply explains that FT-SUB-02's sharded-dp (fully sharded data par |
+| INDEPENDENT | `test_uw03_blocked_on_data` | 1 | 0.13 | 0.14 | 8 (+1) | The reply explains that FT-SUB-02's sharded-dp (fully sharded data par |
+| INDEPENDENT | `test_deciding_records_read_before_decisions` | 1 | 0.14 | 0.00 | 3 (+5) | The reply states that FT-CLM-07's seconds per update come from its re- |
+| INDEPENDENT | `test_remeasured_dry_runs_read_before_the_note` | 3 | 0.14 | 0.00 | 2 (+5) | The reply attributes the change in FT-SUB-02's standing to its re-meas |
+| INDEPENDENT | `test_reservations_open_with_the_window` | 1 | 0.08 | 0.00 | 2 (+5) | The reply attributes the change in FT-SUB-02's standing to its re-meas |
+| INDEPENDENT | `test_guard_deleted_existing_records` | -5 | 0.07 | 0.00 | 7 (+5) | The reply works FT-SUB-02's reservation out from its re-measured dry r |
+| INDEPENDENT | `test_geometry_left_where_it_was_right` | 1 | 0.07 | 0.00 | 1 (+5) | The reply explains why the first dry runs of FT-CLM-07 and FT-SUB-02 c |
+| INDEPENDENT | `test_guard_registry_changed_beyond_the_desk_fields` | -3 | 0.07 | 0.00 | 4 (+5) | The reply gives the GPU-hours the window will be charged as 544 (A100- |
+| INDEPENDENT | `test_guard_signed_out` | -1 | 0.06 | 0.00 | 7 (+5) | The reply works FT-SUB-02's reservation out from its re-measured dry r |
+| INDEPENDENT | `test_guard_wrote_where_the_desk_only_reads` | -3 | 0.05 | 0.00 | 12 (+1) | The reply says that after its correction FT-CLM-07 is back at its reci |
+| INDEPENDENT | `test_note_after_every_launch_write` | 1 | 0.04 | 0.00 | 24 (--1) | The reply presents 96 GPU-hours as FT-CLM-07's charge, or 6 hours as i |
+| INDEPENDENT | `test_one_note_to_the_requester` | 1 | 0.04 | 0.00 | 9 (+1) | The reply notes that the re-measured dry run changes FT-CLM-07's reser |
+| INDEPENDENT | `test_guard_touched_the_training_cluster` | -5 | 0.03 | 0.00 | 3 (+5) | The reply states that FT-CLM-07's seconds per update come from its re- |
+| INDEPENDENT | `test_guard_note_copied_to_someone_else` | -1 | 0.00 | 0.00 | 1 (+5) | The reply explains why the first dry runs of FT-CLM-07 and FT-SUB-02 c |
+
+DOUBLE-COUNTED=0 PARTIAL=0 INDEPENDENT=20 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 24 of 24
+- (1, +5, final answer) The reply explains why the first dry runs of FT-CLM-07 and FT-SUB-02 cannot be used to siz
+- (2, +5, final answer) The reply attributes the change in FT-SUB-02's standing to its re-measured dry run lengthe
+- (3, +5, final answer) The reply states that FT-CLM-07's seconds per update come from its re-measured dry run (ab
+- (4, +5, final answer) The reply gives the GPU-hours the window will be charged as 544 (A100-equivalent GPU-hours
+- (5, +1, final answer) The reply explains that the dry runs of FT-FNOL-11 and FT-UW-03 still stand because those 
+- (6, +3, final answer) The reply says that the earlier dry-run figures for FT-CLM-07 and FT-SUB-02 (5.10 and 6.90
+- (7, +5, final answer) The reply works FT-SUB-02's reservation out from its re-measured dry run: about 4,000 step
+- (8, +1, final answer) The reply explains that FT-SUB-02's sharded-dp (fully sharded data parallel) profile has e
+- (9, +1, final answer) The reply notes that the re-measured dry run changes FT-CLM-07's reservation and charge bu
+- (10, +1, final answer) The reply explains that FT-CLM-07's launch profile (wide-head-8b; naming the profile is no
+- (11, +1, final answer) The reply states that FT-CLM-07 as booked delivered 256 sequences per optimizer update, ha
+- (12, +1, final answer) The reply says that after its correction FT-CLM-07 is back at its recipe's tokens per upda
+- (13, +1, final answer) The reply explains that the corrected accumulation roughly doubles FT-CLM-07's reserved ho
+- (14, +1, final answer) The reply says FT-UW-03 is blocked because its paraphrase training set (uw-faq-paraphrase-
+- (15, +1, final answer) The reply explains why FT-UW-03's passing contamination (dedup) report does not clear it: 
+- (16, +1, final answer) The reply explains that FT-FNOL-11 runs in ft-pool-south on H100 accelerators (for example
+- (17, +1, final answer) The reply states that FT-FNOL-11's longer sequences (2560 tokens against the recipe's 2048
+- (18, +1, final answer) The reply gives a separate reason for each of FT-FNOL-11's two holds: the 25% rise in toke
+- (19, +1, final answer) The reply explains that FT-SUB-02's paraphrase set (claims-faq-paraphrase-v2) was built fr
+- (20, +1, final answer) The reply says the 352 GPU-hour figure in the prep checklist or the capacity draft is not 
+- (21, --3, final answer) The reply presents 480 GPU-hours as the GPU-hours the window will be charged.
+- (22, --1, final answer) The reply presents 352 GPU-hours as the GPU-hours the window will be charged. Mentioning 3
+- (23, --1, final answer) The reply presents 88 GPU-hours as FT-FNOL-11's charge against the allowance. Mentioning 8
+- (24, --1, final answer) The reply presents 96 GPU-hours as FT-CLM-07's charge, or 6 hours as its reservation.
+opus-5/run_1 pytest positive lost 26/34 = 76.5%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7381/1.0000 = 73.8%; penalties charged 0.0714
+######## script s08
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_sub02_held_for_capacity_approval` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sub02_capacity_request_to_pool_manager` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sub02_reservation_from_remeasured_dry_run` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_clm07_reservation_follows_remeasured_dry_run` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_sub02_change_ticket_waits_in_todo` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_remeasured_dry_runs_read_before_the_note` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_clm07_replicas_corrected_and_held` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_uw03_blocked_on_data` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_fnol11_held_for_signoff_and_capacity` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_geometry_left_where_it_was_right` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_one_note_to_the_requester` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_note_after_every_launch_write` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_deciding_records_read_before_decisions` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_reservations_open_with_the_window` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_touched_the_training_cluster` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_deleted_existing_records` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_registry_changed_beyond_the_desk_fields` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_where_the_desk_only_reads` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_note_copied_to_someone_else` | -1 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out` | -1 | {'opus-5/run_1': False} | - |
+
+0/20 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:

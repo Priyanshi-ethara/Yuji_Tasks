@@ -1,0 +1,52 @@
+{
+  "_note": "Column maps the MDM loader uses to read each collector's file into its staging table. Mapping only; the meaning of each collector's columns is set by that collector's data collection agreement.",
+  "profiles": [
+    {
+      "collector": "Harrowmere AMR",
+      "file_glob": "amr-hh-export-*.csv",
+      "columns": {
+        "site_ref": "site_ref",
+        "msn": "msn",
+        "timestamp": "period_start_utc",
+        "channel_1": "kwh",
+        "channel_2": "kvarh",
+        "status": "read_status"
+      },
+      "timestamp_format": "%Y-%m-%dT%H:%M:%SZ",
+      "agreement": "in-house (see amr-export-format-readme.md)"
+    },
+    {
+      "collector": "Kestrel Data Services",
+      "file_glob": "kestrel-hh-delivery-*.csv",
+      "columns": {
+        "supply_no": "mpan",
+        "msn": "msn",
+        "timestamp": "ts_utc",
+        "channel_1": "a_plus",
+        "channel_2": "r_plus",
+        "status": "qual"
+      },
+      "timestamp_format": "%Y-%m-%d %H:%M",
+      "agreement": "KDS-HRM-2026 Schedule 2"
+    },
+    {
+      "collector": "Varden Metering Services",
+      "file_glob": "varden-sched3-*.csv",
+      "columns": {
+        "supply_no": "MPAN",
+        "msn": "MSN",
+        "timestamp": "READ_TS_UTC",
+        "channel_1": "AI",
+        "channel_2": "RI",
+        "status": "FLAG"
+      },
+      "timestamp_format": "%Y%m%d%H%M",
+      "agreement": "VMS-DCA-2026 Schedule 3"
+    }
+  ],
+  "staging": {
+    "periods_per_full_period_site": 1490,
+    "margin_hours_each_side": 2,
+    "timezone_of_timestamps": "UTC"
+  }
+}

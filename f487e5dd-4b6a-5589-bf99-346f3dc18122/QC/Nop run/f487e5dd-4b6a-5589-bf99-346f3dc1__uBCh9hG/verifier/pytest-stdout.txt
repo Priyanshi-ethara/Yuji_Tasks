@@ -1,0 +1,570 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 26 items
+
+test_outputs.py::test_first_held_design_has_countersign_request FAILED   [  3%]
+test_outputs.py::test_second_held_design_has_countersign_request FAILED  [  7%]
+test_outputs.py::test_third_held_design_has_countersign_request FAILED   [ 11%]
+test_outputs.py::test_fourth_held_design_has_countersign_request FAILED  [ 15%]
+test_outputs.py::test_first_held_request_routed_to_head_of_engineering FAILED [ 19%]
+test_outputs.py::test_second_held_request_routed_to_head_of_engineering FAILED [ 23%]
+test_outputs.py::test_third_held_request_routed_to_head_of_engineering FAILED [ 26%]
+test_outputs.py::test_fourth_held_request_routed_to_head_of_engineering FAILED [ 30%]
+test_outputs.py::test_week_line_counts_released_designs FAILED           [ 34%]
+test_outputs.py::test_field_sheet_read_before_the_line FAILED            [ 38%]
+test_outputs.py::test_near_limit_approvals_have_countersign_requests FAILED [ 42%]
+test_outputs.py::test_extreme_minimum_designs_returned FAILED            [ 46%]
+test_outputs.py::test_millivolt_coefficient_design_returned FAILED       [ 50%]
+test_outputs.py::test_severity_order_design FAILED                       [ 53%]
+test_outputs.py::test_catalogue_limit_design_returned FAILED             [ 57%]
+test_outputs.py::test_short_string_and_tracker_current_returns FAILED    [ 61%]
+test_outputs.py::test_approved_designs_verdict_and_length FAILED         [ 65%]
+test_outputs.py::test_string_voc_recorded_on_every_deal FAILED           [ 69%]
+test_outputs.py::test_rework_issues_for_returns_only FAILED              [ 73%]
+test_outputs.py::test_week_line_redesign_counts_and_posted_last FAILED   [ 76%]
+test_outputs.py::test_guard_changed_a_deal_stage_or_amount FAILED        [ 80%]
+test_outputs.py::test_guard_ordered_or_shipped_equipment FAILED          [ 84%]
+test_outputs.py::test_guard_mailed_a_customer FAILED                     [ 88%]
+test_outputs.py::test_guard_wrote_in_a_reference_system FAILED           [ 92%]
+test_outputs.py::test_guard_wrote_outside_the_review_set FAILED          [ 96%]
+test_outputs.py::test_guard_signed_out_of_an_application FAILED          [100%][ctrf] 26 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+________________ test_first_held_design_has_countersign_request ________________
+
+    def test_first_held_design_has_countersign_request():
+        """The lowest-numbered Approved design that clause 9.3 holds because T_min is not the coldest morning its roof will
+        see has a countersign request in the review team, and no design clause 9.3 cannot hold has one."""
+>       return _requested(0)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:484: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+_______________ test_second_held_design_has_countersign_request ________________
+
+    def test_second_held_design_has_countersign_request():
+        """The second design clause 9.3 holds for its roof has a countersign request in the review team."""
+>       return _requested(1)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:489: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+________________ test_third_held_design_has_countersign_request ________________
+
+    def test_third_held_design_has_countersign_request():
+        """The third design clause 9.3 holds for its roof has a countersign request in the review team."""
+>       return _requested(2)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:494: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+_______________ test_fourth_held_design_has_countersign_request ________________
+
+    def test_fourth_held_design_has_countersign_request():
+        """The fourth design clause 9.3 holds for its roof has a countersign request in the review team."""
+>       return _requested(3)
+               ^^^^^^^^^^^^^
+
+test_outputs.py:499: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:471: in _requested
+    _countersign_requested(k)
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________ test_first_held_request_routed_to_head_of_engineering _____________
+
+    def test_first_held_request_routed_to_head_of_engineering():
+        """The first held design's countersign request is assigned to the Head of Engineering."""
+>       return _routed(0)
+               ^^^^^^^^^^
+
+test_outputs.py:504: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________ test_second_held_request_routed_to_head_of_engineering ____________
+
+    def test_second_held_request_routed_to_head_of_engineering():
+        """The second held design's countersign request is assigned to the Head of Engineering."""
+>       return _routed(1)
+               ^^^^^^^^^^
+
+test_outputs.py:509: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________ test_third_held_request_routed_to_head_of_engineering _____________
+
+    def test_third_held_request_routed_to_head_of_engineering():
+        """The third held design's countersign request is assigned to the Head of Engineering."""
+>       return _routed(2)
+               ^^^^^^^^^^
+
+test_outputs.py:514: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________ test_fourth_held_request_routed_to_head_of_engineering ____________
+
+    def test_fourth_held_request_routed_to_head_of_engineering():
+        """The fourth held design's countersign request is assigned to the Head of Engineering."""
+>       return _routed(3)
+               ^^^^^^^^^^
+
+test_outputs.py:519: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:476: in _routed
+    deal, got = _countersign_requested(k)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+test_outputs.py:461: in _countersign_requested
+    _closing_gate()
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________________ test_week_line_counts_released_designs ____________________
+
+    def test_week_line_counts_released_designs():
+        """The last line posted on the week's project gives, as the number released, the approvals less the designs
+        clause 9.3 holds for countersign."""
+>       _closing_gate()
+
+test_outputs.py:525: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________________ test_field_sheet_read_before_the_line _____________________
+
+    def test_field_sheet_read_before_the_line():
+        """Before posting the week's line the run read the field sheet filed with the survey of at least one design held
+        for its roof."""
+>       _closing_gate()
+
+test_outputs.py:536: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:449: in _closing_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+_____________ test_near_limit_approvals_have_countersign_requests ______________
+
+    def test_near_limit_approvals_have_countersign_requests():
+        """Every Approved design whose string Voc is above the clause 9.3 share of its inverter limit has a countersign
+        request in the review team."""
+>       _value_gate()
+
+test_outputs.py:544: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________________ test_extreme_minimum_designs_returned _____________________
+
+    def test_extreme_minimum_designs_returned():
+        """Designs that only fail at the extreme minimum design temperature carry that verdict and the nearest passing length."""
+>       return _verdict_and_length("design_minimum")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:564: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+__________________ test_millivolt_coefficient_design_returned __________________
+
+    def test_millivolt_coefficient_design_returned():
+        """The design whose module states its Voc coefficient per module in mV carries the verdict that coefficient gives."""
+>       return _verdict_and_length("millivolt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:569: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+__________________________ test_severity_order_design __________________________
+
+    def test_severity_order_design():
+        """The design failing two clauses carries the verdict the order of severity picks, and the length clause 8 gives."""
+>       return _verdict_and_length("severity_order")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:574: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+_____________________ test_catalogue_limit_design_returned _____________________
+
+    def test_catalogue_limit_design_returned():
+        """The design judged against the inverter limit the catalogue holds (not the quick-reference figure) carries that verdict."""
+>       return _verdict_and_length("catalogue_limit")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:579: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+________________ test_short_string_and_tracker_current_returns _________________
+
+    def test_short_string_and_tracker_current_returns():
+        """The remaining returns (short strings under the MPPT lower bound, two strings over the tracker current) carry
+        their verdict and the length clause 8 gives."""
+>       return _verdict_and_length("other_returns")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:585: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+___________________ test_approved_designs_verdict_and_length ___________________
+
+    def test_approved_designs_verdict_and_length():
+        """Every design that passes clauses 4 to 6 is approved at its submitted string length."""
+>       return _verdict_and_length("approved")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:590: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:554: in _verdict_and_length
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+____________________ test_string_voc_recorded_on_every_deal ____________________
+
+    def test_string_voc_recorded_on_every_deal():
+        """Every W46 deal carries the clause 4 string Voc of the design as submitted, to the tolerance oracle.json states."""
+>       _value_gate()
+
+test_outputs.py:595: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+_____________________ test_rework_issues_for_returns_only ______________________
+
+    def test_rework_issues_for_returns_only():
+        """Every return has a rework issue titled with its verdict, and no approved design has one."""
+>       _value_gate()
+
+test_outputs.py:603: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+________________ test_week_line_redesign_counts_and_posted_last ________________
+
+    def test_week_line_redesign_counts_and_posted_last():
+        """The week's line gives each redesign verdict's count and was posted after the last deal update and the last
+        issue write in the review team."""
+>       _value_gate()
+
+test_outputs.py:615: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _no_red_line(), "a red line was crossed"
+>       assert _not_blanket(), "fewer than half of the designs, or of the returns, carry their DS-6 verdict"
+E       AssertionError: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+E       assert False
+E        +  where False = _not_blanket()
+
+test_outputs.py:445: AssertionError
+__________________ test_guard_changed_a_deal_stage_or_amount ___________________
+
+    def test_guard_changed_a_deal_stage_or_amount():
+        """A seeded deal ends with a different stage or amount, or was deleted."""
+        hits = _stage_or_amount_moves()
+>       assert hits, "stages and amounts as seeded"
+E       AssertionError: stages and amounts as seeded
+E       assert []
+
+test_outputs.py:631: AssertionError
+___________________ test_guard_ordered_or_shipped_equipment ____________________
+
+    def test_guard_ordered_or_shipped_equipment():
+        """A shipment, label, purchase bill, estimate, invoice or payment was created."""
+        hits = _equipment_orders()
+>       assert hits, "no ordering or shipping call"
+E       AssertionError: no ordering or shipping call
+E       assert []
+
+test_outputs.py:639: AssertionError
+_________________________ test_guard_mailed_a_customer _________________________
+
+    def test_guard_mailed_a_customer():
+        """Mail went to a customer address."""
+        hits = _customer_mail()
+>       assert hits, "no mail to a customer"
+E       AssertionError: no mail to a customer
+E       assert []
+
+test_outputs.py:647: AssertionError
+____________________ test_guard_wrote_in_a_reference_system ____________________
+
+    def test_guard_wrote_in_a_reference_system():
+        """A write landed in a system the review only reads (library, surveys, catalogue, wiki, climate list,
+        mailboxes, chat, weather, maps, shipping or accounting), other than a mail to a customer."""
+        hits = _reference_writes()
+>       assert hits, "reference systems untouched"
+E       AssertionError: reference systems untouched
+E       assert []
+
+test_outputs.py:656: AssertionError
+___________________ test_guard_wrote_outside_the_review_set ____________________
+
+    def test_guard_wrote_outside_the_review_set():
+        """A write in HubSpot or Linear beyond the three review properties on the twenty deals, the run's own issues
+        and the week's project description."""
+        hits = _out_of_set_writes()
+>       assert hits, "writes kept to the review set"
+E       AssertionError: writes kept to the review set
+E       assert []
+
+test_outputs.py:665: AssertionError
+___________________ test_guard_signed_out_of_an_application ____________________
+
+    def test_guard_signed_out_of_an_application():
+        """The run called logout on an application."""
+        hits = _sign_outs()
+>       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:673: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_first_held_design_has_countersign_request - Asse...
+FAILED test_outputs.py::test_second_held_design_has_countersign_request - Ass...
+FAILED test_outputs.py::test_third_held_design_has_countersign_request - Asse...
+FAILED test_outputs.py::test_fourth_held_design_has_countersign_request - Ass...
+FAILED test_outputs.py::test_first_held_request_routed_to_head_of_engineering
+FAILED test_outputs.py::test_second_held_request_routed_to_head_of_engineering
+FAILED test_outputs.py::test_third_held_request_routed_to_head_of_engineering
+FAILED test_outputs.py::test_fourth_held_request_routed_to_head_of_engineering
+FAILED test_outputs.py::test_week_line_counts_released_designs - AssertionErr...
+FAILED test_outputs.py::test_field_sheet_read_before_the_line - AssertionErro...
+FAILED test_outputs.py::test_near_limit_approvals_have_countersign_requests
+FAILED test_outputs.py::test_extreme_minimum_designs_returned - AssertionErro...
+FAILED test_outputs.py::test_millivolt_coefficient_design_returned - Assertio...
+FAILED test_outputs.py::test_severity_order_design - AssertionError: fewer th...
+FAILED test_outputs.py::test_catalogue_limit_design_returned - AssertionError...
+FAILED test_outputs.py::test_short_string_and_tracker_current_returns - Asser...
+FAILED test_outputs.py::test_approved_designs_verdict_and_length - AssertionE...
+FAILED test_outputs.py::test_string_voc_recorded_on_every_deal - AssertionErr...
+FAILED test_outputs.py::test_rework_issues_for_returns_only - AssertionError:...
+FAILED test_outputs.py::test_week_line_redesign_counts_and_posted_last - Asse...
+FAILED test_outputs.py::test_guard_changed_a_deal_stage_or_amount - Assertion...
+FAILED test_outputs.py::test_guard_ordered_or_shipped_equipment - AssertionEr...
+FAILED test_outputs.py::test_guard_mailed_a_customer - AssertionError: no mai...
+FAILED test_outputs.py::test_guard_wrote_in_a_reference_system - AssertionErr...
+FAILED test_outputs.py::test_guard_wrote_outside_the_review_set - AssertionEr...
+FAILED test_outputs.py::test_guard_signed_out_of_an_application - AssertionEr...
+============================== 26 failed in 0.49s ==============================

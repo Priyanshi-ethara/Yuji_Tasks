@@ -1,0 +1,56 @@
+{
+ "calendars": [
+  {
+   "id": "carbon.desk@talvik.example",
+   "summary": "Carbon accounting desk",
+   "primary": false
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-t02-001",
+   "calendar_id": "carbon.desk@talvik.example",
+   "summary": "FY2026 Scope 2 inventory — board + summary page",
+   "description": "Desk fills the board and publishes the SUST summary page; inventory struck on publication.",
+   "location": "Teams",
+   "start": "2026-11-11T08:00:00+00:00",
+   "end": "2026-11-11T17:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.ostrowski@talvik.example",
+   "organizer": "maren.ostrowski@talvik.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-t02-002",
+   "calendar_id": "carbon.desk@talvik.example",
+   "summary": "Arden fieldwork — FY2026 GHG statement",
+   "description": "Registry status sampled as at the summary page publication.",
+   "location": "Teams",
+   "start": "2026-11-24T09:00:00+00:00",
+   "end": "2026-11-28T17:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.ostrowski@talvik.example",
+   "organizer": "maren.ostrowski@talvik.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-t02-003",
+   "calendar_id": "carbon.desk@talvik.example",
+   "summary": "NRR December retirement window",
+   "description": "Broker retires instructed certificates; too late for FY2026 strike.",
+   "location": "Teams",
+   "start": "2026-12-15T15:00:00+00:00",
+   "end": "2026-12-15T16:00:00+00:00",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "maren.ostrowski@talvik.example",
+   "organizer": "maren.ostrowski@talvik.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ]
+}

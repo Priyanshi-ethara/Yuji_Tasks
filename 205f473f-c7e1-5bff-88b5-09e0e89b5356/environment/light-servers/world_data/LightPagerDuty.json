@@ -1,0 +1,127 @@
+{
+ "users": [
+  {
+   "user_id": "PUP01",
+   "name": "Sade Akintola",
+   "email": "sade.akintola@pellam.io",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "SRE"
+  },
+  {
+   "user_id": "PUP02",
+   "name": "Juno Takahara",
+   "email": "juno.takahara@pellam.io",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "Engineer, Fleet Reliability"
+  },
+  {
+   "user_id": "PUP03",
+   "name": "Cassius Ferreira",
+   "email": "cassius.ferreira@pellam.io",
+   "role": "user",
+   "time_zone": "Europe/Lisbon",
+   "job_title": "Engineer, Messaging"
+  },
+  {
+   "user_id": "PUP04",
+   "name": "Ines Varga",
+   "email": "ines.varga@pellam.io",
+   "role": "admin",
+   "time_zone": "Europe/London",
+   "job_title": "SRE triage desk lead"
+  }
+ ],
+ "services": [
+  {
+   "service_id": "PSFLT1",
+   "name": "fleetd-api",
+   "description": "fleetd HTTP and gRPC front",
+   "status": "active",
+   "escalation_policy_id": "EPFLT1",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PSFLT2",
+   "name": "fleetd-workers",
+   "description": "fleetd background workers",
+   "status": "warning",
+   "escalation_policy_id": "EPFLT1",
+   "auto_resolve_timeout": 14400
+  },
+  {
+   "service_id": "PSFLT3",
+   "name": "ingest-gateway",
+   "description": "vehicle gateway",
+   "status": "active",
+   "escalation_policy_id": "EPFLT2",
+   "auto_resolve_timeout": 14400
+  }
+ ],
+ "policies": [
+  {
+   "escalation_policy_id": "EPFLT1",
+   "name": "fleetd on-call (SRE first, then service owner)",
+   "num_loops": 2,
+   "tier1_user_id": "PUP01",
+   "tier2_user_id": "PUP04"
+  },
+  {
+   "escalation_policy_id": "EPFLT2",
+   "name": "ingest on-call",
+   "num_loops": 1,
+   "tier1_user_id": "PUP01",
+   "tier2_user_id": "PUP04"
+  }
+ ],
+ "schedules": [
+  {
+   "schedule_id": "SCHFLT1",
+   "name": "SRE primary",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPFLT1",
+   "current_oncall_user_id": "PUP01",
+   "oncall_start": "2026-11-16T09:00:00Z",
+   "oncall_end": "2026-11-23T09:00:00Z"
+  }
+ ],
+ "incidents": [
+  {
+   "incident_id": "PIFLT7731",
+   "incident_number": 7731,
+   "title": "push provider 5xx, fleetd-workers OOM",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PSFLT2",
+   "escalation_policy_id": "EPFLT1",
+   "assigned_to": "Juno Takahara",
+   "created_at": "2026-11-13T14:02:00Z",
+   "resolved_at": "2026-11-13T19:31:00Z"
+  },
+  {
+   "incident_id": "PIFLT7738",
+   "incident_number": 7738,
+   "title": "fleetd exporter panics after 4.12.0",
+   "status": "acknowledged",
+   "urgency": "low",
+   "service_id": "PSFLT2",
+   "escalation_policy_id": "EPFLT1",
+   "assigned_to": "Sade Akintola",
+   "created_at": "2026-11-11T09:00:00Z",
+   "resolved_at": null
+  },
+  {
+   "incident_id": "PIFLT7480",
+   "incident_number": 7480,
+   "title": "lease renewals stalled",
+   "status": "resolved",
+   "urgency": "high",
+   "service_id": "PSFLT1",
+   "escalation_policy_id": "EPFLT1",
+   "assigned_to": "Juno Takahara",
+   "created_at": "2026-10-07T06:22:00Z",
+   "resolved_at": "2026-10-07T07:25:00Z"
+  }
+ ]
+}

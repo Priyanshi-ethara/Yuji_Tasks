@@ -1,0 +1,40 @@
+BR-2611 is drafted: 22 draft invoices are in QuickBooks, one per site, against each site's ledger customer, and one summary mail has gone to Imogen Ashdale. Run net total £286,186.15 (VAT is added at posting). Nothing was sent to a customer, authorised or collected, and no meter reading or meter record was changed.
+Total billed energy: 1,143,171.216 kWh — 629,534.629 kWh under Edition 6 and 513,636.587 kWh under Edition 7.
+Editions: each half-hour is priced at the edition in force when its energy was consumed (BP-4 section 3), not by the invoice date. Edition 6 covers consumption up to 24:00 on 31 October 2026 and Edition 7 consumption from 00:00 on 1 November 2026, UK civil time, so every invoice carries both editions: 17 days (15–31 October) under Edition 6 and 14 days (1–14 November) under Edition 7 for a site on supply throughout. Dorian's trial sheet, which priced the whole run on Edition 7 because the bills are issued after 1 November (and banded on the UTC timestamps), was not followed; nor was the Edition 6 customer copy in the run folder.
+Clock change: the exports are in UTC, and the bands are in UK civil time. Until 01:00 UTC on Sunday 25 October the UK was on BST (UTC+1), so every half-hour before then was moved one hour later before banding; after it, UK time equals UTC. 25 October had 50 half-hours (a 25-hour day): the hour 01:00–02:00 happened twice and both were Night. A half-hour takes its band, edition and day from the UK civil time at which it begins.
+Demand-registered meters: the commissioning records in the metering asset register show that the A+ and R+ channels of Ashgrove Plastics Moulding, Fenwick Lane Data Hall, Gorsebrook Laundry Services, Kittering Foods Packing are programmed for the capacity-monitoring service to record the MEAN DEMAND over each half-hour (kW and kvar), not energy. Their export values were therefore halved to get kWh and kvarh (energy = mean demand × 0.5 h), and the values themselves are the half-hour demand in kW for the capacity charge. The metering platform's register advance over the period agrees with the halved recorded figures.
+Hollin Bridge Sawmill and Wexcombe Craft Studios are collected by the same collector (Kestrel) on the same meter model, but their commissioning records say their channels record energy (neither has the capacity-monitoring programming), so their values were not halved (Hollin Bridge's were then scaled by its CT correction, below).
+Period-ending stamps: Varden Metering Services stamps each half-hour at its END (VMS-DCA-2026 Schedule 3, also in each meter's commissioning record). For Lanyon Quay Fish Market, Merrowby Care Home, Netherfold Veterinary Hospital, Orchard Rise Hotel, Penhallow Tool Hire, Ravensworth Bowls Club every value was attributed to the half-hour before its stamp, so the bands, the 1 November edition boundary and the period's first and last half-hours all moved by one half-hour compared with reading the stamp as the start. The in-house AMR and Kestrel exports stamp the period start.
+CT changes: once the run was nearly drafted, the commissioning records of Quenby Print Works, Thornaby Wharf Cold Store, Ashgrove Plastics Moulding, Hollin Bridge Sawmill in the metering asset register carried a 16 November 2026 amendment from the field engineer's site visit (also reported in his note in the field team's Commissioning channel): the DNO replaced the CTs in its HV metering units during the East Harrowmere primary works on 6 October 2026, before the run period began, and those meters are still programmed for their old CT ratios. Everything they recorded over this period, the export values and the platform's register advance included, is therefore understated by old ratio / new ratio, so each was billed on its recorded values multiplied by new ratio / old ratio: Quenby Print Works × 600/300; Thornaby Wharf Cold Store × 400/300; Ashgrove Plastics Moulding × 750/600; Hollin Bridge Sawmill × 600/400. The factor applies to active and reactive values alike, so energy, maximum demand and excess reactive all scale with it. For a demand-registered meter it comes on top of the halving: Ashgrove Plastics Moulding's exported values are half-hour mean demand, so its energy = exported value × 0.5 × 750/600 (× 0.625). The drafts already raised for these sites were voided and replaced by corrected drafts.
+Marlpit Garden Centre was billed only from 15 October to 5 November (22 days) because its supply ended: the site account's Supply end date (last day on supply) is 5 November 2026, the new supplier taking over from 00:00 on the next day; the interval data outside those days were not billed.
+Brookhay Brewery Taproom was billed only from 22 October to 14 November (24 days) because its supply started on 22 October 2026 (site account Supply start date); the interval data outside those days were not billed.
+Wendle Street Offices has a future Supply end date (31 December 2026); that does not shorten this period, so it was billed for the full 31 days.
+Capacity charge: for each edition part, the maximum half-hour demand (the billed kWh of the half-hour × 2, which on the demand-registered meters is the corrected recorded kW) within that part, to 0.01 kW, × the days on supply in the part × the edition's rate.
+Excess reactive charge: worked half-hour by half-hour — reactive energy above 0.33 × the same half-hour's kWh — summed per edition part; not on the period's average power factor (Dorian's monthly-PF suggestion was not used).
+Rounding: kWh and kvarh to 0.001, kW to 0.01, each line amount rounded half up to the penny; a draft's total is the sum of its lines. Lines are named '<charge name> (Edition <n>)'; zero lines were left off.
+Ledger customers: each draft went to the customer the site account names; for example the Thornaby Wharf draft went to the active 'Thornaby Wharf Cold Store Ltd' customer, not to the inactive look-alike 'Thornaby Wharf Cold Stores (2019) Ltd', and the 'Orchard Rise Hotels Group' parent account was not used for the Orchard Rise Hotel site.
+
+Per site (billed kWh · maximum demand Ed6 / Ed7 · net draft total):
+- Ashgrove Plastics Moulding (HMS-1146): 186,837.127 kWh · 393.32 kW / 380.72 kW · £45,398.59
+- Brookhay Brewery Taproom (HMS-1139): 17,356.015 kWh · 84.68 kW / 86.04 kW · £4,573.64
+- Calloway Mill Bakery (HMS-1047): 25,974.544 kWh · 96.93 kW / 96.29 kW · £5,730.40
+- Fenwick Lane Data Hall (HMS-1158): 137,454.512 kWh · 218.33 kW / 211.64 kW · £32,896.10
+- Gorsebrook Laundry Services (HMS-1160): 60,999.446 kWh · 145.09 kW / 145.66 kW · £15,863.39
+- Harrowmere Leisure Pool (HMS-1102): 85,744.225 kWh · 168.45 kW / 166.88 kW · £21,526.95
+- Hollin Bridge Sawmill (HMS-1177): 53,954.161 kWh · 269.85 kW / 271.35 kW · £14,130.24
+- Kittering Foods Packing (HMS-1183): 106,845.725 kWh · 228.55 kW / 229.47 kW · £27,147.82
+- Lanyon Quay Fish Market (HMS-1204): 40,578.605 kWh · 107.72 kW / 109.13 kW · £9,562.67
+- Marlpit Garden Centre (HMS-1123): 8,451.907 kWh · 42.41 kW / 42.92 kW · £2,257.25
+- Merrowby Care Home (HMS-1212): 39,252.268 kWh · 82.96 kW / 84.63 kW · £9,810.21
+- Netherfold Veterinary Hospital (HMS-1229): 46,028.968 kWh · 90.52 kW / 87.70 kW · £11,420.66
+- Orchard Rise Hotel (HMS-1235): 59,731.739 kWh · 157.72 kW / 157.81 kW · £14,957.05
+- Ostrey Lane Medical Centre (HMS-1052): 13,737.676 kWh · 48.84 kW / 48.80 kW · £3,752.99
+- Pellingford Community School (HMS-1068): 15,013.384 kWh · 72.10 kW / 72.97 kW · £4,059.44
+- Penhallow Tool Hire (HMS-1248): 8,084.089 kWh · 30.17 kW / 29.47 kW · £2,233.00
+- Quenby Print Works (HMS-1073): 98,328.686 kWh · 270.95 kW / 255.38 kW · £25,683.75
+- Ravensworth Bowls Club (HMS-1256): 12,042.729 kWh · 48.44 kW / 47.97 kW · £3,330.82
+- Saltash Row Garage (HMS-1081): 9,088.056 kWh · 37.27 kW / 36.85 kW · £2,562.91
+- Thornaby Wharf Cold Store (HMS-1094): 93,955.313 kWh · 202.55 kW / 199.92 kW · £22,810.38
+- Wendle Street Offices (HMS-1115): 19,116.731 kWh · 64.06 kW / 67.47 kW · £5,147.46
+- Wexcombe Craft Studios (HMS-1191): 4,595.310 kWh · 17.58 kW / 18.03 kW · £1,330.43
+Sum of the 22 drafts: £286,186.15.

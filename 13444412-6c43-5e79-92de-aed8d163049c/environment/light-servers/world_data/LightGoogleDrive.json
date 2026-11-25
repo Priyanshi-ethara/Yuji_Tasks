@@ -1,0 +1,133 @@
+{
+ "files": [
+  {
+   "id": "folder-tsl-desk",
+   "name": "Billing Desk",
+   "mime_type": "application/vnd.google-apps.folder",
+   "parent_id": null,
+   "size": 0,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/folder-tsl-desk"
+  },
+  {
+   "id": "file-tsl-draft",
+   "name": "Desk draft dispositions 2026-11-15 (Tom)",
+   "mime_type": "application/vnd.google-apps.spreadsheet",
+   "parent_id": "folder-tsl-desk",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-11-15T21:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-draft"
+  },
+  {
+   "id": "file-tsl-export",
+   "name": "Stripe price export 2026-11-15",
+   "mime_type": "text/csv",
+   "parent_id": "folder-tsl-desk",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-export"
+  },
+  {
+   "id": "folder-tsl-of",
+   "name": "Order forms",
+   "mime_type": "application/vnd.google-apps.folder",
+   "parent_id": "folder-tsl-desk",
+   "size": 0,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/folder-tsl-of"
+  },
+  {
+   "id": "file-tsl-of-0147",
+   "name": "OF-2025-0147 Dunmore Lane Architects - signed.pdf",
+   "mime_type": "application/pdf",
+   "parent_id": "folder-tsl-of",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-of-0147"
+  },
+  {
+   "id": "file-tsl-of-0031",
+   "name": "OF-2026-0031 Mistral Yard - signed.pdf",
+   "mime_type": "application/pdf",
+   "parent_id": "folder-tsl-of",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-of-0031"
+  },
+  {
+   "id": "file-tsl-logs",
+   "name": "Desk logs 2026",
+   "mime_type": "application/vnd.google-apps.spreadsheet",
+   "parent_id": "folder-tsl-desk",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-logs"
+  },
+  {
+   "id": "file-tsl-qa",
+   "name": "Desk QA review October 2026",
+   "mime_type": "application/vnd.google-apps.document",
+   "parent_id": "folder-tsl-desk",
+   "size": 24000,
+   "created_time": "2026-01-05T09:00:00Z",
+   "modified_time": "2026-10-30T09:00:00Z",
+   "owner_email": "maren.holt@tessellate.studio",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://drive.google.com/file/d/file-tsl-qa"
+  }
+ ],
+ "permissions": [
+  {
+   "id": "perm-tsl-001",
+   "file_id": "folder-tsl-desk",
+   "type": "user",
+   "role": "owner",
+   "email": "maren.holt@tessellate.studio",
+   "display_name": "Maren Holt"
+  },
+  {
+   "id": "perm-tsl-002",
+   "file_id": "folder-tsl-desk",
+   "type": "user",
+   "role": "writer",
+   "email": "tom.achterberg@tessellate.studio",
+   "display_name": "Tom Achterberg"
+  }
+ ],
+ "about": {
+  "user": {
+   "displayName": "Maren Holt",
+   "emailAddress": "maren.holt@tessellate.studio",
+   "permissionId": "perm-tsl-001"
+  }
+ }
+}

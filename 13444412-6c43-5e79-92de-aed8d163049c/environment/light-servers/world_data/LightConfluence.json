@@ -1,0 +1,145 @@
+{
+ "spaces": [
+  {
+   "id": 74000,
+   "key": "BD",
+   "name": "Billing Desk",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Billing desk standards, templates and field guides",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "740001",
+   "type": "page",
+   "status": "current",
+   "title": "Billing Desk home",
+   "space_key": "BD",
+   "parent_id": null,
+   "version": 7,
+   "body": "Billing Desk space. Standards, templates and field guides for the desk. Questions: #billing-desk.",
+   "created_by": "Maren Holt",
+   "created_at": "2024-01-15T09:00:00Z"
+  },
+  {
+   "id": "740002",
+   "type": "page",
+   "status": "current",
+   "title": "Plan change desk standard (BD-STD-2)",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 4,
+   "body": "BD-STD-2 Plan change desk standard (edition in force from 1 September 2026; owner Maren Holt, Billing Desk lead)\n\n1. Purpose. This standard governs how the billing desk turns a customer's message into a change to what the account is billed. It applies to every ticket in the Plan changes queue.\n\n2. What the customer is asking. The request is the account's latest instruction to us, on any channel we run: the help desk ticket and its replies, in-app chat and the desk mailbox. Quoted history, forwarded text, signatures and disclaimers are context, not instructions. Where the customer refers back to something (\"the one we discussed\", \"go ahead\"), the request is what that reference points to. Read exceptions and negations for their scope: \"all except X\" leaves X in place.\n\n3. Who can ask. Authority to change what an account is billed rests with the account's billing contact: the person the account has registered with us to receive and settle its invoices. Job titles, seniority and signatures do not confer it, and neither does forwarding the billing contact's words. A request without that authority is held: disposition \"Needs billing-contact confirmation\", and nothing is changed.\n\n4. When a change takes effect. Added seats and moves to a higher plan take effect on the day the desk processes them. Fewer seats, a lower plan, a change of billing interval and a cancellation take effect at the subscription's billing anchor, the end of the period the customer has paid for. \"Renewal\" means that anchor. A change the customer ties to a later month takes effect at the first billing anchor on or after the first day of that month. Where the customer asks for a later point than the earliest this clause allows, the later point governs.\n\n5. Conditions. A customer may make a request depend on something (\"if\", \"provided\", \"unless\", \"as long as\"). The condition is judged on the terms the customer would actually get under the change, and the request is carried out only if it is met; \"unless\" works the same way in reverse. Where it is not met, the disposition is \"No change — condition not met\" and nothing else is done. Say in the reply what the condition was judged on.\n\n6. Prices. The price book (Revenue Operations, in Notion) is the source of record for every price the desk states, records or compares. A change is billed at the price-book price for the period in which it takes effect. Stripe price objects are the billing platform's internal records and are not a price list; exports and summaries are working copies.\n\n7. Ending a subscription. A cancellation ends the subscription at the close of its paid period (cancel at period end in Stripe). The desk never ends a subscription early and never refunds; a refund or credit request is answered with the template's refund sentence and Finance picks it up from the ticket, and the plan part of the message is processed on its own merits.\n\n8. What the desk records. One change-order row per ticket in the Billing Desk base, one disposition from the list below, the reply from the matching template, and one desk-log record when the queue is cleared. Dispositions: Change scheduled; Cancellation scheduled; No change — condition not met; No change — withdrawn; No change — already in place; Needs billing-contact confirmation.\n\n9. Already in place. Where the account already stands as the customer asks, the disposition is \"No change — already in place\".\n\n10. Retention. Discounts and retention offers are Customer Success decisions recorded on a signed order form; the desk does not apply or promise them.\n",
+   "created_by": "Maren Holt",
+   "created_at": "2026-08-25T09:00:00Z"
+  },
+  {
+   "id": "740003",
+   "type": "page",
+   "status": "current",
+   "title": "PC reply templates",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 6,
+   "body": "PC reply templates (for BD-STD-2 section 8). Post the template as a public reply on the ticket, fill the brackets, add the template's tag to the ticket and set the status shown. Keep the ticket's other tags.\n\nPC-1 Change confirmed - tag pc_change_scheduled - status solved\n\"Hi [first name], we've scheduled your change: [new plan] for [seats] seats from [effective date], at £[unit price] per seat [per month/per year]. [Anything we could not do and who handles it.] Tessellate Billing Desk\"\n\nPC-2 Cancellation confirmed - tag pc_cancellation_scheduled - status solved\n\"Hi [first name], your subscription is set to end on [effective date], the close of the period you have paid for. You keep full access until then. Tessellate Billing Desk\"\n\nPC-3 Condition not met - tag pc_condition_not_met - status solved\n\"Hi [first name], you asked us to [request] only if [condition]. [What it was judged on.] So we've left your subscription as it is. Tessellate Billing Desk\"\n\nPC-4 Request withdrawn - tag pc_withdrawn - status solved\n\"Hi [first name], thanks for letting us know - we've left your subscription as it is. Tessellate Billing Desk\"\n\nPC-5 Billing contact confirmation - tag pc_billing_contact_needed - status pending\n\"Hi [first name], changes to what your account is billed need your billing contact's go-ahead. We've asked them to confirm on this ticket; nothing changes until they do. Tessellate Billing Desk\"\n\nPC-6 Already in place - tag pc_already_in_place - status solved\n\"Hi [first name], your account already stands as you asked: [current plan and seats]. Tessellate Billing Desk\"\n\nRefund or credit requests: add to the reply \"Refunds and credits are handled by our Finance team, who will pick up your request from this ticket.\" Do not process them and do not send them on; Finance reads the replies daily.\n",
+   "created_by": "Maren Holt",
+   "created_at": "2026-08-25T09:30:00Z"
+  },
+  {
+   "id": "740004",
+   "type": "page",
+   "status": "current",
+   "title": "Billing Desk base - field guide",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 3,
+   "body": "Billing Desk base - field guide (Change orders and Desk log)\n\nChange orders: one row per ticket, created by the intake bot with Ticket, Account (as written), Received and Requester. \"Account (as written)\" is the bot's guess from the subject line; identify the account yourself.\nThe desk fills: Disposition (BD-STD-2 section 8, exactly as listed); Stripe customer (cus_ id); Subscription (sub_ id); and, for a scheduled change only, New plan (plan and interval as the subscription will stand, e.g. \"Grid Annual\"), Seats (the total seat count after the change), Effective date (YYYY-MM-DD) and Unit price (GBP) (the per-seat price for the new plan's billing interval: per month on a monthly plan, per year on an annual plan). For a cancellation fill Effective date as well and leave New plan, Seats and Unit price empty. For every other disposition leave those four empty.\nThe nightly billing sync reads Change orders at 18:00 and applies scheduled rows at their effective date. Stripe itself is only written for cancellations (cancel at period end).\nDesk log: one record per desk day, created after the last change order of the day: Date, Tickets processed and one count per disposition (Changes scheduled, Cancellations scheduled, Condition not met, Withdrawn, Already in place, Awaiting billing contact), Prepared by, Notes.\n",
+   "created_by": "Maren Holt",
+   "created_at": "2026-08-26T09:00:00Z"
+  },
+  {
+   "id": "740005",
+   "type": "page",
+   "status": "current",
+   "title": "Refunds, credits and disputes (Finance)",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 2,
+   "body": "Finance owns every refund, credit note and chargeback. Finance reads the Plan changes replies every day and picks refund requests up from the tickets; the desk never issues them in Stripe or QuickBooks and does not mail them on. QuickBooks is Finance's ledger; the desk has read access only.",
+   "created_by": "Lou Varga",
+   "created_at": "2025-11-02T09:00:00Z"
+  },
+  {
+   "id": "740006",
+   "type": "page",
+   "status": "current",
+   "title": "Retention offers (Customer Success)",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 5,
+   "body": "Customer Success may propose retention offers (discounts, free months). An offer exists only once Finance approves it and it is written into a signed order form. Proposed offers in the Retention offers table are not commitments.",
+   "created_by": "Priscilla Vane",
+   "created_at": "2026-02-10T09:00:00Z"
+  },
+  {
+   "id": "740007",
+   "type": "page",
+   "status": "current",
+   "title": "Desk notes 2026-W46",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 2,
+   "body": "Monday 16 Nov: Maren on desk; Tom drafted a first pass at the Plan changes queue on Sunday (sheet in the data folder and on Drive) - check it, don't copy it. Billing sync 18:00. Finance close Friday.",
+   "created_by": "Maren Holt",
+   "created_at": "2026-11-15T19:00:00Z"
+  },
+  {
+   "id": "740008",
+   "type": "page",
+   "status": "current",
+   "title": "BD-STD-1 Plan change desk standard (withdrawn 31 August 2026)",
+   "space_key": "BD",
+   "parent_id": "740001",
+   "version": 9,
+   "body": "Withdrawn. Replaced by BD-STD-2 from 1 September 2026. Kept for audit of tickets handled before that date.",
+   "created_by": "Maren Holt",
+   "created_at": "2024-01-15T09:00:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": "741001",
+   "page_id": "740002",
+   "author": "Tom Achterberg",
+   "body": "Q: if a forward comes from the billing contact's own colleague with the billing contact in cc, is that enough? A (Maren): no - it has to come from the billing contact, on any of our channels.",
+   "created_at": "2026-09-14T10:00:00Z"
+  },
+  {
+   "id": "741002",
+   "page_id": "740003",
+   "author": "Maren Holt",
+   "body": "Remember the tag AND the status - the pending status is what triggers the billing-contact chaser.",
+   "created_at": "2026-09-02T10:00:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "742001",
+   "page_id": "740002",
+   "name": "standard",
+   "prefix": "global"
+  },
+  {
+   "id": "742002",
+   "page_id": "740003",
+   "name": "templates",
+   "prefix": "global"
+  }
+ ]
+}

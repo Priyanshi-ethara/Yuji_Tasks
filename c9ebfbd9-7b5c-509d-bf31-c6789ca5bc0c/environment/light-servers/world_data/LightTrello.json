@@ -1,0 +1,506 @@
+{
+ "boards": [
+  {
+   "id": "60b2000000000000000045a0",
+   "name": "QA Release · Round R-2026-45",
+   "desc": "Release round R-2026-45, lane HX-4, receipts 3-7 Nov 2026. Card record per the desk's grammar; outcomes per QA-SOP-114 in force.",
+   "closed": false,
+   "id_organization": "5e0a0000000000000000tw01",
+   "url": "https://trello.com/b/twkr45/qa-release-round-r-2026-45",
+   "member_ids": [
+    "5f1a000000000000000000a1",
+    "5f1a0000000000000000c045",
+    "5f1a0000000000000000c046"
+   ],
+   "prefs": {
+    "permissionLevel": "org"
+   }
+  },
+  {
+   "id": "60b2000000000000000044a0",
+   "name": "QA Release · Round R-2026-44",
+   "desc": "Release round R-2026-44 (closed 3 Nov 2026).",
+   "closed": false,
+   "id_organization": "5e0a0000000000000000tw01",
+   "url": "https://trello.com/b/twkr44/qa-release-round-r-2026-44",
+   "member_ids": [
+    "5f1a000000000000000000a1",
+    "5f1a0000000000000000c045",
+    "5f1a0000000000000000c046"
+   ],
+   "prefs": {
+    "permissionLevel": "org"
+   }
+  }
+ ],
+ "lists": [
+  {
+   "id": "61c200000000000000004501",
+   "id_board": "60b2000000000000000045a0",
+   "name": "To review",
+   "closed": false,
+   "pos": 1
+  },
+  {
+   "id": "61c200000000000000004502",
+   "id_board": "60b2000000000000000045a0",
+   "name": "Release",
+   "closed": false,
+   "pos": 2
+  },
+  {
+   "id": "61c200000000000000004503",
+   "id_board": "60b2000000000000000045a0",
+   "name": "Release with deviation",
+   "closed": false,
+   "pos": 3
+  },
+  {
+   "id": "61c200000000000000004504",
+   "id_board": "60b2000000000000000045a0",
+   "name": "Quarantine",
+   "closed": false,
+   "pos": 4
+  },
+  {
+   "id": "61c200000000000000004505",
+   "id_board": "60b2000000000000000045a0",
+   "name": "Reject",
+   "closed": false,
+   "pos": 5
+  },
+  {
+   "id": "61c200000000000000004506",
+   "id_board": "60b2000000000000000045a0",
+   "name": "QA Head sign-off",
+   "closed": false,
+   "pos": 6
+  },
+  {
+   "id": "61c200000000000000004401",
+   "id_board": "60b2000000000000000044a0",
+   "name": "To review",
+   "closed": false,
+   "pos": 1
+  },
+  {
+   "id": "61c200000000000000004402",
+   "id_board": "60b2000000000000000044a0",
+   "name": "Release",
+   "closed": false,
+   "pos": 2
+  },
+  {
+   "id": "61c200000000000000004403",
+   "id_board": "60b2000000000000000044a0",
+   "name": "Release with deviation",
+   "closed": false,
+   "pos": 3
+  },
+  {
+   "id": "61c200000000000000004404",
+   "id_board": "60b2000000000000000044a0",
+   "name": "Quarantine",
+   "closed": false,
+   "pos": 4
+  },
+  {
+   "id": "61c200000000000000004405",
+   "id_board": "60b2000000000000000044a0",
+   "name": "Reject",
+   "closed": false,
+   "pos": 5
+  },
+  {
+   "id": "61c200000000000000004406",
+   "id_board": "60b2000000000000000044a0",
+   "name": "QA Head sign-off",
+   "closed": false,
+   "pos": 6
+  }
+ ],
+ "cards": [
+  {
+   "id": "62d200000000000000004501",
+   "name": "CVM-260412 · Corvalimab · HX4-41188",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41188",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 16384.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004502",
+   "name": "PLM-260377 · Pellumab · HX4-41188",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-118\nShipment: HX4-41188",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 32768.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004503",
+   "name": "FRT-260221 · Ferotinase · HX4-41190",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-305\nShipment: HX4-41190",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 49152.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004504",
+   "name": "OSV-260090 · Ostravax · HX4-41190",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-440\nShipment: HX4-41190",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 65536.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004505",
+   "name": "PLM-260381 · Pellumab · HX4-41195",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-118\nShipment: HX4-41195",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 81920.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004506",
+   "name": "CVM-260415 · Corvalimab · HX4-41199",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41199",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 98304.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004507",
+   "name": "FRT-260224 · Ferotinase · HX4-41199",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-305\nShipment: HX4-41199",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 114688.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004508",
+   "name": "OSV-260094 · Ostravax · HX4-41203",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-440\nShipment: HX4-41203",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 131072.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004509",
+   "name": "CVM-260419 · Corvalimab · HX4-41203",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41203",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 147456.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004510",
+   "name": "CVM-260417 · Corvalimab · HX4-41207",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41207",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 163840.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004511",
+   "name": "FRT-260230 · Ferotinase · HX4-41207",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-305\nShipment: HX4-41207",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 180224.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004512",
+   "name": "OSV-260097 · Ostravax · HX4-41207",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-440\nShipment: HX4-41207",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 196608.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004513",
+   "name": "PLM-260385 · Pellumab · HX4-41211",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-118\nShipment: HX4-41211",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 212992.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004514",
+   "name": "CVM-260421 · Corvalimab · HX4-41211",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41211",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 229376.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004515",
+   "name": "FRT-260233 · Ferotinase · HX4-41215",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-305\nShipment: HX4-41215",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 245760.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004516",
+   "name": "PLM-260389 · Pellumab · HX4-41215",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-118\nShipment: HX4-41215",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 262144.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004517",
+   "name": "CVM-260425 · Corvalimab · HX4-41219",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-201\nShipment: HX4-41219",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 278528.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004518",
+   "name": "OSV-260101 · Ostravax · HX4-41223",
+   "desc": "Awaiting cold-chain review (R-2026-45).\nProduct: TB-440\nShipment: HX4-41223",
+   "id_board": "60b2000000000000000045a0",
+   "id_list": "61c200000000000000004501",
+   "pos": 294912.0,
+   "due": "2026-11-10T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-45"
+   ]
+  },
+  {
+   "id": "62d200000000000000004401",
+   "name": "CVM-260398 · R-2026-44",
+   "desc": "Outcome: Release\nMKT: 5.12 C\nLane TOR: 0.00 h\nCumulative TOR: 9.50 h of 72 h\nDeviation: none",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004402",
+   "pos": 16384.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  },
+  {
+   "id": "62d200000000000000004402",
+   "name": "CVM-260401 · R-2026-44",
+   "desc": "Outcome: Release with deviation\nMKT: 5.66 C\nLane TOR: 1.25 h\nCumulative TOR: 21.25 h of 72 h\nDeviation: QAD-402",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004403",
+   "pos": 32768.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  },
+  {
+   "id": "62d200000000000000004403",
+   "name": "OSV-260083 · R-2026-44",
+   "desc": "Outcome: Referred to QA Head\nMKT: 4.96 C\nLane TOR: 0.75 h\nCumulative TOR: 28.50 h of 36 h\nDeviation: QAD-404\nSigned off by R. Achterberg 2026-11-05",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004406",
+   "pos": 49152.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  },
+  {
+   "id": "62d200000000000000004404",
+   "name": "CVM-260404 · R-2026-44",
+   "desc": "Outcome: Quarantine\nMKT: 5.31 C\nLane TOR: 0.00 h\nCumulative TOR: 12.00 h of 72 h\nDeviation: QAD-405",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004404",
+   "pos": 65536.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  },
+  {
+   "id": "62d200000000000000004405",
+   "name": "FRT-260214 · R-2026-44",
+   "desc": "Outcome: Release with deviation\nMKT: 5.64 C\nLane TOR: 0.50 h\nCumulative TOR: 18.25 h of 48 h\nDeviation: QAD-403",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004403",
+   "pos": 81920.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  },
+  {
+   "id": "62d200000000000000004406",
+   "name": "PLM-260370 · R-2026-44",
+   "desc": "Outcome: Release\nMKT: 4.97 C\nLane TOR: 0.00 h\nCumulative TOR: 30.00 h of 120 h\nDeviation: none",
+   "id_board": "60b2000000000000000044a0",
+   "id_list": "61c200000000000000004402",
+   "pos": 98304.0,
+   "due": "2026-11-03T17:00:00Z",
+   "closed": false,
+   "member_ids": [],
+   "labels": [
+    "R-2026-44"
+   ]
+  }
+ ],
+ "members": [
+  {
+   "id": "5f1a0000000000000000c045",
+   "fullName": "Ines Calloway",
+   "username": "icalloway",
+   "email": "ines.calloway@tarnwick-bio.example"
+  },
+  {
+   "id": "5f1a0000000000000000c046",
+   "fullName": "Jonas Brandt",
+   "username": "jbrandt",
+   "email": "jonas.brandt@tarnwick-bio.example"
+  }
+ ],
+ "checklists": [
+  {
+   "id": "cl_r45_close",
+   "id_card": "62d200000000000000004501",
+   "id_board": "60b2000000000000000045a0",
+   "name": "Round close checks",
+   "pos": 1000,
+   "check_items": [
+    {
+     "id": "ci_r45_1",
+     "id_checklist": "cl_r45_close",
+     "name": "Every card carries the five-line record",
+     "state": "incomplete",
+     "pos": 1000
+    },
+    {
+     "id": "ci_r45_2",
+     "id_checklist": "cl_r45_close",
+     "name": "Incomplete logger records re-checked in the carrier drop",
+     "state": "incomplete",
+     "pos": 2000
+    },
+    {
+     "id": "ci_r45_3",
+     "id_checklist": "cl_r45_close",
+     "name": "Closing note in #qa-release-desk",
+     "state": "incomplete",
+     "pos": 3000
+    }
+   ]
+  }
+ ]
+}

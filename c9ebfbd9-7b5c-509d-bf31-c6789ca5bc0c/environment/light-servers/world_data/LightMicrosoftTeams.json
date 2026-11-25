@@ -1,0 +1,95 @@
+{
+ "teams": [
+  {
+   "id": "19:team-twk-polararc@thread.tacv2",
+   "displayName": "Tarnwick x Polar Arc - lane HX-4",
+   "description": "Carrier coordination",
+   "visibility": "private",
+   "isArchived": false,
+   "webUrl": "https://teams.example/l/team/twk-polararc",
+   "member_ids": [
+    "user-001",
+    "user-dagny",
+    "user-ahune"
+   ],
+   "membershipType": "standard"
+  }
+ ],
+ "channels": [
+  {
+   "id": "19:chan-hx4-r45@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "displayName": "R-2026-45",
+   "description": "Round R-2026-45 shipments",
+   "membershipType": "standard",
+   "webUrl": "https://teams.example/l/channel/hx4-r45",
+   "createdDateTime": "2026-11-02T08:00:00Z"
+  },
+  {
+   "id": "19:chan-hx4-gen@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "displayName": "General",
+   "description": "General",
+   "membershipType": "standard",
+   "webUrl": "https://teams.example/l/channel/hx4-gen",
+   "createdDateTime": "2026-01-02T08:00:00Z"
+  }
+ ],
+ "messages": [
+  {
+   "id": "1794500000001",
+   "channel_id": "19:chan-hx4-r45@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "from_user_id": "user-dagny",
+   "from_display_name": "Dagny Rask",
+   "content": "TK9-5521 seg2 (05 Nov 02:00-07:50Z) didn't upload, gateway restart. Recovering from the logger flash, it goes into the drop as soon as it's out.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-11-06T10:12:00Z"
+  },
+  {
+   "id": "1794500000002",
+   "channel_id": "19:chan-hx4-r45@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "from_user_id": "user-ahune",
+   "from_display_name": "Aleksander Hune",
+   "content": "Thanks Dagny. QA will want it before they close the round.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-11-06T10:40:00Z"
+  },
+  {
+   "id": "1794500000003",
+   "channel_id": "19:chan-hx4-r45@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "from_user_id": "user-dagny",
+   "from_display_name": "Dagny Rask",
+   "content": "Still on it. Honestly the trailer reefer controller showed 4-6 C all night, you could just release those lots.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-11-09T15:05:00Z"
+  },
+  {
+   "id": "1794500000004",
+   "channel_id": "19:chan-hx4-r45@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "from_user_id": "user-ahune",
+   "from_display_name": "Aleksander Hune",
+   "content": "We can't use the reefer controller, only the logger record. Please upload the segment.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-11-09T15:20:00Z"
+  },
+  {
+   "id": "1794500000005",
+   "channel_id": "19:chan-hx4-gen@thread.tacv2",
+   "team_id": "19:team-twk-polararc@thread.tacv2",
+   "from_user_id": "user-dagny",
+   "from_display_name": "Dagny Rask",
+   "content": "Reminder: TK9 fleet on firmware 4.2.1 since 20 Oct - exports in F, see the meta files.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-10-20T09:00:00Z"
+  }
+ ]
+}

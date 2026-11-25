@@ -1,0 +1,118 @@
+{
+    "id": "40b4c691-97b8-49a3-83bb-04e522308d28",
+    "task_name": "atlas/40ea4665-a13d-5cb8-875b-59bf9f2b1d95",
+    "trial_name": "40ea4665-a13d-5cb8-875b-59bf9f2b__iuiLQpy",
+    "trial_uri": "file:///private/tmp/qc/oracle_nop_20261116_165300/40ea4665-a13d-5cb8-875b-59bf9f2b1d95/oracle/40ea4665-a13d-5cb8-875b-59bf9f2b__iuiLQpy",
+    "task_id": {
+        "path": "/tmp/qc/oracle_nop_20261116_165300/_copies/40ea4665-a13d-5cb8-875b-59bf9f2b1d95"
+    },
+    "source": null,
+    "task_checksum": "4b0823a2a526c545756384c74109e5a390e00555b0782dbc44f902ebcffc0d5e",
+    "config": {
+        "task": {
+            "path": "/tmp/qc/oracle_nop_20261116_165300/_copies/40ea4665-a13d-5cb8-875b-59bf9f2b1d95",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "40ea4665-a13d-5cb8-875b-59bf9f2b__iuiLQpy",
+        "trials_dir": "/tmp/qc/oracle_nop_20261116_165300/40ea4665-a13d-5cb8-875b-59bf9f2b1d95/oracle",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "limit",
+            "memory_enforcement_policy": "limit",
+            "override_cpus": 2,
+            "override_memory_mb": 4096,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "b4a480b9-4e86-4580-8b87-b682f789e548",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "pytest": 1.0,
+            "rubric": 1.0,
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-11-16T11:23:04.010882Z",
+    "finished_at": "2026-11-16T11:25:00.032205Z",
+    "environment_setup": {
+        "started_at": "2026-11-16T11:23:04.447807Z",
+        "finished_at": "2026-11-16T11:23:24.264696Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-16T11:23:24.267001Z",
+        "finished_at": "2026-11-16T11:23:24.269239Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-16T11:23:24.274381Z",
+        "finished_at": "2026-11-16T11:23:29.991933Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-16T11:23:49.461436Z",
+        "finished_at": "2026-11-16T11:25:00.031537Z"
+    },
+    "step_results": null
+}

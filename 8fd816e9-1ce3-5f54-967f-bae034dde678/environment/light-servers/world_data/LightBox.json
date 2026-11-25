@@ -1,0 +1,96 @@
+{
+ "folders": [
+  {
+   "id": "0",
+   "name": "All Files",
+   "parent_id": "",
+   "owner_id": "77001",
+   "description": "Root folder",
+   "created_at": "2025-09-01T10:00:00-07:00",
+   "modified_at": "2026-11-01T10:00:00-07:00",
+   "item_count": 1
+  },
+  {
+   "id": "77100",
+   "name": "Reliability Office archive",
+   "parent_id": "0",
+   "owner_id": "77001",
+   "description": "Published reports and review packs",
+   "created_at": "2026-02-01T10:00:00-07:00",
+   "modified_at": "2026-11-01T10:00:00-07:00",
+   "item_count": 4
+  }
+ ],
+ "files": [
+  {
+   "id": "77201",
+   "name": "slo-report-2026-08.md",
+   "parent_id": "77100",
+   "owner_id": "77001",
+   "description": "Published August report",
+   "size": 4096,
+   "extension": "md",
+   "sha1": "7720177201772017720177201772017720177201",
+   "created_at": "2026-10-05T10:00:00-07:00",
+   "modified_at": "2026-10-05T10:00:00-07:00"
+  },
+  {
+   "id": "77202",
+   "name": "slo-report-2026-09.md",
+   "parent_id": "77100",
+   "owner_id": "77001",
+   "description": "Published September report",
+   "size": 4096,
+   "extension": "md",
+   "sha1": "7720277202772027720277202772027720277202",
+   "created_at": "2026-10-05T10:00:00-07:00",
+   "modified_at": "2026-10-05T10:00:00-07:00"
+  },
+  {
+   "id": "77203",
+   "name": "rs-2-edition-history.md",
+   "parent_id": "77100",
+   "owner_id": "77001",
+   "description": "Editions of RS-2",
+   "size": 4096,
+   "extension": "md",
+   "sha1": "7720377203772037720377203772037720377203",
+   "created_at": "2026-10-05T10:00:00-07:00",
+   "modified_at": "2026-10-05T10:00:00-07:00"
+  },
+  {
+   "id": "77204",
+   "name": "reliability-review-2026-10-07-slides.pdf",
+   "parent_id": "77100",
+   "owner_id": "77001",
+   "description": "Review slides",
+   "size": 4096,
+   "extension": "pdf",
+   "sha1": "7720477204772047720477204772047720477204",
+   "created_at": "2026-10-05T10:00:00-07:00",
+   "modified_at": "2026-10-05T10:00:00-07:00"
+  }
+ ],
+ "users": [
+  {
+   "id": "77001",
+   "name": "Ines Calloway",
+   "login": "ines.calloway@brightwater-payments.example",
+   "role": "admin",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10995116277760,
+   "space_used": 2147483648,
+   "max_upload_size": 5368709120,
+   "job_title": "Head of Reliability Office",
+   "phone": "",
+   "created_at": "2025-09-01T10:00:00-07:00"
+  }
+ ],
+ "file_blobs": {
+  "slo-report-2026-08.md": "# SLO attainment — August 2026 — 3 of 20 objectives missed\nMissed: journal-export, merchant-onboarding-api, statement-render.\nMaintenance: a card-auth-gateway window raised the morning after the work was excluded in the draft and reinstated at review.",
+  "slo-report-2026-09.md": "# SLO attainment — September 2026 — 4 of 20 objectives missed\nSee the RELY page for the table. Figures from each SLO's nominated panel.",
+  "rs-2-edition-history.md": "# RS-2 edition history\n- Ed. 4 (2026-02-02): request-based SLIs.\n- Ed. 5 (2026-07-06): bad-minute SLIs.\n- Ed. 6 (2026-08-01, in force): Tier 3; maintenance declared before the window; production serving path wording clarified.\nOnly the wiki page carries the text in force."
+ }
+}

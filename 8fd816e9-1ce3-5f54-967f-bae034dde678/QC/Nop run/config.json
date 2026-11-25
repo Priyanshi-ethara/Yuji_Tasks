@@ -1,0 +1,21 @@
+{
+    "job_name": "nop",
+    "jobs_dir": "/tmp/qc/oracle_nop_20261116_170046/8fd816e9-1ce3-5f54-967f-bae034dde678",
+    "environment": {
+        "type": "docker",
+        "cpu_enforcement_policy": "limit",
+        "memory_enforcement_policy": "limit",
+        "override_cpus": 2,
+        "override_memory_mb": 4096
+    },
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/tmp/qc/oracle_nop_20261116_170046/_copies/8fd816e9-1ce3-5f54-967f-bae034dde678"
+        }
+    ]
+}

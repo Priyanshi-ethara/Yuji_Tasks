@@ -1,0 +1,100 @@
+{
+ "current_user": {
+  "username": "pellam-sre-desk"
+ },
+ "users": [
+  {
+   "id": 41001,
+   "username": "mirror-bot",
+   "name": "Mirror Bot",
+   "email": "mirror-bot@pellam.io",
+   "state": "active",
+   "avatar_url": null
+  },
+  {
+   "id": 41002,
+   "username": "leif.domingo",
+   "name": "Leif Domingo",
+   "email": "leif.domingo@pellam.io",
+   "state": "active",
+   "avatar_url": null
+  }
+ ],
+ "projects": [
+  {
+   "id": 4100,
+   "name": "fleetd",
+   "path_with_namespace": "pellam-mirror/fleetd",
+   "description": "Disaster-recovery mirror of github.com/pellam/fleetd. Read-only; syncs nightly and is often days behind. Not a source for ownership.",
+   "default_branch": "main",
+   "visibility": "private",
+   "star_count": 0,
+   "forks_count": 0,
+   "open_issues_count": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": 51001,
+   "iid": 1,
+   "project_id": 4100,
+   "title": "Mirror sync lagging (last good sync 2026-11-09)",
+   "description": "Nightly push mirror failed six nights running; CODEOWNERS here predates #3402 and #3441.",
+   "state": "opened",
+   "author": "mirror-bot",
+   "assignee": "leif.domingo",
+   "labels": [
+    "mirror"
+   ],
+   "created_at": "2026-11-10T02:00:00.000Z",
+   "updated_at": "2026-11-15T02:00:00.000Z",
+   "closed_at": null
+  },
+  {
+   "id": 51002,
+   "iid": 2,
+   "project_id": 4100,
+   "title": "Do not open MRs here",
+   "description": "All changes go through GitHub. This project only receives the mirror push.",
+   "state": "opened",
+   "author": "leif.domingo",
+   "assignee": "",
+   "labels": [
+    "readme"
+   ],
+   "created_at": "2025-04-01T09:00:00.000Z",
+   "updated_at": "2025-04-01T09:00:00.000Z",
+   "closed_at": null
+  }
+ ],
+ "merge_requests": [
+  {
+   "id": 61001,
+   "iid": 1,
+   "project_id": 4100,
+   "title": "mirror: sync 2026-09-30",
+   "description": "Automated mirror refresh (ownership file as of 30 Sep).",
+   "state": "merged",
+   "source_branch": "mirror/2026-09-30",
+   "target_branch": "main",
+   "author": "mirror-bot",
+   "assignee": "",
+   "merge_status": "can_be_merged",
+   "draft": false,
+   "created_at": "2026-09-30T02:00:00.000Z",
+   "updated_at": "2026-09-30T02:05:00.000Z",
+   "merged_at": "2026-09-30T02:05:00.000Z"
+  }
+ ],
+ "pipelines": [
+  {
+   "id": 71001,
+   "project_id": 4100,
+   "status": "failed",
+   "ref": "main",
+   "sha": "71aa0d3",
+   "created_at": "2026-11-15T02:00:00Z",
+   "updated_at": "2026-11-15T02:03:00Z"
+  }
+ ]
+}

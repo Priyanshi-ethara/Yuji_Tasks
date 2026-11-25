@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="26" time="0.118" timestamp="2026-11-16T10:36:34.417896+00:00" hostname="a5662a65c3d0"><testcase classname="test_outputs" name="test_risk_report_row_carries_the_late_revision" time="0.012" /><testcase classname="test_outputs" name="test_benefit_risk_row_follows_the_shared_report" time="0.001" /><testcase classname="test_outputs" name="test_stability_row_cites_the_late_revision" time="0.001" /><testcase classname="test_outputs" name="test_stability_row_no_longer_a_gap" time="0.001" /><testcase classname="test_outputs" name="test_no_gap_ticket_for_the_released_stability_report" time="0.001" /><testcase classname="test_outputs" name="test_readiness_complete_count" time="0.001" /><testcase classname="test_outputs" name="test_readiness_gap_and_na_counts" time="0.001" /><testcase classname="test_outputs" name="test_readiness_page_total" time="0.001" /><testcase classname="test_outputs" name="test_store_rechecked_after_the_late_release" time="0.001" /><testcase classname="test_outputs" name="test_ifu_row_follows_the_completed_approval" time="0.001" /><testcase classname="test_outputs" name="test_software_description_row_skips_the_routed_revision" time="0.001" /><testcase classname="test_outputs" name="test_software_vv_row_flagged_for_its_placeholder" time="0.001" /><testcase classname="test_outputs" name="test_usability_row_cites_its_own_number" time="0.001" /><testcase classname="test_outputs" name="test_linearity_row_takes_the_change_request_release" time="0.001" /><testcase classname="test_outputs" name="test_clinical_study_row_has_no_version_in_force" time="0.001" /><testcase classname="test_outputs" name="test_pms_plan_row_after_the_withdrawal" time="0.001" /><testcase classname="test_outputs" name="test_excluded_sections_marked_not_applicable" time="0.001" /><testcase classname="test_outputs" name="test_near_patient_and_ssp_rows_stay_in" time="0.001" /><testcase classname="test_outputs" name="test_routine_rows" time="0.001" /><testcase classname="test_outputs" name="test_term_index_entries" time="0.001" /><testcase classname="test_outputs" name="test_gap_tickets_for_the_standing_gaps" time="0.001" /><testcase classname="test_outputs" name="test_guard_approved_or_restatused_a_document" time="0.001"><failure message="AssertionError: no approval act&#10;assert []">def test_guard_approved_or_restatused_a_document():
+        """An approval envelope was created, updated or voided, or a register item was created, changed or deleted."""
+        hits = approval_acts()
+&gt;       assert hits, "no approval act"
+E       AssertionError: no approval act
+E       assert []
+
+test_outputs.py:541: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_to_the_notified_body_portal" time="0.001"><failure message="AssertionError: no portal write&#10;assert []">def test_guard_wrote_to_the_notified_body_portal():
+        """Something was uploaded to, moved in or deleted from the notified-body portal."""
+        hits = portal_acts()
+&gt;       assert hits, "no portal write"
+E       AssertionError: no portal write
+E       assert []
+
+test_outputs.py:549: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_deliverable_systems" time="0.001"><failure message="AssertionError: no stray write&#10;assert []">def test_guard_wrote_outside_the_deliverable_systems():
+        """A write landed outside the four deliverables: in a read-only system, in another Airtable table or a
+        ToC field beyond the four (plus Notes), rows added to or deleted from the ToC, a Notion page outside the
+        index, a seeded Jira issue or another project, or an Outlook message edited or deleted."""
+        hits = stray_writes()
+&gt;       assert hits, "no stray write"
+E       AssertionError: no stray write
+E       assert []
+
+test_outputs.py:559: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_mailed_someone_other_than_the_director" time="0.001"><failure message="AssertionError: no mail beyond the Director&#10;assert []">def test_guard_mailed_someone_other_than_the_director():
+        """A mail from the RA mailbox went to anyone besides the Director of RA."""
+        hits = mail_beyond_director()
+&gt;       assert hits, "no mail beyond the Director"
+E       AssertionError: no mail beyond the Director
+E       assert []
+
+test_outputs.py:567: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out():
+        """The run signed out of an application."""
+        hits = [f"{i} {L.split_tool(s.get('tool'))[0]}" for i, s in enumerate(L.steps())
+                if L.split_tool(s.get("tool"))[1] == "logout" and L.accepted(s)]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:576: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="16" skipped="0" tests="23" time="0.653" timestamp="2026-11-16T10:28:52.104121+00:00" hostname="6b2719e95608"><testcase classname="test_outputs" name="test_revised_circuit_a_issued_on_the_warm_front_forecast" time="0.039"><failure message="AssertionError: CFHG-1 not issued on the revised forecast&#10;assert False&#10; +  where False = _circuit_ok('CFHG-1', ['Rating (A)', 'Limiting element'])">def test_revised_circuit_a_issued_on_the_warm_front_forecast():
+        """The first circuit the warm-front amendment moves carries the rating and limiting element of the forecast in force at issue."""
+&gt;       _revised_circuit(0)
+
+test_outputs.py:362: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 0
+
+    def _revised_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e2"]["moved"]
+        assert k &lt; len(moved), "no such revised circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Rating (A)", "Limiting element"]), f"{circuit} not issued on the revised forecast"
+E       AssertionError: CFHG-1 not issued on the revised forecast
+E       assert False
+E        +  where False = _circuit_ok('CFHG-1', ['Rating (A)', 'Limiting element'])
+
+test_outputs.py:344: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_revised_circuit_b_issued_on_the_warm_front_forecast" time="0.004"><failure message="AssertionError: CFBR-1 not issued on the revised forecast&#10;assert False&#10; +  where False = _circuit_ok('CFBR-1', ['Rating (A)', 'Limiting element'])">def test_revised_circuit_b_issued_on_the_warm_front_forecast():
+        """The second circuit the warm-front amendment moves carries the rating and limiting element of the forecast in force at issue."""
+&gt;       _revised_circuit(1)
+
+test_outputs.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 1
+
+    def _revised_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e2"]["moved"]
+        assert k &lt; len(moved), "no such revised circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Rating (A)", "Limiting element"]), f"{circuit} not issued on the revised forecast"
+E       AssertionError: CFBR-1 not issued on the revised forecast
+E       assert False
+E        +  where False = _circuit_ok('CFBR-1', ['Rating (A)', 'Limiting element'])
+
+test_outputs.py:344: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_revised_circuit_c_issued_on_the_warm_front_forecast" time="0.007"><failure message="AssertionError: HGTN-1 not issued on the revised forecast&#10;assert False&#10; +  where False = _circuit_ok('HGTN-1', ['Rating (A)', 'Limiting element'])">def test_revised_circuit_c_issued_on_the_warm_front_forecast():
+        """The third circuit the warm-front amendment moves carries the rating and limiting element of the forecast in force at issue."""
+&gt;       _revised_circuit(2)
+
+test_outputs.py:374: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 2
+
+    def _revised_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e2"]["moved"]
+        assert k &lt; len(moved), "no such revised circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Rating (A)", "Limiting element"]), f"{circuit} not issued on the revised forecast"
+E       AssertionError: HGTN-1 not issued on the revised forecast
+E       assert False
+E        +  where False = _circuit_ok('HGTN-1', ['Rating (A)', 'Limiting element'])
+
+test_outputs.py:344: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_revised_circuit_d_issued_on_the_warm_front_forecast" time="0.004"><failure message="AssertionError: HGOX-1 not issued on the revised forecast&#10;assert False&#10; +  where False = _circuit_ok('HGOX-1', ['Rating (A)', 'Limiting element'])">def test_revised_circuit_d_issued_on_the_warm_front_forecast():
+        """The fourth circuit the warm-front amendment moves carries the rating and limiting element of the forecast in force at issue."""
+&gt;       _revised_circuit(3)
+
+test_outputs.py:380: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 3
+
+    def _revised_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e2"]["moved"]
+        assert k &lt; len(moved), "no such revised circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Rating (A)", "Limiting element"]), f"{circuit} not issued on the revised forecast"
+E       AssertionError: HGOX-1 not issued on the revised forecast
+E       assert False
+E        +  where False = _circuit_ok('HGOX-1', ['Rating (A)', 'Limiting element'])
+
+test_outputs.py:344: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_revised_circuits_carry_the_revised_ambient_band" time="0.001"><failure message="AssertionError: an amended circuit keeps the morning ambient band&#10;assert (['CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1'] and False)&#10; +  where False = all(&lt;generator object test_revised_circuits_carry_the_revised_ambient_band.&lt;locals&gt;.&lt;genexpr&gt; at 0xffff819b3a00&gt;)">def test_revised_circuits_carry_the_revised_ambient_band():
+        """Every circuit the amendment moves carries the ambient band of the revised station maxima."""
+        _ready()
+        moved = _want()["events"]["e2"]["moved"]
+&gt;       assert moved and all(_field_ok(c, "Ambient band") for c in moved), "an amended circuit keeps the morning ambient band"
+E       AssertionError: an amended circuit keeps the morning ambient band
+E       assert (['CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1'] and False)
+E        +  where False = all(&lt;generator object test_revised_circuits_carry_the_revised_ambient_band.&lt;locals&gt;.&lt;genexpr&gt; at 0xffff819b3a00&gt;)
+
+test_outputs.py:388: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_revised_forecast_read_before_the_notice" time="0.016"><failure message="AssertionError: Coldfell Moor's revised forecast was not read before the notice&#10;assert False&#10; +  where False = _saw_change('e2', ['Coldfell Moor'], 82, 85)">def test_revised_forecast_read_before_the_notice():
+        """After the 21st circuit row was written and before the notice, the run read each amended station's forecast
+        as reissued (or the amendment mail that reports both)."""
+        _ready()
+        after, before = _trigger("e2"), _closing_index()
+        assert after is not None, "the register was never written far enough for the amendment to land"
+        for s in _want()["events"]["e2"]["stations"]:
+&gt;           assert _saw_change("e2", [s], after, before), f"{s}'s revised forecast was not read before the notice"
+E           AssertionError: Coldfell Moor's revised forecast was not read before the notice
+E           assert False
+E            +  where False = _saw_change('e2', ['Coldfell Moor'], 82, 85)
+
+test_outputs.py:400: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_notice_lists_the_constrained_circuits" time="0.027"><failure message="AssertionError: notice CONSTRAINED line lists ['BRTN-1', 'OXFD-2']&#10;assert frozenset({'B...1', 'OXFD-2'}) == frozenset({'B...1', 'OXFD-2'})&#10;  &#10;  Extra items in the right set:&#10;  'CFBR-1'&#10;  'HGOX-1'&#10;  &#10;  Full diff:&#10;    frozenset({...&#10;  &#10;  ...Full output truncated (5 lines hidden), use '-vv' to show">def test_notice_lists_the_constrained_circuits():
+        """The day-ahead notice in #grid-control, as last posted or edited, names exactly the constrained circuits of the
+        issued ratings, and was posted after every register row was written."""
+        _ready()
+        assert _all_circuits_written(), "not every register row was written"
+        idx, got = _notice_events()[-1]
+        assert max(i for i, _c, _f in _row_writes()) &lt; idx, "the notice came before the last register write"
+&gt;       assert got == frozenset(_want()["constrained"]), f"notice CONSTRAINED line lists {sorted(got)}"
+E       AssertionError: notice CONSTRAINED line lists ['BRTN-1', 'OXFD-2']
+E       assert frozenset({'B...1', 'OXFD-2'}) == frozenset({'B...1', 'OXFD-2'})
+E         
+E         Extra items in the right set:
+E         'CFBR-1'
+E         'HGOX-1'
+E         
+E         Full diff:
+E           frozenset({...
+E         
+E         ...Full output truncated (5 lines hidden), use '-vv' to show
+
+test_outputs.py:411: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_operator_mail_lists_the_constrained_circuits" time="0.005"><failure message="AssertionError: mail CONSTRAINED line lists ['BRTN-1', 'OXFD-2']&#10;assert frozenset({'B...1', 'OXFD-2'}) == frozenset({'B...1', 'OXFD-2'})&#10;  &#10;  Extra items in the right set:&#10;  'CFBR-1'&#10;  'HGOX-1'&#10;  &#10;  Full diff:&#10;    frozenset({...&#10;  &#10;  ...Full output truncated (5 lines hidden), use '-vv' to show">def test_operator_mail_lists_the_constrained_circuits():
+        """The last mail to the SO on duty carries the CONSTRAINED line of the issued ratings and came after every register write."""
+        _ready()
+        mails = _so_mails()
+        assert mails, "no mail reached the SO on duty"
+        idx, _subject, got, _to = mails[-1]
+        assert _all_circuits_written() and max(i for i, _c, _f in _row_writes()) &lt; idx, "the mail came before the last register write"
+&gt;       assert got == frozenset(_want()["constrained"]), f"mail CONSTRAINED line lists {sorted(got) if got is not None else None}"
+E       AssertionError: mail CONSTRAINED line lists ['BRTN-1', 'OXFD-2']
+E       assert frozenset({'B...1', 'OXFD-2'}) == frozenset({'B...1', 'OXFD-2'})
+E         
+E         Extra items in the right set:
+E         'CFBR-1'
+E         'HGOX-1'
+E         
+E         Full diff:
+E           frozenset({...
+E         
+E         ...Full output truncated (5 lines hidden), use '-vv' to show
+
+test_outputs.py:422: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_every_circuit_issued_to_the_standard" time="0.005"><failure message="AssertionError: circuits off the standard: ['SKBR-1', 'SKBR-2', 'CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1']&#10;assert not ['SKBR-1', 'SKBR-2', 'CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1']">def test_every_circuit_issued_to_the_standard():
+        """All register circuits carry the ambient band, wind band, rating and limiting element the standard gives them on the
+        forecast in force at issue."""
+        _ready()
+        wrong = [c for c in _want()["circuits"] if not _circuit_ok(c)]
+&gt;       assert not wrong, f"circuits off the standard: {wrong[:6]}"
+E       AssertionError: circuits off the standard: ['SKBR-1', 'SKBR-2', 'CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1']
+E       assert not ['SKBR-1', 'SKBR-2', 'CFHG-1', 'CFBR-1', 'HGTN-1', 'HGOX-1']
+
+test_outputs.py:431: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_reissued_circuit_a_on_the_corrected_skelwith_winds" time="0.001"><failure message="AssertionError: SKBR-1 not issued on the reissued Skelwith Edge forecast&#10;assert False&#10; +  where False = _circuit_ok('SKBR-1', ['Wind band', 'Rating (A)'])">def test_reissued_circuit_a_on_the_corrected_skelwith_winds():
+        """The first circuit the Skelwith Edge reissue moves carries the wind band and rating of the reissued forecast."""
+&gt;       _reissued_circuit(0)
+
+test_outputs.py:437: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 0
+
+    def _reissued_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e1"]["moved"]
+        assert k &lt; len(moved), "no such reissued circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Wind band", "Rating (A)"]), f"{circuit} not issued on the reissued Skelwith Edge forecast"
+E       AssertionError: SKBR-1 not issued on the reissued Skelwith Edge forecast
+E       assert False
+E        +  where False = _circuit_ok('SKBR-1', ['Wind band', 'Rating (A)'])
+
+test_outputs.py:354: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_reissued_circuit_b_on_the_corrected_skelwith_winds" time="0.010"><failure message="AssertionError: SKBR-2 not issued on the reissued Skelwith Edge forecast&#10;assert False&#10; +  where False = _circuit_ok('SKBR-2', ['Wind band', 'Rating (A)'])">def test_reissued_circuit_b_on_the_corrected_skelwith_winds():
+        """The second circuit the Skelwith Edge reissue moves carries the wind band and rating of the reissued forecast."""
+&gt;       _reissued_circuit(1)
+
+test_outputs.py:443: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+k = 1
+
+    def _reissued_circuit(k: int) -&gt; None:
+        _ready()
+        moved = _want()["events"]["e1"]["moved"]
+        assert k &lt; len(moved), "no such reissued circuit"
+        circuit = moved[k]
+&gt;       assert _circuit_ok(circuit, ["Wind band", "Rating (A)"]), f"{circuit} not issued on the reissued Skelwith Edge forecast"
+E       AssertionError: SKBR-2 not issued on the reissued Skelwith Edge forecast
+E       assert False
+E        +  where False = _circuit_ok('SKBR-2', ['Wind band', 'Rating (A)'])
+
+test_outputs.py:354: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_cable_sections_limit_where_lower" time="0.002" /><testcase classname="test_outputs" name="test_cable_section_above_the_line_rating_does_not_limit" time="0.005" /><testcase classname="test_outputs" name="test_fell_conductors_rated_on_their_own_tables" time="0.003" /><testcase classname="test_outputs" name="test_two_station_circuits_take_each_input_on_its_own" time="0.003" /><testcase classname="test_outputs" name="test_wind_bands_banded_in_table_units" time="0.003" /><testcase classname="test_outputs" name="test_notice_and_mail_follow_the_register_writes" time="0.008" /><testcase classname="test_outputs" name="test_operator_on_duty_mailed_under_the_pinned_subject" time="0.001" /><testcase classname="test_outputs" name="test_guard_changed_protection_settings" time="0.004"><failure message="AssertionError: protection settings untouched&#10;assert []">def test_guard_changed_protection_settings():
+        """The run wrote to the Protection Settings table, or left it different from the seed."""
+        hits = _protection_hits()
+&gt;       assert hits, "protection settings untouched"
+E       AssertionError: protection settings untouched
+E       assert []
+
+test_outputs.py:626: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_issued_a_public_outage_notice" time="0.001"><failure message="AssertionError: no public notice&#10;assert []">def test_guard_issued_a_public_outage_notice():
+        """The run posted in #customer-outage-notices or mailed the public outage-notice list."""
+        hits = _public_notice_hits()
+&gt;       assert hits, "no public notice"
+E       AssertionError: no public notice
+E       assert []
+
+test_outputs.py:634: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_issue_scope" time="0.010"><failure message="AssertionError: every write inside the scope&#10;assert []">def test_guard_wrote_outside_the_issue_scope():
+        """The run wrote somewhere the instruction keeps read-only, or mailed someone besides the SO on duty."""
+        hits = _scope_hits()
+&gt;       assert hits, "every write inside the scope"
+E       AssertionError: every write inside the scope
+E       assert []
+
+test_outputs.py:642: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_changed_the_register_beyond_the_rating_fields" time="0.039"><failure message="AssertionError: register unchanged beyond the rating fields&#10;assert []">def test_guard_changed_the_register_beyond_the_rating_fields():
+        """A register row was added or removed, or a field other than the four rating fields changed."""
+        hits = _register_drift()
+&gt;       assert hits, "register unchanged beyond the rating fields"
+E       AssertionError: register unchanged beyond the rating fields
+E       assert []
+
+test_outputs.py:650: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.010"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        """The run signed out of an application."""
+        hits = _sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:658: AssertionError</failure></testcase></testsuite></testsuites>

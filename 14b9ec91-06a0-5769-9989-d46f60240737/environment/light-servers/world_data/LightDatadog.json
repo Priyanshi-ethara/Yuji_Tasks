@@ -1,0 +1,206 @@
+{
+ "events": [
+  {
+   "id": 7104001,
+   "title": "Day-ahead load forecast D-1 for 2026-11-17 (issued 2026-11-16 05:40Z)",
+   "text": "Forecast circuit peak loading for rating day 2026-11-17, amperes, per circuit. Supersedes the D-2 issue.\nSKBR-1: 610 A\nSKBR-2: 655 A\nSKTN-1: 395 A\nCFLN-1: 390 A\nCFHG-1: 405 A\nCFBR-1: 745 A\nHGTN-1: 600 A\nHGOX-1: 432 A\nLNBR-1: 395 A\nLNBR-2: 450 A\nLNOX-1: 345 A\nBRTN-1: 560 A\nBRTN-2: 590 A\nBRMS-1: 520 A\nTNOX-1: 470 A\nTNQY-1: 300 A\nOXFD-1: 540 A\nOXFD-2: 600 A\nLNKS-1: 310 A\nBRWD-1: 690 A\nMSWD-1: 330 A\nKSFD-1: 300 A",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "loadfc-01",
+   "tags": [
+    "source:load-forecasting",
+    "issue:d-1",
+    "rating_day:2026-11-17"
+   ],
+   "date_happened": 1794807600
+  },
+  {
+   "id": 7103001,
+   "title": "Day-ahead load forecast D-2 for 2026-11-17 (issued 2026-11-15 05:40Z)",
+   "text": "Forecast circuit peak loading for rating day 2026-11-17, amperes, per circuit. Superseded when the D-1 issue is published.\nSKBR-1: 600 A\nSKBR-2: 640 A\nSKTN-1: 380 A\nCFLN-1: 385 A\nCFHG-1: 395 A\nCFBR-1: 730 A\nHGTN-1: 590 A\nHGOX-1: 420 A\nLNBR-1: 380 A\nLNBR-2: 445 A\nLNOX-1: 352 A\nBRTN-1: 520 A\nBRTN-2: 575 A\nBRMS-1: 515 A\nTNOX-1: 455 A\nTNQY-1: 310 A\nOXFD-1: 530 A\nOXFD-2: 560 A\nLNKS-1: 300 A\nBRWD-1: 700 A\nMSWD-1: 325 A\nKSFD-1: 290 A",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "loadfc-01",
+   "tags": [
+    "source:load-forecasting",
+    "issue:d-2",
+    "rating_day:2026-11-17"
+   ],
+   "date_happened": 1794721200
+  },
+  {
+   "id": 7102001,
+   "title": "Day-ahead load forecast D-1 for 2026-11-16 (issued 2026-11-15 05:40Z)",
+   "text": "Forecast circuit peak loading for rating day 2026-11-16. (Previous rating day.)\nSKBR-1: 585 A\nSKBR-2: 625 A\nSKTN-1: 365 A\nCFLN-1: 370 A\nCFHG-1: 380 A\nCFBR-1: 715 A\nHGTN-1: 575 A\nHGOX-1: 405 A\nLNBR-1: 365 A\nLNBR-2: 430 A\nLNOX-1: 337 A\nBRTN-1: 505 A\nBRTN-2: 560 A\nBRMS-1: 500 A\nTNOX-1: 440 A\nTNQY-1: 295 A\nOXFD-1: 515 A\nOXFD-2: 545 A\nLNKS-1: 285 A\nBRWD-1: 685 A\nMSWD-1: 310 A\nKSFD-1: 275 A",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "loadfc-01",
+   "tags": [
+    "source:load-forecasting",
+    "issue:d-1",
+    "rating_day:2026-11-16"
+   ],
+   "date_happened": 1794721260
+  },
+  {
+   "id": 7104010,
+   "title": "Brackmoor RTU 3 failover test complete",
+   "text": "SCADA RTU 3 failover OK.",
+   "alert_type": "success",
+   "priority": "low",
+   "host": "scada-rtu3",
+   "tags": [
+    "site:brackmoor"
+   ],
+   "date_happened": 1794741600
+  }
+ ],
+ "monitors": [
+  {
+   "id": 51001,
+   "name": "OHL loading vs issued rating - SKBR-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.skbr_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:SKBR-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51002,
+   "name": "OHL loading vs issued rating - SKBR-2",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.skbr_2.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:SKBR-2"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51003,
+   "name": "OHL loading vs issued rating - SKTN-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.sktn_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:SKTN-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51004,
+   "name": "OHL loading vs issued rating - CFLN-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.cfln_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:CFLN-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51005,
+   "name": "OHL loading vs issued rating - CFHG-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.cfhg_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:CFHG-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51006,
+   "name": "OHL loading vs issued rating - CFBR-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.cfbr_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:CFBR-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51007,
+   "name": "OHL loading vs issued rating - HGTN-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.hgtn_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:HGTN-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  },
+  {
+   "id": 51008,
+   "name": "OHL loading vs issued rating - HGOX-1",
+   "type": "metric alert",
+   "query": "max(last_15m):max:nfg.ohl.hgox_1.amps{} > 0.9 * rating",
+   "message": "Loading above 90 % of the issued day rating. Notify control room.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "team:control-room",
+    "circuit:HGOX-1"
+   ],
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "nfg-ohl-load",
+   "title": "132 kV OHL loading",
+   "description": "Circuit loading against issued ratings",
+   "layout_type": "ordered",
+   "author": "control-room",
+   "widget_count": 22,
+   "is_read_only": true,
+   "created": "2026-04-01T08:00:00+00:00",
+   "modified": "2026-11-15T09:45:00+00:00"
+  }
+ ],
+ "hosts": [
+  {
+   "name": "loadfc-01",
+   "up": true,
+   "apps": [
+    "load-forecast"
+   ],
+   "sources": "agent",
+   "cpu_pct": 22.0,
+   "mem_pct": 41.0,
+   "last_reported": 1794815940
+  }
+ ]
+}

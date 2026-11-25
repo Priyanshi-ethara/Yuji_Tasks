@@ -1,0 +1,24 @@
+published,title,kind,service,owner
+2026-01-14,Scheduled maintenance: ledger,maintenance,ledger-posting,Customer Communications
+2026-02-03,Card authorisation delays,incident,card-auth-gateway,Customer Communications
+2026-02-21,Scheduled maintenance: payouts,maintenance,payout-scheduler,Customer Communications
+2026-03-09,Delayed payout status,incident,payout-status-api,Customer Communications
+2026-03-30,KYC uploads delayed,incident,kyc-document-check,Customer Communications
+2026-04-12,Scheduled maintenance: statements,maintenance,statement-render,Customer Communications
+2026-04-28,3-D Secure challenges failing for some cards,incident,3ds-challenge,Customer Communications
+2026-05-15,Scheduled maintenance: tokenisation,maintenance,tokenisation-vault,Customer Communications
+2026-05-30,Payout files delayed,incident,bank-file-dispatch,Customer Communications
+2026-06-11,Merchant onboarding slow,incident,merchant-onboarding-api,Customer Communications
+2026-06-26,Scheduled maintenance: fraud scoring,maintenance,fraud-score,Customer Communications
+2026-07-08,Statement downloads failing,incident,statement-render,Customer Communications
+2026-07-22,FX rates delayed,incident,fx-rates-feed,Customer Communications
+2026-08-05,Scheduled maintenance: card authorisation,maintenance,card-auth-gateway,Customer Communications
+2026-08-19,Chargeback uploads delayed,incident,chargeback-intake,Customer Communications
+2026-09-09,Scheduled maintenance: ledger,maintenance,ledger-posting,Customer Communications
+2026-09-24,Dispute evidence uploads failing,incident,dispute-evidence,Customer Communications
+2026-10-02,Scheduled maintenance: fraud scoring (6 Oct),maintenance,fraud-score,Customer Communications
+2026-10-08,KYC and dispute evidence uploads failing,incident,kyc-document-check,Customer Communications
+2026-10-10,Scheduled maintenance: ledger (14 Oct),maintenance,ledger-posting,Customer Communications
+2026-10-19,Payouts delayed,incident,payout-scheduler,Customer Communications
+2026-10-21,Card authorisation brief errors,incident,card-auth-gateway,Customer Communications
+2026-10-27,Card tokenisation briefly unavailable,incident,tokenisation-vault,Customer Communications

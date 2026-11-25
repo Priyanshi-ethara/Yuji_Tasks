@@ -1,0 +1,23 @@
+recipe,title,owner,base,effective_batch,seq_len,tokens_per_update,peak_lr,steps,approved,status
+RCP-CLM-3,Claims summariser 8B,Ravi Castellanos,sorrel-base-8b-r2,512,4096,2097152,1.0e-04,3600,2026-10-28,approved
+RCP-UW-2,Underwriting QA 3B,Wen Ashdown,sorrel-base-3b-r4,256,2048,524288,2.0e-05,4000,2026-09-30,approved
+RCP-FNOL-4,FNOL triage classifier 1B,Ifeoma Hartley,sorrel-base-1b-r3,128,2048,262144,3.0e-05,5000,2026-10-14,approved
+RCP-SUB-1,Subrogation letter extraction 8B,Lucian Petrov,sorrel-base-8b-r2,256,4096,1048576,5.0e-05,4000,2026-11-03,approved
+RCP-RISK-2,Risk scoring 3B,Ines Kowalczyk,sorrel-base-3b-r4,192,2048,393216,2.5e-05,3000,2026-08-19,approved
+RCP-CLM-2,Claims summariser 8B (r1 base),Ravi Castellanos,sorrel-base-8b-r1,512,4096,2097152,1.0e-04,3000,2026-03-02,retired
+RCP-FNOL-3,FNOL triage classifier 1B,Ifeoma Hartley,sorrel-base-1b-r2,128,1536,196608,3.0e-05,5000,2026-04-11,retired
+RCP-UW-1,Underwriting QA 3B,Wen Ashdown,sorrel-base-3b-r3,256,2048,524288,2.0e-05,3500,2026-02-14,retired
+RCP-SUB-0,Subrogation pilot,Lucian Petrov,sorrel-base-8b-r1,128,4096,524288,5.0e-05,3000,2026-07-01,retired
+RCP-RISK-1,Risk scoring 3B,Ines Kowalczyk,sorrel-base-3b-r3,192,2048,393216,2.5e-05,2800,2026-05-20,retired
+RCP-EXP-01,Experimental recipe 1,Wen Ashdown,sorrel-base-3b-r4,128,2048,262144,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-02,Experimental recipe 2,Ravi Castellanos,sorrel-base-3b-r4,64,2048,131072,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-03,Experimental recipe 3,Ifeoma Hartley,sorrel-base-3b-r4,256,2048,524288,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-04,Experimental recipe 4,Lucian Petrov,sorrel-base-3b-r4,256,2048,524288,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-05,Experimental recipe 5,Lucian Petrov,sorrel-base-3b-r4,64,2048,131072,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-06,Experimental recipe 6,Ravi Castellanos,sorrel-base-3b-r4,128,2048,262144,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-07,Experimental recipe 7,Ravi Castellanos,sorrel-base-3b-r4,256,2048,524288,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-08,Experimental recipe 8,Ifeoma Hartley,sorrel-base-3b-r4,64,2048,131072,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-09,Experimental recipe 9,Ifeoma Hartley,sorrel-base-3b-r4,64,2048,131072,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-10,Experimental recipe 10,Wen Ashdown,sorrel-base-3b-r4,128,2048,262144,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-11,Experimental recipe 11,Ravi Castellanos,sorrel-base-3b-r4,256,2048,524288,1.0e-5,1000,2026-10-01,experimental (not launchable)
+RCP-EXP-12,Experimental recipe 12,Ravi Castellanos,sorrel-base-3b-r4,64,2048,131072,1.0e-5,1000,2026-10-01,experimental (not launchable)

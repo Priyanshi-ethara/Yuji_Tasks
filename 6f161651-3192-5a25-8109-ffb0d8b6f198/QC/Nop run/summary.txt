@@ -1,0 +1,8 @@
+ONDIR: /tmp/qc/oracle_nop_20261116_160552  agent: nop
+uuid	agent	pytest	rubric	reward	result
+6f161651-3192-5a25-8109-ffb0d8b6f198	nop	0.0	0.0	0.0	PASS
+judge.json: {'ran': True, 'model': 'gpt-5.6-sol', 'transport': 'codex', 'reason': None}
+trial: 6f161651-3192-5a25-8109-ffb0d8b6__sLTpTmv | task_checksum: df81ab498bd36b5e34d5fc629047a2378869b1cb7fe3abef50549bdf9ccb8b50 | verifier_environment_mode: separate | exception_info: None
+verifier_result: {'rewards': {'pytest': 0.0, 'rubric': 0.0, 'reward': 0.0}}
+grade_report: earned 0.0 penalty 0.0 total_positive 59 guards_tripped [] missed 21
+rubric: 0.0 | yes: 0 / 22 | penalties judged yes: []

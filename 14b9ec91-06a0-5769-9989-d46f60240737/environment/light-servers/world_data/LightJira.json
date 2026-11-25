@@ -1,0 +1,201 @@
+{
+ "projects": [
+  {
+   "id": "11001",
+   "key": "GRID",
+   "name": "Grid Operations",
+   "project_type_key": "business",
+   "lead": "user-ines",
+   "description": "Control room and rating desk work"
+  },
+  {
+   "id": "11002",
+   "key": "PRT",
+   "name": "Protection Engineering",
+   "project_type_key": "business",
+   "lead": "user-declan",
+   "description": "Relay settings and protection reviews"
+  }
+ ],
+ "users": [
+  {
+   "account_id": "user-ines",
+   "display_name": "Ines Calloway",
+   "email": "ines.calloway@northfell-grid.example",
+   "active": true
+  },
+  {
+   "account_id": "user-declan",
+   "display_name": "Declan Morrow",
+   "email": "declan.morrow@northfell-grid.example",
+   "active": true
+  },
+  {
+   "account_id": "user-femi",
+   "display_name": "Femi Adeyemi",
+   "email": "femi.adeyemi@northfell-grid.example",
+   "active": true
+  },
+  {
+   "account_id": "user-ratedesk",
+   "display_name": "Rating Desk",
+   "email": "rating.desk@northfell-grid.example",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 31,
+   "name": "GRID board",
+   "type": "kanban",
+   "project_key": "GRID"
+  },
+  {
+   "id": 32,
+   "name": "PRT board",
+   "type": "kanban",
+   "project_key": "PRT"
+  }
+ ],
+ "sprints": [
+  {
+   "id": 3101,
+   "board_id": 31,
+   "name": "GRID wk46",
+   "state": "active",
+   "start_date": "2026-11-09T08:00:00Z",
+   "end_date": "2026-11-20T17:00:00Z",
+   "goal": "Winter readiness"
+  }
+ ],
+ "issues": [
+  {
+   "id": "20800",
+   "key": "GRID-881",
+   "project_key": "GRID",
+   "issue_type": "Task",
+   "summary": "Issue day-ahead ratings for 17 Nov",
+   "description": "Rating desk: rate the 22 circuits on the Next-Day Ratings register under NGS-RT-04 Issue 3, post the notice in #grid-control and mail the SO on duty.",
+   "status": "In Progress",
+   "priority": "High",
+   "assignee": "Rating Desk",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2026-11-16T07:15:00Z",
+   "updated": "2026-11-16T07:16:00Z"
+  },
+  {
+   "id": "20801",
+   "key": "GRID-874",
+   "project_key": "GRID",
+   "issue_type": "Task",
+   "summary": "LNBR-2 reconductoring FL240 -> FL240T",
+   "description": "All spans restrung with FL240T thermal-resistant alloy. Register updated 21 Oct (CHG0047150). Ratings from Table 3c from 22 Oct.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Femi Adeyemi",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2026-09-01T08:00:00Z",
+   "updated": "2026-09-01T08:00:00Z"
+  },
+  {
+   "id": "20802",
+   "key": "GRID-869",
+   "project_key": "GRID",
+   "issue_type": "Task",
+   "summary": "MetDesk feed unit change (contract schedule B rev 4)",
+   "description": "From 1 Mar 2025 the MetDesk station feed delivers wind in knots. Rating desk converts to m/s before banding (Table 2 is in m/s). Retired the old rating tool that assumed m/s.",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "Mared Hollins",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2025-02-21T09:00:00Z",
+   "updated": "2025-02-21T09:00:00Z"
+  },
+  {
+   "id": "20803",
+   "key": "GRID-866",
+   "project_key": "GRID",
+   "issue_type": "Bug",
+   "summary": "2025-03 over-rating incident - knots read as m/s",
+   "description": "Post-incident action: day desk checklist now converts MetDesk wind from knots. See incident review.",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "Mared Hollins",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2025-03-18T09:00:00Z",
+   "updated": "2025-03-18T09:00:00Z"
+  },
+  {
+   "id": "20804",
+   "key": "GRID-879",
+   "project_key": "GRID",
+   "issue_type": "Task",
+   "summary": "OXFD-2 cable section replacement - rating confirmation",
+   "description": "Cable section replaced 28 Sep (CHG0047135). Continuous rating 640 A per commissioning test.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Femi Adeyemi",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2026-09-28T08:00:00Z",
+   "updated": "2026-09-28T08:00:00Z"
+  },
+  {
+   "id": "20805",
+   "key": "GRID-883",
+   "project_key": "GRID",
+   "issue_type": "Task",
+   "summary": "LNKS-1 Kestle bypass cable (planned)",
+   "description": "Planned cable section, works 2 Dec (CHG0047162). Not in service; do not apply to ratings before commissioning.",
+   "status": "To Do",
+   "priority": "Low",
+   "assignee": "Femi Adeyemi",
+   "reporter": "Ines Calloway",
+   "sprint_id": 3101,
+   "story_points": 3,
+   "created": "2026-10-30T14:00:00Z",
+   "updated": "2026-10-30T14:00:00Z"
+  },
+  {
+   "id": "20806",
+   "key": "PRT-212",
+   "project_key": "PRT",
+   "issue_type": "Task",
+   "summary": "Review HGTN-1 thermal overload pickup after cable commissioning",
+   "description": "Protection Engineering to review the HGTN-1 relay thermal pickup against the 700 A cable section. Settings change via P-11 only; not a control room action.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "Declan Morrow",
+   "reporter": "Declan Morrow",
+   "sprint_id": null,
+   "story_points": 3,
+   "created": "2026-10-02T09:00:00Z",
+   "updated": "2026-10-02T09:00:00Z"
+  },
+  {
+   "id": "20807",
+   "key": "PRT-215",
+   "project_key": "PRT",
+   "issue_type": "Task",
+   "summary": "CFBR-1 relay firmware MiCOM P546",
+   "description": "Firmware update under CHG0047170.",
+   "status": "In Progress",
+   "priority": "Low",
+   "assignee": "Declan Morrow",
+   "reporter": "Declan Morrow",
+   "sprint_id": null,
+   "story_points": 3,
+   "created": "2026-11-12T09:00:00Z",
+   "updated": "2026-11-12T09:00:00Z"
+  }
+ ]
+}

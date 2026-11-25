@@ -1,0 +1,304 @@
+{
+ "team": {
+  "id": "T0HRM",
+  "name": "Harrowmere Energy",
+  "domain": "harrowmere-energy"
+ },
+ "users": [
+  {
+   "id": "U0HRMIMOGEN",
+   "name": "imogen",
+   "real_name": "Imogen Ashdale",
+   "email": "imogen.ashdale@harrowmere-energy.example",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMDORIAN",
+   "name": "dorian",
+   "real_name": "Dorian Felbrigg",
+   "email": "dorian.felbrigg@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMHELENA",
+   "name": "helena",
+   "real_name": "Helena Marchbank",
+   "email": "helena.marchbank@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMTAMSIN",
+   "name": "tamsin",
+   "real_name": "Tamsin Rookwood",
+   "email": "tamsin.rookwood@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMOWAIN",
+   "name": "owain",
+   "real_name": "Owain Castellack",
+   "email": "owain.castellack@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMBERT",
+   "name": "bertrand",
+   "real_name": "Bertrand Ilsley",
+   "email": "bertrand.ilsley@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMFFION",
+   "name": "ffion",
+   "real_name": "Ffion Gethin",
+   "email": "ffion.gethin@harrowmere-energy.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U0HRMALEX",
+   "name": "alex",
+   "real_name": "Alex Carter",
+   "email": "alex.carter@contoso.com",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "C0HRMBILL",
+   "name": "billing-ops",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Billing runs and drafts",
+   "purpose": "Billing runs and drafts",
+   "creator": "U0HRMIMOGEN",
+   "created": 1735689600,
+   "num_members": 8
+  },
+  {
+   "id": "C0HRMMET",
+   "name": "metering-ops",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Collectors, meters and data",
+   "purpose": "Collectors, meters and data",
+   "creator": "U0HRMIMOGEN",
+   "created": 1735689600,
+   "num_members": 8
+  },
+  {
+   "id": "C0HRMGEN",
+   "name": "general",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Harrowmere Energy all-staff",
+   "purpose": "Harrowmere Energy all-staff",
+   "creator": "U0HRMIMOGEN",
+   "created": 1735689600,
+   "num_members": 8
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMIMOGEN"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMDORIAN"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMHELENA"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMTAMSIN"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMOWAIN"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMBERT"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMFFION"
+  },
+  {
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMALEX"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMIMOGEN"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMDORIAN"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMHELENA"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMTAMSIN"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMOWAIN"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMBERT"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMFFION"
+  },
+  {
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMALEX"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMIMOGEN"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMDORIAN"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMHELENA"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMTAMSIN"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMOWAIN"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMBERT"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMFFION"
+  },
+  {
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMALEX"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1794588300.000100",
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMDORIAN",
+   "text": "BR-2611 trial sheet is in the run folder - £376,700.10 net, Ed7 throughout. @Alex use it as your starting point.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794588720.000100",
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMIMOGEN",
+   "text": "Reference only. Drafts follow BP-4 and the records it names.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794646980.000100",
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMDORIAN",
+   "text": "Fwiw last year we did reactive on the monthly power factor and nobody complained.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794647400.000100",
+   "channel_id": "C0HRMBILL",
+   "user_id": "U0HRMHELENA",
+   "text": "Monthly PF was withdrawn in 2024 - half-hour by half-hour, see the method page.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794727500.000100",
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMBERT",
+   "text": "All BR-2611 files in: AMR A/B, Kestrel, Varden. 1,500 rows per meter, checksums on the deliveries table.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794728400.000100",
+   "channel_id": "C0HRMMET",
+   "user_id": "U0HRMTAMSIN",
+   "text": "Thanks. Reminder: Varden took over the six western sites on 1 Sep; their agreement schedules are in Box.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794729720.000100",
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMIMOGEN",
+   "text": "Billing run BR-2611 drafts on Monday; approval Tuesday 14:00.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1793003400.000100",
+   "channel_id": "C0HRMGEN",
+   "user_id": "U0HRMTAMSIN",
+   "text": "Clocks went back yesterday - AMR, Kestrel and Varden all held UTC, no gaps.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ]
+}

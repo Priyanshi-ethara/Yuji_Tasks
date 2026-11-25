@@ -1,0 +1,87 @@
+{
+ "teams": [
+  {
+   "id": "team_t02_fac",
+   "displayName": "Facilities & Energy",
+   "description": "Site energy managers",
+   "membershipType": "standard"
+  }
+ ],
+ "channels": [
+  {
+   "id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "displayName": "Site energy managers",
+   "membershipType": "standard",
+   "description": "Meters, invoices, outages"
+  }
+ ],
+ "messages": [
+  {
+   "id": "1762900000001",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-1",
+   "from_display_name": "Nadia Brooks",
+   "content": "Salem: Cascade estimated January and February (snow, no read). Manual register reads are in the platform for both month-ends.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-03-12T16:00:00Z"
+  },
+  {
+   "id": "1762900000002",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-2",
+   "from_display_name": "Bram de Vries",
+   "content": "Eindhoven: Maasstroom estimated June (their portal outage). Meter platform backfilled from the meter log on 9 July.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-07-11T08:30:00Z"
+  },
+  {
+   "id": "1762900000003",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-3",
+   "from_display_name": "Katrin Vogel",
+   "content": "Leipzig: August invoice KEV-26-0819 is ~25% above our meter. New CT fitted 3 Aug. Asked Kessler to check; they will reissue if wrong.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-09-28T14:00:00Z"
+  },
+  {
+   "id": "1762900000004",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-4",
+   "from_display_name": "Joanna Wiśniewska",
+   "content": "Gdańsk: please stop calling us a warehouse on the reports — we are the second-largest machining site in Poland.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-01-16T10:00:00Z"
+  },
+  {
+   "id": "1762900000005",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-5",
+   "from_display_name": "Hollis Brandt",
+   "content": "Hartwell steam is closed-loop (condensate back to RDE, credit on every line). Lowell is open discharge.",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-10-15T09:00:00Z"
+  },
+  {
+   "id": "1762900000006",
+   "channel_id": "msch_t02_sites",
+   "team_id": "team_t02_fac",
+   "from_user_id": "user-t02-6",
+   "from_display_name": "Dana Whitcombe",
+   "content": "Albany: Capitol Campus gave us the measured plant COP this year (5.2).",
+   "contentType": "html",
+   "importance": "normal",
+   "createdDateTime": "2026-10-20T12:00:00Z"
+  }
+ ]
+}

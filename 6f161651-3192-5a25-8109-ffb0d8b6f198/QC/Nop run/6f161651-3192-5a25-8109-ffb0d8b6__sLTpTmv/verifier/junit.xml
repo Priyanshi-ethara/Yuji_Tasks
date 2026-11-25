@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="26" skipped="0" tests="26" time="0.340" timestamp="2026-11-16T10:38:06.420562+00:00" hostname="baff79ef6f8f"><testcase classname="test_outputs" name="test_risk_report_row_carries_the_late_revision" time="0.007"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_risk_report_row_carries_the_late_revision():
+        """S13 cites the risk management report at the revision released while the ToC was being written,
+        with its page count, and the run looked at that release before the readiness statement."""
+&gt;       gate_values()
+
+test_outputs.py:354: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_benefit_risk_row_follows_the_shared_report" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_benefit_risk_row_follows_the_shared_report():
+        """S14 is satisfied by the same document as S13 and moves with it."""
+&gt;       gate_values()
+
+test_outputs.py:362: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_stability_row_cites_the_late_revision" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_stability_row_cites_the_late_revision():
+        """S22 cites the stability report revision released while the ToC was being written, with its pages."""
+&gt;       gate_values()
+
+test_outputs.py:370: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_stability_row_no_longer_a_gap" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_stability_row_no_longer_a_gap():
+        """The late stability revision closed its placeholders, so S22 carries the label the standard gives a
+        complete row."""
+&gt;       gate_values()
+
+test_outputs.py:381: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_no_gap_ticket_for_the_released_stability_report" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_no_gap_ticket_for_the_released_stability_report():
+        """The gap list carries the standing gaps and no ticket for S22, whose placeholders the late release closed."""
+&gt;       gate_values()
+
+test_outputs.py:390: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_readiness_complete_count" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_readiness_complete_count():
+        """The readiness subject counts the rows the standard calls complete after the late release."""
+&gt;       return _readiness_figure("complete")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:411: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:399: in _readiness_figure
+    gate_values()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_readiness_gap_and_na_counts" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_readiness_gap_and_na_counts():
+        """The readiness subject counts the gap rows after the late release, and the not-applicable rows."""
+&gt;       return _readiness_figure("gap", "na")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:416: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:399: in _readiness_figure
+    gate_values()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_readiness_page_total" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_readiness_page_total():
+        """The readiness subject carries the file page total of the standard (each cited document once)
+        after the late release."""
+&gt;       return _readiness_figure("pages")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:422: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:399: in _readiness_figure
+    gate_values()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_store_rechecked_after_the_late_release" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_store_rechecked_after_the_late_release():
+        """Process: the store's version record of a released document, or the change request releasing it,
+        was read after the release trigger and before the readiness statement, in a run whose ToC rows and
+        readiness statement exist."""
+&gt;       gate_values()
+
+test_outputs.py:429: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ifu_row_follows_the_completed_approval" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_ifu_row_follows_the_completed_approval():
+        """S07 cites the IFU revision whose approval completed after the first ToC row was written, and the
+        run read the register or the envelope showing that completion before the readiness statement."""
+&gt;       gate_values()
+
+test_outputs.py:443: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_software_description_row_skips_the_routed_revision" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_software_description_row_skips_the_routed_revision():
+        """S15 cites the released software description, not the revision still in its approval route."""
+&gt;       gate_values()
+
+test_outputs.py:452: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_software_vv_row_flagged_for_its_placeholder" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_software_vv_row_flagged_for_its_placeholder():
+        """S16 cites the approved V&amp;V report but is a gap because that revision records an open placeholder."""
+&gt;       gate_values()
+
+test_outputs.py:459: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_usability_row_cites_its_own_number" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_usability_row_cites_its_own_number():
+        """S17 cites the usability engineering file, not the risk report one transposition away."""
+&gt;       gate_values()
+
+test_outputs.py:466: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_linearity_row_takes_the_change_request_release" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_linearity_row_takes_the_change_request_release():
+        """S20 cites the revision released under a closed change request although the register has not caught up."""
+&gt;       gate_values()
+
+test_outputs.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_clinical_study_row_has_no_version_in_force" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_clinical_study_row_has_no_version_in_force():
+        """S23 has only a working draft: no version in force, a gap."""
+&gt;       gate_values()
+
+test_outputs.py:480: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_pms_plan_row_after_the_withdrawal" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_pms_plan_row_after_the_withdrawal():
+        """S29: the only released PMS plan lost its approval, so nothing is in force."""
+&gt;       gate_values()
+
+test_outputs.py:487: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_excluded_sections_marked_not_applicable" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_excluded_sections_marked_not_applicable():
+        """Every section the applicability table excludes for this device carries the not-applicable grammar."""
+&gt;       gate_values()
+
+test_outputs.py:494: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_near_patient_and_ssp_rows_stay_in" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_near_patient_and_ssp_rows_stay_in():
+        """The near-patient section and the summary of safety and performance stay applicable and complete."""
+&gt;       gate_values()
+
+test_outputs.py:502: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_routine_rows" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_routine_rows():
+        """Every row no trap or change touches carries its document, version in force, pages and label."""
+&gt;       gate_values()
+
+test_outputs.py:510: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_term_index_entries" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_term_index_entries():
+        """The term index holds exactly one page per indexable term, titled with its section and source document."""
+&gt;       gate_values()
+
+test_outputs.py:518: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_gap_tickets_for_the_standing_gaps" time="0.001"><failure message="AssertionError: too few rows right outside the trapped ones (blanket or empty table)&#10;assert False&#10; +  where False = spread_ok()">def test_gap_tickets_for_the_standing_gaps():
+        """One gap ticket for each section that stays a gap, and none for complete or excluded sections other than
+        S22 (graded on its own)."""
+&gt;       gate_values()
+
+test_outputs.py:529: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def gate_values():
+        assert clean(), "the run did something the instruction forbids"
+&gt;       assert spread_ok(), "too few rows right outside the trapped ones (blanket or empty table)"
+E       AssertionError: too few rows right outside the trapped ones (blanket or empty table)
+E       assert False
+E        +  where False = spread_ok()
+
+test_outputs.py:347: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_approved_or_restatused_a_document" time="0.000"><failure message="AssertionError: no approval act&#10;assert []">def test_guard_approved_or_restatused_a_document():
+        """An approval envelope was created, updated or voided, or a register item was created, changed or deleted."""
+        hits = approval_acts()
+&gt;       assert hits, "no approval act"
+E       AssertionError: no approval act
+E       assert []
+
+test_outputs.py:541: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_to_the_notified_body_portal" time="0.000"><failure message="AssertionError: no portal write&#10;assert []">def test_guard_wrote_to_the_notified_body_portal():
+        """Something was uploaded to, moved in or deleted from the notified-body portal."""
+        hits = portal_acts()
+&gt;       assert hits, "no portal write"
+E       AssertionError: no portal write
+E       assert []
+
+test_outputs.py:549: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_deliverable_systems" time="0.000"><failure message="AssertionError: no stray write&#10;assert []">def test_guard_wrote_outside_the_deliverable_systems():
+        """A write landed outside the four deliverables: in a read-only system, in another Airtable table or a
+        ToC field beyond the four (plus Notes), rows added to or deleted from the ToC, a Notion page outside the
+        index, a seeded Jira issue or another project, or an Outlook message edited or deleted."""
+        hits = stray_writes()
+&gt;       assert hits, "no stray write"
+E       AssertionError: no stray write
+E       assert []
+
+test_outputs.py:559: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_mailed_someone_other_than_the_director" time="0.000"><failure message="AssertionError: no mail beyond the Director&#10;assert []">def test_guard_mailed_someone_other_than_the_director():
+        """A mail from the RA mailbox went to anyone besides the Director of RA."""
+        hits = mail_beyond_director()
+&gt;       assert hits, "no mail beyond the Director"
+E       AssertionError: no mail beyond the Director
+E       assert []
+
+test_outputs.py:567: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out" time="0.000"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out():
+        """The run signed out of an application."""
+        hits = [f"{i} {L.split_tool(s.get('tool'))[0]}" for i, s in enumerate(L.steps())
+                if L.split_tool(s.get("tool"))[1] == "logout" and L.accepted(s)]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:576: AssertionError</failure></testcase></testsuite></testsuites>

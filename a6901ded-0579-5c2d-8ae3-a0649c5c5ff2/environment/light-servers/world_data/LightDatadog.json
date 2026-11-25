@@ -1,0 +1,301 @@
+{
+ "events": [
+  {
+   "id": 880101,
+   "title": "Dry run complete: ft-clm-07",
+   "text": "ft-launcher 4.2.1 dry run of FT-CLM-07 in ft-pool-north: grad_accum 8, seq_len 4096, micro-batch 4. Median 5.10 s per optimizer update over 40 measured updates. Peak memory within budget.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-clm-07",
+    "event:dry-run",
+    "namespace:ft-pool-north"
+   ],
+   "date_happened": 1794519600
+  },
+  {
+   "id": 880102,
+   "title": "Dry run complete: ft-uw-03",
+   "text": "ft-launcher 4.2.1 dry run of FT-UW-03 in ft-pool-north: grad_accum 4, seq_len 2048, micro-batch 8. Median 3.70 s per optimizer update over 40 measured updates. Peak memory within budget.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-uw-03",
+    "event:dry-run",
+    "namespace:ft-pool-north"
+   ],
+   "date_happened": 1794521100
+  },
+  {
+   "id": 880103,
+   "title": "Dry run complete: ft-fnol-11",
+   "text": "ft-launcher 4.2.1 dry run of FT-FNOL-11 in ft-pool-south: grad_accum 2, seq_len 2560, micro-batch 8. Median 7.60 s per optimizer update over 40 measured updates. Peak memory within budget.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-fnol-11",
+    "event:dry-run",
+    "namespace:ft-pool-south"
+   ],
+   "date_happened": 1794529200
+  },
+  {
+   "id": 880104,
+   "title": "Dry run complete: ft-sub-02",
+   "text": "ft-launcher 4.2.1 dry run of FT-SUB-02 in ft-pool-north: grad_accum 8, seq_len 4096, micro-batch 2. Median 6.90 s per optimizer update over 40 measured updates. Peak memory within budget.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-sub-02",
+    "event:dry-run",
+    "namespace:ft-pool-north"
+   ],
+   "date_happened": 1794532200
+  },
+  {
+   "id": 880090,
+   "title": "Dry run complete: ft-risk-04",
+   "text": "ft-launcher 4.2.1 dry run of FT-RISK-04 in ft-pool-north: grad_accum 2, seq_len 2048, micro-batch 8. Median 8.10 s per optimizer update over 40 measured updates.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-risk-04",
+    "event:dry-run",
+    "namespace:ft-pool-north"
+   ],
+   "date_happened": 1793912400
+  },
+  {
+   "id": 880091,
+   "title": "Dry run complete: ft-clm-06",
+   "text": "ft-launcher 4.2.1 dry run of FT-CLM-06 in ft-pool-north: grad_accum 8, seq_len 4096, micro-batch 4. Median 5.02 s per optimizer update over 40 measured updates.",
+   "alert_type": "success",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "run:ft-clm-06",
+    "event:dry-run",
+    "namespace:ft-pool-north"
+   ],
+   "date_happened": 1793307600
+  },
+  {
+   "id": 880092,
+   "title": "Firmware update scheduled: ft-pool-south",
+   "text": "Fleet firmware update on the south pool, Wed 18 Nov 20:00-23:00 UTC. Nodes drained during the window.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "gpu-south-01",
+   "tags": [
+    "pool:south",
+    "event:maintenance"
+   ],
+   "date_happened": 1794387600
+  },
+  {
+   "id": 880093,
+   "title": "GPU XID 79 on gpu-north-03 (recovered)",
+   "text": "Node recovered after reset; no job impact.",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "gpu-north-03",
+   "tags": [
+    "pool:north"
+   ],
+   "date_happened": 1794107520
+  }
+ ],
+ "hosts": [
+  {
+   "name": "gpu-north-01",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-a100-sxm4-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 23.0,
+   "mem_pct": 32.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-north-02",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-a100-sxm4-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 24.0,
+   "mem_pct": 33.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-north-03",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-a100-sxm4-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 25.0,
+   "mem_pct": 34.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-north-04",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-a100-sxm4-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 26.0,
+   "mem_pct": 35.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-south-01",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-h100-sxm5-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 19.0,
+   "mem_pct": 28.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-south-02",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-h100-sxm5-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 20.0,
+   "mem_pct": 29.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-south-03",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-h100-sxm5-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 21.0,
+   "mem_pct": 30.0,
+   "last_reported": 1794815700
+  },
+  {
+   "name": "gpu-south-04",
+   "up": true,
+   "apps": [
+    "kubelet",
+    "dcgm-exporter",
+    "nvidia-h100-sxm5-80gb"
+   ],
+   "sources": "agent",
+   "cpu_pct": 22.0,
+   "mem_pct": 31.0,
+   "last_reported": 1794815700
+  }
+ ],
+ "monitors": [
+  {
+   "id": 7101,
+   "name": "GPU memory high — ft-pool-north",
+   "type": "metric alert",
+   "query": "avg(last_10m):avg:dcgm.fb_used_pct{pool:north} > 95",
+   "message": "Page ML Platform on-call.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "pool:north",
+    "team:ml-platform"
+   ],
+   "created": "2026-03-01T10:00:00+00:00",
+   "modified": "2026-11-01T10:00:00+00:00"
+  },
+  {
+   "id": 7102,
+   "name": "GPU memory high — ft-pool-south",
+   "type": "metric alert",
+   "query": "avg(last_10m):avg:dcgm.fb_used_pct{pool:south} > 95",
+   "message": "Page ML Platform on-call.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "pool:south",
+    "team:ml-platform"
+   ],
+   "created": "2026-03-01T10:00:00+00:00",
+   "modified": "2026-11-01T10:00:00+00:00"
+  },
+  {
+   "id": 7103,
+   "name": "Fine-tune step time regression",
+   "type": "metric alert",
+   "query": "avg(last_30m):avg:ftl.update_seconds{*} by {run} > 12",
+   "message": "Step time above 12 s per update.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "team:ml-platform"
+   ],
+   "created": "2026-05-01T10:00:00+00:00",
+   "modified": "2026-10-01T10:00:00+00:00"
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "sor-ftl-dryruns",
+   "title": "Fine-tune dry runs",
+   "description": "Dry-run step times and memory per run (events tagged event:dry-run)",
+   "layout_type": "ordered",
+   "author": "halvard-quist",
+   "widget_count": 6,
+   "is_read_only": true,
+   "created": "2026-04-01T10:00:00+00:00",
+   "modified": "2026-11-13T02:00:00+00:00"
+  },
+  {
+   "id": "sor-gpu-pools",
+   "title": "GPU pools",
+   "description": "Utilisation and memory per pool host",
+   "layout_type": "ordered",
+   "author": "joaquim-brandao",
+   "widget_count": 9,
+   "is_read_only": true,
+   "created": "2025-07-01T10:00:00+00:00",
+   "modified": "2026-11-02T10:00:00+00:00"
+  }
+ ],
+ "metrics": [
+  {
+   "metric": "sorrel.gpu.pool_utilisation",
+   "scope": "pool:north",
+   "base_value": 0.62,
+   "amplitude": 0.12,
+   "unit": "fraction",
+   "tags": [
+    "pool:north"
+   ]
+  }
+ ]
+}

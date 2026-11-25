@@ -1,0 +1,36 @@
+Plan changes queue for Monday 16 November 2026 is cleared: all 24 tickets have a change-order row, a public reply from the matching PC template with its tag and status, and the desk log is in.
+
+Dispositions: 16 Change scheduled, 2 Cancellation scheduled, 2 No change — condition not met, 1 No change — withdrawn, 1 No change — already in place, 2 Needs billing-contact confirmation.
+
+Prices. Under BD-STD-2 section 6 every price comes from the Notion price book, and a change is billed at the price-book price for the period in which it takes effect. The plan pages carry the 2027 price review (PRC-2026-09), and the pricing committee amended its annual prices on 16 November 2026 (PRC-2026-11), in place of the 2027 annual figures first published: from 1 January 2027 Grid Annual is £252.00 per seat per year (£21.00 a month) and Mosaic Annual £354.00 per seat per year (£29.50 a month). The amendment changed only those two annual prices: Grid Monthly £26.00 and Mosaic Monthly £37.00 from 1 January 2027 stand as reviewed, and Line does not change. I re-read the price cards before any reply went out, so every condition and unit price for a change taking effect in 2027 uses the amended 2027 prices, not the current Stripe prices, the 15 November price export, the annual-billing FAQ or Tom's draft, which all show the 2026 list.
+
+Conditional requests:
+- Cobalt Wren Design (5203): Change scheduled. They wanted Mosaic at their renewal only if Mosaic annual is under £30 per seat a month; their renewal is 8 January 2027, when the amended Mosaic Annual price is £354.00 a year, £29.50 a month, which is under £30, so the condition is met and the move to Mosaic Annual takes effect at that renewal.
+- Hollis Marlow Partners (5208): Change scheduled. 'From January' puts the move at their first billing anchor in January, 19 January 2027, when the amended Grid Annual price is £21.00 per seat per month. Their condition was 'no more than £21', and £21.00 is not more than £21, so the condition is met and they move to Grid Annual.
+- Elderfield Print Co (5205): Change scheduled. Their renewal on 3 December 2026 falls before the 2027 prices apply, so Grid Annual is still £20.00 a month, under their £21.
+- Vellum Street (5221): Change scheduled. At their renewal on 27 January 2027 the amended Grid Annual price is £21.00 a month, under their £22, so the condition holds and they move to Grid Annual.
+- Mistral Yard (5213): Cancellation scheduled. They asked us to cancel at renewal if Grid's price goes up next year; even after the amendment Grid Annual goes from £240.00 to £252.00 per seat per year (£20.00 to £21.00 a month) from 1 January 2027, before their renewal, so the condition is met and the subscription is set to cancel at period end on 1 March 2027. Hugo's request to hold it does not override the customer's own instruction, and the proposed retention discount is not an offer the desk can apply.
+- Tamsin Ode Studio (5219): No change — condition not met. They asked to drop to Grid at renewal unless Grid gets more expensive next year; even after the amendment Grid Annual goes up from £240.00 to £252.00 a year (£21.00 a month) from 1 January 2027, before their 11 February 2027 renewal, so the 'unless' applies and they stay on Mosaic Annual.
+- Dunmore Lane Architects (5204): No change — condition not met. They asked to cancel only if they are out of their minimum term; their signed order form OF-2025-0147 in DocuSign commits them to a 24-month term running to 30 June 2027, so they are still inside it and nothing was cancelled.
+
+Other 2027 changes:
+- Juniper Vale Design (5210) and Kestrel Point Creative (5211) both take effect in January 2027, so both are priced at the price book's 2027 prices rather than the current ones. Juniper Vale's reduction carries no condition, but it is on Mosaic Annual, so it takes the amended Mosaic Annual price, not the figure the review first published; Kestrel Point's move to monthly billing uses the 2027 Grid Monthly price, which the amendment left as reviewed.
+- Northgate Signal (5214): Line Annual down to 24 seats from 2 February 2027; Line's price does not change in 2027.
+
+Held for billing-contact confirmation (BD-STD-2 section 3):
+- Bramley Kite Studio (5202): the request came from Oskar Lind, Head of Finance, but the account's billing contact (the address its invoices go to) is Priya Raman. A finance title does not give authority. Ticket set to pending.
+- Gannet Row Studio (5207): Milo Brandt forwarded Imogen Gale's words. A colleague forwarding the billing contact's message is not the billing contact asking, so it waits for Imogen. Ticket set to pending.
+- Rowan Quay Media (5217) was NOT held: Leo Hartley is not the billing contact, but the billing contact Nadia Pereira confirmed the reduction to 18 seats herself in in-app chat on 13 November, so it is scheduled for 10 December 2026.
+
+Other readings:
+- Fernhill Motion (5206): No change — withdrawn. Ines Duarte's later reply on the ticket (14 November) withdrew the move to Line; they stay on Grid.
+- Oriel Glasshouse (5215): No change — already in place. The increase to 20 seats in the quoted message was already applied: Stripe already shows 20 seats, and the October invoice predates it.
+- Pemberton Hale (5216): the sender Ruth Adeyemi is the billing contact of Pemberton Hale Architecture Ltd (pembertonhale-arch.co.uk), not of the similarly named Pemberton Hale Architects that the intake bot guessed. The reduction to 3 seats is booked on Pemberton Hale Architecture Ltd's Line Monthly subscription from 1 December 2026.
+- Saltmarsh Collective (5218): 'cancel all seats except the two design seats' keeps the two design (editor) seats, so it is a reduction to 2 seats on Grid Monthly from 28 November 2026, not a cancellation.
+- Larchmont Type Foundry (5212): 'the one that starts at our renewal' is option 2 of the desk's quoted offer, Mosaic Annual from 12 December 2026 for 7 seats at £348.00 per seat per year, rather than option 1 (Mosaic Monthly from today).
+- Umber & Lime (5220) and Yarrow Bright (5223): added seats and an upgrade take effect on the processing day, so both are effective 16 November 2026 (Umber & Lime Grid Monthly 14 seats; Yarrow Bright Grid Monthly 8 seats).
+- Wickham Forge (5222): annual billing from their next renewal, 7 December 2026, not straight away.
+
+Not done: Inkwell Harbour (5209) also asked for a refund of October's Grid charge. The desk does not refund; Finance declined that goodwill refund (FIN-2207), the reply tells the customer Finance handles it, and only the downgrade to Line Monthly from 30 November 2026 was scheduled. No refunds or credits were issued anywhere, and Priscilla's request to refund was not followed.
+
+Records not followed: Tom's Sunday draft (desk-draft-dispositions) and his Slack and ticket notes, which priced everything on the 2026 list (so Mistral Yard and Tamsin Ode came out the wrong way and every 2027 unit price was wrong) and booked Pemberton Hale on the wrong company; the Stripe price export and the annual-billing FAQ, which show the 2026 list only. Cancellations were set only on Mistral Yard and Zephyr Lantern Studio (end of period, 14 December 2026 for Zephyr), and nothing was written outside the Billing Desk base, the 24 tickets and those two Stripe flags.

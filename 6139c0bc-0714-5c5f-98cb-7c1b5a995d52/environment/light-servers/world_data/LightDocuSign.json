@@ -1,0 +1,83 @@
+{
+ "envelopes": [
+  {
+   "envelope_id": "env-t02-01",
+   "status": "completed",
+   "email_subject": "Columbia Ridge PPA — FY2026 attribute transfer confirmation",
+   "sender_name": "Columbia Ridge Wind LLC",
+   "sender_email": "contracts@columbiaridgewind.example",
+   "created_time": "2026-10-03T10:00:00Z",
+   "sent_time": "2026-10-03T10:05:00Z",
+   "completed_time": "2026-10-05T09:00:00Z",
+   "template_id": "tmpl-t02-atc"
+  },
+  {
+   "envelope_id": "env-t02-02",
+   "status": "completed",
+   "email_subject": "Lone Mesa Solar — ISDA confirmation (financial swap, no REC transfer)",
+   "sender_name": "Lone Mesa Solar Holdings",
+   "sender_email": "legal@lonemesasolar.example",
+   "created_time": "2024-11-20T10:00:00Z",
+   "sent_time": "2024-11-20T10:05:00Z",
+   "completed_time": "2024-11-28T09:00:00Z",
+   "template_id": "tmpl-t02-isda"
+  },
+  {
+   "envelope_id": "env-t02-03",
+   "status": "sent",
+   "email_subject": "Greenledger — retirement instruction NRR-2026-0091-SOL (December window)",
+   "sender_name": "Greenledger Attribute Services",
+   "sender_email": "t.wren@greenledger-attributes.example",
+   "created_time": "2026-10-13T10:00:00Z",
+   "sent_time": "2026-10-13T10:05:00Z",
+   "completed_time": null,
+   "template_id": "tmpl-t02-ret"
+  }
+ ],
+ "documents": [
+  {
+   "document_id": "doc-t02-01",
+   "envelope_id": "env-t02-01",
+   "name": "Attribute transfer confirmation FY2026.pdf",
+   "pages": 2
+  },
+  {
+   "document_id": "doc-t02-02",
+   "envelope_id": "env-t02-02",
+   "name": "ISDA confirmation Lone Mesa.pdf",
+   "pages": 14
+  },
+  {
+   "document_id": "doc-t02-03",
+   "envelope_id": "env-t02-03",
+   "name": "Retirement instruction NRR-2026-0091-SOL.pdf",
+   "pages": 1
+  }
+ ],
+ "recipients": [
+  {
+   "recipient_id": "rcp-t02-01",
+   "envelope_id": "env-t02-01",
+   "name": "Maren Ostrowski",
+   "email": "maren.ostrowski@talvik.example",
+   "status": "completed",
+   "routing_order": 1
+  },
+  {
+   "recipient_id": "rcp-t02-02",
+   "envelope_id": "env-t02-02",
+   "name": "Rafael Okonjo",
+   "email": "rafael.okonjo@talvik.example",
+   "status": "completed",
+   "routing_order": 1
+  },
+  {
+   "recipient_id": "rcp-t02-03",
+   "envelope_id": "env-t02-03",
+   "name": "Maren Ostrowski",
+   "email": "maren.ostrowski@talvik.example",
+   "status": "sent",
+   "routing_order": 1
+  }
+ ]
+}

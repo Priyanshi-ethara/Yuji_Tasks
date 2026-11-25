@@ -1,0 +1,41 @@
+{
+  "run": "FT-CLM-06",
+  "recipe": "RCP-CLM-3",
+  "eval_set": "DS-2141",
+  "finished": "2026-11-05T11:41:00Z",
+  "metrics": {
+    "rougeL": 0.412,
+    "clause_citation_f1": 0.733
+  },
+  "baseline": {
+    "rougeL": 0.398,
+    "clause_citation_f1": 0.701
+  },
+  "per_region": [
+    {
+      "region": "NW",
+      "rougeL": 0.38
+    },
+    {
+      "region": "NE",
+      "rougeL": 0.39
+    },
+    {
+      "region": "MID",
+      "rougeL": 0.4
+    },
+    {
+      "region": "SW",
+      "rougeL": 0.41
+    },
+    {
+      "region": "SE",
+      "rougeL": 0.42
+    },
+    {
+      "region": "SCOT",
+      "rougeL": 0.43
+    }
+  ],
+  "notes": "Launched on multi-node-dp, 16 GPUs, accumulation 8."
+}

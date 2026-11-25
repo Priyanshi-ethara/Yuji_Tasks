@@ -1,0 +1,618 @@
+{
+ "tables": {
+  "Account": [
+   {
+    "Id": "001TSL000000000001",
+    "Name": "Ashgrove Atelier",
+    "Industry": "Design services",
+    "Website": "https://ashgroveatelier.co.uk",
+    "BillingCity": "Edinburgh",
+    "NumberOfEmployees": 20,
+    "Phone": "+44 20 7946 0000",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000002",
+    "Name": "Bramley Kite Studio",
+    "Industry": "Design services",
+    "Website": "https://bramleykite.co.uk",
+    "BillingCity": "Glasgow",
+    "NumberOfEmployees": 15,
+    "Phone": "+44 20 7946 0001",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000003",
+    "Name": "Cobalt Wren Design",
+    "Industry": "Design services",
+    "Website": "https://cobaltwren.design",
+    "BillingCity": "Bristol",
+    "NumberOfEmployees": 14,
+    "Phone": "+44 20 7946 0002",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Hugo Barnes.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000004",
+    "Name": "Dunmore Lane Architects",
+    "Industry": "Design services",
+    "Website": "https://dunmorelane.co.uk",
+    "BillingCity": "Norwich",
+    "NumberOfEmployees": 23,
+    "Phone": "+44 20 7946 0003",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Hugo Barnes. Order form OF-2025-0147 signed 24 Jun 2025: 24-month committed term from 1 July 2025 to 30 June 2027, billed monthly.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000005",
+    "Name": "Elderfield Print Co",
+    "Industry": "Design services",
+    "Website": "https://elderfieldprint.co.uk",
+    "BillingCity": "Leeds",
+    "NumberOfEmployees": 16,
+    "Phone": "+44 20 7946 0004",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000006",
+    "Name": "Fernhill Motion Ltd",
+    "Industry": "Design services",
+    "Website": "https://fernhillmotion.co.uk",
+    "BillingCity": "London",
+    "NumberOfEmployees": 12,
+    "Phone": "+44 20 7946 0005",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000007",
+    "Name": "Gannet Row Studio",
+    "Industry": "Design services",
+    "Website": "https://gannetrow.studio",
+    "BillingCity": "Cardiff",
+    "NumberOfEmployees": 13,
+    "Phone": "+44 20 7946 0006",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000008",
+    "Name": "Hollis Marlow Partners",
+    "Industry": "Design services",
+    "Website": "https://hollismarlow.com",
+    "BillingCity": "Dublin",
+    "NumberOfEmployees": 19,
+    "Phone": "+44 20 7946 0007",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000009",
+    "Name": "Inkwell Harbour",
+    "Industry": "Design services",
+    "Website": "https://inkwellharbour.com",
+    "BillingCity": "Manchester",
+    "NumberOfEmployees": 11,
+    "Phone": "+44 20 7946 0008",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Priscilla Vane.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000010",
+    "Name": "Juniper Vale Design",
+    "Industry": "Design services",
+    "Website": "https://junipervale.design",
+    "BillingCity": "Edinburgh",
+    "NumberOfEmployees": 17,
+    "Phone": "+44 20 7946 0009",
+    "Description": "Tessellate Mosaic customer since 2024. Account manager: Hugo Barnes.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000011",
+    "Name": "Kestrel Point Creative",
+    "Industry": "Design services",
+    "Website": "https://kestrelpoint.co",
+    "BillingCity": "Glasgow",
+    "NumberOfEmployees": 21,
+    "Phone": "+44 20 7946 0010",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000012",
+    "Name": "Larchmont Type Foundry",
+    "Industry": "Design services",
+    "Website": "https://larchmonttype.com",
+    "BillingCity": "Bristol",
+    "NumberOfEmployees": 12,
+    "Phone": "+44 20 7946 0011",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000013",
+    "Name": "Mistral Yard",
+    "Industry": "Design services",
+    "Website": "https://mistralyard.com",
+    "BillingCity": "Norwich",
+    "NumberOfEmployees": 27,
+    "Phone": "+44 20 7946 0012",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Hugo Barnes. Key Grid account; renewal review booked for 20 Nov.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000014",
+    "Name": "Northgate Signal",
+    "Industry": "Design services",
+    "Website": "https://northgatesignal.ie",
+    "BillingCity": "Leeds",
+    "NumberOfEmployees": 35,
+    "Phone": "+44 20 7946 0013",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000015",
+    "Name": "Oriel Glasshouse",
+    "Industry": "Design services",
+    "Website": "https://orielglasshouse.co.uk",
+    "BillingCity": "London",
+    "NumberOfEmployees": 25,
+    "Phone": "+44 20 7946 0014",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000016",
+    "Name": "Pemberton Hale Architecture Ltd",
+    "Industry": "Design services",
+    "Website": "https://pembertonhale-arch.co.uk",
+    "BillingCity": "Cardiff",
+    "NumberOfEmployees": 10,
+    "Phone": "+44 20 7946 0015",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk). Separate company from Pemberton Hale Architects; shares the founder's surname only.",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000017",
+    "Name": "Rowan Quay Media",
+    "Industry": "Design services",
+    "Website": "https://rowanquay.media",
+    "BillingCity": "Dublin",
+    "NumberOfEmployees": 25,
+    "Phone": "+44 20 7946 0016",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000018",
+    "Name": "Saltmarsh Collective",
+    "Industry": "Design services",
+    "Website": "https://saltmarsh.coop",
+    "BillingCity": "Manchester",
+    "NumberOfEmployees": 14,
+    "Phone": "+44 20 7946 0017",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000019",
+    "Name": "Tamsin Ode Studio",
+    "Industry": "Design services",
+    "Website": "https://tamsinode.studio",
+    "BillingCity": "Edinburgh",
+    "NumberOfEmployees": 11,
+    "Phone": "+44 20 7946 0018",
+    "Description": "Tessellate Mosaic customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000020",
+    "Name": "Umber & Lime",
+    "Industry": "Design services",
+    "Website": "https://umberandlime.com",
+    "BillingCity": "Glasgow",
+    "NumberOfEmployees": 15,
+    "Phone": "+44 20 7946 0019",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000021",
+    "Name": "Vellum Street",
+    "Industry": "Design services",
+    "Website": "https://vellumstreet.co.uk",
+    "BillingCity": "Bristol",
+    "NumberOfEmployees": 10,
+    "Phone": "+44 20 7946 0020",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000022",
+    "Name": "Wickham Forge",
+    "Industry": "Design services",
+    "Website": "https://wickhamforge.co.uk",
+    "BillingCity": "Norwich",
+    "NumberOfEmployees": 9,
+    "Phone": "+44 20 7946 0021",
+    "Description": "Tessellate Mosaic customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000023",
+    "Name": "Yarrow Bright",
+    "Industry": "Design services",
+    "Website": "https://yarrowbright.com",
+    "BillingCity": "Leeds",
+    "NumberOfEmployees": 13,
+    "Phone": "+44 20 7946 0022",
+    "Description": "Tessellate Line customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000024",
+    "Name": "Zephyr Lantern Studio",
+    "Industry": "Design services",
+    "Website": "https://zephyrlantern.studio",
+    "BillingCity": "London",
+    "NumberOfEmployees": 8,
+    "Phone": "+44 20 7946 0023",
+    "Description": "Tessellate Mosaic customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000025",
+    "Name": "Pemberton Hale Architects",
+    "Industry": "Design services",
+    "Website": "https://pembertonhalearchitects.co.uk",
+    "BillingCity": "Cardiff",
+    "NumberOfEmployees": 17,
+    "Phone": "+44 20 7946 0024",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk). Not to be confused with Pemberton Hale Architecture Ltd (separate company, separate workspace).",
+    "Type": "Customer"
+   },
+   {
+    "Id": "001TSL000000000026",
+    "Name": "Gannet Row Studios",
+    "Industry": "Design services",
+    "Website": "https://gannetrowstudios.com",
+    "BillingCity": "Dublin",
+    "NumberOfEmployees": 9,
+    "Phone": "+44 20 7946 0025",
+    "Description": "Tessellate Grid customer since 2024. Account manager: Pooled (desk).",
+    "Type": "Customer"
+   }
+  ],
+  "Contact": [
+   {
+    "Id": "003TSL000000000001",
+    "FirstName": "Callum",
+    "LastName": "Reid",
+    "Email": "callum.reid@ashgroveatelier.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000001",
+    "MailingCity": "Edinburgh",
+    "Phone": "+44 7700 900000"
+   },
+   {
+    "Id": "003TSL000000000002",
+    "FirstName": "Priya",
+    "LastName": "Raman",
+    "Email": "priya.raman@bramleykite.co.uk",
+    "Title": "Office Manager",
+    "AccountId": "001TSL000000000002",
+    "MailingCity": "Glasgow",
+    "Phone": "+44 7700 900001"
+   },
+   {
+    "Id": "003TSL000000002900",
+    "FirstName": "Oskar",
+    "LastName": "Lind",
+    "Email": "oskar.lind@bramleykite.co.uk",
+    "Title": "Head of Finance",
+    "AccountId": "001TSL000000000002",
+    "MailingCity": "Glasgow",
+    "Phone": "+44 7700 800100"
+   },
+   {
+    "Id": "003TSL000000000003",
+    "FirstName": "Hattie",
+    "LastName": "Moss",
+    "Email": "hattie.moss@cobaltwren.design",
+    "Title": "Studio Manager",
+    "AccountId": "001TSL000000000003",
+    "MailingCity": "Bristol",
+    "Phone": "+44 7700 900002"
+   },
+   {
+    "Id": "003TSL000000000004",
+    "FirstName": "Rafael",
+    "LastName": "Okoro",
+    "Email": "rafael.okoro@dunmorelane.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000004",
+    "MailingCity": "Norwich",
+    "Phone": "+44 7700 900003"
+   },
+   {
+    "Id": "003TSL000000000005",
+    "FirstName": "Bea",
+    "LastName": "Sandoval",
+    "Email": "bea.sandoval@elderfieldprint.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000005",
+    "MailingCity": "Leeds",
+    "Phone": "+44 7700 900004"
+   },
+   {
+    "Id": "003TSL000000000006",
+    "FirstName": "Ines",
+    "LastName": "Duarte",
+    "Email": "ines.duarte@fernhillmotion.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000006",
+    "MailingCity": "London",
+    "Phone": "+44 7700 900005"
+   },
+   {
+    "Id": "003TSL000000000007",
+    "FirstName": "Imogen",
+    "LastName": "Gale",
+    "Email": "imogen.gale@gannetrow.studio",
+    "Title": "Managing Director",
+    "AccountId": "001TSL000000000007",
+    "MailingCity": "Cardiff",
+    "Phone": "+44 7700 900006"
+   },
+   {
+    "Id": "003TSL000000007900",
+    "FirstName": "Milo",
+    "LastName": "Brandt",
+    "Email": "milo.brandt@gannetrow.studio",
+    "Title": "Designer",
+    "AccountId": "001TSL000000000007",
+    "MailingCity": "Cardiff",
+    "Phone": "+44 7700 800600"
+   },
+   {
+    "Id": "003TSL000000000008",
+    "FirstName": "Dev",
+    "LastName": "Anand",
+    "Email": "dev.anand@hollismarlow.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000008",
+    "MailingCity": "Dublin",
+    "Phone": "+44 7700 900007"
+   },
+   {
+    "Id": "003TSL000000000009",
+    "FirstName": "Sasha",
+    "LastName": "Brennan",
+    "Email": "sasha.brennan@inkwellharbour.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000009",
+    "MailingCity": "Manchester",
+    "Phone": "+44 7700 900008"
+   },
+   {
+    "Id": "003TSL000000000010",
+    "FirstName": "Owen",
+    "LastName": "Pryce",
+    "Email": "owen.pryce@junipervale.design",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000010",
+    "MailingCity": "Edinburgh",
+    "Phone": "+44 7700 900009"
+   },
+   {
+    "Id": "003TSL000000000011",
+    "FirstName": "Kat",
+    "LastName": "Okafor",
+    "Email": "kat.okafor@kestrelpoint.co",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000011",
+    "MailingCity": "Glasgow",
+    "Phone": "+44 7700 900010"
+   },
+   {
+    "Id": "003TSL000000000012",
+    "FirstName": "Edie",
+    "LastName": "Fairbanks",
+    "Email": "edie.fairbanks@larchmonttype.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000012",
+    "MailingCity": "Bristol",
+    "Phone": "+44 7700 900011"
+   },
+   {
+    "Id": "003TSL000000000013",
+    "FirstName": "Jonah",
+    "LastName": "Weller",
+    "Email": "jonah.weller@mistralyard.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000013",
+    "MailingCity": "Norwich",
+    "Phone": "+44 7700 900012"
+   },
+   {
+    "Id": "003TSL000000000014",
+    "FirstName": "Aoife",
+    "LastName": "Byrne",
+    "Email": "aoife.byrne@northgatesignal.ie",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000014",
+    "MailingCity": "Leeds",
+    "Phone": "+44 7700 900013"
+   },
+   {
+    "Id": "003TSL000000000015",
+    "FirstName": "Tomasz",
+    "LastName": "Wrobel",
+    "Email": "tomasz.wrobel@orielglasshouse.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000015",
+    "MailingCity": "London",
+    "Phone": "+44 7700 900014"
+   },
+   {
+    "Id": "003TSL000000000016",
+    "FirstName": "Ruth",
+    "LastName": "Adeyemi",
+    "Email": "ruth.adeyemi@pembertonhale-arch.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000016",
+    "MailingCity": "Cardiff",
+    "Phone": "+44 7700 900015"
+   },
+   {
+    "Id": "003TSL000000000017",
+    "FirstName": "Nadia",
+    "LastName": "Pereira",
+    "Email": "nadia.pereira@rowanquay.media",
+    "Title": "Finance Manager",
+    "AccountId": "001TSL000000000017",
+    "MailingCity": "Dublin",
+    "Phone": "+44 7700 900016"
+   },
+   {
+    "Id": "003TSL000000017900",
+    "FirstName": "Leo",
+    "LastName": "Hartley",
+    "Email": "leo.hartley@rowanquay.media",
+    "Title": "Producer",
+    "AccountId": "001TSL000000000017",
+    "MailingCity": "Dublin",
+    "Phone": "+44 7700 801600"
+   },
+   {
+    "Id": "003TSL000000000018",
+    "FirstName": "Gwen",
+    "LastName": "Llewellyn",
+    "Email": "gwen.llewellyn@saltmarsh.coop",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000018",
+    "MailingCity": "Manchester",
+    "Phone": "+44 7700 900017"
+   },
+   {
+    "Id": "003TSL000000000019",
+    "FirstName": "Tamsin",
+    "LastName": "Ode",
+    "Email": "tamsin@tamsinode.studio",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000019",
+    "MailingCity": "Edinburgh",
+    "Phone": "+44 7700 900018"
+   },
+   {
+    "Id": "003TSL000000000020",
+    "FirstName": "Felix",
+    "LastName": "Haddad",
+    "Email": "felix.haddad@umberandlime.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000020",
+    "MailingCity": "Glasgow",
+    "Phone": "+44 7700 900019"
+   },
+   {
+    "Id": "003TSL000000000021",
+    "FirstName": "Marta",
+    "LastName": "Silva",
+    "Email": "marta.silva@vellumstreet.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000021",
+    "MailingCity": "Bristol",
+    "Phone": "+44 7700 900020"
+   },
+   {
+    "Id": "003TSL000000000022",
+    "FirstName": "Ben",
+    "LastName": "Archer",
+    "Email": "ben.archer@wickhamforge.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000022",
+    "MailingCity": "Norwich",
+    "Phone": "+44 7700 900021"
+   },
+   {
+    "Id": "003TSL000000000023",
+    "FirstName": "Lena",
+    "LastName": "Fischer",
+    "Email": "lena.fischer@yarrowbright.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000023",
+    "MailingCity": "Leeds",
+    "Phone": "+44 7700 900022"
+   },
+   {
+    "Id": "003TSL000000000024",
+    "FirstName": "Ravi",
+    "LastName": "Menon",
+    "Email": "ravi.menon@zephyrlantern.studio",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000024",
+    "MailingCity": "London",
+    "Phone": "+44 7700 900023"
+   },
+   {
+    "Id": "003TSL000000000025",
+    "FirstName": "Julian",
+    "LastName": "Hale",
+    "Email": "accounts@pembertonhalearchitects.co.uk",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000025",
+    "MailingCity": "Cardiff",
+    "Phone": "+44 7700 900024"
+   },
+   {
+    "Id": "003TSL000000000026",
+    "FirstName": "Theo",
+    "LastName": "Marsh",
+    "Email": "theo.marsh@gannetrowstudios.com",
+    "Title": "Operations",
+    "AccountId": "001TSL000000000026",
+    "MailingCity": "Dublin",
+    "Phone": "+44 7700 900025"
+   }
+  ],
+  "Opportunity": [
+   {
+    "Id": "006TSL000000000003",
+    "Name": "Cobalt Wren Design - 2027 renewal",
+    "AccountId": "001TSL000000000003",
+    "StageName": "Renewal review",
+    "Amount": 2160,
+    "CloseDate": "2027-01-08"
+   },
+   {
+    "Id": "006TSL000000000004",
+    "Name": "Dunmore Lane Architects - 2027 renewal",
+    "AccountId": "001TSL000000000004",
+    "StageName": "Renewal review",
+    "Amount": 5184,
+    "CloseDate": "2026-11-29"
+   },
+   {
+    "Id": "006TSL000000000010",
+    "Name": "Juniper Vale Design - 2027 renewal",
+    "AccountId": "001TSL000000000010",
+    "StageName": "Renewal review",
+    "Amount": 4176,
+    "CloseDate": "2027-01-15"
+   },
+   {
+    "Id": "006TSL000000000013",
+    "Name": "Mistral Yard - 2027 renewal",
+    "AccountId": "001TSL000000000013",
+    "StageName": "Renewal review",
+    "Amount": 5280,
+    "CloseDate": "2027-03-01"
+   }
+  ]
+ }
+}

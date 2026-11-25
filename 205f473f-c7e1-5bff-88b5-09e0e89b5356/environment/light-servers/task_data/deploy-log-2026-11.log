@@ -1,0 +1,22 @@
+2026-11-03T09:12:44Z deploy fleetd 4.11.3 env=production by=leif.domingo result=ok canary=passed
+2026-11-03T09:40:02Z config fleetd notify.digest.enabled=false (hold until 4.12.0)
+2026-11-05T14:01:10Z deploy dispatch-web 2.30.0 env=production by=ci result=ok
+2026-11-06T10:22:31Z config fleetd billing.queue.flush_delay=1500ms (was 500ms)
+2026-11-07T08:55:19Z deploy dispatch-web 2.30.1 env=production by=ci result=ok
+2026-11-10T08:30:00Z build fleetd 4.12.0 go1.23.3 flags="-mod=vendor -trimpath -ldflags=-s" commit=9be41c2
+2026-11-10T09:02:47Z deploy fleetd 4.12.0 env=canary by=leif.domingo result=ok
+2026-11-10T10:15:05Z deploy fleetd 4.12.0 env=production by=leif.domingo result=ok
+2026-11-10T10:16:40Z config fleetd telemetry.exporter.batch_max=512 (was 128) ring_size=256
+2026-11-10T10:17:12Z config fleetd notify.digest.enabled=true
+2026-11-10T10:30:00Z build simctl 4.12.0 go1.23.3 flags="-mod=vendor -trimpath" commit=9be41c2
+2026-11-11T07:00:33Z config fleetd ingest.gateway.heartbeat_interval=2s (was 5s)
+2026-11-12T16:44:09Z config fleetd geo.eta.model=v7
+2026-11-13T08:30:00Z build fleetd 4.12.1 go1.23.3 flags="-mod=vendor -trimpath -ldflags=-s" commit=c03d7e8
+2026-11-13T09:00:12Z deploy fleetd 4.12.1 env=canary by=leif.domingo result=ok
+2026-11-13T11:31:58Z deploy fleetd 4.12.1 env=production by=leif.domingo result=ok
+2026-11-13T14:02:00Z incident PD-7731 opened (push provider 5xx)
+2026-11-13T19:31:00Z incident PD-7731 resolved
+2026-11-14T03:10:00Z restart fleetd-workers-2 reason=oom
+2026-11-14T09:00:00Z config fleetd billing.queue.flush_delay=500ms (revert)
+2026-11-15T02:00:00Z cron settlement invoice-run ok=17 failed=2
+2026-11-16T06:00:00Z triage-export wrote CODEOWNERS and source excerpts for the desk

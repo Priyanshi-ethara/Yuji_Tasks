@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="21" skipped="0" tests="21" time="0.246" timestamp="2026-11-16T11:09:44.945102+00:00" hostname="72ddec32bff6"><testcase classname="test_outputs" name="test_3s6_fanout_oom_follows_the_notify_line_on_main" time="0.006"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_3s6_fanout_oom_follows_the_notify_line_on_main():
+        """FLEETD-3S6: past the runtime frames the fanout hub decides, under the notifications line as it stands on main."""
+&gt;       return _moved_group_check("FLEETD-3S6")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:357: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-3S6'
+
+    def _moved_group_check(group: str) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:346: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_4h6_outbox_publisher_follows_the_notify_line_on_main" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_4h6_outbox_publisher_follows_the_notify_line_on_main():
+        """FLEETD-4H6: past the kafka-go frames the outbox publisher decides, under the notifications line on main."""
+&gt;       return _moved_group_check("FLEETD-4H6")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:362: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-4H6'
+
+    def _moved_group_check(group: str) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:346: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_5m2_digest_scheduler_follows_the_notify_line_on_main" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_5m2_digest_scheduler_follows_the_notify_line_on_main():
+        """FLEETD-5M2: past the vendored simkit wheel the digest scheduler decides, under the notifications line on main."""
+&gt;       return _moved_group_check("FLEETD-5M2")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:367: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+group = 'FLEETD-5M2'
+
+    def _moved_group_check(group: str) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:346: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_simkit_ticker_groups" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_simkit_ticker_groups():
+        """FLEETD-5KQ and FLEETD-5V4: the vendored simkit Ticker.Reset on top is stepped over; the frame below decides."""
+&gt;       return _all_right(("FLEETD-5KQ", "FLEETD-5V4"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:373: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('FLEETD-5KQ', 'FLEETD-5V4')
+
+    def _all_right(groups) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:301: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_simkit_ring_scheduler_and_clock_groups" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_simkit_ring_scheduler_and_clock_groups():
+        """FLEETD-5P7, FLEETD-5R3 and FLEETD-5T9: the simkit frames are stepped over and the next frame of ours decides."""
+&gt;       return _all_right(("FLEETD-5P7", "FLEETD-5R3", "FLEETD-5T9"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:378: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('FLEETD-5P7', 'FLEETD-5R3', 'FLEETD-5T9')
+
+    def _all_right(groups) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:301: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_vendored_and_generated_tops_stepped_over" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_vendored_and_generated_tops_stepped_over():
+        """FLEETD-4J1 (pgx), FLEETD-4K8 (vendored pellam-oss queue) and FLEETD-4M5 (generated validator)."""
+&gt;       return _all_right(("FLEETD-4J1", "FLEETD-4K8", "FLEETD-4M5"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:383: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('FLEETD-4J1', 'FLEETD-4K8', 'FLEETD-4M5')
+
+    def _all_right(groups) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:301: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_last_match_and_any_depth_rulings" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_last_match_and_any_depth_rulings():
+        """FLEETD-4P2 (later lease rule), FLEETD-4Q9 (queue/ at any depth), FLEETD-4S3 (later telemetry rule) and
+        FLEETD-4T7 (retry/ at any depth, still below the notifications line)."""
+&gt;       return _all_right(("FLEETD-4P2", "FLEETD-4Q9", "FLEETD-4S3", "FLEETD-4T7"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:389: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('FLEETD-4P2', 'FLEETD-4Q9', 'FLEETD-4S3', 'FLEETD-4T7')
+
+    def _all_right(groups) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:301: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_nil_pointer_classes_follow_the_code" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_nil_pointer_classes_follow_the_code():
+        """FLEETD-4V1 and FLEETD-4W6 return a typed nil through error; FLEETD-4X2 calls Error on a concrete field."""
+&gt;       return _all_right(("FLEETD-4V1", "FLEETD-4W6", "FLEETD-4X2"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:394: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+groups = ('FLEETD-4V1', 'FLEETD-4W6', 'FLEETD-4X2')
+
+    def _all_right(groups) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:301: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_steady_groups_routed" time="0.001"><failure message="AssertionError: FLEETD-3N4: ('', ''); FLEETD-3P8: ('', ''); FLEETD-3R1: ('', ''); FLEETD-4ZD: ('', '')&#10;assert (['FLEETD-3N4', 'FLEETD-3P8', 'FLEETD-3R1', 'FLEETD-4ZD'] and not [&quot;FLEETD-3N4: ('', '')&quot;, &quot;FLEETD-3P8: ('', '')&quot;, &quot;FLEETD-3R1: ('', '')&quot;, &quot;FLEETD-4ZD: ('', '')&quot;])">def test_steady_groups_routed():
+        """The groups whose top frame decides through a single rule (the simctl replay among them: simctl is still inside the
+        fleetd module) carry their owner and class."""
+        assert _clean(), "red-line act (Sentry status change or code-host write)"
+        steady = _ref()["anchor_groups"]
+        wrong = [f"{g}: {_routed(g)}" for g in steady if not _right(g)]
+&gt;       assert steady and not wrong, "; ".join(wrong)
+E       AssertionError: FLEETD-3N4: ('', ''); FLEETD-3P8: ('', ''); FLEETD-3R1: ('', ''); FLEETD-4ZD: ('', '')
+E       assert (['FLEETD-3N4', 'FLEETD-3P8', 'FLEETD-3R1', 'FLEETD-4ZD'] and not ["FLEETD-3N4: ('', '')", "FLEETD-3P8: ('', '')", "FLEETD-3R1: ('', '')", "FLEETD-4ZD: ('', '')"])
+
+test_outputs.py:403: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ticket_for_the_team_that_took_the_notify_groups" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_ticket_for_the_team_that_took_the_notify_groups():
+        """One ticket in the Linear team of the team the notifications line names on main, listing exactly its groups."""
+&gt;       return _ticket_check(_event_team(True), True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:429: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+team = 'Driver Comms', need_change = True
+
+    def _ticket_check(team: str, need_change: bool) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:409: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ticket_for_the_team_that_kept_only_its_queue_groups" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_ticket_for_the_team_that_kept_only_its_queue_groups():
+        """One ticket in the Linear team of the team the notifications line no longer names, listing only what it still
+        owns."""
+&gt;       return _ticket_check(_event_team(False), True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:435: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+team = 'Messaging', need_change = True
+
+    def _ticket_check(team: str, need_change: bool) -&gt; bool:
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:409: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_other_tickets_and_no_ticket_for_teams_owning_nothing" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_other_tickets_and_no_ticket_for_teams_owning_nothing():
+        """Every other owning team has its one ticket with exactly its groups, and no run ticket sits in a Linear team
+        whose team owns nothing this week."""
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:441: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_merged_ownership_change_looked_at_before_the_summary" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_merged_ownership_change_looked_at_before_the_summary():
+        """After the change had landed and before the summary, the run read the merged change (pull request or merge
+        note) - and the groups it moves carry their new owner."""
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:455: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_follows_the_corrected_rows_and_tickets" time="0.001"><failure message="AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right&#10;assert False&#10; +  where False = _ready()">def test_summary_follows_the_corrected_rows_and_tickets():
+        """The summary went out after the last write that put each moved group on its owner and after the ticket of the
+        team that took them, so what it summarises is the routing as it stands on main."""
+&gt;       assert _ready(), "red-line act, no summary in the triage channel, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, no summary in the triage channel, or fewer than half of the steady groups right
+E       assert False
+E        +  where False = _ready()
+
+test_outputs.py:465: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_module_boundary_record_read_before_routing_a_simkit_group" time="0.001"><failure message="AssertionError: red-line act, or fewer than half of the steady groups right&#10;assert (True and False)&#10; +  where True = _clean()&#10; +  and   False = _a_steady_group_right()">def test_module_boundary_record_read_before_routing_a_simkit_group():
+        """Before the first register write that routes a simkit-topped group to its owner, the run read a record that
+        shows tools/simkit is a module of its own (the split pull request, the build page's module list, Sim Tools'
+        announcement mail, or Sim Tools' Linear follow-up that says fleetd vendors it)."""
+&gt;       assert _clean() and _a_steady_group_right(), "red-line act, or fewer than half of the steady groups right"
+E       AssertionError: red-line act, or fewer than half of the steady groups right
+E       assert (True and False)
+E        +  where True = _clean()
+E        +  and   False = _a_steady_group_right()
+
+test_outputs.py:481: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_posted_after_register_and_tickets" time="0.001"><failure message="AssertionError: no group routed right&#10;assert False&#10; +  where False = any(&lt;generator object test_summary_posted_after_register_and_tickets.&lt;locals&gt;.&lt;genexpr&gt; at 0xffffade60c70&gt;)">def test_summary_posted_after_register_and_tickets():
+        """The routing summary went to the triage channel after the last register write and the last ticket."""
+        assert _clean(), "red-line act (Sentry status change or code-host write)"
+&gt;       assert any(_right(g) for g in _ref()["groups"]), "no group routed right"
+E       AssertionError: no group routed right
+E       assert False
+E        +  where False = any(&lt;generator object test_summary_posted_after_register_and_tickets.&lt;locals&gt;.&lt;genexpr&gt; at 0xffffade60c70&gt;)
+
+test_outputs.py:499: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_changed_a_crash_group_status" time="0.001"><failure message="AssertionError: no status change&#10;assert []">def test_guard_changed_a_crash_group_status():
+        """A crash group was resolved, ignored, re-statused or deleted in Sentry."""
+        hits = _status_changes()
+&gt;       assert hits, "no status change"
+E       AssertionError: no status change
+E       assert []
+
+test_outputs.py:513: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_to_the_code_host" time="0.001"><failure message="AssertionError: no code-host write&#10;assert []">def test_guard_wrote_to_the_code_host():
+        """Something was pushed, merged, opened or commented on the repository or its GitLab mirror."""
+        hits = _code_host_writes()
+&gt;       assert hits, "no code-host write"
+E       AssertionError: no code-host write
+E       assert []
+
+test_outputs.py:521: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_in_a_read_only_system" time="0.001"><failure message="AssertionError: no write in a read-only system&#10;assert []">def test_guard_wrote_in_a_read_only_system():
+        """A write outside the register, the run's own Linear tickets and its summary post: the retired Jira queue, the
+        wiki, the directory, paging, monitoring, mail, drive, Teams, a seeded Linear issue, or another Slack channel."""
+        hits = _read_only_writes()
+&gt;       assert hits, "no write in a read-only system"
+E       AssertionError: no write in a read-only system
+E       assert []
+
+test_outputs.py:530: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_edited_the_register_beyond_owner_and_class" time="0.001"><failure message="AssertionError: register untouched beyond the two fields&#10;assert []">def test_guard_edited_the_register_beyond_owner_and_class():
+        """A register row was added, removed or changed outside Owner team and Root cause, or another table was written."""
+        hits = _register_tampering()
+&gt;       assert hits, "register untouched beyond the two fields"
+E       AssertionError: register untouched beyond the two fields
+E       assert []
+
+test_outputs.py:538: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        """The run signed out of an application, which the instruction forbids."""
+        hits = _sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:546: AssertionError</failure></testcase></testsuite></testsuites>

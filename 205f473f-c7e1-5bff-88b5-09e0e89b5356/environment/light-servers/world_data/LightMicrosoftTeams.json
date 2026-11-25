@@ -1,0 +1,87 @@
+{
+ "teams": [
+  {
+   "id": "team_pellam_billing",
+   "displayName": "Billing & Settlement",
+   "description": "Billing team space",
+   "membershipType": "standard",
+   "visibility": "private",
+   "isArchived": false,
+   "webUrl": "https://teams.pellam.example/billing",
+   "member_ids": [
+    "user-001",
+    "user-kofi",
+    "user-ilse"
+   ]
+  },
+  {
+   "id": "team_pellam_platform",
+   "displayName": "Platform Foundations",
+   "description": "Platform team space",
+   "membershipType": "standard",
+   "visibility": "private",
+   "isArchived": false,
+   "webUrl": "https://teams.pellam.example/platform",
+   "member_ids": [
+    "user-001",
+    "user-ruth",
+    "user-nils"
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "id": "msch_bil_general",
+   "team_id": "team_pellam_billing",
+   "displayName": "General",
+   "membershipType": "standard",
+   "description": "Billing general",
+   "webUrl": "https://teams.pellam.example/billing/general",
+   "createdDateTime": "2025-02-01T09:00:00Z"
+  },
+  {
+   "id": "msch_plt_general",
+   "team_id": "team_pellam_platform",
+   "displayName": "General",
+   "membershipType": "standard",
+   "description": "Platform general",
+   "webUrl": "https://teams.pellam.example/platform/general",
+   "createdDateTime": "2025-02-01T09:00:00Z"
+  }
+ ],
+ "messages": [
+  {
+   "id": "1763030000001",
+   "channel_id": "msch_bil_general",
+   "team_id": "team_pellam_billing",
+   "from_user_id": "user-kofi",
+   "from_display_name": "Kofi Mensah-Hart",
+   "content": "Asked the SRE desk to route settlement-queue crashes to us. Wendell, please pick up FLEETD-4Q9 if it lands here.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-11-12T16:10:00Z"
+  },
+  {
+   "id": "1763030000002",
+   "channel_id": "msch_plt_general",
+   "team_id": "team_pellam_platform",
+   "from_user_id": "user-ruth",
+   "from_display_name": "Ruth Calloway",
+   "content": "Logging sink panics at shutdown are ours (internal/platform/logging). The queue library underneath is just where it surfaces.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-11-11T10:00:00Z"
+  },
+  {
+   "id": "1763030000003",
+   "channel_id": "msch_plt_general",
+   "team_id": "team_pellam_platform",
+   "from_user_id": "user-nils",
+   "from_display_name": "Nils Brennan",
+   "content": "Exporter window crash: BatchMax 512 > ring 256. Patch in review.",
+   "contentType": "text",
+   "importance": "normal",
+   "createdDateTime": "2026-11-12T09:30:00Z"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brightwater Payments//Planned maintenance//EN
+X-WR-CALNAME:Planned maintenance (shared)
+BEGIN:VEVENT
+UID:pm-2026q4-001@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261006T020000Z
+DTEND:20261006T030000Z
+SUMMARY:fraud-score model store migration
+ORGANIZER;CN=Risk Engineering:mailto:risk-engineering@brightwater-payments.example
+DESCRIPTION:Owner team Risk Engineering. Calendar status: Declared in PagerDuty. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-002@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261014T010000Z
+DTEND:20261014T022500Z
+SUMMARY:ledger-posting partition rebuild
+ORGANIZER;CN=Ledger Platform:mailto:ledger-platform@brightwater-payments.example
+DESCRIPTION:Owner team Ledger Platform. Calendar status: Declared in PagerDuty. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-003@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261018T020000Z
+DTEND:20261018T024000Z
+SUMMARY:sanctions-screen list reload (CANCELLED 17 Oct)
+ORGANIZER;CN=Risk Engineering:mailto:risk-engineering@brightwater-payments.example
+DESCRIPTION:Owner team Risk Engineering. Calendar status: Cancelled. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-004@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261021T030000Z
+DTEND:20261021T034500Z
+SUMMARY:card-auth-gateway HSM firmware
+ORGANIZER;CN=Acquiring:mailto:acquiring@brightwater-payments.example
+DESCRIPTION:Owner team Acquiring. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-005@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261027T010500Z
+DTEND:20261027T013000Z
+SUMMARY:tokenisation-vault key rotation (drain)
+ORGANIZER;CN=Acquiring:mailto:acquiring@brightwater-payments.example
+DESCRIPTION:Owner team Acquiring. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-006@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261126T220000Z
+DTEND:20261126T230000Z
+SUMMARY:statement-render font cache rebuild (no customer impact expected)
+ORGANIZER;CN=Ledger Platform:mailto:ledger-platform@brightwater-payments.example
+DESCRIPTION:Owner team Ledger Platform. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-007@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261104T020000Z
+DTEND:20261104T030000Z
+SUMMARY:bank-file-dispatch SFTP key change
+ORGANIZER;CN=Payouts:mailto:payouts@brightwater-payments.example
+DESCRIPTION:Owner team Payouts. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-008@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261112T010000Z
+DTEND:20261112T020000Z
+SUMMARY:journal-export warehouse cutover
+ORGANIZER;CN=Ledger Platform:mailto:ledger-platform@brightwater-payments.example
+DESCRIPTION:Owner team Ledger Platform. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-009@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261118T030000Z
+DTEND:20261118T033000Z
+SUMMARY:velocity-limits cache flush
+ORGANIZER;CN=Risk Engineering:mailto:risk-engineering@brightwater-payments.example
+DESCRIPTION:Owner team Risk Engineering. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-010@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261202T020000Z
+DTEND:20261202T040000Z
+SUMMARY:payout-scheduler database minor upgrade
+ORGANIZER;CN=Payouts:mailto:payouts@brightwater-payments.example
+DESCRIPTION:Owner team Payouts. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+BEGIN:VEVENT
+UID:pm-2026q4-011@brightwater-payments.example
+DTSTAMP:20260929T090000Z
+DTSTART:20261209T010000Z
+DTEND:20261209T013000Z
+SUMMARY:3ds-challenge directory server cert
+ORGANIZER;CN=Acquiring:mailto:acquiring@brightwater-payments.example
+DESCRIPTION:Owner team Acquiring. Calendar status: Planned. The calendar is for planning; declarations are raised in PagerDuty.
+END:VEVENT
+END:VCALENDAR

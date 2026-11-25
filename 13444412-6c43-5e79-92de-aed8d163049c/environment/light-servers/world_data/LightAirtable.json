@@ -1,0 +1,541 @@
+{
+ "bases": [
+  {
+   "id": "appTslBillDesk01",
+   "name": "Billing Desk",
+   "permission_level": "create"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblTslChangeOrd",
+   "base_id": "appTslBillDesk01",
+   "name": "Change orders",
+   "primary_field_id": "fldCO001",
+   "fields": [
+    {
+     "id": "fldCO001",
+     "name": "Ticket",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCO002",
+     "name": "Account (as written)",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCO003",
+     "name": "Received",
+     "type": "date"
+    },
+    {
+     "id": "fldCO004",
+     "name": "Requester",
+     "type": "email"
+    },
+    {
+     "id": "fldCO005",
+     "name": "Disposition",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldCO006",
+     "name": "Stripe customer",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCO007",
+     "name": "Subscription",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldCO008",
+     "name": "New plan",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldCO009",
+     "name": "Seats",
+     "type": "number"
+    },
+    {
+     "id": "fldCO010",
+     "name": "Effective date",
+     "type": "date"
+    },
+    {
+     "id": "fldCO011",
+     "name": "Unit price (GBP)",
+     "type": "number"
+    },
+    {
+     "id": "fldCO012",
+     "name": "Desk note",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tblTslDeskLog01",
+   "base_id": "appTslBillDesk01",
+   "name": "Desk log",
+   "primary_field_id": "fldDL001",
+   "fields": [
+    {
+     "id": "fldDL001",
+     "name": "Date",
+     "type": "date"
+    },
+    {
+     "id": "fldDL002",
+     "name": "Tickets processed",
+     "type": "number"
+    },
+    {
+     "id": "fldDL003",
+     "name": "Changes scheduled",
+     "type": "number"
+    },
+    {
+     "id": "fldDL004",
+     "name": "Cancellations scheduled",
+     "type": "number"
+    },
+    {
+     "id": "fldDL005",
+     "name": "Condition not met",
+     "type": "number"
+    },
+    {
+     "id": "fldDL006",
+     "name": "Withdrawn",
+     "type": "number"
+    },
+    {
+     "id": "fldDL007",
+     "name": "Already in place",
+     "type": "number"
+    },
+    {
+     "id": "fldDL008",
+     "name": "Awaiting billing contact",
+     "type": "number"
+    },
+    {
+     "id": "fldDL009",
+     "name": "Prepared by",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldDL010",
+     "name": "Notes",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tblTslRetention",
+   "base_id": "appTslBillDesk01",
+   "name": "Retention offers",
+   "primary_field_id": "fldRO001",
+   "fields": [
+    {
+     "id": "fldRO001",
+     "name": "Account",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldRO002",
+     "name": "Offer",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldRO003",
+     "name": "Owner",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldRO004",
+     "name": "Status",
+     "type": "singleSelect"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblTslChangeOrd": [
+   {
+    "id": "recTslCO5201A0x",
+    "createdTime": "2026-11-09T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5201",
+     "Account (as written)": "Ashgrove",
+     "Received": "2026-11-09",
+     "Requester": "callum.reid@ashgroveatelier.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5202A0x",
+    "createdTime": "2026-11-09T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5202",
+     "Account (as written)": "Bramley Kite",
+     "Received": "2026-11-09",
+     "Requester": "oskar.lind@bramleykite.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5203A0x",
+    "createdTime": "2026-11-10T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5203",
+     "Account (as written)": "Cobalt Wren",
+     "Received": "2026-11-10",
+     "Requester": "hattie.moss@cobaltwren.design"
+    }
+   },
+   {
+    "id": "recTslCO5204A0x",
+    "createdTime": "2026-11-10T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5204",
+     "Account (as written)": "Dunmore Lane",
+     "Received": "2026-11-10",
+     "Requester": "rafael.okoro@dunmorelane.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5205A0x",
+    "createdTime": "2026-11-10T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5205",
+     "Account (as written)": "Elderfield",
+     "Received": "2026-11-10",
+     "Requester": "bea.sandoval@elderfieldprint.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5206A0x",
+    "createdTime": "2026-11-11T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5206",
+     "Account (as written)": "Fernhill Motion",
+     "Received": "2026-11-11",
+     "Requester": "ines.duarte@fernhillmotion.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5207A0x",
+    "createdTime": "2026-11-11T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5207",
+     "Account (as written)": "Gannet Row",
+     "Received": "2026-11-11",
+     "Requester": "milo.brandt@gannetrow.studio"
+    }
+   },
+   {
+    "id": "recTslCO5208A0x",
+    "createdTime": "2026-11-11T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5208",
+     "Account (as written)": "Hollis Marlow",
+     "Received": "2026-11-11",
+     "Requester": "dev.anand@hollismarlow.com"
+    }
+   },
+   {
+    "id": "recTslCO5209A0x",
+    "createdTime": "2026-11-12T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5209",
+     "Account (as written)": "Inkwell Harbour",
+     "Received": "2026-11-12",
+     "Requester": "sasha.brennan@inkwellharbour.com"
+    }
+   },
+   {
+    "id": "recTslCO5210A0x",
+    "createdTime": "2026-11-12T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5210",
+     "Account (as written)": "Juniper Vale",
+     "Received": "2026-11-12",
+     "Requester": "owen.pryce@junipervale.design"
+    }
+   },
+   {
+    "id": "recTslCO5211A0x",
+    "createdTime": "2026-11-12T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5211",
+     "Account (as written)": "Kestrel Point",
+     "Received": "2026-11-12",
+     "Requester": "kat.okafor@kestrelpoint.co"
+    }
+   },
+   {
+    "id": "recTslCO5212A0x",
+    "createdTime": "2026-11-12T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5212",
+     "Account (as written)": "Larchmont",
+     "Received": "2026-11-12",
+     "Requester": "edie.fairbanks@larchmonttype.com"
+    }
+   },
+   {
+    "id": "recTslCO5213A0x",
+    "createdTime": "2026-11-13T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5213",
+     "Account (as written)": "Mistral Yard",
+     "Received": "2026-11-13",
+     "Requester": "jonah.weller@mistralyard.com"
+    }
+   },
+   {
+    "id": "recTslCO5214A0x",
+    "createdTime": "2026-11-13T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5214",
+     "Account (as written)": "Northgate",
+     "Received": "2026-11-13",
+     "Requester": "aoife.byrne@northgatesignal.ie"
+    }
+   },
+   {
+    "id": "recTslCO5215A0x",
+    "createdTime": "2026-11-13T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5215",
+     "Account (as written)": "Oriel",
+     "Received": "2026-11-13",
+     "Requester": "tomasz.wrobel@orielglasshouse.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5216A0x",
+    "createdTime": "2026-11-13T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5216",
+     "Account (as written)": "Pemberton Hale Architects",
+     "Received": "2026-11-13",
+     "Requester": "ruth.adeyemi@pembertonhale-arch.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5217A0x",
+    "createdTime": "2026-11-13T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5217",
+     "Account (as written)": "Rowan Quay",
+     "Received": "2026-11-13",
+     "Requester": "leo.hartley@rowanquay.media"
+    }
+   },
+   {
+    "id": "recTslCO5218A0x",
+    "createdTime": "2026-11-14T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5218",
+     "Account (as written)": "Saltmarsh",
+     "Received": "2026-11-14",
+     "Requester": "gwen.llewellyn@saltmarsh.coop"
+    }
+   },
+   {
+    "id": "recTslCO5219A0x",
+    "createdTime": "2026-11-14T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5219",
+     "Account (as written)": "Tamsin Ode",
+     "Received": "2026-11-14",
+     "Requester": "tamsin@tamsinode.studio"
+    }
+   },
+   {
+    "id": "recTslCO5220A0x",
+    "createdTime": "2026-11-14T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5220",
+     "Account (as written)": "Umber and Lime",
+     "Received": "2026-11-14",
+     "Requester": "felix.haddad@umberandlime.com"
+    }
+   },
+   {
+    "id": "recTslCO5221A0x",
+    "createdTime": "2026-11-15T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5221",
+     "Account (as written)": "Vellum Street",
+     "Received": "2026-11-15",
+     "Requester": "marta.silva@vellumstreet.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5222A0x",
+    "createdTime": "2026-11-15T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5222",
+     "Account (as written)": "Wickham Forge",
+     "Received": "2026-11-15",
+     "Requester": "ben.archer@wickhamforge.co.uk"
+    }
+   },
+   {
+    "id": "recTslCO5223A0x",
+    "createdTime": "2026-11-15T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5223",
+     "Account (as written)": "Yarrow Bright",
+     "Received": "2026-11-15",
+     "Requester": "lena.fischer@yarrowbright.com"
+    }
+   },
+   {
+    "id": "recTslCO5224A0x",
+    "createdTime": "2026-11-15T18:00:00.000Z",
+    "fields": {
+     "Ticket": "5224",
+     "Account (as written)": "Zephyr Lantern",
+     "Received": "2026-11-15",
+     "Requester": "ravi.menon@zephyrlantern.studio"
+    }
+   },
+   {
+    "id": "recTslCO5160H0x",
+    "createdTime": "2026-11-02T17:00:00.000Z",
+    "fields": {
+     "Ticket": "5160",
+     "Account (as written)": "Oriel",
+     "Received": "2026-11-02",
+     "Requester": "tomasz.wrobel@orielglasshouse.co.uk",
+     "Disposition": "Change scheduled",
+     "Stripe customer": "cus_tsl_oriel",
+     "Subscription": "sub_tsl_oriel",
+     "Desk note": "Seat addition, effective on processing.",
+     "New plan": "Grid Monthly",
+     "Seats": 20,
+     "Effective date": "2026-11-02",
+     "Unit price (GBP)": 24
+    }
+   },
+   {
+    "id": "recTslCO5158H0x",
+    "createdTime": "2026-10-30T17:00:00.000Z",
+    "fields": {
+     "Ticket": "5158",
+     "Account (as written)": "Gannet Row Studios",
+     "Received": "2026-10-30",
+     "Requester": "theo.marsh@gannetrowstudios.com",
+     "Disposition": "Change scheduled",
+     "Stripe customer": "cus_tsl_gannetrows",
+     "Subscription": "sub_tsl_gannetrows",
+     "Desk note": "Reduction 6 to 4 at anchor.",
+     "New plan": "Grid Monthly",
+     "Seats": 4,
+     "Effective date": "2026-11-09",
+     "Unit price (GBP)": 24
+    }
+   },
+   {
+    "id": "recTslCO5149H0x",
+    "createdTime": "2026-10-14T17:00:00.000Z",
+    "fields": {
+     "Ticket": "5149",
+     "Account (as written)": "Hollis Marlow",
+     "Received": "2026-10-14",
+     "Requester": "dev.anand@hollismarlow.com",
+     "Disposition": "No change — already in place",
+     "Stripe customer": "cus_tsl_hollismarlow",
+     "Subscription": "sub_tsl_hollismarlow",
+     "Desk note": "Asked for 14 seats; already on 14."
+    }
+   }
+  ],
+  "tblTslDeskLog01": [
+   {
+    "id": "recTslDL20261111",
+    "createdTime": "2026-11-11T17:30:00.000Z",
+    "fields": {
+     "Date": "2026-11-11",
+     "Tickets processed": 9,
+     "Changes scheduled": 6,
+     "Cancellations scheduled": 1,
+     "Condition not met": 1,
+     "Withdrawn": 0,
+     "Already in place": 0,
+     "Awaiting billing contact": 1,
+     "Prepared by": "Maren Holt",
+     "Notes": "Queue cleared."
+    }
+   },
+   {
+    "id": "recTslDL20261112",
+    "createdTime": "2026-11-12T17:30:00.000Z",
+    "fields": {
+     "Date": "2026-11-12",
+     "Tickets processed": 7,
+     "Changes scheduled": 5,
+     "Cancellations scheduled": 0,
+     "Condition not met": 0,
+     "Withdrawn": 1,
+     "Already in place": 1,
+     "Awaiting billing contact": 0,
+     "Prepared by": "Tom Achterberg",
+     "Notes": "Queue cleared."
+    }
+   },
+   {
+    "id": "recTslDL20261113",
+    "createdTime": "2026-11-13T17:30:00.000Z",
+    "fields": {
+     "Date": "2026-11-13",
+     "Tickets processed": 11,
+     "Changes scheduled": 7,
+     "Cancellations scheduled": 1,
+     "Condition not met": 2,
+     "Withdrawn": 0,
+     "Already in place": 0,
+     "Awaiting billing contact": 1,
+     "Prepared by": "Maren Holt",
+     "Notes": "Two forwards held for billing contacts."
+    }
+   }
+  ],
+  "tblTslRetention": [
+   {
+    "id": "recTslRO0001",
+    "createdTime": "2026-10-15T10:00:00.000Z",
+    "fields": {
+     "Account": "Mistral Yard",
+     "Offer": "10% off Grid Annual for 2027 if they renew",
+     "Owner": "Customer Success (Priscilla Vane)",
+     "Status": "Proposed - not approved"
+    }
+   },
+   {
+    "id": "recTslRO0002",
+    "createdTime": "2026-10-20T10:00:00.000Z",
+    "fields": {
+     "Account": "Inkwell Harbour",
+     "Offer": "One month free on Line",
+     "Owner": "Customer Success (Priscilla Vane)",
+     "Status": "Rejected by Finance"
+    }
+   },
+   {
+    "id": "recTslRO0003",
+    "createdTime": "2026-11-02T10:00:00.000Z",
+    "fields": {
+     "Account": "Dunmore Lane Architects",
+     "Offer": "Training credits",
+     "Owner": "Account Management (Hugo Barnes)",
+     "Status": "Delivered"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,529 @@
+{
+ "bases": [
+  {
+   "id": "app_bwrel",
+   "name": "Reliability Office",
+   "permission_level": "create"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tbl_slo_register",
+   "base_id": "app_bwrel",
+   "name": "SLO register",
+   "fields": [
+    {
+     "id": "fld_reg_01",
+     "name": "Service",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_reg_02",
+     "name": "Domain",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld_reg_03",
+     "name": "Owning team",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld_reg_04",
+     "name": "Tier",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld_reg_05",
+     "name": "SLI",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_reg_06",
+     "name": "Nominated panel",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_reg_07",
+     "name": "PagerDuty service",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_reg_08",
+     "name": "Register note",
+     "type": "multilineText"
+    },
+    {
+     "id": "fld_reg_09",
+     "name": "Sep 2026 attainment %",
+     "type": "number"
+    },
+    {
+     "id": "fld_reg_10",
+     "name": "Sep 2026 status",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld_reg_11",
+     "name": "Oct 2026 attainment %",
+     "type": "number"
+    },
+    {
+     "id": "fld_reg_12",
+     "name": "Oct 2026 budget remaining (min)",
+     "type": "number"
+    },
+    {
+     "id": "fld_reg_13",
+     "name": "Oct 2026 status",
+     "type": "singleSelect"
+    }
+   ]
+  },
+  {
+   "id": "tbl_report_log",
+   "base_id": "app_bwrel",
+   "name": "Report log",
+   "fields": [
+    {
+     "id": "fld_rl_01",
+     "name": "Month",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_rl_02",
+     "name": "Published",
+     "type": "date"
+    },
+    {
+     "id": "fld_rl_03",
+     "name": "Missed",
+     "type": "number"
+    },
+    {
+     "id": "fld_rl_04",
+     "name": "Page",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_rl_05",
+     "name": "Analyst",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "id": "tbl_review_actions",
+   "base_id": "app_bwrel",
+   "name": "Review actions",
+   "fields": [
+    {
+     "id": "fld_ra_01",
+     "name": "Action",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ra_02",
+     "name": "Owner",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ra_03",
+     "name": "Due",
+     "type": "date"
+    },
+    {
+     "id": "fld_ra_04",
+     "name": "State",
+     "type": "singleSelect"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tbl_slo_register": [
+   {
+    "id": "recBWSLO001xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "ledger-posting",
+     "Domain": "Ledger",
+     "Owning team": "Ledger Platform",
+     "Tier": "Tier 1",
+     "SLI": "availability",
+     "Nominated panel": "bwp-led-svc / led-svc-01",
+     "PagerDuty service": "PBWS001",
+     "Sep 2026 attainment %": 99.981,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO002xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "ledger-balance-read",
+     "Domain": "Ledger",
+     "Owning team": "Ledger Platform",
+     "Tier": "Tier 2",
+     "SLI": "latency",
+     "Nominated panel": "bwp-led-svc / led-svc-02",
+     "PagerDuty service": "PBWS002",
+     "Sep 2026 attainment %": 99.962,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO003xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "journal-export",
+     "Domain": "Ledger",
+     "Owning team": "Ledger Platform",
+     "Tier": "Tier 3",
+     "SLI": "availability",
+     "Nominated panel": "bwp-led-svc / led-svc-03",
+     "PagerDuty service": "PBWS003",
+     "Sep 2026 attainment %": 99.471,
+     "Sep 2026 status": "Objective missed",
+     "Register note": "Catalogue criticality High; tier stays 3 (review 2026-10-07)."
+    }
+   },
+   {
+    "id": "recBWSLO004xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "fx-rates-feed",
+     "Domain": "Ledger",
+     "Owning team": "Ledger Platform",
+     "Tier": "Tier 2",
+     "SLI": "freshness",
+     "Nominated panel": "bwp-led-svc / led-svc-04",
+     "PagerDuty service": "PBWS004",
+     "Sep 2026 attainment %": 99.912,
+     "Sep 2026 status": "Objective met — budget at risk",
+     "Register note": "Widget reports bad time in seconds (July 2026 lesson)."
+    }
+   },
+   {
+    "id": "recBWSLO005xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "statement-render",
+     "Domain": "Ledger",
+     "Owning team": "Ledger Platform",
+     "Tier": "Tier 2",
+     "SLI": "latency",
+     "Nominated panel": "bwp-led-svc / led-svc-05",
+     "PagerDuty service": "PBWS005",
+     "Sep 2026 attainment %": 99.488,
+     "Sep 2026 status": "Objective missed",
+     "Register note": "Tier 2 from 2026-10-01 (review 2026-09-02)."
+    }
+   },
+   {
+    "id": "recBWSLO006xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "card-auth-gateway",
+     "Domain": "Acquiring",
+     "Owning team": "Acquiring",
+     "Tier": "Tier 1",
+     "SLI": "availability",
+     "Nominated panel": "bwp-acq-svc / acq-svc-01",
+     "PagerDuty service": "PBWS006",
+     "Sep 2026 attainment %": 99.972,
+     "Sep 2026 status": "Objective met",
+     "Register note": "HSM firmware planned 2026-10-21 (see PagerDuty)."
+    }
+   },
+   {
+    "id": "recBWSLO007xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "tokenisation-vault",
+     "Domain": "Acquiring",
+     "Owning team": "Acquiring",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-acq-svc / acq-svc-02",
+     "PagerDuty service": "PBWS007",
+     "Sep 2026 attainment %": 99.941,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO008xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "3ds-challenge",
+     "Domain": "Acquiring",
+     "Owning team": "Acquiring",
+     "Tier": "Tier 3",
+     "SLI": "latency",
+     "Nominated panel": "bwp-acq-svc / acq-svc-03",
+     "PagerDuty service": "PBWS008",
+     "Sep 2026 attainment %": 99.803,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO009xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "merchant-onboarding-api",
+     "Domain": "Acquiring",
+     "Owning team": "Acquiring",
+     "Tier": "Tier 3",
+     "SLI": "availability",
+     "Nominated panel": "bwp-acq-svc / acq-svc-04",
+     "PagerDuty service": "PBWS009",
+     "Sep 2026 attainment %": 99.452,
+     "Sep 2026 status": "Objective missed"
+    }
+   },
+   {
+    "id": "recBWSLO010xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "chargeback-intake",
+     "Domain": "Acquiring",
+     "Owning team": "Acquiring",
+     "Tier": "Tier 2",
+     "SLI": "latency",
+     "Nominated panel": "bwp-acq-svc / acq-svc-05",
+     "PagerDuty service": "PBWS010",
+     "Sep 2026 attainment %": 99.934,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO011xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "payout-scheduler",
+     "Domain": "Payouts",
+     "Owning team": "Payouts",
+     "Tier": "Tier 1",
+     "SLI": "availability",
+     "Nominated panel": "bwp-pay-svc / pay-svc-01",
+     "PagerDuty service": "PBWS011",
+     "Sep 2026 attainment %": 99.977,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO012xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "bank-file-dispatch",
+     "Domain": "Payouts",
+     "Owning team": "Payouts",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-pay-svc / pay-svc-02",
+     "PagerDuty service": "PBWS012",
+     "Sep 2026 attainment %": 99.951,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO013xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "payee-verification",
+     "Domain": "Payouts",
+     "Owning team": "Payouts",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-pay-svc / pay-svc-03",
+     "PagerDuty service": "PBWS013",
+     "Sep 2026 attainment %": 99.968,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO014xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "payout-status-api",
+     "Domain": "Payouts",
+     "Owning team": "Payouts",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-pay-svc / pay-svc-04",
+     "PagerDuty service": "PBWS014",
+     "Sep 2026 attainment %": 99.94,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO015xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "sweep-reconciler",
+     "Domain": "Payouts",
+     "Owning team": "Payouts",
+     "Tier": "Tier 3",
+     "SLI": "availability",
+     "Nominated panel": "bwp-pay-svc / pay-svc-05",
+     "PagerDuty service": "PBWS015",
+     "Sep 2026 attainment %": 99.702,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO016xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "fraud-score",
+     "Domain": "Risk",
+     "Owning team": "Risk Engineering",
+     "Tier": "Tier 1",
+     "SLI": "availability",
+     "Nominated panel": "bwp-rsk-svc / rsk-svc-01",
+     "PagerDuty service": "PBWS016",
+     "Sep 2026 attainment %": 99.963,
+     "Sep 2026 status": "Objective met — budget at risk"
+    }
+   },
+   {
+    "id": "recBWSLO017xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "velocity-limits",
+     "Domain": "Risk",
+     "Owning team": "Risk Engineering",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-rsk-svc / rsk-svc-02",
+     "PagerDuty service": "PBWS017",
+     "Sep 2026 attainment %": 99.948,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO018xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "sanctions-screen",
+     "Domain": "Risk",
+     "Owning team": "Risk Engineering",
+     "Tier": "Tier 1",
+     "SLI": "availability",
+     "Nominated panel": "bwp-rsk-svc / rsk-svc-03",
+     "PagerDuty service": "PBWS018",
+     "Sep 2026 attainment %": 99.991,
+     "Sep 2026 status": "Objective met"
+    }
+   },
+   {
+    "id": "recBWSLO019xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "dispute-evidence",
+     "Domain": "Risk",
+     "Owning team": "Risk Engineering",
+     "Tier": "Tier 3",
+     "SLI": "availability",
+     "Nominated panel": "bwp-rsk-oncall / rsk-oc-04",
+     "PagerDuty service": "PBWS019",
+     "Sep 2026 attainment %": 99.711,
+     "Sep 2026 status": "Objective met",
+     "Register note": "Nominated panel moved to the Risk on-call board on 2026-09-25 at the team's request."
+    }
+   },
+   {
+    "id": "recBWSLO020xq7",
+    "createdTime": "2026-07-01T09:00:00.000Z",
+    "fields": {
+     "Service": "kyc-document-check",
+     "Domain": "Risk",
+     "Owning team": "Risk Engineering",
+     "Tier": "Tier 2",
+     "SLI": "availability",
+     "Nominated panel": "bwp-rsk-oncall / rsk-oc-05",
+     "PagerDuty service": "PBWS020",
+     "Sep 2026 attainment %": 99.861,
+     "Sep 2026 status": "Objective missed",
+     "Register note": "Nominated panel moved to the Risk on-call board on 2026-09-25 at the team's request."
+    }
+   }
+  ],
+  "tbl_report_log": [
+   {
+    "id": "recBWRL001k2",
+    "createdTime": "2026-08-05T10:00:00.000Z",
+    "fields": {
+     "Month": "2026-07",
+     "Published": "2026-08-05",
+     "Missed": 2,
+     "Page": "SLO attainment — July 2026 — 2 of 19 objectives missed",
+     "Analyst": "Noor Haddad"
+    }
+   },
+   {
+    "id": "recBWRL002k2",
+    "createdTime": "2026-09-04T10:00:00.000Z",
+    "fields": {
+     "Month": "2026-08",
+     "Published": "2026-09-04",
+     "Missed": 3,
+     "Page": "SLO attainment — August 2026 — 3 of 20 objectives missed",
+     "Analyst": "Tobias Renwick"
+    }
+   },
+   {
+    "id": "recBWRL003k2",
+    "createdTime": "2026-10-05T10:00:00.000Z",
+    "fields": {
+     "Month": "2026-09",
+     "Published": "2026-10-05",
+     "Missed": 4,
+     "Page": "SLO attainment — September 2026 — 4 of 20 objectives missed",
+     "Analyst": "Tobias Renwick"
+    }
+   }
+  ],
+  "tbl_review_actions": [
+   {
+    "id": "recBWRA001m4",
+    "createdTime": "2026-10-07T15:00:00.000Z",
+    "fields": {
+     "Action": "October report by 5 Nov",
+     "Owner": "Ines Calloway",
+     "Due": "2026-11-05",
+     "State": "Open"
+    }
+   },
+   {
+    "id": "recBWRA002m4",
+    "createdTime": "2026-10-07T15:00:00.000Z",
+    "fields": {
+     "Action": "Close statement-render follow-up",
+     "Owner": "Anouk Verhaegen",
+     "Due": "2026-10-31",
+     "State": "Done"
+    }
+   },
+   {
+    "id": "recBWRA003m4",
+    "createdTime": "2026-10-07T15:00:00.000Z",
+    "fields": {
+     "Action": "Tokenisation key rotation",
+     "Owner": "Yusuf Demir",
+     "Due": "2026-10-27",
+     "State": "Done"
+    }
+   },
+   {
+    "id": "recBWRA004m4",
+    "createdTime": "2026-10-07T15:00:00.000Z",
+    "fields": {
+     "Action": "Payouts 4.19 release train",
+     "Owner": "Ilse Varga",
+     "Due": "2026-10-31",
+     "State": "Done"
+    }
+   }
+  ]
+ }
+}

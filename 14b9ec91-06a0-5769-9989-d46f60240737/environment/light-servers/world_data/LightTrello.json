@@ -1,0 +1,249 @@
+{
+ "members": [
+  {
+   "id": "5fnfg00000000000000000a2",
+   "fullName": "Ines Calloway",
+   "username": "inescalloway",
+   "email": "ines.calloway@northfell-grid.example"
+  },
+  {
+   "id": "5fnfg00000000000000000a3",
+   "fullName": "Declan Morrow",
+   "username": "declanmorrow",
+   "email": "declan.morrow@northfell-grid.example"
+  },
+  {
+   "id": "5fnfg00000000000000000a4",
+   "fullName": "Femi Adeyemi",
+   "username": "femiadeyemi",
+   "email": "femi.adeyemi@northfell-grid.example"
+  }
+ ],
+ "boards": [
+  {
+   "id": "64nfg00000000000000000b1",
+   "name": "Brackmoor control room - day desk",
+   "desc": "Day desk work items",
+   "closed": false,
+   "id_organization": "5enfg00000000000000000f1",
+   "url": "https://trello.com/b/nfgday/brackmoor-day-desk",
+   "member_ids": [
+    "5f1a000000000000000000a1",
+    "5fnfg00000000000000000a2",
+    "5fnfg00000000000000000a3",
+    "5fnfg00000000000000000a4"
+   ],
+   "prefs": {
+    "permissionLevel": "org"
+   }
+  }
+ ],
+ "lists": [
+  {
+   "id": "65nfg00000000000000000c1",
+   "id_board": "64nfg00000000000000000b1",
+   "name": "Today",
+   "closed": false,
+   "pos": 1
+  },
+  {
+   "id": "65nfg00000000000000000c2",
+   "id_board": "64nfg00000000000000000b1",
+   "name": "Waiting on others",
+   "closed": false,
+   "pos": 2
+  },
+  {
+   "id": "65nfg00000000000000000c3",
+   "id_board": "64nfg00000000000000000b1",
+   "name": "Not control room",
+   "closed": false,
+   "pos": 3
+  },
+  {
+   "id": "65nfg00000000000000000c4",
+   "id_board": "64nfg00000000000000000b1",
+   "name": "Done",
+   "closed": false,
+   "pos": 4
+  }
+ ],
+ "cards": [
+  {
+   "id": "66nfg0000000000000000d01",
+   "name": "Issue 17 Nov day-ahead ratings (GRID-881)",
+   "desc": "Rate all 22 register circuits under NGS-RT-04 Issue 3; notice in #grid-control; mail the SO on duty. Due 10:00.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c1",
+   "pos": 16384.0,
+   "due": "2026-11-16T10:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "ratings"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d02",
+   "name": "PRT request: raise HGTN-1 thermal overload pickup",
+   "desc": "Declan asked control room to lift the pickup in the Protection Settings table if the rating drops. Protection settings are Protection Engineering's (P-11) - route to PRT-212, do not edit.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c3",
+   "pos": 32768.0,
+   "due": "2026-11-17T09:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "protection"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d03",
+   "name": "Trading: roll 16 Nov ratings forward?",
+   "desc": "Lorcan wants yesterday's ratings rolled forward with BRTN-1 and OXFD-2 as the only constraints. NGS-RT-04 rates each day from the forecast.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c2",
+   "pos": 49152.0,
+   "due": "2026-11-16T11:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "trading"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d04",
+   "name": "Trading asks for a customer notice on constraints",
+   "desc": "Customer/public outage notices are Customer Communications only (#customer-outage-notices, outage-notices@).",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c3",
+   "pos": 65536.0,
+   "due": "2026-11-16T12:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "comms"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d05",
+   "name": "Skelwith Edge anemometer icing (INC0088412)",
+   "desc": "MetDesk will reissue Skelwith Edge when the heated head clears. Head swap under CHG0047176.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c2",
+   "pos": 81920.0,
+   "due": "2026-11-16T12:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "telemetry"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d06",
+   "name": "LNBR-2 now FL240T",
+   "desc": "Reconductoring complete 21 Oct (GRID-874). September register export is out of date.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c4",
+   "pos": 98304.0,
+   "due": "2026-10-21T17:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "asset"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d07",
+   "name": "OXFD-1 sealing ends replaced like-for-like",
+   "desc": "No cable on OXFD-1 (CHG0047128); remains overhead throughout.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c4",
+   "pos": 114688.0,
+   "due": "2026-10-12T17:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "asset"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d08",
+   "name": "LNKS-1 Kestle bypass cable works 2 Dec",
+   "desc": "Planned (CHG0047162); not in service until commissioned.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c2",
+   "pos": 131072.0,
+   "due": "2026-12-02T07:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "asset"
+   ]
+  },
+  {
+   "id": "66nfg0000000000000000d09",
+   "name": "LNOX-1 temporary cable bypass removed",
+   "desc": "CHG0047090 closed 5 Oct - overhead throughout.",
+   "id_board": "64nfg00000000000000000b1",
+   "id_list": "65nfg00000000000000000c4",
+   "pos": 147456.0,
+   "due": "2026-10-05T17:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a000000000000000000a1"
+   ],
+   "labels": [
+    "asset"
+   ]
+  }
+ ],
+ "checklists": [
+  {
+   "id": "cl_nfg_0001",
+   "id_card": "66nfg0000000000000000d01",
+   "id_board": "64nfg00000000000000000b1",
+   "name": "Issue steps",
+   "pos": 1000,
+   "check_items": [
+    {
+     "id": "ci_nfg_01",
+     "id_checklist": "cl_nfg_0001",
+     "name": "Register rows written (4 rating fields)",
+     "state": "incomplete",
+     "pos": 1000
+    },
+    {
+     "id": "ci_nfg_02",
+     "id_checklist": "cl_nfg_0001",
+     "name": "Notice posted in #grid-control",
+     "state": "incomplete",
+     "pos": 2000
+    },
+    {
+     "id": "ci_nfg_03",
+     "id_checklist": "cl_nfg_0001",
+     "name": "Mail to SO on duty",
+     "state": "incomplete",
+     "pos": 3000
+    }
+   ]
+  }
+ ]
+}

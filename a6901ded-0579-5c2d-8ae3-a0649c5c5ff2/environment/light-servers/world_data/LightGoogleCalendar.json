@@ -1,0 +1,170 @@
+{
+ "calendars": [
+  {
+   "id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "Cluster reservations",
+   "description": "GPU pool reservations for fine-tune launch windows (RB-ML-014 section 5).",
+   "time_zone": "UTC",
+   "access_role": "writer",
+   "primary": false,
+   "color_id": "9"
+  },
+  {
+   "id": "ml-launch-desk@sorrel-insurance.example",
+   "summary": "ML Launch Desk",
+   "description": "Desk calendar",
+   "time_zone": "Europe/London",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "1"
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-sor-1105a",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "GPU reservation — FT-CLM-06",
+   "description": "ft-pool-north, 16 GPUs, 6 h reserved, 96 GPU-h charged. LCH-144.",
+   "location": "ft-pool-north",
+   "start": "2026-11-05T06:00:00Z",
+   "end": "2026-11-05T12:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1112a",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "GPU reservation — FT-RISK-04",
+   "description": "ft-pool-north, 8 GPUs, 9 h reserved, 72 GPU-h charged. LCH-145.",
+   "location": "ft-pool-north",
+   "start": "2026-11-12T06:00:00Z",
+   "end": "2026-11-12T15:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1029a",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "GPU reservation — FT-FNOL-10",
+   "description": "ft-pool-north, 8 GPUs, 6 h reserved, 48 GPU-h charged. LCH-143.",
+   "location": "ft-pool-north",
+   "start": "2026-10-29T06:00:00Z",
+   "end": "2026-10-29T12:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1118m",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "Maintenance — ft-pool-south firmware",
+   "description": "South pool drained 20:00-23:00 UTC for the fleet firmware update; back in service before the Thursday window.",
+   "location": "ft-pool-south",
+   "start": "2026-11-18T20:00:00Z",
+   "end": "2026-11-18T23:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1119p",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "Pricing batch backfill (not a fine-tune)",
+   "description": "Pricing team, 16 GPUs on ft-pool-south. CAP-32.",
+   "location": "ft-pool-south",
+   "start": "2026-11-19T06:00:00Z",
+   "end": "2026-11-19T18:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1119s",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "Serving canary — north",
+   "description": "Serving canary keeps 0 GPUs of the fine-tune share; listed for visibility.",
+   "location": "ft-pool-north",
+   "start": "2026-11-19T00:00:00Z",
+   "end": "2026-11-20T00:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-sor-1126b",
+   "calendar_id": "cluster-reservations@sorrel-insurance.example",
+   "summary": "Window hold — FT-CLM-07a / FT-RISK-05",
+   "description": "Placeholder for the 26 Nov window; real reservations follow readiness review.",
+   "location": "",
+   "start": "2026-11-26T06:00:00Z",
+   "end": "2026-11-26T07:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-desk-1116",
+   "calendar_id": "ml-launch-desk@sorrel-insurance.example",
+   "summary": "Launch desk stand-up",
+   "description": "Thursday window prep.",
+   "location": "",
+   "start": "2026-11-16T09:30:00Z",
+   "end": "2026-11-16T09:45:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-desk-1118",
+   "calendar_id": "ml-launch-desk@sorrel-insurance.example",
+   "summary": "Readiness note to Odile due",
+   "description": "Odile wants the readiness note before Wednesday close.",
+   "location": "",
+   "start": "2026-11-18T16:00:00Z",
+   "end": "2026-11-18T16:15:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ml-launch-desk@sorrel-insurance.example",
+   "organizer": "ml-launch-desk@sorrel-insurance.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "attendees": {
+  "evt-desk-1116": [
+   {
+    "email": "halvard.quist@sorrel-insurance.example",
+    "displayName": "Halvard Quist",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   }
+  ]
+ }
+}

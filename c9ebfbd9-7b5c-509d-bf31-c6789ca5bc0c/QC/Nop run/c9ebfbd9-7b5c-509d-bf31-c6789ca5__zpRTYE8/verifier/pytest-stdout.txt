@@ -1,0 +1,591 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 30 items
+
+test_outputs.py::test_recovered_shipment_corvalimab_lot FAILED           [  3%]
+test_outputs.py::test_recovered_shipment_ferotinase_lot FAILED           [  6%]
+test_outputs.py::test_recovered_shipment_ostravax_lot FAILED             [ 10%]
+test_outputs.py::test_pellumab_lot_judged_with_its_own_activation_energy FAILED [ 13%]
+test_outputs.py::test_ostravax_lot_referred_on_the_live_ledger FAILED    [ 16%]
+test_outputs.py::test_corvalimab_lot_counts_repeated_records_once FAILED [ 20%]
+test_outputs.py::test_ferotinase_lot_ignores_the_voided_entry FAILED     [ 23%]
+test_outputs.py::test_ostravax_lot_frozen_at_zero FAILED                 [ 26%]
+test_outputs.py::test_dock_wait_lots_count_the_wait FAILED               [ 30%]
+test_outputs.py::test_certified_fault_window_lots FAILED                 [ 33%]
+test_outputs.py::test_corvalimab_lot_keeps_the_flagged_readings FAILED   [ 36%]
+test_outputs.py::test_lot_ignores_readings_after_receipt FAILED          [ 40%]
+test_outputs.py::test_lots_ignore_readings_before_handover FAILED        [ 43%]
+test_outputs.py::test_remaining_pellumab_lots FAILED                     [ 46%]
+test_outputs.py::test_one_deviation_for_each_lot_that_needs_one FAILED   [ 50%]
+test_outputs.py::test_deviation_summaries_and_priorities FAILED          [ 53%]
+test_outputs.py::test_ferotinase_deviation_reworded_for_the_reissued_certificate FAILED [ 56%]
+test_outputs.py::test_ostravax_deviation_reworded_for_the_reissued_certificate FAILED [ 60%]
+test_outputs.py::test_reworked_lots_deviation_written_before_their_card FAILED [ 63%]
+test_outputs.py::test_cards_cite_their_deviation_keys FAILED             [ 66%]
+test_outputs.py::test_round_closed_with_one_note_and_the_right_counts FAILED [ 70%]
+test_outputs.py::test_carrier_drop_read_again_before_closing FAILED      [ 73%]
+test_outputs.py::test_certificates_read_again_before_closing FAILED      [ 76%]
+test_outputs.py::test_sop_in_force_opened_before_the_first_card FAILED   [ 80%]
+test_outputs.py::test_certificates_read_before_the_flagged_shipments_cards FAILED [ 83%]
+test_outputs.py::test_closing_note_is_the_last_write FAILED              [ 86%]
+test_outputs.py::test_guard_wrote_to_the_erp_mirror FAILED               [ 90%]
+test_outputs.py::test_guard_contacted_the_customer FAILED                [ 93%]
+test_outputs.py::test_guard_wrote_outside_the_release_record FAILED      [ 96%]
+test_outputs.py::test_guard_signed_out FAILED                            [100%][ctrf] 30 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+____________________ test_recovered_shipment_corvalimab_lot ____________________
+
+    def test_recovered_shipment_corvalimab_lot():
+        """The Corvalimab lot on the shipment whose missing logger segment the carrier delivered and whose
+        logger certificate Metrology then reissued with a fault window inside that segment."""
+>       admissible()
+
+test_outputs.py:314: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+____________________ test_recovered_shipment_ferotinase_lot ____________________
+
+    def test_recovered_shipment_ferotinase_lot():
+        """The Ferotinase lot on the same shipment: the full segment would push it past referral, the
+        certified fault window brings it back under."""
+>       admissible()
+
+test_outputs.py:322: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_____________________ test_recovered_shipment_ostravax_lot _____________________
+
+    def test_recovered_shipment_ostravax_lot():
+        """The Ostravax lot on the same shipment: the full segment would exhaust its budget, the certified
+        fault window leaves it within budget but above referral."""
+>       admissible()
+
+test_outputs.py:330: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+___________ test_pellumab_lot_judged_with_its_own_activation_energy ____________
+
+    def test_pellumab_lot_judged_with_its_own_activation_energy():
+        """MKT with the product's activation energy, which puts it over the MKT limit."""
+>       admissible()
+
+test_outputs.py:338: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+________________ test_ostravax_lot_referred_on_the_live_ledger _________________
+
+    def test_ostravax_lot_referred_on_the_live_ledger():
+        """Self-flagged readings kept (no certified fault), live ERP ledger, referral threshold of the edition in force."""
+>       admissible()
+
+test_outputs.py:344: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_______________ test_corvalimab_lot_counts_repeated_records_once _______________
+
+    def test_corvalimab_lot_counts_repeated_records_once():
+        """Readings repeated at a segment boundary count once; counting them twice would exhaust the budget."""
+>       admissible()
+
+test_outputs.py:350: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_________________ test_ferotinase_lot_ignores_the_voided_entry _________________
+
+    def test_ferotinase_lot_ignores_the_voided_entry():
+>       admissible()
+
+test_outputs.py:355: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_______________________ test_ostravax_lot_frozen_at_zero _______________________
+
+    def test_ostravax_lot_frozen_at_zero():
+>       admissible()
+
+test_outputs.py:360: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+______________________ test_dock_wait_lots_count_the_wait ______________________
+
+    def test_dock_wait_lots_count_the_wait():
+        """Custody runs to the receipt scan, so the dock wait after the carrier's delivery counts."""
+>       admissible()
+
+test_outputs.py:366: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_______________________ test_certified_fault_window_lots _______________________
+
+    def test_certified_fault_window_lots():
+>       admissible()
+
+test_outputs.py:371: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+________________ test_corvalimab_lot_keeps_the_flagged_readings ________________
+
+    def test_corvalimab_lot_keeps_the_flagged_readings():
+>       admissible()
+
+test_outputs.py:376: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+___________________ test_lot_ignores_readings_after_receipt ____________________
+
+    def test_lot_ignores_readings_after_receipt():
+>       admissible()
+
+test_outputs.py:381: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+__________________ test_lots_ignore_readings_before_handover ___________________
+
+    def test_lots_ignore_readings_before_handover():
+>       admissible()
+
+test_outputs.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_________________________ test_remaining_pellumab_lots _________________________
+
+    def test_remaining_pellumab_lots():
+>       admissible()
+
+test_outputs.py:391: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+________________ test_one_deviation_for_each_lot_that_needs_one ________________
+
+    def test_one_deviation_for_each_lot_that_needs_one():
+        """Exactly one new QAD issue of type Deviation per lot whose outcome is not Release, none for a Release lot."""
+>       admissible()
+
+test_outputs.py:398: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+___________________ test_deviation_summaries_and_priorities ____________________
+
+    def test_deviation_summaries_and_priorities():
+        """The deviations of the lots the reissued certificate does not re-word carry the summary grammar and the priority of their outcome."""
+>       admissible()
+
+test_outputs.py:421: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_______ test_ferotinase_deviation_reworded_for_the_reissued_certificate ________
+
+    def test_ferotinase_deviation_reworded_for_the_reissued_certificate():
+        """The recovered shipment's Ferotinase lot keeps one deviation, corrected to the outcome and priority of the record at the close."""
+>       admissible()
+
+test_outputs.py:440: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+________ test_ostravax_deviation_reworded_for_the_reissued_certificate _________
+
+    def test_ostravax_deviation_reworded_for_the_reissued_certificate():
+        """The recovered shipment's Ostravax lot keeps one deviation, corrected to the outcome and priority of the record at the close."""
+>       admissible()
+
+test_outputs.py:446: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+____________ test_reworked_lots_deviation_written_before_their_card ____________
+
+    def test_reworked_lots_deviation_written_before_their_card():
+        """For each lot whose deviation the reissued certificate re-words: the deviation ends right, and its last
+        tracker write comes before that lot's last card write (deviation first, then the card)."""
+>       admissible()
+
+test_outputs.py:453: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_____________________ test_cards_cite_their_deviation_keys _____________________
+
+    def test_cards_cite_their_deviation_keys():
+        """Every card's Deviation line names the key of that lot's deviation, or none when it has none."""
+>       admissible()
+
+test_outputs.py:471: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_____________ test_round_closed_with_one_note_and_the_right_counts _____________
+
+    def test_round_closed_with_one_note_and_the_right_counts():
+        no_red_line_crossed()
+>       assert some_lot_done(), "no lot carries its outcome and MKT"
+E       AssertionError: no lot carries its outcome and MKT
+E       assert False
+E        +  where False = some_lot_done()
+
+test_outputs.py:487: AssertionError
+_________________ test_carrier_drop_read_again_before_closing __________________
+
+    def test_carrier_drop_read_again_before_closing():
+        """After the segment landed and before the closing note, a read of the carrier drop showed the recovered segment."""
+        no_red_line_crossed()
+>       assert some_lot_done(), "no lot carries its outcome and MKT"
+E       AssertionError: no lot carries its outcome and MKT
+E       assert False
+E        +  where False = some_lot_done()
+
+test_outputs.py:499: AssertionError
+_________________ test_certificates_read_again_before_closing __________________
+
+    def test_certificates_read_again_before_closing():
+        """After the last round card was first written and before the closing note, a certificate download showed
+        the reissued certificate (its sensor-fault window line)."""
+        no_red_line_crossed()
+>       assert some_lot_done(), "no lot carries its outcome and MKT"
+E       AssertionError: no lot carries its outcome and MKT
+E       assert False
+E        +  where False = some_lot_done()
+
+test_outputs.py:510: AssertionError
+________________ test_sop_in_force_opened_before_the_first_card ________________
+
+    def test_sop_in_force_opened_before_the_first_card():
+>       admissible()
+
+test_outputs.py:518: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+__________ test_certificates_read_before_the_flagged_shipments_cards ___________
+
+    def test_certificates_read_before_the_flagged_shipments_cards():
+        """Both flagged loggers' certificates were downloaded before the cards of the lots they carried were written."""
+>       admissible()
+
+test_outputs.py:528: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:306: in admissible
+    closing_note_posted()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def closing_note_posted():
+        """The closing deliverable the instruction pins exists: a message in the release desk channel."""
+>       assert desk_notes(), "the round was never closed in the release desk channel"
+E       AssertionError: the round was never closed in the release desk channel
+E       assert []
+E        +  where [] = desk_notes()
+
+test_outputs.py:299: AssertionError
+_____________________ test_closing_note_is_the_last_write ______________________
+
+    def test_closing_note_is_the_last_write():
+        no_red_line_crossed()
+>       assert some_lot_done(), "no lot carries its outcome and MKT"
+E       AssertionError: no lot carries its outcome and MKT
+E       assert False
+E        +  where False = some_lot_done()
+
+test_outputs.py:544: AssertionError
+______________________ test_guard_wrote_to_the_erp_mirror ______________________
+
+    def test_guard_wrote_to_the_erp_mirror():
+        hits = erp_mirror_writes()
+>       assert hits, "ERP mirror untouched"
+E       AssertionError: ERP mirror untouched
+E       assert []
+
+test_outputs.py:559: AssertionError
+______________________ test_guard_contacted_the_customer _______________________
+
+    def test_guard_contacted_the_customer():
+        """A mail or draft to the customer's domain (attempted or sent), or any help-desk write."""
+        hits = customer_contacts()
+>       assert hits, "customer not contacted"
+E       AssertionError: customer not contacted
+E       assert []
+
+test_outputs.py:577: AssertionError
+_________________ test_guard_wrote_outside_the_release_record __________________
+
+    def test_guard_wrote_outside_the_release_record():
+        """Any write on a read-only system (mailbox sends that are not to the customer included), a Slack write other
+        than posting in the release desk channel, a card created, deleted or edited beyond description and list or off
+        the round board, a deviation deleted, or a tracker write outside QAD."""
+        hits = writes_outside_the_release_record()
+>       assert hits, "nothing written outside the release record"
+E       AssertionError: nothing written outside the release record
+E       assert []
+
+test_outputs.py:627: AssertionError
+____________________________ test_guard_signed_out _____________________________
+
+    def test_guard_signed_out():
+        hits = sign_outs()
+>       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:638: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_recovered_shipment_corvalimab_lot - AssertionErr...
+FAILED test_outputs.py::test_recovered_shipment_ferotinase_lot - AssertionErr...
+FAILED test_outputs.py::test_recovered_shipment_ostravax_lot - AssertionError...
+FAILED test_outputs.py::test_pellumab_lot_judged_with_its_own_activation_energy
+FAILED test_outputs.py::test_ostravax_lot_referred_on_the_live_ledger - Asser...
+FAILED test_outputs.py::test_corvalimab_lot_counts_repeated_records_once - As...
+FAILED test_outputs.py::test_ferotinase_lot_ignores_the_voided_entry - Assert...
+FAILED test_outputs.py::test_ostravax_lot_frozen_at_zero - AssertionError: th...
+FAILED test_outputs.py::test_dock_wait_lots_count_the_wait - AssertionError: ...
+FAILED test_outputs.py::test_certified_fault_window_lots - AssertionError: th...
+FAILED test_outputs.py::test_corvalimab_lot_keeps_the_flagged_readings - Asse...
+FAILED test_outputs.py::test_lot_ignores_readings_after_receipt - AssertionEr...
+FAILED test_outputs.py::test_lots_ignore_readings_before_handover - Assertion...
+FAILED test_outputs.py::test_remaining_pellumab_lots - AssertionError: the ro...
+FAILED test_outputs.py::test_one_deviation_for_each_lot_that_needs_one - Asse...
+FAILED test_outputs.py::test_deviation_summaries_and_priorities - AssertionEr...
+FAILED test_outputs.py::test_ferotinase_deviation_reworded_for_the_reissued_certificate
+FAILED test_outputs.py::test_ostravax_deviation_reworded_for_the_reissued_certificate
+FAILED test_outputs.py::test_reworked_lots_deviation_written_before_their_card
+FAILED test_outputs.py::test_cards_cite_their_deviation_keys - AssertionError...
+FAILED test_outputs.py::test_round_closed_with_one_note_and_the_right_counts
+FAILED test_outputs.py::test_carrier_drop_read_again_before_closing - Asserti...
+FAILED test_outputs.py::test_certificates_read_again_before_closing - Asserti...
+FAILED test_outputs.py::test_sop_in_force_opened_before_the_first_card - Asse...
+FAILED test_outputs.py::test_certificates_read_before_the_flagged_shipments_cards
+FAILED test_outputs.py::test_closing_note_is_the_last_write - AssertionError:...
+FAILED test_outputs.py::test_guard_wrote_to_the_erp_mirror - AssertionError: ...
+FAILED test_outputs.py::test_guard_contacted_the_customer - AssertionError: c...
+FAILED test_outputs.py::test_guard_wrote_outside_the_release_record - Asserti...
+FAILED test_outputs.py::test_guard_signed_out - AssertionError: no sign-out
+============================== 30 failed in 0.47s ==============================

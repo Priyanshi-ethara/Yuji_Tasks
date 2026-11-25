@@ -1,0 +1,330 @@
+{
+ "envelopes": [
+  {
+   "envelope_id": "env-ks3-1133g",
+   "status": "sent",
+   "email_subject": "Approval: DOC-1133 Rev G - Instructions for Use - Professional",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-11-12T10:20:00Z",
+   "sent_time": "2026-11-12T10:25:00Z",
+   "completed_time": null,
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1102d",
+   "status": "sent",
+   "email_subject": "Approval: DOC-1102 Rev D - Software Description and Architecture",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-11-05T10:50:00Z",
+   "sent_time": "2026-11-05T10:55:00Z",
+   "completed_time": null,
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1200a",
+   "status": "completed",
+   "email_subject": "Approval: DOC-1200 Rev A - Post-market Surveillance Plan",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-09-28T09:00:00Z",
+   "sent_time": "2026-09-28T09:05:00Z",
+   "completed_time": "2026-09-29T16:10:00Z",
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1111c",
+   "status": "completed",
+   "email_subject": "Approval: DOC-1111 Rev C - Analytical Performance Report - Trueness and Linearity",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-11-09T09:00:00Z",
+   "sent_time": "2026-11-09T09:05:00Z",
+   "completed_time": "2026-11-11T14:30:00Z",
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1047e",
+   "status": "completed",
+   "email_subject": "Approval: DOC-1047 Rev E - Risk Management Report",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-10-15T09:00:00Z",
+   "sent_time": "2026-10-15T09:05:00Z",
+   "completed_time": "2026-10-20T11:00:00Z",
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1188b",
+   "status": "completed",
+   "email_subject": "Approval: DOC-1188 Rev B - Stability Study Report",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-09-14T09:00:00Z",
+   "sent_time": "2026-09-14T09:05:00Z",
+   "completed_time": "2026-09-17T15:00:00Z",
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1103c",
+   "status": "completed",
+   "email_subject": "Approval: DOC-1103 Rev C - Software Verification and Validation Report",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-10-05T09:00:00Z",
+   "sent_time": "2026-10-05T09:05:00Z",
+   "completed_time": "2026-10-08T12:00:00Z",
+   "template_id": "tmpl-orv-docapproval"
+  },
+  {
+   "envelope_id": "env-ks3-1120a",
+   "status": "created",
+   "email_subject": "Approval: DOC-1120 Rev A - Clinical Performance Study Report KS3-CPS-01",
+   "sender_name": "Pieter Vandamme",
+   "sender_email": "pieter.vandamme@orvane.example",
+   "created_time": "2026-10-30T16:00:00Z",
+   "sent_time": null,
+   "completed_time": null,
+   "template_id": "tmpl-orv-docapproval"
+  }
+ ],
+ "documents": [
+  {
+   "document_id": "doc-env-ks3-1133g",
+   "envelope_id": "env-ks3-1133g",
+   "name": "DOC-1133 Rev G Instructions for Use - Professional.pdf",
+   "document_type": "content",
+   "page_count": 68,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1102d",
+   "envelope_id": "env-ks3-1102d",
+   "name": "DOC-1102 Rev D Software Description and Architecture.pdf",
+   "document_type": "content",
+   "page_count": 58,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1200a",
+   "envelope_id": "env-ks3-1200a",
+   "name": "DOC-1200 Rev A Post-market Surveillance Plan.pdf",
+   "document_type": "content",
+   "page_count": 22,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1111c",
+   "envelope_id": "env-ks3-1111c",
+   "name": "DOC-1111 Rev C Analytical Performance Report - Trueness and Linearity.pdf",
+   "document_type": "content",
+   "page_count": 29,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1047e",
+   "envelope_id": "env-ks3-1047e",
+   "name": "DOC-1047 Rev E Risk Management Report.pdf",
+   "document_type": "content",
+   "page_count": 46,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1188b",
+   "envelope_id": "env-ks3-1188b",
+   "name": "DOC-1188 Rev B Stability Study Report.pdf",
+   "document_type": "content",
+   "page_count": 24,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1103c",
+   "envelope_id": "env-ks3-1103c",
+   "name": "DOC-1103 Rev C Software Verification and Validation Report.pdf",
+   "document_type": "content",
+   "page_count": 87,
+   "order": 1
+  },
+  {
+   "document_id": "doc-env-ks3-1120a",
+   "envelope_id": "env-ks3-1120a",
+   "name": "DOC-1120 Rev A Clinical Performance Study Report KS3-CPS-01.pdf",
+   "document_type": "content",
+   "page_count": 74,
+   "order": 1
+  }
+ ],
+ "recipients": [
+  {
+   "recipient_id": "rcp-env-ks3-1133g-1",
+   "envelope_id": "env-ks3-1133g",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "sent",
+   "routing_order": 1,
+   "signed_time": null
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1133g-2",
+   "envelope_id": "env-ks3-1133g",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "sent",
+   "routing_order": 2,
+   "signed_time": null
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1102d-1",
+   "envelope_id": "env-ks3-1102d",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "sent",
+   "routing_order": 1,
+   "signed_time": null
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1102d-2",
+   "envelope_id": "env-ks3-1102d",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "sent",
+   "routing_order": 2,
+   "signed_time": null
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1200a-1",
+   "envelope_id": "env-ks3-1200a",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-09-29T16:10:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1200a-2",
+   "envelope_id": "env-ks3-1200a",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 2,
+   "signed_time": "2026-09-29T16:10:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1111c-1",
+   "envelope_id": "env-ks3-1111c",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-11-11T14:30:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1111c-2",
+   "envelope_id": "env-ks3-1111c",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 2,
+   "signed_time": "2026-11-11T14:30:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1047e-1",
+   "envelope_id": "env-ks3-1047e",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-10-20T11:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1047e-2",
+   "envelope_id": "env-ks3-1047e",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 2,
+   "signed_time": "2026-10-20T11:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1188b-1",
+   "envelope_id": "env-ks3-1188b",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-09-17T15:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1188b-2",
+   "envelope_id": "env-ks3-1188b",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 2,
+   "signed_time": "2026-09-17T15:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1103c-1",
+   "envelope_id": "env-ks3-1103c",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 1,
+   "signed_time": "2026-10-08T12:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1103c-2",
+   "envelope_id": "env-ks3-1103c",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "completed",
+   "routing_order": 2,
+   "signed_time": "2026-10-08T12:00:00Z"
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1120a-1",
+   "envelope_id": "env-ks3-1120a",
+   "name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "recipient_type": "signer",
+   "status": "created",
+   "routing_order": 1,
+   "signed_time": null
+  },
+  {
+   "recipient_id": "rcp-env-ks3-1120a-2",
+   "envelope_id": "env-ks3-1120a",
+   "name": "Rafaela Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "recipient_type": "signer",
+   "status": "created",
+   "routing_order": 2,
+   "signed_time": null
+  }
+ ],
+ "templates": [
+  {
+   "template_id": "tmpl-orv-docapproval",
+   "name": "Orvane controlled document approval",
+   "description": "Two-signature approval (Director of RA, QA Manager) for controlled document revisions",
+   "shared": true,
+   "owner_name": "Pieter Vandamme",
+   "created_time": "2025-09-01T09:00:00Z"
+  }
+ ]
+}

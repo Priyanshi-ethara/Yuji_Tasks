@@ -1,0 +1,77 @@
+tests weighted=30 positive=26 guards=4 positive_total=58 penalty_total=14 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_recovered_shipment_corvalimab_lot` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The Corvalimab lot on the shipment whose missing logger segment the carrier delivered and whose\n    logger certificate Metrology then reissued with a fault window inside that segment.', 'live_cvm'] |
+| `test_recovered_shipment_ferotinase_lot` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The Ferotinase lot on the same shipment: the full segment would push it past referral, the\n    certified fault window brings it back under.', 'live_frt'] |
+| `test_recovered_shipment_ostravax_lot` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The Ostravax lot on the same shipment: the full segment would exhaust its budget, the certified\n    fault window leaves it within budget but above referral.', 'live_osv'] |
+| `test_pellumab_lot_judged_with_its_own_activation_energy` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["MKT with the product's activation energy, which puts it over the MKT limit.", 'mkt_limit'] |
+| `test_ostravax_lot_referred_on_the_live_ledger` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Self-flagged readings kept (no certified fault), live ERP ledger, referral threshold of the edition in force.', 'referral_kept_flag'] |
+| `test_corvalimab_lot_counts_repeated_records_once` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Readings repeated at a segment boundary count once; counting them twice would exhaust the budget.', 'duplicates'] |
+| `test_ferotinase_lot_ignores_the_voided_entry` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['voided_entry'] |
+| `test_ostravax_lot_frozen_at_zero` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['freeze'] |
+| `test_dock_wait_lots_count_the_wait` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Custody runs to the receipt scan, so the dock wait after the carrier's delivery counts.", 'dock_dwell'] |
+| `test_certified_fault_window_lots` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['certified_fault'] |
+| `test_corvalimab_lot_keeps_the_flagged_readings` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['kept_flag'] |
+| `test_lot_ignores_readings_after_receipt` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['after_receipt'] |
+| `test_lots_ignore_readings_before_handover` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['before_handover'] |
+| `test_remaining_pellumab_lots` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['plain'] |
+| `test_one_deviation_for_each_lot_that_needs_one` | 1 | 2 | 1 | end state,oracle,seed,tool log | [' (want ', ' stray=', ': ', ': type ', 'Exactly one new QAD issue of type Deviation per lot whose outcome is not Release, none for a Release lot.', 'Release'] |
+| `test_deviation_summaries_and_priorities` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['The deviations of the lots the reissued certificate does not re-word carry the summary grammar and the priority of their outcome.', 'lots', 'no deviation raised', 'summary'] |
+| `test_ferotinase_deviation_reworded_for_the_reissued_certificate` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["The recovered shipment's Ferotinase lot keeps one deviation, corrected to the outcome and priority of the record at the close.", 'live_frt'] |
+| `test_ostravax_deviation_reworded_for_the_reissued_certificate` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["The recovered shipment's Ostravax lot keeps one deviation, corrected to the outcome and priority of the record at the close.", 'live_osv'] |
+| `test_reworked_lots_deviation_written_before_their_card` | 3 | 2 | 1 | end state,oracle,seed,tool log | ["For each lot whose deviation the reissued certificate re-words: the deviation ends right, and its last\n    tracker write comes before that lot's last card write (deviation first, then the card).", 'LightJira', 'card', 'card written before its deviation was corrected: ', 'create_issue', 'issue_key'] |
+| `test_cards_cite_their_deviation_keys` | 1 | 2 | 1 | end state,oracle,seed,tool log | [' vs ', ': ', "Every card's Deviation line names the key of that lot's deviation, or none when it has none.", 'dev', 'key', 'lots'] |
+| `test_round_closed_with_one_note_and_the_right_counts` | 5 | 3 | 1 | end state,oracle,seed,tool log | [' posts in the release desk channel', 'first line ', 'headline', 'no lot carries its outcome and MKT', 'post', 'text'] |
+| `test_carrier_drop_read_again_before_closing` | 3 | 3 | 1 | end state,oracle,seed,tool log | ['After the segment landed and before the closing note, a read of the carrier drop showed the recovered segment.', 'no lot carries its outcome and MKT', 'segment never landed before the close', 'the drop was not read again'] |
+| `test_certificates_read_again_before_closing` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['After the last round card was first written and before the closing note, a certificate download showed\n    the reissued certificate (its sensor-fault window line).', 'no lot carries its outcome and MKT', 'the certificates were not read again', 'the reissue never landed before the close'] |
+| `test_sop_in_force_opened_before_the_first_card` | 1 | 2 | 1 | end state,oracle,seed,tool log | ['LightConfluence', 'content_id', 'get_content', 'no lot carries its outcome and MKT', 'sop_page', 'the SOP in force was not opened before the cards'] |
+| `test_certificates_read_before_the_flagged_shipments_cards` | 1 | 2 | 1 | end state,oracle,seed,tool log | ["Both flagged loggers' certificates were downloaded before the cards of the lots they carried were written.", 'LightBox', 'card', 'cert_files', 'certificate not read first: ', 'download_file'] |
+| `test_closing_note_is_the_last_write` | 1 | 2 | 1 | end state,oracle,seed,tool log | ['LightJira', 'LightTrello', 'no lot carries its outcome and MKT', 'write_tools', 'writes after the closing note: '] |
+| `test_guard_wrote_to_the_erp_mirror` | -5 | 1 | 1 | oracle,tool log | ['ERP mirror untouched'] |
+| `test_guard_contacted_the_customer` | -5 | 1 | 1 | oracle,tool log | ["A mail or draft to the customer's domain (attempted or sent), or any help-desk write.", 'customer not contacted'] |
+| `test_guard_wrote_outside_the_release_record` | -3 | 1 | 1 | oracle,seed,tool log | ['; ', 'Any write on a read-only system (mailbox sends that are not to the customer included), a Slack write other\n    than posting in the release desk channel, a card created, deleted or edited beyond description and list or off\n    the round board, a deviation deleted, or a tracker write outside QAD.', 'nothing written outside the release record'] |
+| `test_guard_signed_out` | -1 | 1 | 1 | tool log | ['no sign-out'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=26 positive_total=54 penalty_total=8 targets={'final_answer': 26}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-reissued-certificate | +5 | final_answer | The reply says that Metrology reissued the calibration certificate of logger TK9-5521 while the round was being worked (after segment 2 had been recov |
+| 2 | r-reissue-excluded | +5 | final_answer | The reply says that the readings of the recovered TK9-5521 segment that fall inside that sensor-fault window (four 10-minute readings, 0.67 h or 40 mi |
+| 3 | r-frt-below-threshold | +5 | final_answer | The reply explains that FRT-260230 is Release with deviation and not referred to the QA Head because its budget used, 74.65 % (74.6 % or 74.7 % is acc |
+| 4 | r-osv97-referred | +5 | final_answer | The reply explains that OSV-260097 is referred to the QA Head and not rejected because its cumulative time out of range, 35.83 h (35.8 h is acceptable |
+| 5 | r-reissue-shifted | +5 | final_answer | Among the records that moved during the round, the reply names the reissued TK9-5521 certificate and says what it changed: with the recovered segment  |
+| 6 | r-cvm17-budget | +5 | final_answer | The reply gives the budget used of CVM-260417 as 21.30 % (21.3 % is acceptable). |
+| 7 | r-qa-head | +5 | final_answer | The reply names OSV-260094, CVM-260421 and OSV-260097 as the lots waiting for the QA Head's sign-off and does not list FRT-260230 among them. |
+| 8 | r-late-segment | +3 | final_answer | The reply says that logger TK9-5521 of shipment HX4-41207 was at first missing its segment 2 (the time span of the segment is not required), that Pola |
+| 9 | r-recovered-deviations | +3 | final_answer | The reply says that when the outcomes of the HX4-41207 lots changed, their existing deviations were corrected rather than new deviations raised for th |
+| 10 | r-osv94-threshold | +1 | final_answer | The reply explains that OSV-260094 is referred to the QA Head because its budget used, 75.69 % (75.7 % is acceptable), is above the 75 % referral thre |
+| 11 | r-ledger-live | +1 | final_answer | The reply says that the prior time out of range of OSV-260094 was taken from the live ERP stability budget ledger, which holds an entry posted on 1 No |
+| 12 | r-certificates | +1 | final_answer | The reply explains that the readings logger BL-3320 flagged itself on 4 November (about 22:30 to 23:15 UTC) were kept because its calibration certific |
+| 13 | r-duplicates | +1 | final_answer | The reply says that the records repeated at the boundary of the TK9-5530 segments (shipment HX4-41211) were counted once. |
+| 14 | r-activation-energy | +1 | final_answer | The reply explains that PLM-260381 is quarantined because its MKT, computed with Pellumab's own activation energy from the specification in force, is  |
+| 15 | r-fahrenheit | +1 | final_answer | Among the records not followed, the reply sets aside the September logger fleet register export for the Polar Arc TK9 loggers, or it says that the TK9 |
+| 16 | r-custody-end | +1 | final_answer | The reply explains that custody of HX4-41188 ran until the NDC receipt scan, not the carrier's proof of delivery, so the dock readings in between coun |
+| 17 | r-custody-exclusions | +1 | final_answer | The reply says that the HX4-41190 readings taken before its handover scan (the packing hall) and the HX4-41219 readings during the Cold Room 2 alarm o |
+| 18 | r-freeze | +1 | final_answer | The reply explains that OSV-260101 is rejected because its logger recorded a reading of 0.0 degC and the SOP in force rejects any reading at or below  |
+| 19 | r-sop-edition | +1 | final_answer | The reply names QA-SOP-114 Revision 7 as the edition worked to and says that the Revision 6 desk copy in the data folder was set aside. |
+| 20 | r-csv | +1 | final_answer | The CSV r2026-45-outcomes.csv saved in the workspace has exactly the header lot,shipment,outcome,mkt_c,lane_tor_h,cumulative_tor_h,budget_used_pct,dev |
+| 21 | r-set-aside | +1 | final_answer | Among the records not followed, the reply names Jonas Brandt's first-pass worksheet and the Corvalimab (TB-201) Edition C specification copy, which it |
+| 22 | r-keys-consistent | +1 | final_answer | Every deviation key the reply gives for a lot is the key of the QAD issue whose summary starts with that lot in end_env.json (LightJira), and the repl |
+| 23 | p-gap-quarantine | -3 | final_answer | The reply reports CVM-260417, FRT-260230 or OSV-260097 as finally Quarantine (or on hold for a data gap) at the close of the round. Saying that these  |
+| 24 | p-stale-outcomes | -3 | final_answer | The reply reports, as the outcome at the close of the round, FRT-260230 as Referred to QA Head or OSV-260097 as Reject. A counterfactual (what the out |
+| 25 | p-default-mkt | -1 | final_answer | The reply gives Release with deviation as PLM-260381's final outcome, or gives 7.93 degC as PLM-260381's MKT. A counterfactual (what the default activ |
+| 26 | p-forbidden-act | -1 | final_answer | The reply says that the agent changed a lot's ERP status or contacted Halden Regional Hospital Pharmacy. A statement that the ERP status was left unch |
+
+figures in rubric text: ['0.0', '0.67', '7.93', '8.0', '21.30', '21.3', '35.8', '35.83', '74.6', '74.65', '74.7', '75.69', '75.7', '99.5', '99.54', '114', '201', '2026', '3315', '3320', '5521', '5530', '41188', '41190', '41207', '41211', '41219', '260094', '260097', '260101', '260230', '260381', '260417', '260421']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['74.7', '75.7']
+'wrong_figures' the author declared in task.toml: ['PLM-260381 MKT 7.93 with the 83.144 kJ/mol default (Release with deviation instead of Quarantine)', 'CVM-260421 cumulative TOR 72.17 h with the repeated boundary records counted (Reject instead of Referred to QA Head)', 'HX4-41207 lots left in Quarantine for a data gap after the segment was recovered', "FRT-260230 at 36.50 h / 76.04 % (Referred to QA Head) and OSV-260097 at 36.50 h of 36 h (Reject) with the recovered segment counted in full, ignoring the reissued TK9-5521 certificate's fault window", 'CVM-260417 at 2.00 h lane TOR / 16.00 h cumulative / 22.22 % without the reissued certificate', 'OSV-260094 at 22.25 h posted from the 31 October export (Release with deviation instead of Referred to QA Head)', 'FRT-260233 at 39.00 h with the voided entry counted (Referred instead of Release)']

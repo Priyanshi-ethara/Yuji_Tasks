@@ -1,0 +1,90 @@
+{
+ "users": [
+  {
+   "user_id": "PNFG01",
+   "name": "Imogen Varga",
+   "email": "imogen.varga@northfell-grid.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "System Operator"
+  },
+  {
+   "user_id": "PNFG02",
+   "name": "Petra Lind",
+   "email": "petra.lind@northfell-grid.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "System Operator"
+  },
+  {
+   "user_id": "PNFG03",
+   "name": "Callum Tees",
+   "email": "callum.tees@northfell-grid.example",
+   "role": "user",
+   "time_zone": "Europe/London",
+   "job_title": "System Operator"
+  },
+  {
+   "user_id": "PNFG04",
+   "name": "Ines Calloway",
+   "email": "ines.calloway@northfell-grid.example",
+   "role": "admin",
+   "time_zone": "Europe/London",
+   "job_title": "Control Room Shift Manager"
+  }
+ ],
+ "services": [
+  {
+   "service_id": "PSNFG1",
+   "name": "SO Desk - Northfell 132 kV",
+   "description": "System Operator desk; receives day-ahead ratings",
+   "status": "active",
+   "escalation_policy_id": "EPNFG1",
+   "auto_resolve_timeout": 14400
+  }
+ ],
+ "policies": [
+  {
+   "escalation_policy_id": "EPNFG1",
+   "name": "SO Desk",
+   "num_loops": 1,
+   "tier1_user_id": "PNFG01",
+   "tier2_user_id": "PNFG04"
+  }
+ ],
+ "schedules": [
+  {
+   "schedule_id": "SNFG-DAY",
+   "name": "SO Desk - Day (07:00-19:00)",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPNFG1",
+   "current_oncall_user_id": "PNFG01",
+   "oncall_start": "2026-11-16T07:00:00Z",
+   "oncall_end": "2026-11-16T19:00:00Z"
+  },
+  {
+   "schedule_id": "SNFG-NIGHT",
+   "name": "SO Desk - Night (19:00-07:00)",
+   "time_zone": "Europe/London",
+   "escalation_policy_id": "EPNFG1",
+   "current_oncall_user_id": "PNFG02",
+   "oncall_start": "2026-11-15T19:00:00Z",
+   "oncall_end": "2026-11-16T07:00:00Z"
+  }
+ ],
+ "incidents": [
+  {
+   "incident_id": "PINFG77",
+   "incident_number": 4077,
+   "title": "Skelwith Edge AWS anemometer icing (telemetry)",
+   "status": "acknowledged",
+   "urgency": "low",
+   "service_id": "PSNFG1",
+   "escalation_policy_id": "EPNFG1",
+   "assigned_to": "Petra Lind",
+   "created_at": "2026-11-16T03:01:00Z",
+   "resolved_at": null
+  }
+ ],
+ "notes_store": {}
+}

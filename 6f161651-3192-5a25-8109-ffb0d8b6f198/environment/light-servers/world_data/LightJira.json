@@ -1,0 +1,138 @@
+{
+ "projects": [
+  {
+   "id": "10077",
+   "key": "KTF",
+   "name": "Kestrel-3 Technical File",
+   "project_type_key": "business",
+   "lead": "acc-orv-margit",
+   "description": "Technical file compilation for the Kestrel-3 notified-body submission"
+  }
+ ],
+ "users": [
+  {
+   "account_id": "acc-orv-ines",
+   "display_name": "Ines Calloway",
+   "email": "ines.calloway@orvane.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-orv-ra",
+   "display_name": "RA Specialist",
+   "email": "ra.specialist@orvane.example",
+   "active": true
+  },
+  {
+   "account_id": "acc-orv-margit",
+   "display_name": "Margit Ossendrecht",
+   "email": "margit.ossendrecht@orvane.example",
+   "active": true
+  }
+ ],
+ "boards": [
+  {
+   "id": 77,
+   "name": "KTF board",
+   "type": "kanban",
+   "project_key": "KTF"
+  }
+ ],
+ "issues": [
+  {
+   "id": "31001",
+   "key": "KTF-1",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Dry-run gap: S12 risk management plan",
+   "description": "TF-GAP S12\nDry run 14 Sep 2026: DOC-1046 Rev B open placeholder (benefit-risk method). Closed by Rev C.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-09-14T10:00:00Z",
+   "updated": "2026-09-30T16:00:00Z"
+  },
+  {
+   "id": "31002",
+   "key": "KTF-2",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Dry-run gap: S19 precision",
+   "description": "TF-GAP S19\nDry run 14 Sep 2026: DOC-1110 Rev B lacked the between-lot study. Closed by Rev C.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-09-14T10:05:00Z",
+   "updated": "2026-09-29T11:00:00Z"
+  },
+  {
+   "id": "31003",
+   "key": "KTF-3",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Dry-run gap: S24 performance evaluation report",
+   "description": "TF-GAP S24\nDry run 14 Sep 2026: DOC-1121 Rev A open placeholders. Closed by Rev B.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-09-14T10:10:00Z",
+   "updated": "2026-10-08T09:00:00Z"
+  },
+  {
+   "id": "31004",
+   "key": "KTF-4",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Glossary register clean-up before submission",
+   "description": "Retire superseded terms; align Cartridge wording across the IFU and labels.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-20T09:00:00Z",
+   "updated": "2026-11-05T15:30:00Z"
+  },
+  {
+   "id": "31005",
+   "key": "KTF-5",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Request NB 2291 portal account for the Director",
+   "description": "Portal uploads are made by the Director of RA only, after sign-off.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-29T14:00:00Z",
+   "updated": "2026-10-29T14:00:00Z"
+  },
+  {
+   "id": "31006",
+   "key": "KTF-6",
+   "project_key": "KTF",
+   "issue_type": "Task",
+   "summary": "Compile Kestrel-3 TF ToC, term index and gap list",
+   "description": "Per ORV-RA-STD-014 Edition 3. Gap tickets follow the ToC.",
+   "status": "To Do",
+   "priority": "Medium",
+   "assignee": "acc-orv-ines",
+   "reporter": "acc-orv-margit",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-06T10:00:00Z",
+   "updated": "2026-11-06T10:00:00Z"
+  }
+ ]
+}

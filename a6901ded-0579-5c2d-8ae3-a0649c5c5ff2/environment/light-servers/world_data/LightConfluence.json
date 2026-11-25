@@ -1,0 +1,243 @@
+{
+ "spaces": [
+  {
+   "id": 98110,
+   "key": "MLP",
+   "name": "ML Platform",
+   "type": "global",
+   "status": "current",
+   "description": {
+    "plain": {
+     "value": "Runbooks, recipes and capacity rules for Sorrel Insurance ML Platform",
+     "representation": "plain"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "610001",
+   "type": "page",
+   "status": "current",
+   "title": "ML Platform",
+   "space_key": "MLP",
+   "parent_id": null,
+   "version": 4,
+   "body": "ML Platform space: runbooks, recipe register, launcher profiles, capacity rules and launch windows for Sorrel Insurance fine-tuning.",
+   "created_by": "Halvard Quist",
+   "created_at": "2025-03-01T10:00:00Z"
+  },
+  {
+   "id": "610002",
+   "type": "page",
+   "status": "current",
+   "title": "RB-ML-014 Fine-tune launch readiness",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 6,
+   "body": "RB-ML-014 Fine-tune launch readiness. Version 6, in force from 2 November 2026. Owner: ML Platform (Halvard Quist).\n\n1. Scope and records\n1.1 This runbook applies to every fine-tune booked into a launch window. The launch desk completes readiness for each run before the window opens; the desk never launches anything. When the window opens, the launcher starts the runs whose change ticket is In Progress.\n1.2 Records: the run registry (Airtable base \"ML Platform\", table \"Fine-tune runs\") is the record of a run's configuration and readiness; the launch spec in Box (path in the registry row) is what the launcher executes; the Recipe register in this space holds the approved recipes and their owners; dataset cards live in the data catalogue (Notion, \"Dataset cards\"). These records are kept current by their owners and are the sources of record for the checks below.\n\n2. Batch geometry\n2.1 A run's effective batch is the number of training sequences whose gradients are averaged into one optimizer update.\n2.2 The effective batch must equal the effective batch of the run's approved recipe. Where it does not, the desk corrects the run by changing Grad accum, and only Grad accum: micro-batch is fixed by the memory profile of the spec and the GPU count by the pool booking. If no whole number of accumulation steps reaches the recipe's effective batch, the run is \"Blocked — configuration\".\n\n3. Tokens per update and learning rate\n3.1 Tokens per update = effective batch x sequence length.\n3.2 When a run's tokens per update differ from its recipe's, its Peak LR is the recipe's peak LR multiplied by the square root of (run tokens per update / recipe tokens per update), written to three significant figures. When they are equal, Peak LR is the recipe's.\n3.3 A difference of more than 10% in tokens per update also needs reviewer sign-off: one ticket in Jira project MLR per run, assigned to the owner of the run's recipe as the Recipe register names them.\n\n4. Data\n4.1 Every training dataset of the run must carry a PII scan result of Pass on its dataset card, for the version the run trains on.\n4.2 The run's evaluation set must be independent of everything the run trains on: no evaluation item may reach training, whether verbatim, as a near-duplicate, or by derivation.\n4.3 A run that fails 4.1 or 4.2 is \"Blocked — data\". Raise one ticket in Jira project DQ, assigned to the owner (per its dataset card) of the training dataset at fault. A blocked run is not reserved, gets no change ticket, and its Reserved hours and Charged GPU-hours stay empty.\n\n5. Reservation\n5.1 Seconds per update are taken from the run's dry run, which ft-launcher records in monitoring as a dry-run event. A dry run taken at a different accumulation than the run will launch with is scaled in proportion to the accumulation steps (micro-batches within an update run one after another).\n5.2 Reserved hours = Steps x seconds per update / 3600, rounded up to the next whole hour.\n5.3 Each run that is not blocked is reserved on the Cluster reservations calendar (cluster-reservations@sorrel-insurance.example) from the window's opening for its reserved hours, titled \"GPU reservation — <Run ID>\".\n\n6. Capacity\n6.1 Charged GPU-hours = reserved hours x GPUs, counted on the basis the GPU capacity page sets.\n6.2 A run charged more than the per-launch allowance on the GPU capacity page needs one capacity request in Jira project CAP, assigned to the capacity manager of the pool the run is placed in. The run is held until the request is approved.\n\n7. Change ticket\n7.1 Each run that is not blocked gets one change ticket in Jira project LCH, summary \"Launch <Run ID> — <window date>\", assigned to the ML Platform primary on-call (PagerDuty) whose rotation covers the window.\n7.2 A run that is Ready to launch has its change ticket moved to In Progress. A held run's change ticket stays in To Do until every hold has cleared.\n\n8. Registry fields the desk completes\n8.1 Grad accum and Peak LR when section 2 or 3 changes them; Readiness for every run; Reserved hours and Charged GPU-hours for every run that is not blocked.\n8.2 Readiness takes exactly one of these values:\n- Ready to launch\n- Held — reviewer sign-off\n- Held — capacity approval\n- Held — sign-off and capacity\n- Blocked — data\n- Blocked — configuration\n8.3 Rows of other windows are not touched by the desk.\n\n9. Readiness note\n9.1 When every run of the window is recorded, the desk sends the requester one readiness note: each run's readiness and the reasons, every correction and the rule behind it, every ticket and request raised and whom it waits on, and the GPU-hours the window will be charged.\n",
+   "created_by": "Halvard Quist",
+   "created_at": "2026-11-02T09:00:00Z"
+  },
+  {
+   "id": "610003",
+   "type": "page",
+   "status": "current",
+   "title": "Recipe register",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 9,
+   "body": "Approved fine-tune recipes. Each recipe page carries its values and owner.\n\n| Recipe | Title | Owner | Approved |\n| RCP-CLM-3 | Claims summariser 8B | Ravi Castellanos | 2026-10-28 |\n| RCP-UW-2 | Underwriting QA 3B | Wen Ashdown | 2026-09-30 |\n| RCP-FNOL-4 | FNOL triage classifier 1B | Ifeoma Hartley | 2026-10-14 |\n| RCP-SUB-1 | Subrogation letter extraction 8B | Lucian Petrov | 2026-11-03 |\n| RCP-RISK-2 | Risk scoring 3B | Ines Kowalczyk | 2026-08-19 |",
+   "created_by": "Ravi Castellanos",
+   "created_at": "2026-11-03T12:00:00Z"
+  },
+  {
+   "id": "610020",
+   "type": "page",
+   "status": "current",
+   "title": "RCP-CLM-3 — Claims summariser 8B",
+   "space_key": "MLP",
+   "parent_id": "610003",
+   "version": 2,
+   "body": "RCP-CLM-3 — Claims summariser 8B. Status: approved 2026-10-28. Owner: Ravi Castellanos.\n\nBase checkpoint: sorrel-base-8b-r2\nEffective batch: 512 sequences per optimizer update\nSequence length: 4096 tokens\nTokens per update: 2,097,152\nPeak LR: 1.0e-04 (AdamW, cosine, 100 warm-up updates)\nSteps: 3,600\n\nDepartures from these values follow RB-ML-014 sections 2 and 3.",
+   "created_by": "Ravi Castellanos",
+   "created_at": "2026-10-28T12:00:00Z"
+  },
+  {
+   "id": "610021",
+   "type": "page",
+   "status": "current",
+   "title": "RCP-UW-2 — Underwriting QA 3B",
+   "space_key": "MLP",
+   "parent_id": "610003",
+   "version": 3,
+   "body": "RCP-UW-2 — Underwriting QA 3B. Status: approved 2026-09-30. Owner: Wen Ashdown.\n\nBase checkpoint: sorrel-base-3b-r4\nEffective batch: 256 sequences per optimizer update\nSequence length: 2048 tokens\nTokens per update: 524,288\nPeak LR: 2.0e-05 (AdamW, cosine, 100 warm-up updates)\nSteps: 4,000\n\nDepartures from these values follow RB-ML-014 sections 2 and 3.",
+   "created_by": "Wen Ashdown",
+   "created_at": "2026-09-30T12:00:00Z"
+  },
+  {
+   "id": "610022",
+   "type": "page",
+   "status": "current",
+   "title": "RCP-FNOL-4 — FNOL triage classifier 1B",
+   "space_key": "MLP",
+   "parent_id": "610003",
+   "version": 4,
+   "body": "RCP-FNOL-4 — FNOL triage classifier 1B. Status: approved 2026-10-14. Owner: Ifeoma Hartley.\n\nBase checkpoint: sorrel-base-1b-r3\nEffective batch: 128 sequences per optimizer update\nSequence length: 2048 tokens\nTokens per update: 262,144\nPeak LR: 3.0e-05 (AdamW, cosine, 100 warm-up updates)\nSteps: 5,000\n\nDepartures from these values follow RB-ML-014 sections 2 and 3.",
+   "created_by": "Ifeoma Hartley",
+   "created_at": "2026-10-14T12:00:00Z"
+  },
+  {
+   "id": "610023",
+   "type": "page",
+   "status": "current",
+   "title": "RCP-SUB-1 — Subrogation letter extraction 8B",
+   "space_key": "MLP",
+   "parent_id": "610003",
+   "version": 2,
+   "body": "RCP-SUB-1 — Subrogation letter extraction 8B. Status: approved 2026-11-03. Owner: Lucian Petrov.\n\nBase checkpoint: sorrel-base-8b-r2\nEffective batch: 256 sequences per optimizer update\nSequence length: 4096 tokens\nTokens per update: 1,048,576\nPeak LR: 5.0e-05 (AdamW, cosine, 100 warm-up updates)\nSteps: 4,000\n\nDepartures from these values follow RB-ML-014 sections 2 and 3.",
+   "created_by": "Lucian Petrov",
+   "created_at": "2026-11-03T12:00:00Z"
+  },
+  {
+   "id": "610024",
+   "type": "page",
+   "status": "current",
+   "title": "RCP-RISK-2 — Risk scoring 3B",
+   "space_key": "MLP",
+   "parent_id": "610003",
+   "version": 3,
+   "body": "RCP-RISK-2 — Risk scoring 3B. Status: approved 2026-08-19. Owner: Ines Kowalczyk.\n\nBase checkpoint: sorrel-base-3b-r4\nEffective batch: 192 sequences per optimizer update\nSequence length: 2048 tokens\nTokens per update: 393,216\nPeak LR: 2.5e-05 (AdamW, cosine, 100 warm-up updates)\nSteps: 3,000\n\nDepartures from these values follow RB-ML-014 sections 2 and 3.",
+   "created_by": "Ines Kowalczyk",
+   "created_at": "2026-08-19T12:00:00Z"
+  },
+  {
+   "id": "610010",
+   "type": "page",
+   "status": "current",
+   "title": "Launcher parallelism profiles",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 5,
+   "body": "Launcher parallelism profiles (ft-launcher 4.x): how the launcher lays out the GPUs of a job under each profile.\n\nsingle-node-dp\nPlain data parallel inside one node of 8 GPUs. Every GPU holds a full copy of the model and draws its own micro-batch from the data loader. Gradients are all-reduced across the 8 GPUs at each update.\n\nmulti-node-dp\nPlain data parallel across nodes. As single-node-dp, with the all-reduce spanning nodes over the fabric. Every GPU draws its own micro-batch.\n\nwide-head-8b\nFor 8B bases whose output head is too large to replicate on every GPU. GPUs are paired over NVLink and each pair holds one copy of the model split across the two GPUs (tensor parallel degree 2, sequence parallel on). Both GPUs of a pair work on the same micro-batch: the data loader feeds one micro-batch per pair. Optimizer state is sharded across pairs (ZeRO-1). Pairs all-reduce gradients at each update.\n\nsharded-dp\nFully sharded data parallel: parameters, gradients and optimizer state are sharded across all GPUs of the job and gathered layer by layer. Every GPU draws its own micro-batch from the data loader; sharding saves memory, it does not change how many micro-batches are consumed.\n\npipe2-long\nPipeline parallel over two stages for 32k-context runs: each model copy spans two GPUs, one stage each, and micro-batches flow through the stages. One micro-batch stream per two-GPU copy. Not used by any run booked in Q4 so far.\n",
+   "created_by": "Halvard Quist",
+   "created_at": "2026-11-11T10:30:00Z"
+  },
+  {
+   "id": "610011",
+   "type": "page",
+   "status": "current",
+   "title": "GPU capacity",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 7,
+   "body": "GPU capacity for fine-tune launch windows.\n\nPer-launch allowance: 160 GPU-hours, counted in A100-equivalent GPU-hours (basis in force from 1 October 2026). GPU-hours on accelerators other than the A100 are converted at the factor on the child page \"Accelerator equivalence\" before they are compared with the allowance. A launch charged above the allowance needs a capacity request (RB-ML-014 section 6).\n\nPools available to fine-tunes:\n- ft-pool-north: 32 GPUs for fine-tunes on window days. Capacity manager: Joaquim Brandão.\n- ft-pool-south: 32 GPUs, shared with Pricing batch jobs on window days. Capacity manager: Henrike Solberg.\n\nCapacity requests go to project CAP and are assigned to the capacity manager of the pool the run is placed in. Approvals are given on the request ticket; the desk does not approve its own requests.\n",
+   "created_by": "Henrike Solberg",
+   "created_at": "2026-09-28T09:00:00Z"
+  },
+  {
+   "id": "610012",
+   "type": "page",
+   "status": "current",
+   "title": "Accelerator equivalence",
+   "space_key": "MLP",
+   "parent_id": "610011",
+   "version": 2,
+   "body": "Accelerator equivalence (A100-equivalent factors), in force from 1 October 2026.\n\n| Accelerator | Factor per GPU-hour |\n| NVIDIA A100 80GB | 1.0 |\n| NVIDIA H100 80GB | 2.0 |\n| NVIDIA L40S 48GB | 0.6 |\n\nCharged GPU-hours = reserved hours x GPUs x factor of the accelerator the run executes on. Factors are reviewed each quarter by the capacity managers.\n",
+   "created_by": "Henrike Solberg",
+   "created_at": "2026-09-28T09:10:00Z"
+  },
+  {
+   "id": "610013",
+   "type": "page",
+   "status": "current",
+   "title": "Launch windows — Q4 2026",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 3,
+   "body": "Launch windows, Q4 2026. Every window opens at 06:00 UTC on the Thursday below; reservations start at the opening.\n\n| Window | Opens (UTC) | Notes |\n| 2026-11-05 | 06:00 | FT-CLM-06 |\n| 2026-11-12 | 06:00 | FT-RISK-04 |\n| 2026-11-19 | 06:00 | Applied ML: four fine-tunes |\n| 2026-11-26 | 06:00 | FT-CLM-07a, FT-RISK-05 (draft) |\n| 2026-12-03 | 06:00 | |\n| 2026-12-10 | 06:00 | |\n| 2026-12-17 | 06:00 | Last window before the freeze |\n\nReservation calendar: Cluster reservations (cluster-reservations@sorrel-insurance.example), kept in UTC.\n",
+   "created_by": "Joaquim Brandão",
+   "created_at": "2026-10-30T09:00:00Z"
+  },
+  {
+   "id": "610014",
+   "type": "page",
+   "status": "current",
+   "title": "Dry runs",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 2,
+   "body": "Dry runs. Before a run is booked, its owner starts a dry run with the launch spec as merged: ft-launcher runs 50 updates, discards the first 10 and records the median seconds per optimizer update as a dry-run event in monitoring (Datadog, tag event:dry-run, run:<run id>). The log is also kept in Box under ml-platform/dry-run-logs. The dry run uses the accumulation of the spec at the time it ran.\n",
+   "created_by": "Halvard Quist",
+   "created_at": "2026-06-01T09:00:00Z"
+  },
+  {
+   "id": "610015",
+   "type": "page",
+   "status": "current",
+   "title": "Launch desk — where things go",
+   "space_key": "MLP",
+   "parent_id": "610001",
+   "version": 3,
+   "body": "Launch desk: where things go.\n\n- Change tickets: Jira LCH, one per launch.\n- Reviewer sign-off: Jira MLR, one per run that departs from its recipe as RB-ML-014 section 3 sets out.\n- Capacity requests: Jira CAP, one per run over the allowance.\n- Data issues that block a run: Jira DQ.\n- Reservations: the Cluster reservations calendar.\n- The readiness note: from the launch desk mailbox to the requester.\nOn-call: PagerDuty schedule \"ML Platform primary — week NN\" for the week of the window.\n",
+   "created_by": "Halvard Quist",
+   "created_at": "2026-10-01T09:00:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": "620001",
+   "page_id": "610002",
+   "author": "emeka.rowntree",
+   "body": "Is the allowance in section 6 per run or per window?",
+   "created_at": "2026-11-03T10:00:00Z"
+  },
+  {
+   "id": "620002",
+   "page_id": "610002",
+   "author": "halvard.quist",
+   "body": "Per run (per launch). The window total is reported in the note for planning only.",
+   "created_at": "2026-11-03T11:00:00Z"
+  },
+  {
+   "id": "620003",
+   "page_id": "610010",
+   "author": "mireille.dufresne",
+   "body": "Moving FT-CLM-07 onto wide-head-8b for the r2 base (48k head); spec merged 10 Nov.",
+   "created_at": "2026-11-10T09:45:00Z"
+  },
+  {
+   "id": "620004",
+   "page_id": "610010",
+   "author": "teodora.lindqvist",
+   "body": "pipe2-long documented; nothing on it before December.",
+   "created_at": "2026-11-11T11:00:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "390001",
+   "page_id": "610002",
+   "name": "runbook",
+   "prefix": "global"
+  },
+  {
+   "id": "390002",
+   "page_id": "610002",
+   "name": "launch-readiness",
+   "prefix": "global"
+  },
+  {
+   "id": "390003",
+   "page_id": "610010",
+   "name": "launcher",
+   "prefix": "global"
+  },
+  {
+   "id": "390004",
+   "page_id": "610011",
+   "name": "capacity",
+   "prefix": "global"
+  }
+ ]
+}

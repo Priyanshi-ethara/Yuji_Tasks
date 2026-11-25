@@ -1,0 +1,63 @@
+=== S1 (40ea4665-a13d-5cb8-875b-59bf9f2b1d95)
+missing_files   : none
+empty_files     : none
+missing_dirs    : none
+rubric_file     : ['tests/judge.toml']
+both_rubrics    : False
+world_data_json : 16 files (minimum 2): ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDatadog', 'LightEnergy', 'LightGmail', 'LightGoogleCalendar', 'LightJira', 'LightMicrosoftTeams', 'LightNotion', 'LightOutlook', 'LightQuickBooks', 'LightSalesforce', 'LightSlack', 'LightStripe', 'LightXero']
+data_files      : 34
+old_env.json    : True
+helper_modules  : none
+harness_owned_in_tests: none
+=== S2
+parse_errors: none
+=== S3
+harness_owned_blocks: none
+schema_version      : 1.4
+task.name           : atlas/40ea4665-a13d-5cb8-875b-59bf9f2b1d95
+task.description    : present
+task.authors        : [{'name': 'Priyanshi Joshi', 'email': 'priyanshi.joshi@ethara.ai'}]
+metadata.mcp_servers: 16
+metadata.apps       : 8
+apps_not_wired      : []
+wired_without_world : none
+world_not_wired     : none
+metadata.category   : mcp_tool_calling
+metadata.tags       : 18
+metadata.gradeable  : True
+=== S4a
+weight_shape=flat weighted=22 defined=22 dynamic_minting=False
+weighted_but_undefined: none
+defined_but_unweighted: none
+zero_or_nonnumeric_weights: none
+positive_total=42 penalty_total=18 guards=6
+threshold=0.7 null_floor=0.0 guard_polarity=pass_charges gate=None
+threshold_ok: True 
+null_floor_ok: True
+guard_polarity_ok: True | guards_without_polarity: False
+=== S4b
+shape=authoring criteria=25
+duplicate_ids: none
+duplicate_numbers: none
+missing_description: none
+bad_weight: none
+no_polarity: none
+weight_sign_vs_polarity_mismatch: none
+negate_used: none
+non_binary_scoring: none
+bad_target: none
+positive_total=46 penalty_total=17 max_single_positive=5
+targets: {'final_answer': 25}
+=== S4c
+identity: {'uuid': '40ea4665-a13d-5cb8-875b-59bf9f2b1d95', 'canary': '40ea4665-a13d-5cb8-875b-59bf9f2b1d95', 'instruction_canary': '40ea4665-a13d-5cb8-875b-59bf9f2b1d95'}
+folder_name_is_uuid: True
+instruction_canaries_found: ['40ea4665-a13d-5cb8-875b-59bf9f2b1d95']
+canary_binding_ok: True
+harbor_canary_carriers: ['.identity.json', 'environment/Dockerfile', 'instruction.md', 'solution/TRUTH.md', 'solution/gt_env.json', 'solution/solve.py', 'solution/solve.sh', 'task.toml', 'tests/old_env.json', 'tests/oracle.json', 'tests/test_outputs.py']
+gt_env_shape    : flat
+gt_env_servers  : ['LightAirtable', 'LightBox', 'LightConfluence', 'LightEnergy', 'LightMicrosoftTeams', 'LightNotion', 'LightOutlook', 'LightQuickBooks', 'LightSalesforce']
+in_gt_not_world : none
+in_world_not_gt : ['LightDatadog', 'LightGmail', 'LightGoogleCalendar', 'LightJira', 'LightSlack', 'LightStripe', 'LightXero']
+old_env_servers : 16 not in world: none
+3.3M	<copy>/40ea4665-a13d-5cb8-875b-59bf9f2b1d95
+slug ok

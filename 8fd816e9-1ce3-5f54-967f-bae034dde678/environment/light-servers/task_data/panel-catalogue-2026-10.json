@@ -1,0 +1,873 @@
+{
+  "generated": "2026-11-01T02:10:00Z",
+  "generator": "boardctl widgets export --all --format json (v3.4.1)",
+  "note": "Widget definitions as stored on each board. Template variables are listed by name; their values come from the board.",
+  "boards": [
+    {
+      "board_id": "bwp-led-svc",
+      "title": "Ledger · Service SLOs",
+      "domain": "Ledger",
+      "owner_team": "Ledger Platform",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "led-svc-01",
+          "type": "query_value",
+          "title": "ledger-posting · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:ledger-posting,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "ledger-posting"
+        },
+        {
+          "id": "led-svc-02",
+          "type": "query_value",
+          "title": "ledger-balance-read · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:ledger-balance-read,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "ledger-balance-read"
+        },
+        {
+          "id": "led-svc-03",
+          "type": "query_value",
+          "title": "journal-export · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:journal-export,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "journal-export"
+        },
+        {
+          "id": "led-svc-04",
+          "type": "query_value",
+          "title": "fx-rates-feed · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:fx-rates-feed,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "fx-rates-feed"
+        },
+        {
+          "id": "led-svc-05",
+          "type": "query_value",
+          "title": "statement-render · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:statement-render,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "statement-render"
+        },
+        {
+          "id": "led-svc-l01",
+          "type": "timeseries",
+          "title": "ledger-posting p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:ledger-posting,$cell,$region}",
+          "unit": "second",
+          "service": "ledger-posting"
+        },
+        {
+          "id": "led-svc-l02",
+          "type": "timeseries",
+          "title": "ledger-balance-read p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:ledger-balance-read,$cell,$region}",
+          "unit": "second",
+          "service": "ledger-balance-read"
+        },
+        {
+          "id": "led-svc-l03",
+          "type": "timeseries",
+          "title": "journal-export p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:journal-export,$cell,$region}",
+          "unit": "second",
+          "service": "journal-export"
+        },
+        {
+          "id": "led-svc-l04",
+          "type": "timeseries",
+          "title": "fx-rates-feed p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:fx-rates-feed,$cell,$region}",
+          "unit": "second",
+          "service": "fx-rates-feed"
+        },
+        {
+          "id": "led-svc-l05",
+          "type": "timeseries",
+          "title": "statement-render p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:statement-render,$cell,$region}",
+          "unit": "second",
+          "service": "statement-render"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-led-oncall",
+      "title": "Ledger on-call · Service SLOs",
+      "domain": "Ledger",
+      "owner_team": "Ledger Platform",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "led-oc-01",
+          "type": "query_value",
+          "title": "ledger-posting availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:ledger-posting,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "ledger-posting"
+        },
+        {
+          "id": "led-oc-02",
+          "type": "query_value",
+          "title": "ledger-balance-read availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:ledger-balance-read,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "ledger-balance-read"
+        },
+        {
+          "id": "led-oc-03",
+          "type": "query_value",
+          "title": "journal-export availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:journal-export,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "journal-export"
+        },
+        {
+          "id": "led-oc-04",
+          "type": "query_value",
+          "title": "fx-rates-feed availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:fx-rates-feed,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "fx-rates-feed"
+        },
+        {
+          "id": "led-oc-05",
+          "type": "query_value",
+          "title": "statement-render availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:statement-render,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "statement-render"
+        },
+        {
+          "id": "led-oc-l01",
+          "type": "timeseries",
+          "title": "ledger-posting p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:ledger-posting,$cell,$region}",
+          "unit": "second",
+          "service": "ledger-posting"
+        },
+        {
+          "id": "led-oc-l02",
+          "type": "timeseries",
+          "title": "ledger-balance-read p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:ledger-balance-read,$cell,$region}",
+          "unit": "second",
+          "service": "ledger-balance-read"
+        },
+        {
+          "id": "led-oc-l03",
+          "type": "timeseries",
+          "title": "journal-export p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:journal-export,$cell,$region}",
+          "unit": "second",
+          "service": "journal-export"
+        },
+        {
+          "id": "led-oc-l04",
+          "type": "timeseries",
+          "title": "fx-rates-feed p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:fx-rates-feed,$cell,$region}",
+          "unit": "second",
+          "service": "fx-rates-feed"
+        },
+        {
+          "id": "led-oc-l05",
+          "type": "timeseries",
+          "title": "statement-render p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:statement-render,$cell,$region}",
+          "unit": "second",
+          "service": "statement-render"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-acq-svc",
+      "title": "Acquiring · Canary & SLO watch",
+      "domain": "Acquiring",
+      "owner_team": "Acquiring",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "acq-svc-01",
+          "type": "query_value",
+          "title": "card-auth-gateway · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:card-auth-gateway,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "card-auth-gateway"
+        },
+        {
+          "id": "acq-svc-02",
+          "type": "query_value",
+          "title": "tokenisation-vault · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:tokenisation-vault,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "tokenisation-vault"
+        },
+        {
+          "id": "acq-svc-03",
+          "type": "query_value",
+          "title": "3ds-challenge · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:3ds-challenge,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "3ds-challenge"
+        },
+        {
+          "id": "acq-svc-04",
+          "type": "query_value",
+          "title": "merchant-onboarding-api · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:merchant-onboarding-api,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "merchant-onboarding-api"
+        },
+        {
+          "id": "acq-svc-05",
+          "type": "query_value",
+          "title": "chargeback-intake · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:chargeback-intake,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "chargeback-intake"
+        },
+        {
+          "id": "acq-svc-l01",
+          "type": "timeseries",
+          "title": "card-auth-gateway p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:card-auth-gateway,$cell,$region}",
+          "unit": "second",
+          "service": "card-auth-gateway"
+        },
+        {
+          "id": "acq-svc-l02",
+          "type": "timeseries",
+          "title": "tokenisation-vault p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:tokenisation-vault,$cell,$region}",
+          "unit": "second",
+          "service": "tokenisation-vault"
+        },
+        {
+          "id": "acq-svc-l03",
+          "type": "timeseries",
+          "title": "3ds-challenge p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:3ds-challenge,$cell,$region}",
+          "unit": "second",
+          "service": "3ds-challenge"
+        },
+        {
+          "id": "acq-svc-l04",
+          "type": "timeseries",
+          "title": "merchant-onboarding-api p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:merchant-onboarding-api,$cell,$region}",
+          "unit": "second",
+          "service": "merchant-onboarding-api"
+        },
+        {
+          "id": "acq-svc-l05",
+          "type": "timeseries",
+          "title": "chargeback-intake p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:chargeback-intake,$cell,$region}",
+          "unit": "second",
+          "service": "chargeback-intake"
+        },
+        {
+          "id": "acq-svc-c01",
+          "type": "query_value",
+          "title": "card-auth-gateway · canary error ratio (daily max)",
+          "slo_panel": false,
+          "exported": true,
+          "query": "max:bwp.http.error_ratio{service:card-auth-gateway,cell:wren-0,$region}.rollup(max, 86400)",
+          "unit": "percent",
+          "service": "card-auth-gateway"
+        },
+        {
+          "id": "acq-svc-c02",
+          "type": "query_value",
+          "title": "tokenisation-vault · canary error ratio (daily max)",
+          "slo_panel": false,
+          "exported": true,
+          "query": "max:bwp.http.error_ratio{service:tokenisation-vault,cell:wren-0,$region}.rollup(max, 86400)",
+          "unit": "percent",
+          "service": "tokenisation-vault"
+        },
+        {
+          "id": "acq-svc-c03",
+          "type": "query_value",
+          "title": "3ds-challenge · canary error ratio (daily max)",
+          "slo_panel": false,
+          "exported": true,
+          "query": "max:bwp.http.error_ratio{service:3ds-challenge,cell:wren-0,$region}.rollup(max, 86400)",
+          "unit": "percent",
+          "service": "3ds-challenge"
+        },
+        {
+          "id": "acq-svc-c04",
+          "type": "query_value",
+          "title": "merchant-onboarding-api · canary error ratio (daily max)",
+          "slo_panel": false,
+          "exported": true,
+          "query": "max:bwp.http.error_ratio{service:merchant-onboarding-api,cell:wren-0,$region}.rollup(max, 86400)",
+          "unit": "percent",
+          "service": "merchant-onboarding-api"
+        },
+        {
+          "id": "acq-svc-c05",
+          "type": "query_value",
+          "title": "chargeback-intake · canary error ratio (daily max)",
+          "slo_panel": false,
+          "exported": true,
+          "query": "max:bwp.http.error_ratio{service:chargeback-intake,cell:wren-0,$region}.rollup(max, 86400)",
+          "unit": "percent",
+          "service": "chargeback-intake"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-acq-oncall",
+      "title": "Acquiring on-call · Service SLOs",
+      "domain": "Acquiring",
+      "owner_team": "Acquiring",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "acq-oc-01",
+          "type": "query_value",
+          "title": "card-auth-gateway availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:card-auth-gateway,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "card-auth-gateway"
+        },
+        {
+          "id": "acq-oc-02",
+          "type": "query_value",
+          "title": "tokenisation-vault availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:tokenisation-vault,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "tokenisation-vault"
+        },
+        {
+          "id": "acq-oc-03",
+          "type": "query_value",
+          "title": "3ds-challenge availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:3ds-challenge,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "3ds-challenge"
+        },
+        {
+          "id": "acq-oc-04",
+          "type": "query_value",
+          "title": "merchant-onboarding-api availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:merchant-onboarding-api,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "merchant-onboarding-api"
+        },
+        {
+          "id": "acq-oc-05",
+          "type": "query_value",
+          "title": "chargeback-intake availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_time{service:chargeback-intake,$cell,$region}.rollup(sum, 86400)",
+          "unit": "second",
+          "service": "chargeback-intake"
+        },
+        {
+          "id": "acq-oc-l01",
+          "type": "timeseries",
+          "title": "card-auth-gateway p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:card-auth-gateway,$cell,$region}",
+          "unit": "second",
+          "service": "card-auth-gateway"
+        },
+        {
+          "id": "acq-oc-l02",
+          "type": "timeseries",
+          "title": "tokenisation-vault p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:tokenisation-vault,$cell,$region}",
+          "unit": "second",
+          "service": "tokenisation-vault"
+        },
+        {
+          "id": "acq-oc-l03",
+          "type": "timeseries",
+          "title": "3ds-challenge p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:3ds-challenge,$cell,$region}",
+          "unit": "second",
+          "service": "3ds-challenge"
+        },
+        {
+          "id": "acq-oc-l04",
+          "type": "timeseries",
+          "title": "merchant-onboarding-api p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:merchant-onboarding-api,$cell,$region}",
+          "unit": "second",
+          "service": "merchant-onboarding-api"
+        },
+        {
+          "id": "acq-oc-l05",
+          "type": "timeseries",
+          "title": "chargeback-intake p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:chargeback-intake,$cell,$region}",
+          "unit": "second",
+          "service": "chargeback-intake"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-pay-svc",
+      "title": "Payouts · Service SLOs",
+      "domain": "Payouts",
+      "owner_team": "Payouts",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "pay-svc-01",
+          "type": "query_value",
+          "title": "payout-scheduler · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payout-scheduler,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payout-scheduler"
+        },
+        {
+          "id": "pay-svc-02",
+          "type": "query_value",
+          "title": "bank-file-dispatch · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:bank-file-dispatch,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "bank-file-dispatch"
+        },
+        {
+          "id": "pay-svc-03",
+          "type": "query_value",
+          "title": "payee-verification · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payee-verification,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payee-verification"
+        },
+        {
+          "id": "pay-svc-04",
+          "type": "query_value",
+          "title": "payout-status-api · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payout-status-api,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payout-status-api"
+        },
+        {
+          "id": "pay-svc-05",
+          "type": "query_value",
+          "title": "sweep-reconciler · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:sweep-reconciler,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "sweep-reconciler"
+        },
+        {
+          "id": "pay-svc-l01",
+          "type": "timeseries",
+          "title": "payout-scheduler p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payout-scheduler,$cell,$region}",
+          "unit": "second",
+          "service": "payout-scheduler"
+        },
+        {
+          "id": "pay-svc-l02",
+          "type": "timeseries",
+          "title": "bank-file-dispatch p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:bank-file-dispatch,$cell,$region}",
+          "unit": "second",
+          "service": "bank-file-dispatch"
+        },
+        {
+          "id": "pay-svc-l03",
+          "type": "timeseries",
+          "title": "payee-verification p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payee-verification,$cell,$region}",
+          "unit": "second",
+          "service": "payee-verification"
+        },
+        {
+          "id": "pay-svc-l04",
+          "type": "timeseries",
+          "title": "payout-status-api p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payout-status-api,$cell,$region}",
+          "unit": "second",
+          "service": "payout-status-api"
+        },
+        {
+          "id": "pay-svc-l05",
+          "type": "timeseries",
+          "title": "sweep-reconciler p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:sweep-reconciler,$cell,$region}",
+          "unit": "second",
+          "service": "sweep-reconciler"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-pay-oncall",
+      "title": "Payouts on-call · Service SLOs",
+      "domain": "Payouts",
+      "owner_team": "Payouts",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "pay-oc-01",
+          "type": "query_value",
+          "title": "payout-scheduler availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payout-scheduler,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payout-scheduler"
+        },
+        {
+          "id": "pay-oc-02",
+          "type": "query_value",
+          "title": "bank-file-dispatch availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:bank-file-dispatch,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "bank-file-dispatch"
+        },
+        {
+          "id": "pay-oc-03",
+          "type": "query_value",
+          "title": "payee-verification availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payee-verification,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payee-verification"
+        },
+        {
+          "id": "pay-oc-04",
+          "type": "query_value",
+          "title": "payout-status-api availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:payout-status-api,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "payout-status-api"
+        },
+        {
+          "id": "pay-oc-05",
+          "type": "query_value",
+          "title": "sweep-reconciler availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:sweep-reconciler,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "sweep-reconciler"
+        },
+        {
+          "id": "pay-oc-l01",
+          "type": "timeseries",
+          "title": "payout-scheduler p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payout-scheduler,$cell,$region}",
+          "unit": "second",
+          "service": "payout-scheduler"
+        },
+        {
+          "id": "pay-oc-l02",
+          "type": "timeseries",
+          "title": "bank-file-dispatch p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:bank-file-dispatch,$cell,$region}",
+          "unit": "second",
+          "service": "bank-file-dispatch"
+        },
+        {
+          "id": "pay-oc-l03",
+          "type": "timeseries",
+          "title": "payee-verification p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payee-verification,$cell,$region}",
+          "unit": "second",
+          "service": "payee-verification"
+        },
+        {
+          "id": "pay-oc-l04",
+          "type": "timeseries",
+          "title": "payout-status-api p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:payout-status-api,$cell,$region}",
+          "unit": "second",
+          "service": "payout-status-api"
+        },
+        {
+          "id": "pay-oc-l05",
+          "type": "timeseries",
+          "title": "sweep-reconciler p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:sweep-reconciler,$cell,$region}",
+          "unit": "second",
+          "service": "sweep-reconciler"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-rsk-svc",
+      "title": "Risk · Service SLOs",
+      "domain": "Risk",
+      "owner_team": "Risk Engineering",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "rsk-svc-01",
+          "type": "query_value",
+          "title": "fraud-score · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:fraud-score,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "fraud-score"
+        },
+        {
+          "id": "rsk-svc-02",
+          "type": "query_value",
+          "title": "velocity-limits · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:velocity-limits,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "velocity-limits"
+        },
+        {
+          "id": "rsk-svc-03",
+          "type": "query_value",
+          "title": "sanctions-screen · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:sanctions-screen,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "sanctions-screen"
+        },
+        {
+          "id": "rsk-svc-04",
+          "type": "query_value",
+          "title": "dispute-evidence · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:dispute-evidence,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "dispute-evidence"
+        },
+        {
+          "id": "rsk-svc-05",
+          "type": "query_value",
+          "title": "kyc-document-check · availability (30d)",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:kyc-document-check,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "kyc-document-check"
+        },
+        {
+          "id": "rsk-svc-l01",
+          "type": "timeseries",
+          "title": "fraud-score p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:fraud-score,$cell,$region}",
+          "unit": "second",
+          "service": "fraud-score"
+        },
+        {
+          "id": "rsk-svc-l02",
+          "type": "timeseries",
+          "title": "velocity-limits p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:velocity-limits,$cell,$region}",
+          "unit": "second",
+          "service": "velocity-limits"
+        },
+        {
+          "id": "rsk-svc-l03",
+          "type": "timeseries",
+          "title": "sanctions-screen p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:sanctions-screen,$cell,$region}",
+          "unit": "second",
+          "service": "sanctions-screen"
+        },
+        {
+          "id": "rsk-svc-l04",
+          "type": "timeseries",
+          "title": "dispute-evidence p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:dispute-evidence,$cell,$region}",
+          "unit": "second",
+          "service": "dispute-evidence"
+        },
+        {
+          "id": "rsk-svc-l05",
+          "type": "timeseries",
+          "title": "kyc-document-check p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:kyc-document-check,$cell,$region}",
+          "unit": "second",
+          "service": "kyc-document-check"
+        }
+      ]
+    },
+    {
+      "board_id": "bwp-rsk-oncall",
+      "title": "Risk on-call · Service SLOs",
+      "domain": "Risk",
+      "owner_team": "Risk Engineering",
+      "template_variables": [
+        "cell",
+        "region"
+      ],
+      "widgets": [
+        {
+          "id": "rsk-oc-01",
+          "type": "query_value",
+          "title": "fraud-score availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:fraud-score,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "fraud-score"
+        },
+        {
+          "id": "rsk-oc-02",
+          "type": "query_value",
+          "title": "velocity-limits availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:velocity-limits,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "velocity-limits"
+        },
+        {
+          "id": "rsk-oc-03",
+          "type": "query_value",
+          "title": "sanctions-screen availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:sanctions-screen,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "sanctions-screen"
+        },
+        {
+          "id": "rsk-oc-04",
+          "type": "query_value",
+          "title": "dispute-evidence availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:dispute-evidence,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "dispute-evidence"
+        },
+        {
+          "id": "rsk-oc-05",
+          "type": "query_value",
+          "title": "kyc-document-check availability · 30d",
+          "slo_panel": true,
+          "query": "sum:bwp.sli.bad_minutes{service:kyc-document-check,$cell,$region}.rollup(sum, 86400)",
+          "unit": "minute",
+          "service": "kyc-document-check"
+        },
+        {
+          "id": "rsk-oc-l01",
+          "type": "timeseries",
+          "title": "fraud-score p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:fraud-score,$cell,$region}",
+          "unit": "second",
+          "service": "fraud-score"
+        },
+        {
+          "id": "rsk-oc-l02",
+          "type": "timeseries",
+          "title": "velocity-limits p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:velocity-limits,$cell,$region}",
+          "unit": "second",
+          "service": "velocity-limits"
+        },
+        {
+          "id": "rsk-oc-l03",
+          "type": "timeseries",
+          "title": "sanctions-screen p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:sanctions-screen,$cell,$region}",
+          "unit": "second",
+          "service": "sanctions-screen"
+        },
+        {
+          "id": "rsk-oc-l04",
+          "type": "timeseries",
+          "title": "dispute-evidence p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:dispute-evidence,$cell,$region}",
+          "unit": "second",
+          "service": "dispute-evidence"
+        },
+        {
+          "id": "rsk-oc-l05",
+          "type": "timeseries",
+          "title": "kyc-document-check p99 latency",
+          "slo_panel": false,
+          "query": "p99:bwp.http.request.duration{service:kyc-document-check,$cell,$region}",
+          "unit": "second",
+          "service": "kyc-document-check"
+        }
+      ]
+    }
+  ]
+}

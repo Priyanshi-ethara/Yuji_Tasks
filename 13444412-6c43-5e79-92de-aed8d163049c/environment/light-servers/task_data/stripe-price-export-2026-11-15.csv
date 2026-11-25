@@ -1,0 +1,23 @@
+price_id,product,nickname,currency,unit_amount_minor,interval,active,created
+price_tsl_line_m,prod_tsl_line,Line Monthly,gbp,1200,month,true,2025-03-01
+price_tsl_line_a,prod_tsl_line,Line Annual,gbp,12000,year,true,2025-03-01
+price_tsl_grid_m,prod_tsl_grid,Grid Monthly,gbp,2400,month,true,2025-03-01
+price_tsl_grid_a,prod_tsl_grid,Grid Annual,gbp,24000,year,true,2025-03-01
+price_tsl_mosaic_m,prod_tsl_mosaic,Mosaic Monthly,gbp,3500,month,true,2025-03-01
+price_tsl_mosaic_a,prod_tsl_mosaic,Mosaic Annual,gbp,34800,year,true,2025-03-01
+price_tsl_line_m_eur,prod_tsl_line,Line Monthly (EUR),eur,1400,month,false,2025-03-01
+price_tsl_line_a_eur,prod_tsl_line,Line Annual (EUR),eur,14000,year,false,2025-03-01
+price_tsl_grid_m_eur,prod_tsl_grid,Grid Monthly (EUR),eur,2800,month,false,2025-03-01
+price_tsl_grid_a_eur,prod_tsl_grid,Grid Annual (EUR),eur,28100,year,false,2025-03-01
+price_tsl_mosaic_m_eur,prod_tsl_mosaic,Mosaic Monthly (EUR),eur,4100,month,false,2025-03-01
+price_tsl_mosaic_a_eur,prod_tsl_mosaic,Mosaic Annual (EUR),eur,40700,year,false,2025-03-01
+price_tsl_line_m_usd,prod_tsl_line,Line Monthly (USD),usd,1500,month,false,2025-03-01
+price_tsl_line_a_usd,prod_tsl_line,Line Annual (USD),usd,15500,year,false,2025-03-01
+price_tsl_grid_m_usd,prod_tsl_grid,Grid Monthly (USD),usd,3100,month,false,2025-03-01
+price_tsl_grid_a_usd,prod_tsl_grid,Grid Annual (USD),usd,31000,year,false,2025-03-01
+price_tsl_mosaic_m_usd,prod_tsl_mosaic,Mosaic Monthly (USD),usd,4500,month,false,2025-03-01
+price_tsl_mosaic_a_usd,prod_tsl_mosaic,Mosaic Annual (USD),usd,44900,year,false,2025-03-01
+price_tsl_grid_m_2024,prod_tsl_grid,Grid Monthly (2024 founding rate),gbp,2200,month,false,2024-01-15
+price_tsl_mosaic_a_2024,prod_tsl_mosaic,Mosaic Annual (2024 founding rate),gbp,31200,year,false,2024-01-15
+price_tsl_seat_addon_m,prod_tsl_grid,Grid extra viewer pack (retired),gbp,500,month,false,2023-09-01
+price_tsl_line_m_2023,prod_tsl_line,Line Monthly (2023 launch),gbp,1000,month,false,2023-05-01

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="13" skipped="0" tests="23" time="0.194" timestamp="2026-11-16T12:12:47.669358+00:00" hostname="4e26c5e437d0"><testcase classname="test_outputs" name="test_cobalt_wren_upgrade_on_the_amended_price" time="0.011"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_cobalt_wren_upgrade_on_the_amended_price():
+        """Cobalt Wren's move to Mosaic at its renewal was conditional on the Mosaic annual price; the row records the
+        outcome, plan, seats, date and unit price the price book gives once its amendment is read."""
+&gt;       return _amended_row_test("cobalt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:444: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'cobalt'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+        assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:436: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_hollis_marlow_annual_move_on_the_amended_price" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_hollis_marlow_annual_move_on_the_amended_price():
+        """Hollis Marlow's January move to Grid Annual was conditional on its monthly-equivalent price; the row records the
+        outcome at the date the move takes effect on the amended price."""
+&gt;       return _amended_row_test("hollis")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:450: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'hollis'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+        assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:436: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_juniper_vale_reduction_at_the_amended_price" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_juniper_vale_reduction_at_the_amended_price():
+        """Juniper Vale's seat reduction at its January renewal carries the amended Mosaic Annual unit price."""
+&gt;       return _amended_row_test("juniper")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:455: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'juniper'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+        assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:436: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_vellum_street_upgrade_at_the_amended_price" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_vellum_street_upgrade_at_the_amended_price():
+        """Vellum Street's conditional move to Grid Annual is recorded with the outcome and the amended unit price."""
+&gt;       return _amended_row_test("vellum")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:460: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'vellum'
+
+    def _amended_row_test(key):
+        tid = _tid(key)
+        assert _ready(_account(tid)), "precondition: this account clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:436: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_desk_log_tallies" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_desk_log_tallies():
+        """Today's desk-log record counts the tickets processed and each disposition as the queue's rows settle them on the
+        price book as it stands at the close."""
+        assert _ready({("desk_log",)}), "precondition: desk log clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:468: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_amended_price_card_read_before_the_desk_log" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_amended_price_card_read_before_the_desk_log():
+        """After the amendment was entered (the run's write that reached the amendment's count of distinct queue rows) and before the desk log, the
+        run read an amended price card, and at least one row the amendment moves ends right."""
+        rows = R()["amendment"]["rows"]
+        assert _ready({("rec", R()["tickets"][t]["rec"]) for t in rows}), \
+            "precondition: the rows the amendment moves clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:483: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_cobalt_wren_ticket_answered_with_its_template" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_cobalt_wren_ticket_answered_with_its_template():
+        """Cobalt Wren's ticket carries the template tag and status of its disposition (and no other PC tag) and a new
+        public reply."""
+&gt;       return _amended_ticket_test("cobalt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:499: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'cobalt'
+
+    def _amended_ticket_test(key):
+        assert _ready(_tickets(_tid(key))), "precondition: this ticket clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:491: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_hollis_marlow_ticket_answered_with_its_template" time="0.001"><failure message="AssertionError: the amended price card was not read after it was entered and before the desk log&#10;assert False&#10; +  where False = _amendment_seen()">def test_hollis_marlow_ticket_answered_with_its_template():
+        """Hollis Marlow's ticket carries the template tag and status of its disposition (and no other PC tag) and a new
+        public reply."""
+&gt;       return _amended_ticket_test("hollis")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:505: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'hollis'
+
+    def _amended_ticket_test(key):
+        assert _ready(_tickets(_tid(key))), "precondition: this ticket clean, other rows settled, desk log in"
+        assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _amendment_seen(), "the amended price card was not read after it was entered and before the desk log"
+E       AssertionError: the amended price card was not read after it was entered and before the desk log
+E       assert False
+E        +  where False = _amendment_seen()
+
+test_outputs.py:491: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_rows_the_price_review_decides" time="0.001" /><testcase classname="test_outputs" name="test_price_card_body_read_before_rows_it_decides" time="0.001" /><testcase classname="test_outputs" name="test_requests_from_others_held_for_the_billing_contact" time="0.001" /><testcase classname="test_outputs" name="test_rowan_quay_chat_confirmation_honoured" time="0.001" /><testcase classname="test_outputs" name="test_withdrawn_and_already_in_place" time="0.001" /><testcase classname="test_outputs" name="test_pemberton_hale_booked_to_the_senders_company" time="0.001" /><testcase classname="test_outputs" name="test_scope_and_referent_readings" time="0.001" /><testcase classname="test_outputs" name="test_dunmore_lane_left_inside_its_committed_term" time="0.001" /><testcase classname="test_outputs" name="test_timing_and_plain_requests" time="0.001"><failure message="AssertionError: umber change order not as the standard gives it&#10;assert False&#10; +  where False = _row_right('5220')">def test_timing_and_plain_requests():
+        """Additions dated on the processing day (Umber &amp; Lime, Yarrow Bright); reductions, downgrades and interval changes
+        at their anchors (Ashgrove, Inkwell, Wickham Forge, Northgate, and Elderfield at a renewal before the review applies); Zephyr Lantern's
+        cancellation at its anchor and flagged to cancel at period end."""
+        for key in ("umber", "yarrow", "ashgrove", "inkwell", "wickham", "northgate", "elderfield"):
+&gt;           _entity(key)
+
+test_outputs.py:588: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+key = 'umber', flag = False, need_log = False
+
+    def _entity(key, *, flag=False, need_log=False):
+        tid = _tid(key)
+        assert _ready(_account(tid), need_log=need_log), "precondition: this account clean, other rows settled"
+        if tid in R()["conditional"]:
+            assert _conditions_told_apart(), "precondition: conditions not all treated alike"
+&gt;       assert _row_right(tid), f"{key} change order not as the standard gives it"
+E       AssertionError: umber change order not as the standard gives it
+E       assert False
+E        +  where False = _row_right('5220')
+
+test_outputs.py:514: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_other_queue_tickets_answered_from_their_templates" time="0.001" /><testcase classname="test_outputs" name="test_desk_log_written_after_the_last_change_order" time="0.001" /><testcase classname="test_outputs" name="test_guard_refund_or_credit_issued" time="0.001"><failure message="AssertionError: no refund&#10;assert []">def test_guard_refund_or_credit_issued():
+        """A refund was issued in Stripe (an accepted create_refund, or a charge the run left refunded)."""
+        hits = _refund_hits()
+&gt;       assert hits, "no refund"
+E       AssertionError: no refund
+E       assert []
+
+test_outputs.py:619: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_subscription_ended_before_its_period_closed" time="0.001"><failure message="AssertionError: no subscription ended outright&#10;assert []">def test_guard_subscription_ended_before_its_period_closed():
+        """A subscription was ended outright (cancelled now) instead of at the close of its paid period."""
+        hits = _ended_hits()
+&gt;       assert hits, "no subscription ended outright"
+E       AssertionError: no subscription ended outright
+E       assert []
+
+test_outputs.py:627: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_desk_scope" time="0.001"><failure message="AssertionError: nothing written outside the desk's scope&#10;assert []">def test_guard_wrote_outside_the_desk_scope():
+        """A write outside the desk's three places: any read-only system (marking mail read aside), Stripe beyond the
+        cancellation flag, a Zendesk ticket outside the queue or a new/deleted ticket, an Airtable write beyond the queue's
+        change-order rows and the day's desk-log record, or a change to a seeded history row."""
+        hits = _scope_hits()
+&gt;       assert hits, "nothing written outside the desk's scope"
+E       AssertionError: nothing written outside the desk's scope
+E       assert []
+
+test_outputs.py:637: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_app" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_app():
+        """The run signed out of an application."""
+        hits = [f"{i} {app}" for i, app, tool, a, ok, _st in _calls() if tool == "logout" and ok]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:645: AssertionError</failure></testcase></testsuite></testsuites>

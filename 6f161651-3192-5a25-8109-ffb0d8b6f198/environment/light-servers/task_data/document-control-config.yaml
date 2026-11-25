@@ -1,0 +1,16 @@
+register:
+  board: Kestrel-3 Document Control Register
+  statuses: [Approved, In approval, Draft, Approval withdrawn, Superseded]
+  sync: weekly, Friday 15:00 CET, reconciled from change requests closed as implemented
+  last_sync: 2026-11-06
+  next_sync: 2026-11-20   # 13 Nov sync skipped (document controller on leave)
+store:
+  folder: Kestrel-3 Technical File (controlled)
+  version_comment_format: "Rev <X> | released <date> under <CR> | <n> pp | open placeholders: <k>"
+  other_states: ["routed for approval", "working draft"]
+change_control:
+  system: ServiceNow
+  release_evidence: change request closed as implemented (QA-SOP-007 6.4)
+uncontrolled:
+  - Kestrel-3 Home concept (uncontrolled)
+  - Google Drive RA working area

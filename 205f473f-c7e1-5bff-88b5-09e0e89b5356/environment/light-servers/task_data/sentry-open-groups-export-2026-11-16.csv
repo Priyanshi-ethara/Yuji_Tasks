@@ -1,0 +1,30 @@
+short_id,project,status,level,title,culprit,events_7d,users_7d,first_seen_utc,last_seen_utc,last_release
+FLEETD-5KQ,fleetd,unresolved,fatal,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,1874,212,2026-11-13 09:41,2026-11-15 22:13,fleetd@4.12.1
+FLEETD-5M2,fleetd,unresolved,fatal,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,966,0,2026-11-10 05:00,2026-11-15 17:00,fleetd@4.12.1
+FLEETD-5P7,fleetd,unresolved,fatal,panic: runtime error: slice bounds out of range [:512] with capacity 256,git.pellam.io/fleetd/tools/simkit.(*Ring).Window,3410,0,2026-11-10 11:02,2026-11-15 23:58,fleetd@4.12.1
+FLEETD-5R3,fleetd,unresolved,fatal,fatal error: runtime: out of memory,git.pellam.io/fleetd/tools/simkit.(*Scheduler).After,7,0,2026-11-13 14:20,2026-11-14 03:05,fleetd@4.12.1
+FLEETD-5T9,fleetd,unresolved,fatal,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/tools/simkit.(*Clock).Now,512,144,2026-11-12 07:15,2026-11-15 19:44,fleetd@4.12.1
+FLEETD-5V4,fleetd,unresolved,fatal,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,2290,0,2026-11-09 22:30,2026-11-15 23:41,fleetd@4.12.1
+FLEETD-4ZD,fleetd,unresolved,error,panic: runtime error: index out of range [3] with length 3,git.pellam.io/fleetd/tools/simctl/replay.(*Cursor).Step,41,6,2026-11-11 15:02,2026-11-14 16:20,simctl@4.12.0
+FLEETD-4H6,fleetd,unresolved,fatal,panic: runtime error: slice bounds out of range [:-1],github.com/segmentio/kafka-go.(*Writer).partition,318,0,2026-11-10 03:12,2026-11-15 20:05,fleetd@4.12.1
+FLEETD-4J1,fleetd,unresolved,fatal,panic: runtime error: invalid memory address or nil pointer dereference,github.com/jackc/pgx/v5/pgxpool.(*Pool).Acquire,59,0,2026-11-13 01:00,2026-11-15 01:00,fleetd@4.12.1
+FLEETD-4K8,fleetd,unresolved,fatal,panic: send on closed channel,github.com/pellam-oss/queue.(*Ring[...]).Push,133,0,2026-11-10 06:00,2026-11-15 06:00,fleetd@4.12.1
+FLEETD-4M5,fleetd,unresolved,error,panic: runtime error: index out of range [0] with length 0,git.pellam.io/fleetd/internal/gen/fleetpb.(*RouteRequest).validate,77,31,2026-11-12 10:00,2026-11-15 15:30,fleetd@4.12.1
+FLEETD-4P2,fleetd,unresolved,fatal,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/lease.(*Table).Grant,204,88,2026-11-14 05:10,2026-11-15 06:20,fleetd@4.12.1
+FLEETD-4Q9,fleetd,unresolved,fatal,panic: send on closed channel,git.pellam.io/fleetd/internal/billing/queue.(*Flusher).Accept,26,9,2026-11-13 22:00,2026-11-15 22:00,fleetd@4.12.1
+FLEETD-4S3,fleetd,unresolved,fatal,panic: runtime error: slice bounds out of range [4096:2048],git.pellam.io/fleetd/internal/telemetry/exporter.(*Encoder).Frame,145,0,2026-11-11 10:00,2026-11-15 10:00,fleetd@4.12.1
+FLEETD-4T7,fleetd,unresolved,fatal,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/retry.(*Backoff).Schedule,4,0,2026-11-13 16:40,2026-11-13 18:02,fleetd@4.12.1
+FLEETD-4V1,fleetd,unresolved,fatal,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,688,301,2026-11-10 08:00,2026-11-15 18:00,fleetd@4.12.1
+FLEETD-4W6,fleetd,unresolved,fatal,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/billing/invoice.(*RateError).Error,92,0,2026-11-11 02:00,2026-11-15 02:00,fleetd@4.12.1
+FLEETD-4X2,fleetd,unresolved,fatal,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/billing/quote.(*DeclineError).Error,377,164,2026-11-12 13:00,2026-11-15 16:00,fleetd@4.12.1
+FLEETD-3N4,fleetd,unresolved,fatal,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,1203,377,2026-11-09 05:00,2026-11-15 05:00,fleetd@4.12.1
+FLEETD-3P8,fleetd,unresolved,fatal,panic: runtime error: slice bounds out of range [:530] with capacity 524,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,4410,0,2026-11-08 00:00,2026-11-15 23:59,fleetd@4.12.1
+FLEETD-3R1,fleetd,unresolved,fatal,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,88,0,2026-11-10 04:00,2026-11-15 04:00,fleetd@4.12.1
+FLEETD-3S6,fleetd,unresolved,fatal,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,3,0,2026-11-13 17:00,2026-11-13 19:30,fleetd@4.12.1
+FLEETD-2WF,fleetd,resolved,fatal,panic: send on closed channel,git.pellam.io/fleetd/internal/notify/outbox.(*Publisher).Close,0,0,2026-09-02 10:00,2026-10-30 10:00,fleetd@4.11.3
+FLEETD-2Y4,fleetd,resolved,fatal,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,0,0,2026-09-02 10:00,2026-10-30 10:00,fleetd@4.11.3
+FLEETD-31C,fleetd,ignored,fatal,context deadline exceeded (logged as fatal),git.pellam.io/fleetd/internal/httpx.(*Server).ServeHTTP,0,0,2026-09-02 10:00,2026-10-30 10:00,fleetd@4.11.3
+FLEETD-33H,fleetd,resolved,fatal,panic: runtime error: index out of range [2] with length 2,git.pellam.io/fleetd/internal/ingest/decode.(*Decoder).Next,0,0,2026-09-02 10:00,2026-10-30 10:00,fleetd@4.11.3
+DWEB-1JK,dispatch-web,unresolved,error,TypeError: Cannot read properties of undefined (reading 'eta'),src/board/RouteCard.tsx,140,61,2026-11-08 10:00,2026-11-15 18:00,dispatch-web@2.30.1
+DWEB-1JN,dispatch-web,unresolved,error,ChunkLoadError: Loading chunk 412 failed,webpack/runtime,140,61,2026-11-08 10:00,2026-11-15 18:00,dispatch-web@2.30.1
+DWEB-1KA,dispatch-web,unresolved,error,RangeError: Invalid time value,src/utils/formatWindow.ts,140,61,2026-11-08 10:00,2026-11-15 18:00,dispatch-web@2.30.1

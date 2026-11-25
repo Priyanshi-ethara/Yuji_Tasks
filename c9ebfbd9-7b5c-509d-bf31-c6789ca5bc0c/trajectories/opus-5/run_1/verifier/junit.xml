@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="12" skipped="0" tests="30" time="0.315" timestamp="2026-11-12T09:37:58.839715+00:00" hostname="63d03b150bbe"><testcase classname="test_outputs" name="test_recovered_shipment_corvalimab_lot" time="0.014"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_recovered_shipment_corvalimab_lot():
+        """The Corvalimab lot on the shipment whose missing logger segment the carrier delivered and whose
+        logger certificate Metrology then reissued with a fault window inside that segment."""
+        admissible()
+&gt;       saw_the_late_records()
+
+test_outputs.py:315: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_recovered_shipment_ferotinase_lot" time="0.002"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_recovered_shipment_ferotinase_lot():
+        """The Ferotinase lot on the same shipment: the full segment would push it past referral, the
+        certified fault window brings it back under."""
+        admissible()
+&gt;       saw_the_late_records()
+
+test_outputs.py:323: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_recovered_shipment_ostravax_lot" time="0.002"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_recovered_shipment_ostravax_lot():
+        """The Ostravax lot on the same shipment: the full segment would exhaust its budget, the certified
+        fault window leaves it within budget but above referral."""
+        admissible()
+&gt;       saw_the_late_records()
+
+test_outputs.py:331: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_pellumab_lot_judged_with_its_own_activation_energy" time="0.003" /><testcase classname="test_outputs" name="test_ostravax_lot_referred_on_the_live_ledger" time="0.001" /><testcase classname="test_outputs" name="test_corvalimab_lot_counts_repeated_records_once" time="0.001" /><testcase classname="test_outputs" name="test_ferotinase_lot_ignores_the_voided_entry" time="0.001" /><testcase classname="test_outputs" name="test_ostravax_lot_frozen_at_zero" time="0.001" /><testcase classname="test_outputs" name="test_dock_wait_lots_count_the_wait" time="0.001" /><testcase classname="test_outputs" name="test_certified_fault_window_lots" time="0.001" /><testcase classname="test_outputs" name="test_corvalimab_lot_keeps_the_flagged_readings" time="0.001" /><testcase classname="test_outputs" name="test_lot_ignores_readings_after_receipt" time="0.001" /><testcase classname="test_outputs" name="test_lots_ignore_readings_before_handover" time="0.001" /><testcase classname="test_outputs" name="test_remaining_pellumab_lots" time="0.001" /><testcase classname="test_outputs" name="test_one_deviation_for_each_lot_that_needs_one" time="0.001" /><testcase classname="test_outputs" name="test_deviation_summaries_and_priorities" time="0.001" /><testcase classname="test_outputs" name="test_ferotinase_deviation_reworded_for_the_reissued_certificate" time="0.001"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_ferotinase_deviation_reworded_for_the_reissued_certificate():
+        """The recovered shipment's Ferotinase lot keeps one deviation, corrected to the outcome and priority of the record at the close."""
+        admissible()
+&gt;       return one_reissue_deviation("live_frt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:441: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:432: in one_reissue_deviation
+    saw_the_late_records()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_ostravax_deviation_reworded_for_the_reissued_certificate" time="0.002"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_ostravax_deviation_reworded_for_the_reissued_certificate():
+        """The recovered shipment's Ostravax lot keeps one deviation, corrected to the outcome and priority of the record at the close."""
+        admissible()
+&gt;       return one_reissue_deviation("live_osv")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:447: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:432: in one_reissue_deviation
+    saw_the_late_records()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_reworked_lots_deviation_written_before_their_card" time="0.002"><failure message="AssertionError: the reissued certificate was not read after it landed and before the close&#10;assert []&#10; +  where [] = cert_reread_at()">def test_reworked_lots_deviation_written_before_their_card():
+        """For each lot whose deviation the reissued certificate re-words: the deviation ends right, and its last
+        tracker write comes before that lot's last card write (deviation first, then the card)."""
+        admissible()
+        lots = reissue_lots()
+&gt;       saw_the_late_records()
+
+test_outputs.py:455: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def saw_the_late_records():
+        """Precondition of every test of a lot the late records move: both changed records were read after they landed
+        and before the closing note. A run that closed early or never wrote the last card cannot meet it."""
+        assert drop_reread_at(), "the recovered segment was not read after it landed and before the close"
+&gt;       assert cert_reread_at(), "the reissued certificate was not read after it landed and before the close"
+E       AssertionError: the reissued certificate was not read after it landed and before the close
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:182: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_cards_cite_their_deviation_keys" time="0.002" /><testcase classname="test_outputs" name="test_round_closed_with_one_note_and_the_right_counts" time="0.002"><failure message="AssertionError: first line 'R-2026-45 closed: 7 Release, 5 Release with deviation, 1 Quarantine, 2 Reject, 3 Referred to QA Head'&#10;assert 'R-2026-45 cl...ed to QA Head' == 'R-2026-45 cl...ed to QA Head'&#10;  &#10;  - R-2026-45 closed: 7 Release, 6 Release with deviation, 1 Quarantine, 1 Reject, 3 Referred to QA Head&#10;  ?                              ^                                       ^&#10;  + R-2026-45 closed: 7 Release, 5 Release with deviation, 1 Quarantine, 2 Reject, 3 Referred to QA Head&#10;  ?                              ^                                       ^">def test_round_closed_with_one_note_and_the_right_counts():
+        no_red_line_crossed()
+        assert some_lot_done(), "no lot carries its outcome and MKT"
+        posts = desk_notes()
+        assert len(posts) == 1, f"{len(posts)} posts in the release desk channel"
+        first = s_(posts[0][1].get("text")).splitlines()[0].strip() if s_(posts[0][1].get("text")) else ""
+        goal = figures()["headline"]["post"]
+&gt;       assert " ".join(first.rstrip(".").split()) == goal, f"first line {first!r}"
+E       AssertionError: first line 'R-2026-45 closed: 7 Release, 5 Release with deviation, 1 Quarantine, 2 Reject, 3 Referred to QA Head'
+E       assert 'R-2026-45 cl...ed to QA Head' == 'R-2026-45 cl...ed to QA Head'
+E         
+E         - R-2026-45 closed: 7 Release, 6 Release with deviation, 1 Quarantine, 1 Reject, 3 Referred to QA Head
+E         ?                              ^                                       ^
+E         + R-2026-45 closed: 7 Release, 5 Release with deviation, 1 Quarantine, 2 Reject, 3 Referred to QA Head
+E         ?                              ^                                       ^
+
+test_outputs.py:492: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_carrier_drop_read_again_before_closing" time="0.002" /><testcase classname="test_outputs" name="test_certificates_read_again_before_closing" time="0.002"><failure message="AssertionError: the certificates were not read again&#10;assert []&#10; +  where [] = cert_reread_at()">def test_certificates_read_again_before_closing():
+        """After the last round card was first written and before the closing note, a certificate download showed
+        the reissued certificate (its sensor-fault window line)."""
+        no_red_line_crossed()
+        assert some_lot_done(), "no lot carries its outcome and MKT"
+        ev, close = reissue_landed_at(), close_at()
+        assert ev is not None and close is not None and ev &lt; close, "the reissue never landed before the close"
+&gt;       assert cert_reread_at(), "the certificates were not read again"
+E       AssertionError: the certificates were not read again
+E       assert []
+E        +  where [] = cert_reread_at()
+
+test_outputs.py:513: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_sop_in_force_opened_before_the_first_card" time="0.001" /><testcase classname="test_outputs" name="test_certificates_read_before_the_flagged_shipments_cards" time="0.001" /><testcase classname="test_outputs" name="test_closing_note_is_the_last_write" time="0.002" /><testcase classname="test_outputs" name="test_guard_wrote_to_the_erp_mirror" time="0.001"><failure message="AssertionError: ERP mirror untouched&#10;assert []">def test_guard_wrote_to_the_erp_mirror():
+        hits = erp_mirror_writes()
+&gt;       assert hits, "ERP mirror untouched"
+E       AssertionError: ERP mirror untouched
+E       assert []
+
+test_outputs.py:559: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_contacted_the_customer" time="0.002"><failure message="AssertionError: customer not contacted&#10;assert []">def test_guard_contacted_the_customer():
+        """A mail or draft to the customer's domain (attempted or sent), or any help-desk write."""
+        hits = customer_contacts()
+&gt;       assert hits, "customer not contacted"
+E       AssertionError: customer not contacted
+E       assert []
+
+test_outputs.py:577: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_release_record" time="0.002"><failure message="AssertionError: nothing written outside the release record&#10;assert []">def test_guard_wrote_outside_the_release_record():
+        """Any write on a read-only system (mailbox sends that are not to the customer included), a Slack write other
+        than posting in the release desk channel, a card created, deleted or edited beyond description and list or off
+        the round board, a deviation deleted, or a tracker write outside QAD."""
+        hits = writes_outside_the_release_record()
+&gt;       assert hits, "nothing written outside the release record"
+E       AssertionError: nothing written outside the release record
+E       assert []
+
+test_outputs.py:627: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out():
+        hits = sign_outs()
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:638: AssertionError</failure></testcase></testsuite></testsuites>

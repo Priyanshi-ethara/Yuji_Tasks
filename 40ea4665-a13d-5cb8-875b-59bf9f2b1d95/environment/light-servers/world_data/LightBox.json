@@ -1,0 +1,186 @@
+{
+ "users": [
+  {
+   "id": "33120001",
+   "name": "Tamsin Rookwood",
+   "login": "tamsin.rookwood@harrowmere-energy.example",
+   "role": "admin",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10995116277760,
+   "space_used": 2147483648,
+   "max_upload_size": 5368709120,
+   "job_title": "Metering Services Lead",
+   "phone": "+44-1632-960410",
+   "created_at": "2025-01-06T09:00:00+00:00"
+  }
+ ],
+ "folders": [
+  {
+   "id": "720001",
+   "name": "Metering",
+   "parent_id": "0",
+   "owner_id": "33120001",
+   "description": "Harrowmere metering services",
+   "created_at": "2025-01-06T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00",
+   "item_count": 1
+  },
+  {
+   "id": "720002",
+   "name": "Data collection agreements",
+   "parent_id": "720001",
+   "owner_id": "33120001",
+   "description": "Signed agreements and schedules, one folder per collector",
+   "created_at": "2025-01-06T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00",
+   "item_count": 3
+  },
+  {
+   "id": "720003",
+   "name": "Varden Metering Services",
+   "parent_id": "720002",
+   "owner_id": "33120001",
+   "description": "VMS-DCA-2026",
+   "created_at": "2026-07-20T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00",
+   "item_count": 2
+  },
+  {
+   "id": "720004",
+   "name": "Kestrel Data Services",
+   "parent_id": "720002",
+   "owner_id": "33120001",
+   "description": "KDS-HRM-2026",
+   "created_at": "2026-02-10T09:00:00+00:00",
+   "modified_at": "2026-03-20T09:00:00+00:00",
+   "item_count": 2
+  },
+  {
+   "id": "720005",
+   "name": "Harrowmere AMR (in-house)",
+   "parent_id": "720002",
+   "owner_id": "33120001",
+   "description": "Internal head-end",
+   "created_at": "2025-01-06T09:00:00+00:00",
+   "modified_at": "2025-01-06T09:00:00+00:00",
+   "item_count": 1
+  },
+  {
+   "id": "720006",
+   "name": "Billing",
+   "parent_id": "0",
+   "owner_id": "33120001",
+   "description": "Billing team documents",
+   "created_at": "2025-01-06T09:00:00+00:00",
+   "modified_at": "2026-09-21T09:00:00+00:00",
+   "item_count": 1
+  },
+  {
+   "id": "720007",
+   "name": "Tariffs (customer copies)",
+   "parent_id": "720006",
+   "owner_id": "33120001",
+   "description": "Customer price schedules",
+   "created_at": "2025-01-06T09:00:00+00:00",
+   "modified_at": "2026-09-21T09:00:00+00:00",
+   "item_count": 2
+  }
+ ],
+ "files": [
+  {
+   "id": "820101",
+   "name": "VMS-DCA-2026 Schedule 3 - HH data file specification v3.1.txt",
+   "parent_id": "720003",
+   "owner_id": "33120001",
+   "description": "Varden data file format (Schedule 3)",
+   "size": 1557,
+   "extension": "txt",
+   "sha1": "b70649bd52c554d47b21e634ad7370497564442d",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820102",
+   "name": "VMS-DCA-2026 Schedule 5 - service levels.txt",
+   "parent_id": "720003",
+   "owner_id": "33120001",
+   "description": "Varden service levels",
+   "size": 442,
+   "extension": "txt",
+   "sha1": "36bf74d3d7ee80a5c6af6b4903d5460bf35e5a6d",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820103",
+   "name": "KDS-HRM-2026 Schedule 2 - export format.txt",
+   "parent_id": "720004",
+   "owner_id": "33120001",
+   "description": "Kestrel export format",
+   "size": 695,
+   "extension": "txt",
+   "sha1": "8259658d02028594a51639185f25bdfd68a51dae",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820104",
+   "name": "KDS-HRM-2026 Schedule 4 - polling and validation.txt",
+   "parent_id": "720004",
+   "owner_id": "33120001",
+   "description": "Kestrel polling",
+   "size": 297,
+   "extension": "txt",
+   "sha1": "4ebd656ae55e61bf0da75458eec316e109b7d412",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820105",
+   "name": "Harrowmere AMR head-end - export specification.txt",
+   "parent_id": "720005",
+   "owner_id": "33120001",
+   "description": "In-house export format",
+   "size": 258,
+   "extension": "txt",
+   "sha1": "5cdd56e7c7ab4c1365915ae297d8bd7a3b34bbb9",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820106",
+   "name": "BHH Edition 6 - customer price schedule.txt",
+   "parent_id": "720007",
+   "owner_id": "33120001",
+   "description": "Customer copy",
+   "size": 305,
+   "extension": "txt",
+   "sha1": "a188a20b2ddf1b5e20b68de15435c0f3745417d3",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  },
+  {
+   "id": "820107",
+   "name": "BHH Edition 7 - customer price schedule.txt",
+   "parent_id": "720007",
+   "owner_id": "33120001",
+   "description": "Customer copy",
+   "size": 308,
+   "extension": "txt",
+   "sha1": "21c570b9f58cf3235b2f7f3be1eaf7159507d111",
+   "created_at": "2026-09-01T09:00:00+00:00",
+   "modified_at": "2026-09-01T09:00:00+00:00"
+  }
+ ],
+ "file_blobs": {
+  "VMS-DCA-2026 Schedule 3 - HH data file specification v3.1.txt": "VMS-DCA-2026  DATA COLLECTION AGREEMENT  -  SCHEDULE 3\nHALF-HOURLY DATA FILE SPECIFICATION  (version 3.1, effective 1 September 2026)\nBetween Varden Metering Services Ltd and Harrowmere Energy Co-operative\n\n3.1  Delivery. One comma-separated file per delivery, named varden-sched3-<client>-<yyyymmdd>.csv, with a header row.\n     Deliveries carry two hours of settlement periods before and after the requested range.\n\n3.2  Columns\n     MPAN         the supply number, no spaces\n     MSN          the meter serial number\n     READ_TS_UTC  the UTC date and time at which the half-hour settlement period ENDS, as YYYYMMDDhhmm. Varden's\n                  settlement systems use the period-ending convention for every client: the period running from\n                  00:00 to 00:30 UTC is stamped 0030, and the last period of a UTC day (23:30 to 24:00) is stamped\n                  0000 of the following day.\n     AI           active import energy in the period, kWh, three decimals\n     RI           reactive import energy in the period, kvarh, three decimals\n     FLAG         0 actual, 1 estimated, 2 substituted\n\n3.3  Clocks. All timestamps are UTC. Varden does not convert to local time and does not shift for British Summer Time.\n     A local day with a clock change is simply 46 or 50 consecutive UTC periods.\n\n3.4  Validation. Varden validates each period against the meter's cumulative register before delivery and flags any\n     estimate or substitution in FLAG.\n\n3.5  Changes to this schedule require 60 days' written notice and a new version number.",
+  "VMS-DCA-2026 Schedule 5 - service levels.txt": "VMS-DCA-2026  -  SCHEDULE 5  -  SERVICE LEVELS\n5.1 Daily retrieval success 99.0% of meters by 06:00 UTC.  5.2 Monthly delivery by 06:00 UTC on the day after the\nrequested range ends.  5.3 Data queries answered within two working days.  5.4 Service credits: 2% of the monthly fee\nper percentage point below 5.1.  5.5 Meters taken over on 1 September 2026: HMS-1204, HMS-1212, HMS-1229, HMS-1235,\nHMS-1248, HMS-1256 (transfer ticket MOPS-1302).",
+  "KDS-HRM-2026 Schedule 2 - export format.txt": "KDS-HRM-2026  -  SCHEDULE 2  -  EXPORT FORMAT\n2.1  File: kestrel-hh-delivery-HRM-<run>.csv, comma separated, header row, two hours of margin either side.\n2.2  Columns: mpan (supply number, no spaces); msn; ts_utc (UTC START of the half-hour period, YYYY-MM-DD hh:mm);\n     a_plus and r_plus (the meter's import active and import reactive channel values for the period, three decimals);\n     qual (V validated, E estimated).\n2.3  Channel values are passed through exactly as the meter registers them. Kestrel applies no scaling, unit\n     conversion or substitution. What a channel registers is set when the meter is programmed at commissioning.\n2.4  All times UTC; no daylight-saving adjustment.",
+  "KDS-HRM-2026 Schedule 4 - polling and validation.txt": "KDS-HRM-2026  -  SCHEDULE 4  -  POLLING AND VALIDATION\n4.1 Nightly dial at 02:15 UTC over 4G. 4.2 Up to three re-dials. 4.3 Validation: completeness and clock drift only\n(drift tolerance 10 s). 4.4 Six meters under contract (Brannagh QM-7), commissioned with the client's field team in\nMarch 2026.",
+  "Harrowmere AMR head-end - export specification.txt": "HARROWMERE AMR HEAD-END  -  EXPORT SPECIFICATION (internal)\nColumns site_ref, msn, period_start_utc (UTC START of the period), kwh, kvarh, read_status. Energy per period.\nHead-end clock UTC. Margin of two hours either side of the run. Owner: Data Collection.",
+  "BHH Edition 6 - customer price schedule.txt": "BHH Edition 6 customer price schedule. Consumption from 1 April 2026. Standing charge: 395.0; Peak unit charge: 34.812; Day unit charge: 24.375; Night unit charge: 16.940; Capacity charge: 4.800; Excess reactive charge: 2.415 (standing charge in pence per day). The tariff pages are the edition of record.",
+  "BHH Edition 7 - customer price schedule.txt": "BHH Edition 7 customer price schedule. Consumption from 1 November 2026. Standing charge: 432.0; Peak unit charge: 37.905; Day unit charge: 25.610; Night unit charge: 16.940; Capacity charge: 5.350; Excess reactive charge: 2.780 (standing charge in pence per day). The tariff pages are the edition of record."
+ }
+}

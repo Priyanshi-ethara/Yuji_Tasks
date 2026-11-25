@@ -1,0 +1,149 @@
+{
+ "profile": {
+  "emailAddress": "billing@harrowmere-energy.example"
+ },
+ "messages": [
+  {
+   "id": "msg-hrm-001",
+   "thread_id": "thr-hrm-001",
+   "from_addr": "accounts@marlpitgarden.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Marlpit Garden Centre - moving supplier",
+   "snippet": "We have signed with another supplier; their letter says the switch completes on or around 6 November. Please confirm the",
+   "body": "We have signed with another supplier; their letter says the switch completes on or around 6 November. Please confirm the date our final bill will run to.",
+   "date": "2026-10-27T09:14:00Z",
+   "internal_date": 1793092440000,
+   "size_estimate": 1053,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-002",
+   "thread_id": "thr-hrm-002",
+   "from_addr": "hello@brookhaybrewery.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Re: Welcome to Harrowmere Energy",
+   "snippet": "Thanks for the welcome pack. Your engineer fitted the meter on 14 October and the supply transferred to you this week. P",
+   "body": "Thanks for the welcome pack. Your engineer fitted the meter on 14 October and the supply transferred to you this week. Please put us on the business half-hourly tariff.",
+   "date": "2026-10-23T15:40:00Z",
+   "internal_date": 1792770000000,
+   "size_estimate": 1068,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-003",
+   "thread_id": "thr-hrm-003",
+   "from_addr": "fm@wendlestreet.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Wendle Street Offices - notice",
+   "snippet": "Our tenancy ends on 31 December 2026; please keep billing as normal until then.",
+   "body": "Our tenancy ends on 31 December 2026; please keep billing as normal until then.",
+   "date": "2026-11-02T11:02:00Z",
+   "internal_date": 1793617320000,
+   "size_estimate": 979,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-004",
+   "thread_id": "thr-hrm-004",
+   "from_addr": "finance@orchardrise.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Peak charges",
+   "snippet": "Our restaurant runs from 17:00 and extraction starts about 16:30. How is the peak window measured, and does it move when",
+   "body": "Our restaurant runs from 17:00 and extraction starts about 16:30. How is the peak window measured, and does it move when the clocks change?",
+   "date": "2026-11-11T08:51:00Z",
+   "internal_date": 1794387060000,
+   "size_estimate": 1039,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-005",
+   "thread_id": "thr-hrm-005",
+   "from_addr": "accounts@gorsebrooklaundry.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Reactive charge question",
+   "snippet": "We fitted correction capacitors on one dryer line in October. Will the reactive charge on the next bill reflect that hal",
+   "body": "We fitted correction capacitors on one dryer line in October. Will the reactive charge on the next bill reflect that half-hour by half-hour?",
+   "date": "2026-11-04T10:22:00Z",
+   "internal_date": 1793787720000,
+   "size_estimate": 1040,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-006",
+   "thread_id": "thr-hrm-006",
+   "from_addr": "ap@kitteringfoods.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "Capacity dashboard - thanks",
+   "snippet": "The capacity dashboard is great. It shows our highest half-hour this autumn at about 230 kW, so we are well under the 40",
+   "body": "The capacity dashboard is great. It shows our highest half-hour this autumn at about 230 kW, so we are well under the 400 kVA agreed capacity. Is that the figure the capacity charge uses?",
+   "date": "2026-11-10T13:05:00Z",
+   "internal_date": 1794315900000,
+   "size_estimate": 1087,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-hrm-007",
+   "thread_id": "thr-hrm-007",
+   "from_addr": "datadesk@varden-metering.example",
+   "to_addr": "billing@harrowmere-energy.example",
+   "cc_addr": "",
+   "subject": "VMS-DN-HRM-20261115 delivered",
+   "snippet": "Delivery VMS-DN-HRM-20261115 (6 MPANs, 9,000 rows, Schedule 3 format) is available. No estimated periods.",
+   "body": "Delivery VMS-DN-HRM-20261115 (6 MPANs, 9,000 rows, Schedule 3 format) is available. No estimated periods.",
+   "date": "2026-11-15T06:05:00Z",
+   "internal_date": 1794722700000,
+   "size_estimate": 1005,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  }
+ ],
+ "labels": [
+  {
+   "id": "INBOX",
+   "name": "INBOX",
+   "type": "system",
+   "messages_total": "7",
+   "messages_unread": "0",
+   "threads_total": "7",
+   "threads_unread": "0",
+   "messagesTotal": 7,
+   "messagesUnread": 0,
+   "threadsTotal": 7,
+   "threadsUnread": 0
+  }
+ ],
+ "drafts": []
+}

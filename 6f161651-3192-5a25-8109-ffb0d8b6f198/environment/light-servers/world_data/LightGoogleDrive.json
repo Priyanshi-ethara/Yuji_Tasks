@@ -1,0 +1,100 @@
+{
+ "files": [
+  {
+   "id": "gd-ks3-ra",
+   "name": "Kestrel-3 RA working area (uncontrolled)",
+   "mime_type": "application/vnd.google-apps.folder",
+   "parent_id": null,
+   "size": 0,
+   "created_time": "2025-10-01T09:00:00Z",
+   "modified_time": "2026-11-12T09:00:00Z",
+   "owner_email": "ines.calloway@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-ra"
+  },
+  {
+   "id": "gd-ks3-tocdraft",
+   "name": "Kestrel-3 ToC working draft v3 (Ines)",
+   "mime_type": "application/vnd.google-apps.spreadsheet",
+   "parent_id": "gd-ks3-ra",
+   "size": 48210,
+   "created_time": "2026-10-20T10:00:00Z",
+   "modified_time": "2026-11-06T17:30:00Z",
+   "owner_email": "ines.calloway@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-tocdraft"
+  },
+  {
+   "id": "gd-ks3-tocdraft2",
+   "name": "Kestrel-3 ToC working draft v2 (Ines)",
+   "mime_type": "application/vnd.google-apps.spreadsheet",
+   "parent_id": "gd-ks3-ra",
+   "size": 45102,
+   "created_time": "2026-09-10T10:00:00Z",
+   "modified_time": "2026-09-14T17:30:00Z",
+   "owner_email": "ines.calloway@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-tocdraft2"
+  },
+  {
+   "id": "gd-ks3-glossnotes",
+   "name": "Glossary clean-up notes",
+   "mime_type": "application/vnd.google-apps.document",
+   "parent_id": "gd-ks3-ra",
+   "size": 12044,
+   "created_time": "2026-10-20T10:00:00Z",
+   "modified_time": "2026-11-04T11:00:00Z",
+   "owner_email": "tomas.reinholt@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-glossnotes"
+  },
+  {
+   "id": "gd-ks3-nbquestions",
+   "name": "NB 2291 pre-submission questions",
+   "mime_type": "application/vnd.google-apps.document",
+   "parent_id": "gd-ks3-ra",
+   "size": 9330,
+   "created_time": "2026-10-29T10:00:00Z",
+   "modified_time": "2026-10-30T12:00:00Z",
+   "owner_email": "margit.ossendrecht@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-nbquestions"
+  },
+  {
+   "id": "gd-ks3-rmrefresh",
+   "name": "DOC-1047 refresh - redline notes (not controlled)",
+   "mime_type": "application/vnd.google-apps.document",
+   "parent_id": "gd-ks3-ra",
+   "size": 22410,
+   "created_time": "2026-10-28T10:00:00Z",
+   "modified_time": "2026-11-12T16:00:00Z",
+   "owner_email": "mateus.ferreira@orvane.example",
+   "starred": false,
+   "trashed": false,
+   "web_view_link": "https://docs.example.com/gd-ks3-rmrefresh"
+  }
+ ],
+ "permissions": [
+  {
+   "id": "perm-ks3-01",
+   "file_id": "gd-ks3-ra",
+   "type": "user",
+   "role": "owner",
+   "email": "ines.calloway@orvane.example",
+   "display_name": "Ines Calloway"
+  },
+  {
+   "id": "perm-ks3-02",
+   "file_id": "gd-ks3-ra",
+   "type": "domain",
+   "role": "writer",
+   "email": "orvane.example",
+   "display_name": "Orvane Diagnostics"
+  }
+ ]
+}

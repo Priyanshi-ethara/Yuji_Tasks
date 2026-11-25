@@ -1,0 +1,359 @@
+{
+  "reward": 0.0,
+  "earned": 0.0,
+  "penalty": 0.0,
+  "total_positive": 84,
+  "guard_polarity": "pass_charges",
+  "gate": null,
+  "missed": [
+    "test_salem_location_on_the_validated_registers",
+    "test_salem_market_on_the_validated_registers",
+    "test_eindhoven_location_on_the_validated_registers",
+    "test_eindhoven_market_on_the_validated_registers",
+    "test_macon_location_on_the_validated_registers",
+    "test_macon_market_on_the_validated_registers",
+    "test_elkhart_location_on_the_validated_registers",
+    "test_elkhart_market_on_the_validated_registers",
+    "test_summary_location_total_of_the_struck_board",
+    "test_summary_market_total_of_the_struck_board",
+    "test_energy_platform_read_again_before_the_strike",
+    "test_leipzig_cells_follow_the_reissued_august_invoice",
+    "test_stuttgart_cells_follow_the_reissued_september_invoice",
+    "test_registry_statuses_at_the_strike",
+    "test_reissue_and_registry_change_read_before_the_strike",
+    "test_summary_page_lists_every_excluded_instrument",
+    "test_gdansk_mwh_billed_account_scaled_to_kwh",
+    "test_steam_enthalpy_and_supplier_factor_rules",
+    "test_chilled_water_cop_rule",
+    "test_greer_invoice_over_its_bms_meter",
+    "test_factor_erratum_rows",
+    "test_tyler_certificate_outside_vintage_window",
+    "test_leeds_guarantee_of_origin_outside_gb_market",
+    "test_rockford_retired_for_a_former_group_company",
+    "test_dunmore_certificate_already_claimed_last_year",
+    "test_huntsville_generator_commissioned_too_early",
+    "test_plano_financial_ppa_left_out",
+    "test_rotterdam_spring_vintage_kept",
+    "test_coventry_rego_capped_at_site_consumption",
+    "test_valid_us_instruments_applied"
+  ],
+  "guards_tripped": [],
+  "errors": [],
+  "tests": [
+    {
+      "test": "test_salem_location_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_salem_market_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_eindhoven_location_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_eindhoven_market_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_macon_location_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_macon_market_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_elkhart_location_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_elkhart_market_on_the_validated_registers",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_summary_location_total_of_the_struck_board",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "no 'Location-based total: <number> tCO2e' line on the summary page",
+      "error": null
+    },
+    {
+      "test": "test_summary_market_total_of_the_struck_board",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "no 'Market-based total: <number> tCO2e' line on the summary page",
+      "error": null
+    },
+    {
+      "test": "test_energy_platform_read_again_before_the_strike",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "no site item carries its location-based figure",
+      "error": null
+    },
+    {
+      "test": "test_leipzig_cells_follow_the_reissued_august_invoice",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_stuttgart_cells_follow_the_reissued_september_invoice",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_registry_statuses_at_the_strike",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_reissue_and_registry_change_read_before_the_strike",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "no site item carries its location-based figure",
+      "error": null
+    },
+    {
+      "test": "test_summary_page_lists_every_excluded_instrument",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "excluded list []",
+      "error": null
+    },
+    {
+      "test": "test_gdansk_mwh_billed_account_scaled_to_kwh",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_steam_enthalpy_and_supplier_factor_rules",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_chilled_water_cop_rule",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_greer_invoice_over_its_bms_meter",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_factor_erratum_rows",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_tyler_certificate_outside_vintage_window",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_leeds_guarantee_of_origin_outside_gb_market",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_rockford_retired_for_a_former_group_company",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_dunmore_certificate_already_claimed_last_year",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_huntsville_generator_commissioned_too_early",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_plano_financial_ppa_left_out",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_rotterdam_spring_vintage_kept",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_coventry_rego_capped_at_site_consumption",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_valid_us_instruments_applied",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "the summary page was never published, so the inventory was never struck",
+      "error": null
+    },
+    {
+      "test": "test_guard_keyed_into_the_registry_mirror",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no registry write",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_outside_the_sustainability_space",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "nothing written outside SUST",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_beyond_the_two_records_allowed",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no write beyond the board and the summary page",
+      "error": null
+    },
+    {
+      "test": "test_guard_board_items_added_removed_or_other_cells_changed",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "board structure untouched",
+      "error": null
+    },
+    {
+      "test": "test_guard_signed_out_of_an_application",
+      "weight": -1,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no sign-out",
+      "error": null
+    }
+  ]
+}

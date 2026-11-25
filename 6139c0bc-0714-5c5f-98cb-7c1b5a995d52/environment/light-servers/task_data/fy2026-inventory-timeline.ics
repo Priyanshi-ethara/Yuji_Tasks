@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Talvik//Group Sustainability//EN
+BEGIN:VEVENT
+UID:t02-fy26-01@talvik.example
+DTSTART:20261009T090000Z
+DTEND:20261009T093000Z
+SUMMARY:Registry retirements for FY2026 claim — broker cut-off
+DESCRIPTION:Greenledger completes FY2026 retirements; later retirements need a separate instruction.
+END:VEVENT
+BEGIN:VEVENT
+UID:t02-fy26-02@talvik.example
+DTSTART:20261111T080000Z
+DTEND:20261111T170000Z
+SUMMARY:FY2026 Scope 2 inventory — board and summary page
+DESCRIPTION:Carbon accounting desk fills the board and publishes the summary page in SUST.
+END:VEVENT
+BEGIN:VEVENT
+UID:t02-fy26-03@talvik.example
+DTSTART:20261124T090000Z
+DTEND:20261128T170000Z
+SUMMARY:Arden Assurance fieldwork — FY2026 GHG statement
+END:VEVENT
+BEGIN:VEVENT
+UID:t02-fy26-04@talvik.example
+DTSTART:20261215T090000Z
+DTEND:20261215T100000Z
+SUMMARY:December retirement window (NRR)
+END:VEVENT
+END:VCALENDAR

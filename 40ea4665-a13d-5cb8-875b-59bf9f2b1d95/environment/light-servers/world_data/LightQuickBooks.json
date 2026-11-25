@@ -1,0 +1,2756 @@
+{
+ "customers": [
+  {
+   "Id": "7101",
+   "DisplayName": "Calloway Mill Bakery Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@callowaymillbakery.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1047"
+  },
+  {
+   "Id": "7102",
+   "DisplayName": "Ostrey Lane Medical Centre Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "practice.manager@ostreylane.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1052"
+  },
+  {
+   "Id": "7103",
+   "DisplayName": "Pellingford Community School (Trust)",
+   "PrimaryEmailAddr": {
+    "Address": "business.manager@pellingford.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1068"
+  },
+  {
+   "Id": "7104",
+   "DisplayName": "Quenby Print Works Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "finance@quenbyprint.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1073"
+  },
+  {
+   "Id": "7105",
+   "DisplayName": "Saltash Row Garage Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "office@saltashrowgarage.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1081"
+  },
+  {
+   "Id": "7106",
+   "DisplayName": "Thornaby Wharf Cold Store Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "ap@thornabywharf.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1094"
+  },
+  {
+   "Id": "7107",
+   "DisplayName": "Harrowmere Leisure Pool (Council Trust)",
+   "PrimaryEmailAddr": {
+    "Address": "facilities@harrowmerepool.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1102"
+  },
+  {
+   "Id": "7108",
+   "DisplayName": "Wendle Street Offices Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "fm@wendlestreet.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1115"
+  },
+  {
+   "Id": "7109",
+   "DisplayName": "Marlpit Garden Centre Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@marlpitgarden.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1123"
+  },
+  {
+   "Id": "7110",
+   "DisplayName": "Brookhay Brewery Taproom Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "hello@brookhaybrewery.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1139"
+  },
+  {
+   "Id": "7111",
+   "DisplayName": "Ashgrove Plastics Moulding Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "payables@ashgroveplastics.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1146"
+  },
+  {
+   "Id": "7112",
+   "DisplayName": "Fenwick Lane Data Hall Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "billing@fenwicklane-dh.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1158"
+  },
+  {
+   "Id": "7113",
+   "DisplayName": "Gorsebrook Laundry Services Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@gorsebrooklaundry.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1160"
+  },
+  {
+   "Id": "7114",
+   "DisplayName": "Hollin Bridge Sawmill Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "office@hollinbridge.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1177"
+  },
+  {
+   "Id": "7115",
+   "DisplayName": "Kittering Foods Packing Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "ap@kitteringfoods.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1183"
+  },
+  {
+   "Id": "7116",
+   "DisplayName": "Wexcombe Craft Studios Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "studio@wexcombecraft.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1191"
+  },
+  {
+   "Id": "7117",
+   "DisplayName": "Lanyon Quay Fish Market Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "office@lanyonquay.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1204"
+  },
+  {
+   "Id": "7118",
+   "DisplayName": "Merrowby Care Home Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "manager@merrowbycare.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1212"
+  },
+  {
+   "Id": "7119",
+   "DisplayName": "Netherfold Veterinary Hospital Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "accounts@netherfoldvets.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1229"
+  },
+  {
+   "Id": "7120",
+   "DisplayName": "Orchard Rise Hotel Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "finance@orchardrise.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1235"
+  },
+  {
+   "Id": "7121",
+   "DisplayName": "Penhallow Tool Hire Ltd",
+   "PrimaryEmailAddr": {
+    "Address": "hire@penhallowtools.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1248"
+  },
+  {
+   "Id": "7122",
+   "DisplayName": "Ravensworth Bowls & Social Club",
+   "PrimaryEmailAddr": {
+    "Address": "secretary@ravensworthbowls.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "BHH site HMS-1256"
+  },
+  {
+   "Id": "7190",
+   "DisplayName": "Thornaby Wharf Cold Stores (2019) Ltd",
+   "PrimaryEmailAddr": null,
+   "Balance": 0,
+   "Active": false,
+   "Notes": "Closed 2024 (HMS-0712)"
+  },
+  {
+   "Id": "7191",
+   "DisplayName": "Orchard Rise Hotels Group",
+   "PrimaryEmailAddr": {
+    "Address": "group.finance@orchardrise.example"
+   },
+   "Balance": 0,
+   "Active": true,
+   "Notes": "Group parent - consolidated statements only"
+  }
+ ],
+ "items": [
+  {
+   "Id": "61",
+   "Name": "Standing charge",
+   "Description": "BHH standing charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "62",
+   "Name": "Peak unit charge",
+   "Description": "BHH peak unit charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "63",
+   "Name": "Day unit charge",
+   "Description": "BHH day unit charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "64",
+   "Name": "Night unit charge",
+   "Description": "BHH night unit charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "65",
+   "Name": "Capacity charge",
+   "Description": "BHH capacity charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  },
+  {
+   "Id": "66",
+   "Name": "Excess reactive charge",
+   "Description": "BHH excess reactive charge",
+   "Type": "Service",
+   "UnitPrice": 0,
+   "IncomeAccountRef": {
+    "value": "410",
+    "name": "Electricity sales - business HH"
+   },
+   "Active": true,
+   "Taxable": true,
+   "MetaData": {
+    "CreateTime": "2026-01-05 08:00:00",
+    "LastUpdatedTime": "2026-09-21 08:00:00"
+   },
+   "SyncToken": "0"
+  }
+ ],
+ "invoices": [
+  {
+   "Id": "9201",
+   "DocNumber": "BR2610-HMS-1047",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7101",
+    "name": "Calloway Mill Bakery Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 255.12,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 732.838
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 2776.58,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 11391.08
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 2351.34,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 13880.39
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 138.74,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 2890.5
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 5640.28,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 5640.28,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "accounts@callowaymillbakery.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9202",
+   "DocNumber": "BR2610-HMS-1052",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7102",
+    "name": "Ostrey Lane Medical Centre Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 802.86,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 2306.261
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 2330.63,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 9561.555
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 293.45,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 1732.295
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 69.91,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 1456.5
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 3615.35,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 3615.35,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "practice.manager@ostreylane.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9203",
+   "DocNumber": "BR2610-HMS-1068",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7103",
+    "name": "Pellingford Community School (Trust)"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 468.68,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 1346.325
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 2245.6,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 9212.71
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 269.77,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 1592.478
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 99.16,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 2065.8
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 3201.71,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 3201.71,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "business.manager@pellingford.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9204",
+   "DocNumber": "BR2610-HMS-1073",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7104",
+    "name": "Quenby Print Works Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 2379.12,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 6834.198
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 8093.26,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 33203.119
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 1087.47,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 6419.56
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 196.46,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 4092.9
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 36.62,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 1516.206
+     }
+    },
+    {
+     "Amount": 11911.43,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 11911.43,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "finance@quenbyprint.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9205",
+   "DocNumber": "BR2610-HMS-1081",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7105",
+    "name": "Saltash Row Garage Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 483.13,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 1387.825
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 1621.86,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 6653.78
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 107.46,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 634.34
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 51.84,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 1080.0
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.29,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 12.086
+     }
+    },
+    {
+     "Amount": 2383.08,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 2383.08,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "office@saltashrowgarage.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9206",
+   "DocNumber": "BR2610-HMS-1094",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7106",
+    "name": "Thornaby Wharf Cold Store Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 2012.91,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 5782.236
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 10735.6,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 44043.489
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 3286.34,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 19399.858
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 211.55,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 4407.3
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 95.25,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 3944.259
+     }
+    },
+    {
+     "Amount": 16460.15,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 16460.15,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "ap@thornabywharf.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9207",
+   "DocNumber": "BR2610-HMS-1102",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7107",
+    "name": "Harrowmere Leisure Pool (Council Trust)"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 2950.95,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 8476.832
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 13548.43,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 55583.306
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 2539.04,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 14988.427
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 233.84,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 4871.7
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 12.59,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 521.465
+     }
+    },
+    {
+     "Amount": 19403.35,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 19403.35,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "facilities@harrowmerepool.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9208",
+   "DocNumber": "BR2610-HMS-1115",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7108",
+    "name": "Wendle Street Offices Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 1036.92,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 2978.624
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 3089.58,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 12675.202
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 413.62,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 2441.653
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 91.41,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 1904.4
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 4750.03,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 4750.03,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "fm@wendlestreet.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9209",
+   "DocNumber": "BR2610-HMS-1123",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7109",
+    "name": "Marlpit Garden Centre Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 457.74,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 1314.884
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 2168.33,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 8895.717
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 211.89,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 1250.797
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 61.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 1281.3
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 3017.96,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 3017.96,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "accounts@marlpitgarden.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9211",
+   "DocNumber": "BR2610-HMS-1146",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7111",
+    "name": "Ashgrove Plastics Moulding Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 6141.84,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 17642.875
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 21407.78,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 87826.805
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 7712.92,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 45530.788
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 432.27,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 9005.7
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 48.48,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 2007.616
+     }
+    },
+    {
+     "Amount": 35861.79,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 35861.79,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "payables@ashgroveplastics.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9212",
+   "DocNumber": "BR2610-HMS-1158",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7112",
+    "name": "Fenwick Lane Data Hall Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 3825.23,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 10988.259
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 18608.02,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 76340.602
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 6181.38,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 36489.861
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 304.03,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 6333.9
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 29037.16,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 29037.16,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "billing@fenwicklane-dh.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9213",
+   "DocNumber": "BR2610-HMS-1160",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7113",
+    "name": "Gorsebrook Laundry Services Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 2651.53,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 7616.721
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 9821.45,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 40293.148
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 1589.95,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 9385.798
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 201.61,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 4200.3
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 169.61,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 7023.123
+     }
+    },
+    {
+     "Amount": 14552.65,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 14552.65,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "accounts@gorsebrooklaundry.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9214",
+   "DocNumber": "BR2610-HMS-1177",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7114",
+    "name": "Hollin Bridge Sawmill Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 213.2,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 612.432
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 7486.2,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 30712.635
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 346.94,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 2048.058
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 257.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 5364.6
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 154.39,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 6393.055
+     }
+    },
+    {
+     "Amount": 8576.73,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 8576.73,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "office@hollinbridge.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9215",
+   "DocNumber": "BR2610-HMS-1183",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7115",
+    "name": "Kittering Foods Packing Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 4289.19,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 12320.999
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 17616.71,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 72273.69
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 3118.54,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 18409.325
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 312.65,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 6513.6
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 107.85,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 4465.949
+     }
+    },
+    {
+     "Amount": 25563.44,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 25563.44,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "ap@kitteringfoods.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9216",
+   "DocNumber": "BR2610-HMS-1191",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7116",
+    "name": "Wexcombe Craft Studios Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 242.28,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 695.961
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 763.47,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 3132.178
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 108.3,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 639.288
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 24.51,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 510.6
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.01,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.509
+     }
+    },
+    {
+     "Amount": 1257.07,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 1257.07,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "studio@wexcombecraft.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9217",
+   "DocNumber": "BR2610-HMS-1204",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7117",
+    "name": "Lanyon Quay Fish Market Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 769.71,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 2211.039
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 5510.41,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 22606.828
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 2401.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 14176.53
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 151.24,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 3150.9
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 52.65,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 2180.166
+     }
+    },
+    {
+     "Amount": 9004.01,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 9004.01,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "office@lanyonquay.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9218",
+   "DocNumber": "BR2610-HMS-1212",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7118",
+    "name": "Merrowby Care Home Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 1561.6,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 4485.809
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 5578.94,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 22887.972
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 1550.73,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 9154.271
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 120.41,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 2508.6
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 8930.18,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 8930.18,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "manager@merrowbycare.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9219",
+   "DocNumber": "BR2610-HMS-1229",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7119",
+    "name": "Netherfold Veterinary Hospital Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 1744.73,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 5011.878
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 7337.95,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 30104.419
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 1875.74,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 11072.852
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 126.17,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 2628.6
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 11203.09,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 11203.09,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "accounts@netherfoldvets.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9220",
+   "DocNumber": "BR2610-HMS-1235",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7120",
+    "name": "Orchard Rise Hotel Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 2444.25,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 7021.281
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 9246.71,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 37935.203
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 2348.36,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 13862.812
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 230.75,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 4807.2
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 14388.57,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 14388.57,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "finance@orchardrise.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9221",
+   "DocNumber": "BR2610-HMS-1248",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7121",
+    "name": "Penhallow Tool Hire Ltd"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 308.67,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 886.687
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 1382.09,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 5670.132
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 134.88,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 796.215
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 42.93,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 894.3
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 1.79,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 74.151
+     }
+    },
+    {
+     "Amount": 1988.86,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 1988.86,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "hire@penhallowtools.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  },
+  {
+   "Id": "9222",
+   "DocNumber": "BR2610-HMS-1256",
+   "TxnDate": "2026-10-16",
+   "DueDate": "2026-10-30",
+   "CustomerRef": {
+    "value": "7122",
+    "name": "Ravensworth Bowls & Social Club"
+   },
+   "Line": [
+    {
+     "Id": "1",
+     "LineNum": 1,
+     "Amount": 118.5,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Standing charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "61",
+       "name": "Standing charge"
+      },
+      "Qty": 30.0
+     }
+    },
+    {
+     "Id": "2",
+     "LineNum": 2,
+     "Amount": 626.1,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Peak unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "62",
+       "name": "Peak unit charge"
+      },
+      "Qty": 1798.529
+     }
+    },
+    {
+     "Id": "3",
+     "LineNum": 3,
+     "Amount": 2103.61,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Day unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "63",
+       "name": "Day unit charge"
+      },
+      "Qty": 8630.206
+     }
+    },
+    {
+     "Id": "4",
+     "LineNum": 4,
+     "Amount": 176.22,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Night unit charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "64",
+       "name": "Night unit charge"
+      },
+      "Qty": 1040.232
+     }
+    },
+    {
+     "Id": "5",
+     "LineNum": 5,
+     "Amount": 69.41,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Capacity charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "65",
+       "name": "Capacity charge"
+      },
+      "Qty": 1446.0
+     }
+    },
+    {
+     "Id": "6",
+     "LineNum": 6,
+     "Amount": 0.0,
+     "DetailType": "SalesItemLineDetail",
+     "Description": "Excess reactive charge",
+     "SalesItemLineDetail": {
+      "ItemRef": {
+       "value": "66",
+       "name": "Excess reactive charge"
+      },
+      "Qty": 0.0
+     }
+    },
+    {
+     "Amount": 3093.84,
+     "DetailType": "SubTotalLineDetail",
+     "SubTotalLineDetail": {}
+    }
+   ],
+   "TotalAmt": 3093.84,
+   "Balance": 0,
+   "PrintStatus": "NotSet",
+   "EmailStatus": "EmailSent",
+   "BillEmail": {
+    "Address": "secretary@ravensworthbowls.example"
+   },
+   "Status": "Paid",
+   "MetaData": {
+    "CreateTime": "2026-10-16T10:00:00",
+    "LastUpdatedTime": "2026-11-02T10:00:00"
+   },
+   "SyncToken": "2"
+  }
+ ],
+ "company_info": {
+  "CompanyName": "Harrowmere Energy Co-operative Ltd",
+  "Country": "GB",
+  "FiscalYearStartMonth": "April",
+  "Email": {
+   "Address": "billing@harrowmere-energy.example"
+  }
+ }
+}

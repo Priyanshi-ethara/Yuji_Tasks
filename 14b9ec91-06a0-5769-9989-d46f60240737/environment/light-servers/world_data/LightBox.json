@@ -1,0 +1,153 @@
+{
+ "users": [
+  {
+   "id": "77010001",
+   "name": "Rating Desk",
+   "login": "rating.desk@northfell-grid.example",
+   "role": "user",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10995116277760,
+   "space_used": 214748364,
+   "max_upload_size": 5368709120,
+   "job_title": "Day-ahead rating desk",
+   "phone": "+441539000110",
+   "created_at": "2025-01-06T08:00:00+00:00"
+  }
+ ],
+ "folders": [
+  {
+   "id": "0",
+   "name": "All Files",
+   "parent_id": "",
+   "owner_id": "77010001",
+   "description": "Root folder",
+   "created_at": "2025-01-06T08:00:00+00:00",
+   "modified_at": "2026-11-16T06:10:00+00:00",
+   "item_count": 1
+  },
+  {
+   "id": "880100",
+   "name": "Rating Desk",
+   "parent_id": "0",
+   "owner_id": "77010001",
+   "description": "Day-ahead rating desk working files",
+   "created_at": "2025-01-06T08:00:00+00:00",
+   "modified_at": "2026-11-16T06:10:00+00:00",
+   "item_count": 3
+  },
+  {
+   "id": "880110",
+   "name": "Overnight",
+   "parent_id": "880100",
+   "owner_id": "77010001",
+   "description": "Night desk drafts",
+   "created_at": "2025-01-06T08:00:00+00:00",
+   "modified_at": "2026-11-16T06:10:00+00:00",
+   "item_count": 2
+  },
+  {
+   "id": "880120",
+   "name": "Asset evidence",
+   "parent_id": "880100",
+   "owner_id": "77010001",
+   "description": "Commissioning certificates and asset notes",
+   "created_at": "2025-01-06T08:00:00+00:00",
+   "modified_at": "2026-10-22T09:00:00+00:00",
+   "item_count": 3
+  },
+  {
+   "id": "880130",
+   "name": "Reference",
+   "parent_id": "880100",
+   "owner_id": "77010001",
+   "description": "Quick references",
+   "created_at": "2025-01-06T08:00:00+00:00",
+   "modified_at": "2025-02-01T09:00:00+00:00",
+   "item_count": 1
+  }
+ ],
+ "files": [
+  {
+   "id": "990101",
+   "name": "draft-ratings-2026-11-17-overnight-TW.csv",
+   "parent_id": "880110",
+   "owner_id": "77010001",
+   "description": "Overnight draft ratings for 17 Nov (00Z basis)",
+   "size": 1662,
+   "extension": "csv",
+   "sha1": "01a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2026-11-16T05:31:00+00:00",
+   "modified_at": "2026-11-16T05:31:00+00:00"
+  },
+  {
+   "id": "990102",
+   "name": "draft-ratings-2026-11-17-notes-TW.txt",
+   "parent_id": "880110",
+   "owner_id": "77010001",
+   "description": "Notes on the overnight draft",
+   "size": 344,
+   "extension": "txt",
+   "sha1": "02a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2026-11-16T05:33:00+00:00",
+   "modified_at": "2026-11-16T05:33:00+00:00"
+  },
+  {
+   "id": "990103",
+   "name": "HGTN-1-cable-commissioning-certificate.txt",
+   "parent_id": "880120",
+   "owner_id": "77010001",
+   "description": "HGTN-1 cable section commissioning",
+   "size": 216,
+   "extension": "txt",
+   "sha1": "03a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2026-09-21T15:00:00+00:00",
+   "modified_at": "2026-09-21T15:00:00+00:00"
+  },
+  {
+   "id": "990104",
+   "name": "BRTN-viaduct-cable-design-summary.txt",
+   "parent_id": "880120",
+   "owner_id": "77010001",
+   "description": "BRTN viaduct cables",
+   "size": 223,
+   "extension": "txt",
+   "sha1": "04a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2026-08-03T10:00:00+00:00",
+   "modified_at": "2026-08-03T10:00:00+00:00"
+  },
+  {
+   "id": "990105",
+   "name": "LNBR-2-reconductoring-handover.txt",
+   "parent_id": "880120",
+   "owner_id": "77010001",
+   "description": "LNBR-2 FL240T handover",
+   "size": 216,
+   "extension": "txt",
+   "sha1": "05a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2026-10-21T16:00:00+00:00",
+   "modified_at": "2026-10-21T16:00:00+00:00"
+  },
+  {
+   "id": "990106",
+   "name": "rating-desk-quick-reference-2024.md",
+   "parent_id": "880130",
+   "owner_id": "77010001",
+   "description": "Superseded quick reference",
+   "size": 232,
+   "extension": "md",
+   "sha1": "06a7c3e9a7c3e9a7c3e9a7c3e9a7c3e9a7c3e90f",
+   "created_at": "2024-11-01T09:00:00+00:00",
+   "modified_at": "2024-11-01T09:00:00+00:00"
+  }
+ ],
+ "file_blobs": {
+  "draft-ratings-2026-11-17-overnight-TW.csv": "Circuit,Conductor,Max temp C,Lowest wind kn,Lowest wind m/s,Ambient band,Wind band,Line rating A,Series cable A,Rating A,Limiting element,D-1 peak A,Loading %,Constrained\nSKBR-1,SC300,3.0,9.0,4.63,T2,W4,960,,960,Overhead line,610,63.5,no\nSKBR-2,SC300,3.0,9.0,4.63,T2,W4,960,,960,Overhead line,655,68.2,no\nSKTN-1,BK175,3.0,3.8,1.95,T2,W3,580,,580,Overhead line,395,68.1,no\nCFLN-1,FL240,5.6,3.0,1.54,T3,W3,690,,690,Overhead line,390,56.5,no\nCFHG-1,BK175,4.2,2.5,1.29,T2,W2,490,,490,Overhead line,405,82.7,no\nCFBR-1,FL240T,4.2,5.0,2.57,T2,W3,835,,835,Overhead line,745,89.2,no\nHGTN-1,SC300,3.6,2.5,1.29,T2,W2,715,700,700,Cable section,600,85.7,no\nHGOX-1,BK175,3.6,2.0,1.03,T2,W2,490,,490,Overhead line,432,88.2,no\nLNBR-1,FL240,7.9,3.0,1.54,T3,W3,690,,690,Overhead line,395,57.2,no\nLNBR-2,FL240T,7.9,3.0,1.54,T3,W3,810,,810,Overhead line,450,55.6,no\nLNOX-1,BK175,5.6,2.0,1.03,T3,W2,470,,470,Overhead line,345,73.4,no\nBRTN-1,SC300,7.9,3.8,1.95,T3,W3,820,610,610,Cable section,560,91.8,yes\nBRTN-2,SC300,7.9,3.8,1.95,T3,W3,820,905,820,Overhead line,590,72.0,no\nBRMS-1,FL240,7.9,6.6,3.4,T3,W4,780,,780,Overhead line,520,66.7,no\nTNOX-1,FL240,2.4,2.0,1.03,T2,W2,600,,600,Overhead line,470,78.3,no\nTNQY-1,BK175,2.4,3.8,1.95,T2,W3,580,,580,Overhead line,300,51.7,no\nOXFD-1,SC300,-0.8,2.0,1.03,T1,W2,740,,740,Overhead line,540,73.0,no\nOXFD-2,SC300,-0.8,2.0,1.03,T1,W2,740,640,640,Cable section,600,93.8,yes\nLNKS-1,BK175,5.6,3.0,1.54,T3,W3,560,,560,Overhead line,310,55.4,no\nBRWD-1,FL240T,7.9,6.6,3.4,T3,W4,915,,915,Overhead line,690,75.4,no\nMSWD-1,BK175,7.9,2.0,1.03,T3,W2,470,,470,Overhead line,330,70.2,no\nKSFD-1,FL240,5.6,2.0,1.03,T3,W2,580,,580,Overhead line,300,51.7,no\n",
+  "draft-ratings-2026-11-17-notes-TW.txt": "Overnight draft notes (Tobias Wren, 05:30 16 Nov)\n- Basis: MetDesk 00Z pull saved at 05:00 (metdesk-pull-2026-11-16T0500Z.json).\n- Skelwith Edge winds from the iced anemometer period; MetDesk may reissue.\n- Constrained on this draft: BRTN-1, OXFD-2 (90 % rule).\n- Not checked against the 06Z issue - day desk to finalise from the live service.\n",
+  "HGTN-1-cable-commissioning-certificate.txt": "Commissioning certificate - HGTN-1 series cable section (CHG0047101)\nHarrowgate Pike sealing-end compound, towers T41-T42.\n1x 800 mm2 Al XLPE per phase, 412 m. Continuous rating 700 A (winter). Witnessed 2026-09-21.\n",
+  "BRTN-viaduct-cable-design-summary.txt": "Tarn viaduct undercrossing - design summary\nBRTN-1: 1x 630 mm2 Al XLPE per phase - continuous 610 A.\nBRTN-2: 2x 630 mm2 Al XLPE per phase - continuous 905 A.\nBoth in series with the overhead line; commissioned August 2026.\n",
+  "LNBR-2-reconductoring-handover.txt": "LNBR-2 reconductoring handover (GRID-874)\nAll spans FL240T thermal-resistant alloy, max design temperature 100 C.\nRegister conductor changed to FL240T on 21 Oct 2026. The September register export still shows FL240.\n",
+  "rating-desk-quick-reference-2024.md": "# Rating desk quick reference (2024 edition - pre-contract rev 4)\n\n- Feed winds in m/s (MetDesk schedule B rev 3).\n- Seasonal ratings per NGS-RT-04 Issue 2.\n\n> Superseded: Issue 3 (Apr 2026) and contract rev 4 (Mar 2025) apply now.\n"
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "bases": [
+  {
+   "id": "appSunClimate46",
+   "name": "Site climate list",
+   "permission_level": "read"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tblClimateStations",
+   "base_id": "appSunClimate46",
+   "name": "Climate stations",
+   "primaryFieldId": "fldCode",
+   "fields": [
+    {
+     "id": "fldCode",
+     "name": "Station code",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldName",
+     "name": "Station",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldExt",
+     "name": "Extreme min design (°C)",
+     "type": "number"
+    },
+    {
+     "id": "fldMean",
+     "name": "Mean min coldest month (°C)",
+     "type": "number"
+    },
+    {
+     "id": "fldRec",
+     "name": "Record low (°C)",
+     "type": "number"
+    },
+    {
+     "id": "fldElev",
+     "name": "Elevation (m)",
+     "type": "number"
+    },
+    {
+     "id": "fldRev",
+     "name": "Last revised",
+     "type": "date"
+    },
+    {
+     "id": "fldSrc",
+     "name": "Source",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "id": "tblClimateNotes",
+   "base_id": "appSunClimate46",
+   "name": "Revision notes",
+   "primaryFieldId": "fldNote",
+   "fields": [
+    {
+     "id": "fldNote",
+     "name": "Note",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldNS",
+     "name": "Station code",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldND",
+     "name": "Date",
+     "type": "date"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tblClimateStations": [
+   {
+    "id": "recCS0001HWM",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "HWM",
+     "Station": "Hollowmere Airfield",
+     "Extreme min design (°C)": -16.4,
+     "Mean min coldest month (°C)": -4.1,
+     "Record low (°C)": -22.8,
+     "Elevation (m)": 141,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0002BRK",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "BRK",
+     "Station": "Brackenford",
+     "Extreme min design (°C)": -12.8,
+     "Mean min coldest month (°C)": -2.6,
+     "Record low (°C)": -19.0,
+     "Elevation (m)": 88,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0003TLV",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "TLV",
+     "Station": "Tallow Vale",
+     "Extreme min design (°C)": -21.2,
+     "Mean min coldest month (°C)": -7.9,
+     "Record low (°C)": -28.4,
+     "Elevation (m)": 312,
+     "Last revised": "2026-09-30",
+     "Source": "Met record 1991–2020, extreme annual mean minimum (re-analysed after W31 frost events)"
+    }
+   },
+   {
+    "id": "recCS0004CRS",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "CRS",
+     "Station": "Cresswick Reservoir",
+     "Extreme min design (°C)": -18.6,
+     "Mean min coldest month (°C)": -5.3,
+     "Record low (°C)": -25.1,
+     "Elevation (m)": 236,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0005SDL",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "SDL",
+     "Station": "Saddleback Lodge",
+     "Extreme min design (°C)": -24.5,
+     "Mean min coldest month (°C)": -9.8,
+     "Record low (°C)": -31.0,
+     "Elevation (m)": 455,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0006PNW",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "PNW",
+     "Station": "Penwarden Quay",
+     "Extreme min design (°C)": -7.9,
+     "Mean min coldest month (°C)": 0.8,
+     "Record low (°C)": -12.3,
+     "Elevation (m)": 9,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0007ASH",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "ASH",
+     "Station": "Ashcombe",
+     "Extreme min design (°C)": -14.1,
+     "Mean min coldest month (°C)": -3.2,
+     "Record low (°C)": -20.6,
+     "Elevation (m)": 117,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0008MRT",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "MRT",
+     "Station": "Marten Cross",
+     "Extreme min design (°C)": -19.7,
+     "Mean min coldest month (°C)": -6.4,
+     "Record low (°C)": -26.9,
+     "Elevation (m)": 274,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0009KLD",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "KLD",
+     "Station": "Kilderry",
+     "Extreme min design (°C)": -10.6,
+     "Mean min coldest month (°C)": -1.5,
+     "Record low (°C)": -16.8,
+     "Elevation (m)": 52,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0010FNS",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "FNS",
+     "Station": "Fennister",
+     "Extreme min design (°C)": -15.3,
+     "Mean min coldest month (°C)": -3.9,
+     "Record low (°C)": -21.7,
+     "Elevation (m)": 163,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0011GWN",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "GWN",
+     "Station": "Gwennap Moor",
+     "Extreme min design (°C)": -17.9,
+     "Mean min coldest month (°C)": -5.0,
+     "Record low (°C)": -24.2,
+     "Elevation (m)": 228,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   },
+   {
+    "id": "recCS0012LSK",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Station code": "LSK",
+     "Station": "Lostock Bridge",
+     "Extreme min design (°C)": -11.7,
+     "Mean min coldest month (°C)": -2.1,
+     "Record low (°C)": -18.1,
+     "Elevation (m)": 61,
+     "Last revised": "2025-02-10",
+     "Source": "Met record 1991–2020, extreme annual mean minimum"
+    }
+   }
+  ],
+  "tblClimateNotes": [
+   {
+    "id": "recCN0001",
+    "createdTime": "2026-09-30T09:00:00.000Z",
+    "fields": {
+     "Note": "Tallow Vale extreme min revised from -19.8 to -21.2 after the 2026 re-analysis.",
+     "Station code": "TLV",
+     "Date": "2026-09-30"
+    }
+   },
+   {
+    "id": "recCN0002",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Note": "Column 'Extreme min design' is the extreme annual mean minimum dry-bulb (1991-2020).",
+     "Station code": "ALL",
+     "Date": "2025-02-10"
+    }
+   },
+   {
+    "id": "recCN0003",
+    "createdTime": "2025-02-10T09:00:00.000Z",
+    "fields": {
+     "Note": "Record low is the single coldest reading on record; context only.",
+     "Station code": "ALL",
+     "Date": "2025-02-10"
+    }
+   },
+   {
+    "id": "recCN0004",
+    "createdTime": "2025-02-10T09:15:00.000Z",
+    "fields": {
+     "Note": "Every station in the list is sited on open, level ground to the Met siting standard; its figures are open-ground figures.",
+     "Station code": "ALL",
+     "Date": "2025-02-10"
+    }
+   }
+  ]
+ }
+}

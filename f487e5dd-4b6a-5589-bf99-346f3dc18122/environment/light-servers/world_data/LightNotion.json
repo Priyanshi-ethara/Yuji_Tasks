@@ -1,0 +1,703 @@
+{
+ "users": [
+  {
+   "id": "user-npenrose",
+   "name": "Morwenna Penrose",
+   "email": "m.penrose@sunhollow-solar.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "ws-sunhollow",
+   "created_time": "2024-02-01T09:00:00.000Z"
+  },
+  {
+   "id": "user-ncallow",
+   "name": "Arthur Callow",
+   "email": "a.callow@sunhollow-solar.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "ws-sunhollow",
+   "created_time": "2024-03-01T09:00:00.000Z"
+  },
+  {
+   "id": "user-ndesk",
+   "name": "Design Desk",
+   "email": "designdesk@sunhollow-solar.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "ws-sunhollow",
+   "created_time": "2024-02-01T09:00:00.000Z"
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-inverter-catalogue",
+   "title": "Inverter catalogue",
+   "parent_page_id": "pg-proc-eng-home",
+   "created_time": "2024-03-01T09:30:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "created_by": "user-ncallow",
+   "icon": "zap",
+   "archived": false
+  }
+ ],
+ "pages": [
+  {
+   "id": "pg-proc-eng-home",
+   "parent_type": "workspace",
+   "parent_id": "ws-sunhollow",
+   "title": "Procurement engineering",
+   "created_time": "2024-03-01T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "gear",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-volta-8k",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Volta 8K",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-volta-8k-hv",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Volta 8K HV",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-volta-5k",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Volta 5K",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-ardent-ar6",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Ardent AR-6.0",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-brightline-bl10",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Brightline BL-10",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "pg-inv-volta-6k-legacy",
+   "parent_type": "database",
+   "parent_id": "db-inverter-catalogue",
+   "title": "Volta 6K (legacy)",
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2025-12-01T09:00:00.000Z",
+   "created_by": "Arthur Callow",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "blk-pe-home-1",
+   "page_id": "pg-proc-eng-home",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "The Inverter catalogue holds one page per approved inverter model with the limits the design desk applies under DS-6. Pages are kept current by procurement engineering from manufacturer information; manufacturer notices are recorded on the model's own page.",
+   "order": 0,
+   "created_time": "2024-03-01T09:00:00.000Z",
+   "last_edited_time": "2026-02-02T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-1",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Volta 8K — controlled limits for DS-6 reviews (procurement engineering).",
+   "order": 0,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-2",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum DC input voltage: 600 V.",
+   "order": 1,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-3",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "MPPT operating range: 200 V to 550 V (MPPT lower bound 200 V).",
+   "order": 2,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-4",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum short-circuit input current per MPPT tracker: 20 A. Trackers: 2; strings per tracker: up to 1.",
+   "order": 3,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-5",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Rated AC output 8 kW. Manufacturer: Volta Power Electronics.",
+   "order": 4,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-6",
+   "page_id": "pg-inv-volta-8k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Serial numbers read VT8-<batch>-<unit>; the four-digit batch code is the second field (e.g. VT8-2552-00931 is batch 2552).",
+   "order": 5,
+   "created_time": "2026-05-14T09:20:00.000Z",
+   "last_edited_time": "2026-05-14T09:20:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-1",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Volta 8K HV — controlled limits for DS-6 reviews (procurement engineering).",
+   "order": 0,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-2",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum DC input voltage: 1000 V.",
+   "order": 1,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-3",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "MPPT operating range: 250 V to 850 V (MPPT lower bound 250 V).",
+   "order": 2,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-4",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum short-circuit input current per MPPT tracker: 20 A. Trackers: 2; strings per tracker: up to 1.",
+   "order": 3,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-5",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Rated AC output 8 kW. Manufacturer: Volta Power Electronics.",
+   "order": 4,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-8k-hv-6",
+   "page_id": "pg-inv-volta-8k-hv",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "High-voltage variant of the Volta 8K with its own DC stage; serials read VH8-<batch>-<unit>. Limits are independent of the Volta 8K.",
+   "order": 5,
+   "created_time": "2026-05-14T09:30:00.000Z",
+   "last_edited_time": "2026-05-14T09:30:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-5k-1",
+   "page_id": "pg-inv-volta-5k",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Volta 5K — controlled limits for DS-6 reviews (procurement engineering).",
+   "order": 0,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-5k-2",
+   "page_id": "pg-inv-volta-5k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum DC input voltage: 600 V.",
+   "order": 1,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-5k-3",
+   "page_id": "pg-inv-volta-5k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "MPPT operating range: 120 V to 550 V (MPPT lower bound 120 V).",
+   "order": 2,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-5k-4",
+   "page_id": "pg-inv-volta-5k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum short-circuit input current per MPPT tracker: 20 A. Trackers: 2; strings per tracker: up to 1.",
+   "order": 3,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-5k-5",
+   "page_id": "pg-inv-volta-5k",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Rated AC output 5 kW. Manufacturer: Volta Power Electronics.",
+   "order": 4,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-04-03T11:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-1",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Ardent AR-6.0 — controlled limits for DS-6 reviews (procurement engineering).",
+   "order": 0,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-2",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum DC input voltage: 550 V.",
+   "order": 1,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-3",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "MPPT operating range: 100 V to 500 V (MPPT lower bound 100 V).",
+   "order": 2,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-4",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum short-circuit input current per MPPT tracker: 17.5 A. Trackers: 2; strings per tracker: up to 1.",
+   "order": 3,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-5",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Rated AC output 6 kW. Manufacturer: Ardent Inverters.",
+   "order": 4,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-ardent-ar6-6",
+   "page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Manufacturer notice ARN-2026-08 (Ardent Inverters, 21 August 2026): from firmware 3.2 the maximum DC input voltage is 550 V (previously 600 V). Applies to every AR-6.0 shipped from July 2026 and to units updated in the field. Catalogue limit changed to 550 V on 21 August 2026.",
+   "order": 5,
+   "created_time": "2026-08-21T10:00:00.000Z",
+   "last_edited_time": "2026-08-21T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-1",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Brightline BL-10 — controlled limits for DS-6 reviews (procurement engineering).",
+   "order": 0,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-2",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum DC input voltage: 1000 V.",
+   "order": 1,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-3",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "MPPT operating range: 300 V to 850 V (MPPT lower bound 300 V).",
+   "order": 2,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-4",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Maximum short-circuit input current per MPPT tracker: 30 A. Trackers: 2; strings per tracker: up to 2.",
+   "order": 3,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-5",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Rated AC output 10 kW. Manufacturer: Brightline Power.",
+   "order": 4,
+   "created_time": "2024-03-04T09:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-brightline-bl10-6",
+   "page_id": "pg-inv-brightline-bl10",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Two parallel strings per tracker are permitted; the current limit applies to the tracker total.",
+   "order": 5,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-volta-6k-1",
+   "page_id": "pg-inv-volta-6k-legacy",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Retired from new designs December 2025; kept for service records only.",
+   "order": 0,
+   "created_time": "2025-12-01T09:00:00.000Z",
+   "last_edited_time": "2025-12-01T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "properties": {
+  "pg-inv-volta-8k": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Volta Power Electronics"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 600
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 200
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 550
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 20.0
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Approved for design"
+   }
+  },
+  "pg-inv-volta-8k-hv": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Volta Power Electronics"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 1000
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 250
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 850
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 20.0
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Approved for design"
+   }
+  },
+  "pg-inv-volta-5k": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Volta Power Electronics"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 600
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 120
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 550
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 20.0
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Approved for design"
+   }
+  },
+  "pg-inv-ardent-ar6": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Ardent Inverters"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 550
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 100
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 500
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 17.5
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Approved for design"
+   }
+  },
+  "pg-inv-brightline-bl10": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Brightline Power"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 1000
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 300
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 850
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 30.0
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Approved for design"
+   }
+  },
+  "pg-inv-volta-6k-legacy": {
+   "Manufacturer": {
+    "type": "select",
+    "value": "Volta Power Electronics"
+   },
+   "Max DC input (V)": {
+    "type": "number",
+    "value": 580
+   },
+   "MPPT lower bound (V)": {
+    "type": "number",
+    "value": 150
+   },
+   "MPPT upper bound (V)": {
+    "type": "number",
+    "value": 520
+   },
+   "Max Isc per MPPT (A)": {
+    "type": "number",
+    "value": 16
+   },
+   "Trackers": {
+    "type": "number",
+    "value": 2
+   },
+   "Status": {
+    "type": "status",
+    "value": "Retired"
+   }
+  }
+ },
+ "comments": [
+  {
+   "id": "cmt-ar6-1",
+   "parent_page_id": "pg-inv-ardent-ar6",
+   "parent_block_id": "blk-ardent-ar6-6",
+   "author_id": "user-ncallow",
+   "text": "Confirmed with Ardent field engineering: firmware 3.2 caps DC input at 550 V. Spec sheet on Box still shows 600 V.",
+   "created_time": "2026-08-21T10:05:00.000Z",
+   "resolved": false
+  }
+ ],
+ "workspace": {
+  "id": "ws-sunhollow",
+  "name": "Sunhollow Solar"
+ }
+}

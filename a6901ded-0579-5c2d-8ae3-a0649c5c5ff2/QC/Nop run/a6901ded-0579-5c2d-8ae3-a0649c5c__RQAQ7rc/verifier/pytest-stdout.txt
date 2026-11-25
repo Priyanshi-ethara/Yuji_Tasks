@@ -1,0 +1,339 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /tests
+plugins: anyio-4.15.1
+collecting ... collected 20 items
+
+test_outputs.py::test_sub02_held_for_capacity_approval FAILED            [  5%]
+test_outputs.py::test_sub02_capacity_request_to_pool_manager FAILED      [ 10%]
+test_outputs.py::test_sub02_reservation_from_remeasured_dry_run FAILED   [ 15%]
+test_outputs.py::test_clm07_reservation_follows_remeasured_dry_run FAILED [ 20%]
+test_outputs.py::test_sub02_change_ticket_waits_in_todo FAILED           [ 25%]
+test_outputs.py::test_remeasured_dry_runs_read_before_the_note FAILED    [ 30%]
+test_outputs.py::test_clm07_replicas_corrected_and_held FAILED           [ 35%]
+test_outputs.py::test_uw03_blocked_on_data FAILED                        [ 40%]
+test_outputs.py::test_fnol11_held_for_signoff_and_capacity FAILED        [ 45%]
+test_outputs.py::test_geometry_left_where_it_was_right FAILED            [ 50%]
+test_outputs.py::test_one_note_to_the_requester FAILED                   [ 55%]
+test_outputs.py::test_note_after_every_launch_write FAILED               [ 60%]
+test_outputs.py::test_deciding_records_read_before_decisions FAILED      [ 65%]
+test_outputs.py::test_reservations_open_with_the_window FAILED           [ 70%]
+test_outputs.py::test_guard_touched_the_training_cluster FAILED          [ 75%]
+test_outputs.py::test_guard_deleted_existing_records FAILED              [ 80%]
+test_outputs.py::test_guard_registry_changed_beyond_the_desk_fields FAILED [ 85%]
+test_outputs.py::test_guard_wrote_where_the_desk_only_reads FAILED       [ 90%]
+test_outputs.py::test_guard_note_copied_to_someone_else FAILED           [ 95%]
+test_outputs.py::test_guard_signed_out FAILED                            [100%][ctrf] 20 tests -> /logs/verifier/ctrf.json
+
+
+=================================== FAILURES ===================================
+____________________ test_sub02_held_for_capacity_approval _____________________
+
+    def test_sub02_held_for_capacity_approval():
+        """FT-SUB-02 carries the readiness label its re-measured reservation earns."""
+>       _event_gate("FT-SUB-02")
+
+test_outputs.py:460: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:443: in _event_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+_________________ test_sub02_capacity_request_to_pool_manager __________________
+
+    def test_sub02_capacity_request_to_pool_manager():
+        """One capacity request names FT-SUB-02 and is assigned to the manager of the pool it runs in."""
+>       _event_gate("FT-SUB-02")
+
+test_outputs.py:467: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:443: in _event_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+________________ test_sub02_reservation_from_remeasured_dry_run ________________
+
+    def test_sub02_reservation_from_remeasured_dry_run():
+        """FT-SUB-02 is reserved from the window opening for the hours its current dry run gives, and its
+        registry row carries those hours and the charge they make."""
+>       _event_gate("FT-SUB-02")
+
+test_outputs.py:477: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:443: in _event_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+______________ test_clm07_reservation_follows_remeasured_dry_run _______________
+
+    def test_clm07_reservation_follows_remeasured_dry_run():
+        """FT-CLM-07 is reserved from the window opening for the hours its current dry run gives once scaled
+        to the corrected accumulation, and its registry row carries those hours and the charge they make."""
+>       _event_gate("FT-CLM-07")
+
+test_outputs.py:488: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:443: in _event_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+____________________ test_sub02_change_ticket_waits_in_todo ____________________
+
+    def test_sub02_change_ticket_waits_in_todo():
+        """FT-SUB-02 has one change ticket, assigned to the window's primary on-call and left in To Do."""
+>       _event_gate("FT-SUB-02")
+
+test_outputs.py:498: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_outputs.py:443: in _event_gate
+    _value_gate()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+________________ test_remeasured_dry_runs_read_before_the_note _________________
+
+    def test_remeasured_dry_runs_read_before_the_note():
+        """The re-measured dry run of every run it moves was read before the note went to the requester."""
+        assert _clean(), "a red line was crossed in the run"
+>       assert _work_shown(), "no window row carries its readiness label"
+E       AssertionError: no window row carries its readiness label
+E       assert False
+E        +  where False = _work_shown()
+
+test_outputs.py:509: AssertionError
+____________________ test_clm07_replicas_corrected_and_held ____________________
+
+    def test_clm07_replicas_corrected_and_held():
+        """FT-CLM-07: Grad accum restores the recipe's sequences per update once its tensor-parallel pairs
+        count as one replica each; it carries the capacity-hold label, has one capacity request to its pool's
+        manager and one change ticket to the on-call left in To Do."""
+>       _value_gate()
+
+test_outputs.py:522: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+__________________________ test_uw03_blocked_on_data ___________________________
+
+    def test_uw03_blocked_on_data():
+        """FT-UW-03 carries the data block label, has one data-quality ticket to the owner of the dataset at
+        fault, and gets no reservation, change ticket or hours while the other runs are booked."""
+>       _value_gate()
+
+test_outputs.py:537: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+__________________ test_fnol11_held_for_signoff_and_capacity ___________________
+
+    def test_fnol11_held_for_signoff_and_capacity():
+        """FT-FNOL-11: the double-hold label, its charge on the accelerator basis of its pool, the rescaled
+        Peak LR, its reserved hours and reservation, one capacity request to its pool's manager and one
+        sign-off ticket to its recipe's owner."""
+>       _value_gate()
+
+test_outputs.py:553: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _value_gate():
+        assert _clean(), "a red line was crossed in the run"
+>       assert _notes_to_requester(), "no note reached the requester"
+E       AssertionError: no note reached the requester
+E       assert []
+E        +  where [] = _notes_to_requester()
+
+test_outputs.py:421: AssertionError
+____________________ test_geometry_left_where_it_was_right _____________________
+
+    def test_geometry_left_where_it_was_right():
+        """Accumulation and Peak LR stay at their seeded values on every run where no rule moves them."""
+        assert _clean(), "a red line was crossed in the run"
+>       assert _work_shown(), "no window row carries its readiness label"
+E       AssertionError: no window row carries its readiness label
+E       assert False
+E        +  where False = _work_shown()
+
+test_outputs.py:570: AssertionError
+________________________ test_one_note_to_the_requester ________________________
+
+    def test_one_note_to_the_requester():
+        """The requester got the readiness note under the subject the instruction pins."""
+        assert _clean(), "a red line was crossed in the run"
+>       assert _work_shown(), "no window row carries its readiness label"
+E       AssertionError: no window row carries its readiness label
+E       assert False
+E        +  where False = _work_shown()
+
+test_outputs.py:584: AssertionError
+______________________ test_note_after_every_launch_write ______________________
+
+    def test_note_after_every_launch_write():
+        """The first note to the requester follows the last registry, ticket and reservation write."""
+        assert _clean(), "a red line was crossed in the run"
+>       assert _work_shown(), "no window row carries its readiness label"
+E       AssertionError: no window row carries its readiness label
+E       assert False
+E        +  where False = _work_shown()
+
+test_outputs.py:594: AssertionError
+_________________ test_deciding_records_read_before_decisions __________________
+
+    def test_deciding_records_read_before_decisions():
+        """For each of FT-CLM-07, FT-UW-03 and FT-FNOL-11, a record carrying the fact that decides it was read
+        before that run's registry row was first written (any read path: listing, fetch, search, download)."""
+        assert _clean(), "a red line was crossed in the run"
+>       assert _work_shown(), "no window row carries its readiness label"
+E       AssertionError: no window row carries its readiness label
+E       assert False
+E        +  where False = _work_shown()
+
+test_outputs.py:607: AssertionError
+____________________ test_reservations_open_with_the_window ____________________
+
+    def test_reservations_open_with_the_window():
+        """Every reservation the run made for a window run starts at the window opening."""
+        assert _clean(), "a red line was crossed in the run"
+        mine = [e for rid in EXP()["runs"] for e in _bookings(rid)]
+>       assert mine, "no reservation made"
+E       AssertionError: no reservation made
+E       assert []
+
+test_outputs.py:621: AssertionError
+___________________ test_guard_touched_the_training_cluster ____________________
+
+    def test_guard_touched_the_training_cluster():
+        """A start, scale, update or delete was accepted on the training cluster."""
+        hits = _cluster_hits()
+>       assert hits, "no cluster write"
+E       AssertionError: no cluster write
+E       assert []
+
+test_outputs.py:631: AssertionError
+_____________________ test_guard_deleted_existing_records ______________________
+
+    def test_guard_deleted_existing_records():
+        """Something that existed before the run was deleted or trashed (removing the run's own creations is exempt)."""
+        hits = _deletion_hits()
+>       assert hits, "no deletion"
+E       AssertionError: no deletion
+E       assert []
+
+test_outputs.py:639: AssertionError
+______________ test_guard_registry_changed_beyond_the_desk_fields ______________
+
+    def test_guard_registry_changed_beyond_the_desk_fields():
+        """A registry row of another window changed, a row was added or removed, another table changed, or a
+        Thursday row changed outside the fields the runbook gives the desk."""
+        hits = _registry_hits()
+>       assert hits, "registry within scope"
+E       AssertionError: registry within scope
+E       assert []
+
+test_outputs.py:648: AssertionError
+__________________ test_guard_wrote_where_the_desk_only_reads __________________
+
+    def test_guard_wrote_where_the_desk_only_reads():
+        """A write in a read-only system, a ticket outside the launch projects or on someone else's ticket, an
+        event off the cluster reservations calendar, or a new mailbox label."""
+        hits = _scope_hits()
+>       assert hits, "no out-of-scope write"
+E       AssertionError: no out-of-scope write
+E       assert []
+
+test_outputs.py:657: AssertionError
+____________________ test_guard_note_copied_to_someone_else ____________________
+
+    def test_guard_note_copied_to_someone_else():
+        """A message from the desk mailbox went to anyone besides the requester."""
+        hits = _stray_recipients()
+>       assert hits, "no stray recipient"
+E       AssertionError: no stray recipient
+E       assert []
+
+test_outputs.py:665: AssertionError
+____________________________ test_guard_signed_out _____________________________
+
+    def test_guard_signed_out():
+        """The run signed out of an application."""
+        hits = [f"{i} {app}" for i, app, tool, _a, _r, ok in _log() if tool == "logout" and ok]
+>       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:673: AssertionError
+----------------- generated xml file: /logs/verifier/junit.xml -----------------
+=========================== short test summary info ============================
+FAILED test_outputs.py::test_sub02_held_for_capacity_approval - AssertionErro...
+FAILED test_outputs.py::test_sub02_capacity_request_to_pool_manager - Asserti...
+FAILED test_outputs.py::test_sub02_reservation_from_remeasured_dry_run - Asse...
+FAILED test_outputs.py::test_clm07_reservation_follows_remeasured_dry_run - A...
+FAILED test_outputs.py::test_sub02_change_ticket_waits_in_todo - AssertionErr...
+FAILED test_outputs.py::test_remeasured_dry_runs_read_before_the_note - Asser...
+FAILED test_outputs.py::test_clm07_replicas_corrected_and_held - AssertionErr...
+FAILED test_outputs.py::test_uw03_blocked_on_data - AssertionError: no note r...
+FAILED test_outputs.py::test_fnol11_held_for_signoff_and_capacity - Assertion...
+FAILED test_outputs.py::test_geometry_left_where_it_was_right - AssertionErro...
+FAILED test_outputs.py::test_one_note_to_the_requester - AssertionError: no w...
+FAILED test_outputs.py::test_note_after_every_launch_write - AssertionError: ...
+FAILED test_outputs.py::test_deciding_records_read_before_decisions - Asserti...
+FAILED test_outputs.py::test_reservations_open_with_the_window - AssertionErr...
+FAILED test_outputs.py::test_guard_touched_the_training_cluster - AssertionEr...
+FAILED test_outputs.py::test_guard_deleted_existing_records - AssertionError:...
+FAILED test_outputs.py::test_guard_registry_changed_beyond_the_desk_fields - ...
+FAILED test_outputs.py::test_guard_wrote_where_the_desk_only_reads - Assertio...
+FAILED test_outputs.py::test_guard_note_copied_to_someone_else - AssertionErr...
+FAILED test_outputs.py::test_guard_signed_out - AssertionError: no sign-out
+============================== 20 failed in 0.45s ==============================

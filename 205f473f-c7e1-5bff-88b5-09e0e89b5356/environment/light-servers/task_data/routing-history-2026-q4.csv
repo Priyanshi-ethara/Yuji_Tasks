@@ -1,0 +1,37 @@
+week,group,title,culprit,routed_to,root_cause,routed_by,ticket
+2026-W40,FLEETD-2QA,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,Sade Akintola,SIM-400
+2026-W40,FLEETD-2RA,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,Sade Akintola,DSP-401
+2026-W40,FLEETD-2SA,panic: runtime error: slice bounds out of range,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,Telematics Ingest,slice bounds,Sade Akintola,ING-402
+2026-W40,FLEETD-2UA,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,Sade Akintola,DSP-404
+2026-W40,FLEETD-2VA,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,Sade Akintola,SIM-405
+2026-W40,FLEETD-2WA,panic: runtime error: slice bounds out of range,github.com/segmentio/kafka-go.(*Writer).partition,Platform Foundations,slice bounds,Sade Akintola,PLT-406
+2026-W41,FLEETD-2QB,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,Tobin Marsh,SIM-410
+2026-W41,FLEETD-2RB,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,Tobin Marsh,DSP-411
+2026-W41,FLEETD-2TB,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,Messaging,unbounded goroutine growth,Tobin Marsh,MSG-413
+2026-W41,FLEETD-2UB,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,Tobin Marsh,DSP-414
+2026-W41,FLEETD-2VB,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,Tobin Marsh,SIM-415
+2026-W41,FLEETD-2XB,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,Maps & Routing,send on closed channel,Tobin Marsh,MAP-417
+2026-W42,FLEETD-2QC,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,Tobin Marsh,SIM-420
+2026-W42,FLEETD-2SC,panic: runtime error: slice bounds out of range,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,Telematics Ingest,slice bounds,Tobin Marsh,ING-422
+2026-W42,FLEETD-2TC,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,Messaging,unbounded goroutine growth,Tobin Marsh,MSG-423
+2026-W42,FLEETD-2UC,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,Tobin Marsh,DSP-424
+2026-W42,FLEETD-2WC,panic: runtime error: slice bounds out of range,github.com/segmentio/kafka-go.(*Writer).partition,Platform Foundations,slice bounds,Tobin Marsh,PLT-426
+2026-W42,FLEETD-2XC,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,Maps & Routing,send on closed channel,Tobin Marsh,MAP-427
+2026-W43,FLEETD-2RD,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,Sade Akintola,DSP-431
+2026-W43,FLEETD-2SD,panic: runtime error: slice bounds out of range,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,Telematics Ingest,slice bounds,Sade Akintola,ING-432
+2026-W43,FLEETD-2TD,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,Messaging,unbounded goroutine growth,Sade Akintola,MSG-433
+2026-W43,FLEETD-2VD,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,Sade Akintola,SIM-435
+2026-W43,FLEETD-2WD,panic: runtime error: slice bounds out of range,github.com/segmentio/kafka-go.(*Writer).partition,Platform Foundations,slice bounds,Sade Akintola,PLT-436
+2026-W43,FLEETD-2XD,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,Maps & Routing,send on closed channel,Sade Akintola,MAP-437
+2026-W44,FLEETD-2QE,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,Tobin Marsh,SIM-440
+2026-W44,FLEETD-2RE,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,Tobin Marsh,DSP-441
+2026-W44,FLEETD-2SE,panic: runtime error: slice bounds out of range,git.pellam.io/fleetd/internal/ingest/decode.(*Frame).Payload,Telematics Ingest,slice bounds,Tobin Marsh,ING-442
+2026-W44,FLEETD-2UE,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,Tobin Marsh,DSP-444
+2026-W44,FLEETD-2VE,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,Tobin Marsh,SIM-445
+2026-W44,FLEETD-2WE,panic: runtime error: slice bounds out of range,github.com/segmentio/kafka-go.(*Writer).partition,Platform Foundations,slice bounds,Tobin Marsh,PLT-446
+2026-W45,FLEETD-2QF,panic: send on closed channel,git.pellam.io/fleetd/tools/simkit.(*Ticker).Reset,Sim Tools,send on closed channel,Tobin Marsh,SIM-450
+2026-W45,FLEETD-2RF,panic: assignment to entry in nil map,git.pellam.io/fleetd/internal/dispatch/assign.(*Board).Pin,Dispatch Core,nil map write,Tobin Marsh,DSP-451
+2026-W45,FLEETD-2TF,fatal error: runtime: out of memory,git.pellam.io/fleetd/internal/notify/fanout.(*Hub).Broadcast,Messaging,unbounded goroutine growth,Tobin Marsh,MSG-453
+2026-W45,FLEETD-2UF,panic: runtime error: invalid memory address or nil pointer dereference,git.pellam.io/fleetd/internal/manifest.(*ValidationError).Error,Dispatch Core,typed nil returned as error,Tobin Marsh,DSP-454
+2026-W45,FLEETD-2VF,panic: assignment to entry in nil map,git.pellam.io/fleetd/tools/simkit.(*Wheel).Schedule,Sim Tools,nil map write,Tobin Marsh,SIM-455
+2026-W45,FLEETD-2XF,panic: send on closed channel,git.pellam.io/fleetd/internal/geo/tiles.(*Cache).publish,Maps & Routing,send on closed channel,Tobin Marsh,MAP-457

@@ -1,0 +1,236 @@
+{
+ "users": [
+  {
+   "id": "11446498",
+   "name": "Ines Calloway",
+   "login": "ines.calloway@tarnwick-bio.example",
+   "role": "user",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10737418240,
+   "space_used": 52428800,
+   "max_upload_size": 2147483648,
+   "job_title": "QA Operations Lead",
+   "phone": "+44 1632 960 145",
+   "created_at": "2025-03-01T09:00:00Z"
+  },
+  {
+   "id": "11446533",
+   "name": "Priya Venkataraman",
+   "login": "priya.venkataraman@tarnwick-bio.example",
+   "role": "user",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10737418240,
+   "space_used": 104857600,
+   "max_upload_size": 2147483648,
+   "job_title": "Metrology & Calibration Lead",
+   "phone": "+44 1632 960 233",
+   "created_at": "2025-03-01T09:00:00Z"
+  }
+ ],
+ "folders": [
+  {
+   "id": "0",
+   "name": "All Files",
+   "description": "Root",
+   "created_at": "2025-03-01T09:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z",
+   "item_count": 2,
+   "parent_id": null,
+   "owner_id": "11446498"
+  },
+  {
+   "id": "450100",
+   "name": "Metrology",
+   "description": "Tarnwick Metrology Laboratory",
+   "created_at": "2025-03-01T09:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z",
+   "item_count": 2,
+   "parent_id": "0",
+   "owner_id": "11446533"
+  },
+  {
+   "id": "450101",
+   "name": "Logger calibration certificates 2026",
+   "description": "As-found certificates (MET-SOP-009). The only record of sensor-fault windows.",
+   "created_at": "2026-01-02T09:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z",
+   "item_count": 12,
+   "parent_id": "450100",
+   "owner_id": "11446533"
+  },
+  {
+   "id": "450102",
+   "name": "Metrology procedures",
+   "description": "Controlled copies",
+   "created_at": "2025-03-01T09:00:00Z",
+   "modified_at": "2026-10-01T12:00:00Z",
+   "item_count": 1,
+   "parent_id": "450100",
+   "owner_id": "11446533"
+  }
+ ],
+ "files": [
+  {
+   "id": "50450001",
+   "name": "calibration-certificate-BL-3301-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3301",
+   "size": 408,
+   "extension": "txt",
+   "sha1": "69ca275decd0a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450002",
+   "name": "calibration-certificate-BL-3307-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3307",
+   "size": 408,
+   "extension": "txt",
+   "sha1": "6afcea02289ea4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450003",
+   "name": "calibration-certificate-BL-3312-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3312",
+   "size": 408,
+   "extension": "txt",
+   "sha1": "64842d82c6c1a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450004",
+   "name": "calibration-certificate-BL-3315-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3315",
+   "size": 713,
+   "extension": "txt",
+   "sha1": "dacdd74d8425a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450005",
+   "name": "calibration-certificate-BL-3320-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3320",
+   "size": 616,
+   "extension": "txt",
+   "sha1": "491b0cc0d7e7a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450006",
+   "name": "calibration-certificate-TK9-5521-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger TK9-5521",
+   "size": 536,
+   "extension": "txt",
+   "sha1": "c10e7329feeba4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450007",
+   "name": "calibration-certificate-TK9-5530-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger TK9-5530",
+   "size": 409,
+   "extension": "txt",
+   "sha1": "ac03ba225aa0a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450008",
+   "name": "calibration-certificate-TK9-5534-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger TK9-5534",
+   "size": 409,
+   "extension": "txt",
+   "sha1": "89a818fdab80a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450009",
+   "name": "calibration-certificate-BL-3324-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3324",
+   "size": 408,
+   "extension": "txt",
+   "sha1": "fea403a92215a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450010",
+   "name": "calibration-certificate-BL-3329-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3329",
+   "size": 408,
+   "extension": "txt",
+   "sha1": "f32f98d0e088a4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50450011",
+   "name": "calibration-certificate-BL-3230-2026-11.txt",
+   "parent_id": "450101",
+   "owner_id": "11446533",
+   "description": "As-found certificate, logger BL-3230",
+   "size": 491,
+   "extension": "txt",
+   "sha1": "9029c44f2d1ba4b5c6d7e8f9012345601",
+   "created_at": "2026-11-08T12:00:00Z",
+   "modified_at": "2026-11-08T12:00:00Z"
+  },
+  {
+   "id": "50459901",
+   "name": "MET-SOP-009-rev6.md",
+   "parent_id": "450102",
+   "owner_id": "11446533",
+   "description": "Controlled copy",
+   "size": 869,
+   "extension": "md",
+   "sha1": "9f1e2d3c4b5a69788796a5b4c3d2e1f001234567",
+   "created_at": "2026-10-01T09:00:00Z",
+   "modified_at": "2026-10-01T09:00:00Z"
+  }
+ ],
+ "file_blobs": {
+  "calibration-certificate-BL-3301-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1206\nInstrument: temperature data logger BL-3301\nReturned from: lane HX-4 shipment HX4-41188\nDate of as-found check: 2026-11-06\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3307-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1212\nInstrument: temperature data logger BL-3307\nReturned from: lane HX-4 shipment HX4-41190\nDate of as-found check: 2026-11-06\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3312-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1208\nInstrument: temperature data logger BL-3312\nReturned from: lane HX-4 shipment HX4-41195\nDate of as-found check: 2026-11-06\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3315-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1211\nInstrument: temperature data logger BL-3315\nReturned from: lane HX-4 shipment HX4-41199\nDate of as-found check: 2026-11-06\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: errors -0.08 / +0.06 / +0.11 degC at rest.\nFlex test: FAIL - intermittent probe contact reproduced.\nDiagnostic trace: open-circuit events dated 2026-11-04 01:00 to 01:30 UTC.\nSENSOR-FAULT WINDOW: 2026-11-04T01:00Z to 2026-11-04T01:30Z inclusive. Readings logged inside this window are not valid measurements.\n\nAS-LEFT: probe replaced (S/N P-90217); PASS at all points.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3320-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1207\nInstrument: temperature data logger BL-3320\nReturned from: lane HX-4 shipment HX4-41203\nDate of as-found check: 2026-11-06\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: errors +0.04 / +0.12 / +0.09 degC. PASS.\nLogger self-check flags: FAULT flags 2026-11-04 22:30 to 23:15 UTC traced to the low-battery self-test; the measurement channel was within tolerance throughout.\nSENSOR-FAULT WINDOW: none recorded.\n\nAS-LEFT: battery replaced; PASS.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-TK9-5521-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1196\nInstrument: temperature data logger TK9-5521\nReturned from: lane HX-4 shipment HX4-41207\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.07 degC; unit configured degF).\nNote: upload of segment 2 interrupted by a carrier gateway restart on 2026-11-05; internal flash intact.\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-TK9-5530-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1196\nInstrument: temperature data logger TK9-5530\nReturned from: lane HX-4 shipment HX4-41211\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-TK9-5534-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1200\nInstrument: temperature data logger TK9-5534\nReturned from: lane HX-4 shipment HX4-41215\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3324-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1211\nInstrument: temperature data logger BL-3324\nReturned from: lane HX-4 shipment HX4-41219\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3329-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1216\nInstrument: temperature data logger BL-3329\nReturned from: lane HX-4 shipment HX4-41223\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points 0.0 / 5.0 / 25.0 degC: PASS (max error 0.10 degC).\nSENSOR-FAULT WINDOW: none recorded.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "calibration-certificate-BL-3230-2026-11.txt": "CALIBRATION CERTIFICATE - Tarnwick Metrology Laboratory\nCertificate no.: TML-CC-2026-1207\nInstrument: temperature data logger BL-3230\nReturned from: lane LX-2 shipment LX2-30874\nDate of as-found check: 2026-11-08\n\nAS-FOUND CHECK (before adjustment)\nReference points: PASS at rest.\nThermal shock test: FAIL - drift of +2.4 degC reproduced.\nSENSOR-FAULT WINDOW: 2026-11-04T22:30Z to 2026-11-04T23:15Z inclusive.\n\nAS-LEFT: logger retired.\n\nSigned: P. Venkataraman, Metrology & Calibration Lead\n",
+  "MET-SOP-009-rev6.md": "# MET-SOP-009 Returned-logger as-found checks\n\nRevision 6, Metrology, effective 1 October 2026.\n\n1. Any logger whose export carries a self-check flag, and one in ten others at random, is returned to Metrology after\n   the shipment.\n2. Metrology performs an as-found check before any adjustment and issues a calibration certificate to the Box folder\n   \"Logger calibration certificates 2026\". The certificate is the only record that declares a sensor-fault window.\n3. A sensor-fault window is declared only when the as-found check reproduces a measurement fault and the logger's\n   diagnostic trace dates it. A self-check flag with a passing as-found check is not a sensor fault.\n4. Certificates are identified by the logger id. Logger ids are reused across lanes only after retirement; check the\n   id character by character, BL-3320 and BL-3230 are different loggers.\n"
+ }
+}

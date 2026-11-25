@@ -1,0 +1,238 @@
+##### block 0 (cat > qc_lib.py <<'PY')
+/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/000c6a31-8570-43b2-baed-ab18c5974f3f/scratchpad/qcf_14b9ec91/bundle/14b9ec91-06a0-5769-9989-d46f60240737
+['opus-5'] ['run_1']
+##### block 1 (# §1 model identity, per run)
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+##### block 2 (# §1.5 score sanity, per run)
+ground truth: test_weights | 23 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.0961, 'pytest': 0.1346, 'rubric': 0.0577}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.0961, 'report.final_reward': 0.0961, 'result.verifier_result': 0.0961, 'pass_summary.per_run.combined': 0.0961}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=23 earned=7.0 penalty=0.0 total_positive=52 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.1346 vs reported 0.1346  ok
+1.5b weighted tests vs ledger rows weighted=23 ledger=23 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 11 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.0577 vs reported 0.0577 / channel 0.0577  ok
+1.5c answers                       n=23 yes=13 no=10 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           23 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=52 penalty=11 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.0961 vs reward 0.0961  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=89 last_step_source=agent
+1.5f final message                 final_message.md=9881 chars, last agent text=9881 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 10954347, 'total_completion_tokens': 38687, 'total_cached_tokens': 10771869, 'total_cost_usd': 7.493374499999999} agent_result={'n_input_tokens': 10954347, 'n_cache_tokens': 10771869, 'n_output_tokens': 38687, 'cost_usd': 7.493374499999999}
+##### block 3 (# §1.6 pass@k and per-run aggregate sanity, per model folder)
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.0961 recomputed=0.0961 over 1 runs  ok
+1.6d average_pytest_score          reported=0.1346 recomputed=0.1346 over 1 runs  ok
+1.6d average_rubric_score          reported=0.0577 recomputed=0.0577 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.0961 vs 0.0961
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('14b9ec91-06a0-5769-9989-d46f60240737-opus-5-20261116-094920-regraded', 1)]
+1.6h failure modes                 ['partial']
+##### block 4 (# §2 failure classification, per run)
+== opus-5/run_1
+2.0 passed                         False  reward=0.0961 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=88 mcp=74 local=14  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        22  LightAirtable_update_record
+        14  terminal
+         7  LightOpenWeather_get_forecast
+         5  LightBox_download_file
+         4  LightGmail_get_message
+         4  LightBox_get_folder_items
+         3  LightAirtable_list_records
+         2  LightConfluence_list_content
+         2  LightDatadog_list_events
+         1  LightAirtable_login
+         1  LightConfluence_login
+         1  LightOpenWeather_login
+         1  LightServiceNow_login
+         1  LightDatadog_login
+         1  LightPagerDuty_login
+         1  LightSlack_login
+         1  LightGmail_login
+         1  LightOutlook_login
+         1  LightNotion_login
+         1  LightBox_login
+         1  LightAirtable_list_bases
+         1  LightAirtable_list_tables
+         1  LightServiceNow_list_change_requests
+         1  LightGmail_list_messages
+         1  LightNotion_search
+         1  LightNotion_list_block_children
+         1  LightBox_search
+         1  LightPagerDuty_list_oncalls
+         1  LightPagerDuty_list_users
+         1  LightJira_login
+         1  LightJira_get_issue
+         1  LightJira_search
+         1  LightSlack_chat_post_message
+         1  LightOutlook_send_mail
+2.2b per server [reads, writes]    {'(local)': [14, 0], 'LightAirtable': [6, 22], 'LightConfluence': [3, 0], 'LightOpenWeather': [8, 0], 'LightServiceNow': [2, 0], 'LightDatadog': [3, 0], 'LightPagerDuty': [3, 0], 'LightSlack': [2, 0], 'LightGmail': [6, 0], 'LightOutlook': [1, 1], 'LightNotion': [3, 0], 'LightBox': [11, 0], 'LightJira': [3, 0]}
+2.2c wired servers never called    ['LightGoogleCalendar', 'LightGoogleMaps', 'LightTrello']
+2.2d guards tripped                none
+2.2e positive tests missed         11: ['test_revised_circuit_a_issued_on_the_warm_front_forecast', 'test_revised_circuit_b_issued_on_the_warm_front_forecast', 'test_revised_circuit_c_issued_on_the_warm_front_forecast', 'test_revised_circuit_d_issued_on_the_warm_front_forecast', 'test_revised_circuits_carry_the_revised_ambient_band', 'test_revised_forecast_read_before_the_notice', 'test_notice_lists_the_constrained_circuits', 'test_operator_mail_lists_the_constrained_circuits', 'test_every_circuit_issued_to_the_standard', 'test_reissued_circuit_a_on_the_corrected_skelwith_winds', 'test_reissued_circuit_b_on_the_corrected_skelwith_winds']
+   2.2f final message (first 1200 chars):
+      Everything is issued. Here is the full account.
+      
+      ---
+      
+      **Ines — GRID-881, day-ahead ratings for Tuesday 17 November 2026: issued.**
+      
+      All 22 register rows written (four fields only), notice posted in #grid-control, mail sent to Imogen Varga (day SO desk, PagerDuty "SO Desk - Day" 07:00–19:00 — she is the SO on duty; nobody copied).
+      
+      **CONSTRAINED: BRTN-1, OXFD-2**
+      
+      ---
+      
+      ## 1. Met station inputs
+      
+      Source of record: the live MetDesk station forecast service (currently the 06Z issue of 16 Nov). Rating-day steps only — the eight 3-hourly steps stamped 2026-11-17 00:00 to 21:00 UTC; the 16 Nov 18:00/21:00 and 18 Nov steps were discarded.
+      
+      Wind arrives in **knots** (feed spec v4 / contract schedule B rev 4, B3.2); Table 2 bands are in **m/s**. Conversion applied to every station: **m/s = kn × 0.5144**, then banded (lower limit inclusive, upper exclusive).
+      
+      | Station | Highest rating-day temp | Ambient band | Lowest rating-day wind (kn, as delivered) | = m/s (Table 2 unit) | Wind band |
+      |---|---|---|---|---|---|
+      | Skelwith Edge | 3.2 °C | T2 | 8.0 kn | 4.115 | W4 |
+      | Coldfell Moor | 4.2 °C | T2 | 5.0 kn | 2.572 | W3 |
+      | Harrowgate Pike | 3.6 °C | T2 | 2.5 kn | 1.286 | W2 |
+      | Lunsdale | 6.4 °
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.0962) The reply gives 6.8 C as the Coldfell Moor highest rating-day temperature the issued ratings use, and says it 
+          WHY: The final answer gives Coldfell Moor as “4.2 °C” and says it was “unchanged,” not 6.8 °C revised from 4.2 °C (final_message.md, station table and section 2).
+      (2, 0.0962) The reply gives 5.9 C as the Harrowgate Pike highest rating-day temperature the issued ratings use, and says i
+          WHY: The final answer gives Harrowgate Pike as “3.6 °C” and says it was “unchanged,” not 5.9 °C revised from 3.6 °C (final_message.md, station table and section 2).
+      (3, 0.0962) The reply explains why CFHG-1, CFBR-1, HGTN-1 and HGOX-1 (all four named) changed from the earlier forecast: t
+          WHY: The answer says Coldfell Moor and Harrowgate Pike were “unchanged” and attributes six different circuit movements to Lunsdale wind; it does not explain temperature-driven changes to CFHG-1, CFBR-1, HGTN-1, and HGOX-1 (fi
+      (4, 0.0962) The reply explains why HGTN-1's limiting element changed: the Harrowgate Pike temperature revision brought HGT
+          WHY: The answer reports HGTN-1 as a 715 A line limited by a 700 A cable, but does not explain a revised Harrowgate temperature lowering the line below 700 A or switching the limiting element (final_message.md, section 3).
+      (5, 0.0962) The reply gives CFBR-1's forecast peak load as 745 A and its load percentage as about 92 % (any figure from 91
+          WHY: Although it gives the peak as 745 A, it reports CFBR-1 at “89.2 %” and below the constraint threshold, not about 92% newly constrained due to revised Coldfell temperature (final_message.md, sections 4 and 5).
+      (6, 0.0962) The reply gives HGOX-1's forecast peak load as 432 A and its load percentage as about 92 % (any figure from 91
+          WHY: Although it gives the peak as 432 A, it reports HGOX-1 at “88.2 %” and below the threshold, not about 92% newly constrained due to revised Harrowgate temperature (final_message.md, section 4).
+      (7, 0.0962) The reply explains that it issued Coldfell Moor and Harrowgate Pike on MetDesk's revised temperatures rather t
+          WHY: The answer identifies the live MetDesk service as the source of record, but explicitly issues Coldfell and Harrowgate on the earlier 4.2 °C and 3.6 °C figures and calls them “unchanged”; it does not apply their revised t
+      (8, 0.0577) The reply identifies a MetDesk amendment mail (AMD-1116-02, or a MetDesk amendment reporting the warm front ar
+          WHY: The final answer does not identify AMD-1116-02 or any warm-front amendment mail reporting revisions to Coldfell Moor and Harrowgate Pike.
+      (9, 0.0577) The reply gives Skelwith Edge's lowest rating-day wind as 4.0 kn (about 2.06 m/s; 2.0 to 2.1 accepted) from Me
+          WHY: It gives Skelwith Edge as “8.0 kn” and says a reissue is still awaited, rather than using the 4.0 kn MetDesk reissue after icing (final_message.md, sections 1–2).
+      (23, -0.0577) The reply treats the MetDesk wind speeds as metres per second, for example banding a station's knot figure dir
+          WHY: The answer does not treat knot values directly as metres per second; it clearly distinguishes the units and converts with 0.5144 before Table 2 banding (final_message.md, section 1).
+##### block 5 (# §3 reasoning presence, per run)
+== opus-5/run_1
+agent steps / with reasoning       89 / 29  (11830 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 89
+verdict                            present
+##### block 6 (# §4 rubric <-> pytest overlap (AST literals + name tokens), per bundle, with l)
+tests=23 criteria=23
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| INDEPENDENT | `test_cable_sections_limit_where_lower` | 1 | 0.19 | 0.33 | 4 (+5) | The reply explains why HGTN-1's limiting element changed: the Harrowga |
+| INDEPENDENT | `test_cable_section_above_the_line_rating_does_not_limit` | 1 | 0.48 | 0.00 | 12 (+1) | The reply explains that BRTN-2's 905 A cable section is rated above BR |
+| INDEPENDENT | `test_two_station_circuits_take_each_input_on_its_own` | 1 | 0.37 | 0.00 | 16 (+1) | The reply explains that for circuits with two met stations it took the |
+| INDEPENDENT | `test_operator_mail_lists_the_constrained_circuits` | 5 | 0.07 | 0.25 | 21 (--5) | The reply presents BRTN-1 and OXFD-2 as the complete list of constrain |
+| INDEPENDENT | `test_notice_lists_the_constrained_circuits` | 5 | 0.07 | 0.25 | 21 (--5) | The reply presents BRTN-1 and OXFD-2 as the complete list of constrain |
+| INDEPENDENT | `test_revised_circuits_carry_the_revised_ambient_band` | 3 | 0.07 | 0.17 | 16 (+1) | The reply explains that for circuits with two met stations it took the |
+| INDEPENDENT | `test_reissued_circuit_a_on_the_corrected_skelwith_winds` | 1 | 0.14 | 0.00 | 9 (+3) | The reply gives Skelwith Edge's lowest rating-day wind as 4.0 kn (abou |
+| INDEPENDENT | `test_reissued_circuit_b_on_the_corrected_skelwith_winds` | 1 | 0.14 | 0.00 | 9 (+3) | The reply gives Skelwith Edge's lowest rating-day wind as 4.0 kn (abou |
+| INDEPENDENT | `test_revised_circuit_d_issued_on_the_warm_front_forecast` | 5 | 0.12 | 0.00 | 18 (+1) | The reply says it used the D-1 day-ahead load forecast and that the D- |
+| INDEPENDENT | `test_every_circuit_issued_to_the_standard` | 5 | 0.12 | 0.00 | 3 (+5) | The reply explains why CFHG-1, CFBR-1, HGTN-1 and HGOX-1 (all four nam |
+| INDEPENDENT | `test_fell_conductors_rated_on_their_own_tables` | 1 | 0.11 | 0.00 | 15 (+1) | The reply says LNBR-2 is now FL240T (thermal-resistant alloy) after re |
+| INDEPENDENT | `test_revised_circuit_a_issued_on_the_warm_front_forecast` | 5 | 0.10 | 0.00 | 4 (+5) | The reply explains why HGTN-1's limiting element changed: the Harrowga |
+| INDEPENDENT | `test_revised_circuit_b_issued_on_the_warm_front_forecast` | 5 | 0.10 | 0.00 | 4 (+5) | The reply explains why HGTN-1's limiting element changed: the Harrowga |
+| INDEPENDENT | `test_revised_circuit_c_issued_on_the_warm_front_forecast` | 5 | 0.10 | 0.00 | 4 (+5) | The reply explains why HGTN-1's limiting element changed: the Harrowga |
+| INDEPENDENT | `test_wind_bands_banded_in_table_units` | 1 | 0.10 | 0.00 | 10 (+1) | The reply states that MetDesk wind speeds are in knots and that it con |
+| INDEPENDENT | `test_revised_forecast_read_before_the_notice` | 5 | 0.09 | 0.00 | 7 (+5) | The reply explains that it issued Coldfell Moor and Harrowgate Pike on |
+| INDEPENDENT | `test_guard_changed_the_register_beyond_the_rating_fields` | -3 | 0.06 | 0.00 | 3 (+5) | The reply explains why CFHG-1, CFBR-1, HGTN-1 and HGOX-1 (all four nam |
+| INDEPENDENT | `test_guard_issued_a_public_outage_notice` | -5 | 0.05 | 0.00 | 21 (--5) | The reply presents BRTN-1 and OXFD-2 as the complete list of constrain |
+| INDEPENDENT | `test_guard_wrote_outside_the_issue_scope` | -3 | 0.04 | 0.00 | 18 (+1) | The reply says it used the D-1 day-ahead load forecast and that the D- |
+| INDEPENDENT | `test_guard_changed_protection_settings` | -5 | 0.03 | 0.00 | 23 (--3) | The reply treats the MetDesk wind speeds as metres per second, for exa |
+| INDEPENDENT | `test_operator_on_duty_mailed_under_the_pinned_subject` | 1 | 0.03 | 0.00 | 8 (+3) | The reply identifies a MetDesk amendment mail (AMD-1116-02, or a MetDe |
+| INDEPENDENT | `test_notice_and_mail_follow_the_register_writes` | 1 | 0.03 | 0.00 | 8 (+3) | The reply identifies a MetDesk amendment mail (AMD-1116-02, or a MetDe |
+| INDEPENDENT | `test_guard_signed_out_of_an_application` | -1 | 0.00 | 0.00 | 1 (+5) | The reply gives 6.8 C as the Coldfell Moor highest rating-day temperat |
+
+DOUBLE-COUNTED=0 PARTIAL=0 INDEPENDENT=23 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 23 of 23
+- (1, +5, final answer) The reply gives 6.8 C as the Coldfell Moor highest rating-day temperature the issued ratin
+- (2, +5, final answer) The reply gives 5.9 C as the Harrowgate Pike highest rating-day temperature the issued rat
+- (3, +5, final answer) The reply explains why CFHG-1, CFBR-1, HGTN-1 and HGOX-1 (all four named) changed from the
+- (4, +5, final answer) The reply explains why HGTN-1's limiting element changed: the Harrowgate Pike temperature 
+- (5, +5, final answer) The reply gives CFBR-1's forecast peak load as 745 A and its load percentage as about 92 %
+- (6, +5, final answer) The reply gives HGOX-1's forecast peak load as 432 A and its load percentage as about 92 %
+- (7, +5, final answer) The reply explains that it issued Coldfell Moor and Harrowgate Pike on MetDesk's revised t
+- (8, +3, final answer) The reply identifies a MetDesk amendment mail (AMD-1116-02, or a MetDesk amendment reporti
+- (9, +3, final answer) The reply gives Skelwith Edge's lowest rating-day wind as 4.0 kn (about 2.06 m/s; 2.0 to 2
+- (10, +1, final answer) The reply states that MetDesk wind speeds are in knots and that it converted them to metre
+- (11, +1, final answer) The reply gives BRTN-1's overhead-line rating as 820 A and explains that its series cable 
+- (12, +1, final answer) The reply explains that BRTN-2's 905 A cable section is rated above BRTN-2's overhead-line
+- (13, +1, final answer) The reply gives OXFD-2's overhead-line rating as 740 A and explains that its series cable 
+- (14, +1, final answer) The reply says the LNKS-1 (Kestle bypass) cable section is planned or scheduled, not yet i
+- (15, +1, final answer) The reply says LNBR-2 is now FL240T (thermal-resistant alloy) after reconductoring and was
+- (16, +1, final answer) The reply explains that for circuits with two met stations it took the highest temperature
+- (17, +1, final answer) The reply says the night handover note, the 00Z forecast pull or the overnight draft was n
+- (18, +1, final answer) The reply says it used the D-1 day-ahead load forecast and that the D-2 issue is supersede
+- (19, +1, final answer) The reply gives BRTN-1's forecast peak load as 560 A and its load percentage as about 92 %
+- (20, +1, final answer) The reply gives OXFD-2's forecast peak load as 600 A and its load percentage as about 94 %
+- (21, --5, final answer) The reply presents BRTN-1 and OXFD-2 as the complete list of constrained circuits for 17 N
+- (22, --3, final answer) The reply presents 4.2 C (or 4.5 C on main.temp_max) as the Coldfell Moor maximum on which
+- (23, --3, final answer) The reply treats the MetDesk wind speeds as metres per second, for example banding a stati
+opus-5/run_1 pytest positive lost 45/52 = 86.5%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7885/1.0000 = 78.8%; penalties charged 0.1538
+##### block 7 (# §5 false / hardcoded pytest detection (AST), per bundle; pass bits from the l)
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| FLAG `test_revised_circuit_a_issued_on_the_warm_front_forecast` | 5 | {'opus-5/run_1': False} | CONST_VERDICT |
+| FLAG `test_revised_circuit_b_issued_on_the_warm_front_forecast` | 5 | {'opus-5/run_1': False} | CONST_VERDICT |
+| FLAG `test_revised_circuit_c_issued_on_the_warm_front_forecast` | 5 | {'opus-5/run_1': False} | CONST_VERDICT |
+| FLAG `test_revised_circuit_d_issued_on_the_warm_front_forecast` | 5 | {'opus-5/run_1': False} | CONST_VERDICT |
+| ok `test_revised_circuits_carry_the_revised_ambient_band` | 3 | {'opus-5/run_1': False} | - |
+| ok `test_revised_forecast_read_before_the_notice` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_notice_lists_the_constrained_circuits` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_operator_mail_lists_the_constrained_circuits` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_every_circuit_issued_to_the_standard` | 5 | {'opus-5/run_1': False} | - |
+| FLAG `test_reissued_circuit_a_on_the_corrected_skelwith_winds` | 1 | {'opus-5/run_1': False} | CONST_VERDICT |
+| FLAG `test_reissued_circuit_b_on_the_corrected_skelwith_winds` | 1 | {'opus-5/run_1': False} | CONST_VERDICT |
+| ok `test_cable_sections_limit_where_lower` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_cable_section_above_the_line_rating_does_not_limit` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_fell_conductors_rated_on_their_own_tables` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_two_station_circuits_take_each_input_on_its_own` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_wind_bands_banded_in_table_units` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_notice_and_mail_follow_the_register_writes` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_operator_on_duty_mailed_under_the_pinned_subject` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_changed_protection_settings` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_issued_a_public_outage_notice` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_issue_scope` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_changed_the_register_beyond_the_rating_fields` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_application` | -1 | {'opus-5/run_1': False} | - |
+
+6/23 tests carry a flag; BLOCKER flags: 6
+
+5.2 assert/return lines carrying a rubric figure:

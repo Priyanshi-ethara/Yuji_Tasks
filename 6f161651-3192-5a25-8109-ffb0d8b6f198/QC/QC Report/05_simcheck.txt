@@ -1,0 +1,59 @@
+### python3 /Users/mac/Desktop/Trinity_Final/_kit/simcheck.py /Users/mac/Desktop/Trinity_Final/_kit/batch16 --task 6f161651-3192-5a25-8109-ffb0d8b6f198
+== instruction: 15 tasks, max cosine 0.116
+        6f161651 ~ d47feee8: cosine 0.116, shared 6-grams 8
+        6f161651 ~ 93feedc5: cosine 0.111, shared 6-grams 2
+        6f161651 ~ 79e829e9: cosine 0.099, shared 6-grams 2
+        13444412 ~ 6f161651: cosine 0.096, shared 6-grams 5
+        6332b1ca ~ 6f161651: cosine 0.096, shared 6-grams 0
+        6f161651 ~ ecbf6af4: cosine 0.096, shared 6-grams 7
+        205f473f ~ 6f161651: cosine 0.095, shared 6-grams 1
+        6f161651 ~ a11f8d26: cosine 0.093, shared 6-grams 2
+== rubric: 15 tasks, max cosine 0.082
+        6f161651 ~ a11f8d26: cosine 0.082, shared 6-grams 0
+        6f161651 ~ d47feee8: cosine 0.080, shared 6-grams 0
+        54a407eb ~ 6f161651: cosine 0.079, shared 6-grams 1
+        6f161651 ~ 8fd816e9: cosine 0.071, shared 6-grams 0
+        6f161651 ~ ecbf6af4: cosine 0.067, shared 6-grams 1
+        6332b1ca ~ 6f161651: cosine 0.064, shared 6-grams 1
+        6f161651 ~ cba95ebc: cosine 0.062, shared 6-grams 0
+        40ea4665 ~ 6f161651: cosine 0.061, shared 6-grams 0
+== pytest: 15 tasks, max cosine 0.162
+        6f161651 ~ d47feee8: cosine 0.162, shared 6-grams 237
+        6f161651 ~ a11f8d26: cosine 0.155, shared 6-grams 156
+        6f161651 ~ 93feedc5: cosine 0.155, shared 6-grams 164
+        6f161651 ~ 8fd816e9: cosine 0.151, shared 6-grams 152
+        6f161651 ~ 79e829e9: cosine 0.149, shared 6-grams 140
+        6f161651 ~ a6901ded: cosine 0.139, shared 6-grams 154
+        40ea4665 ~ 6f161651: cosine 0.138, shared 6-grams 154
+        6332b1ca ~ 6f161651: cosine 0.137, shared 6-grams 133
+0 flagged pair(s)
+
+### python3 /Users/mac/Desktop/Trinity_Final/_kit/simcheck.py /Users/mac/Desktop/Trinity_Final/_kit/batch75 --task 6f161651-3192-5a25-8109-ffb0d8b6f198
+== instruction: 75 tasks, max cosine 0.074
+        6f161651 ~ d47feee8: cosine 0.074, shared 6-grams 8
+        6f161651 ~ 93feedc5: cosine 0.069, shared 6-grams 2
+        14178c1e ~ 6f161651: cosine 0.067, shared 6-grams 0
+        21cb1222 ~ 6f161651: cosine 0.065, shared 6-grams 5
+        6f161651 ~ 79e829e9: cosine 0.064, shared 6-grams 2
+        33869195 ~ 6f161651: cosine 0.063, shared 6-grams 2
+        141f094a ~ 6f161651: cosine 0.063, shared 6-grams 3
+        6f161651 ~ eed0c42e: cosine 0.062, shared 6-grams 8
+== rubric: 75 tasks, max cosine 0.051
+        6f161651 ~ a11f8d26: cosine 0.051, shared 6-grams 0
+        6f161651 ~ c8029e22: cosine 0.050, shared 6-grams 0
+        6f161651 ~ fb23ce1b: cosine 0.049, shared 6-grams 0
+        3982ac94 ~ 6f161651: cosine 0.048, shared 6-grams 0
+        6f161651 ~ d47feee8: cosine 0.047, shared 6-grams 0
+        6f161651 ~ ad3472da: cosine 0.047, shared 6-grams 1
+        51cf95d9 ~ 6f161651: cosine 0.046, shared 6-grams 0
+        14178c1e ~ 6f161651: cosine 0.044, shared 6-grams 0
+== pytest: 75 tasks, max cosine 0.103
+        6f161651 ~ 93feedc5: cosine 0.103, shared 6-grams 164
+        6f161651 ~ a11f8d26: cosine 0.102, shared 6-grams 156
+        6f161651 ~ d47feee8: cosine 0.102, shared 6-grams 237
+        1c824257 ~ 6f161651: cosine 0.098, shared 6-grams 180
+        6f161651 ~ 79e829e9: cosine 0.094, shared 6-grams 140
+        6f161651 ~ e23b2dcc: cosine 0.094, shared 6-grams 204
+        6f161651 ~ fbbea336: cosine 0.093, shared 6-grams 196
+        141f094a ~ 6f161651: cosine 0.091, shared 6-grams 197
+0 flagged pair(s)

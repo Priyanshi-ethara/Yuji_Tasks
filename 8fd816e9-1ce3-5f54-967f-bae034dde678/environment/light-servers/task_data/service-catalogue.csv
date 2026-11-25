@@ -1,0 +1,33 @@
+service,domain,owner_team,criticality,runtime,customer_facing,repo,oncall_rotation,pagerduty_service,slo_registered,notes
+ledger-posting,Ledger,Ledger Platform,Critical,kotlin,Y,bwp/ledger-posting,led-primary,PBWS001,yes,SLO registered
+ledger-balance-read,Ledger,Ledger Platform,High,kotlin,Y,bwp/ledger-balance-read,led-primary,PBWS002,yes,SLO registered
+journal-export,Ledger,Ledger Platform,High,kotlin,Y,bwp/journal-export,led-primary,PBWS003,yes,SLO registered
+fx-rates-feed,Ledger,Ledger Platform,Medium,kotlin,Y,bwp/fx-rates-feed,led-primary,PBWS004,yes,SLO registered
+statement-render,Ledger,Ledger Platform,Low,kotlin,Y,bwp/statement-render,led-primary,PBWS005,yes,SLO registered
+card-auth-gateway,Acquiring,Acquiring,Critical,go,Y,bwp/card-auth-gateway,acq-primary,PBWS006,yes,SLO registered
+tokenisation-vault,Acquiring,Acquiring,Critical,go,Y,bwp/tokenisation-vault,acq-primary,PBWS007,yes,SLO registered
+3ds-challenge,Acquiring,Acquiring,High,go,Y,bwp/3ds-challenge,acq-primary,PBWS008,yes,SLO registered
+merchant-onboarding-api,Acquiring,Acquiring,Medium,go,Y,bwp/merchant-onboarding-api,acq-primary,PBWS009,yes,SLO registered
+chargeback-intake,Acquiring,Acquiring,Medium,go,Y,bwp/chargeback-intake,acq-primary,PBWS010,yes,SLO registered
+payout-scheduler,Payouts,Payouts,Critical,kotlin,Y,bwp/payout-scheduler,pay-primary,PBWS011,yes,SLO registered
+bank-file-dispatch,Payouts,Payouts,Critical,kotlin,Y,bwp/bank-file-dispatch,pay-primary,PBWS012,yes,SLO registered
+payee-verification,Payouts,Payouts,High,kotlin,Y,bwp/payee-verification,pay-primary,PBWS013,yes,SLO registered
+payout-status-api,Payouts,Payouts,Medium,kotlin,Y,bwp/payout-status-api,pay-primary,PBWS014,yes,SLO registered
+sweep-reconciler,Payouts,Payouts,High,kotlin,Y,bwp/sweep-reconciler,pay-primary,PBWS015,yes,SLO registered
+fraud-score,Risk,Risk Engineering,Critical,python,Y,bwp/fraud-score,rsk-primary,PBWS016,yes,SLO registered
+velocity-limits,Risk,Risk Engineering,High,python,Y,bwp/velocity-limits,rsk-primary,PBWS017,yes,SLO registered
+sanctions-screen,Risk,Risk Engineering,Critical,python,Y,bwp/sanctions-screen,rsk-primary,PBWS018,yes,SLO registered
+dispute-evidence,Risk,Risk Engineering,Medium,python,Y,bwp/dispute-evidence,rsk-primary,PBWS019,yes,SLO registered
+kyc-document-check,Risk,Risk Engineering,Critical,python,Y,bwp/kyc-document-check,rsk-primary,PBWS020,yes,SLO registered
+ledger-archiver,Ledger,Ledger Platform,Low,kotlin,N,bwp/ledger-archiver,led-secondary,,no,no SLO registered
+ledger-admin-ui,Ledger,Ledger Platform,Low,typescript,N,bwp/ledger-admin-ui,led-secondary,,no,no SLO registered
+fx-hedge-planner,Ledger,Ledger Platform,Medium,python,N,bwp/fx-hedge-planner,led-secondary,,no,no SLO registered
+acquirer-bin-sync,Acquiring,Acquiring,Medium,go,N,bwp/acquirer-bin-sync,acq-secondary,,no,no SLO registered
+terminal-config,Acquiring,Acquiring,Low,go,N,bwp/terminal-config,acq-secondary,,no,no SLO registered
+payout-notifier,Payouts,Payouts,Medium,kotlin,Y,bwp/payout-notifier,pay-secondary,,yes,no SLO registered
+payout-fee-calc,Payouts,Payouts,High,kotlin,N,bwp/payout-fee-calc,pay-secondary,,no,no SLO registered
+rules-authoring-ui,Risk,Risk Engineering,Low,typescript,N,bwp/rules-authoring-ui,ris-secondary,,no,no SLO registered
+case-manager,Risk,Risk Engineering,Medium,java,N,bwp/case-manager,ris-secondary,,no,no SLO registered
+edge-router,Platform,Platform,Critical,rust,Y,bwp/edge-router,platform-primary,,yes,no SLO registered
+boardctl,Platform,Platform,Low,go,N,bwp/boardctl,platform-primary,,no,no SLO registered
+status-page-cms,Customer Comms,Customer Comms,Medium,php,Y,bwp/status-page-cms,cus-secondary,,yes,no SLO registered

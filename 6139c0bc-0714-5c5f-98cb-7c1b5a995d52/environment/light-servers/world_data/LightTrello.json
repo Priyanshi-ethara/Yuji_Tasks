@@ -1,0 +1,139 @@
+{
+ "members": [
+  {
+   "id": "5f1a0000000000000000t021",
+   "fullName": "Rafael Okonjo",
+   "username": "rafaelokonjo",
+   "email": "rafael.okonjo@talvik.example"
+  },
+  {
+   "id": "5f1a0000000000000000t022",
+   "fullName": "Inês Carvalho",
+   "username": "inescarvalho",
+   "email": "ines.carvalho@talvik.example"
+  }
+ ],
+ "boards": [
+  {
+   "id": "60b10000000000000000t021",
+   "name": "Decarbonisation projects 2026",
+   "desc": "Renewable procurement and on-site projects",
+   "closed": false,
+   "id_organization": "5e0a0000000000000000t021",
+   "url": "https://trello.com/b/t02decarb/decarbonisation-projects-2026",
+   "member_ids": [
+    "5f1a0000000000000000t021",
+    "5f1a0000000000000000t022"
+   ],
+   "prefs": {
+    "permissionLevel": "org"
+   }
+  }
+ ],
+ "lists": [
+  {
+   "id": "61c10000000000000000t021",
+   "id_board": "60b10000000000000000t021",
+   "name": "Live",
+   "closed": false,
+   "pos": 1
+  },
+  {
+   "id": "61c10000000000000000t022",
+   "id_board": "60b10000000000000000t021",
+   "name": "In procurement",
+   "closed": false,
+   "pos": 2
+  },
+  {
+   "id": "61c10000000000000000t023",
+   "id_board": "60b10000000000000000t021",
+   "name": "Ideas",
+   "closed": false,
+   "pos": 3
+  }
+ ],
+ "cards": [
+  {
+   "id": "62d10000000000000000t021",
+   "name": "Columbia Ridge sleeved PPA — Kent",
+   "desc": "Live since Oct 2023. Bundled RECs to our NRR account quarterly.",
+   "id_board": "60b10000000000000000t021",
+   "id_list": "61c10000000000000000t021",
+   "pos": 1000.0,
+   "due": null,
+   "closed": false,
+   "member_ids": [
+    "5f1a0000000000000000t021"
+   ],
+   "labels": [
+    "ppa"
+   ]
+  },
+  {
+   "id": "62d10000000000000000t022",
+   "name": "Lone Mesa vPPA — Plano hedge",
+   "desc": "Financial hedge signed Dec 2024. Marketing wants to call Plano 'solar powered' — check with sustainability first.",
+   "id_board": "60b10000000000000000t021",
+   "id_list": "61c10000000000000000t021",
+   "pos": 2000.0,
+   "due": null,
+   "closed": false,
+   "member_ids": [
+    "5f1a0000000000000000t021"
+   ],
+   "labels": [
+    "ppa",
+    "hedge"
+   ]
+  },
+  {
+   "id": "62d10000000000000000t023",
+   "name": "Fenwick Moor PPA — GB from Apr 2027",
+   "desc": "REGO-bundled. Covers Coventry and Leeds from FY2027.",
+   "id_board": "60b10000000000000000t021",
+   "id_list": "61c10000000000000000t022",
+   "pos": 3000.0,
+   "due": "2027-04-01T00:00:00Z",
+   "closed": false,
+   "member_ids": [
+    "5f1a0000000000000000t022"
+   ],
+   "labels": [
+    "ppa"
+   ]
+  },
+  {
+   "id": "62d10000000000000000t024",
+   "name": "Waco rooftop PV 1.2 MWp",
+   "desc": "Feasibility; on-site generation is not purchased electricity.",
+   "id_board": "60b10000000000000000t021",
+   "id_list": "61c10000000000000000t023",
+   "pos": 4000.0,
+   "due": null,
+   "closed": false,
+   "member_ids": [
+    "5f1a0000000000000000t021"
+   ],
+   "labels": [
+    "onsite"
+   ]
+  },
+  {
+   "id": "62d10000000000000000t025",
+   "name": "Leeds — buy REGOs instead of GOs",
+   "desc": "Steering committee 17 Sep: GOs not valid in GB.",
+   "id_board": "60b10000000000000000t021",
+   "id_list": "61c10000000000000000t022",
+   "pos": 5000.0,
+   "due": null,
+   "closed": false,
+   "member_ids": [
+    "5f1a0000000000000000t022"
+   ],
+   "labels": [
+    "certificates"
+   ]
+  }
+ ]
+}

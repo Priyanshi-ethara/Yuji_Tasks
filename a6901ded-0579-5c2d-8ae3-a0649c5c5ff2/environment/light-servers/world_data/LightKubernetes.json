@@ -1,0 +1,337 @@
+{
+ "namespaces": [
+  {
+   "name": "ft-pool-north",
+   "status": "Active",
+   "labels": {
+    "sorrel.ai/pool": "north",
+    "sorrel.ai/purpose": "fine-tune"
+   },
+   "created_time": "2025-06-01T09:00:00Z"
+  },
+  {
+   "name": "ft-pool-south",
+   "status": "Active",
+   "labels": {
+    "sorrel.ai/pool": "south",
+    "sorrel.ai/purpose": "fine-tune"
+   },
+   "created_time": "2025-06-01T09:00:00Z"
+  },
+  {
+   "name": "ml-serving",
+   "status": "Active",
+   "labels": {
+    "sorrel.ai/purpose": "serving"
+   },
+   "created_time": "2025-06-01T09:00:00Z"
+  }
+ ],
+ "deployments": [
+  {
+   "name": "ft-clm-07-trainer",
+   "namespace": "ft-pool-north",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm80",
+   "strategy": "Recreate",
+   "created_time": "2026-11-10T10:00:00Z"
+  },
+  {
+   "name": "ft-uw-03-trainer",
+   "namespace": "ft-pool-north",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm80",
+   "strategy": "Recreate",
+   "created_time": "2026-11-10T10:00:00Z"
+  },
+  {
+   "name": "ft-fnol-11-trainer",
+   "namespace": "ft-pool-south",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm90",
+   "strategy": "Recreate",
+   "created_time": "2026-11-10T10:00:00Z"
+  },
+  {
+   "name": "ft-sub-02-trainer",
+   "namespace": "ft-pool-north",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm80",
+   "strategy": "Recreate",
+   "created_time": "2026-11-10T10:00:00Z"
+  },
+  {
+   "name": "ft-clm-07a-trainer",
+   "namespace": "ft-pool-north",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm80",
+   "strategy": "Recreate",
+   "created_time": "2026-11-12T10:00:00Z"
+  },
+  {
+   "name": "ft-risk-05-trainer",
+   "namespace": "ft-pool-north",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/ml/ft-launcher:4.2.1-cu124-sm80",
+   "strategy": "Recreate",
+   "created_time": "2026-11-13T10:00:00Z"
+  },
+  {
+   "name": "pricing-backfill-runner",
+   "namespace": "ft-pool-south",
+   "replicas": 0,
+   "available_replicas": 0,
+   "ready_replicas": 0,
+   "updated_replicas": 0,
+   "image": "registry.sorrel-insurance.example/pricing/batch-scorer:7.3-cu124-sm90",
+   "strategy": "Recreate",
+   "created_time": "2026-11-10T12:00:00Z"
+  },
+  {
+   "name": "claims-summariser-canary",
+   "namespace": "ml-serving",
+   "replicas": 2,
+   "available_replicas": 2,
+   "ready_replicas": 2,
+   "updated_replicas": 2,
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "strategy": "RollingUpdate",
+   "created_time": "2026-11-05T14:00:00Z"
+  },
+  {
+   "name": "fnol-triage-serving",
+   "namespace": "ml-serving",
+   "replicas": 3,
+   "available_replicas": 3,
+   "ready_replicas": 3,
+   "updated_replicas": 3,
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "strategy": "RollingUpdate",
+   "created_time": "2026-10-30T14:00:00Z"
+  }
+ ],
+ "pods": [
+  {
+   "name": "claims-summariser-canary-7d9f-0",
+   "namespace": "ml-serving",
+   "status": "Running",
+   "phase": "Running",
+   "node": "gpu-north-01",
+   "pod_ip": "10.42.1.11",
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "container_name": "serve",
+   "restart_count": 0,
+   "ready": true,
+   "created_time": "2026-11-05T14:02:00Z"
+  },
+  {
+   "name": "claims-summariser-canary-7d9f-1",
+   "namespace": "ml-serving",
+   "status": "Running",
+   "phase": "Running",
+   "node": "gpu-north-02",
+   "pod_ip": "10.42.1.12",
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "container_name": "serve",
+   "restart_count": 0,
+   "ready": true,
+   "created_time": "2026-11-05T14:02:00Z"
+  },
+  {
+   "name": "fnol-triage-serving-5c2a-0",
+   "namespace": "ml-serving",
+   "status": "Running",
+   "phase": "Running",
+   "node": "gpu-north-01",
+   "pod_ip": "10.42.1.21",
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "container_name": "serve",
+   "restart_count": 1,
+   "ready": true,
+   "created_time": "2026-10-30T14:02:00Z"
+  },
+  {
+   "name": "fnol-triage-serving-5c2a-1",
+   "namespace": "ml-serving",
+   "status": "Running",
+   "phase": "Running",
+   "node": "gpu-north-02",
+   "pod_ip": "10.42.1.22",
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "container_name": "serve",
+   "restart_count": 0,
+   "ready": true,
+   "created_time": "2026-10-30T14:02:00Z"
+  },
+  {
+   "name": "fnol-triage-serving-5c2a-2",
+   "namespace": "ml-serving",
+   "status": "Running",
+   "phase": "Running",
+   "node": "gpu-north-03",
+   "pod_ip": "10.42.1.23",
+   "image": "registry.sorrel-insurance.example/ml/serve:2.9-cu124-sm80",
+   "container_name": "serve",
+   "restart_count": 0,
+   "ready": true,
+   "created_time": "2026-10-30T14:02:00Z"
+  }
+ ],
+ "nodes": [
+  {
+   "name": "gpu-north-01",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-north-02",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-north-03",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-north-04",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-south-01",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-south-02",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-south-03",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  },
+  {
+   "name": "gpu-south-04",
+   "status": "Ready",
+   "roles": [
+    "worker"
+   ],
+   "capacity": {
+    "cpu": "96",
+    "memory": "1536Gi"
+   },
+   "allocatable": {
+    "cpu": "94",
+    "memory": "1500Gi"
+   }
+  }
+ ],
+ "services": [
+  {
+   "name": "serve-gateway",
+   "namespace": "ml-serving",
+   "type": "ClusterIP",
+   "cluster_ip": "10.96.40.10",
+   "ports": [
+    {
+     "port": 8080,
+     "protocol": "TCP"
+    }
+   ],
+   "selector": {
+    "app": "serve"
+   }
+  }
+ ]
+}

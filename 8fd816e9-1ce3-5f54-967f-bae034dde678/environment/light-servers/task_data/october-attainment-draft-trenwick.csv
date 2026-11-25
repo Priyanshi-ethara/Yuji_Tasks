@@ -1,0 +1,21 @@
+service,tier,panel_used,bad_minutes_raw,maintenance_minutes_excluded,eligible_minutes,attainment_pct,budget_remaining_min,status
+ledger-posting,Tier 1,bwp-led-svc / led-svc-01,97.0,85,44555,99.973,10.3,Objective met
+ledger-balance-read,Tier 2,bwp-led-svc / led-svc-02,21.0,0,44640,99.953,23.6,Objective met
+journal-export,Tier 3,bwp-led-svc / led-svc-03,160.0,0,44640,99.642,63.2,Objective met
+fx-rates-feed,Tier 2,bwp-led-svc / led-svc-04,32.0,0,44640,99.928,12.6,Objective met
+statement-render,Tier 2,bwp-led-svc / led-svc-05,61.0,0,44640,99.863,-16.4,Objective missed
+card-auth-gateway,Tier 1,bwp-acq-svc / acq-svc-01,52.0,0,44640,99.884,-29.7,Objective missed
+tokenisation-vault,Tier 2,bwp-acq-svc / acq-svc-02,49.0,0,44640,99.890,-4.4,Objective missed
+3ds-challenge,Tier 3,bwp-acq-svc / acq-svc-03,3.0,0,44640,99.993,220.2,Objective met
+merchant-onboarding-api,Tier 3,bwp-acq-svc / acq-svc-04,190.0,0,44640,99.574,33.2,Objective met — budget at risk
+chargeback-intake,Tier 2,bwp-acq-svc / acq-svc-05,38.0,0,44640,99.915,6.6,Objective met — budget at risk
+payout-scheduler,Tier 1,bwp-pay-svc / pay-svc-01,9.0,0,44640,99.980,13.3,Objective met
+bank-file-dispatch,Tier 2,bwp-pay-svc / pay-svc-02,52.0,0,44640,99.884,-7.4,Objective missed
+payee-verification,Tier 2,bwp-pay-svc / pay-svc-03,17.0,0,44640,99.962,27.6,Objective met
+payout-status-api,Tier 2,bwp-pay-svc / pay-svc-04,47.0,0,44640,99.895,-2.4,Objective missed
+sweep-reconciler,Tier 3,bwp-pay-svc / pay-svc-05,95.0,0,44640,99.787,128.2,Objective met
+fraud-score,Tier 1,bwp-rsk-svc / rsk-svc-01,78.0,60,44580,99.960,4.3,Objective met — budget at risk
+velocity-limits,Tier 2,bwp-rsk-svc / rsk-svc-02,30.0,0,44640,99.933,14.6,Objective met
+sanctions-screen,Tier 1,bwp-rsk-svc / rsk-svc-03,11.0,0,44640,99.975,11.3,Objective met
+dispute-evidence,Tier 3,bwp-rsk-oncall / rsk-oc-04,60.0,0,44640,99.866,163.2,Objective met
+kyc-document-check,Tier 2,bwp-rsk-oncall / rsk-oc-05,14.0,0,44640,99.969,30.6,Objective met

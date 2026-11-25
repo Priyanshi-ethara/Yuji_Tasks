@@ -1,0 +1,915 @@
+{
+ "monitors": [
+  {
+   "id": 74001,
+   "name": "ledger-posting SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:ledger-posting,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for ledger-posting. Notify @pagerduty-led-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:ledger-posting",
+    "team:led",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74002,
+   "name": "ledger-balance-read SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:ledger-balance-read,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for ledger-balance-read. Notify @pagerduty-led-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:ledger-balance-read",
+    "team:led",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74003,
+   "name": "journal-export SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:journal-export,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for journal-export. Notify @pagerduty-led-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:journal-export",
+    "team:led",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74004,
+   "name": "fx-rates-feed SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_time{service:fx-rates-feed,cell:kestrel-*}.as_count() > 360",
+   "message": "Burn rate high for fx-rates-feed. Notify @pagerduty-led-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:fx-rates-feed",
+    "team:led",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74005,
+   "name": "statement-render SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:statement-render,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for statement-render. Notify @pagerduty-led-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:statement-render",
+    "team:led",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74006,
+   "name": "card-auth-gateway SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:card-auth-gateway,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for card-auth-gateway. Notify @pagerduty-acq-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:card-auth-gateway",
+    "team:acq",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74007,
+   "name": "tokenisation-vault SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:tokenisation-vault,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for tokenisation-vault. Notify @pagerduty-acq-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:tokenisation-vault",
+    "team:acq",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74008,
+   "name": "3ds-challenge SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_time{service:3ds-challenge,cell:kestrel-*}.as_count() > 360",
+   "message": "Burn rate high for 3ds-challenge. Notify @pagerduty-acq-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:3ds-challenge",
+    "team:acq",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74009,
+   "name": "merchant-onboarding-api SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:merchant-onboarding-api,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for merchant-onboarding-api. Notify @pagerduty-acq-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:merchant-onboarding-api",
+    "team:acq",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74010,
+   "name": "chargeback-intake SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_time{service:chargeback-intake,cell:kestrel-*}.as_count() > 360",
+   "message": "Burn rate high for chargeback-intake. Notify @pagerduty-acq-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:chargeback-intake",
+    "team:acq",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74011,
+   "name": "payout-scheduler SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:payout-scheduler,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for payout-scheduler. Notify @pagerduty-pay-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:payout-scheduler",
+    "team:pay",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74012,
+   "name": "bank-file-dispatch SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:bank-file-dispatch,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for bank-file-dispatch. Notify @pagerduty-pay-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:bank-file-dispatch",
+    "team:pay",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74013,
+   "name": "payee-verification SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:payee-verification,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for payee-verification. Notify @pagerduty-pay-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:payee-verification",
+    "team:pay",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74014,
+   "name": "payout-status-api SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:payout-status-api,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for payout-status-api. Notify @pagerduty-pay-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:payout-status-api",
+    "team:pay",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74015,
+   "name": "sweep-reconciler SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:sweep-reconciler,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for sweep-reconciler. Notify @pagerduty-pay-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:sweep-reconciler",
+    "team:pay",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74016,
+   "name": "fraud-score SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:fraud-score,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for fraud-score. Notify @pagerduty-rsk-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:fraud-score",
+    "team:rsk",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74017,
+   "name": "velocity-limits SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:velocity-limits,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for velocity-limits. Notify @pagerduty-rsk-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:velocity-limits",
+    "team:rsk",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74018,
+   "name": "sanctions-screen SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:sanctions-screen,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for sanctions-screen. Notify @pagerduty-rsk-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:sanctions-screen",
+    "team:rsk",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74019,
+   "name": "dispute-evidence SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:dispute-evidence,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for dispute-evidence. Notify @pagerduty-rsk-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:dispute-evidence",
+    "team:rsk",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74020,
+   "name": "kyc-document-check SLO burn",
+   "type": "metric alert",
+   "query": "sum(last_1h):sum:bwp.sli.bad_minutes{service:kyc-document-check,cell:kestrel-*}.as_count() > 6",
+   "message": "Burn rate high for kyc-document-check. Notify @pagerduty-rsk-primary.",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "service:kyc-document-check",
+    "team:rsk",
+    "cell:kestrel-*",
+    "ring:production"
+   ],
+   "created": "2026-07-01T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74021,
+   "name": "payout-scheduler canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:payout-scheduler,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for payout-scheduler. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:payout-scheduler",
+    "team:pay",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74022,
+   "name": "bank-file-dispatch canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:bank-file-dispatch,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for bank-file-dispatch. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:bank-file-dispatch",
+    "team:pay",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74023,
+   "name": "payee-verification canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:payee-verification,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for payee-verification. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:payee-verification",
+    "team:pay",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74024,
+   "name": "payout-status-api canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:payout-status-api,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for payout-status-api. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:payout-status-api",
+    "team:pay",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74025,
+   "name": "sweep-reconciler canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:sweep-reconciler,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for sweep-reconciler. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:sweep-reconciler",
+    "team:pay",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74026,
+   "name": "fraud-score canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:fraud-score,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for fraud-score. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:fraud-score",
+    "team:rsk",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74027,
+   "name": "velocity-limits canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:velocity-limits,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for velocity-limits. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:velocity-limits",
+    "team:rsk",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74028,
+   "name": "sanctions-screen canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:sanctions-screen,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for sanctions-screen. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:sanctions-screen",
+    "team:rsk",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74029,
+   "name": "dispute-evidence canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:dispute-evidence,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for dispute-evidence. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:dispute-evidence",
+    "team:rsk",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74030,
+   "name": "kyc-document-check canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:kyc-document-check,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for kyc-document-check. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:kyc-document-check",
+    "team:rsk",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74031,
+   "name": "card-auth-gateway canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:card-auth-gateway,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for card-auth-gateway. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:card-auth-gateway",
+    "team:acq",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  },
+  {
+   "id": 74032,
+   "name": "tokenisation-vault canary soak error ratio",
+   "type": "metric alert",
+   "query": "avg(last_15m):avg:bwp.http.error_ratio{service:tokenisation-vault,cell:wren-0} > 0.02",
+   "message": "Canary soak failing for tokenisation-vault. Notify the release captain.",
+   "overall_state": "OK",
+   "priority": 3,
+   "tags": [
+    "service:tokenisation-vault",
+    "team:acq",
+    "cell:wren-0",
+    "ring:canary"
+   ],
+   "created": "2026-06-02T09:00:00+00:00",
+   "modified": "2026-09-18T09:00:00+00:00"
+  }
+ ],
+ "dashboards": [
+  {
+   "id": "bwp-led-svc",
+   "title": "Ledger · Service SLOs",
+   "description": "Owner: Ledger Platform. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-*, region=eu-west-1 (saved 2026-09-18 by soren.blackwood). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "soren.blackwood",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-18T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-led-oncall",
+   "title": "Ledger on-call · Service SLOs",
+   "description": "Owner: Ledger Platform. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-1, region=eu-west-1 (saved 2026-09-19 by hana.lindqvist). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "hana.lindqvist",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-19T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-acq-svc",
+   "title": "Acquiring · Canary & SLO watch",
+   "description": "Owner: Acquiring. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-*, region=eu-west-1 (saved 2026-09-18 by soren.blackwood). 5 SLO widgets, 5 latency widgets. Row 3 holds fixed canary widgets (cell:wren-0) for release watch.",
+   "layout_type": "ordered",
+   "author": "soren.blackwood",
+   "widget_count": 15,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-18T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-acq-oncall",
+   "title": "Acquiring on-call · Service SLOs",
+   "description": "Owner: Acquiring. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-2, region=eu-west-1 (saved 2026-09-24 by felix.durand). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "felix.durand",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-24T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-pay-svc",
+   "title": "Payouts · Service SLOs",
+   "description": "Owner: Payouts. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=wren-0, region=eu-west-1 (saved 2026-09-22 by ilse.varga). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "ilse.varga",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-22T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-pay-oncall",
+   "title": "Payouts on-call · Service SLOs",
+   "description": "Owner: Payouts. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-*, region=eu-west-1 (saved 2026-09-18 by soren.blackwood). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "soren.blackwood",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-18T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-rsk-svc",
+   "title": "Risk · Service SLOs",
+   "description": "Owner: Risk Engineering. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=kestrel-*, region=eu-west-1 (saved 2026-09-18 by soren.blackwood). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "soren.blackwood",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-09-18T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-rsk-oncall",
+   "title": "Risk on-call · Service SLOs",
+   "description": "Owner: Risk Engineering. Layout v3 (rebuilt 2026-09-18). Template variables $cell, $region. Saved view: cell=wren-0, region=eu-west-1 (saved 2026-10-01 by otto.brandvold). 5 SLO widgets, 5 latency widgets.",
+   "layout_type": "ordered",
+   "author": "otto.brandvold",
+   "widget_count": 10,
+   "is_read_only": false,
+   "created": "2026-09-18T08:00:00+00:00",
+   "modified": "2026-10-01T16:00:00+00:00"
+  },
+  {
+   "id": "bwp-exec-overview",
+   "title": "Brightwater · Executive reliability overview",
+   "description": "Monthly attainment tiles copied from the Reliability Office report after publication. Not a source.",
+   "layout_type": "ordered",
+   "author": "gideon.ashworth",
+   "widget_count": 8,
+   "is_read_only": true,
+   "created": "2026-03-02T08:00:00+00:00",
+   "modified": "2026-10-05T12:00:00+00:00"
+  },
+  {
+   "id": "bwp-cells",
+   "title": "Platform · Cell capacity (kestrel & wren)",
+   "description": "Requests, CPU and saturation per cell. Template variable $cell; saved view: cell=kestrel-*.",
+   "layout_type": "ordered",
+   "author": "soren.blackwood",
+   "widget_count": 12,
+   "is_read_only": false,
+   "created": "2026-04-11T08:00:00+00:00",
+   "modified": "2026-09-18T16:00:00+00:00"
+  }
+ ],
+ "events": [
+  {
+   "id": 880001,
+   "title": "Board saved: bwp-pay-svc",
+   "text": "ilse.varga saved board 'Payouts · Service SLOs' (template variables changed).",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "board:bwp-pay-svc",
+    "event:board-save"
+   ],
+   "date_happened": 1790092680
+  },
+  {
+   "id": 880002,
+   "title": "Board saved: bwp-rsk-oncall",
+   "text": "otto.brandvold saved board 'Risk on-call · Service SLOs' (template variables changed).",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "board:bwp-rsk-oncall",
+    "event:board-save"
+   ],
+   "date_happened": 1790842320
+  },
+  {
+   "id": 880003,
+   "title": "Promote payouts 4.19.0",
+   "text": "Promoted to kestrel-1, kestrel-2, kestrel-3 after 24 h soak on wren-0.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "team:payouts",
+    "event:deploy"
+   ],
+   "date_happened": 1791018600
+  },
+  {
+   "id": 880004,
+   "title": "Maintenance complete: fraud-score",
+   "text": "Model store migration finished inside the declared window.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:fraud-score",
+    "event:maintenance"
+   ],
+   "date_happened": 1791255660
+  },
+  {
+   "id": 880005,
+   "title": "kyc-document-check burn alert",
+   "text": "SLO burn monitor triggered on cell:kestrel-*.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:kyc-document-check",
+    "event:alert"
+   ],
+   "date_happened": 1791441840
+  },
+  {
+   "id": 880006,
+   "title": "Maintenance complete: ledger-posting",
+   "text": "Partition rebuild finished.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:ledger-posting",
+    "event:maintenance"
+   ],
+   "date_happened": 1791944760
+  },
+  {
+   "id": 880007,
+   "title": "Rollback payouts 4.19.2 on wren-0",
+   "text": "Soak failed; wren-0 drained until 2026-10-20 08:00Z.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "team:payouts",
+    "cell:wren-0",
+    "event:deploy"
+   ],
+   "date_happened": 1792192200
+  },
+  {
+   "id": 880008,
+   "title": "payout-scheduler burn alert",
+   "text": "SLO burn monitor triggered on cell:kestrel-*.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:payout-scheduler",
+    "event:alert"
+   ],
+   "date_happened": 1792371840
+  },
+  {
+   "id": 880009,
+   "title": "card-auth-gateway burn alert",
+   "text": "SLO burn monitor triggered on cell:kestrel-*; silenced by felix.durand (HSM work).",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:card-auth-gateway",
+    "event:alert"
+   ],
+   "date_happened": 1792551960
+  },
+  {
+   "id": 880010,
+   "title": "tokenisation-vault burn alert",
+   "text": "SLO burn monitor triggered on cell:kestrel-*; acknowledged by yusuf.demir.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "service:tokenisation-vault",
+    "event:alert"
+   ],
+   "date_happened": 1793063220
+  },
+  {
+   "id": 880011,
+   "title": "boardctl export complete",
+   "text": "Nightly board export for 2026-10 finished (8 service boards).",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "",
+   "tags": [
+    "event:export"
+   ],
+   "date_happened": 1793499003
+  }
+ ],
+ "hosts": [
+  {
+   "name": "kestrel-1-a",
+   "up": true,
+   "apps": [
+    "ledger-posting",
+    "card-auth-gateway",
+    "payout-scheduler",
+    "fraud-score"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "kestrel-1-b",
+   "up": true,
+   "apps": [
+    "sweep-reconciler",
+    "kyc-document-check",
+    "tokenisation-vault"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "kestrel-2-a",
+   "up": true,
+   "apps": [
+    "ledger-posting",
+    "card-auth-gateway",
+    "payout-scheduler",
+    "fraud-score"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "kestrel-2-b",
+   "up": true,
+   "apps": [
+    "sweep-reconciler",
+    "kyc-document-check",
+    "tokenisation-vault"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "kestrel-3-a",
+   "up": true,
+   "apps": [
+    "ledger-posting",
+    "card-auth-gateway",
+    "payout-scheduler",
+    "fraud-score"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "kestrel-3-b",
+   "up": true,
+   "apps": [
+    "sweep-reconciler",
+    "kyc-document-check",
+    "tokenisation-vault"
+   ],
+   "sources": "agent",
+   "cpu_pct": 41.0,
+   "mem_pct": 58.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "wren-0-a",
+   "up": true,
+   "apps": [
+    "ledger-posting",
+    "card-auth-gateway",
+    "payout-scheduler",
+    "fraud-score"
+   ],
+   "sources": "agent",
+   "cpu_pct": 9.5,
+   "mem_pct": 22.0,
+   "last_reported": 1793610000
+  },
+  {
+   "name": "wren-0-b",
+   "up": true,
+   "apps": [
+    "sweep-reconciler",
+    "kyc-document-check",
+    "tokenisation-vault"
+   ],
+   "sources": "agent",
+   "cpu_pct": 9.5,
+   "mem_pct": 22.0,
+   "last_reported": 1793610000
+  }
+ ]
+}

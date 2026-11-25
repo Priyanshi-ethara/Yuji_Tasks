@@ -1,0 +1,30 @@
+# sorrel-ml eval-harness — frozen evaluation suite (as of 3 Nov 2026)
+suite: applied-ml-2026q4
+frozen_sets:
+  - id: DS-2141
+    name: claims-sum-eval-v2
+    task: claims summarisation
+    metrics: [rougeL, clause_citation_f1]
+    frozen: 2026-10-02
+  - id: DS-2291
+    name: uw-qa-eval-2026Q3
+    task: underwriting question answering
+    metrics: [exact_match, grounded_f1]
+    frozen: 2026-09-30
+  - id: DS-2253
+    name: fnol-triage-eval-v3
+    task: FNOL triage
+    metrics: [macro_f1, queue_accuracy]
+    frozen: 2026-11-05
+  - id: DS-2304
+    name: sub-letters-eval-v2
+    task: subrogation letter extraction
+    metrics: [field_f1]
+    frozen: 2026-11-03
+retired:
+  - id: DS-2290
+    name: uw-qa-eval-2026Q2
+    retired: 2026-09-30
+rules:
+  - A frozen set never changes; a new set gets a new id.
+  - Independence of each frozen set from training data is a launch readiness condition (RB-ML-014).

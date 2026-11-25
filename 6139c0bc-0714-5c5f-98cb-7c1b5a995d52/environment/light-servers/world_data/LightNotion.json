@@ -1,0 +1,192 @@
+{
+ "users": [
+  {
+   "id": "nu-t02-maren",
+   "name": "Maren Ostrowski",
+   "type": "person",
+   "bot": false,
+   "email": "maren.ostrowski@talvik.example",
+   "avatar_url": null
+  },
+  {
+   "id": "nu-t02-desk",
+   "name": "Carbon Accounting Desk",
+   "type": "person",
+   "bot": false,
+   "email": "alex.carter@contoso.com",
+   "avatar_url": null
+  },
+  {
+   "id": "nu-t02-dev",
+   "name": "Dev Rautela",
+   "type": "person",
+   "bot": false,
+   "email": "dev.rautela@talvik.example",
+   "avatar_url": null
+  }
+ ],
+ "workspace": {
+  "id": "workspace-talvik-sust",
+  "name": "Talvik Sustainability",
+  "owner": "nu-t02-maren"
+ },
+ "pages": [
+  {
+   "id": "page-t02-runbook",
+   "parent_type": "workspace",
+   "parent_id": "workspace-talvik-sust",
+   "title": "Carbon desk runbook — annual Scope 2 inventory",
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "created_by": "Maren Ostrowski",
+   "archived": false,
+   "icon": "book",
+   "cover_url": null
+  },
+  {
+   "id": "page-t02-lessons",
+   "parent_type": "workspace",
+   "parent_id": "workspace-talvik-sust",
+   "title": "FY2025 inventory — lessons learned",
+   "created_time": "2026-03-15T09:00:00.000Z",
+   "last_edited_time": "2026-03-15T09:00:00.000Z",
+   "created_by": "Maren Ostrowski",
+   "archived": false,
+   "icon": "bulb",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "blk-t02-r0",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 1: read the protocol in force in Confluence SUST (not a Word copy) and its schedules.",
+   "order": 0,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-r1",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 2: confirm the EFS edition AND revision from Schedule A; open the errata pages under the EFS page.",
+   "order": 1,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-r2",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 3: electricity from the Box invoice folder; check read types; estimated months from meter register differences.",
+   "order": 2,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-r3",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 4: steam and chilled water from supplier statements; check condensate return and measured COP.",
+   "order": 3,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-r4",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 5: test every instrument against every §6 clause using the registry mirror, the contracts and last year's final page.",
+   "order": 4,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-r5",
+   "page_id": "page-t02-runbook",
+   "parent_block_id": null,
+   "type": "numbered_list_item",
+   "text": "Step 6: fill the board, look again at the invoice folder, the desk mailbox and the registry mirror, correct the board, then publish the summary page.",
+   "order": 5,
+   "created_time": "2025-09-01T09:00:00.000Z",
+   "last_edited_time": "2026-07-21T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-l0",
+   "page_id": "page-t02-lessons",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Greer meter used instead of invoice → audit finding.",
+   "order": 0,
+   "created_time": "2026-03-15T09:00:00.000Z",
+   "last_edited_time": "2026-03-15T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-l1",
+   "page_id": "page-t02-lessons",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Coventry surplus moved to Leeds → restatement.",
+   "order": 1,
+   "created_time": "2026-03-15T09:00:00.000Z",
+   "last_edited_time": "2026-03-15T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-l2",
+   "page_id": "page-t02-lessons",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Missed an EFS erratum because we worked from the CSV.",
+   "order": 2,
+   "created_time": "2026-03-15T09:00:00.000Z",
+   "last_edited_time": "2026-03-15T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-t02-l3",
+   "page_id": "page-t02-lessons",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "A retirement we relied on was still 'instructed' at the strike date.",
+   "order": 3,
+   "created_time": "2026-03-15T09:00:00.000Z",
+   "last_edited_time": "2026-03-15T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "cmt-t02-1",
+   "parent_page_id": "page-t02-runbook",
+   "parent_block_id": "blk-t02-r5",
+   "author_id": "nu-t02-maren",
+   "text": "Step 6 matters: suppliers and registries do correct things after we start.",
+   "created_time": "2026-07-21T09:05:00.000Z",
+   "resolved": false
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+  "reward": 0.0,
+  "earned": 0.0,
+  "penalty": 0.0,
+  "total_positive": 49,
+  "guard_polarity": "pass_charges",
+  "gate": null,
+  "missed": [
+    "test_journal_export_on_the_corrected_target",
+    "test_merchant_onboarding_api_on_the_corrected_target",
+    "test_sweep_reconciler_on_the_production_path_and_corrected_target",
+    "test_dispute_evidence_on_the_production_path_and_corrected_target",
+    "test_report_page_title_carries_the_missed_count",
+    "test_follow_ups_exactly_for_the_missed_objectives",
+    "test_corrected_standard_read_before_the_report",
+    "test_three_ds_challenge_budget_on_the_corrected_target",
+    "test_hidden_misses_measured_on_the_production_path",
+    "test_phantom_breaches_measured_on_the_production_path",
+    "test_payee_verification_unchanged_by_board_choice",
+    "test_board_saved_view_read_before_first_moved_row",
+    "test_declared_windows_left_out",
+    "test_late_and_undeclared_windows_count_as_downtime",
+    "test_seconds_widgets_converted_to_minutes",
+    "test_remaining_slos_right",
+    "test_follow_ups_filed_with_the_owning_team",
+    "test_report_published_after_the_register_and_follow_ups",
+    "test_every_row_labelled_from_the_standard"
+  ],
+  "guards_tripped": [],
+  "errors": [],
+  "tests": [
+    {
+      "test": "test_journal_export_on_the_corrected_target",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_merchant_onboarding_api_on_the_corrected_target",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_sweep_reconciler_on_the_production_path_and_corrected_target",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_dispute_evidence_on_the_production_path_and_corrected_target",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_report_page_title_carries_the_missed_count",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_follow_ups_exactly_for_the_missed_objectives",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_corrected_standard_read_before_the_report",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_three_ds_challenge_budget_on_the_corrected_target",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_hidden_misses_measured_on_the_production_path",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_phantom_breaches_measured_on_the_production_path",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_payee_verification_unchanged_by_board_choice",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_board_saved_view_read_before_first_moved_row",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "no trap-moved SLO carries its production figures",
+      "error": null
+    },
+    {
+      "test": "test_declared_windows_left_out",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_late_and_undeclared_windows_count_as_downtime",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_seconds_widgets_converted_to_minutes",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_remaining_slos_right",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "assertion failed",
+      "error": null
+    },
+    {
+      "test": "test_follow_ups_filed_with_the_owning_team",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_report_published_after_the_register_and_follow_ups",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_every_row_labelled_from_the_standard",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "work precondition",
+      "error": null
+    },
+    {
+      "test": "test_guard_changed_the_monitoring_server",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no write on the monitoring server",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_to_the_customer_status_page",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no write on the status page",
+      "error": null
+    },
+    {
+      "test": "test_guard_changed_the_register_beyond_the_october_fields",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "register unchanged beyond the October fields",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_outside_the_write_scope",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no write outside the scope",
+      "error": null
+    },
+    {
+      "test": "test_guard_signed_out_of_an_application",
+      "weight": -1,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no sign-out",
+      "error": null
+    }
+  ]
+}

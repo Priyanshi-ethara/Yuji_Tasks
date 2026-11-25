@@ -1,0 +1,96 @@
+{
+ "tickets": [
+  {
+   "id": 74501,
+   "subject": "Release status of CVM-260417 and OSV-260097",
+   "description": "Customer asks for confirmation that both lots are released and marked released in Tarnwick's system.",
+   "status": "open",
+   "priority": "urgent",
+   "type": "question",
+   "requester_id": 45011,
+   "assignee_id": 45012,
+   "organization_id": 4501,
+   "tags": [
+    "release",
+    "expedite"
+   ],
+   "created_at": "2026-11-09T12:25:00Z",
+   "updated_at": "2026-11-10T08:10:00Z"
+  },
+  {
+   "id": 74502,
+   "subject": "Delivery slot for PLM-260381",
+   "description": "Customer asks when PLM-260381 can ship.",
+   "status": "pending",
+   "priority": "normal",
+   "type": "question",
+   "requester_id": 45011,
+   "assignee_id": 45012,
+   "organization_id": 4501,
+   "tags": [
+    "release"
+   ],
+   "created_at": "2026-11-08T09:00:00Z",
+   "updated_at": "2026-11-09T09:00:00Z"
+  }
+ ],
+ "comments": [
+  {
+   "id": 845011,
+   "ticket_id": 74501,
+   "author_id": 45011,
+   "body": "Please confirm by Wednesday, our clinic is waiting.",
+   "public": true,
+   "created_at": "2026-11-09T12:25:00Z"
+  },
+  {
+   "id": 845012,
+   "ticket_id": 74501,
+   "author_id": 45012,
+   "body": "Internal: Commercial Quality answers after QA Head sign-off only.",
+   "public": false,
+   "created_at": "2026-11-10T08:10:00Z"
+  },
+  {
+   "id": 845013,
+   "ticket_id": 74502,
+   "author_id": 45011,
+   "body": "Any update on PLM-260381?",
+   "public": true,
+   "created_at": "2026-11-09T09:00:00Z"
+  }
+ ],
+ "organizations": [
+  {
+   "id": 4501,
+   "name": "Halden Regional Hospital Pharmacy",
+   "shared_tickets": false,
+   "tags": [
+    "customer",
+    "oncology"
+   ],
+   "created_at": "2025-04-01T00:00:00Z",
+   "updated_at": "2026-11-09T00:00:00Z"
+  }
+ ],
+ "users": [
+  {
+   "id": 45011,
+   "name": "Celia Marlowe",
+   "email": "celia.marlowe@haldenrhp.example",
+   "role": "end-user",
+   "organization_id": 4501,
+   "created_at": "2025-04-01T00:00:00Z",
+   "updated_at": "2026-11-09T00:00:00Z"
+  },
+  {
+   "id": 45012,
+   "name": "Commercial Quality desk",
+   "email": "commercial.quality@tarnwick-bio.example",
+   "role": "agent",
+   "organization_id": null,
+   "created_at": "2025-04-01T00:00:00Z",
+   "updated_at": "2026-11-09T00:00:00Z"
+  }
+ ]
+}

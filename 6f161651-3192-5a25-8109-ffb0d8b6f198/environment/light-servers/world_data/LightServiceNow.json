@@ -1,0 +1,134 @@
+{
+ "changes": [
+  {
+   "sys_id": "chg_ks3_40611",
+   "number": "CHG0040611",
+   "short_description": "Document release - DOC-1133 Rev F (Instructions for Use - Professional, 64 pp) and DOC-1102 Rev C (Software Description, 33 pp) and DOC-1112 Rev B into the Kestrel-3 controlled store; implemented 2026-08-26",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-08-21 10:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_40738",
+   "number": "CHG0040738",
+   "short_description": "Document release - DOC-1047 Rev E (Risk Management Report, 46 pp) into the Kestrel-3 controlled store; implemented 2026-10-21",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-10-16 14:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_40815",
+   "number": "CHG0040815",
+   "short_description": "Document release - DOC-1188 Rev B (Stability Study Report, 24 pp, 2 open placeholders pending 18-month real-time data) into the Kestrel-3 controlled store; implemented 2026-09-18",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-09-14 09:30:00"
+  },
+  {
+   "sys_id": "chg_ks3_40877",
+   "number": "CHG0040877",
+   "short_description": "Document release - DOC-1103 Rev C (Software V&V Report, 87 pp, 1 open placeholder: penetration test annex) into the Kestrel-3 controlled store; implemented 2026-10-09",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-10-05 11:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_40990",
+   "number": "CHG0040990",
+   "short_description": "Document release - DOC-1200 Rev A (Post-market Surveillance Plan, 22 pp) into the Kestrel-3 controlled store; implemented 2026-09-30 (approval later withdrawn under CAPA-0912, see register)",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-09-25 10:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_41102",
+   "number": "CHG0041102",
+   "short_description": "Document release - DOC-1111 Rev C (Analytical Performance - Trueness and Linearity, 29 pp, open placeholders 0) into the Kestrel-3 controlled store; CCB approved 2026-11-11; implemented 2026-11-12",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-11-10 09:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_41150",
+   "number": "CHG0041150",
+   "short_description": "Document release - DOC-1102 Rev D (Software Description, 58 pp) into the Kestrel-3 controlled store on completion of approval routing",
+   "state": "Scheduled",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-11-05 11:30:00"
+  },
+  {
+   "sys_id": "chg_ks3_41004",
+   "number": "CHG0041004",
+   "short_description": "Document release - DOC-1120 Rev A (Clinical Performance Study Report) early release request",
+   "state": "Canceled",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-10-28 15:00:00"
+  },
+  {
+   "sys_id": "chg_ks3_40870",
+   "number": "CHG0040870",
+   "short_description": "Document release - DOC-1021 Rev D (Manufacturing Sites, 18 pp) and DOC-1121 Rev B (Performance Evaluation Report, 48 pp) into the Kestrel-3 controlled store; implemented 2026-10-07",
+   "state": "Closed",
+   "type": "normal",
+   "category": "Document release",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-10-02 10:00:00"
+  }
+ ],
+ "users": [
+  {
+   "sys_id": "sn_ks3_pv",
+   "user_name": "pieter.vandamme",
+   "first_name": "Pieter",
+   "last_name": "Vandamme",
+   "email": "pieter.vandamme@orvane.example",
+   "active": "true",
+   "title": "Document Controller"
+  },
+  {
+   "sys_id": "sn_ks3_rm",
+   "user_name": "rafaela.montoya",
+   "first_name": "Rafaela",
+   "last_name": "Montoya",
+   "email": "rafaela.montoya@orvane.example",
+   "active": "true",
+   "title": "QA Manager"
+  },
+  {
+   "sys_id": "sn_ks3_mf",
+   "user_name": "mateus.ferreira",
+   "first_name": "Mateus",
+   "last_name": "Ferreira",
+   "email": "mateus.ferreira@orvane.example",
+   "active": "true",
+   "title": "Risk Management Lead"
+  }
+ ],
+ "problems": [
+  {
+   "sys_id": "prb_ks3_0012",
+   "number": "PRB0040012",
+   "short_description": "Kestrel-3 cartridge lot-change procedure missing from IFU Rev F (field feedback)",
+   "state": "2",
+   "category": "Labelling",
+   "assigned_to": "sn_ks3_pv",
+   "opened_at": "2026-10-12 09:00:00"
+  }
+ ]
+}

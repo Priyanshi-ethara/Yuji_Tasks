@@ -1,0 +1,162 @@
+{
+ "calendars": [
+  {
+   "id": "planned-maintenance@brightwater-payments.example",
+   "summary": "Planned maintenance (shared)",
+   "description": "Planning calendar for maintenance. Declarations are raised in PagerDuty.",
+   "time_zone": "UTC",
+   "access_role": "reader",
+   "primary": false,
+   "color_id": "5"
+  },
+  {
+   "id": "ines.calloway@brightwater-payments.example",
+   "summary": "Ines Calloway",
+   "description": "Primary calendar",
+   "time_zone": "Europe/London",
+   "access_role": "owner",
+   "primary": true,
+   "color_id": "1"
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-bw-pm-01",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "fraud-score model store migration",
+   "description": "Planned by Ruth Okonjo. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-10-06T02:00:00Z",
+   "end": "2026-10-06T03:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ruth.okonjo@brightwater-payments.example",
+   "organizer": "ruth.okonjo@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-02",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "ledger-posting partition rebuild",
+   "description": "Planned by Anouk Verhaegen. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-10-14T01:00:00Z",
+   "end": "2026-10-14T02:25:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "anouk.verhaegen@brightwater-payments.example",
+   "organizer": "anouk.verhaegen@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-03",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "sanctions-screen list reload (cancelled 17 Oct)",
+   "description": "Planned by Ruth Okonjo. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-10-18T02:00:00Z",
+   "end": "2026-10-18T02:40:00Z",
+   "all_day": false,
+   "status": "cancelled",
+   "creator": "ruth.okonjo@brightwater-payments.example",
+   "organizer": "ruth.okonjo@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-04",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "card-auth-gateway HSM firmware",
+   "description": "Planned by Felix Durand. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-10-21T03:00:00Z",
+   "end": "2026-10-21T03:45:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "felix.durand@brightwater-payments.example",
+   "organizer": "felix.durand@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-05",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "tokenisation-vault key rotation (drain)",
+   "description": "Planned by Yusuf Demir. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-10-27T01:05:00Z",
+   "end": "2026-10-27T01:30:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "yusuf.demir@brightwater-payments.example",
+   "organizer": "yusuf.demir@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-06",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "statement-render font cache rebuild",
+   "description": "Planned by Tomas Kral. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-11-26T22:00:00Z",
+   "end": "2026-11-26T23:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "tomas.kral@brightwater-payments.example",
+   "organizer": "tomas.kral@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-pm-07",
+   "calendar_id": "planned-maintenance@brightwater-payments.example",
+   "summary": "bank-file-dispatch SFTP key change",
+   "description": "Planned by Marek Halloran. Calendar entries are planning only.",
+   "location": "",
+   "start": "2026-11-04T02:00:00Z",
+   "end": "2026-11-04T03:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "marek.halloran@brightwater-payments.example",
+   "organizer": "marek.halloran@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  },
+  {
+   "id": "evt-bw-rev-01",
+   "calendar_id": "ines.calloway@brightwater-payments.example",
+   "summary": "October SLO report review",
+   "description": "Walk Gideon through the October report.",
+   "location": "Teams",
+   "start": "2026-11-05T14:00:00Z",
+   "end": "2026-11-05T15:00:00Z",
+   "all_day": false,
+   "status": "confirmed",
+   "creator": "ines.calloway@brightwater-payments.example",
+   "organizer": "ines.calloway@brightwater-payments.example",
+   "recurrence": [],
+   "visibility": "default"
+  }
+ ],
+ "attendees": {
+  "evt-bw-rev-01": [
+   {
+    "email": "gideon.ashworth@brightwater-payments.example",
+    "displayName": "Gideon Ashworth",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": false
+   },
+   {
+    "email": "ines.calloway@brightwater-payments.example",
+    "displayName": "Ines Calloway",
+    "responseStatus": "accepted",
+    "optional": false,
+    "organizer": true
+   }
+  ]
+ }
+}

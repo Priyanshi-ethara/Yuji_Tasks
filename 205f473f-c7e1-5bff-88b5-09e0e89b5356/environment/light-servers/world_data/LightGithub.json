@@ -1,0 +1,486 @@
+{
+ "user": {
+  "login": "pellam-sre-desk"
+ },
+ "repos": [
+  {
+   "id": 52001,
+   "name": "fleetd",
+   "full_name": "pellam/fleetd",
+   "owner": "pellam",
+   "private": true,
+   "description": "Pellam dispatch back end (fleetd server, simctl)",
+   "default_branch": "main",
+   "language": "Go",
+   "stars": 14,
+   "forks": 0,
+   "open_issues": 6,
+   "created_at": "2023-02-20T09:00:00Z",
+   "updated_at": "2026-11-14T15:00:00Z"
+  },
+  {
+   "id": 52002,
+   "name": "queue",
+   "full_name": "pellam-oss/queue",
+   "owner": "pellam-oss",
+   "private": false,
+   "description": "Generic ring queue for Go (open source, vendored by fleetd)",
+   "default_branch": "main",
+   "language": "Go",
+   "stars": 312,
+   "forks": 21,
+   "open_issues": 4,
+   "created_at": "2024-05-02T09:00:00Z",
+   "updated_at": "2026-10-01T09:00:00Z"
+  }
+ ],
+ "issues": [
+  {
+   "id": 7703318,
+   "number": 3318,
+   "repo": "fleetd",
+   "title": "simkit: set up the 0.4.0 release",
+   "body": "Splits simkit out of the fleetd module so Sim Tools can version it on its own cadence.\n\n- Adds tools/simkit/go.mod (`module git.pellam.io/fleetd/tools/simkit`). From this PR on, tools/simkit is a separate module that happens to live in this repository; it is no longer part of the fleetd module.\n- Tags tools/simkit/v0.4.0.\n- fleetd's go.mod now requires it like any other dependency: `require git.pellam.io/fleetd/tools/simkit v0.4.0`.\n- `go mod vendor` copies it to vendor/git.pellam.io/fleetd/tools/simkit, and vendor/modules.txt lists it. Release builds (-mod=vendor) compile that vendored copy, not tools/simkit on main.\n\nDiff summary:\n```\n go.mod                                            | +2\n tools/simkit/go.mod                               | +3 (new)\n vendor/modules.txt                                | +3\n vendor/git.pellam.io/fleetd/tools/simkit/*.go     | +1,204 (new)\n```\nReviewed by Platform Foundations (Ruth) and Sim Tools (Mato).",
+   "state": "closed",
+   "user": "odile-brandt",
+   "assignee": "",
+   "labels": [
+    "simkit"
+   ],
+   "milestone": null,
+   "created_at": "2026-09-02T10:00:00Z",
+   "updated_at": "2026-09-08T15:20:00Z",
+   "closed_at": "2026-09-08T15:20:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703390,
+   "number": 3390,
+   "repo": "fleetd",
+   "title": "simkit 0.4.2: wheel tick default",
+   "body": "go get git.pellam.io/fleetd/tools/simkit@v0.4.2 && go mod vendor. Picks up the wheel tick default. 0.5.0 (Reset-after-Stop no-op, Window clamp) is not tagged yet.",
+   "state": "closed",
+   "user": "leif-domingo",
+   "assignee": "",
+   "labels": [
+    "simkit"
+   ],
+   "milestone": null,
+   "created_at": "2026-10-17T09:00:00Z",
+   "updated_at": "2026-10-20T13:00:00Z",
+   "closed_at": "2026-10-20T13:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703402,
+   "number": 3402,
+   "repo": "fleetd",
+   "title": "CODEOWNERS: internal/dispatch/lease/ to Fleet Reliability",
+   "body": "Action 3 of the 7 Oct lease review. Adds `/internal/dispatch/lease/ @pellam/fleet-reliability` after the dispatch rules; last match decides, so lease files leave Dispatch Core.",
+   "state": "closed",
+   "user": "anselm-okoro",
+   "assignee": "",
+   "labels": [
+    "codeowners"
+   ],
+   "milestone": null,
+   "created_at": "2026-10-09T09:00:00Z",
+   "updated_at": "2026-10-12T10:00:00Z",
+   "closed_at": "2026-10-12T10:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703415,
+   "number": 3415,
+   "repo": "fleetd",
+   "title": "CODEOWNERS: queue/ (any depth) to Messaging",
+   "body": "From the settlement queue ownership review. `queue/` without a leading slash, placed after the product-area rules.",
+   "state": "closed",
+   "user": "petra-lindqvist",
+   "assignee": "",
+   "labels": [
+    "codeowners"
+   ],
+   "milestone": null,
+   "created_at": "2026-09-24T09:00:00Z",
+   "updated_at": "2026-09-26T10:00:00Z",
+   "closed_at": "2026-09-26T10:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703433,
+   "number": 3433,
+   "repo": "fleetd",
+   "title": "CODEOWNERS: telemetry exporter hand-over to Platform",
+   "body": "Ingest hands the exporter to Platform. Rather than delete Ingest's narrow line, this appends `/internal/telemetry/ @pellam/platform` after it; as the later rule it covers the exporter too. The narrow line stays until Ingest's open exporter PRs are closed.",
+   "state": "closed",
+   "user": "ruth-calloway",
+   "assignee": "",
+   "labels": [
+    "codeowners"
+   ],
+   "milestone": null,
+   "created_at": "2026-10-01T09:00:00Z",
+   "updated_at": "2026-10-03T10:00:00Z",
+   "closed_at": "2026-10-03T10:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703441,
+   "number": 3441,
+   "repo": "fleetd",
+   "title": "CODEOWNERS: retry/ (any depth) to Fleet Reliability",
+   "body": "Retry and backoff helpers anywhere in the tree are Fleet Reliability's.",
+   "state": "closed",
+   "user": "anselm-okoro",
+   "assignee": "",
+   "labels": [
+    "codeowners"
+   ],
+   "milestone": null,
+   "created_at": "2026-10-14T09:00:00Z",
+   "updated_at": "2026-10-15T10:00:00Z",
+   "closed_at": "2026-10-15T10:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703460,
+   "number": 3460,
+   "repo": "fleetd",
+   "title": "simkit: Reset after Stop is a no-op; Window clamps to capacity",
+   "body": "Changes tools/simkit on main only (heading for simkit 0.5.0). fleetd keeps the vendored 0.4.2 until the bump PR (SIM-618).",
+   "state": "closed",
+   "user": "mato-ishikawa",
+   "assignee": "",
+   "labels": [
+    "simkit"
+   ],
+   "milestone": null,
+   "created_at": "2026-11-04T09:00:00Z",
+   "updated_at": "2026-11-11T16:00:00Z",
+   "closed_at": "2026-11-11T16:00:00Z",
+   "is_pull_request": true
+  },
+  {
+   "id": 7703471,
+   "number": 3471,
+   "repo": "fleetd",
+   "title": "lease: renewer must not re-arm after Stop",
+   "body": "Fixes the re-arm-after-Stop panic in internal/dispatch/lease/renewer.go (REL-233). Guards rearm with the renewer's own stopped flag.",
+   "state": "open",
+   "user": "juno-takahara",
+   "assignee": "",
+   "labels": [],
+   "milestone": null,
+   "created_at": "2026-11-10T09:00:00Z",
+   "updated_at": "2026-11-14T12:00:00Z",
+   "closed_at": null,
+   "is_pull_request": true
+  },
+  {
+   "id": 7703474,
+   "number": 3474,
+   "repo": "fleetd",
+   "title": "telemetry: grow encoder buffer before slicing",
+   "body": "Fixes the frame overflow panic in internal/telemetry/exporter/encode.go.",
+   "state": "open",
+   "user": "nils-brennan",
+   "assignee": "",
+   "labels": [],
+   "milestone": null,
+   "created_at": "2026-11-12T09:00:00Z",
+   "updated_at": "2026-11-14T15:00:00Z",
+   "closed_at": null,
+   "is_pull_request": true
+  },
+  {
+   "id": 7703452,
+   "number": 3452,
+   "repo": "fleetd",
+   "title": "simctl replay panics at end of recorded day",
+   "body": "Cursor.Step peeks one past the end on a trailing pickup. Seen in FLEETD-4ZD.",
+   "state": "open",
+   "user": "mato-ishikawa",
+   "assignee": "",
+   "labels": [
+    "simctl"
+   ],
+   "milestone": null,
+   "created_at": "2026-11-12T10:00:00Z",
+   "updated_at": "2026-11-14T10:00:00Z",
+   "closed_at": null,
+   "is_pull_request": false
+  },
+  {
+   "id": 7703466,
+   "number": 3466,
+   "repo": "fleetd",
+   "title": "Digest scheduler uses zero-value simkit.Wheel",
+   "body": "NewScheduler never calls simkit.NewWheel. Messaging to fix in internal/notify/digest.",
+   "state": "open",
+   "user": "cassius-ferreira",
+   "assignee": "",
+   "labels": [
+    "bug"
+   ],
+   "milestone": null,
+   "created_at": "2026-11-12T10:00:00Z",
+   "updated_at": "2026-11-14T10:00:00Z",
+   "closed_at": null,
+   "is_pull_request": false
+  },
+  {
+   "id": 7703468,
+   "number": 3468,
+   "repo": "fleetd",
+   "title": "Quote page panics when no carrier declined",
+   "body": "explain() calls s.last.Error() on a nil *DeclineError.",
+   "state": "open",
+   "user": "ilse-varkonyi",
+   "assignee": "",
+   "labels": [
+    "bug"
+   ],
+   "milestone": null,
+   "created_at": "2026-11-12T10:00:00Z",
+   "updated_at": "2026-11-14T10:00:00Z",
+   "closed_at": null,
+   "is_pull_request": false
+  }
+ ],
+ "pulls": [
+  {
+   "number": 3318,
+   "id": "pr_fleetd_3318",
+   "repo": "fleetd",
+   "title": "simkit: set up the 0.4.0 release",
+   "state": "closed",
+   "user": {
+    "login": "odile-brandt"
+   },
+   "head": {
+    "ref": "odile/3318",
+    "sha": "fa680db4fd4c"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Splits simkit out of the fleetd module so Sim Tools can version it on its own cadence.\n\n- Adds tools/simkit/go.mod (`module git.pellam.io/fleetd/tools/simkit`). From this PR on, tools/simkit is a separate module that happens to live in this repository; it is no longer part of the fleetd module.\n- Tags tools/simkit/v0.4.0.\n- fleetd's go.mod now requires it like any other dependency: `require git.pellam.io/fleetd/tools/simkit v0.4.0`.\n- `go mod vendor` copies it to vendor/git.pellam.io/fleetd/tools/simkit, and vendor/modules.txt lists it. Release builds (-mod=vendor) compile that vendored copy, not tools/simkit on main.\n\nDiff summary:\n```\n go.mod                                            | +2\n tools/simkit/go.mod                               | +3 (new)\n vendor/modules.txt                                | +3\n vendor/git.pellam.io/fleetd/tools/simkit/*.go     | +1,204 (new)\n```\nReviewed by Platform Foundations (Ruth) and Sim Tools (Mato).",
+   "created_at": "2026-09-02T10:00:00Z",
+   "updated_at": "2026-09-08T15:20:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3390,
+   "id": "pr_fleetd_3390",
+   "repo": "fleetd",
+   "title": "simkit 0.4.2: wheel tick default",
+   "state": "closed",
+   "user": {
+    "login": "leif-domingo"
+   },
+   "head": {
+    "ref": "leif/3390",
+    "sha": "f79cabe72086"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "go get git.pellam.io/fleetd/tools/simkit@v0.4.2 && go mod vendor. Picks up the wheel tick default. 0.5.0 (Reset-after-Stop no-op, Window clamp) is not tagged yet.",
+   "created_at": "2026-10-17T09:00:00Z",
+   "updated_at": "2026-10-20T13:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3402,
+   "id": "pr_fleetd_3402",
+   "repo": "fleetd",
+   "title": "CODEOWNERS: internal/dispatch/lease/ to Fleet Reliability",
+   "state": "closed",
+   "user": {
+    "login": "anselm-okoro"
+   },
+   "head": {
+    "ref": "anselm/3402",
+    "sha": "4220bc20ac3a"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Action 3 of the 7 Oct lease review. Adds `/internal/dispatch/lease/ @pellam/fleet-reliability` after the dispatch rules; last match decides, so lease files leave Dispatch Core.",
+   "created_at": "2026-10-09T09:00:00Z",
+   "updated_at": "2026-10-12T10:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3415,
+   "id": "pr_fleetd_3415",
+   "repo": "fleetd",
+   "title": "CODEOWNERS: queue/ (any depth) to Messaging",
+   "state": "closed",
+   "user": {
+    "login": "petra-lindqvist"
+   },
+   "head": {
+    "ref": "petra/3415",
+    "sha": "59f1d794faeb"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "From the settlement queue ownership review. `queue/` without a leading slash, placed after the product-area rules.",
+   "created_at": "2026-09-24T09:00:00Z",
+   "updated_at": "2026-09-26T10:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3433,
+   "id": "pr_fleetd_3433",
+   "repo": "fleetd",
+   "title": "CODEOWNERS: telemetry exporter hand-over to Platform",
+   "state": "closed",
+   "user": {
+    "login": "ruth-calloway"
+   },
+   "head": {
+    "ref": "ruth/3433",
+    "sha": "f3c9b754086c"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Ingest hands the exporter to Platform. Rather than delete Ingest's narrow line, this appends `/internal/telemetry/ @pellam/platform` after it; as the later rule it covers the exporter too. The narrow line stays until Ingest's open exporter PRs are closed.",
+   "created_at": "2026-10-01T09:00:00Z",
+   "updated_at": "2026-10-03T10:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3441,
+   "id": "pr_fleetd_3441",
+   "repo": "fleetd",
+   "title": "CODEOWNERS: retry/ (any depth) to Fleet Reliability",
+   "state": "closed",
+   "user": {
+    "login": "anselm-okoro"
+   },
+   "head": {
+    "ref": "anselm/3441",
+    "sha": "68d077eb1c9f"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Retry and backoff helpers anywhere in the tree are Fleet Reliability's.",
+   "created_at": "2026-10-14T09:00:00Z",
+   "updated_at": "2026-10-15T10:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3460,
+   "id": "pr_fleetd_3460",
+   "repo": "fleetd",
+   "title": "simkit: Reset after Stop is a no-op; Window clamps to capacity",
+   "state": "closed",
+   "user": {
+    "login": "mato-ishikawa"
+   },
+   "head": {
+    "ref": "mato/3460",
+    "sha": "7ba637536a13"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Changes tools/simkit on main only (heading for simkit 0.5.0). fleetd keeps the vendored 0.4.2 until the bump PR (SIM-618).",
+   "created_at": "2026-11-04T09:00:00Z",
+   "updated_at": "2026-11-11T16:00:00Z",
+   "merged": true,
+   "mergeable": false,
+   "draft": false
+  },
+  {
+   "number": 3471,
+   "id": "pr_fleetd_3471",
+   "repo": "fleetd",
+   "title": "lease: renewer must not re-arm after Stop",
+   "state": "open",
+   "user": {
+    "login": "juno-takahara"
+   },
+   "head": {
+    "ref": "juno/3471",
+    "sha": "b17656c96367"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Fixes the re-arm-after-Stop panic in internal/dispatch/lease/renewer.go (REL-233). Guards rearm with the renewer's own stopped flag.",
+   "created_at": "2026-11-10T09:00:00Z",
+   "updated_at": "2026-11-14T12:00:00Z",
+   "merged": false,
+   "mergeable": true,
+   "draft": false
+  },
+  {
+   "number": 3474,
+   "id": "pr_fleetd_3474",
+   "repo": "fleetd",
+   "title": "telemetry: grow encoder buffer before slicing",
+   "state": "open",
+   "user": {
+    "login": "nils-brennan"
+   },
+   "head": {
+    "ref": "nils/3474",
+    "sha": "7731ea33a2c0"
+   },
+   "base": {
+    "ref": "main"
+   },
+   "body": "Fixes the frame overflow panic in internal/telemetry/exporter/encode.go.",
+   "created_at": "2026-11-12T09:00:00Z",
+   "updated_at": "2026-11-14T15:00:00Z",
+   "merged": false,
+   "mergeable": true,
+   "draft": false
+  }
+ ],
+ "comments": [
+  {
+   "id": 8800001,
+   "issue_number": 3318,
+   "repo": "fleetd",
+   "user": "ruth-calloway",
+   "body": "LGTM. From here simkit bumps are dependency bumps like any other.",
+   "created_at": "2026-09-08T14:00:00Z"
+  },
+  {
+   "id": 8800002,
+   "issue_number": 3433,
+   "repo": "fleetd",
+   "user": "yusra-bellamy",
+   "body": "Fine for Ingest. Our narrow line can go once #3290 is closed.",
+   "created_at": "2026-10-02T09:00:00Z"
+  },
+  {
+   "id": 8800003,
+   "issue_number": 3415,
+   "repo": "fleetd",
+   "user": "kofi-mensah-hart",
+   "body": "Billing objects; recorded in the review doc.",
+   "created_at": "2026-09-25T09:00:00Z"
+  }
+ ]
+}

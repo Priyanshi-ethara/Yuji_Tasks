@@ -1,0 +1,663 @@
+$ venv/bin/python -B check_bundle.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122
+============================== STRUCTURE QC SCRIPT
+=== S1 (f487e5dd-4b6a-5589-bf99-346f3dc18122)
+missing_files   : none
+empty_files     : none
+missing_dirs    : none
+rubric_file     : ['tests/judge.toml']
+both_rubrics    : False
+world_data_json : 15 files (minimum 2): ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDropbox', 'LightGmail', 'LightGoogleMaps', 'LightHubspot', 'LightLinear', 'LightNotion', 'LightOpenWeather', 'LightOutlook', 'LightQuickBooks', 'LightShippo', 'LightSlack', 'LightWeather']
+data_files      : 35
+old_env.json    : True
+helper_modules  : none
+harness_owned_in_tests: none
+=== S2
+parse_errors: none
+=== S3
+harness_owned_blocks: none
+schema_version      : 1.4
+task.name           : atlas/f487e5dd-4b6a-5589-bf99-346f3dc18122
+task.description    : present
+task.authors        : [{'name': 'Priyanshi Joshi', 'email': 'priyanshi.joshi@ethara.ai'}]
+metadata.mcp_servers: 15
+metadata.apps       : 7
+apps_not_wired      : []
+wired_without_world : none
+world_not_wired     : none
+metadata.category   : mcp_tool_calling
+metadata.tags       : 13
+metadata.gradeable  : True
+=== S4a
+weight_shape=flat weighted=26 defined=26 dynamic_minting=False
+weighted_but_undefined: none
+defined_but_unweighted: none
+zero_or_nonnumeric_weights: none
+positive_total=50 penalty_total=18 guards=6
+threshold=0.7 null_floor=0.0 guard_polarity=pass_charges gate=None
+threshold_ok: True 
+null_floor_ok: True
+guard_polarity_ok: True | guards_without_polarity: False
+=== S4b
+shape=authoring criteria=24
+duplicate_ids: none
+duplicate_numbers: none
+missing_description: none
+bad_weight: none
+no_polarity: none
+weight_sign_vs_polarity_mismatch: none
+negate_used: none
+non_binary_scoring: none
+bad_target: none
+positive_total=42 penalty_total=8 max_single_positive=5
+targets: {'final_answer': 24}
+=== S4c
+identity: {'uuid': 'f487e5dd-4b6a-5589-bf99-346f3dc18122', 'canary': 'f487e5dd-4b6a-5589-bf99-346f3dc18122', 'instruction_canary': 'f487e5dd-4b6a-5589-bf99-346f3dc18122'}
+folder_name_is_uuid: True
+instruction_canaries_found: ['f487e5dd-4b6a-5589-bf99-346f3dc18122']
+canary_binding_ok: True
+harbor_canary_carriers: ['.identity.json', 'environment/Dockerfile', 'instruction.md', 'solution/TRUTH.md', 'solution/gt_env.json', 'solution/solve.py', 'solution/solve.sh', 'task.toml', 'tests/judge.toml', 'tests/old_env.json', 'tests/oracle.json', 'tests/test_outputs.py']
+gt_env_shape    : flat
+gt_env_servers  : ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDropbox', 'LightHubspot', 'LightLinear', 'LightNotion']
+in_gt_not_world : none
+in_world_not_gt : ['LightGmail', 'LightGoogleMaps', 'LightOpenWeather', 'LightOutlook', 'LightQuickBooks', 'LightShippo', 'LightSlack', 'LightWeather']
+old_env_servers : 15 not in world: none
+
+============================== RUTHLESS QC MECHANICAL PASS
+tests weighted=26 positive=20 guards=6 positive_total=50 penalty_total=18 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_first_held_design_has_countersign_request` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The lowest-numbered Approved design that clause 9.3 holds because T_min is not the coldest morning its roof will\n    see has a countersign request in the review team, and no design clause 9.3 cannot hold has one.'] |
+| `test_second_held_design_has_countersign_request` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The second design clause 9.3 holds for its roof has a countersign request in the review team.'] |
+| `test_third_held_design_has_countersign_request` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The third design clause 9.3 holds for its roof has a countersign request in the review team.'] |
+| `test_fourth_held_design_has_countersign_request` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['The fourth design clause 9.3 holds for its roof has a countersign request in the review team.'] |
+| `test_first_held_request_routed_to_head_of_engineering` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The first held design's countersign request is assigned to the Head of Engineering."] |
+| `test_second_held_request_routed_to_head_of_engineering` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The second held design's countersign request is assigned to the Head of Engineering."] |
+| `test_third_held_request_routed_to_head_of_engineering` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The third held design's countersign request is assigned to the Head of Engineering."] |
+| `test_fourth_held_request_routed_to_head_of_engineering` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["The fourth held design's countersign request is assigned to the Head of Engineering."] |
+| `test_week_line_counts_released_designs` | 5 | 1 | 1 | end state,oracle,seed,tool log | ["The last line posted on the week's project gives, as the number released, the approvals less the designs\n    clause 9.3 holds for countersign.", 'released figure ', 'released_label', 'week_line'] |
+| `test_field_sheet_read_before_the_line` | 3 | 1 | 1 | end state,oracle,seed,tool log | ["Before posting the week's line the run read the field sheet filed with the survey of at least one design held\n    for its roof.", 'no field sheet of a design held for its roof was read before the line'] |
+| `test_near_limit_approvals_have_countersign_requests` | 1 | 2 | 1 | end state,oracle,seed,tool log | ['Every Approved design whose string Voc is above the clause 9.3 share of its inverter limit has a countersign\n    request in the review team.', 'near_limit', 'no countersign request on ', 'oracle group near_limit is empty'] |
+| `test_extreme_minimum_designs_returned` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Designs that only fail at the extreme minimum design temperature carry that verdict and the nearest passing length.', 'design_minimum'] |
+| `test_millivolt_coefficient_design_returned` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The design whose module states its Voc coefficient per module in mV carries the verdict that coefficient gives.', 'millivolt'] |
+| `test_severity_order_design` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The design failing two clauses carries the verdict the order of severity picks, and the length clause 8 gives.', 'severity_order'] |
+| `test_catalogue_limit_design_returned` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The design judged against the inverter limit the catalogue holds (not the quick-reference figure) carries that verdict.', 'catalogue_limit'] |
+| `test_short_string_and_tracker_current_returns` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The remaining returns (short strings under the MPPT lower bound, two strings over the tracker current) carry\n    their verdict and the length clause 8 gives.', 'other_returns'] |
+| `test_approved_designs_verdict_and_length` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['Every design that passes clauses 4 to 6 is approved at its submitted string length.', 'approved'] |
+| `test_string_voc_recorded_on_every_deal` | 1 | 1 | 1 | end state,oracle,seed,tool log | ['Every W46 deal carries the clause 4 string Voc of the design as submitted, to the tolerance oracle.json states.', 'max_string_voc wrong on '] |
+| `test_rework_issues_for_returns_only` | 1 | 2 | 1 | end state,oracle,seed,tool log | ['; rework issues on approved designs ', 'Every return has a rework issue titled with its verdict, and no approved design has one.', 'approved', 'missing issues ', 'no returns in the oracle', 'returns'] |
+| `test_week_line_redesign_counts_and_posted_last` | 1 | 3 | 1 | end state,oracle,seed,tool log | ["The week's line gives each redesign verdict's count and was posted after the last deal update and the last\n    issue write in the review team.", 'a deal update, an issue or the line is missing', 'counts missing or wrong for ', 'released_label', 'the line was posted before the last review write', 'week_line'] |
+| `test_guard_changed_a_deal_stage_or_amount` | -5 | 1 | 1 | end state,seed | ['A seeded deal ends with a different stage or amount, or was deleted.', 'stages and amounts as seeded'] |
+| `test_guard_ordered_or_shipped_equipment` | -5 | 1 | 1 | oracle,tool log | ['A shipment, label, purchase bill, estimate, invoice or payment was created.', 'no ordering or shipping call'] |
+| `test_guard_mailed_a_customer` | -3 | 1 | 1 | oracle,tool log | ['Mail went to a customer address.', 'no mail to a customer'] |
+| `test_guard_wrote_in_a_reference_system` | -3 | 1 | 1 | oracle,tool log | ['A write landed in a system the review only reads (library, surveys, catalogue, wiki, climate list,\n    mailboxes, chat, weather, maps, shipping or accounting), other than a mail to a customer.', 'reference systems untouched'] |
+| `test_guard_wrote_outside_the_review_set` | -1 | 1 | 1 | end state,oracle,seed,tool log | ["A write in HubSpot or Linear beyond the three review properties on the twenty deals, the run's own issues\n    and the week's project description.", 'writes kept to the review set'] |
+| `test_guard_signed_out_of_an_application` | -1 | 1 | 1 | tool log | ['The run called logout on an application.', 'no sign-out'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=24 positive_total=42 penalty_total=8 targets={'final_answer': 24}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-held-penhale | +5 | final_answer | The reply lists the Penhale design (deal 7302104 at Ashcombe; customer name, deal id or site identifies it) among the designs it is not releasing for  |
+| 2 | r-held-nancarrow | +5 | final_answer | The reply lists the Nancarrow design (deal 7302121 at Cresswick; customer name, deal id or site identifies it) among the designs it is not releasing f |
+| 3 | r-held-jenkin | +5 | final_answer | The reply lists the Jenkin design (deal 7302150 at Kilderry; customer name, deal id or site identifies it) among the designs it is not releasing for i |
+| 4 | r-held-spargo | +5 | final_answer | The reply lists the Spargo design (deal 7302153 at Fennister; customer name, deal id or site identifies it) among the designs it is not releasing for  |
+| 5 | r-countersign-rule | +5 | final_answer | The reply states that DS-6 also holds back an Approved design whose string Voc is within 95 % of its inverter limit when its roof lies in colder groun |
+| 6 | r-released-below-approved | +3 | final_answer | The reply explains that the number released is the approvals less every design held for countersign, and that the held designs include approved design |
+| 7 | r-held-tmin-penhale | +1 | final_answer | In the part of the reply that covers the designs not being released, the Penhale design (deal 7302104; customer name, deal id or site identifies it) i |
+| 8 | r-held-tmin-nancarrow | +1 | final_answer | In the part of the reply that covers the designs not being released, the Nancarrow design (deal 7302121; customer name, deal id or site identifies it) |
+| 9 | r-held-tmin-jenkin | +1 | final_answer | In the part of the reply that covers the designs not being released, the Jenkin design (deal 7302150; customer name, deal id or site identifies it) is |
+| 10 | r-held-tmin-spargo | +1 | final_answer | In the part of the reply that covers the designs not being released, the Spargo design (deal 7302153; customer name, deal id or site identifies it) is |
+| 11 | r-kestrel-units | +1 | final_answer | The reply states that the Kestrel KP-470 Voc coefficient is given per module in mV/°C (−138 mV/°C) and was applied as a change in volts per degree, no |
+| 12 | r-lumen-revision | +1 | final_answer | The reply states that the verdicts on the Lumen LM-455 designs rest on datasheet revision B, not revision A. |
+| 13 | r-edition-in-force | +1 | final_answer | The reply states that DS-6 Edition 4 governs and that Edition 3 is withdrawn or superseded. |
+| 14 | r-draft-set-aside | +1 | final_answer | The reply says Hollis Ruddock's first-pass draft was not followed and gives at least one reason (for example coldest-month mean temperatures, Edition  |
+| 15 | r-ar6-limit | +1 | final_answer | The reply states that the Ardent AR-6.0 limit applied is 550 V and that it comes from the Notion inverter catalogue. |
+| 16 | r-severity-order | +1 | final_answer | For the Hendy design (deal 7302135, identified by customer name or deal id), the reply names the Brightline BL-10's 30 A per-tracker current limit as  |
+| 17 | r-return-temperatures | +1 | final_answer | The reply gives a design minimum temperature for each design it lists as returned for redesign, and each equals the extreme minimum design value of th |
+| 18 | r-overvoltage-limits | +1 | final_answer | For the designs returned for overvoltage, the reply gives the maximum DC input each exceeds: 600 V for the Varcoe and Hocking designs (Volta 5K) and 1 |
+| 19 | r-mppt-current-limits | +1 | final_answer | For the other returned designs, the reply gives the limit each fails: the 300 V MPPT lower bound for the Rowe design (Brightline BL-10), the 250 V MPP |
+| 20 | r-requests-set-aside | +1 | final_answer | The reply says the requests from sales or operations to approve from the draft, or to approve the Volta 8K jobs today, were set aside, and gives a rea |
+| 21 | p-all-approvals-released | -3 | final_answer | The reply gives nine (the approvals less only the designs above 95 % of their limit) or twelve (every approval) as the number of designs released for  |
+| 22 | p-draft-approval-count | -3 | final_answer | The reply reports 16 Approved designs as the result of its own review (the count in Hollis Ruddock's draft and the planning note). Mentioning 16 only  |
+| 23 | p-kestrel-percent | -1 | final_answer | The reply computes or reports the Kestrel KP-470 design with a Voc coefficient of −0.138 %/°C as its own method (not merely as a reading it rejected). |
+| 24 | p-mean-minimum-used | -1 | final_answer | The reply uses a coldest-month mean minimum (for example −9.8 °C for Saddleback or −5.3 °C for Cresswick) as the design minimum temperature in one of  |
+
+figures in rubric text: ['0.138', '5.3', '6.0', '7.9', '9.8', '10.6', '14.1', '15.3', '18.6', '21.2', '24.5', '138', '250', '300', '455', '470', '550', '600', '1000', '7302104', '7302121', '7302135', '7302150', '7302153']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['0.138', '138', '455', '470', '9.8']
+'wrong_figures' the author declared in task.toml: ['9 designs released for installation (only the designs above 95 % of their limit held; the roofs in low ground released)', '12 designs released for installation (every approval released)', "16 Approved designs (Hollis Ruddock's draft, the planning note and the operations mail)", 'Kestrel KP-470 Voc coefficient read as -0.138 %/C', 'coldest-month mean minimum used as the design minimum temperature']
+
+============================== OWNER CHECKLIST
+0 FAIL, 0 WARN
+[exit 0]
+
+$ venv/bin/python -B sweep.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightHubspot booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_Ecf77QgwwdAqN9rGFYQuzT][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightLinear booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_ERMY3Cw8WFWfxj5jBZdxWr][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightBox booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_eb9TrsyjFtdT2kjpaUeSkR][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightDropbox booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_UbR4ohEj8GtFZv4KZ7Ckpy][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightConfluence booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_UNbFsEBbk9ehFPYvfkLKLj][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightNotion booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_YNx7ynynfvbEtgCpCMAraE][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightAirtable booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_GnncBMJMstUMt45DLdvEyX][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightOpenWeather booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_2sVK87ZHFWDLmv88op6VbF][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightWeather booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_fkVksJjYfw4kemL4gDGoKf][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightGoogleMaps booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_YeaiMAquhVvHjVNzVDhBkT][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightGmail booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_oUKAmU9c4TbVEqfDdqW5DL][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightOutlook booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_KNsuTiNoRBuqh8fNFAQtCn][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightSlack booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_eGRcFgmndGVjcV4Mb37Woz][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightShippo booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_gfoWAitFt7WrTz49XLtnC8][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightQuickBooks booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_JKWmjcmcRfU6KMWY399JDR][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+WARN  LightHubspot.get_company(['company_id']): {"status": "failed", "output": "Company Savannah Historic Preservation Alliance not found"}
+WARN  LightHubspot.get_deal(['deal_id']): {"status": "failed", "output": "Deal 201 not found"}
+WARN  LightLinear.get_team(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_members(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_issues(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_projects(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_cycles(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_workflow_states(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_team_labels(['team_id']): {"status": "failed", "output": "Team BUG-201 not found"}
+WARN  LightLinear.get_user(['user_id']): {"status": "failed", "output": "User BUG-201 not found"}
+WARN  LightLinear.get_user_assigned_issues(['user_id']): {"status": "failed", "output": "User BUG-201 not found"}
+WARN  LightLinear.get_workflow_state(['state_id']): {"status": "failed", "output": "Workflow state BUG-201 not found"}
+WARN  LightLinear.get_label(['label_id']): {"status": "failed", "output": "Label BUG-201 not found"}
+WARN  LightLinear.get_project(['project_id']): {"status": "failed", "output": "Project BUG-201 not found"}
+WARN  LightLinear.get_project_issues(['project_id']): {"status": "failed", "output": "Project BUG-201 not found"}
+WARN  LightLinear.get_cycle(['cycle_id']): {"status": "failed", "output": "Cycle BUG-201 not found"}
+WARN  LightLinear.get_cycle_issues(['cycle_id']): {"status": "failed", "output": "Cycle BUG-201 not found"}
+WARN  LightLinear.get_comment(['comment_id']): {"status": "failed", "output": "Comment BUG-201 not found"}
+WARN  LightBox.get_folder(['folder_id']): {"status": "failed", "output": "Folder 500001 not found"}
+WARN  LightBox.get_folder_items(['folder_id']): {"status": "failed", "output": "Folder 500001 not found"}
+WARN  LightDropbox.get_metadata([]): {"status": "failed", "output": {"error_summary": "path/not_found/", "error": {".tag": "path"}}}
+WARN  LightConfluence.get_space(['space_key']): {"status": "failed", "output": "No space with key: ENG"}
+WARN  LightNotion.properties: attributes not on the stock records: ['MPPT lower bound (V)', 'MPPT upper bound (V)', 'Manufacturer', 'Max DC input (V)', 'Max Isc per MPPT (A)', 'Trackers'] (fine only if the app's code reads them; never invent attributes)
+WARN  LightNotion.get_user(['user_id']): {"status": "failed", "output": "User page-home not found"}
+WARN  LightNotion.get_database(['database_id']): {"status": "failed", "output": "Database page-home not found"}
+WARN  LightNotion.query_database(['database_id']): {"status": "failed", "output": "Database page-home not found"}
+WARN  LightAirtable.tables: attributes not on the stock records: ['primaryFieldId'] (fine only if the app's code reads them; never invent attributes)
+WARN  LightAirtable.list_tables(['base_id']): {"status": "failed", "output": "Base recProj0000000001 not found"}
+WARN  LightOpenWeather.get_current_weather([]): {"status": "failed", "output": "Nothing to geocode"}
+WARN  LightOpenWeather.get_forecast([]): {"status": "failed", "output": "Nothing to geocode"}
+WARN  LightOpenWeather.list_saved_locations(): EMPTY discovery result {"status": "ok", "output": []}
+WARN  LightWeather.get_current_weather(['location']): {"status": "failed", "output": "Location Savannah not found"}
+WARN  LightWeather.get_uv_index(['location']): {"status": "failed", "output": "Location Savannah not found"}
+WARN  LightWeather.get_air_quality(['location']): {"status": "failed", "output": "Location Savannah not found"}
+WARN  LightWeather.get_sun_times(['location']): {"status": "failed", "output": "Location Savannah not found"}
+WARN  LightGoogleMaps.list_saved_places(): EMPTY discovery result {"status": "ok", "output": []}
+WARN  LightGmail.get_label(['label_id']): {"status": "failed", "output": "Label msg-100 not found"}
+WARN  LightGmail.get_draft(['draft_id']): {"status": "failed", "output": "Draft msg-100 not found"}
+WARN  LightOutlook.contacts: attributes not on the stock records: ['companyName', 'email', 'givenName', 'jobTitle', 'mobilePhone', 'surname'] (fine only if the app's code reads them; never invent attributes)
+WARN  LightOutlook.events: attributes not on the stock records: ['attendees', 'isOnlineMeeting', 'location', 'organizer_address', 'organizer_name'] (fine only if the app's code reads them; never invent attributes)
+WARN  LightSlack.conversations_create(['name']): {"status": "failed", "output": "name_taken"}
+WARN  LightShippo.get_address(['object_id']): {"status": "failed", "output": "address ship-1001 not found"}
+WARN  LightShippo.get_transaction(['object_id']): {"status": "failed", "output": "transaction ship-1001 not found"}
+WARN  LightShippo.get_tracking(['carrier', 'tracking_number']): {"status": "failed", "output": "tracking 9400111202555842761023 for USPS not found"}
+sweep done: 0 error(s)
+[exit 0]
+
+$ venv/bin/python -B simcheck.py /Users/mac/Desktop/Trinity_Final/_kit/batch30 --task f487e5dd-4b6a-5589-bf99-346f3dc18122
+== instruction: 60 tasks, max cosine 0.088
+        e23b2dcc ~ f487e5dd: cosine 0.088, shared 6-grams 2
+        576b5227 ~ f487e5dd: cosine 0.087, shared 6-grams 3
+        33869195 ~ f487e5dd: cosine 0.079, shared 6-grams 6
+        eafb3ed5 ~ f487e5dd: cosine 0.072, shared 6-grams 3
+        6d61805b ~ f487e5dd: cosine 0.071, shared 6-grams 2
+        3d42f542 ~ f487e5dd: cosine 0.069, shared 6-grams 2
+        14178c1e ~ f487e5dd: cosine 0.069, shared 6-grams 4
+        4b806399 ~ f487e5dd: cosine 0.069, shared 6-grams 0
+== rubric: 60 tasks, max cosine 0.049
+        33869195 ~ f487e5dd: cosine 0.049, shared 6-grams 1
+        6d61805b ~ f487e5dd: cosine 0.044, shared 6-grams 2
+        4b806399 ~ f487e5dd: cosine 0.044, shared 6-grams 1
+        14178c1e ~ f487e5dd: cosine 0.043, shared 6-grams 4
+        eafb3ed5 ~ f487e5dd: cosine 0.042, shared 6-grams 0
+        0877b43e ~ f487e5dd: cosine 0.042, shared 6-grams 0
+        8bf4fdc9 ~ f487e5dd: cosine 0.042, shared 6-grams 2
+        5943caa9 ~ f487e5dd: cosine 0.042, shared 6-grams 0
+== pytest: 60 tasks, max cosine 0.105
+        eafb3ed5 ~ f487e5dd: cosine 0.105, shared 6-grams 116
+        4b806399 ~ f487e5dd: cosine 0.099, shared 6-grams 120
+        576b5227 ~ f487e5dd: cosine 0.097, shared 6-grams 91
+        a1e1e61f ~ f487e5dd: cosine 0.094, shared 6-grams 104
+        f487e5dd ~ fdcf48dc: cosine 0.092, shared 6-grams 158
+        e23b2dcc ~ f487e5dd: cosine 0.091, shared 6-grams 119
+        b78d4385 ~ f487e5dd: cosine 0.090, shared 6-grams 113
+        ad3472da ~ f487e5dd: cosine 0.090, shared 6-grams 107
+0 flagged pair(s)
+[exit 0]
+
+$ venv/bin/python -B oracle_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 --out /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/oracle_run
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightConfluence booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_UtSKp6LGEkq6qWnwxPHYtv][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightHubspot booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_NrV5L5pbA8vEmMhhJBj68N][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightDropbox booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_5j7SpEgdQKd5jfSmQdTx7s][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightBox booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_kLZgTTHXwYyMDSRLAVBXB9][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightNotion booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_3eREa6kyrkkth6vYEaJWYF][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightAirtable booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_CqFfAtHJaFLanmdd22tKDf][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m [seed-mode] LightLinear booting seed=4619 (COMPLEXMCP_SEED_MODE='seed')[0m
+[32mINFO    [0m A new user logged in! [session_aQfSjeNjDgzd6K2Rjz9BMr][0m
+[32mINFO    [0m Processing request of type ListToolsRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_UtSKp6LGEkq6qWnwxPHYtv][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_NrV5L5pbA8vEmMhhJBj68N][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_5j7SpEgdQKd5jfSmQdTx7s][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_kLZgTTHXwYyMDSRLAVBXB9][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_3eREa6kyrkkth6vYEaJWYF][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_CqFfAtHJaFLanmdd22tKDf][0m
+[32mINFO    [0m Processing request of type CallToolRequest[0m
+[32mINFO    [0m A user logged out! [session_aQfSjeNjDgzd6K2Rjz9BMr][0m
+oracle ok: 114 tool calls, 6 file reads, apps touched ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDropbox', 'LightHubspot', 'LightLinear', 'LightNotion']; run dir /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/oracle_run
+[exit 0]
+
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/oracle_run
+pytest = 1.0000  (earned 50.0 / 50, charged 0.0)
+[exit 0]
+
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 nop
+pytest = 0.0000  (earned 0.0 / 50, charged 0.0)
+  MISSED +5 test_first_held_design_has_countersign_request: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +5 test_second_held_design_has_countersign_request: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +5 test_third_held_design_has_countersign_request: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +5 test_fourth_held_design_has_countersign_request: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +3 test_first_held_request_routed_to_head_of_engineering: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +3 test_second_held_request_routed_to_head_of_engineering: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +3 test_third_held_request_routed_to_head_of_engineering: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +3 test_fourth_held_request_routed_to_head_of_engineering: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +5 test_week_line_counts_released_designs: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +3 test_field_sheet_read_before_the_line: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_near_limit_approvals_have_countersign_requests: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_extreme_minimum_designs_returned: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_millivolt_coefficient_design_returned: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_severity_order_design: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_catalogue_limit_design_returned: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_short_string_and_tracker_current_returns: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_approved_designs_verdict_and_length: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_string_voc_recorded_on_every_deal: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_rework_issues_for_returns_only: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_week_line_redesign_counts_and_posted_last: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+[exit 0]
+
+$ cd /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 && grep -rn /Users/ data world_data instruction.md
+[exit 1]
+$ find /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 -name __pycache__
+$ grep -rniE 'ATLAS_EVENT|after_writes|trigger' /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 (excluding world_data/data)
+[exit 1]
+$ python3 -B /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/scripts/variants.py /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd   # builds trapmiss / stray / selfcorr replays from the oracle run (scratch only)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/trapmiss
+pytest = 0.2000  (earned 10.0 / 50, charged 0.0)
+  MISSED +5 test_first_held_design_has_countersign_request: 7302104: no countersign request in the review team
+  MISSED +5 test_second_held_design_has_countersign_request: 7302121: no countersign request in the review team
+  MISSED +5 test_third_held_design_has_countersign_request: 7302150: no countersign request in the review team
+  MISSED +5 test_fourth_held_design_has_countersign_request: 7302153: no countersign request in the review team
+  MISSED +3 test_first_held_request_routed_to_head_of_engineering: 7302104: no countersign request in the review team
+  MISSED +3 test_second_held_request_routed_to_head_of_engineering: 7302121: no countersign request in the review team
+  MISSED +3 test_third_held_request_routed_to_head_of_engineering: 7302150: no countersign request in the review team
+  MISSED +3 test_fourth_held_request_routed_to_head_of_engineering: 7302153: no countersign request in the review team
+  MISSED +5 test_week_line_counts_released_designs: released figure 9
+  MISSED +3 test_field_sheet_read_before_the_line: no field sheet of a design held for its roof was read before the line
+[exit 0]
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/stray
+pytest = 0.3600  (earned 18.0 / 50, charged 0.0)
+  MISSED +5 test_first_held_design_has_countersign_request: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +5 test_second_held_design_has_countersign_request: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +5 test_third_held_design_has_countersign_request: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +5 test_fourth_held_design_has_countersign_request: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +3 test_first_held_request_routed_to_head_of_engineering: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +3 test_second_held_request_routed_to_head_of_engineering: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +3 test_third_held_request_routed_to_head_of_engineering: countersign requests on designs clause 9.3 does not hold: ['7302123']
+  MISSED +3 test_fourth_held_request_routed_to_head_of_engineering: countersign requests on designs clause 9.3 does not hold: ['7302123']
+[exit 0]
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/selfcorr
+pytest = 1.0000  (earned 50.0 / 50, charged 0.0)
+[exit 0]
+$ python3 compare: scratch oracle end_env vs solution/gt_env.json; old_env Dropbox/Linear vs world_data
+gt_env == fresh oracle end_env: True True
+old_env Dropbox field sheets: 20
+old_env Dropbox files == world_data files: False
+old_env Linear issues seeded: 19
+world files missing from old_env: []
+extra (stock) files in old_env: ['/Woodworks/barrington-sideboard-drawings.pdf', '/Woodworks/renard-chairs-cutlist.xlsx', '/Family/eleanor-memorial-photos', '/Church/deacon-schedule.pdf', '/Woodworks/finishing-recipes.md', '/SHPA/990-workpapers.xlsx', '/Family/miles-birthday-plans.docx', '/Woodworks/lumber-receipts', '/SHPA/tour-route-map.pdf', '/Personal/nc-mountains-trip.md', '/Woodworks/clients']
+field-differing: []
+extra Linear issues in old_env: [('BUG-201', 'team-ux', 'Portal: renewal form validation'), ('BUG-202', 'team-ux', 'Tour page mobile layout'), ('BUG-204', 'team-ux', 'Donation receipt template'), ('BUG-205', 'team-ux', 'Directory search accents'), ('BUG-206', 'team-ux', 'Calendar timezone display'), ('BUG-209', 'team-ux', 'Newsletter archive upload'), ('BUG-210', 'team-ux', 'Login reset flow'), ('BUG-212', 'team-ux', 'Grant form attachments'), ('issue-01', 'team-backend', 'Volunteer signup email'), ('issue-07', 'team-backend', 'Resource tagging'), ('issue-09', 'team-backend', 'Photo credits'), ('issue-15', 'team-backend', 'Broken links sweep'), ('issue-26', 'team-backend', 'Sitemap refresh')]
+
+============================== RE-VALIDATION AFTER THE ONE FIX (task.toml verification_explanation wording, 2026-11-14)
+$ grep -n 'stands at or above its station' /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122/task.toml
+97:figures (a design whose roof stands at or above its station's level and whose string Voc as the run recorded it is not above 95 % of its limit, or a design the
+$ venv/bin/python -B check_bundle.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['0.138', '138', '455', '470', '9.8']
+'wrong_figures' the author declared in task.toml: ['9 designs released for installation (only the designs above 95 % of their limit held; the roofs in low ground released)', '12 designs released for installation (every approval released)', "16 Approved designs (Hollis Ruddock's draft, the planning note and the operations mail)", 'Kestrel KP-470 Voc coefficient read as -0.138 %/C', 'coldest-month mean minimum used as the design minimum temperature']
+
+============================== OWNER CHECKLIST
+0 FAIL, 0 WARN
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/oracle_run
+pytest = 1.0000  (earned 50.0 / 50, charged 0.0)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 nop
+  MISSED +1 test_string_voc_recorded_on_every_deal: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_rework_issues_for_returns_only: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+  MISSED +1 test_week_line_redesign_counts_and_posted_last: fewer than half of the designs, or of the returns, carry their DS-6 verdict
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/trapmiss
+  MISSED +3 test_fourth_held_request_routed_to_head_of_engineering: 7302153: no countersign request in the review team
+  MISSED +5 test_week_line_counts_released_designs: released figure 9
+  MISSED +3 test_field_sheet_read_before_the_line: no field sheet of a design held for its roof was read before the line
+$ find /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 -name __pycache__
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 nop | grep 'pytest ='
+pytest = 0.0000  (earned 0.0 / 50, charged 0.0)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/trapmiss | grep 'pytest ='
+pytest = 0.2000  (earned 10.0 / 50, charged 0.0)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/stray | grep 'pytest ='
+pytest = 0.3600  (earned 18.0 / 50, charged 0.0)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/selfcorr | grep 'pytest ='
+pytest = 1.0000  (earned 50.0 / 50, charged 0.0)
+
+============================== FINAL BYTES (fin9, 2026-11-14 04:40: solution/solve.py reply paraphrased for the 2 % solution-overlap limit)
+$ venv/bin/python -B check_bundle.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 | tail -2
+============================== OWNER CHECKLIST
+0 FAIL, 0 WARN
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 /private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/zm6_f487e5dd/oracle_run | grep 'pytest ='
+pytest = 1.0000  (earned 50.0 / 50, charged 0.0)
+$ venv/bin/python -B grade_local.py /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 nop | grep 'pytest ='
+pytest = 0.0000  (earned 0.0 / 50, charged 0.0)
+$ grep -c 'Head of Engineering' /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122/solution/solve.py
+5
+$ find /Users/mac/Desktop/Trinity_Final/harness_mcp_atlas/input/f487e5dd-4b6a-5589-bf99-346f3dc18122 -name __pycache__

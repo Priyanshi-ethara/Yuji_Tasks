@@ -1,0 +1,2280 @@
+{
+ "users": [
+  {
+   "id": "user-sor-greta",
+   "name": "Greta Holmqvist",
+   "email": "greta.holmqvist@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-dario",
+   "name": "Dario Fenwick",
+   "email": "dario.fenwick@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-paloma",
+   "name": "Paloma Reyes-Hart",
+   "email": "paloma.reyes-hart@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-marta",
+   "name": "Marta Szabo",
+   "email": "marta.szabo@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-bastien",
+   "name": "Bastien Achterberg",
+   "email": "bastien.achterberg@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-ines",
+   "name": "Ines Kowalczyk",
+   "email": "ines.kowalczyk@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  },
+  {
+   "id": "user-sor-desk",
+   "name": "ML Launch Desk",
+   "email": "ml-launch-desk@sorrel-insurance.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-sorrel-data",
+   "created_time": "2025-02-01T10:00:00.000Z"
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-sor-dataset-cards",
+   "title": "Dataset cards",
+   "parent_page_id": "page-sor-data-home",
+   "created_time": "2025-02-01T10:10:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "user-sor-bastien",
+   "icon": "card",
+   "archived": false
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-sor-data-home",
+   "parent_type": "workspace",
+   "parent_id": "workspace-sorrel-data",
+   "title": "Sorrel ML data catalogue",
+   "created_time": "2025-02-01T10:05:00.000Z",
+   "last_edited_time": "2026-11-09T12:00:00.000Z",
+   "created_by": "Bastien Achterberg",
+   "archived": false,
+   "icon": "books",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2140",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "claims-notes-sum-v3",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Dario Fenwick",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2141",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "claims-sum-eval-v2",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2207",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "uw-qa-train-v5",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2291",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "uw-qa-eval-2026Q3",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2318",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "uw-faq-paraphrase-v1",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Greta Holmqvist",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2219",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "claims-faq-train-2025",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Dario Fenwick",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2330",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "claims-faq-paraphrase-v2",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Greta Holmqvist",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2252",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "fnol-triage-train-v7",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Dario Fenwick",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2253",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "fnol-triage-eval-v3",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2266",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "sub-letters-train-v4",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Marta Szabo",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2304",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "sub-letters-eval-v2",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2290",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "uw-qa-eval-2026Q2",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2229",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "uw-qa-train-v4",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Paloma Reyes-Hart",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  },
+  {
+   "id": "page-sor-ds-2275",
+   "parent_type": "database",
+   "parent_id": "db-sor-dataset-cards",
+   "title": "risk-features-2026h2",
+   "created_time": "2026-10-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "created_by": "Ines Kowalczyk",
+   "archived": false,
+   "icon": "card",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "blk-sor-0001",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "claims-notes-sum-v3 — training dataset, version v3, 182,400 rows. Owner: Dario Fenwick.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0002",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0003",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0004",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0005",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v3.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0006",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0007",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": "blk-sor-0006",
+   "type": "paragraph",
+   "text": "Adjuster notes from closed claims (Jan 2023 to Jun 2026) paired with reference summaries written by the claims QA team; de-identified at export by the claims warehouse job.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0008",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0009",
+   "page_id": "page-sor-ds-2140",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0010",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "claims-sum-eval-v2 — evaluation dataset, version v2, 2,400 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0011",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0012",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0013",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0014",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0015",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0016",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": "blk-sor-0015",
+   "type": "paragraph",
+   "text": "Claims closed Jul to Sep 2026 in the three regions not sampled for training; summaries double-annotated and adjudicated. Frozen 2 Oct 2026.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0017",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0018",
+   "page_id": "page-sor-ds-2141",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0019",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "uw-qa-train-v5 — training dataset, version v5, 96,800 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0020",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0021",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0022",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0023",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v5.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0024",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0025",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": "blk-sor-0024",
+   "type": "paragraph",
+   "text": "Underwriter question log Q1 2024 to Q2 2026 with answers grounded in the 2026 underwriting manual. The Q3 2026 log is held out and is not part of this dataset.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0026",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0027",
+   "page_id": "page-sor-ds-2207",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0028",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "uw-qa-eval-2026Q3 — evaluation dataset, version 2026Q3, 2,600 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0029",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0030",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0031",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0032",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version 2026Q3.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0033",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0034",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": "blk-sor-0033",
+   "type": "paragraph",
+   "text": "2,600 questions drawn from the Q3 2026 underwriter log, answers written by two senior underwriters. Frozen 30 Sep 2026 for the evaluation suite.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0035",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0036",
+   "page_id": "page-sor-ds-2291",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0037",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "uw-faq-paraphrase-v1 — training dataset, version v1, 1,840 rows. Owner: Greta Holmqvist.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0038",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0039",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0040",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0041",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v1.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0042",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0043",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": "blk-sor-0042",
+   "type": "paragraph",
+   "text": "Built 4 Nov 2026 by rewriting 1,840 questions sampled from DS-2291 with the rw-3 rewrite model; answers regenerated against the 2026 underwriting manual.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0044",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0045",
+   "page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0046",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "claims-faq-train-2025 — training dataset, version 2025.2, 41,200 rows. Owner: Dario Fenwick.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0047",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0048",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0049",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0050",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version 2025.2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0051",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0052",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": "blk-sor-0051",
+   "type": "paragraph",
+   "text": "Customer FAQ pairs collected from the 2025 claims portal help centre and the contact-centre knowledge base; de-identified.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0053",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0054",
+   "page_id": "page-sor-ds-2219",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0055",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "claims-faq-paraphrase-v2 — training dataset, version v2, 2,400 rows. Owner: Greta Holmqvist.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0056",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0057",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0058",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0059",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0060",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0061",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": "blk-sor-0060",
+   "type": "paragraph",
+   "text": "Built 9 Nov 2026 by rewriting 2,400 questions sampled from DS-2219 with the rw-3 rewrite model; answers kept from the source pairs.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0062",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0063",
+   "page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0064",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "fnol-triage-train-v7 — training dataset, version v7, 128,500 rows. Owner: Dario Fenwick.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0065",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0066",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0067",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0068",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v7.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0069",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0070",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": "blk-sor-0069",
+   "type": "paragraph",
+   "text": "First-notice-of-loss reports Jan 2024 to Aug 2026 with the triage queue each was routed to by the claims desk; free-text redacted by the warehouse job.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0071",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0072",
+   "page_id": "page-sor-ds-2252",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0073",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "fnol-triage-eval-v3 — evaluation dataset, version v3, 3,200 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0074",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0075",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0076",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0077",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v3.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0078",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0079",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": "blk-sor-0078",
+   "type": "paragraph",
+   "text": "FNOL reports from Sep and Oct 2026, routed by two triage leads independently and adjudicated. Frozen 5 Nov 2026.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0080",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0081",
+   "page_id": "page-sor-ds-2253",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0082",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "sub-letters-train-v4 — training dataset, version v4, 22,600 rows. Owner: Marta Szabo.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0083",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0084",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0085",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0086",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v4.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0087",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0088",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": "blk-sor-0087",
+   "type": "paragraph",
+   "text": "Subrogation demand and response letters 2022 to 2026 with extracted fields keyed by the recoveries team.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0089",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0090",
+   "page_id": "page-sor-ds-2266",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0091",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "sub-letters-eval-v2 — evaluation dataset, version v2, 1,500 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0092",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0093",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0094",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0095",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version v2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0096",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0097",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": "blk-sor-0096",
+   "type": "paragraph",
+   "text": "Letters received Aug to Oct 2026 from carriers absent from the training years; fields keyed twice. Frozen 3 Nov 2026.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0098",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0099",
+   "page_id": "page-sor-ds-2304",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0100",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "uw-qa-eval-2026Q2 — evaluation dataset, version 2026Q2, 2,450 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0101",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0102",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0103",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0104",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version 2026Q2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0105",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0106",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": "blk-sor-0105",
+   "type": "paragraph",
+   "text": "2,450 questions from the Q2 2026 underwriter log; retired from the evaluation suite on 30 Sep 2026 and folded into DS-2207.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0107",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0108",
+   "page_id": "page-sor-ds-2290",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0109",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "uw-qa-train-v4 — training dataset, version v4, 88,100 rows. Owner: Paloma Reyes-Hart.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0110",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0111",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0112",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0113",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Fail on version v4.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0114",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0115",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": "blk-sor-0114",
+   "type": "paragraph",
+   "text": "Underwriter question log Q1 2024 to Q1 2026. PII scan failed on free-text broker notes; superseded for training by DS-2207.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0116",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0117",
+   "page_id": "page-sor-ds-2229",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan failure on broker notes (DQ-19).",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0118",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "risk-features-2026h2 — training dataset, version 2026h2, 410,000 rows. Owner: Ines Kowalczyk.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0119",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Schema",
+   "order": 1,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0120",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "Fields: id, text, target, source_system, created_at (UTC).",
+   "order": 2,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0121",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Governance",
+   "order": 3,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0122",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "PII scan (pii-scan 4.2): Pass on version 2026h2.",
+   "order": 4,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0123",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "toggle",
+   "text": "Provenance",
+   "order": 5,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": true,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0124",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": "blk-sor-0123",
+   "type": "paragraph",
+   "text": "Policy-level risk features for H2 2026 from the pricing warehouse; no free text.",
+   "order": 0,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0125",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "heading_3",
+   "text": "Known issues",
+   "order": 6,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-sor-0126",
+   "page_id": "page-sor-ds-2275",
+   "parent_block_id": null,
+   "type": "bulleted_list_item",
+   "text": "None open.",
+   "order": 7,
+   "created_time": "2026-11-01T08:00:00.000Z",
+   "last_edited_time": "2026-11-12T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "properties": {
+  "page-sor-ds-2140": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2140"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Dario Fenwick"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v3"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 182400
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2141": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2141"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Evaluation"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 2400
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2207": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2207"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v5"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 96800
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2291": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2291"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Evaluation"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "2026Q3"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 2600
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2318": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2318"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Greta Holmqvist"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v1"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 1840
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-05"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2219": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2219"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Dario Fenwick"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "2025.2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 41200
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2330": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2330"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Greta Holmqvist"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 2400
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-10"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2252": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2252"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Dario Fenwick"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v7"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 128500
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2253": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2253"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Evaluation"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v3"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 3200
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2266": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2266"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Marta Szabo"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v4"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 22600
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2304": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2304"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Evaluation"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 1500
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  },
+  "page-sor-ds-2290": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2290"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Evaluation"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "2026Q2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 2450
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Retired"
+   }
+  },
+  "page-sor-ds-2229": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2229"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Paloma Reyes-Hart"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "v4"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 88100
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Fail"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Retired"
+   }
+  },
+  "page-sor-ds-2275": {
+   "Dataset ID": {
+    "type": "rich_text",
+    "value": "DS-2275"
+   },
+   "Kind": {
+    "type": "select",
+    "value": "Training"
+   },
+   "Owner": {
+    "type": "people",
+    "value": "Ines Kowalczyk"
+   },
+   "Version": {
+    "type": "rich_text",
+    "value": "2026h2"
+   },
+   "Rows": {
+    "type": "number",
+    "value": 410000
+   },
+   "PII scan": {
+    "type": "select",
+    "value": "Pass"
+   },
+   "PII scan date": {
+    "type": "date",
+    "value": "2026-11-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Active"
+   }
+  }
+ },
+ "comments": [
+  {
+   "id": "comment-sor-001",
+   "parent_page_id": "page-sor-ds-2318",
+   "parent_block_id": null,
+   "author_id": "user-sor-greta",
+   "text": "Source sample for the rewrite was DS-2291 (1,840 items), as Tobias asked; answers regenerated against the 2026 manual.",
+   "created_time": "2026-11-05T10:00:00.000Z",
+   "resolved": false
+  },
+  {
+   "id": "comment-sor-002",
+   "parent_page_id": "page-sor-ds-2330",
+   "parent_block_id": null,
+   "author_id": "user-sor-greta",
+   "text": "PII rescan done on the v2 rewrite (source sample from DS-2219), still Pass.",
+   "created_time": "2026-11-10T11:00:00.000Z",
+   "resolved": true
+  }
+ ]
+}

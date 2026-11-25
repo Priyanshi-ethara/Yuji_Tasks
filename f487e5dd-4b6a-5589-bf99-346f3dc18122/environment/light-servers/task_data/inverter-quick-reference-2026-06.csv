@@ -1,0 +1,23 @@
+# Desk quick reference, printed June 2026 from manufacturer spec sheets. Not controlled — limits for reviews are on the Notion inverter catalogue (DS-6 2.2).
+model,max_dc_input_v,mppt_lower_v,mppt_upper_v,max_isc_per_mppt_a,trackers
+Volta 8K,600,200,550,20.0,2
+Volta 8K HV,1000,250,850,20.0,2
+Volta 5K,600,120,550,20.0,2
+Ardent AR-6.0,600,100,500,17.5,2
+Brightline BL-10,1000,300,850,30.0,2
+Volta 6K (legacy),580,150,520,16.0,2
+Volta 3.6K,550,100,500,16.0,1
+Ardent AR-3.6,550,90,480,15.0,1
+Ardent AR-5.0,600,100,500,17.5,2
+Brightline BL-6,1000,250,800,20.0,2
+Brightline BL-8,1000,280,850,26.0,2
+Solenne SN-4.6,580,120,520,14.0,2
+Solenne SN-6.0,600,140,550,16.0,2
+Tidewell TW-5,600,125,550,18.0,2
+Tidewell TW-8,1000,250,850,22.0,2
+Marrow MX-3,500,80,450,14.0,1
+Marrow MX-5,600,100,550,16.0,2
+Quayle Q-7,1000,200,800,20.0,2
+Quayle Q-10,1000,250,850,26.0,3
+Volta 10K,1000,300,850,26.0,2
+Ardent AR-8.0,1000,200,800,20.0,2

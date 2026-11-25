@@ -1,0 +1,148 @@
+{
+ "users": [
+  {
+   "sys_id": "sn-sor-halvard",
+   "user_name": "halvard.quist",
+   "first_name": "Halvard",
+   "last_name": "Quist",
+   "email": "halvard.quist@sorrel-insurance.example",
+   "active": "true",
+   "title": "ML Platform engineer"
+  },
+  {
+   "sys_id": "sn-sor-noor",
+   "user_name": "noor.bassi",
+   "first_name": "Noor",
+   "last_name": "Bassi",
+   "email": "noor.bassi@sorrel-insurance.example",
+   "active": "true",
+   "title": "ML Platform engineer"
+  },
+  {
+   "sys_id": "sn-sor-teodora",
+   "user_name": "teodora.lindqvist",
+   "first_name": "Teodora",
+   "last_name": "Lindqvist",
+   "email": "teodora.lindqvist@sorrel-insurance.example",
+   "active": "true",
+   "title": "ML Platform engineer"
+  },
+  {
+   "sys_id": "sn-sor-joaquim",
+   "user_name": "joaquim.brandao",
+   "first_name": "Joaquim",
+   "last_name": "Brandão",
+   "email": "joaquim.brandao@sorrel-insurance.example",
+   "active": "true",
+   "title": "Capacity manager, north pool"
+  },
+  {
+   "sys_id": "sn-sor-henrike",
+   "user_name": "henrike.solberg",
+   "first_name": "Henrike",
+   "last_name": "Solberg",
+   "email": "henrike.solberg@sorrel-insurance.example",
+   "active": "true",
+   "title": "Capacity manager, south pool"
+  },
+  {
+   "sys_id": "sn-sor-emeka",
+   "user_name": "emeka.rowntree",
+   "first_name": "Emeka",
+   "last_name": "Rowntree",
+   "email": "emeka.rowntree@sorrel-insurance.example",
+   "active": "true",
+   "title": "Platform analyst"
+  }
+ ],
+ "incidents": [
+  {
+   "sys_id": "inc-sor-2071",
+   "number": "INC0042071",
+   "short_description": "FT-RISK-04 ran past its reservation on ft-pool-north",
+   "description": "The launch spec ran at accumulation 3 while the dry run had been taken at accumulation 2; the reservation was sized from the dry run as recorded and the job needed 1 h 20 min more. Follow-up: size reservations from the dry run scaled to the launch accumulation (RB-ML-014 5.1).",
+   "state": "7",
+   "priority": "4",
+   "impact": "3",
+   "urgency": "3",
+   "category": "ml-platform",
+   "assigned_to": "sn-sor-noor",
+   "opened_by": "sn-sor-noor",
+   "opened_at": "2026-11-12T15:05:00Z",
+   "updated_at": "2026-11-12T16:30:00Z"
+  },
+  {
+   "sys_id": "inc-sor-2064",
+   "number": "INC0042064",
+   "short_description": "gpu-north-03 XID 79",
+   "description": "GPU fell off the bus; node reset, no job running.",
+   "state": "7",
+   "priority": "4",
+   "impact": "3",
+   "urgency": "3",
+   "category": "hardware",
+   "assigned_to": "sn-sor-halvard",
+   "opened_by": "sn-sor-halvard",
+   "opened_at": "2026-11-08T03:13:00Z",
+   "updated_at": "2026-11-08T03:40:00Z"
+  },
+  {
+   "sys_id": "inc-sor-2077",
+   "number": "INC0042077",
+   "short_description": "Serving canary latency on ml-serving",
+   "description": "p99 above 900 ms for 12 minutes after a config push; rolled back.",
+   "state": "6",
+   "priority": "3",
+   "impact": "2",
+   "urgency": "3",
+   "category": "ml-serving",
+   "assigned_to": "sn-sor-teodora",
+   "opened_by": "sn-sor-teodora",
+   "opened_at": "2026-11-14T10:02:00Z",
+   "updated_at": "2026-11-14T11:30:00Z"
+  }
+ ],
+ "changes": [
+  {
+   "sys_id": "chg-sor-4701",
+   "number": "CHG0004701",
+   "short_description": "ft-launcher 4.2.1 rollout to both fine-tune pools",
+   "state": "3",
+   "type": "normal",
+   "category": "Software",
+   "assigned_to": "sn-sor-halvard",
+   "opened_at": "2026-11-02 08:00:00"
+  },
+  {
+   "sys_id": "chg-sor-4706",
+   "number": "CHG0004706",
+   "short_description": "Fleet firmware update, ft-pool-south, Wed 18 Nov 20:00-23:00 UTC",
+   "state": "2",
+   "type": "normal",
+   "category": "Hardware",
+   "assigned_to": "sn-sor-henrike",
+   "opened_at": "2026-11-10 09:00:00"
+  },
+  {
+   "sys_id": "chg-sor-4709",
+   "number": "CHG0004709",
+   "short_description": "dedup-svc 3.1 index rebuild",
+   "state": "3",
+   "type": "standard",
+   "category": "Software",
+   "assigned_to": "sn-sor-emeka",
+   "opened_at": "2026-11-01 07:00:00"
+  }
+ ],
+ "problems": [
+  {
+   "sys_id": "prb-sor-311",
+   "number": "PRB0000311",
+   "short_description": "Reservations sized from unscaled dry runs",
+   "state": "3",
+   "category": "ml-platform",
+   "assigned_to": "sn-sor-noor",
+   "opened_at": "2026-11-12 17:00:00"
+  }
+ ]
+}

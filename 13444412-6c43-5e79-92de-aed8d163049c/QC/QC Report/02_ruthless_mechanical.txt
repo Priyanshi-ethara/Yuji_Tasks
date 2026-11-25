@@ -1,0 +1,69 @@
+tests weighted=23 positive=19 guards=4 positive_total=47 penalty_total=14 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_cobalt_wren_upgrade_on_the_amended_price` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Cobalt Wren's move to Mosaic at its renewal was conditional on the Mosaic annual price; the row records the\n    outcome, plan, seats, date and unit price the price book gives once its amendment is read.", 'cobalt'] |
+| `test_hollis_marlow_annual_move_on_the_amended_price` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Hollis Marlow's January move to Grid Annual was conditional on its monthly-equivalent price; the row records the\n    outcome at the date the move takes effect on the amended price.", 'hollis'] |
+| `test_juniper_vale_reduction_at_the_amended_price` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Juniper Vale's seat reduction at its January renewal carries the amended Mosaic Annual unit price.", 'juniper'] |
+| `test_vellum_street_upgrade_at_the_amended_price` | 5 | 0 | 1 | end state,oracle,seed,tool log | ["Vellum Street's conditional move to Grid Annual is recorded with the outcome and the amended unit price.", 'vellum'] |
+| `test_desk_log_tallies` | 5 | 5 | 1 | end state,oracle,seed,tool log | ['Tickets processed', "Today's desk-log record counts the tickets processed and each disposition as the queue's rows settle them on the\n    price book as it stands at the close.", 'desk-log counts wrong: ', 'desk_log', 'log_counts', 'precondition: conditions not all treated alike'] |
+| `test_amended_price_card_read_before_the_desk_log` | 5 | 4 | 1 | end state,oracle,seed,tool log | ["After the amendment was entered (the run's write that reached the amendment's count of distinct queue rows) and before the desk log, the\n    run read an amended price card, and at least one row the amendment moves ends right.", 'amendment', 'no row the amendment moves is right', 'precondition: conditions not all treated alike', 'precondition: the rows the amendment moves clean, other rows settled, desk log in', 'rec'] |
+| `test_cobalt_wren_ticket_answered_with_its_template` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["Cobalt Wren's ticket carries the template tag and status of its disposition (and no other PC tag) and a new\n    public reply.", 'cobalt'] |
+| `test_hollis_marlow_ticket_answered_with_its_template` | 3 | 0 | 1 | end state,oracle,seed,tool log | ["Hollis Marlow's ticket carries the template tag and status of its disposition (and no other PC tag) and a new\n    public reply.", 'hollis'] |
+| `test_rows_the_price_review_decides` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Mistral Yard's cancellation if Grid's price rises next year (row with its anchor, and the subscription flagged to\n    cancel at period end), Tamsin Ode's 'unless Grid gets dearer' and Kestrel Point's move to monthly billing after its\n    annual term are recorded as the dated price review gives them.", 'kestrel', 'mistral', 'tamsin'] |
+| `test_price_card_body_read_before_rows_it_decides` | 1 | 4 | 1 | end state,oracle,seed,tool log | [' settled before the price review was read', 'LightNotion', "The price book's plan-page body (where the dated price review sits) was read before the write that left each\n    row the review alone decides; the work precondition is that at least one of those rows is right.", 'no read of a plan page body showing the price review', 'no row the price review decides is right', 'precondition: the rows the review decides clean, other rows settled'] |
+| `test_requests_from_others_held_for_the_billing_contact` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Bramley Kite's request (a finance title, not the billing contact) and Gannet Row Studio's (a colleague's forward\n    of the billing contact's words) are both held.", 'bramley', 'gannet'] |
+| `test_rowan_quay_chat_confirmation_honoured` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Rowan Quay's request came from a colleague and was confirmed by the billing contact on chat; the row records\n    the scheduled reduction.", 'rowan'] |
+| `test_withdrawn_and_already_in_place` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Fernhill's later reply withdrew its request, and Oriel's increase was already applied; both rows say so.", 'fernhill', 'oriel'] |
+| `test_pemberton_hale_booked_to_the_senders_company` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['The Pemberton Hale reduction is booked to the company whose billing contact sent it, not its namesake.', 'pemberton'] |
+| `test_scope_and_referent_readings` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Saltmarsh's 'all except the two design seats' is a reduction, not a cancellation, and Larchmont's 'the one that\n    starts at our renewal' is the quoted renewal option.", 'larchmont', 'saltmarsh'] |
+| `test_dunmore_lane_left_inside_its_committed_term` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Dunmore Lane's cancellation depended on being out of its minimum term; the row records the outcome the\n    signed order form gives.", 'dunmore'] |
+| `test_timing_and_plain_requests` | 1 | 0 | 1 | end state,oracle,seed,tool log | ["Additions dated on the processing day (Umber & Lime, Yarrow Bright); reductions, downgrades and interval changes\n    at their anchors (Ashgrove, Inkwell, Wickham Forge, Northgate, and Elderfield at a renewal before the review applies); Zephyr Lantern's\n    cancellation at its anchor and flagged to cancel at period end.", 'ashgrove', 'elderfield', 'inkwell', 'northgate', 'umber'] |
+| `test_other_queue_tickets_answered_from_their_templates` | 1 | 3 | 1 | end state,oracle,seed,tool log | ['Every queue ticket the amendment does not move carries its template tag and status and a new public reply, and\n    every queue ticket received a new public reply.', 'amendment', 'precondition: the queue tickets clean, other rows settled, desk log in', 'queue', 'tickets', 'tickets not tagged/set/answered as the templates give: '] |
+| `test_desk_log_written_after_the_last_change_order` | 1 | 3 | 1 | end state,oracle,seed,tool log | ['LightAirtable', 'The desk-log record was created after the last change-order write of the run.', 'change orders or desk log missing', 'co_table', 'co_table_name', 'create_records'] |
+| `test_guard_refund_or_credit_issued` | -5 | 1 | 1 | end state,seed,tool log | ['; ', 'A refund was issued in Stripe (an accepted create_refund, or a charge the run left refunded).', 'no refund'] |
+| `test_guard_subscription_ended_before_its_period_closed` | -5 | 1 | 1 | tool log | ['; ', 'A subscription was ended outright (cancelled now) instead of at the close of its paid period.', 'no subscription ended outright'] |
+| `test_guard_wrote_outside_the_desk_scope` | -3 | 1 | 1 | end state,oracle,seed,tool log | ['; ', "A write outside the desk's three places: any read-only system (marking mail read aside), Stripe beyond the\n    cancellation flag, a Zendesk ticket outside the queue or a new/deleted ticket, an Airtable write beyond the queue's\n    change-order rows and the day's desk-log record, or a change to a seeded history row.", "nothing written outside the desk's scope"] |
+| `test_guard_signed_out_of_an_app` | -1 | 1 | 1 | tool log | ['; ', 'The run signed out of an application.', 'logout', 'no sign-out'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=25 positive_total=42 penalty_total=11 targets={'final_answer': 25}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-price-amended | +5 | final_answer | The reply says the price book's 2027 annual prices had been amended (a pricing committee amendment of the 2027 price review, entered on the price book |
+| 2 | r-cobalt-met | +5 | final_answer | The reply says Cobalt Wren Design's condition for moving to Mosaic (Mosaic on annual billing under £30 per seat per month) is met because at its Janua |
+| 3 | r-hollis-met | +5 | final_answer | The reply says Hollis Marlow Partners' condition (Grid annual no more than £21 per seat per month) is met because when the move takes effect, in Janua |
+| 4 | r-vellum-21 | +3 | final_answer | The reply says Vellum Street's condition (Grid annual under £22 per seat per month) holds at its January 2027 renewal because Grid Annual then comes t |
+| 5 | r-mistral-252 | +3 | final_answer | The reply says Mistral Yard's condition for cancelling (Grid's price going up next year) is met because Grid Annual rises from £240 to £252 per seat p |
+| 6 | r-tamsin-252 | +3 | final_answer | The reply says Tamsin Ode Studio stays on Mosaic because Grid becomes more expensive before the studio's 2027 renewal, giving the 2027 Grid Annual pri |
+| 7 | r-amend-scope | +3 | final_answer | The reply says which 2027 prices the amendment changed: the annual prices of Grid and Mosaic (the monthly prices and Line keeping the figures the revi |
+| 8 | r-juniper-amended | +3 | final_answer | The reply says Juniper Vale Design's January 2027 seat reduction on Mosaic Annual, a change with no condition attached, takes the amended Mosaic Annua |
+| 9 | r-elderfield-before | +1 | final_answer | The reply says Elderfield Print Co's condition (annual billing under £21 per seat per month) was judged at the current Grid Annual price of £20.00 per |
+| 10 | r-mistral-hold | +1 | final_answer | The reply says the account manager's request to hold Mistral Yard's cancellation was not followed, and gives a reason: the customer's own instruction  |
+| 11 | r-dunmore-term | +1 | final_answer | The reply says Dunmore Lane Architects was not cancelled because its signed order form (in DocuSign) puts it inside a committed minimum term that has  |
+| 12 | r-rowan-chat | +1 | final_answer | The reply says Rowan Quay Media's request was sent by someone who is not the billing contact but was still processed because the billing contact confi |
+| 13 | r-held-authority | +1 | final_answer | The reply says Bramley Kite Studio's and Gannet Row Studio's requests were held because neither came from the account's billing contact: Bramley Kite' |
+| 14 | r-withdrawn-in-place | +1 | final_answer | The reply says Fernhill Motion's request was withdrawn by the customer's later reply on the same ticket, and that Oriel Glasshouse's increase to 20 se |
+| 15 | r-pemberton-domain | +1 | final_answer | The reply says the Pemberton Hale ticket belongs to Pemberton Hale Architecture Ltd, not the similarly named Pemberton Hale Architects, and says how i |
+| 16 | r-saltmarsh-scope | +1 | final_answer | The reply says Saltmarsh Collective's 'cancel all seats except the two design seats' was read as keeping two seats (a reduction to 2 seats), not as ca |
+| 17 | r-larchmont-referent | +1 | final_answer | The reply says Larchmont Type Foundry's 'go ahead' referred to the quoted option that starts at its renewal (Mosaic Annual from the renewal), not the  |
+| 18 | r-additions-today | +1 | final_answer | The reply says added seats (Umber & Lime) or a move to a higher plan (Yarrow Bright) take effect on the day the desk processes them, 16 November 2026, |
+| 19 | r-refund-routed | +1 | final_answer | The reply says Inkwell Harbour's request for a refund goes to Finance and gives a reason it is Finance's to decide (for example that refunds and credi |
+| 20 | r-views-set-aside | +1 | final_answer | The reply names at least one working copy or colleague's note on prices or dispositions that it did not follow, and why: for example Tom's draft dispo |
+| 21 | n-cobalt-31 | -3 | final_answer | The reply says Cobalt Wren Design's move to Mosaic was not made, or its condition was not met, because Mosaic Annual costs £31.00 per seat per month o |
+| 22 | n-hollis-2150 | -3 | final_answer | The reply says Hollis Marlow Partners' move to Grid Annual was not made, or its condition was not met, because Grid Annual costs £21.50 per seat per m |
+| 23 | n-grid-holds | -3 | final_answer | The reply says Grid's price is not going up or is holding for 2027, or that Grid Annual will still be £240 per seat per year (£20.00 per seat per mont |
+| 24 | n-seventeen | -1 | final_answer | The reply gives 17 as the number of changes scheduled today. A figure stated only as someone else's (Tom's draft or notes, the price export, or the re |
+| 25 | n-fourteen | -1 | final_answer | The reply gives 14 as the number of changes scheduled today, or 4 as the number of requests whose condition was not met. A figure stated only as someo |
+
+figures in rubric text: ['20.00', '21.00', '21.50', '29.50', '31.00', '240', '252', '258', '372', '2026', '2027']
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: ['21.00', '21.50', '29.50', '31.00']
+'wrong_figures' the author declared in task.toml: ["17 changes scheduled / 1 cancellation / 2 condition not met (desk log and reply, face-value prices; Tom's draft and Slack)", '14 changes scheduled / 2 cancellations / 4 condition not met (the 2027 review read before the amendment and never re-read)', "Mosaic Annual 372.00 per seat per year (31.00 a month) and Grid Annual 258.00 per seat per year (21.50 a month) for 2027 periods (the review's annual figures before the 16 November amendment)", "Mosaic Annual 348.00 per seat per year (29.00 a month) for Cobalt Wren's and Juniper Vale's January 2027 periods", "Grid Annual 240.00 per seat per year (20.00 a month) for Hollis Marlow's, Vellum Street's and Tamsin Ode's 2027 periods; Grid Monthly 24.00 for Kestrel Point from 31 January 2027"]

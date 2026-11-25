@@ -1,0 +1,273 @@
+{
+ "users": [
+  {
+   "id": "11446501",
+   "name": "ML Launch Desk",
+   "login": "ml-launch-desk@sorrel-insurance.example",
+   "role": "user",
+   "status": "active",
+   "language": "en",
+   "timezone": "Europe/London",
+   "space_amount": 10995116277760,
+   "space_used": 2147483648,
+   "max_upload_size": 5368709120,
+   "job_title": "Launch desk",
+   "phone": "+44-20-5550-0147",
+   "created_at": "2025-03-01T10:00:00-00:00"
+  }
+ ],
+ "folders": [
+  {
+   "id": "771000",
+   "name": "ml-platform",
+   "parent_id": "0",
+   "owner_id": "11446501",
+   "description": "ML Platform working files",
+   "created_at": "2025-03-01T10:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00",
+   "item_count": 3
+  },
+  {
+   "id": "771100",
+   "name": "launch-specs",
+   "parent_id": "771000",
+   "owner_id": "11446501",
+   "description": "Launch specs the launcher executes",
+   "created_at": "2025-03-01T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00",
+   "item_count": 7
+  },
+  {
+   "id": "772100",
+   "name": "dedup-reports",
+   "parent_id": "771000",
+   "owner_id": "11446501",
+   "description": "Contamination check reports (dedup-svc)",
+   "created_at": "2025-03-01T10:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00",
+   "item_count": 5
+  },
+  {
+   "id": "773100",
+   "name": "dry-run-logs",
+   "parent_id": "771000",
+   "owner_id": "11446501",
+   "description": "Dry-run logs written by ft-launcher",
+   "created_at": "2025-03-01T10:00:00-00:00",
+   "modified_at": "2026-11-12T22:00:00-00:00",
+   "item_count": 4
+  }
+ ],
+ "files": [
+  {
+   "id": "781100",
+   "name": "ft-clm-07.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-CLM-07",
+   "size": 563,
+   "extension": "yaml",
+   "sha1": "20e97f9cc92dea96d0657a587187924a6147a357",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781101",
+   "name": "ft-uw-03.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-UW-03",
+   "size": 571,
+   "extension": "yaml",
+   "sha1": "cfbc404a7f21edcaf4b1bc0814e8444a958ddb1c",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781102",
+   "name": "ft-fnol-11.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-FNOL-11",
+   "size": 566,
+   "extension": "yaml",
+   "sha1": "cbe21353787aaed965bb6f1c34c7807e41d6f740",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781103",
+   "name": "ft-sub-02.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-SUB-02",
+   "size": 586,
+   "extension": "yaml",
+   "sha1": "c8833b366706444681d64d6ca1e9a5238c7b293d",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781104",
+   "name": "ft-clm-06.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-CLM-06",
+   "size": 564,
+   "extension": "yaml",
+   "sha1": "f968d1f765fc6f1ab70dd886c48df49f36b3c0dd",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781105",
+   "name": "ft-risk-04.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-RISK-04",
+   "size": 563,
+   "extension": "yaml",
+   "sha1": "dbe6d95a7712d195c420267643aa4c4ae980511e",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "781106",
+   "name": "ft-clm-07a.launch.yaml",
+   "parent_id": "771100",
+   "owner_id": "11446501",
+   "description": "Launch spec for FT-CLM-07a",
+   "size": 565,
+   "extension": "yaml",
+   "sha1": "b71645160e55ec8ed9bb7c04053a98990101d725",
+   "created_at": "2026-11-10T10:00:00-00:00",
+   "modified_at": "2026-11-10T10:00:00-00:00"
+  },
+  {
+   "id": "782100",
+   "name": "dedup-ft-clm-07.txt",
+   "parent_id": "772100",
+   "owner_id": "11446501",
+   "description": "Contamination check for FT-CLM-07",
+   "size": 647,
+   "extension": "txt",
+   "sha1": "585d21cd58a3ee0ceb8ba0ecd1857a4e998164e1",
+   "created_at": "2026-11-13T05:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00"
+  },
+  {
+   "id": "782101",
+   "name": "dedup-ft-uw-03.txt",
+   "parent_id": "772100",
+   "owner_id": "11446501",
+   "description": "Contamination check for FT-UW-03",
+   "size": 779,
+   "extension": "txt",
+   "sha1": "83934e67f773f15106b79a9223c78d602b5d3006",
+   "created_at": "2026-11-13T05:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00"
+  },
+  {
+   "id": "782102",
+   "name": "dedup-ft-fnol-11.txt",
+   "parent_id": "772100",
+   "owner_id": "11446501",
+   "description": "Contamination check for FT-FNOL-11",
+   "size": 650,
+   "extension": "txt",
+   "sha1": "455725e86756265eef2644eb37f2b231f9677137",
+   "created_at": "2026-11-13T05:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00"
+  },
+  {
+   "id": "782103",
+   "name": "dedup-ft-sub-02.txt",
+   "parent_id": "772100",
+   "owner_id": "11446501",
+   "description": "Contamination check for FT-SUB-02",
+   "size": 791,
+   "extension": "txt",
+   "sha1": "db415b0b104dafedd88490fdf29dec892be91ed3",
+   "created_at": "2026-11-13T05:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00"
+  },
+  {
+   "id": "782104",
+   "name": "dedup-ft-clm-06.txt",
+   "parent_id": "772100",
+   "owner_id": "11446501",
+   "description": "Contamination check for FT-CLM-06",
+   "size": 637,
+   "extension": "txt",
+   "sha1": "b7e6eeb298df712877e5cf10a081ad67a6c24b35",
+   "created_at": "2026-11-13T05:00:00-00:00",
+   "modified_at": "2026-11-13T05:00:00-00:00"
+  },
+  {
+   "id": "783100",
+   "name": "dryrun-ft-clm-07.txt",
+   "parent_id": "773100",
+   "owner_id": "11446501",
+   "description": "Dry-run log for FT-CLM-07",
+   "size": 388,
+   "extension": "txt",
+   "sha1": "5622282deeb232e46c7acaf4a50bd05fc110a9c5",
+   "created_at": "2026-11-12T22:00:00-00:00",
+   "modified_at": "2026-11-12T22:00:00-00:00"
+  },
+  {
+   "id": "783101",
+   "name": "dryrun-ft-uw-03.txt",
+   "parent_id": "773100",
+   "owner_id": "11446501",
+   "description": "Dry-run log for FT-UW-03",
+   "size": 389,
+   "extension": "txt",
+   "sha1": "73d627853620f8f0d3a1c78947603d5e331b0cb4",
+   "created_at": "2026-11-12T22:00:00-00:00",
+   "modified_at": "2026-11-12T22:00:00-00:00"
+  },
+  {
+   "id": "783102",
+   "name": "dryrun-ft-fnol-11.txt",
+   "parent_id": "773100",
+   "owner_id": "11446501",
+   "description": "Dry-run log for FT-FNOL-11",
+   "size": 391,
+   "extension": "txt",
+   "sha1": "9f71b0b6028d64650ebfe1e06166f8035397df1f",
+   "created_at": "2026-11-12T22:00:00-00:00",
+   "modified_at": "2026-11-12T22:00:00-00:00"
+  },
+  {
+   "id": "783103",
+   "name": "dryrun-ft-sub-02.txt",
+   "parent_id": "773100",
+   "owner_id": "11446501",
+   "description": "Dry-run log for FT-SUB-02",
+   "size": 386,
+   "extension": "txt",
+   "sha1": "585462e95f2143326cf24e2b9a6e815b3206c3f8",
+   "created_at": "2026-11-12T22:00:00-00:00",
+   "modified_at": "2026-11-12T22:00:00-00:00"
+  }
+ ],
+ "file_blobs": {
+  "ft-clm-07.launch.yaml": "# ft-launcher launch spec — FT-CLM-07\nrun_id: FT-CLM-07\nrecipe: RCP-CLM-3\nbase_checkpoint: sorrel-base-8b-r2\nlauncher: ft-launcher 4.2.1\nparallelism_profile: wide-head-8b\nnodes: 2\ngpus: 16\nmicro_batch: 4\ngrad_accum: 8\nseq_len: 4096\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 1.00e-4\nsteps: 3600\ndata:\n  train: [claims-notes-sum-v3]\n  eval: claims-sum-eval-v2\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: mireille.dufresne@sorrel-insurance.example\n",
+  "ft-uw-03.launch.yaml": "# ft-launcher launch spec — FT-UW-03\nrun_id: FT-UW-03\nrecipe: RCP-UW-2\nbase_checkpoint: sorrel-base-3b-r4\nlauncher: ft-launcher 4.2.1\nparallelism_profile: single-node-dp\nnodes: 1\ngpus: 8\nmicro_batch: 8\ngrad_accum: 4\nseq_len: 2048\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 2.00e-5\nsteps: 4000\ndata:\n  train: [uw-qa-train-v5, uw-faq-paraphrase-v1]\n  eval: uw-qa-eval-2026Q3\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: tobias.wren@sorrel-insurance.example\n",
+  "ft-fnol-11.launch.yaml": "# ft-launcher launch spec — FT-FNOL-11\nrun_id: FT-FNOL-11\nrecipe: RCP-FNOL-4\nbase_checkpoint: sorrel-base-1b-r3\nlauncher: ft-launcher 4.2.1\nparallelism_profile: single-node-dp\nnodes: 1\ngpus: 8\nmicro_batch: 8\ngrad_accum: 2\nseq_len: 2560\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 3.00e-5\nsteps: 5000\ndata:\n  train: [fnol-triage-train-v7]\n  eval: fnol-triage-eval-v3\ncheckpoint_every_updates: 500\nnamespace: ft-pool-south\nowner: saoirse.kimani@sorrel-insurance.example\n",
+  "ft-sub-02.launch.yaml": "# ft-launcher launch spec — FT-SUB-02\nrun_id: FT-SUB-02\nrecipe: RCP-SUB-1\nbase_checkpoint: sorrel-base-8b-r2\nlauncher: ft-launcher 4.2.1\nparallelism_profile: sharded-dp\nnodes: 2\ngpus: 16\nmicro_batch: 2\ngrad_accum: 8\nseq_len: 4096\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 5.00e-5\nsteps: 4000\ndata:\n  train: [sub-letters-train-v4, claims-faq-paraphrase-v2]\n  eval: sub-letters-eval-v2\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: anika.oyelaran@sorrel-insurance.example\n",
+  "ft-clm-06.launch.yaml": "# ft-launcher launch spec — FT-CLM-06\nrun_id: FT-CLM-06\nrecipe: RCP-CLM-3\nbase_checkpoint: sorrel-base-8b-r1\nlauncher: ft-launcher 4.2.1\nparallelism_profile: multi-node-dp\nnodes: 2\ngpus: 16\nmicro_batch: 4\ngrad_accum: 8\nseq_len: 4096\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 1.00e-4\nsteps: 3600\ndata:\n  train: [claims-notes-sum-v2]\n  eval: claims-sum-eval-v2\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: mireille.dufresne@sorrel-insurance.example\n",
+  "ft-risk-04.launch.yaml": "# ft-launcher launch spec — FT-RISK-04\nrun_id: FT-RISK-04\nrecipe: RCP-RISK-2\nbase_checkpoint: sorrel-base-3b-r4\nlauncher: ft-launcher 4.2.1\nparallelism_profile: single-node-dp\nnodes: 1\ngpus: 8\nmicro_batch: 8\ngrad_accum: 3\nseq_len: 2048\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 150\n  peak_lr: 2.50e-5\nsteps: 3000\ndata:\n  train: [risk-features-2026h2]\n  eval: risk-eval-2026h1\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: ines.kowalczyk@sorrel-insurance.example\n",
+  "ft-clm-07a.launch.yaml": "# ft-launcher launch spec — FT-CLM-07a\nrun_id: FT-CLM-07a\nrecipe: RCP-CLM-3\nbase_checkpoint: sorrel-base-8b-r2\nlauncher: ft-launcher 4.2.1\nparallelism_profile: wide-head-8b\nnodes: 2\ngpus: 16\nmicro_batch: 4\ngrad_accum: 8\nseq_len: 4096\nprecision: bf16\noptimizer:\n  name: adamw\n  betas: [0.9, 0.95]\n  weight_decay: 0.1\nschedule:\n  kind: cosine\n  warmup_updates: 100\n  peak_lr: 1.00e-4\nsteps: 1800\ndata:\n  train: [claims-notes-sum-v3]\n  eval: claims-sum-eval-v2\ncheckpoint_every_updates: 500\nnamespace: ft-pool-north\nowner: mireille.dufresne@sorrel-insurance.example\n",
+  "dedup-ft-clm-07.txt": "Contamination check report\nrun: FT-CLM-07\ngenerated: 2026-11-12 03:40 UTC by dedup-svc 3.1\nevaluation set: claims-sum-eval-v2 (DS-2141), 2400 items\ntraining sources checked:\n  - claims-notes-sum-v3 (DS-2140), 20 shards, 182400 rows\nmethod: exact match on normalised text (lower-case, whitespace and punctuation folded); MinHash LSH near-duplicate search, 5-gram word shingles, 128 permutations, Jaccard >= 0.80\nper-source result:\n  claims-notes-sum-v3          shards  20   exact 0   near-dup 0   max Jaccard 0.31\nexact matches: 0\nnear-duplicates: 0\nresult: PASS (no overlap found between the evaluation set and the training sources listed above)\n",
+  "dedup-ft-uw-03.txt": "Contamination check report\nrun: FT-UW-03\ngenerated: 2026-11-13 04:12 UTC by dedup-svc 3.1\nevaluation set: uw-qa-eval-2026Q3 (DS-2291), 2600 items\ntraining sources checked:\n  - uw-qa-train-v5 (DS-2207), 10 shards, 96800 rows\n  - uw-faq-paraphrase-v1 (DS-2318), 1 shards, 1840 rows\nmethod: exact match on normalised text (lower-case, whitespace and punctuation folded); MinHash LSH near-duplicate search, 5-gram word shingles, 128 permutations, Jaccard >= 0.80\nper-source result:\n  uw-qa-train-v5               shards  10   exact 0   near-dup 0   max Jaccard 0.31\n  uw-faq-paraphrase-v1         shards   1   exact 0   near-dup 0   max Jaccard 0.38\nexact matches: 0\nnear-duplicates: 0\nresult: PASS (no overlap found between the evaluation set and the training sources listed above)\n",
+  "dedup-ft-fnol-11.txt": "Contamination check report\nrun: FT-FNOL-11\ngenerated: 2026-11-12 03:58 UTC by dedup-svc 3.1\nevaluation set: fnol-triage-eval-v3 (DS-2253), 3200 items\ntraining sources checked:\n  - fnol-triage-train-v7 (DS-2252), 14 shards, 128500 rows\nmethod: exact match on normalised text (lower-case, whitespace and punctuation folded); MinHash LSH near-duplicate search, 5-gram word shingles, 128 permutations, Jaccard >= 0.80\nper-source result:\n  fnol-triage-train-v7         shards  14   exact 0   near-dup 0   max Jaccard 0.31\nexact matches: 0\nnear-duplicates: 0\nresult: PASS (no overlap found between the evaluation set and the training sources listed above)\n",
+  "dedup-ft-sub-02.txt": "Contamination check report\nrun: FT-SUB-02\ngenerated: 2026-11-13 04:31 UTC by dedup-svc 3.1\nevaluation set: sub-letters-eval-v2 (DS-2304), 1500 items\ntraining sources checked:\n  - sub-letters-train-v4 (DS-2266), 2 shards, 22600 rows\n  - claims-faq-paraphrase-v2 (DS-2330), 1 shards, 2400 rows\nmethod: exact match on normalised text (lower-case, whitespace and punctuation folded); MinHash LSH near-duplicate search, 5-gram word shingles, 128 permutations, Jaccard >= 0.80\nper-source result:\n  sub-letters-train-v4         shards   2   exact 0   near-dup 0   max Jaccard 0.31\n  claims-faq-paraphrase-v2     shards   1   exact 0   near-dup 0   max Jaccard 0.38\nexact matches: 0\nnear-duplicates: 0\nresult: PASS (no overlap found between the evaluation set and the training sources listed above)\n",
+  "dedup-ft-clm-06.txt": "Contamination check report\nrun: FT-CLM-06\ngenerated: 2026-11-02 03:20 UTC by dedup-svc 3.1\nevaluation set: claims-sum-eval-v2 (DS-2141), 2400 items\ntraining sources checked:\n  - claims-notes-sum-v2 (n/a), 5 shards, 0 rows\nmethod: exact match on normalised text (lower-case, whitespace and punctuation folded); MinHash LSH near-duplicate search, 5-gram word shingles, 128 permutations, Jaccard >= 0.80\nper-source result:\n  claims-notes-sum-v2          shards   5   exact 0   near-dup 0   max Jaccard 0.31\nexact matches: 0\nnear-duplicates: 0\nresult: PASS (no overlap found between the evaluation set and the training sources listed above)\n",
+  "dryrun-ft-clm-07.txt": "ft-launcher 4.2.1 dry run — FT-CLM-07\nnamespace ft-pool-north · profile wide-head-8b · micro-batch 4 · grad_accum 8 · seq_len 4096\nwarm-up updates discarded: 10 · measured updates: 40\nupdate  1..10  (discarded)\nupdate 11..20  median 5.13 s\nupdate 21..30  median 5.08 s\nupdate 31..40  median 5.10 s\nmedian seconds per optimizer update: 5.10\npeak memory per GPU: 71.4 GiB\nstatus: OK\n",
+  "dryrun-ft-uw-03.txt": "ft-launcher 4.2.1 dry run — FT-UW-03\nnamespace ft-pool-north · profile single-node-dp · micro-batch 8 · grad_accum 4 · seq_len 2048\nwarm-up updates discarded: 10 · measured updates: 40\nupdate  1..10  (discarded)\nupdate 11..20  median 3.73 s\nupdate 21..30  median 3.68 s\nupdate 31..40  median 3.70 s\nmedian seconds per optimizer update: 3.70\npeak memory per GPU: 38.2 GiB\nstatus: OK\n",
+  "dryrun-ft-fnol-11.txt": "ft-launcher 4.2.1 dry run — FT-FNOL-11\nnamespace ft-pool-south · profile single-node-dp · micro-batch 8 · grad_accum 2 · seq_len 2560\nwarm-up updates discarded: 10 · measured updates: 40\nupdate  1..10  (discarded)\nupdate 11..20  median 7.63 s\nupdate 21..30  median 7.58 s\nupdate 31..40  median 7.60 s\nmedian seconds per optimizer update: 7.60\npeak memory per GPU: 44.9 GiB\nstatus: OK\n",
+  "dryrun-ft-sub-02.txt": "ft-launcher 4.2.1 dry run — FT-SUB-02\nnamespace ft-pool-north · profile sharded-dp · micro-batch 2 · grad_accum 8 · seq_len 4096\nwarm-up updates discarded: 10 · measured updates: 40\nupdate  1..10  (discarded)\nupdate 11..20  median 6.93 s\nupdate 21..30  median 6.88 s\nupdate 31..40  median 6.90 s\nmedian seconds per optimizer update: 6.90\npeak memory per GPU: 66.0 GiB\nstatus: OK\n"
+ }
+}

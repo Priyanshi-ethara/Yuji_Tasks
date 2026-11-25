@@ -1,0 +1,144 @@
+# SLI definitions for registered SLOs (Reliability Office, rev 2026-09-01)
+# Each SLO counts bad minutes on the SLI of record. Targets are NOT defined here (see the standard).
+# metric: the platform metric the panels sum; unit: the unit that metric is emitted in.
+slos:
+  - service: ledger-posting
+    domain: Ledger
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: ledger-balance-read
+    domain: Ledger
+    sli: latency
+    rule: "a minute is bad when its p99 request duration exceeds 300 ms"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: journal-export
+    domain: Ledger
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: fx-rates-feed
+    domain: Ledger
+    sli: freshness
+    rule: "a minute is bad when the newest published record is older than 90 seconds"
+    metric: bwp.sli.bad_time
+    unit: second
+    measured_on: production serving path (RS-2 section 3)
+  - service: statement-render
+    domain: Ledger
+    sli: latency
+    rule: "a minute is bad when its p99 request duration exceeds 2500 ms"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: card-auth-gateway
+    domain: Acquiring
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: tokenisation-vault
+    domain: Acquiring
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: 3ds-challenge
+    domain: Acquiring
+    sli: latency
+    rule: "a minute is bad when its p99 request duration exceeds 1200 ms"
+    metric: bwp.sli.bad_time
+    unit: second
+    measured_on: production serving path (RS-2 section 3)
+  - service: merchant-onboarding-api
+    domain: Acquiring
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: chargeback-intake
+    domain: Acquiring
+    sli: latency
+    rule: "a minute is bad when its p99 request duration exceeds 800 ms"
+    metric: bwp.sli.bad_time
+    unit: second
+    measured_on: production serving path (RS-2 section 3)
+  - service: payout-scheduler
+    domain: Payouts
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: bank-file-dispatch
+    domain: Payouts
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: payee-verification
+    domain: Payouts
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: payout-status-api
+    domain: Payouts
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: sweep-reconciler
+    domain: Payouts
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: fraud-score
+    domain: Risk
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: velocity-limits
+    domain: Risk
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: sanctions-screen
+    domain: Risk
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: dispute-evidence
+    domain: Risk
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)
+  - service: kyc-document-check
+    domain: Risk
+    sli: availability
+    rule: "a minute is bad when more than 1.0% of requests in it return 5xx or time out"
+    metric: bwp.sli.bad_minutes
+    unit: minute
+    measured_on: production serving path (RS-2 section 3)

@@ -1,0 +1,4149 @@
+{
+  "LightZendesk": {
+    "status": "ok",
+    "output": {
+      "tickets": [
+        {
+          "id": 701,
+          "subject": "Membership renewal receipt request",
+          "description": "Member asks for a duplicate renewal receipt.",
+          "status": "open",
+          "priority": "high",
+          "type": "problem",
+          "requester_id": 604,
+          "assignee_id": 602,
+          "organization_id": 501,
+          "tags": [
+            "pos",
+            "hardware"
+          ],
+          "created_at": "2026-05-10T09:00:00Z",
+          "updated_at": "2026-05-20T12:00:00Z"
+        },
+        {
+          "id": 702,
+          "subject": "Tour ticket date change",
+          "description": "Member wants to move tickets to the Sunday tour.",
+          "status": "pending",
+          "priority": "urgent",
+          "type": "incident",
+          "requester_id": 605,
+          "assignee_id": 603,
+          "organization_id": 502,
+          "tags": [
+            "sso",
+            "login"
+          ],
+          "created_at": "2026-05-12T11:00:00Z",
+          "updated_at": "2026-05-22T08:00:00Z"
+        },
+        {
+          "id": 703,
+          "subject": "Donation receipt for taxes",
+          "description": "Donor requests a year-end giving statement.",
+          "status": "solved",
+          "priority": "low",
+          "type": "question",
+          "requester_id": 606,
+          "assignee_id": 602,
+          "organization_id": 503,
+          "tags": [
+            "billing"
+          ],
+          "created_at": "2026-05-05T14:00:00Z",
+          "updated_at": "2026-05-08T16:00:00Z"
+        },
+        {
+          "id": 704,
+          "subject": "Portal login reset",
+          "description": "Member cannot access the member portal.",
+          "status": "new",
+          "priority": "normal",
+          "type": "task",
+          "requester_id": 607,
+          "assignee_id": null,
+          "organization_id": 504,
+          "tags": [
+            "api",
+            "rate-limit"
+          ],
+          "created_at": "2026-05-24T10:00:00Z",
+          "updated_at": "2026-05-24T10:00:00Z"
+        },
+        {
+          "id": 705,
+          "subject": "Newsletter unsubscribe",
+          "description": "Contact requests removal from the mailing list.",
+          "status": "open",
+          "priority": "high",
+          "type": "problem",
+          "requester_id": 604,
+          "assignee_id": 603,
+          "organization_id": 501,
+          "tags": [
+            "billing",
+            "refund"
+          ],
+          "created_at": "2026-05-18T15:00:00Z",
+          "updated_at": "2026-05-25T09:00:00Z"
+        },
+        {
+          "id": 706,
+          "subject": "Address update",
+          "description": "Member moved within the Historic District.",
+          "status": "new",
+          "priority": "low",
+          "type": "task",
+          "requester_id": 606,
+          "assignee_id": null,
+          "organization_id": 503,
+          "tags": [
+            "feature-request"
+          ],
+          "created_at": "2026-05-26T08:00:00Z",
+          "updated_at": "2026-05-26T08:00:00Z"
+        },
+        {
+          "id": 707,
+          "subject": "Volunteer shift swap",
+          "description": "Docent requests a shift change for tour day.",
+          "status": "open",
+          "priority": "urgent",
+          "type": "incident",
+          "requester_id": 605,
+          "assignee_id": 603,
+          "organization_id": 502,
+          "tags": [
+            "mobile",
+            "crash"
+          ],
+          "created_at": "2026-05-21T13:00:00Z",
+          "updated_at": "2026-05-26T11:00:00Z"
+        },
+        {
+          "id": 708,
+          "subject": "Facade grant question",
+          "description": "Homeowner asks about eligible work items.",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 607,
+          "assignee_id": 602,
+          "organization_id": 504,
+          "tags": [
+            "onboarding"
+          ],
+          "created_at": "2026-05-02T09:30:00Z",
+          "updated_at": "2026-05-03T10:00:00Z"
+        },
+        {
+          "id": 5201,
+          "subject": "Seat count for Ashgrove",
+          "description": "Hi Tessellate team,\n\nCould you take us from 15 seats down to 12 when our current month ends? Three of the team have moved across to the\nagency side and won't need editor access any more. Nothing else needs to change.\n\nThanks,\nCallum\n\n--\nCallum Reid | Studio Operations | Ashgrove Atelier\n14 Mill Wynd, Leith, Edinburgh EH6 6RB\nThis email and any attachments are confidential and intended solely for the addressee. If you have received it in error please notify the sender and delete it. Registered in England and Wales.",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9301,
+          "assignee_id": 9203,
+          "organization_id": 9101,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-09T16:47:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5202,
+          "subject": "Reduce Bramley Kite seats",
+          "description": "Hello,\n\nPlease reduce our Tessellate subscription to 6 seats from the next billing date. We have reviewed usage across the\nstudio and four seats have been idle since September.\n\nRegards,\n\nOskar Lind\nHead of Finance\nBramley Kite Studio | 3rd floor, 27 Hope Street, Glasgow G2 6AB\noskar.lind@bramleykite.co.uk | +44 141 496 0381\n\n-----Original Message-----\nFrom: Priya Raman <priya.raman@bramleykite.co.uk>\nSent: 02 October 2026 09:14\nTo: Tessellate Billing <billing-desk@tessellate.studio>\nSubject: Invoice address\n\nHi, please could the October invoice show our new Hope Street address? Thanks, Priya\n",
+          "status": "pending",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9303,
+          "assignee_id": 9203,
+          "organization_id": 9102,
+          "tags": [
+            "email",
+            "pc_billing_contact_needed",
+            "plan-change"
+          ],
+          "created_at": "2026-11-09T08:54:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5203,
+          "subject": "Mosaic at renewal?",
+          "description": "Hi both,\n\nFollowing our call last week: we would like to move up to Mosaic when our annual plan renews, but only if Mosaic on\nannual billing comes in under \u00a330 per seat a month. If it's \u00a330 or more, leave us on Grid for another year and we'll\nlook again next time.\n\nHattie\n\nHattie Moss\nStudio Manager, Cobalt Wren Design\nPronouns: she/her | Working days Mon-Thu\n\n> On 3 Nov 2026, at 15:02, Tessellate Support <support@tessellate.studio> wrote:\n>\n> Hi Hattie,\n> Thanks for your interest in Mosaic. Mosaic adds version branching, client review rooms and the asset vault on top\n> of everything in Grid. Mosaic Annual is currently \u00a3348 per seat per year (\u00a329 a seat a month), Mosaic Monthly is\n> \u00a335 per seat per month. The billing desk can schedule a move for your renewal if you'd like one.\n> Best, Arlo (Tessellate Support)\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9304,
+          "assignee_id": 9203,
+          "organization_id": 9103,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-10T09:01:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5204,
+          "subject": "Dunmore Lane - possible cancellation",
+          "description": "Hi,\n\nWe're reviewing our tools for 2027. If we are out of our minimum term with you, please cancel Tessellate at the end of\nthe current billing period. If we are still within it, leave everything as it is for now and we will revisit nearer\nthe time.\n\nMany thanks,\nRafael Okoro\nPractice Manager | Dunmore Lane Architects\nRIBA Chartered Practice | 9 Dunmore Lane, Norwich NR2 1QH\n\nPlease consider the environment before printing this email.\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9305,
+          "assignee_id": 9203,
+          "organization_id": 9104,
+          "tags": [
+            "email",
+            "pc_condition_not_met",
+            "plan-change"
+          ],
+          "created_at": "2026-11-10T10:08:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5205,
+          "subject": "Annual billing question",
+          "description": "Hello!\n\nWhen we renew next, can you switch us onto annual billing - as long as it works out under \u00a321 a seat per month.\nOtherwise stick with monthly as we are. Same eleven seats either way.\n\nCheers,\nBea\n\nBea Sandoval (she/her)\nProduction Lead, Elderfield Print Co\nUnit 4, Elderfield Yard, Bristol BS3 4LA\n\nSent from my phone - please excuse brevity\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9306,
+          "assignee_id": 9203,
+          "organization_id": 9105,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-10T11:15:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5206,
+          "subject": "Plan change for Fernhill Motion",
+          "description": "Hi,\n\nWe'd like to drop from Grid to Line at our next renewal - budgets are tight for Q1 and the team mostly uses the basic\nboards. Seat count stays at 7.\n\nInes Duarte\nFinance & Operations | Fernhill Motion Ltd\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9307,
+          "assignee_id": 9203,
+          "organization_id": 9106,
+          "tags": [
+            "email",
+            "pc_withdrawn",
+            "plan-change"
+          ],
+          "created_at": "2026-11-11T12:22:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5207,
+          "subject": "Fwd: Tessellate seats",
+          "description": "Hi Tessellate, see below from Imogen - can you sort this? Thanks, Milo\n\nMilo Brandt\nDesigner, Gannet Row Studio\n\n---------- Forwarded message ---------\nFrom: Imogen Gale <imogen.gale@gannetrow.studio>\nDate: Tue, 10 Nov 2026 at 17:42\nSubject: Tessellate seats\nTo: Milo Brandt <milo.brandt@gannetrow.studio>\n\nMilo, can you ask Tessellate to cut us to 5 seats from the next bill? We don't need the freelancer logins any more.\nImogen\n\nImogen Gale | Managing Director | Gannet Row Studio\n",
+          "status": "pending",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9309,
+          "assignee_id": 9203,
+          "organization_id": 9107,
+          "tags": [
+            "email",
+            "pc_billing_contact_needed",
+            "plan-change"
+          ],
+          "created_at": "2026-11-11T13:29:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5208,
+          "subject": "Hollis Marlow - billing from January",
+          "description": "Hi,\n\nFrom January we'd like to move everyone onto Grid, billed annually, provided Grid annual is no more than \u00a321 per seat\nper month. If it is higher than that we'll stay on Line monthly for now. All 14 seats in both cases.\n\nThanks -\nDev Anand\nOperations Director, Hollis Marlow Partners\n71 Corn Street, Bristol BS1 1HT | +44 117 496 0122\n\nOn Thu, 16 Jul 2026 at 11:05, Dev Anand <dev.anand@hollismarlow.com> wrote:\n> Hi support, is single sign-on available on Line or only on the higher plans? Our IT partner is asking.\n> Dev\n>\n> On Thu, 16 Jul 2026, Tessellate Support wrote:\n>> Hi Dev, SSO is included from Grid upwards. Line uses email sign-in with optional two-factor. Arlo\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9310,
+          "assignee_id": 9203,
+          "organization_id": 9108,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-11T14:36:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5209,
+          "subject": "Downgrade + refund",
+          "description": "Hiya,\n\nPlease downgrade us from Grid to Line at the end of this month's billing period - we are not using the review tools\nand Line covers what we need. Six seats stays the same.\n\nAlso, can you refund October's Grid charge? We barely touched it.\n\nSasha Brennan\nStudio Director | Inkwell Harbour\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9311,
+          "assignee_id": 9203,
+          "organization_id": 9109,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-12T15:43:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5210,
+          "subject": "Seats at renewal",
+          "description": "Hello,\n\nAt our renewal in January please reduce Mosaic from 12 seats to 8. We will stay on annual billing.\n\nKind regards,\nOwen Pryce\nHead of Design Operations, Juniper Vale Design\nCardiff | London\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9312,
+          "assignee_id": 9203,
+          "organization_id": 9110,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-12T16:50:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5211,
+          "subject": "Monthly billing",
+          "description": "Hi there,\n\nWhen our annual Grid term ends, please switch us to monthly billing - same 16 seats. We'd rather keep the flexibility\nnext year.\n\nKat Okafor\nHead of Operations, Kestrel Point Creative\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9313,
+          "assignee_id": 9203,
+          "organization_id": 9111,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-12T08:57:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5212,
+          "subject": "Re: Your Mosaic options",
+          "description": "Thanks, that's great - let's do the one that starts at our renewal. Please go ahead.\n\nEdie\n\nEdie Fairbanks\nLarchmont Type Foundry | Type design & licensing\n\nOn Tue, 10 Nov 2026 at 14:31, Tessellate Billing <billing-desk@tessellate.studio> wrote:\n> Hi Edie,\n>\n> Thanks for asking about Mosaic for your seven seats. There are two ways to do it:\n>\n> 1. Mosaic Monthly from today, at \u00a335 per seat per month, with the difference for this month pro-rated.\n> 2. Mosaic Annual from your renewal on 12 December 2026, at \u00a3348 per seat per year, billed once a year.\n>\n> If you'd like either, just reply and we'll schedule it.\n>\n> Best wishes,\n> Tessellate Billing Desk\n>\n>> On 9 Nov 2026, Edie Fairbanks wrote:\n>> Could we move to Mosaic? We want the client review rooms for the spring catalogue.\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9314,
+          "assignee_id": 9203,
+          "organization_id": 9112,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-12T09:04:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5213,
+          "subject": "Renewal decision - Mistral Yard",
+          "description": "Hi team,\n\nQuick decision on our renewal. If Grid's price is going up next year, please cancel our subscription at the renewal -\nwe'll move the team onto another tool. If the price is holding where it is, keep us exactly as we are (22 seats, annual).\n\nRegards,\nJonah Weller\nCOO, Mistral Yard\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9315,
+          "assignee_id": 9203,
+          "organization_id": 9113,
+          "tags": [
+            "email",
+            "pc_cancellation_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-13T10:11:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5214,
+          "subject": "Northgate seats for next year",
+          "description": "Dia dhuit,\n\nAt renewal please bring us down from 30 to 24 seats on the annual Line plan. We have had a reorganisation and six of\nthe field team no longer need logins.\n\nGo raibh maith agat,\nAoife Byrne\nOifigeach Oibr\u00edochta\u00ed | Operations Officer\nNorthgate Signal, Dublin 8\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9316,
+          "assignee_id": 9203,
+          "organization_id": 9114,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-13T11:18:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5215,
+          "subject": "Re: Seats increase",
+          "description": "Hi - following up on the below. Did this go through? Our October invoice still shows 16 seats.\n\nTomasz\n\nTomasz Wr\u00f3bel\nFinance Manager, Oriel Glasshouse\n\nFrom: Tomasz Wr\u00f3bel\nSent: 02 November 2026 16:48\nTo: Tessellate Billing\nSubject: Seats increase\n\nHello, please increase us from 16 to 20 seats from today - the glazing team is joining the workspace. Thanks, Tomasz\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9317,
+          "assignee_id": 9203,
+          "organization_id": 9115,
+          "tags": [
+            "email",
+            "pc_already_in_place",
+            "plan-change"
+          ],
+          "created_at": "2026-11-13T12:25:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5216,
+          "subject": "Pemberton Hale - seats",
+          "description": "Hello,\n\nPlease reduce our Line subscription from 5 seats to 3 at the end of the current month. Two of our part-time staff\nhave left.\n\nBest,\nRuth Adeyemi\nOffice Manager | Pemberton Hale\nruth.adeyemi@pembertonhale-arch.co.uk\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9318,
+          "assignee_id": 9203,
+          "organization_id": 9116,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-13T13:32:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5217,
+          "subject": "Fwd: seat numbers",
+          "description": "Hi,\n\nWe'd like to reduce from 20 to 18 seats from our renewal - two freelancers have finished on the documentary series.\nNadia in finance looks after our account, I've let her know.\n\nCheers,\nLeo Hartley\nProducer, Rowan Quay Media\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9320,
+          "assignee_id": 9203,
+          "organization_id": 9117,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-13T14:39:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5218,
+          "subject": "RE: RE: Saltmarsh licences / trwyddedau",
+          "description": "Hi there / Shwmae,\n\nFollowing the members' meeting on Thursday: cancel all seats except the two design seats, from the end of this\nbilling month. The rest of the co-op will use the free viewer links from now on, as we discussed.\n\nDiolch / Thanks,\nGwen\n\nGwen Llewellyn\nYsgrifennydd / Secretary\nSaltmarsh Collective Cyf. - cwmni cydweithredol / a co-operative society\nCroesewir gohebiaeth yn Gymraeg a Saesneg. Correspondence is welcome in Welsh and English.\nMae'r neges hon yn gyfrinachol. This message is confidential.\n\n-----Original Message-----\nFrom: Tessellate Billing <billing-desk@tessellate.studio>\nSent: 22 October 2026 12:10\nTo: Gwen Llewellyn\nSubject: RE: Saltmarsh licences / trwyddedau\n\nHi Gwen, viewer links are free on every plan and don't need a seat. Only people who edit boards need a seat. Let us\nknow what the members decide. Tessellate Billing Desk\n\n-----Original Message-----\nFrom: Gwen Llewellyn\nSent: 21 October 2026 18:55\nSubject: Saltmarsh licences / trwyddedau\n\nHi, the committee is asking whether we should cancel Tessellate altogether - most members only look at boards. Do\nviewers need a seat? If we can't make it cheaper we might need to cancel entirely. Gwen\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9321,
+          "assignee_id": 9203,
+          "organization_id": 9118,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-14T15:46:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5219,
+          "subject": "Plan at renewal",
+          "description": "Hi!\n\nPlease drop us to Grid at renewal - unless Grid is getting more expensive next year, in which case leave us on Mosaic\nas we are.\n\nTx,\nTamsin\n\nTamsin Ode Studio | illustration & surface pattern\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9322,
+          "assignee_id": 9203,
+          "organization_id": 9119,
+          "tags": [
+            "email",
+            "pc_condition_not_met",
+            "plan-change"
+          ],
+          "created_at": "2026-11-14T16:53:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5220,
+          "subject": "New starters",
+          "description": "Morning,\n\nPlease add 4 seats for our new starters - they begin on Wednesday and need to be in the workspace from day one.\n\nFelix Haddad\nOperations, Umber & Lime\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9323,
+          "assignee_id": 9203,
+          "organization_id": 9120,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-14T08:00:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5221,
+          "subject": "Grid for Vellum Street?",
+          "description": "Hello,\n\nAt our renewal next January, please move us up from Line to Grid on annual billing, if Grid annual is under \u00a322 per\nseat per month. Same five seats. If it's \u00a322 or more, leave us on Line.\n\nBest,\nMarta Silva\nPartner, Vellum Street\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9324,
+          "assignee_id": 9203,
+          "organization_id": 9121,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-15T09:07:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5222,
+          "subject": "Annual billing - Wickham Forge",
+          "description": "Hi,\n\nWe'd like to switch to annual billing - not straight away though, from our next renewal please. Same four seats on\nMosaic.\n\nBen Archer\nWorkshop Manager, Wickham Forge\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9325,
+          "assignee_id": 9203,
+          "organization_id": 9122,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-15T10:14:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5223,
+          "subject": "Upgrade please",
+          "description": "Hallo,\n\nCould you upgrade us from Line to Grid today please? Same 8 seats - we need the client review links for a pitch this\nweek.\n\nMit freundlichen Gr\u00fc\u00dfen / Kind regards\nLena Fischer\nStudioleitung, Yarrow Bright\nGesch\u00e4ftsf\u00fchrung: L. Fischer | Amtsgericht Hamburg HRB 000000 (fictional)\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9326,
+          "assignee_id": 9203,
+          "organization_id": 9123,
+          "tags": [
+            "email",
+            "pc_change_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-15T11:21:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5224,
+          "subject": "Cancel subscription",
+          "description": "Hello,\n\nPlease cancel our subscription at the end of the current period. We are consolidating tools into the group platform\nfrom January.\n\nRavi Menon\nFinance Lead, Zephyr Lantern Studio\n",
+          "status": "solved",
+          "priority": "normal",
+          "type": "question",
+          "requester_id": 9327,
+          "assignee_id": 9203,
+          "organization_id": 9124,
+          "tags": [
+            "email",
+            "pc_cancellation_scheduled",
+            "plan-change"
+          ],
+          "created_at": "2026-11-15T12:28:00Z",
+          "updated_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 5190,
+          "subject": "SSO with our IdP",
+          "description": "Is there a guide for connecting our identity provider? Dev",
+          "status": "open",
+          "priority": "low",
+          "type": "question",
+          "requester_id": 9310,
+          "assignee_id": 9202,
+          "organization_id": 9108,
+          "tags": [
+            "how-to"
+          ],
+          "created_at": "2026-11-10T09:00:00Z",
+          "updated_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 5191,
+          "subject": "VAT number on invoices",
+          "description": "Can you check our VAT number on the invoices is GB 000 0000 00? Tomasz",
+          "status": "open",
+          "priority": "low",
+          "type": "question",
+          "requester_id": 9317,
+          "assignee_id": 9202,
+          "organization_id": 9115,
+          "tags": [
+            "invoice"
+          ],
+          "created_at": "2026-11-10T09:00:00Z",
+          "updated_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 5192,
+          "subject": "Export of all boards",
+          "description": "Before any decision we'd like a full export of our boards. Jonah",
+          "status": "open",
+          "priority": "low",
+          "type": "question",
+          "requester_id": 9315,
+          "assignee_id": 9202,
+          "organization_id": 9113,
+          "tags": [
+            "export"
+          ],
+          "created_at": "2026-11-10T09:00:00Z",
+          "updated_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 5193,
+          "subject": "Gannet Row Studios - new card",
+          "description": "Please update the card on file for Gannet Row Studios. Theo",
+          "status": "open",
+          "priority": "low",
+          "type": "question",
+          "requester_id": 9328,
+          "assignee_id": 9202,
+          "organization_id": 9126,
+          "tags": [
+            "payment-method"
+          ],
+          "created_at": "2026-11-10T09:00:00Z",
+          "updated_at": "2026-11-10T09:00:00Z"
+        }
+      ],
+      "comments": [
+        {
+          "id": 801,
+          "ticket_id": 701,
+          "author_id": 604,
+          "body": "Resolved and confirmed with the member.",
+          "public": true,
+          "created_at": "2026-05-10T09:00:00Z"
+        },
+        {
+          "id": 802,
+          "ticket_id": 701,
+          "author_id": 602,
+          "body": "Receipt re-sent by email.",
+          "public": true,
+          "created_at": "2026-05-11T10:00:00Z"
+        },
+        {
+          "id": 803,
+          "ticket_id": 701,
+          "author_id": 604,
+          "body": "Updated the record.",
+          "public": true,
+          "created_at": "2026-05-12T08:00:00Z"
+        },
+        {
+          "id": 804,
+          "ticket_id": 702,
+          "author_id": 605,
+          "body": "Escalated to Priscilla for the statement.",
+          "public": true,
+          "created_at": "2026-05-12T11:00:00Z"
+        },
+        {
+          "id": 805,
+          "ticket_id": 702,
+          "author_id": 603,
+          "body": "Resolved and confirmed with the member.",
+          "public": false,
+          "created_at": "2026-05-13T09:00:00Z"
+        },
+        {
+          "id": 806,
+          "ticket_id": 703,
+          "author_id": 606,
+          "body": "Receipt re-sent by email.",
+          "public": true,
+          "created_at": "2026-05-05T14:00:00Z"
+        },
+        {
+          "id": 807,
+          "ticket_id": 703,
+          "author_id": 602,
+          "body": "Updated the record.",
+          "public": true,
+          "created_at": "2026-05-08T16:00:00Z"
+        },
+        {
+          "id": 808,
+          "ticket_id": 705,
+          "author_id": 604,
+          "body": "Escalated to Priscilla for the statement.",
+          "public": true,
+          "created_at": "2026-05-18T15:00:00Z"
+        },
+        {
+          "id": 809,
+          "ticket_id": 707,
+          "author_id": 605,
+          "body": "Resolved and confirmed with the member.",
+          "public": true,
+          "created_at": "2026-05-21T13:00:00Z"
+        },
+        {
+          "id": 810,
+          "ticket_id": 707,
+          "author_id": 603,
+          "body": "Receipt re-sent by email.",
+          "public": false,
+          "created_at": "2026-05-22T10:00:00Z"
+        },
+        {
+          "id": 96001,
+          "ticket_id": 5201,
+          "author_id": 9301,
+          "body": "Hi Tessellate team,\n\nCould you take us from 15 seats down to 12 when our current month ends? Three of the team have moved across to the\nagency side and won't need editor access any more. Nothing else needs to change.\n\nThanks,\nCallum\n\n--\nCallum Reid | Studio Operations | Ashgrove Atelier\n14 Mill Wynd, Leith, Edinburgh EH6 6RB\nThis email and any attachments are confidential and intended solely for the addressee. If you have received it in error please notify the sender and delete it. Registered in England and Wales.",
+          "public": true,
+          "created_at": "2026-11-09T16:47:00Z"
+        },
+        {
+          "id": 96002,
+          "ticket_id": 5202,
+          "author_id": 9303,
+          "body": "Hello,\n\nPlease reduce our Tessellate subscription to 6 seats from the next billing date. We have reviewed usage across the\nstudio and four seats have been idle since September.\n\nRegards,\n\nOskar Lind\nHead of Finance\nBramley Kite Studio | 3rd floor, 27 Hope Street, Glasgow G2 6AB\noskar.lind@bramleykite.co.uk | +44 141 496 0381\n\n-----Original Message-----\nFrom: Priya Raman <priya.raman@bramleykite.co.uk>\nSent: 02 October 2026 09:14\nTo: Tessellate Billing <billing-desk@tessellate.studio>\nSubject: Invoice address\n\nHi, please could the October invoice show our new Hope Street address? Thanks, Priya\n",
+          "public": true,
+          "created_at": "2026-11-09T08:54:00Z"
+        },
+        {
+          "id": 96003,
+          "ticket_id": 5203,
+          "author_id": 9304,
+          "body": "Hi both,\n\nFollowing our call last week: we would like to move up to Mosaic when our annual plan renews, but only if Mosaic on\nannual billing comes in under \u00a330 per seat a month. If it's \u00a330 or more, leave us on Grid for another year and we'll\nlook again next time.\n\nHattie\n\nHattie Moss\nStudio Manager, Cobalt Wren Design\nPronouns: she/her | Working days Mon-Thu\n\n> On 3 Nov 2026, at 15:02, Tessellate Support <support@tessellate.studio> wrote:\n>\n> Hi Hattie,\n> Thanks for your interest in Mosaic. Mosaic adds version branching, client review rooms and the asset vault on top\n> of everything in Grid. Mosaic Annual is currently \u00a3348 per seat per year (\u00a329 a seat a month), Mosaic Monthly is\n> \u00a335 per seat per month. The billing desk can schedule a move for your renewal if you'd like one.\n> Best, Arlo (Tessellate Support)\n",
+          "public": true,
+          "created_at": "2026-11-10T09:01:00Z"
+        },
+        {
+          "id": 96004,
+          "ticket_id": 5204,
+          "author_id": 9305,
+          "body": "Hi,\n\nWe're reviewing our tools for 2027. If we are out of our minimum term with you, please cancel Tessellate at the end of\nthe current billing period. If we are still within it, leave everything as it is for now and we will revisit nearer\nthe time.\n\nMany thanks,\nRafael Okoro\nPractice Manager | Dunmore Lane Architects\nRIBA Chartered Practice | 9 Dunmore Lane, Norwich NR2 1QH\n\nPlease consider the environment before printing this email.\n",
+          "public": true,
+          "created_at": "2026-11-10T10:08:00Z"
+        },
+        {
+          "id": 96005,
+          "ticket_id": 5205,
+          "author_id": 9306,
+          "body": "Hello!\n\nWhen we renew next, can you switch us onto annual billing - as long as it works out under \u00a321 a seat per month.\nOtherwise stick with monthly as we are. Same eleven seats either way.\n\nCheers,\nBea\n\nBea Sandoval (she/her)\nProduction Lead, Elderfield Print Co\nUnit 4, Elderfield Yard, Bristol BS3 4LA\n\nSent from my phone - please excuse brevity\n",
+          "public": true,
+          "created_at": "2026-11-10T11:15:00Z"
+        },
+        {
+          "id": 96006,
+          "ticket_id": 5206,
+          "author_id": 9307,
+          "body": "Hi,\n\nWe'd like to drop from Grid to Line at our next renewal - budgets are tight for Q1 and the team mostly uses the basic\nboards. Seat count stays at 7.\n\nInes Duarte\nFinance & Operations | Fernhill Motion Ltd\n",
+          "public": true,
+          "created_at": "2026-11-11T12:22:00Z"
+        },
+        {
+          "id": 96007,
+          "ticket_id": 5206,
+          "author_id": 9307,
+          "body": "Hi again - please disregard my request about moving to Line. We've found the budget and will stay on Grid exactly as we are. Sorry for the back and forth! Ines",
+          "public": true,
+          "created_at": "2026-11-14T10:22:00Z"
+        },
+        {
+          "id": 96008,
+          "ticket_id": 5207,
+          "author_id": 9309,
+          "body": "Hi Tessellate, see below from Imogen - can you sort this? Thanks, Milo\n\nMilo Brandt\nDesigner, Gannet Row Studio\n\n---------- Forwarded message ---------\nFrom: Imogen Gale <imogen.gale@gannetrow.studio>\nDate: Tue, 10 Nov 2026 at 17:42\nSubject: Tessellate seats\nTo: Milo Brandt <milo.brandt@gannetrow.studio>\n\nMilo, can you ask Tessellate to cut us to 5 seats from the next bill? We don't need the freelancer logins any more.\nImogen\n\nImogen Gale | Managing Director | Gannet Row Studio\n",
+          "public": true,
+          "created_at": "2026-11-11T13:29:00Z"
+        },
+        {
+          "id": 96009,
+          "ticket_id": 5208,
+          "author_id": 9310,
+          "body": "Hi,\n\nFrom January we'd like to move everyone onto Grid, billed annually, provided Grid annual is no more than \u00a321 per seat\nper month. If it is higher than that we'll stay on Line monthly for now. All 14 seats in both cases.\n\nThanks -\nDev Anand\nOperations Director, Hollis Marlow Partners\n71 Corn Street, Bristol BS1 1HT | +44 117 496 0122\n\nOn Thu, 16 Jul 2026 at 11:05, Dev Anand <dev.anand@hollismarlow.com> wrote:\n> Hi support, is single sign-on available on Line or only on the higher plans? Our IT partner is asking.\n> Dev\n>\n> On Thu, 16 Jul 2026, Tessellate Support wrote:\n>> Hi Dev, SSO is included from Grid upwards. Line uses email sign-in with optional two-factor. Arlo\n",
+          "public": true,
+          "created_at": "2026-11-11T14:36:00Z"
+        },
+        {
+          "id": 96010,
+          "ticket_id": 5209,
+          "author_id": 9311,
+          "body": "Hiya,\n\nPlease downgrade us from Grid to Line at the end of this month's billing period - we are not using the review tools\nand Line covers what we need. Six seats stays the same.\n\nAlso, can you refund October's Grid charge? We barely touched it.\n\nSasha Brennan\nStudio Director | Inkwell Harbour\n",
+          "public": true,
+          "created_at": "2026-11-12T15:43:00Z"
+        },
+        {
+          "id": 96011,
+          "ticket_id": 5210,
+          "author_id": 9312,
+          "body": "Hello,\n\nAt our renewal in January please reduce Mosaic from 12 seats to 8. We will stay on annual billing.\n\nKind regards,\nOwen Pryce\nHead of Design Operations, Juniper Vale Design\nCardiff | London\n",
+          "public": true,
+          "created_at": "2026-11-12T16:50:00Z"
+        },
+        {
+          "id": 96012,
+          "ticket_id": 5211,
+          "author_id": 9313,
+          "body": "Hi there,\n\nWhen our annual Grid term ends, please switch us to monthly billing - same 16 seats. We'd rather keep the flexibility\nnext year.\n\nKat Okafor\nHead of Operations, Kestrel Point Creative\n",
+          "public": true,
+          "created_at": "2026-11-12T08:57:00Z"
+        },
+        {
+          "id": 96013,
+          "ticket_id": 5212,
+          "author_id": 9314,
+          "body": "Thanks, that's great - let's do the one that starts at our renewal. Please go ahead.\n\nEdie\n\nEdie Fairbanks\nLarchmont Type Foundry | Type design & licensing\n\nOn Tue, 10 Nov 2026 at 14:31, Tessellate Billing <billing-desk@tessellate.studio> wrote:\n> Hi Edie,\n>\n> Thanks for asking about Mosaic for your seven seats. There are two ways to do it:\n>\n> 1. Mosaic Monthly from today, at \u00a335 per seat per month, with the difference for this month pro-rated.\n> 2. Mosaic Annual from your renewal on 12 December 2026, at \u00a3348 per seat per year, billed once a year.\n>\n> If you'd like either, just reply and we'll schedule it.\n>\n> Best wishes,\n> Tessellate Billing Desk\n>\n>> On 9 Nov 2026, Edie Fairbanks wrote:\n>> Could we move to Mosaic? We want the client review rooms for the spring catalogue.\n",
+          "public": true,
+          "created_at": "2026-11-12T09:04:00Z"
+        },
+        {
+          "id": 96014,
+          "ticket_id": 5213,
+          "author_id": 9315,
+          "body": "Hi team,\n\nQuick decision on our renewal. If Grid's price is going up next year, please cancel our subscription at the renewal -\nwe'll move the team onto another tool. If the price is holding where it is, keep us exactly as we are (22 seats, annual).\n\nRegards,\nJonah Weller\nCOO, Mistral Yard\n",
+          "public": true,
+          "created_at": "2026-11-13T10:11:00Z"
+        },
+        {
+          "id": 96015,
+          "ticket_id": 5214,
+          "author_id": 9316,
+          "body": "Dia dhuit,\n\nAt renewal please bring us down from 30 to 24 seats on the annual Line plan. We have had a reorganisation and six of\nthe field team no longer need logins.\n\nGo raibh maith agat,\nAoife Byrne\nOifigeach Oibr\u00edochta\u00ed | Operations Officer\nNorthgate Signal, Dublin 8\n",
+          "public": true,
+          "created_at": "2026-11-13T11:18:00Z"
+        },
+        {
+          "id": 96016,
+          "ticket_id": 5215,
+          "author_id": 9317,
+          "body": "Hi - following up on the below. Did this go through? Our October invoice still shows 16 seats.\n\nTomasz\n\nTomasz Wr\u00f3bel\nFinance Manager, Oriel Glasshouse\n\nFrom: Tomasz Wr\u00f3bel\nSent: 02 November 2026 16:48\nTo: Tessellate Billing\nSubject: Seats increase\n\nHello, please increase us from 16 to 20 seats from today - the glazing team is joining the workspace. Thanks, Tomasz\n",
+          "public": true,
+          "created_at": "2026-11-13T12:25:00Z"
+        },
+        {
+          "id": 96017,
+          "ticket_id": 5216,
+          "author_id": 9318,
+          "body": "Hello,\n\nPlease reduce our Line subscription from 5 seats to 3 at the end of the current month. Two of our part-time staff\nhave left.\n\nBest,\nRuth Adeyemi\nOffice Manager | Pemberton Hale\nruth.adeyemi@pembertonhale-arch.co.uk\n",
+          "public": true,
+          "created_at": "2026-11-13T13:32:00Z"
+        },
+        {
+          "id": 96018,
+          "ticket_id": 5217,
+          "author_id": 9320,
+          "body": "Hi,\n\nWe'd like to reduce from 20 to 18 seats from our renewal - two freelancers have finished on the documentary series.\nNadia in finance looks after our account, I've let her know.\n\nCheers,\nLeo Hartley\nProducer, Rowan Quay Media\n",
+          "public": true,
+          "created_at": "2026-11-13T14:39:00Z"
+        },
+        {
+          "id": 96019,
+          "ticket_id": 5218,
+          "author_id": 9321,
+          "body": "Hi there / Shwmae,\n\nFollowing the members' meeting on Thursday: cancel all seats except the two design seats, from the end of this\nbilling month. The rest of the co-op will use the free viewer links from now on, as we discussed.\n\nDiolch / Thanks,\nGwen\n\nGwen Llewellyn\nYsgrifennydd / Secretary\nSaltmarsh Collective Cyf. - cwmni cydweithredol / a co-operative society\nCroesewir gohebiaeth yn Gymraeg a Saesneg. Correspondence is welcome in Welsh and English.\nMae'r neges hon yn gyfrinachol. This message is confidential.\n\n-----Original Message-----\nFrom: Tessellate Billing <billing-desk@tessellate.studio>\nSent: 22 October 2026 12:10\nTo: Gwen Llewellyn\nSubject: RE: Saltmarsh licences / trwyddedau\n\nHi Gwen, viewer links are free on every plan and don't need a seat. Only people who edit boards need a seat. Let us\nknow what the members decide. Tessellate Billing Desk\n\n-----Original Message-----\nFrom: Gwen Llewellyn\nSent: 21 October 2026 18:55\nSubject: Saltmarsh licences / trwyddedau\n\nHi, the committee is asking whether we should cancel Tessellate altogether - most members only look at boards. Do\nviewers need a seat? If we can't make it cheaper we might need to cancel entirely. Gwen\n",
+          "public": true,
+          "created_at": "2026-11-14T15:46:00Z"
+        },
+        {
+          "id": 96020,
+          "ticket_id": 5219,
+          "author_id": 9322,
+          "body": "Hi!\n\nPlease drop us to Grid at renewal - unless Grid is getting more expensive next year, in which case leave us on Mosaic\nas we are.\n\nTx,\nTamsin\n\nTamsin Ode Studio | illustration & surface pattern\n",
+          "public": true,
+          "created_at": "2026-11-14T16:53:00Z"
+        },
+        {
+          "id": 96021,
+          "ticket_id": 5220,
+          "author_id": 9323,
+          "body": "Morning,\n\nPlease add 4 seats for our new starters - they begin on Wednesday and need to be in the workspace from day one.\n\nFelix Haddad\nOperations, Umber & Lime\n",
+          "public": true,
+          "created_at": "2026-11-14T08:00:00Z"
+        },
+        {
+          "id": 96022,
+          "ticket_id": 5221,
+          "author_id": 9324,
+          "body": "Hello,\n\nAt our renewal next January, please move us up from Line to Grid on annual billing, if Grid annual is under \u00a322 per\nseat per month. Same five seats. If it's \u00a322 or more, leave us on Line.\n\nBest,\nMarta Silva\nPartner, Vellum Street\n",
+          "public": true,
+          "created_at": "2026-11-15T09:07:00Z"
+        },
+        {
+          "id": 96023,
+          "ticket_id": 5222,
+          "author_id": 9325,
+          "body": "Hi,\n\nWe'd like to switch to annual billing - not straight away though, from our next renewal please. Same four seats on\nMosaic.\n\nBen Archer\nWorkshop Manager, Wickham Forge\n",
+          "public": true,
+          "created_at": "2026-11-15T10:14:00Z"
+        },
+        {
+          "id": 96024,
+          "ticket_id": 5223,
+          "author_id": 9326,
+          "body": "Hallo,\n\nCould you upgrade us from Line to Grid today please? Same 8 seats - we need the client review links for a pitch this\nweek.\n\nMit freundlichen Gr\u00fc\u00dfen / Kind regards\nLena Fischer\nStudioleitung, Yarrow Bright\nGesch\u00e4ftsf\u00fchrung: L. Fischer | Amtsgericht Hamburg HRB 000000 (fictional)\n",
+          "public": true,
+          "created_at": "2026-11-15T11:21:00Z"
+        },
+        {
+          "id": 96025,
+          "ticket_id": 5224,
+          "author_id": 9327,
+          "body": "Hello,\n\nPlease cancel our subscription at the end of the current period. We are consolidating tools into the group platform\nfrom January.\n\nRavi Menon\nFinance Lead, Zephyr Lantern Studio\n",
+          "public": true,
+          "created_at": "2026-11-15T12:28:00Z"
+        },
+        {
+          "id": 96026,
+          "ticket_id": 5190,
+          "author_id": 9310,
+          "body": "Is there a guide for connecting our identity provider? Dev",
+          "public": true,
+          "created_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 96027,
+          "ticket_id": 5191,
+          "author_id": 9317,
+          "body": "Can you check our VAT number on the invoices is GB 000 0000 00? Tomasz",
+          "public": true,
+          "created_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 96028,
+          "ticket_id": 5192,
+          "author_id": 9315,
+          "body": "Before any decision we'd like a full export of our boards. Jonah",
+          "public": true,
+          "created_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 96029,
+          "ticket_id": 5193,
+          "author_id": 9328,
+          "body": "Please update the card on file for Gannet Row Studios. Theo",
+          "public": true,
+          "created_at": "2026-11-10T09:00:00Z"
+        },
+        {
+          "id": 96030,
+          "ticket_id": 5203,
+          "author_id": 9202,
+          "public": false,
+          "created_at": "2026-11-15T16:40:00Z",
+          "body": "Tom: Mosaic annual is \u00a329/seat/month on the price list so Cobalt Wren is under their \u00a330 - schedule the upgrade for 8 Jan."
+        },
+        {
+          "id": 96031,
+          "ticket_id": 5213,
+          "author_id": 9202,
+          "public": false,
+          "created_at": "2026-11-15T16:44:00Z",
+          "body": "Tom: Grid price list hasn't moved, so Mistral's condition isn't met - no cancellation. (AM will be relieved.)"
+        },
+        {
+          "id": 96032,
+          "ticket_id": 5201,
+          "author_id": 9203,
+          "body": "Hi Callum, we've scheduled your change: Grid Monthly for 12 seats from 24 November 2026, at \u00a324.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96033,
+          "ticket_id": 5202,
+          "author_id": 9203,
+          "body": "Hi Oskar, changes to what your account is billed need your billing contact's go-ahead. We've asked them to confirm on this ticket; nothing changes until they do. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96034,
+          "ticket_id": 5203,
+          "author_id": 9203,
+          "body": "Hi Hattie, we've scheduled your change: Mosaic Annual for 9 seats from 8 January 2027, at \u00a3354.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96035,
+          "ticket_id": 5204,
+          "author_id": 9203,
+          "body": "Hi Rafael, you asked us to make this change only if your condition held. Order form commits the account to 30 June 2027. So we've left your subscription as it is. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96036,
+          "ticket_id": 5205,
+          "author_id": 9203,
+          "body": "Hi Bea, we've scheduled your change: Grid Annual for 11 seats from 3 December 2026, at \u00a3240.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96037,
+          "ticket_id": 5206,
+          "author_id": 9203,
+          "body": "Hi Ines, thanks for letting us know - we've left your subscription as it is. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96038,
+          "ticket_id": 5207,
+          "author_id": 9203,
+          "body": "Hi Milo, changes to what your account is billed need your billing contact's go-ahead. We've asked them to confirm on this ticket; nothing changes until they do. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96039,
+          "ticket_id": 5208,
+          "author_id": 9203,
+          "body": "Hi Dev, we've scheduled your change: Grid Annual for 14 seats from 19 January 2027, at \u00a3252.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96040,
+          "ticket_id": 5209,
+          "author_id": 9203,
+          "body": "Hi Sasha, we've scheduled your change: Line Monthly for 6 seats from 30 November 2026, at \u00a312.00 per seat per month. Refunds and credits are handled by our Finance team, who will pick up your request from this ticket. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96041,
+          "ticket_id": 5210,
+          "author_id": 9203,
+          "body": "Hi Owen, we've scheduled your change: Mosaic Annual for 8 seats from 15 January 2027, at \u00a3354.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96042,
+          "ticket_id": 5211,
+          "author_id": 9203,
+          "body": "Hi Kat, we've scheduled your change: Grid Monthly for 16 seats from 31 January 2027, at \u00a326.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96043,
+          "ticket_id": 5212,
+          "author_id": 9203,
+          "body": "Hi Edie, we've scheduled your change: Mosaic Annual for 7 seats from 12 December 2026, at \u00a3348.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96044,
+          "ticket_id": 5213,
+          "author_id": 9203,
+          "body": "Hi Jonah, your subscription is set to end on 1 March 2027, the close of the period you have paid for. You keep full access until then. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96045,
+          "ticket_id": 5214,
+          "author_id": 9203,
+          "body": "Hi Aoife, we've scheduled your change: Line Annual for 24 seats from 2 February 2027, at \u00a3120.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96046,
+          "ticket_id": 5215,
+          "author_id": 9203,
+          "body": "Hi Tomasz, your account already stands as you asked: Grid Monthly, 20 seats. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96047,
+          "ticket_id": 5216,
+          "author_id": 9203,
+          "body": "Hi Ruth, we've scheduled your change: Line Monthly for 3 seats from 1 December 2026, at \u00a312.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96048,
+          "ticket_id": 5217,
+          "author_id": 9203,
+          "body": "Hi Leo, we've scheduled your change: Grid Monthly for 18 seats from 10 December 2026, at \u00a324.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96049,
+          "ticket_id": 5218,
+          "author_id": 9203,
+          "body": "Hi Gwen, we've scheduled your change: Grid Monthly for 2 seats from 28 November 2026, at \u00a324.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96050,
+          "ticket_id": 5219,
+          "author_id": 9203,
+          "body": "Hi Tamsin, you asked us to make this change only if your condition held. Grid Annual goes from \u00a3240.00 to \u00a3252.00 at 11 February 2027. So we've left your subscription as it is. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96051,
+          "ticket_id": 5220,
+          "author_id": 9203,
+          "body": "Hi Felix, we've scheduled your change: Grid Monthly for 14 seats from 16 November 2026, at \u00a324.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96052,
+          "ticket_id": 5221,
+          "author_id": 9203,
+          "body": "Hi Marta, we've scheduled your change: Grid Annual for 5 seats from 27 January 2027, at \u00a3252.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96053,
+          "ticket_id": 5222,
+          "author_id": 9203,
+          "body": "Hi Ben, we've scheduled your change: Mosaic Annual for 4 seats from 7 December 2026, at \u00a3348.00 per seat per year. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96054,
+          "ticket_id": 5223,
+          "author_id": 9203,
+          "body": "Hi Lena, we've scheduled your change: Grid Monthly for 8 seats from 16 November 2026, at \u00a324.00 per seat per month. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        },
+        {
+          "id": 96055,
+          "ticket_id": 5224,
+          "author_id": 9203,
+          "body": "Hi Ravi, your subscription is set to end on 14 December 2026, the close of the period you have paid for. You keep full access until then. Tessellate Billing Desk",
+          "public": true,
+          "created_at": "2026-01-01 08:00:00"
+        }
+      ]
+    }
+  },
+  "LightAirtable": {
+    "status": "ok",
+    "output": {
+      "records": {
+        "tblProjects00001": [
+          {
+            "id": "recProj0000000001",
+            "createdTime": "2026-01-12T09:00:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Status": "In progress",
+              "Owner": "Dr. Reginald Fox",
+              "Budget": 48000
+            }
+          },
+          {
+            "id": "recProj0000000002",
+            "createdTime": "2026-02-03T14:30:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Status": "In progress",
+              "Owner": "Reginald Thackery",
+              "Budget": 120000
+            }
+          },
+          {
+            "id": "recProj0000000003",
+            "createdTime": "2026-03-20T11:15:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Status": "Todo",
+              "Owner": "Denise Whitfield-Carter",
+              "Budget": 30000
+            }
+          },
+          {
+            "id": "recProj0000000004",
+            "createdTime": "2025-11-04T10:00:00.000Z",
+            "fields": {
+              "Name": "Community foundation gift",
+              "Status": "Done",
+              "Owner": "Yvonne Cabrera",
+              "Budget": 22000
+            }
+          },
+          {
+            "id": "recProj0000000005",
+            "createdTime": "2026-04-18T08:00:00.000Z",
+            "fields": {
+              "Name": "Lecture underwriting",
+              "Status": "Todo",
+              "Owner": "Dr. Sarah Langston",
+              "Budget": 95000
+            }
+          },
+          {
+            "id": "recProj0000000006",
+            "createdTime": "2025-09-30T16:00:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Status": "Done",
+              "Owner": "Denise Whitfield-Carter",
+              "Budget": 41000
+            }
+          },
+          {
+            "id": "recProj0000000007",
+            "createdTime": "2026-05-01T09:30:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Status": "In progress",
+              "Owner": "Reginald Thackery",
+              "Budget": 37000
+            }
+          },
+          {
+            "id": "recProj0000000008",
+            "createdTime": "2026-02-22T13:00:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Status": "Todo",
+              "Owner": "Dr. Sarah Langston",
+              "Budget": 68000
+            }
+          }
+        ],
+        "tblTasks00000001": [
+          {
+            "id": "recTask0000000001",
+            "createdTime": "2026-01-14T10:00:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Status": "Done",
+              "Project": "Georgia Trust facade grant",
+              "EstimateHours": 8,
+              "Done": true
+            }
+          },
+          {
+            "id": "recTask0000000002",
+            "createdTime": "2026-01-20T09:30:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Status": "In progress",
+              "Project": "National Trust program grant",
+              "EstimateHours": 16,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000003",
+            "createdTime": "2026-02-05T11:00:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Status": "Todo",
+              "Project": "City HPO survey contract",
+              "EstimateHours": 24,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000004",
+            "createdTime": "2026-02-10T15:00:00.000Z",
+            "fields": {
+              "Name": "Community foundation gift",
+              "Status": "In progress",
+              "Project": "Community foundation gift",
+              "EstimateHours": 20,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000005",
+            "createdTime": "2026-02-12T10:00:00.000Z",
+            "fields": {
+              "Name": "Lecture underwriting",
+              "Status": "Todo",
+              "Project": "Lecture underwriting",
+              "EstimateHours": 12,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000006",
+            "createdTime": "2026-02-15T09:00:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Status": "Done",
+              "Project": "Georgia Trust facade grant",
+              "EstimateHours": 18,
+              "Done": true
+            }
+          },
+          {
+            "id": "recTask0000000007",
+            "createdTime": "2026-03-21T09:00:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Status": "Done",
+              "Project": "National Trust program grant",
+              "EstimateHours": 10,
+              "Done": true
+            }
+          },
+          {
+            "id": "recTask0000000008",
+            "createdTime": "2026-03-25T10:30:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Status": "In progress",
+              "Project": "City HPO survey contract",
+              "EstimateHours": 14,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000009",
+            "createdTime": "2026-04-05T13:00:00.000Z",
+            "fields": {
+              "Name": "Community foundation gift",
+              "Status": "Todo",
+              "Project": "Community foundation gift",
+              "EstimateHours": 22,
+              "Done": false
+            }
+          },
+          {
+            "id": "recTask0000000010",
+            "createdTime": "2026-05-01T09:30:00.000Z",
+            "fields": {
+              "Name": "Lecture underwriting",
+              "Status": "Todo",
+              "Project": "Lecture underwriting",
+              "EstimateHours": 9,
+              "Done": false
+            }
+          }
+        ],
+        "tblContacts00001": [
+          {
+            "id": "recCont0000000001",
+            "createdTime": "2026-01-05T08:00:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Email": "reginald.thackery@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000002",
+            "createdTime": "2026-01-09T09:15:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Email": "odetta.sinclair@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000003",
+            "createdTime": "2026-01-18T11:00:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Email": "james.holloway@Finthesiss.ai",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000004",
+            "createdTime": "2026-02-02T14:20:00.000Z",
+            "fields": {
+              "Name": "Community foundation gift",
+              "Email": "anselm.trumbull@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000005",
+            "createdTime": "2026-02-19T10:45:00.000Z",
+            "fields": {
+              "Name": "Lecture underwriting",
+              "Email": "lorraine.deveraux@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000006",
+            "createdTime": "2026-03-03T13:30:00.000Z",
+            "fields": {
+              "Name": "Georgia Trust facade grant",
+              "Email": "everett.petain@senonprofit.com",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000007",
+            "createdTime": "2026-03-22T09:00:00.000Z",
+            "fields": {
+              "Name": "National Trust program grant",
+              "Email": "odetta.sinclair@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000008",
+            "createdTime": "2026-04-11T16:10:00.000Z",
+            "fields": {
+              "Name": "City HPO survey contract",
+              "Email": "henry.beaumont@Finthesiss.ai",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          },
+          {
+            "id": "recCont0000000009",
+            "createdTime": "2026-05-06T12:00:00.000Z",
+            "fields": {
+              "Name": "Community foundation gift",
+              "Email": "marcus.whitby@shpa-savannah.org",
+              "Company": "Savannah Historic Preservation Alliance",
+              "Role": "Program record"
+            }
+          }
+        ],
+        "tblTslChangeOrd": [
+          {
+            "id": "recTslCO5201A0x",
+            "createdTime": "2026-11-09T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5201",
+              "Account (as written)": "Ashgrove",
+              "Received": "2026-11-09",
+              "Requester": "callum.reid@ashgroveatelier.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_ashgrove",
+              "Subscription": "sub_tsl_ashgrove",
+              "New plan": "Grid Monthly",
+              "Seats": 12,
+              "Effective date": "2026-11-24",
+              "Unit price (GBP)": 24.0
+            }
+          },
+          {
+            "id": "recTslCO5202A0x",
+            "createdTime": "2026-11-09T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5202",
+              "Account (as written)": "Bramley Kite",
+              "Received": "2026-11-09",
+              "Requester": "oskar.lind@bramleykite.co.uk",
+              "Disposition": "Needs billing-contact confirmation",
+              "Stripe customer": "cus_tsl_bramley",
+              "Subscription": "sub_tsl_bramley"
+            }
+          },
+          {
+            "id": "recTslCO5203A0x",
+            "createdTime": "2026-11-10T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5203",
+              "Account (as written)": "Cobalt Wren",
+              "Received": "2026-11-10",
+              "Requester": "hattie.moss@cobaltwren.design",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_cobaltwren",
+              "Subscription": "sub_tsl_cobaltwren",
+              "New plan": "Mosaic Annual",
+              "Seats": 9,
+              "Effective date": "2027-01-08",
+              "Unit price (GBP)": 354.0
+            }
+          },
+          {
+            "id": "recTslCO5204A0x",
+            "createdTime": "2026-11-10T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5204",
+              "Account (as written)": "Dunmore Lane",
+              "Received": "2026-11-10",
+              "Requester": "rafael.okoro@dunmorelane.co.uk",
+              "Disposition": "No change \u2014 condition not met",
+              "Stripe customer": "cus_tsl_dunmore",
+              "Subscription": "sub_tsl_dunmore"
+            }
+          },
+          {
+            "id": "recTslCO5205A0x",
+            "createdTime": "2026-11-10T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5205",
+              "Account (as written)": "Elderfield",
+              "Received": "2026-11-10",
+              "Requester": "bea.sandoval@elderfieldprint.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_elderfield",
+              "Subscription": "sub_tsl_elderfield",
+              "New plan": "Grid Annual",
+              "Seats": 11,
+              "Effective date": "2026-12-03",
+              "Unit price (GBP)": 240.0
+            }
+          },
+          {
+            "id": "recTslCO5206A0x",
+            "createdTime": "2026-11-11T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5206",
+              "Account (as written)": "Fernhill Motion",
+              "Received": "2026-11-11",
+              "Requester": "ines.duarte@fernhillmotion.co.uk",
+              "Disposition": "No change \u2014 withdrawn",
+              "Stripe customer": "cus_tsl_fernhill",
+              "Subscription": "sub_tsl_fernhill"
+            }
+          },
+          {
+            "id": "recTslCO5207A0x",
+            "createdTime": "2026-11-11T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5207",
+              "Account (as written)": "Gannet Row",
+              "Received": "2026-11-11",
+              "Requester": "milo.brandt@gannetrow.studio",
+              "Disposition": "Needs billing-contact confirmation",
+              "Stripe customer": "cus_tsl_gannetrow",
+              "Subscription": "sub_tsl_gannetrow"
+            }
+          },
+          {
+            "id": "recTslCO5208A0x",
+            "createdTime": "2026-11-11T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5208",
+              "Account (as written)": "Hollis Marlow",
+              "Received": "2026-11-11",
+              "Requester": "dev.anand@hollismarlow.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_hollismarlow",
+              "Subscription": "sub_tsl_hollismarlow",
+              "New plan": "Grid Annual",
+              "Seats": 14,
+              "Effective date": "2027-01-19",
+              "Unit price (GBP)": 252.0
+            }
+          },
+          {
+            "id": "recTslCO5209A0x",
+            "createdTime": "2026-11-12T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5209",
+              "Account (as written)": "Inkwell Harbour",
+              "Received": "2026-11-12",
+              "Requester": "sasha.brennan@inkwellharbour.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_inkwell",
+              "Subscription": "sub_tsl_inkwell",
+              "New plan": "Line Monthly",
+              "Seats": 6,
+              "Effective date": "2026-11-30",
+              "Unit price (GBP)": 12.0
+            }
+          },
+          {
+            "id": "recTslCO5210A0x",
+            "createdTime": "2026-11-12T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5210",
+              "Account (as written)": "Juniper Vale",
+              "Received": "2026-11-12",
+              "Requester": "owen.pryce@junipervale.design",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_junipervale",
+              "Subscription": "sub_tsl_junipervale",
+              "New plan": "Mosaic Annual",
+              "Seats": 8,
+              "Effective date": "2027-01-15",
+              "Unit price (GBP)": 354.0
+            }
+          },
+          {
+            "id": "recTslCO5211A0x",
+            "createdTime": "2026-11-12T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5211",
+              "Account (as written)": "Kestrel Point",
+              "Received": "2026-11-12",
+              "Requester": "kat.okafor@kestrelpoint.co",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_kestrel",
+              "Subscription": "sub_tsl_kestrel",
+              "New plan": "Grid Monthly",
+              "Seats": 16,
+              "Effective date": "2027-01-31",
+              "Unit price (GBP)": 26.0
+            }
+          },
+          {
+            "id": "recTslCO5212A0x",
+            "createdTime": "2026-11-12T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5212",
+              "Account (as written)": "Larchmont",
+              "Received": "2026-11-12",
+              "Requester": "edie.fairbanks@larchmonttype.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_larchmont",
+              "Subscription": "sub_tsl_larchmont",
+              "New plan": "Mosaic Annual",
+              "Seats": 7,
+              "Effective date": "2026-12-12",
+              "Unit price (GBP)": 348.0
+            }
+          },
+          {
+            "id": "recTslCO5213A0x",
+            "createdTime": "2026-11-13T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5213",
+              "Account (as written)": "Mistral Yard",
+              "Received": "2026-11-13",
+              "Requester": "jonah.weller@mistralyard.com",
+              "Disposition": "Cancellation scheduled",
+              "Stripe customer": "cus_tsl_mistral",
+              "Subscription": "sub_tsl_mistral",
+              "Effective date": "2027-03-01"
+            }
+          },
+          {
+            "id": "recTslCO5214A0x",
+            "createdTime": "2026-11-13T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5214",
+              "Account (as written)": "Northgate",
+              "Received": "2026-11-13",
+              "Requester": "aoife.byrne@northgatesignal.ie",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_northgate",
+              "Subscription": "sub_tsl_northgate",
+              "New plan": "Line Annual",
+              "Seats": 24,
+              "Effective date": "2027-02-02",
+              "Unit price (GBP)": 120.0
+            }
+          },
+          {
+            "id": "recTslCO5215A0x",
+            "createdTime": "2026-11-13T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5215",
+              "Account (as written)": "Oriel",
+              "Received": "2026-11-13",
+              "Requester": "tomasz.wrobel@orielglasshouse.co.uk",
+              "Disposition": "No change \u2014 already in place",
+              "Stripe customer": "cus_tsl_oriel",
+              "Subscription": "sub_tsl_oriel"
+            }
+          },
+          {
+            "id": "recTslCO5216A0x",
+            "createdTime": "2026-11-13T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5216",
+              "Account (as written)": "Pemberton Hale Architects",
+              "Received": "2026-11-13",
+              "Requester": "ruth.adeyemi@pembertonhale-arch.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_pha_ltd",
+              "Subscription": "sub_tsl_pha_ltd",
+              "New plan": "Line Monthly",
+              "Seats": 3,
+              "Effective date": "2026-12-01",
+              "Unit price (GBP)": 12.0
+            }
+          },
+          {
+            "id": "recTslCO5217A0x",
+            "createdTime": "2026-11-13T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5217",
+              "Account (as written)": "Rowan Quay",
+              "Received": "2026-11-13",
+              "Requester": "leo.hartley@rowanquay.media",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_rowanquay",
+              "Subscription": "sub_tsl_rowanquay",
+              "New plan": "Grid Monthly",
+              "Seats": 18,
+              "Effective date": "2026-12-10",
+              "Unit price (GBP)": 24.0
+            }
+          },
+          {
+            "id": "recTslCO5218A0x",
+            "createdTime": "2026-11-14T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5218",
+              "Account (as written)": "Saltmarsh",
+              "Received": "2026-11-14",
+              "Requester": "gwen.llewellyn@saltmarsh.coop",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_saltmarsh",
+              "Subscription": "sub_tsl_saltmarsh",
+              "New plan": "Grid Monthly",
+              "Seats": 2,
+              "Effective date": "2026-11-28",
+              "Unit price (GBP)": 24.0
+            }
+          },
+          {
+            "id": "recTslCO5219A0x",
+            "createdTime": "2026-11-14T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5219",
+              "Account (as written)": "Tamsin Ode",
+              "Received": "2026-11-14",
+              "Requester": "tamsin@tamsinode.studio",
+              "Disposition": "No change \u2014 condition not met",
+              "Stripe customer": "cus_tsl_tamsinode",
+              "Subscription": "sub_tsl_tamsinode"
+            }
+          },
+          {
+            "id": "recTslCO5220A0x",
+            "createdTime": "2026-11-14T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5220",
+              "Account (as written)": "Umber and Lime",
+              "Received": "2026-11-14",
+              "Requester": "felix.haddad@umberandlime.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_umberlime",
+              "Subscription": "sub_tsl_umberlime",
+              "New plan": "Grid Monthly",
+              "Seats": 14,
+              "Effective date": "2026-11-16",
+              "Unit price (GBP)": 24.0
+            }
+          },
+          {
+            "id": "recTslCO5221A0x",
+            "createdTime": "2026-11-15T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5221",
+              "Account (as written)": "Vellum Street",
+              "Received": "2026-11-15",
+              "Requester": "marta.silva@vellumstreet.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_vellum",
+              "Subscription": "sub_tsl_vellum",
+              "New plan": "Grid Annual",
+              "Seats": 5,
+              "Effective date": "2027-01-27",
+              "Unit price (GBP)": 252.0
+            }
+          },
+          {
+            "id": "recTslCO5222A0x",
+            "createdTime": "2026-11-15T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5222",
+              "Account (as written)": "Wickham Forge",
+              "Received": "2026-11-15",
+              "Requester": "ben.archer@wickhamforge.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_wickham",
+              "Subscription": "sub_tsl_wickham",
+              "New plan": "Mosaic Annual",
+              "Seats": 4,
+              "Effective date": "2026-12-07",
+              "Unit price (GBP)": 348.0
+            }
+          },
+          {
+            "id": "recTslCO5223A0x",
+            "createdTime": "2026-11-15T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5223",
+              "Account (as written)": "Yarrow Bright",
+              "Received": "2026-11-15",
+              "Requester": "lena.fischer@yarrowbright.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_yarrow",
+              "Subscription": "sub_tsl_yarrow",
+              "New plan": "Grid Monthly",
+              "Seats": 8,
+              "Effective date": "2026-11-16",
+              "Unit price (GBP)": 24.0
+            }
+          },
+          {
+            "id": "recTslCO5224A0x",
+            "createdTime": "2026-11-15T18:00:00.000Z",
+            "fields": {
+              "Ticket": "5224",
+              "Account (as written)": "Zephyr Lantern",
+              "Received": "2026-11-15",
+              "Requester": "ravi.menon@zephyrlantern.studio",
+              "Disposition": "Cancellation scheduled",
+              "Stripe customer": "cus_tsl_zephyr",
+              "Subscription": "sub_tsl_zephyr",
+              "Effective date": "2026-12-14"
+            }
+          },
+          {
+            "id": "recTslCO5160H0x",
+            "createdTime": "2026-11-02T17:00:00.000Z",
+            "fields": {
+              "Ticket": "5160",
+              "Account (as written)": "Oriel",
+              "Received": "2026-11-02",
+              "Requester": "tomasz.wrobel@orielglasshouse.co.uk",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_oriel",
+              "Subscription": "sub_tsl_oriel",
+              "Desk note": "Seat addition, effective on processing.",
+              "New plan": "Grid Monthly",
+              "Seats": 20,
+              "Effective date": "2026-11-02",
+              "Unit price (GBP)": 24
+            }
+          },
+          {
+            "id": "recTslCO5158H0x",
+            "createdTime": "2026-10-30T17:00:00.000Z",
+            "fields": {
+              "Ticket": "5158",
+              "Account (as written)": "Gannet Row Studios",
+              "Received": "2026-10-30",
+              "Requester": "theo.marsh@gannetrowstudios.com",
+              "Disposition": "Change scheduled",
+              "Stripe customer": "cus_tsl_gannetrows",
+              "Subscription": "sub_tsl_gannetrows",
+              "Desk note": "Reduction 6 to 4 at anchor.",
+              "New plan": "Grid Monthly",
+              "Seats": 4,
+              "Effective date": "2026-11-09",
+              "Unit price (GBP)": 24
+            }
+          },
+          {
+            "id": "recTslCO5149H0x",
+            "createdTime": "2026-10-14T17:00:00.000Z",
+            "fields": {
+              "Ticket": "5149",
+              "Account (as written)": "Hollis Marlow",
+              "Received": "2026-10-14",
+              "Requester": "dev.anand@hollismarlow.com",
+              "Disposition": "No change \u2014 already in place",
+              "Stripe customer": "cus_tsl_hollismarlow",
+              "Subscription": "sub_tsl_hollismarlow",
+              "Desk note": "Asked for 14 seats; already on 14."
+            }
+          }
+        ],
+        "tblTslDeskLog01": [
+          {
+            "id": "recTslDL20261111",
+            "createdTime": "2026-11-11T17:30:00.000Z",
+            "fields": {
+              "Date": "2026-11-11",
+              "Tickets processed": 9,
+              "Changes scheduled": 6,
+              "Cancellations scheduled": 1,
+              "Condition not met": 1,
+              "Withdrawn": 0,
+              "Already in place": 0,
+              "Awaiting billing contact": 1,
+              "Prepared by": "Maren Holt",
+              "Notes": "Queue cleared."
+            }
+          },
+          {
+            "id": "recTslDL20261112",
+            "createdTime": "2026-11-12T17:30:00.000Z",
+            "fields": {
+              "Date": "2026-11-12",
+              "Tickets processed": 7,
+              "Changes scheduled": 5,
+              "Cancellations scheduled": 0,
+              "Condition not met": 0,
+              "Withdrawn": 1,
+              "Already in place": 1,
+              "Awaiting billing contact": 0,
+              "Prepared by": "Tom Achterberg",
+              "Notes": "Queue cleared."
+            }
+          },
+          {
+            "id": "recTslDL20261113",
+            "createdTime": "2026-11-13T17:30:00.000Z",
+            "fields": {
+              "Date": "2026-11-13",
+              "Tickets processed": 11,
+              "Changes scheduled": 7,
+              "Cancellations scheduled": 1,
+              "Condition not met": 2,
+              "Withdrawn": 0,
+              "Already in place": 0,
+              "Awaiting billing contact": 1,
+              "Prepared by": "Maren Holt",
+              "Notes": "Two forwards held for billing contacts."
+            }
+          },
+          {
+            "id": "rec669b06200a3791",
+            "createdTime": "2026-01-01 08:00:00",
+            "fields": {
+              "Date": "2026-11-16",
+              "Tickets processed": 24,
+              "Changes scheduled": 16,
+              "Cancellations scheduled": 2,
+              "Condition not met": 2,
+              "Withdrawn": 1,
+              "Already in place": 1,
+              "Awaiting billing contact": 2,
+              "Prepared by": "Billing Desk",
+              "Notes": "Plan changes queue cleared; two requests held for billing-contact confirmation."
+            }
+          }
+        ],
+        "tblTslRetention": [
+          {
+            "id": "recTslRO0001",
+            "createdTime": "2026-10-15T10:00:00.000Z",
+            "fields": {
+              "Account": "Mistral Yard",
+              "Offer": "10% off Grid Annual for 2027 if they renew",
+              "Owner": "Customer Success (Priscilla Vane)",
+              "Status": "Proposed - not approved"
+            }
+          },
+          {
+            "id": "recTslRO0002",
+            "createdTime": "2026-10-20T10:00:00.000Z",
+            "fields": {
+              "Account": "Inkwell Harbour",
+              "Offer": "One month free on Line",
+              "Owner": "Customer Success (Priscilla Vane)",
+              "Status": "Rejected by Finance"
+            }
+          },
+          {
+            "id": "recTslRO0003",
+            "createdTime": "2026-11-02T10:00:00.000Z",
+            "fields": {
+              "Account": "Dunmore Lane Architects",
+              "Offer": "Training credits",
+              "Owner": "Account Management (Hugo Barnes)",
+              "Status": "Delivered"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "LightStripe": {
+    "status": "ok",
+    "output": {
+      "charges": [
+        {
+          "id": "ch_3Aurora01",
+          "customer": "Everett Petain",
+          "amount": 1900,
+          "currency": "usd",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Starter Monthly",
+          "payment_intent": "pi_3Aurora01",
+          "created": 1717286400,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Helix01",
+          "customer": "Henry Beaumont",
+          "amount": 29900,
+          "currency": "usd",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Enterprise Monthly",
+          "payment_intent": "pi_3Helix01",
+          "created": 1717372800,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Lumen01",
+          "customer": "Cordelia Ashmore-Vance",
+          "amount": 4900,
+          "currency": "usd",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": true,
+          "amount_refunded": 4900,
+          "description": "Pro Monthly refunded",
+          "payment_intent": "pi_3Lumen01",
+          "created": 1717459200,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Pelagic01",
+          "customer": "Reginald Thackery",
+          "amount": 12500,
+          "currency": "usd",
+          "status": "failed",
+          "paid": false,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Net-30 charge attempt",
+          "payment_intent": "pi_3Pelagic01",
+          "created": 1717545600,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Quanta01",
+          "customer": "Terrence Carter",
+          "amount": 49000,
+          "currency": "usd",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Pro Annual",
+          "payment_intent": "pi_3Quanta01",
+          "created": 1717632000,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Aurora02",
+          "customer": "Everett Petain",
+          "amount": 9900,
+          "currency": "usd",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": true,
+          "amount_refunded": 2000,
+          "description": "POS Bundle partial refund",
+          "payment_intent": "pi_3Aurora02",
+          "created": 1717718400,
+          "object": "charge"
+        },
+        {
+          "id": "ch_3Verdant01",
+          "customer": "Dr. Vivienne Boudreaux",
+          "amount": 4900,
+          "currency": "usd",
+          "status": "pending",
+          "paid": false,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Pro Monthly pending",
+          "payment_intent": "pi_3Verdant01",
+          "created": 1717804800,
+          "object": "charge"
+        },
+        {
+          "id": "ch_tsl_ashgrove_2610",
+          "object": "charge",
+          "customer": "cus_tsl_ashgrove",
+          "amount": 36000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x15",
+          "payment_intent": "pi_tsl_ashgrove_2610",
+          "created": 1790208000
+        },
+        {
+          "id": "ch_tsl_bramley_2610",
+          "object": "charge",
+          "customer": "cus_tsl_bramley",
+          "amount": 24000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x10",
+          "payment_intent": "pi_tsl_bramley_2610",
+          "created": 1791158400
+        },
+        {
+          "id": "ch_tsl_cobalt_2610",
+          "object": "charge",
+          "customer": "cus_tsl_cobaltwren",
+          "amount": 216000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Annual x9",
+          "payment_intent": "pi_tsl_cobalt_2610",
+          "created": 1767830400
+        },
+        {
+          "id": "ch_tsl_dunmore_2610",
+          "object": "charge",
+          "customer": "cus_tsl_dunmore",
+          "amount": 43200,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x18",
+          "payment_intent": "pi_tsl_dunmore_2610",
+          "created": 1790640000
+        },
+        {
+          "id": "ch_tsl_elderfield_2610",
+          "object": "charge",
+          "customer": "cus_tsl_elderfield",
+          "amount": 26400,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x11",
+          "payment_intent": "pi_tsl_elderfield_2610",
+          "created": 1790985600
+        },
+        {
+          "id": "ch_tsl_fernhill_2610",
+          "object": "charge",
+          "customer": "cus_tsl_fernhill",
+          "amount": 16800,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x7",
+          "payment_intent": "pi_tsl_fernhill_2610",
+          "created": 1789948800
+        },
+        {
+          "id": "ch_tsl_gannet_2610",
+          "object": "charge",
+          "customer": "cus_tsl_gannetrow",
+          "amount": 9600,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Monthly x8",
+          "payment_intent": "pi_tsl_gannet_2610",
+          "created": 1790899200
+        },
+        {
+          "id": "ch_tsl_hollis_2610",
+          "object": "charge",
+          "customer": "cus_tsl_hollismarlow",
+          "amount": 16800,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Monthly x14",
+          "payment_intent": "pi_tsl_hollis_2610",
+          "created": 1789776000
+        },
+        {
+          "id": "ch_tsl_inkwell_2610",
+          "object": "charge",
+          "customer": "cus_tsl_inkwell",
+          "amount": 14400,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x6",
+          "payment_intent": "pi_tsl_inkwell_2610",
+          "created": 1790726400
+        },
+        {
+          "id": "ch_tsl_juniper_2610",
+          "object": "charge",
+          "customer": "cus_tsl_junipervale",
+          "amount": 417600,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Mosaic Annual x12",
+          "payment_intent": "pi_tsl_juniper_2610",
+          "created": 1768435200
+        },
+        {
+          "id": "ch_tsl_kestrel_2610",
+          "object": "charge",
+          "customer": "cus_tsl_kestrel",
+          "amount": 384000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Annual x16",
+          "payment_intent": "pi_tsl_kestrel_2610",
+          "created": 1769817600
+        },
+        {
+          "id": "ch_tsl_larchmont_2610",
+          "object": "charge",
+          "customer": "cus_tsl_larchmont",
+          "amount": 16800,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x7",
+          "payment_intent": "pi_tsl_larchmont_2610",
+          "created": 1791763200
+        },
+        {
+          "id": "ch_tsl_mistral_2610",
+          "object": "charge",
+          "customer": "cus_tsl_mistral",
+          "amount": 528000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Annual x22",
+          "payment_intent": "pi_tsl_mistral_2610",
+          "created": 1772323200
+        },
+        {
+          "id": "ch_tsl_northgate_2610",
+          "object": "charge",
+          "customer": "cus_tsl_northgate",
+          "amount": 360000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Annual x30",
+          "payment_intent": "pi_tsl_northgate_2610",
+          "created": 1769990400
+        },
+        {
+          "id": "ch_tsl_oriel_2610",
+          "object": "charge",
+          "customer": "cus_tsl_oriel",
+          "amount": 38400,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x16",
+          "payment_intent": "pi_tsl_oriel_2610",
+          "created": 1791417600
+        },
+        {
+          "id": "ch_tsl_phal_2610",
+          "object": "charge",
+          "customer": "cus_tsl_pha_ltd",
+          "amount": 6000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Monthly x5",
+          "payment_intent": "pi_tsl_phal_2610",
+          "created": 1790812800
+        },
+        {
+          "id": "ch_tsl_rowan_2610",
+          "object": "charge",
+          "customer": "cus_tsl_rowanquay",
+          "amount": 48000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x20",
+          "payment_intent": "pi_tsl_rowan_2610",
+          "created": 1791590400
+        },
+        {
+          "id": "ch_tsl_saltmarsh_2610",
+          "object": "charge",
+          "customer": "cus_tsl_saltmarsh",
+          "amount": 21600,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x9",
+          "payment_intent": "pi_tsl_saltmarsh_2610",
+          "created": 1790553600
+        },
+        {
+          "id": "ch_tsl_tamsin_2610",
+          "object": "charge",
+          "customer": "cus_tsl_tamsinode",
+          "amount": 208800,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Mosaic Annual x6",
+          "payment_intent": "pi_tsl_tamsin_2610",
+          "created": 1770768000
+        },
+        {
+          "id": "ch_tsl_umber_2610",
+          "object": "charge",
+          "customer": "cus_tsl_umberlime",
+          "amount": 24000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x10",
+          "payment_intent": "pi_tsl_umber_2610",
+          "created": 1791244800
+        },
+        {
+          "id": "ch_tsl_vellum_2610",
+          "object": "charge",
+          "customer": "cus_tsl_vellum",
+          "amount": 60000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Annual x5",
+          "payment_intent": "pi_tsl_vellum_2610",
+          "created": 1769472000
+        },
+        {
+          "id": "ch_tsl_wickham_2610",
+          "object": "charge",
+          "customer": "cus_tsl_wickham",
+          "amount": 14000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Mosaic Monthly x4",
+          "payment_intent": "pi_tsl_wickham_2610",
+          "created": 1791331200
+        },
+        {
+          "id": "ch_tsl_yarrow_2610",
+          "object": "charge",
+          "customer": "cus_tsl_yarrow",
+          "amount": 9600,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Line Monthly x8",
+          "payment_intent": "pi_tsl_yarrow_2610",
+          "created": 1790380800
+        },
+        {
+          "id": "ch_tsl_zephyr_2610",
+          "object": "charge",
+          "customer": "cus_tsl_zephyr",
+          "amount": 10500,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Mosaic Monthly x3",
+          "payment_intent": "pi_tsl_zephyr_2610",
+          "created": 1791936000
+        },
+        {
+          "id": "ch_tsl_pharch_2610",
+          "object": "charge",
+          "customer": "cus_tsl_pha_arch",
+          "amount": 288000,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Annual x12",
+          "payment_intent": "pi_tsl_pharch_2610",
+          "created": 1776643200
+        },
+        {
+          "id": "ch_tsl_gannets_2610",
+          "object": "charge",
+          "customer": "cus_tsl_gannetrows",
+          "amount": 9600,
+          "currency": "gbp",
+          "status": "succeeded",
+          "paid": true,
+          "refunded": false,
+          "amount_refunded": 0,
+          "description": "Grid Monthly x4",
+          "payment_intent": "pi_tsl_gannets_2610",
+          "created": 1791504000
+        }
+      ]
+    }
+  },
+  "LightConfluence": {
+    "status": "ok",
+    "output": {
+      "pages": [
+        {
+          "id": "100101",
+          "type": "page",
+          "status": "current",
+          "title": "Operations Home",
+          "space_key": "ENG",
+          "parent_id": null,
+          "version": 3,
+          "body": "Working procedures for the Alliance office at 45 Bull Street.",
+          "created_by": "Amos Jeremiah Whitfield",
+          "created_at": "2025-09-02T10:00:00Z"
+        },
+        {
+          "id": "100102",
+          "type": "page",
+          "status": "current",
+          "title": "Procedure Runbooks",
+          "space_key": "ENG",
+          "parent_id": "100101",
+          "version": 5,
+          "body": "Index of standing procedures for programs and operations.",
+          "created_by": "Lorraine Deveraux",
+          "created_at": "2025-09-10T11:00:00Z"
+        },
+        {
+          "id": "100103",
+          "type": "page",
+          "status": "current",
+          "title": "Docent Training Curriculum",
+          "space_key": "ENG",
+          "parent_id": "100102",
+          "version": 8,
+          "body": "Six-week curriculum: architecture periods, tour safety, storytelling, and the Historic District map.",
+          "created_by": "Josephine Halloway",
+          "created_at": "2025-09-12T09:30:00Z"
+        },
+        {
+          "id": "100104",
+          "type": "page",
+          "status": "current",
+          "title": "Easement Monitoring Procedure",
+          "space_key": "ENG",
+          "parent_id": "100102",
+          "version": 4,
+          "body": "Annual inspection checklist for facade easements, photo log requirements, and covenant follow-up steps.",
+          "created_by": "Amos Jeremiah Whitfield",
+          "created_at": "2025-10-01T14:20:00Z"
+        },
+        {
+          "id": "100105",
+          "type": "page",
+          "status": "current",
+          "title": "Architecture Survey Notes",
+          "space_key": "ENG",
+          "parent_id": "100101",
+          "version": 2,
+          "body": "Field notes from the Victorian District survey, block by block.",
+          "created_by": "Lorraine Deveraux",
+          "created_at": "2025-10-05T16:00:00Z"
+        },
+        {
+          "id": "100201",
+          "type": "page",
+          "status": "current",
+          "title": "Program Home",
+          "space_key": "PROD",
+          "parent_id": null,
+          "version": 2,
+          "body": "Landing page for education and outreach programs.",
+          "created_by": "Josephine Halloway",
+          "created_at": "2025-09-03T10:00:00Z"
+        },
+        {
+          "id": "100202",
+          "type": "page",
+          "status": "current",
+          "title": "Q3 Events Roadmap",
+          "space_key": "PROD",
+          "parent_id": "100201",
+          "version": 6,
+          "body": "Historic Homes Tour, lecture series, and member appreciation evening planning.",
+          "created_by": "Amos Jeremiah Whitfield",
+          "created_at": "2025-09-15T13:00:00Z"
+        },
+        {
+          "id": "100203",
+          "type": "page",
+          "status": "current",
+          "title": "HDBR Liaison Protocol",
+          "space_key": "PROD",
+          "parent_id": "100202",
+          "version": 3,
+          "body": "How staff coordinate with the Historic District Board of Review on cases.",
+          "created_by": "Lorraine Deveraux",
+          "created_at": "2025-10-12T10:45:00Z"
+        },
+        {
+          "id": "740001",
+          "type": "page",
+          "status": "current",
+          "title": "Billing Desk home",
+          "space_key": "BD",
+          "parent_id": null,
+          "version": 7,
+          "body": "Billing Desk space. Standards, templates and field guides for the desk. Questions: #billing-desk.",
+          "created_by": "Maren Holt",
+          "created_at": "2024-01-15T09:00:00Z"
+        },
+        {
+          "id": "740002",
+          "type": "page",
+          "status": "current",
+          "title": "Plan change desk standard (BD-STD-2)",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 4,
+          "body": "BD-STD-2 Plan change desk standard (edition in force from 1 September 2026; owner Maren Holt, Billing Desk lead)\n\n1. Purpose. This standard governs how the billing desk turns a customer's message into a change to what the account is billed. It applies to every ticket in the Plan changes queue.\n\n2. What the customer is asking. The request is the account's latest instruction to us, on any channel we run: the help desk ticket and its replies, in-app chat and the desk mailbox. Quoted history, forwarded text, signatures and disclaimers are context, not instructions. Where the customer refers back to something (\"the one we discussed\", \"go ahead\"), the request is what that reference points to. Read exceptions and negations for their scope: \"all except X\" leaves X in place.\n\n3. Who can ask. Authority to change what an account is billed rests with the account's billing contact: the person the account has registered with us to receive and settle its invoices. Job titles, seniority and signatures do not confer it, and neither does forwarding the billing contact's words. A request without that authority is held: disposition \"Needs billing-contact confirmation\", and nothing is changed.\n\n4. When a change takes effect. Added seats and moves to a higher plan take effect on the day the desk processes them. Fewer seats, a lower plan, a change of billing interval and a cancellation take effect at the subscription's billing anchor, the end of the period the customer has paid for. \"Renewal\" means that anchor. A change the customer ties to a later month takes effect at the first billing anchor on or after the first day of that month. Where the customer asks for a later point than the earliest this clause allows, the later point governs.\n\n5. Conditions. A customer may make a request depend on something (\"if\", \"provided\", \"unless\", \"as long as\"). The condition is judged on the terms the customer would actually get under the change, and the request is carried out only if it is met; \"unless\" works the same way in reverse. Where it is not met, the disposition is \"No change \u2014 condition not met\" and nothing else is done. Say in the reply what the condition was judged on.\n\n6. Prices. The price book (Revenue Operations, in Notion) is the source of record for every price the desk states, records or compares. A change is billed at the price-book price for the period in which it takes effect. Stripe price objects are the billing platform's internal records and are not a price list; exports and summaries are working copies.\n\n7. Ending a subscription. A cancellation ends the subscription at the close of its paid period (cancel at period end in Stripe). The desk never ends a subscription early and never refunds; a refund or credit request is answered with the template's refund sentence and Finance picks it up from the ticket, and the plan part of the message is processed on its own merits.\n\n8. What the desk records. One change-order row per ticket in the Billing Desk base, one disposition from the list below, the reply from the matching template, and one desk-log record when the queue is cleared. Dispositions: Change scheduled; Cancellation scheduled; No change \u2014 condition not met; No change \u2014 withdrawn; No change \u2014 already in place; Needs billing-contact confirmation.\n\n9. Already in place. Where the account already stands as the customer asks, the disposition is \"No change \u2014 already in place\".\n\n10. Retention. Discounts and retention offers are Customer Success decisions recorded on a signed order form; the desk does not apply or promise them.\n",
+          "created_by": "Maren Holt",
+          "created_at": "2026-08-25T09:00:00Z"
+        },
+        {
+          "id": "740003",
+          "type": "page",
+          "status": "current",
+          "title": "PC reply templates",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 6,
+          "body": "PC reply templates (for BD-STD-2 section 8). Post the template as a public reply on the ticket, fill the brackets, add the template's tag to the ticket and set the status shown. Keep the ticket's other tags.\n\nPC-1 Change confirmed - tag pc_change_scheduled - status solved\n\"Hi [first name], we've scheduled your change: [new plan] for [seats] seats from [effective date], at \u00a3[unit price] per seat [per month/per year]. [Anything we could not do and who handles it.] Tessellate Billing Desk\"\n\nPC-2 Cancellation confirmed - tag pc_cancellation_scheduled - status solved\n\"Hi [first name], your subscription is set to end on [effective date], the close of the period you have paid for. You keep full access until then. Tessellate Billing Desk\"\n\nPC-3 Condition not met - tag pc_condition_not_met - status solved\n\"Hi [first name], you asked us to [request] only if [condition]. [What it was judged on.] So we've left your subscription as it is. Tessellate Billing Desk\"\n\nPC-4 Request withdrawn - tag pc_withdrawn - status solved\n\"Hi [first name], thanks for letting us know - we've left your subscription as it is. Tessellate Billing Desk\"\n\nPC-5 Billing contact confirmation - tag pc_billing_contact_needed - status pending\n\"Hi [first name], changes to what your account is billed need your billing contact's go-ahead. We've asked them to confirm on this ticket; nothing changes until they do. Tessellate Billing Desk\"\n\nPC-6 Already in place - tag pc_already_in_place - status solved\n\"Hi [first name], your account already stands as you asked: [current plan and seats]. Tessellate Billing Desk\"\n\nRefund or credit requests: add to the reply \"Refunds and credits are handled by our Finance team, who will pick up your request from this ticket.\" Do not process them and do not send them on; Finance reads the replies daily.\n",
+          "created_by": "Maren Holt",
+          "created_at": "2026-08-25T09:30:00Z"
+        },
+        {
+          "id": "740004",
+          "type": "page",
+          "status": "current",
+          "title": "Billing Desk base - field guide",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 3,
+          "body": "Billing Desk base - field guide (Change orders and Desk log)\n\nChange orders: one row per ticket, created by the intake bot with Ticket, Account (as written), Received and Requester. \"Account (as written)\" is the bot's guess from the subject line; identify the account yourself.\nThe desk fills: Disposition (BD-STD-2 section 8, exactly as listed); Stripe customer (cus_ id); Subscription (sub_ id); and, for a scheduled change only, New plan (plan and interval as the subscription will stand, e.g. \"Grid Annual\"), Seats (the total seat count after the change), Effective date (YYYY-MM-DD) and Unit price (GBP) (the per-seat price for the new plan's billing interval: per month on a monthly plan, per year on an annual plan). For a cancellation fill Effective date as well and leave New plan, Seats and Unit price empty. For every other disposition leave those four empty.\nThe nightly billing sync reads Change orders at 18:00 and applies scheduled rows at their effective date. Stripe itself is only written for cancellations (cancel at period end).\nDesk log: one record per desk day, created after the last change order of the day: Date, Tickets processed and one count per disposition (Changes scheduled, Cancellations scheduled, Condition not met, Withdrawn, Already in place, Awaiting billing contact), Prepared by, Notes.\n",
+          "created_by": "Maren Holt",
+          "created_at": "2026-08-26T09:00:00Z"
+        },
+        {
+          "id": "740005",
+          "type": "page",
+          "status": "current",
+          "title": "Refunds, credits and disputes (Finance)",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 2,
+          "body": "Finance owns every refund, credit note and chargeback. Finance reads the Plan changes replies every day and picks refund requests up from the tickets; the desk never issues them in Stripe or QuickBooks and does not mail them on. QuickBooks is Finance's ledger; the desk has read access only.",
+          "created_by": "Lou Varga",
+          "created_at": "2025-11-02T09:00:00Z"
+        },
+        {
+          "id": "740006",
+          "type": "page",
+          "status": "current",
+          "title": "Retention offers (Customer Success)",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 5,
+          "body": "Customer Success may propose retention offers (discounts, free months). An offer exists only once Finance approves it and it is written into a signed order form. Proposed offers in the Retention offers table are not commitments.",
+          "created_by": "Priscilla Vane",
+          "created_at": "2026-02-10T09:00:00Z"
+        },
+        {
+          "id": "740007",
+          "type": "page",
+          "status": "current",
+          "title": "Desk notes 2026-W46",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 2,
+          "body": "Monday 16 Nov: Maren on desk; Tom drafted a first pass at the Plan changes queue on Sunday (sheet in the data folder and on Drive) - check it, don't copy it. Billing sync 18:00. Finance close Friday.",
+          "created_by": "Maren Holt",
+          "created_at": "2026-11-15T19:00:00Z"
+        },
+        {
+          "id": "740008",
+          "type": "page",
+          "status": "current",
+          "title": "BD-STD-1 Plan change desk standard (withdrawn 31 August 2026)",
+          "space_key": "BD",
+          "parent_id": "740001",
+          "version": 9,
+          "body": "Withdrawn. Replaced by BD-STD-2 from 1 September 2026. Kept for audit of tickets handled before that date.",
+          "created_by": "Maren Holt",
+          "created_at": "2024-01-15T09:00:00Z"
+        }
+      ]
+    }
+  },
+  "LightNotion": {
+    "status": "ok",
+    "output": {
+      "pages": [
+        {
+          "id": "page-home",
+          "parent_type": "workspace",
+          "parent_id": "workspace-shpa-savannah",
+          "title": "Savannah Historic Preservation Alliance Home",
+          "created_time": "2025-09-01T10:05:00.000Z",
+          "last_edited_time": "2026-05-22T09:00:00.000Z",
+          "created_by": "Terrence Carter",
+          "archived": false,
+          "icon": "home",
+          "cover_url": null
+        },
+        {
+          "id": "page-research",
+          "parent_type": "workspace",
+          "parent_id": "workspace-shpa-savannah",
+          "title": "Research Hub",
+          "created_time": "2025-09-30T12:00:00.000Z",
+          "last_edited_time": "2026-05-15T16:30:00.000Z",
+          "created_by": "Rev. Delilah Hargrove",
+          "archived": false,
+          "icon": "microscope",
+          "cover_url": null
+        },
+        {
+          "id": "page-task-001",
+          "parent_type": "database",
+          "parent_id": "db-tasks",
+          "title": "Form 990 timeline",
+          "created_time": "2025-10-04T09:00:00.000Z",
+          "last_edited_time": "2026-05-20T14:00:00.000Z",
+          "created_by": "Terrence Carter",
+          "archived": false,
+          "icon": "wrench",
+          "cover_url": null
+        },
+        {
+          "id": "page-task-002",
+          "parent_type": "database",
+          "parent_id": "db-tasks",
+          "title": "National Trust recertification",
+          "created_time": "2025-10-10T11:00:00.000Z",
+          "last_edited_time": "2026-05-19T10:00:00.000Z",
+          "created_by": "Amos Jeremiah Whitfield",
+          "archived": false,
+          "icon": "wrench",
+          "cover_url": null
+        },
+        {
+          "id": "page-task-003",
+          "parent_type": "database",
+          "parent_id": "db-tasks",
+          "title": "Docent program handbook",
+          "created_time": "2025-10-15T13:00:00.000Z",
+          "last_edited_time": "2026-05-18T16:00:00.000Z",
+          "created_by": "Barrett Whitehall",
+          "archived": false,
+          "icon": "zap",
+          "cover_url": null
+        },
+        {
+          "id": "page-task-004",
+          "parent_type": "database",
+          "parent_id": "db-tasks",
+          "title": "Grant deliverables tracker",
+          "created_time": "2025-11-02T08:30:00.000Z",
+          "last_edited_time": "2026-05-12T12:00:00.000Z",
+          "created_by": "Terrence Carter",
+          "archived": false,
+          "icon": "shield",
+          "cover_url": null
+        },
+        {
+          "id": "page-okr-q2-1",
+          "parent_type": "database",
+          "parent_id": "db-okrs",
+          "title": "Historic Homes Tour plan",
+          "created_time": "2025-09-08T11:30:00.000Z",
+          "last_edited_time": "2026-05-12T09:30:00.000Z",
+          "created_by": "Amos Jeremiah Whitfield",
+          "archived": false,
+          "icon": "bullseye",
+          "cover_url": null
+        },
+        {
+          "id": "page-okr-q2-2",
+          "parent_type": "database",
+          "parent_id": "db-okrs",
+          "title": "Member renewal campaign",
+          "created_time": "2025-09-08T11:45:00.000Z",
+          "last_edited_time": "2026-05-11T11:00:00.000Z",
+          "created_by": "Amos Jeremiah Whitfield",
+          "archived": false,
+          "icon": "bullseye",
+          "cover_url": null
+        },
+        {
+          "id": "page-meeting-001",
+          "parent_type": "database",
+          "parent_id": "db-meetings",
+          "title": "Savannah Historic Preservation Alliance Home",
+          "created_time": "2026-05-26T08:30:00.000Z",
+          "last_edited_time": "2026-05-26T09:30:00.000Z",
+          "created_by": "Barrett Whitehall",
+          "archived": false,
+          "icon": "calendar",
+          "cover_url": null
+        },
+        {
+          "id": "page-meeting-002",
+          "parent_type": "database",
+          "parent_id": "db-meetings",
+          "title": "Research Hub",
+          "created_time": "2026-05-19T14:00:00.000Z",
+          "last_edited_time": "2026-05-19T15:30:00.000Z",
+          "created_by": "Barrett Whitehall",
+          "archived": false,
+          "icon": "calendar",
+          "cover_url": null
+        },
+        {
+          "id": "page-research-001",
+          "parent_type": "database",
+          "parent_id": "db-research",
+          "title": "Form 990 timeline",
+          "created_time": "2025-10-25T10:00:00.000Z",
+          "last_edited_time": "2026-05-08T11:00:00.000Z",
+          "created_by": "Rev. Delilah Hargrove",
+          "archived": false,
+          "icon": "microphone",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-revops",
+          "parent_type": "workspace",
+          "parent_id": "workspace-tessellate",
+          "title": "Revenue Operations",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "chart",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-line-monthly",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Line \u2014 Monthly",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-line-annual",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Line \u2014 Annual",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-grid-monthly",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Grid \u2014 Monthly",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-grid-annual",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Grid \u2014 Annual",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-mosaic-monthly",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Mosaic \u2014 Monthly",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-pb-mosaic-annual",
+          "parent_type": "database",
+          "parent_id": "db-tsl-pricebook",
+          "title": "Mosaic \u2014 Annual",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "tag",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-feat-line",
+          "parent_type": "database",
+          "parent_id": "db-tsl-plans",
+          "title": "Line features",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-06-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "list",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-feat-grid",
+          "parent_type": "database",
+          "parent_id": "db-tsl-plans",
+          "title": "Grid features",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-06-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "list",
+          "cover_url": null
+        },
+        {
+          "id": "page-tsl-feat-mosaic",
+          "parent_type": "database",
+          "parent_id": "db-tsl-plans",
+          "title": "Mosaic features",
+          "created_time": "2024-02-01T09:00:00.000Z",
+          "last_edited_time": "2026-06-01T09:00:00.000Z",
+          "created_by": "user-tsl-anouk",
+          "archived": false,
+          "icon": "list",
+          "cover_url": null
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-001",
+          "page_id": "page-task-001",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Form 990 due November 15 \u2014 Priscilla owns the packet.",
+          "order": 0,
+          "created_time": "2025-10-04T09:05:00.000Z",
+          "last_edited_time": "2026-05-20T14:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-002",
+          "page_id": "page-task-001",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Recertification site visit scheduled with Grady Colton.",
+          "order": 1,
+          "created_time": "2025-10-04T09:06:00.000Z",
+          "last_edited_time": "2026-05-20T14:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-003",
+          "page_id": "page-task-001",
+          "parent_block_id": null,
+          "type": "to_do",
+          "text": "Docent cohort of 14 confirmed for spring.",
+          "order": 2,
+          "created_time": "2025-10-04T09:07:00.000Z",
+          "last_edited_time": "2026-04-29T11:00:00.000Z",
+          "has_children": false,
+          "checked": true
+        },
+        {
+          "id": "block-004",
+          "page_id": "page-task-001",
+          "parent_block_id": null,
+          "type": "to_do",
+          "text": "Georgia Trust grant report due January 31 (Roxanne Ellery).",
+          "order": 3,
+          "created_time": "2025-10-04T09:08:00.000Z",
+          "last_edited_time": "2026-05-02T11:00:00.000Z",
+          "has_children": false,
+          "checked": true
+        },
+        {
+          "id": "block-005",
+          "page_id": "page-task-001",
+          "parent_block_id": null,
+          "type": "to_do",
+          "text": "Tour route: Bull Street to Gaston, six houses.",
+          "order": 4,
+          "created_time": "2025-10-04T09:09:00.000Z",
+          "last_edited_time": "2026-05-20T14:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-101",
+          "page_id": "page-meeting-001",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Renewal mailing drops first week of February.",
+          "order": 0,
+          "created_time": "2026-05-26T08:31:00.000Z",
+          "last_edited_time": "2026-05-26T08:31:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-102",
+          "page_id": "page-meeting-001",
+          "parent_block_id": null,
+          "type": "bulleted_list_item",
+          "text": "Facade survey photos uploaded to the archive.",
+          "order": 1,
+          "created_time": "2026-05-26T08:32:00.000Z",
+          "last_edited_time": "2026-05-26T08:32:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-103",
+          "page_id": "page-meeting-001",
+          "parent_block_id": null,
+          "type": "bulleted_list_item",
+          "text": "Board packet draft to Cordelia by Friday.",
+          "order": 2,
+          "created_time": "2026-05-26T08:33:00.000Z",
+          "last_edited_time": "2026-05-26T08:33:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-104",
+          "page_id": "page-meeting-001",
+          "parent_block_id": null,
+          "type": "bulleted_list_item",
+          "text": "Easement inquiries up 20% this quarter.",
+          "order": 3,
+          "created_time": "2026-05-26T08:34:00.000Z",
+          "last_edited_time": "2026-05-26T08:34:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-201",
+          "page_id": "page-research-001",
+          "parent_block_id": null,
+          "type": "callout",
+          "text": "Lecture series venue holds confirmed at the Lucas.",
+          "order": 0,
+          "created_time": "2025-10-25T10:05:00.000Z",
+          "last_edited_time": "2026-05-08T11:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-001",
+          "page_id": "page-tsl-revops",
+          "parent_block_id": null,
+          "type": "heading_1",
+          "text": "Revenue Operations",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-002",
+          "page_id": "page-tsl-revops",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Home of the price book, plan features and the pricing committee's decisions. The billing desk and Sales read prices from here.",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-003",
+          "page_id": "page-tsl-revops",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Price book entries are owned by Anouk Brennan-Price (RevOps). Each entry is one plan and billing interval; a pricing committee decision is entered on the price card it changes on the day it is taken.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-004",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Line Monthly \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-005",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a312.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-006",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-007",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-008",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "No change: the Line Monthly list price holds at \u00a312.00 per seat per month for periods starting on or after 1 January 2027 (PRC-2026-09).",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-009",
+          "page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-010",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Line Annual \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-011",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a3120.00 per seat per year (\u00a310.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-012",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-013",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-014",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "No change: the Line Annual list price holds at \u00a3120.00 per seat per year for periods starting on or after 1 January 2027 (PRC-2026-09).",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-015",
+          "page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-016",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Grid Monthly \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-017",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a324.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-018",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-019",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-020",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "From 1 January 2027 the Grid Monthly list price is \u00a326.00 per seat per month. It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-021",
+          "page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-022",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Grid Annual \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-023",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a3240.00 per seat per year (\u00a320.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-024",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-025",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-026",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "From 1 January 2027 the Grid Annual list price is \u00a3258.00 per seat per year (\u00a321.50 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-027",
+          "page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-028",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Mosaic Monthly \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-029",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a335.00 per seat per month. In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-030",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-031",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-032",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "From 1 January 2027 the Mosaic Monthly list price is \u00a337.00 per seat per month. It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-033",
+          "page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-034",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Mosaic Annual \u2014 price card",
+          "order": 0,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-035",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "List price \u00a3348.00 per seat per year (\u00a329.00 per seat per month equivalent). In force since 1 March 2025 (pricing committee PRC-2025-02).",
+          "order": 1,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-036",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Prices exclude VAT. Seats are editor seats; viewer links are free on every plan.",
+          "order": 2,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-037",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "heading_2",
+          "text": "Price review 2027",
+          "order": 3,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-038",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "From 1 January 2027 the Mosaic Annual list price is \u00a3372.00 per seat per year (\u00a331.00 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Approved by the pricing committee on 30 September 2026 (PRC-2026-09); customers notified on 5 October 2026.",
+          "order": 4,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-039",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "type": "paragraph",
+          "text": "Discounts are not recorded here; a discount exists only where a signed order form grants it.",
+          "order": 5,
+          "created_time": "2026-10-01T09:00:00.000Z",
+          "last_edited_time": "2026-10-01T09:00:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-101",
+          "page_id": "page-tsl-pb-grid-annual",
+          "type": "heading_2",
+          "text": "Price review 2027 \u2014 amendment PRC-2026-11",
+          "order": 6,
+          "parent_block_id": null,
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "last_edited_time": "2026-11-16T09:40:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-102",
+          "page_id": "page-tsl-pb-grid-annual",
+          "type": "paragraph",
+          "order": 7,
+          "text": "Amended by the pricing committee on 16 November 2026 (PRC-2026-11), replacing the 2027 price above: From 1 January 2027 the Grid Annual list price is \u00a3252.00 per seat per year (\u00a321.00 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Customers on annual billing are notified on 16 November 2026.",
+          "parent_block_id": null,
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "last_edited_time": "2026-11-16T09:40:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-103",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "type": "heading_2",
+          "text": "Price review 2027 \u2014 amendment PRC-2026-11",
+          "order": 6,
+          "parent_block_id": null,
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "last_edited_time": "2026-11-16T09:40:00.000Z",
+          "has_children": false,
+          "checked": null
+        },
+        {
+          "id": "block-tsl-104",
+          "page_id": "page-tsl-pb-mosaic-annual",
+          "type": "paragraph",
+          "order": 7,
+          "text": "Amended by the pricing committee on 16 November 2026 (PRC-2026-11), replacing the 2027 price above: From 1 January 2027 the Mosaic Annual list price is \u00a3354.00 per seat per year (\u00a329.50 per seat per month equivalent). It applies to every period that starts on or after 1 January 2027: renewals, new subscriptions and changes taking effect from that date. Periods that start before then keep the current price. Customers on annual billing are notified on 16 November 2026.",
+          "parent_block_id": null,
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "last_edited_time": "2026-11-16T09:40:00.000Z",
+          "has_children": false,
+          "checked": null
+        }
+      ],
+      "comments": [
+        {
+          "id": "comment-001",
+          "parent_page_id": "page-task-001",
+          "parent_block_id": "block-005",
+          "author_id": "user-marcus",
+          "text": "Looks right \u2014 send to the board.",
+          "created_time": "2026-05-15T11:00:00.000Z",
+          "resolved": false
+        },
+        {
+          "id": "comment-002",
+          "parent_page_id": "page-task-001",
+          "parent_block_id": "block-005",
+          "author_id": "user-lorraine",
+          "text": "Dates confirmed with the venue.",
+          "created_time": "2026-05-15T11:05:00.000Z",
+          "resolved": false
+        },
+        {
+          "id": "comment-003",
+          "parent_page_id": "page-okr-q2-2",
+          "parent_block_id": null,
+          "author_id": "user-lorraine",
+          "text": "Added the missing receipts.",
+          "created_time": "2026-05-11T11:00:00.000Z",
+          "resolved": false
+        },
+        {
+          "id": "comment-004",
+          "parent_page_id": "page-task-004",
+          "parent_block_id": null,
+          "author_id": "user-noor",
+          "text": "Great progress this week.",
+          "created_time": "2026-05-12T12:00:00.000Z",
+          "resolved": true
+        },
+        {
+          "id": "comment-tsl-line-monthly",
+          "parent_page_id": "page-tsl-pb-line-monthly",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "Reviewed for 2027 (PRC-2026-09): unchanged."
+        },
+        {
+          "id": "comment-tsl-line-annual",
+          "parent_page_id": "page-tsl-pb-line-annual",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "Reviewed for 2027 (PRC-2026-09): unchanged."
+        },
+        {
+          "id": "comment-tsl-grid-monthly",
+          "parent_page_id": "page-tsl-pb-grid-monthly",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+        },
+        {
+          "id": "comment-tsl-grid-annual",
+          "parent_page_id": "page-tsl-pb-grid-annual",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+        },
+        {
+          "id": "comment-tsl-mosaic-monthly",
+          "parent_page_id": "page-tsl-pb-mosaic-monthly",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+        },
+        {
+          "id": "comment-tsl-mosaic-annual",
+          "parent_page_id": "page-tsl-pb-mosaic-annual",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-10-01T09:30:00.000Z",
+          "resolved": false,
+          "text": "2027 review entered per PRC-2026-09. Stripe price objects for 2027 are created on 1 January; until then Stripe shows the current prices only."
+        },
+        {
+          "id": "comment-tsl-grid-annual-a1",
+          "parent_page_id": "page-tsl-pb-grid-annual",
+          "text": "16 Nov: the committee amended the 2027 annual prices this morning (PRC-2026-11). Grid Annual from 1 January 2027 is now \u00a3252.00 per seat per year. Monthly 2027 prices stand as reviewed. Stripe price objects for 2027 are still created on 1 January.",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "resolved": false
+        },
+        {
+          "id": "comment-tsl-mosaic-annual-a1",
+          "parent_page_id": "page-tsl-pb-mosaic-annual",
+          "text": "16 Nov: the committee amended the 2027 annual prices this morning (PRC-2026-11). Mosaic Annual from 1 January 2027 is now \u00a3354.00 per seat per year. Monthly 2027 prices stand as reviewed. Stripe price objects for 2027 are still created on 1 January.",
+          "parent_block_id": null,
+          "author_id": "user-tsl-anouk",
+          "created_time": "2026-11-16T09:40:00.000Z",
+          "resolved": false
+        }
+      ]
+    }
+  },
+  "LightIntercom": {
+    "status": "ok",
+    "output": {
+      "conversations": [
+        {
+          "id": "conv-1001",
+          "contact_id": "contact-mara",
+          "state": "open",
+          "title": "Membership renewal receipt request",
+          "created_at": "2026-05-20T09:00:00.000Z",
+          "updated_at": "2026-05-25T14:00:00.000Z",
+          "assignee_id": "admin-marcus",
+          "open": true
+        },
+        {
+          "id": "conv-1002",
+          "contact_id": "contact-ethan",
+          "state": "closed",
+          "title": "Tour ticket date change",
+          "created_at": "2026-05-15T10:00:00.000Z",
+          "updated_at": "2026-05-18T11:00:00.000Z",
+          "assignee_id": "admin-josephine",
+          "open": false
+        },
+        {
+          "id": "conv-1003",
+          "contact_id": "contact-grace",
+          "state": "open",
+          "title": "Donation receipt for taxes",
+          "created_at": "2026-05-22T13:00:00.000Z",
+          "updated_at": "2026-05-23T13:00:00.000Z",
+          "assignee_id": "admin-marcus",
+          "open": true
+        },
+        {
+          "id": "conv-1004",
+          "contact_id": "contact-yara",
+          "state": "closed",
+          "title": "Portal login reset",
+          "created_at": "2026-05-10T08:00:00.000Z",
+          "updated_at": "2026-05-12T09:00:00.000Z",
+          "assignee_id": "admin-josephine",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3101",
+          "contact_id": "con_tsl_rowan",
+          "state": "closed",
+          "title": "Hi there",
+          "created_at": "2026-11-13T09:12:00.000Z",
+          "updated_at": "2026-11-13T09:12:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3102",
+          "contact_id": "con_tsl_hollis",
+          "state": "closed",
+          "title": "Question about exports",
+          "created_at": "2026-11-12T14:00:00.000Z",
+          "updated_at": "2026-11-12T14:00:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3103",
+          "contact_id": "con_tsl_saltmarsh",
+          "state": "closed",
+          "title": "Viewer links",
+          "created_at": "2026-11-06T11:00:00.000Z",
+          "updated_at": "2026-11-06T11:00:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3104",
+          "contact_id": "con_tsl_gannet",
+          "state": "closed",
+          "title": "Freelancer logins",
+          "created_at": "2026-11-12T16:20:00.000Z",
+          "updated_at": "2026-11-12T16:20:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3105",
+          "contact_id": "con_tsl_fernhill",
+          "state": "closed",
+          "title": "Line features",
+          "created_at": "2026-11-10T10:00:00.000Z",
+          "updated_at": "2026-11-10T10:00:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3106",
+          "contact_id": "con_tsl_inkwell",
+          "state": "closed",
+          "title": "Refund?",
+          "created_at": "2026-11-12T15:00:00.000Z",
+          "updated_at": "2026-11-12T15:00:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3107",
+          "contact_id": "con_tsl_bramley",
+          "state": "closed",
+          "title": "Seats",
+          "created_at": "2026-11-08T09:40:00.000Z",
+          "updated_at": "2026-11-08T09:40:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        },
+        {
+          "id": "conv-tsl-3108",
+          "contact_id": "con_tsl_gannets",
+          "state": "closed",
+          "title": "Card update",
+          "created_at": "2026-11-11T12:00:00.000Z",
+          "updated_at": "2026-11-11T12:00:00.000Z",
+          "assignee_id": "admin-tsl-arlo",
+          "open": false
+        }
+      ],
+      "parts": [
+        {
+          "id": "part-1",
+          "conversation_id": "conv-1001",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "contact-mara",
+          "body": "Thanks for reaching out \u2014 handled.",
+          "created_at": "2026-05-20T09:00:00.000Z"
+        },
+        {
+          "id": "part-2",
+          "conversation_id": "conv-1001",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-marcus",
+          "body": "Your tickets are moved to Sunday.",
+          "created_at": "2026-05-20T10:30:00.000Z"
+        },
+        {
+          "id": "part-3",
+          "conversation_id": "conv-1001",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "contact-mara",
+          "body": "Statement attached.",
+          "created_at": "2026-05-25T14:00:00.000Z"
+        },
+        {
+          "id": "part-4",
+          "conversation_id": "conv-1002",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "contact-ethan",
+          "body": "Reset link sent.",
+          "created_at": "2026-05-15T10:00:00.000Z"
+        },
+        {
+          "id": "part-5",
+          "conversation_id": "conv-1002",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-josephine",
+          "body": "You are unsubscribed.",
+          "created_at": "2026-05-16T09:00:00.000Z"
+        },
+        {
+          "id": "part-6",
+          "conversation_id": "conv-1002",
+          "part_type": "close",
+          "author_type": "admin",
+          "author_id": "admin-josephine",
+          "body": "Record updated.",
+          "created_at": "2026-05-18T11:00:00.000Z"
+        },
+        {
+          "id": "part-7",
+          "conversation_id": "conv-1003",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "contact-grace",
+          "body": "Thanks for reaching out \u2014 handled.",
+          "created_at": "2026-05-22T13:00:00.000Z"
+        },
+        {
+          "id": "part-8",
+          "conversation_id": "conv-1004",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "contact-yara",
+          "body": "Your tickets are moved to Sunday.",
+          "created_at": "2026-05-10T08:00:00.000Z"
+        },
+        {
+          "id": "part-9",
+          "conversation_id": "conv-1004",
+          "part_type": "close",
+          "author_type": "admin",
+          "author_id": "admin-josephine",
+          "body": "Statement attached.",
+          "created_at": "2026-05-12T09:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-001",
+          "conversation_id": "conv-tsl-3101",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_rowan",
+          "body": "Morning - Leo from our team sent you a note about seats. Yes, that's fine by me: please go ahead and take us down to 18 from the renewal. Nadia (Rowan Quay finance)",
+          "created_at": "2026-11-13T09:12:00.000Z"
+        },
+        {
+          "id": "part-tsl-002",
+          "conversation_id": "conv-tsl-3101",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Thanks Nadia, noted - the billing desk will pick this up with Leo's ticket.",
+          "created_at": "2026-11-13T09:12:00.000Z"
+        },
+        {
+          "id": "part-tsl-003",
+          "conversation_id": "conv-tsl-3102",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_hollis",
+          "body": "Can we export boards as PDF on Line? Dev",
+          "created_at": "2026-11-12T14:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-004",
+          "conversation_id": "conv-tsl-3102",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Yes - PDF export is on every plan. Arlo",
+          "created_at": "2026-11-12T14:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-005",
+          "conversation_id": "conv-tsl-3103",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_saltmarsh",
+          "body": "Do viewer links expire? Gwen",
+          "created_at": "2026-11-06T11:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-006",
+          "conversation_id": "conv-tsl-3103",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "No, viewer links stay live until you revoke them, and they never need a seat. Arlo",
+          "created_at": "2026-11-06T11:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-007",
+          "conversation_id": "conv-tsl-3104",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_gannet",
+          "body": "Hi, how do I remove a member from the workspace? Imogen",
+          "created_at": "2026-11-12T16:20:00.000Z"
+        },
+        {
+          "id": "part-tsl-008",
+          "conversation_id": "conv-tsl-3104",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Settings > Members > Remove. Removing a member doesn't change your seat count on its own; the billing desk does that. Arlo",
+          "created_at": "2026-11-12T16:20:00.000Z"
+        },
+        {
+          "id": "part-tsl-009",
+          "conversation_id": "conv-tsl-3105",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_fernhill",
+          "body": "Does Line include review tools? Ines",
+          "created_at": "2026-11-10T10:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-010",
+          "conversation_id": "conv-tsl-3105",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Review tools start on Grid. Line has boards, comments and shared libraries. Arlo",
+          "created_at": "2026-11-10T10:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-011",
+          "conversation_id": "conv-tsl-3106",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_inkwell",
+          "body": "Can chat support refund a charge? Sasha",
+          "created_at": "2026-11-12T15:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-012",
+          "conversation_id": "conv-tsl-3106",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Refunds are handled by Finance - the billing desk will pass your request on. Arlo",
+          "created_at": "2026-11-12T15:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-013",
+          "conversation_id": "conv-tsl-3107",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_bramley",
+          "body": "Just checking our invoice address updated OK? Priya",
+          "created_at": "2026-11-08T09:40:00.000Z"
+        },
+        {
+          "id": "part-tsl-014",
+          "conversation_id": "conv-tsl-3107",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Yes, the Hope Street address shows on your November invoice. Arlo",
+          "created_at": "2026-11-08T09:40:00.000Z"
+        },
+        {
+          "id": "part-tsl-015",
+          "conversation_id": "conv-tsl-3108",
+          "part_type": "comment",
+          "author_type": "user",
+          "author_id": "con_tsl_gannets",
+          "body": "Where do I update the card for Gannet Row Studios? Theo",
+          "created_at": "2026-11-11T12:00:00.000Z"
+        },
+        {
+          "id": "part-tsl-016",
+          "conversation_id": "conv-tsl-3108",
+          "part_type": "comment",
+          "author_type": "admin",
+          "author_id": "admin-tsl-arlo",
+          "body": "Billing > Payment method. Arlo",
+          "created_at": "2026-11-11T12:00:00.000Z"
+        }
+      ]
+    }
+  },
+  "LightDocuSign": {
+    "status": "ok",
+    "output": {
+      "envelopes": [
+        {
+          "envelope_id": "env-2001",
+          "status": "sent",
+          "email_subject": "Please sign: Master Services Agreement",
+          "sender_name": "Delbert Yancey CPA",
+          "sender_email": "delbert.yancey@yanceyballard-cpa.com",
+          "created_time": "2026-05-20T10:00:00Z",
+          "sent_time": "2026-05-20T10:05:00Z",
+          "completed_time": null,
+          "template_id": "tmpl-msa"
+        },
+        {
+          "envelope_id": "env-2002",
+          "status": "delivered",
+          "email_subject": "Please sign: Mutual NDA",
+          "sender_name": "Ellis Marchand",
+          "sender_email": "ellis.marchand@ashcrofthardwoods.com",
+          "created_time": "2026-05-22T14:30:00Z",
+          "sent_time": "2026-05-22T14:32:00Z",
+          "completed_time": null,
+          "template_id": "tmpl-nda"
+        },
+        {
+          "envelope_id": "env-2003",
+          "status": "completed",
+          "email_subject": "Signed: Vendor Onboarding Form",
+          "sender_name": "Barrington family",
+          "sender_email": "wesley.farraday@Finthesiss.ai",
+          "created_time": "2026-05-15T09:00:00Z",
+          "sent_time": "2026-05-15T09:02:00Z",
+          "completed_time": "2026-05-18T16:45:00Z",
+          "template_id": "tmpl-vendor"
+        },
+        {
+          "envelope_id": "env-2004",
+          "status": "voided",
+          "email_subject": "Voided: Q1 Contractor Agreement",
+          "sender_name": "Delbert Yancey CPA",
+          "sender_email": "delbert.yancey@yanceyballard-cpa.com",
+          "created_time": "2026-05-10T11:00:00Z",
+          "sent_time": "2026-05-10T11:03:00Z",
+          "completed_time": null,
+          "template_id": null
+        },
+        {
+          "envelope_id": "env-2005",
+          "status": "completed",
+          "email_subject": "Signed: Office Lease Addendum",
+          "sender_name": "Cordelia Ashmore-Vance",
+          "sender_email": "cordelia.ashmore.vance@shpa-savannah.org",
+          "created_time": "2026-04-28T08:30:00Z",
+          "sent_time": "2026-04-28T08:33:00Z",
+          "completed_time": "2026-05-02T12:10:00Z",
+          "template_id": null
+        },
+        {
+          "envelope_id": "env-tsl-001",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2025-0147 - Dunmore Lane Architects",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2025-06-24T09:00:00Z",
+          "sent_time": "2025-06-24T09:05:00Z",
+          "completed_time": "2025-06-24T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-002",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0031 - Mistral Yard",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-02-20T09:00:00Z",
+          "sent_time": "2026-02-20T09:05:00Z",
+          "completed_time": "2026-02-20T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-003",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0007 - Juniper Vale Design",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-01-09T09:00:00Z",
+          "sent_time": "2026-01-09T09:05:00Z",
+          "completed_time": "2026-01-09T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-004",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0052 - Pemberton Hale Architects",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-04-14T09:00:00Z",
+          "sent_time": "2026-04-14T09:05:00Z",
+          "completed_time": "2026-04-14T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-005",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0011 - Kestrel Point Creative",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-01-26T09:00:00Z",
+          "sent_time": "2026-01-26T09:05:00Z",
+          "completed_time": "2026-01-26T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-006",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0004 - Cobalt Wren Design",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-01-05T09:00:00Z",
+          "sent_time": "2026-01-05T09:05:00Z",
+          "completed_time": "2026-01-05T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        },
+        {
+          "envelope_id": "env-tsl-007",
+          "status": "completed",
+          "email_subject": "Please sign: Tessellate order form OF-2026-0015 - Northgate Signal",
+          "sender_name": "Tessellate Sales Ops",
+          "sender_email": "salesops@tessellate.studio",
+          "created_time": "2026-01-29T09:00:00Z",
+          "sent_time": "2026-01-29T09:05:00Z",
+          "completed_time": "2026-01-29T15:30:00Z",
+          "template_id": "tmpl-tsl-of"
+        }
+      ]
+    }
+  }
+}

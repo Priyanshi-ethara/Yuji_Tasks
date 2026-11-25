@@ -1,0 +1,382 @@
+{
+ "teams": [
+  {
+   "id": "team-design",
+   "name": "Design Desk",
+   "key": "DESIGN",
+   "description": "Sunhollow Solar design desk: string sizing reviews and rework under DS-6",
+   "color": "#F2C94C",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  }
+ ],
+ "users": [
+  {
+   "id": "user-imogen",
+   "name": "imogen.thrale",
+   "displayName": "Imogen Thrale",
+   "email": "imogen.thrale@sunhollow-solar.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": true,
+   "teamId": "team-design",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-hollis",
+   "name": "hollis.ruddock",
+   "displayName": "Hollis Ruddock",
+   "email": "hollis.ruddock@sunhollow-solar.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-design",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-jory",
+   "name": "jenna.pascoe",
+   "displayName": "Jenna Pascoe",
+   "email": "jenna.pascoe@sunhollow-solar.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-design",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-rhys",
+   "name": "rhys.kessell",
+   "displayName": "Rhys Kessell",
+   "email": "rhys.kessell@sunhollow-solar.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-design",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  },
+  {
+   "id": "user-morwenna",
+   "name": "morwenna.penrose",
+   "displayName": "Morwenna Penrose",
+   "email": "m.penrose@sunhollow-solar.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": true,
+   "teamId": "team-design",
+   "createdAt": "2025-02-03T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  }
+ ],
+ "workflow_states": [
+  {
+   "id": "state-des-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-design",
+   "description": "Backlog (Design Desk)"
+  },
+  {
+   "id": "state-des-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-design",
+   "description": "Todo (Design Desk)"
+  },
+  {
+   "id": "state-des-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-design",
+   "description": "In Progress (Design Desk)"
+  },
+  {
+   "id": "state-des-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-design",
+   "description": "Done (Design Desk)"
+  },
+  {
+   "id": "state-des-cancel",
+   "name": "Canceled",
+   "type": "cancelled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-design",
+   "description": "Canceled (Design Desk)"
+  }
+ ],
+ "labels": [
+  {
+   "id": "label-ds6-rework",
+   "name": "ds6-rework",
+   "color": "#f2994a",
+   "description": "String design returned under DS-6",
+   "teamId": "team-design",
+   "createdAt": "2026-10-01T09:00:00",
+   "updatedAt": "2026-10-01T09:00:00"
+  }
+ ],
+ "projects": [
+  {
+   "id": "proj-w46-review",
+   "name": "W46 design review",
+   "description": "Weekly DS-6 review of the string designs submitted for design week 2026-W46. Summary to be posted here when the review closes.",
+   "state": "started",
+   "leadId": "user-imogen",
+   "teamIds": [
+    "team-design"
+   ],
+   "startDate": "2026-11-09",
+   "targetDate": "2026-11-13",
+   "createdAt": "2026-11-06T17:00:00",
+   "updatedAt": "2026-11-06T17:00:00"
+  },
+  {
+   "id": "proj-w45-review",
+   "name": "W45 design review",
+   "description": "Released: 11 | Redesign – overvoltage: 3 | Redesign – below MPPT: 1 | Redesign – overcurrent: 1\nReviewed against DS-6 Edition 4. Rework issues DS6-filed for the five returns.",
+   "state": "completed",
+   "leadId": "user-imogen",
+   "teamIds": [
+    "team-design"
+   ],
+   "startDate": "2026-11-02",
+   "targetDate": "2026-11-06",
+   "createdAt": "2026-10-30T17:00:00",
+   "updatedAt": "2026-11-06T15:40:00"
+  },
+  {
+   "id": "proj-ds6-ed4-rollout",
+   "name": "DS-6 Edition 4 rollout",
+   "description": "Training and template changes for Edition 4 (in force 1 October 2026).",
+   "state": "completed",
+   "leadId": "user-imogen",
+   "teamIds": [
+    "team-design"
+   ],
+   "startDate": "2026-09-14",
+   "targetDate": "2026-10-01",
+   "createdAt": "2026-09-10T09:00:00",
+   "updatedAt": "2026-10-02T09:00:00"
+  }
+ ],
+ "cycles": [
+  {
+   "id": "cycle-des-46",
+   "name": "W46",
+   "number": 46,
+   "teamId": "team-design",
+   "startsAt": "2026-11-09",
+   "endsAt": "2026-11-15",
+   "completedAt": null,
+   "createdAt": "2026-11-01T09:00:00",
+   "updatedAt": "2026-11-01T09:00:00"
+  }
+ ],
+ "issues": [
+  {
+   "id": "issue-des-450",
+   "identifier": "DESIGN-41",
+   "number": 41,
+   "title": "DS6 7301962 — Redesign – overvoltage",
+   "description": "W45 review return. Deal 7301962. Designer to resubmit with the recommended string length.",
+   "priority": 2,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-hollis",
+   "teamId": "team-design",
+   "projectId": "proj-w45-review",
+   "cycleId": null,
+   "labelIds": [
+    "label-ds6-rework"
+   ],
+   "dueDate": "2026-11-13",
+   "sortOrder": 41.0,
+   "branchName": null,
+   "createdAt": "2026-11-05T14:10:00",
+   "updatedAt": "2026-11-10T11:00:00",
+   "startedAt": "2026-11-06T09:00:00",
+   "completedAt": "2026-11-10T11:00:00",
+   "canceledAt": null
+  },
+  {
+   "id": "issue-des-451",
+   "identifier": "DESIGN-42",
+   "number": 42,
+   "title": "DS6 7301970 — Redesign – overvoltage",
+   "description": "W45 review return. Deal 7301970. Designer to resubmit with the recommended string length.",
+   "priority": 2,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-rhys",
+   "teamId": "team-design",
+   "projectId": "proj-w45-review",
+   "cycleId": null,
+   "labelIds": [
+    "label-ds6-rework"
+   ],
+   "dueDate": "2026-11-13",
+   "sortOrder": 42.0,
+   "branchName": null,
+   "createdAt": "2026-11-05T14:11:00",
+   "updatedAt": "2026-11-10T11:00:00",
+   "startedAt": "2026-11-06T09:00:00",
+   "completedAt": "2026-11-10T11:00:00",
+   "canceledAt": null
+  },
+  {
+   "id": "issue-des-452",
+   "identifier": "DESIGN-43",
+   "number": 43,
+   "title": "DS6 7301977 — Redesign – overvoltage",
+   "description": "W45 review return. Deal 7301977. Designer to resubmit with the recommended string length.",
+   "priority": 2,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-jory",
+   "teamId": "team-design",
+   "projectId": "proj-w45-review",
+   "cycleId": null,
+   "labelIds": [
+    "label-ds6-rework"
+   ],
+   "dueDate": "2026-11-13",
+   "sortOrder": 43.0,
+   "branchName": null,
+   "createdAt": "2026-11-05T14:12:00",
+   "updatedAt": "2026-11-10T11:00:00",
+   "startedAt": "2026-11-06T09:00:00",
+   "completedAt": "2026-11-10T11:00:00",
+   "canceledAt": null
+  },
+  {
+   "id": "issue-des-453",
+   "identifier": "DESIGN-44",
+   "number": 44,
+   "title": "DS6 7301981 — Redesign – below MPPT",
+   "description": "W45 review return. Deal 7301981. Designer to resubmit with the recommended string length.",
+   "priority": 2,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-rhys",
+   "teamId": "team-design",
+   "projectId": "proj-w45-review",
+   "cycleId": null,
+   "labelIds": [
+    "label-ds6-rework"
+   ],
+   "dueDate": "2026-11-13",
+   "sortOrder": 44.0,
+   "branchName": null,
+   "createdAt": "2026-11-05T14:13:00",
+   "updatedAt": "2026-11-10T11:00:00",
+   "startedAt": "2026-11-06T09:00:00",
+   "completedAt": "2026-11-10T11:00:00",
+   "canceledAt": null
+  },
+  {
+   "id": "issue-des-454",
+   "identifier": "DESIGN-45",
+   "number": 45,
+   "title": "DS6 7301993 — Redesign – overcurrent",
+   "description": "W45 review return. Deal 7301993. Designer to resubmit with the recommended string length.",
+   "priority": 2,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-hollis",
+   "teamId": "team-design",
+   "projectId": "proj-w45-review",
+   "cycleId": null,
+   "labelIds": [
+    "label-ds6-rework"
+   ],
+   "dueDate": "2026-11-13",
+   "sortOrder": 45.0,
+   "branchName": null,
+   "createdAt": "2026-11-05T14:14:00",
+   "updatedAt": "2026-11-10T11:00:00",
+   "startedAt": "2026-11-06T09:00:00",
+   "completedAt": "2026-11-10T11:00:00",
+   "canceledAt": null
+  },
+  {
+   "id": "issue-des-ops1",
+   "identifier": "DESIGN-38",
+   "number": 38,
+   "title": "Update the HubSpot design properties guide for Edition 4",
+   "description": "Property names: design_status, max_string_voc, modules_per_string.",
+   "priority": 3,
+   "estimate": 1,
+   "stateId": "state-des-done",
+   "assigneeId": "user-imogen",
+   "teamId": "team-design",
+   "projectId": "proj-ds6-ed4-rollout",
+   "cycleId": null,
+   "labelIds": [],
+   "dueDate": "2026-09-30",
+   "sortOrder": 38.0,
+   "branchName": null,
+   "createdAt": "2026-09-15T10:00:00",
+   "updatedAt": "2026-09-29T16:00:00",
+   "startedAt": "2026-09-20T09:00:00",
+   "completedAt": "2026-09-29T16:00:00",
+   "canceledAt": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "cmt-des-450",
+   "body": "Resubmitted design checked against DS-6 Ed 4 — closes.",
+   "issueId": "issue-des-450",
+   "userId": "user-imogen",
+   "createdAt": "2026-11-10T11:00:00",
+   "updatedAt": "2026-11-10T11:00:00"
+  },
+  {
+   "id": "cmt-des-451",
+   "body": "Resubmitted design checked against DS-6 Ed 4 — closes.",
+   "issueId": "issue-des-451",
+   "userId": "user-imogen",
+   "createdAt": "2026-11-10T11:00:00",
+   "updatedAt": "2026-11-10T11:00:00"
+  },
+  {
+   "id": "cmt-des-452",
+   "body": "Resubmitted design checked against DS-6 Ed 4 — closes.",
+   "issueId": "issue-des-452",
+   "userId": "user-imogen",
+   "createdAt": "2026-11-10T11:00:00",
+   "updatedAt": "2026-11-10T11:00:00"
+  },
+  {
+   "id": "cmt-des-453",
+   "body": "Resubmitted design checked against DS-6 Ed 4 — closes.",
+   "issueId": "issue-des-453",
+   "userId": "user-imogen",
+   "createdAt": "2026-11-10T11:00:00",
+   "updatedAt": "2026-11-10T11:00:00"
+  },
+  {
+   "id": "cmt-des-454",
+   "body": "Resubmitted design checked against DS-6 Ed 4 — closes.",
+   "issueId": "issue-des-454",
+   "userId": "user-imogen",
+   "createdAt": "2026-11-10T11:00:00",
+   "updatedAt": "2026-11-10T11:00:00"
+  }
+ ]
+}

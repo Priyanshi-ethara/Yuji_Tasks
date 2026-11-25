@@ -1,0 +1,719 @@
+{
+ "companies": [
+  {
+   "id": "comp_tsl_ashgrove",
+   "name": "Ashgrove Atelier",
+   "company_id": "cus_tsl_ashgrove",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709251200
+  },
+  {
+   "id": "comp_tsl_bramley",
+   "name": "Bramley Kite Studio",
+   "company_id": "cus_tsl_bramley",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709254800
+  },
+  {
+   "id": "comp_tsl_cobalt",
+   "name": "Cobalt Wren Design",
+   "company_id": "cus_tsl_cobaltwren",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709258400
+  },
+  {
+   "id": "comp_tsl_dunmore",
+   "name": "Dunmore Lane Architects",
+   "company_id": "cus_tsl_dunmore",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709262000
+  },
+  {
+   "id": "comp_tsl_elderfield",
+   "name": "Elderfield Print Co",
+   "company_id": "cus_tsl_elderfield",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709265600
+  },
+  {
+   "id": "comp_tsl_fernhill",
+   "name": "Fernhill Motion Ltd",
+   "company_id": "cus_tsl_fernhill",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709269200
+  },
+  {
+   "id": "comp_tsl_gannet",
+   "name": "Gannet Row Studio",
+   "company_id": "cus_tsl_gannetrow",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709272800
+  },
+  {
+   "id": "comp_tsl_hollis",
+   "name": "Hollis Marlow Partners",
+   "company_id": "cus_tsl_hollismarlow",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709276400
+  },
+  {
+   "id": "comp_tsl_inkwell",
+   "name": "Inkwell Harbour",
+   "company_id": "cus_tsl_inkwell",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709280000
+  },
+  {
+   "id": "comp_tsl_juniper",
+   "name": "Juniper Vale Design",
+   "company_id": "cus_tsl_junipervale",
+   "plan": {
+    "name": "Mosaic"
+   },
+   "created_at": 1709283600
+  },
+  {
+   "id": "comp_tsl_kestrel",
+   "name": "Kestrel Point Creative",
+   "company_id": "cus_tsl_kestrel",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709287200
+  },
+  {
+   "id": "comp_tsl_larchmont",
+   "name": "Larchmont Type Foundry",
+   "company_id": "cus_tsl_larchmont",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709290800
+  },
+  {
+   "id": "comp_tsl_mistral",
+   "name": "Mistral Yard",
+   "company_id": "cus_tsl_mistral",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709294400
+  },
+  {
+   "id": "comp_tsl_northgate",
+   "name": "Northgate Signal",
+   "company_id": "cus_tsl_northgate",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709298000
+  },
+  {
+   "id": "comp_tsl_oriel",
+   "name": "Oriel Glasshouse",
+   "company_id": "cus_tsl_oriel",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709301600
+  },
+  {
+   "id": "comp_tsl_phal",
+   "name": "Pemberton Hale Architecture Ltd",
+   "company_id": "cus_tsl_pha_ltd",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709305200
+  },
+  {
+   "id": "comp_tsl_rowan",
+   "name": "Rowan Quay Media",
+   "company_id": "cus_tsl_rowanquay",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709308800
+  },
+  {
+   "id": "comp_tsl_saltmarsh",
+   "name": "Saltmarsh Collective",
+   "company_id": "cus_tsl_saltmarsh",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709312400
+  },
+  {
+   "id": "comp_tsl_tamsin",
+   "name": "Tamsin Ode Studio",
+   "company_id": "cus_tsl_tamsinode",
+   "plan": {
+    "name": "Mosaic"
+   },
+   "created_at": 1709316000
+  },
+  {
+   "id": "comp_tsl_umber",
+   "name": "Umber & Lime",
+   "company_id": "cus_tsl_umberlime",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709319600
+  },
+  {
+   "id": "comp_tsl_vellum",
+   "name": "Vellum Street",
+   "company_id": "cus_tsl_vellum",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709323200
+  },
+  {
+   "id": "comp_tsl_wickham",
+   "name": "Wickham Forge",
+   "company_id": "cus_tsl_wickham",
+   "plan": {
+    "name": "Mosaic"
+   },
+   "created_at": 1709326800
+  },
+  {
+   "id": "comp_tsl_yarrow",
+   "name": "Yarrow Bright",
+   "company_id": "cus_tsl_yarrow",
+   "plan": {
+    "name": "Line"
+   },
+   "created_at": 1709330400
+  },
+  {
+   "id": "comp_tsl_zephyr",
+   "name": "Zephyr Lantern Studio",
+   "company_id": "cus_tsl_zephyr",
+   "plan": {
+    "name": "Mosaic"
+   },
+   "created_at": 1709334000
+  },
+  {
+   "id": "comp_tsl_pharch",
+   "name": "Pemberton Hale Architects",
+   "company_id": "cus_tsl_pha_arch",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709337600
+  },
+  {
+   "id": "comp_tsl_gannets",
+   "name": "Gannet Row Studios",
+   "company_id": "cus_tsl_gannetrows",
+   "plan": {
+    "name": "Grid"
+   },
+   "created_at": 1709341200
+  }
+ ],
+ "contacts": [
+  {
+   "id": "con_tsl_ashgrove",
+   "name": "Callum Reid",
+   "email": "callum.reid@ashgroveatelier.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_ashgrove",
+   "created_at": 1709251200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_bramley",
+   "name": "Priya Raman",
+   "email": "priya.raman@bramleykite.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_bramley",
+   "created_at": 1709254800,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_cobalt",
+   "name": "Hattie Moss",
+   "email": "hattie.moss@cobaltwren.design",
+   "role": "user",
+   "company_id": "comp_tsl_cobalt",
+   "created_at": 1709258400,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_dunmore",
+   "name": "Rafael Okoro",
+   "email": "rafael.okoro@dunmorelane.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_dunmore",
+   "created_at": 1709262000,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_elderfield",
+   "name": "Bea Sandoval",
+   "email": "bea.sandoval@elderfieldprint.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_elderfield",
+   "created_at": 1709265600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_fernhill",
+   "name": "Ines Duarte",
+   "email": "ines.duarte@fernhillmotion.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_fernhill",
+   "created_at": 1709269200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_gannet",
+   "name": "Imogen Gale",
+   "email": "imogen.gale@gannetrow.studio",
+   "role": "user",
+   "company_id": "comp_tsl_gannet",
+   "created_at": 1709272800,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_hollis",
+   "name": "Dev Anand",
+   "email": "dev.anand@hollismarlow.com",
+   "role": "user",
+   "company_id": "comp_tsl_hollis",
+   "created_at": 1709276400,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_inkwell",
+   "name": "Sasha Brennan",
+   "email": "sasha.brennan@inkwellharbour.com",
+   "role": "user",
+   "company_id": "comp_tsl_inkwell",
+   "created_at": 1709280000,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_juniper",
+   "name": "Owen Pryce",
+   "email": "owen.pryce@junipervale.design",
+   "role": "user",
+   "company_id": "comp_tsl_juniper",
+   "created_at": 1709283600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_kestrel",
+   "name": "Kat Okafor",
+   "email": "kat.okafor@kestrelpoint.co",
+   "role": "user",
+   "company_id": "comp_tsl_kestrel",
+   "created_at": 1709287200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_larchmont",
+   "name": "Edie Fairbanks",
+   "email": "edie.fairbanks@larchmonttype.com",
+   "role": "user",
+   "company_id": "comp_tsl_larchmont",
+   "created_at": 1709290800,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_mistral",
+   "name": "Jonah Weller",
+   "email": "jonah.weller@mistralyard.com",
+   "role": "user",
+   "company_id": "comp_tsl_mistral",
+   "created_at": 1709294400,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_northgate",
+   "name": "Aoife Byrne",
+   "email": "aoife.byrne@northgatesignal.ie",
+   "role": "user",
+   "company_id": "comp_tsl_northgate",
+   "created_at": 1709298000,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_oriel",
+   "name": "Tomasz Wrobel",
+   "email": "tomasz.wrobel@orielglasshouse.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_oriel",
+   "created_at": 1709301600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_phal",
+   "name": "Ruth Adeyemi",
+   "email": "ruth.adeyemi@pembertonhale-arch.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_phal",
+   "created_at": 1709305200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_rowan",
+   "name": "Nadia Pereira",
+   "email": "nadia.pereira@rowanquay.media",
+   "role": "user",
+   "company_id": "comp_tsl_rowan",
+   "created_at": 1709308800,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_saltmarsh",
+   "name": "Gwen Llewellyn",
+   "email": "gwen.llewellyn@saltmarsh.coop",
+   "role": "user",
+   "company_id": "comp_tsl_saltmarsh",
+   "created_at": 1709312400,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_tamsin",
+   "name": "Tamsin Ode",
+   "email": "tamsin@tamsinode.studio",
+   "role": "user",
+   "company_id": "comp_tsl_tamsin",
+   "created_at": 1709316000,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_umber",
+   "name": "Felix Haddad",
+   "email": "felix.haddad@umberandlime.com",
+   "role": "user",
+   "company_id": "comp_tsl_umber",
+   "created_at": 1709319600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_vellum",
+   "name": "Marta Silva",
+   "email": "marta.silva@vellumstreet.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_vellum",
+   "created_at": 1709323200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_wickham",
+   "name": "Ben Archer",
+   "email": "ben.archer@wickhamforge.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_wickham",
+   "created_at": 1709326800,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_yarrow",
+   "name": "Lena Fischer",
+   "email": "lena.fischer@yarrowbright.com",
+   "role": "user",
+   "company_id": "comp_tsl_yarrow",
+   "created_at": 1709330400,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_zephyr",
+   "name": "Ravi Menon",
+   "email": "ravi.menon@zephyrlantern.studio",
+   "role": "user",
+   "company_id": "comp_tsl_zephyr",
+   "created_at": 1709334000,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_pharch",
+   "name": "Julian Hale",
+   "email": "accounts@pembertonhalearchitects.co.uk",
+   "role": "user",
+   "company_id": "comp_tsl_pharch",
+   "created_at": 1709337600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_gannets",
+   "name": "Theo Marsh",
+   "email": "theo.marsh@gannetrowstudios.com",
+   "role": "user",
+   "company_id": "comp_tsl_gannets",
+   "created_at": 1709341200,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "con_tsl_leo",
+   "name": "Leo Hartley",
+   "email": "leo.hartley@rowanquay.media",
+   "role": "user",
+   "company_id": "comp_tsl_rowan",
+   "created_at": 1746057600,
+   "updated_at": 1790812800
+  },
+  {
+   "id": "admin-tsl-arlo",
+   "name": "Arlo Finch",
+   "email": "arlo.finch@tessellate.studio",
+   "role": "admin",
+   "created_at": 1704067200,
+   "updated_at": 1790812800
+  }
+ ],
+ "conversations": [
+  {
+   "id": "conv-tsl-3101",
+   "contact_id": "con_tsl_rowan",
+   "state": "closed",
+   "title": "Hi there",
+   "created_at": "2026-11-13T09:12:00.000Z",
+   "updated_at": "2026-11-13T09:12:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3102",
+   "contact_id": "con_tsl_hollis",
+   "state": "closed",
+   "title": "Question about exports",
+   "created_at": "2026-11-12T14:00:00.000Z",
+   "updated_at": "2026-11-12T14:00:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3103",
+   "contact_id": "con_tsl_saltmarsh",
+   "state": "closed",
+   "title": "Viewer links",
+   "created_at": "2026-11-06T11:00:00.000Z",
+   "updated_at": "2026-11-06T11:00:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3104",
+   "contact_id": "con_tsl_gannet",
+   "state": "closed",
+   "title": "Freelancer logins",
+   "created_at": "2026-11-12T16:20:00.000Z",
+   "updated_at": "2026-11-12T16:20:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3105",
+   "contact_id": "con_tsl_fernhill",
+   "state": "closed",
+   "title": "Line features",
+   "created_at": "2026-11-10T10:00:00.000Z",
+   "updated_at": "2026-11-10T10:00:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3106",
+   "contact_id": "con_tsl_inkwell",
+   "state": "closed",
+   "title": "Refund?",
+   "created_at": "2026-11-12T15:00:00.000Z",
+   "updated_at": "2026-11-12T15:00:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3107",
+   "contact_id": "con_tsl_bramley",
+   "state": "closed",
+   "title": "Seats",
+   "created_at": "2026-11-08T09:40:00.000Z",
+   "updated_at": "2026-11-08T09:40:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  },
+  {
+   "id": "conv-tsl-3108",
+   "contact_id": "con_tsl_gannets",
+   "state": "closed",
+   "title": "Card update",
+   "created_at": "2026-11-11T12:00:00.000Z",
+   "updated_at": "2026-11-11T12:00:00.000Z",
+   "assignee_id": "admin-tsl-arlo",
+   "open": false
+  }
+ ],
+ "parts": [
+  {
+   "id": "part-tsl-001",
+   "conversation_id": "conv-tsl-3101",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_rowan",
+   "body": "Morning - Leo from our team sent you a note about seats. Yes, that's fine by me: please go ahead and take us down to 18 from the renewal. Nadia (Rowan Quay finance)",
+   "created_at": "2026-11-13T09:12:00.000Z"
+  },
+  {
+   "id": "part-tsl-002",
+   "conversation_id": "conv-tsl-3101",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Thanks Nadia, noted - the billing desk will pick this up with Leo's ticket.",
+   "created_at": "2026-11-13T09:12:00.000Z"
+  },
+  {
+   "id": "part-tsl-003",
+   "conversation_id": "conv-tsl-3102",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_hollis",
+   "body": "Can we export boards as PDF on Line? Dev",
+   "created_at": "2026-11-12T14:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-004",
+   "conversation_id": "conv-tsl-3102",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Yes - PDF export is on every plan. Arlo",
+   "created_at": "2026-11-12T14:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-005",
+   "conversation_id": "conv-tsl-3103",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_saltmarsh",
+   "body": "Do viewer links expire? Gwen",
+   "created_at": "2026-11-06T11:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-006",
+   "conversation_id": "conv-tsl-3103",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "No, viewer links stay live until you revoke them, and they never need a seat. Arlo",
+   "created_at": "2026-11-06T11:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-007",
+   "conversation_id": "conv-tsl-3104",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_gannet",
+   "body": "Hi, how do I remove a member from the workspace? Imogen",
+   "created_at": "2026-11-12T16:20:00.000Z"
+  },
+  {
+   "id": "part-tsl-008",
+   "conversation_id": "conv-tsl-3104",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Settings > Members > Remove. Removing a member doesn't change your seat count on its own; the billing desk does that. Arlo",
+   "created_at": "2026-11-12T16:20:00.000Z"
+  },
+  {
+   "id": "part-tsl-009",
+   "conversation_id": "conv-tsl-3105",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_fernhill",
+   "body": "Does Line include review tools? Ines",
+   "created_at": "2026-11-10T10:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-010",
+   "conversation_id": "conv-tsl-3105",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Review tools start on Grid. Line has boards, comments and shared libraries. Arlo",
+   "created_at": "2026-11-10T10:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-011",
+   "conversation_id": "conv-tsl-3106",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_inkwell",
+   "body": "Can chat support refund a charge? Sasha",
+   "created_at": "2026-11-12T15:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-012",
+   "conversation_id": "conv-tsl-3106",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Refunds are handled by Finance - the billing desk will pass your request on. Arlo",
+   "created_at": "2026-11-12T15:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-013",
+   "conversation_id": "conv-tsl-3107",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_bramley",
+   "body": "Just checking our invoice address updated OK? Priya",
+   "created_at": "2026-11-08T09:40:00.000Z"
+  },
+  {
+   "id": "part-tsl-014",
+   "conversation_id": "conv-tsl-3107",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Yes, the Hope Street address shows on your November invoice. Arlo",
+   "created_at": "2026-11-08T09:40:00.000Z"
+  },
+  {
+   "id": "part-tsl-015",
+   "conversation_id": "conv-tsl-3108",
+   "part_type": "comment",
+   "author_type": "user",
+   "author_id": "con_tsl_gannets",
+   "body": "Where do I update the card for Gannet Row Studios? Theo",
+   "created_at": "2026-11-11T12:00:00.000Z"
+  },
+  {
+   "id": "part-tsl-016",
+   "conversation_id": "conv-tsl-3108",
+   "part_type": "comment",
+   "author_type": "admin",
+   "author_id": "admin-tsl-arlo",
+   "body": "Billing > Payment method. Arlo",
+   "created_at": "2026-11-11T12:00:00.000Z"
+  }
+ ]
+}

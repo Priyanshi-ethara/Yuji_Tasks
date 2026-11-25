@@ -1,0 +1,92 @@
+{
+ "incidents": [
+  {
+   "sys_id": "inc-twk-45001",
+   "number": "INC0045001",
+   "short_description": "Polar Arc TK9 exports in degF after firmware 4.2.1",
+   "description": "From 20 Oct 2026 Polar Arc TK9 Pro loggers (fw 4.2.1) export readings in degF at a 10-minute interval; the CSV column is 'reading' with no unit. The unit is in <logger>_meta.json. Boundary records can repeat in two segments. Fleet register (Sept export) still shows degC/15 min - to be updated.",
+   "state": "6",
+   "priority": "3",
+   "impact": "2",
+   "urgency": "3",
+   "category": "data",
+   "assigned_to": "sn_twk_ahune",
+   "opened_by": "sn_twk_ahune",
+   "opened_at": "2026-10-21T09:15:00Z",
+   "updated_at": "2026-10-23T14:00:00Z"
+  },
+  {
+   "sys_id": "inc-twk-45002",
+   "number": "INC0045002",
+   "short_description": "NDC gate receipt scanner offline 3 Nov",
+   "description": "Gate scanner offline 06:30-08:50 UTC on 2026-11-03. Receipts scanned by handheld; HX4-41188 scanned 08:55.",
+   "state": "7",
+   "priority": "3",
+   "impact": "3",
+   "urgency": "2",
+   "category": "hardware",
+   "assigned_to": "sn_twk_ahune",
+   "opened_by": "sn_twk_ahune",
+   "opened_at": "2026-11-03T06:35:00Z",
+   "updated_at": "2026-11-03T09:10:00Z"
+  },
+  {
+   "sys_id": "inc-twk-45003",
+   "number": "INC0045003",
+   "short_description": "Polar Arc gateway restart - TK9-5521 segment upload failed",
+   "description": "Carrier gateway restart 2026-11-05 ~02:00 UTC; TK9-5521 segment 2 not uploaded. Carrier recovering from flash.",
+   "state": "2",
+   "priority": "3",
+   "impact": "2",
+   "urgency": "3",
+   "category": "data",
+   "assigned_to": "sn_twk_ahune",
+   "opened_by": "sn_twk_ahune",
+   "opened_at": "2026-11-06T10:20:00Z",
+   "updated_at": "2026-11-09T09:00:00Z"
+  }
+ ],
+ "changes": [
+  {
+   "sys_id": "chg_twk_4501",
+   "number": "CHG0045001",
+   "short_description": "Update logger fleet register for TK9 fw 4.2.1 (unit degF, 10 min)",
+   "state": "2",
+   "type": "normal",
+   "category": "Data",
+   "assigned_to": "sn_twk_ahune",
+   "opened_at": "2026-10-23 14:00:00"
+  }
+ ],
+ "problems": [
+  {
+   "sys_id": "prb_twk_4501",
+   "number": "PRB0045001",
+   "short_description": "Carrier gateway restarts interrupt logger uploads",
+   "state": "2",
+   "category": "Data",
+   "assigned_to": "sn_twk_ahune",
+   "opened_at": "2026-11-06 10:30:00"
+  }
+ ],
+ "users": [
+  {
+   "sys_id": "sn_twk_ahune",
+   "user_name": "aleksander.hune",
+   "first_name": "Aleksander",
+   "last_name": "Hune",
+   "email": "aleksander.hune@tarnwick-bio.example",
+   "active": "true",
+   "title": "Cold-Chain Logistics Coordinator"
+  },
+  {
+   "sys_id": "sn_twk_pvenk",
+   "user_name": "priya.venkataraman",
+   "first_name": "Priya",
+   "last_name": "Venkataraman",
+   "email": "priya.venkataraman@tarnwick-bio.example",
+   "active": "true",
+   "title": "Metrology & Calibration Lead"
+  }
+ ]
+}

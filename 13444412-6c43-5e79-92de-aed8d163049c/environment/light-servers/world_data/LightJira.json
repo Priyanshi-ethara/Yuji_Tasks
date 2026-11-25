@@ -1,0 +1,100 @@
+{
+ "projects": [
+  {
+   "id": "10431",
+   "key": "FIN",
+   "name": "Finance requests",
+   "project_type_key": "business",
+   "lead": "user-tsl-lou",
+   "description": "Refunds, credit notes and disputes - raised and worked by Finance only"
+  }
+ ],
+ "users": [
+  {
+   "account_id": "user-tsl-lou",
+   "display_name": "Lou Varga",
+   "email": "lou.varga@tessellate.studio",
+   "active": true
+  },
+  {
+   "account_id": "user-tsl-pris",
+   "display_name": "Priscilla Vane",
+   "email": "priscilla.vane@tessellate.studio",
+   "active": true
+  }
+ ],
+ "issues": [
+  {
+   "id": "43100",
+   "key": "FIN-2207",
+   "project_key": "FIN",
+   "issue_type": "Task",
+   "summary": "Inkwell Harbour - goodwill refund of October Grid charge",
+   "description": "Raised by Customer Success 13 Nov. Finance decision: declined (usage normal for the period). Do not refund from Stripe.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Lou Varga",
+   "reporter": "Priscilla Vane",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-13T16:30:00Z",
+   "updated": "2026-11-13T16:30:00Z"
+  },
+  {
+   "id": "43101",
+   "key": "FIN-2198",
+   "project_key": "FIN",
+   "issue_type": "Task",
+   "summary": "Oriel Glasshouse - VAT number on invoices",
+   "description": "Customer asked us to check the VAT number. Finance to confirm.",
+   "status": "In Progress",
+   "priority": "Medium",
+   "assignee": "Lou Varga",
+   "reporter": "Lou Varga",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-11T10:00:00Z",
+   "updated": "2026-11-11T10:00:00Z"
+  },
+  {
+   "id": "43102",
+   "key": "FIN-2185",
+   "project_key": "FIN",
+   "issue_type": "Task",
+   "summary": "Gannet Row Studios - duplicate charge 2 Oct",
+   "description": "Refunded by Finance on 6 Oct (ch reference in ticket).",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Lou Varga",
+   "reporter": "Lou Varga",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-10-03T09:00:00Z",
+   "updated": "2026-10-03T09:00:00Z"
+  },
+  {
+   "id": "43103",
+   "key": "FIN-2210",
+   "project_key": "FIN",
+   "issue_type": "Task",
+   "summary": "Desk audit: refunds issued outside Finance (Oct)",
+   "description": "Two refunds were issued from Stripe by the desk in October. Process reminder sent 2 Nov.",
+   "status": "Done",
+   "priority": "Medium",
+   "assignee": "Lou Varga",
+   "reporter": "Lou Varga",
+   "sprint_id": null,
+   "story_points": null,
+   "created": "2026-11-02T09:00:00Z",
+   "updated": "2026-11-02T09:00:00Z"
+  }
+ ],
+ "boards": [
+  {
+   "id": 431,
+   "name": "FIN board",
+   "type": "kanban",
+   "project_key": "FIN"
+  }
+ ]
+}

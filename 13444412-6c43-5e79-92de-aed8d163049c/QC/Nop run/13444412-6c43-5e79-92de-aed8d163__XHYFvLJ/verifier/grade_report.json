@@ -1,0 +1,240 @@
+{
+  "reward": 0.0,
+  "earned": 0.0,
+  "penalty": 0.0,
+  "total_positive": 47,
+  "guard_polarity": "pass_charges",
+  "gate": null,
+  "missed": [
+    "test_cobalt_wren_upgrade_on_the_amended_price",
+    "test_hollis_marlow_annual_move_on_the_amended_price",
+    "test_juniper_vale_reduction_at_the_amended_price",
+    "test_vellum_street_upgrade_at_the_amended_price",
+    "test_desk_log_tallies",
+    "test_amended_price_card_read_before_the_desk_log",
+    "test_cobalt_wren_ticket_answered_with_its_template",
+    "test_hollis_marlow_ticket_answered_with_its_template",
+    "test_rows_the_price_review_decides",
+    "test_price_card_body_read_before_rows_it_decides",
+    "test_requests_from_others_held_for_the_billing_contact",
+    "test_rowan_quay_chat_confirmation_honoured",
+    "test_withdrawn_and_already_in_place",
+    "test_pemberton_hale_booked_to_the_senders_company",
+    "test_scope_and_referent_readings",
+    "test_dunmore_lane_left_inside_its_committed_term",
+    "test_timing_and_plain_requests",
+    "test_other_queue_tickets_answered_from_their_templates",
+    "test_desk_log_written_after_the_last_change_order"
+  ],
+  "guards_tripped": [],
+  "errors": [],
+  "tests": [
+    {
+      "test": "test_cobalt_wren_upgrade_on_the_amended_price",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_hollis_marlow_annual_move_on_the_amended_price",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_juniper_vale_reduction_at_the_amended_price",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_vellum_street_upgrade_at_the_amended_price",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_desk_log_tallies",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "precondition: desk log clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_amended_price_card_read_before_the_desk_log",
+      "weight": 5,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "precondition: the rows the amendment moves clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_cobalt_wren_ticket_answered_with_its_template",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this ticket clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_hollis_marlow_ticket_answered_with_its_template",
+      "weight": 3,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this ticket clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_rows_the_price_review_decides",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_price_card_body_read_before_rows_it_decides",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "precondition: the rows the review decides clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_requests_from_others_held_for_the_billing_contact",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_rowan_quay_chat_confirmation_honoured",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_withdrawn_and_already_in_place",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_pemberton_hale_booked_to_the_senders_company",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_scope_and_referent_readings",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_dunmore_lane_left_inside_its_committed_term",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_timing_and_plain_requests",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "return",
+      "reason": "precondition: this account clean, other rows settled",
+      "error": null
+    },
+    {
+      "test": "test_other_queue_tickets_answered_from_their_templates",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "precondition: the queue tickets clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_desk_log_written_after_the_last_change_order",
+      "weight": 1,
+      "passed": false,
+      "tripped": null,
+      "style": "mixed",
+      "reason": "precondition: desk log clean, other rows settled, desk log in",
+      "error": null
+    },
+    {
+      "test": "test_guard_refund_or_credit_issued",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no refund",
+      "error": null
+    },
+    {
+      "test": "test_guard_subscription_ended_before_its_period_closed",
+      "weight": -5,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no subscription ended outright",
+      "error": null
+    },
+    {
+      "test": "test_guard_wrote_outside_the_desk_scope",
+      "weight": -3,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "nothing written outside the desk's scope",
+      "error": null
+    },
+    {
+      "test": "test_guard_signed_out_of_an_app",
+      "weight": -1,
+      "passed": false,
+      "tripped": false,
+      "style": "mixed",
+      "reason": "no sign-out",
+      "error": null
+    }
+  ]
+}

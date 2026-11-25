@@ -1,0 +1,30 @@
+# Sentry alert rules, org pellam (exported 2026-11-16)
+rules:
+  - name: fleetd new fatal group
+    project: fleetd
+    conditions: [first_seen_event, level_equals_fatal]
+    actions:
+      - slack: { workspace: pellam, channel: "#sre-triage" }
+    frequency_minutes: 30
+  - name: fleetd regression
+    project: fleetd
+    conditions: [regression_event]
+    actions:
+      - slack: { workspace: pellam, channel: "#sre-triage" }
+  - name: fleetd volume spike
+    project: fleetd
+    conditions: [{ event_frequency: { value: 500, interval: 1h } }]
+    actions:
+      - pagerduty: { service: fleetd-workers }
+  - name: dispatch-web errors
+    project: dispatch-web
+    conditions: [first_seen_event]
+    actions:
+      - slack: { workspace: pellam, channel: "#dispatch-web" }
+grouping:
+  # stack-trace grouping, in-app frames = module path git.pellam.io/fleetd
+  in_app_include: ["git.pellam.io/fleetd"]
+  in_app_exclude: []
+notes: >
+  in_app_include is a prefix match on the frame's package path. Sentry uses it to pick the culprit and to
+  collapse frames in the UI; it has never been the desk's ownership rule.

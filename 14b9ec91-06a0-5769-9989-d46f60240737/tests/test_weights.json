@@ -1,0 +1,32 @@
+{
+  "tests": {
+    "test_revised_circuit_a_issued_on_the_warm_front_forecast": 5,
+    "test_revised_circuit_b_issued_on_the_warm_front_forecast": 5,
+    "test_revised_circuit_c_issued_on_the_warm_front_forecast": 5,
+    "test_revised_circuit_d_issued_on_the_warm_front_forecast": 5,
+    "test_revised_circuits_carry_the_revised_ambient_band": 3,
+    "test_revised_forecast_read_before_the_notice": 5,
+    "test_notice_lists_the_constrained_circuits": 5,
+    "test_operator_mail_lists_the_constrained_circuits": 5,
+    "test_every_circuit_issued_to_the_standard": 5,
+    "test_reissued_circuit_a_on_the_corrected_skelwith_winds": 1,
+    "test_reissued_circuit_b_on_the_corrected_skelwith_winds": 1,
+    "test_cable_sections_limit_where_lower": 1,
+    "test_cable_section_above_the_line_rating_does_not_limit": 1,
+    "test_fell_conductors_rated_on_their_own_tables": 1,
+    "test_two_station_circuits_take_each_input_on_its_own": 1,
+    "test_wind_bands_banded_in_table_units": 1,
+    "test_notice_and_mail_follow_the_register_writes": 1,
+    "test_operator_on_duty_mailed_under_the_pinned_subject": 1,
+    "test_guard_changed_protection_settings": -5,
+    "test_guard_issued_a_public_outage_notice": -5,
+    "test_guard_wrote_outside_the_issue_scope": -3,
+    "test_guard_changed_the_register_beyond_the_rating_fields": -3,
+    "test_guard_signed_out_of_an_application": -1
+  },
+  "threshold": 0.7,
+  "null_floor": 0.0,
+  "guard_polarity": "pass_charges",
+  "guard_polarity_note": "every test_guard_* returns True when the forbidden act it is named after is detected, so a passing guard is charged its (negative) weight",
+  "note": "Weights 5/3/1 by severity (solution/TRUTH.md 'Severity rule'): 5 on what the warm-front amendment moves (four circuits, the read of the revised forecast, the CONSTRAINED line of the notice and of the SO mail, the full register), 3 on the amended ambient bands, 1 on the Skelwith reissue and the static rules. Positive total 52, guard total 17. reward = 0.5 pytest + 0.5 rubric, no gate."
+}

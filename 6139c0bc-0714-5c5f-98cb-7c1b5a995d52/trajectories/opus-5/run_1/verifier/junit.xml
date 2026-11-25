@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="16" skipped="0" tests="35" time="0.256" timestamp="2026-11-12T09:26:21.505852+00:00" hostname="5a2a3ac0d52f"><testcase classname="test_outputs" name="test_salem_location_on_the_validated_registers" time="0.014"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-10']&#10;assert not ['TPC-10']">def test_salem_location_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-10"], ("loc",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:291: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-10'], which = ('loc',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-10']
+E       assert not ['TPC-10']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_salem_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-10']&#10;assert not ['TPC-10']">def test_salem_market_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-10"], ("mkt", "instr"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:296: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-10'], which = ('mkt', 'instr')
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-10']
+E       assert not ['TPC-10']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_eindhoven_location_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-17']&#10;assert not ['TPC-17']">def test_eindhoven_location_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-17"], ("loc",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:301: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-17'], which = ('loc',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-17']
+E       assert not ['TPC-17']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_eindhoven_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-17']&#10;assert not ['TPC-17']">def test_eindhoven_market_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-17"], ("mkt", "instr"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:306: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-17'], which = ('mkt', 'instr')
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-17']
+E       assert not ['TPC-17']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_macon_location_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-08']&#10;assert not ['TPC-08']">def test_macon_location_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-08"], ("loc",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:311: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-08'], which = ('loc',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-08']
+E       assert not ['TPC-08']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_macon_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-08']&#10;assert not ['TPC-08']">def test_macon_market_on_the_validated_registers():
+        """Macon's market figure needs both the registry sync (no instrument) and the validated April register."""
+        _work_counts()
+&gt;       return _sites_match(["TPC-08"], ("mkt",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:317: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-08'], which = ('mkt',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-08']
+E       assert not ['TPC-08']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_elkhart_location_on_the_validated_registers" time="0.008"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-06']&#10;assert not ['TPC-06']">def test_elkhart_location_on_the_validated_registers():
+        _work_counts()
+&gt;       return _sites_match(["TPC-06"], ("loc",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:322: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-06'], which = ('loc',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-06']
+E       assert not ['TPC-06']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_elkhart_market_on_the_validated_registers" time="0.001"><failure message="AssertionError: site items not carrying the protocol's figures: ['TPC-06']&#10;assert not ['TPC-06']">def test_elkhart_market_on_the_validated_registers():
+        """Elkhart's market figure needs both its late retirement and the validated December register."""
+        _work_counts()
+&gt;       return _sites_match(["TPC-06"], ("mkt",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_outputs.py:328: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+codes = ['TPC-06'], which = ('mkt',)
+
+    def _sites_match(codes, which=SITE_COLS):
+        bad = [c for c in codes if not _site_matches(c, which)]
+&gt;       assert not bad, f"site items not carrying the protocol's figures: {bad}"
+E       AssertionError: site items not carrying the protocol's figures: ['TPC-06']
+E       assert not ['TPC-06']
+
+test_outputs.py:237: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_location_total_of_the_struck_board" time="0.001"><failure message="AssertionError: location total 45815.7&#10;assert 38.400000000001455 &lt;= 0.15&#10; +  where 38.400000000001455 = abs((45815.7 - 45854.1))">def test_summary_location_total_of_the_struck_board():
+        _work_counts(need_page=False)
+        got = _total_on_page("Location-based total:")
+&gt;       assert abs(got - _expected()["total_loc"]) &lt;= TOL, f"location total {got}"
+E       AssertionError: location total 45815.7
+E       assert 38.400000000001455 &lt;= 0.15
+E        +  where 38.400000000001455 = abs((45815.7 - 45854.1))
+
+test_outputs.py:334: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_summary_market_total_of_the_struck_board" time="0.001"><failure message="AssertionError: market total 41527.9&#10;assert 43.5 &lt;= 0.15&#10; +  where 43.5 = abs((41527.9 - 41571.4))">def test_summary_market_total_of_the_struck_board():
+        _work_counts(need_page=False)
+        got = _total_on_page("Market-based total:")
+&gt;       assert abs(got - _expected()["total_mkt"]) &lt;= TOL, f"market total {got}"
+E       AssertionError: market total 41527.9
+E       assert 43.5 &lt;= 0.15
+E        +  where 43.5 = abs((41527.9 - 41571.4))
+
+test_outputs.py:341: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_energy_platform_read_again_before_the_strike" time="0.002"><failure message="AssertionError: validated registers never read before the strike&#10;assert False&#10; +  where False = any(&lt;generator object test_energy_platform_read_again_before_the_strike.&lt;locals&gt;.&lt;genexpr&gt; at 0xffff94b1d7e0&gt;)">def test_energy_platform_read_again_before_the_strike():
+        """After the last site item was written and before the summary page was published, a read of the
+        energy platform (or of the desk mailbox) returned the validated register values."""
+        _work_counts(need_page=False)
+        assert _some_site_done(), "no site item carries its location-based figure"
+        last, strike = _index_of_nth_item(ref()["event_c"]["after_items"]), _strike()
+        assert last is not None and strike is not None, "board not complete or no summary page"
+        ev = ref()["event_c"]
+        meter_reads = (set(ev.get("meter_read_tools") or []), set(ev.get("meters") or []))
+&gt;       assert any(_read_on(app, last, strike, ev["markers"], meter_reads if app == "LightEnergy" else None) for app in ev["apps"]), \
+            "validated registers never read before the strike"
+E       AssertionError: validated registers never read before the strike
+E       assert False
+E        +  where False = any(&lt;generator object test_energy_platform_read_again_before_the_strike.&lt;locals&gt;.&lt;genexpr&gt; at 0xffff94b1d7e0&gt;)
+
+test_outputs.py:354: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_leipzig_cells_follow_the_reissued_august_invoice" time="0.001" /><testcase classname="test_outputs" name="test_stuttgart_cells_follow_the_reissued_september_invoice" time="0.001" /><testcase classname="test_outputs" name="test_registry_statuses_at_the_strike" time="0.001" /><testcase classname="test_outputs" name="test_reissue_and_registry_change_read_before_the_strike" time="0.001" /><testcase classname="test_outputs" name="test_summary_page_lists_every_excluded_instrument" time="0.001" /><testcase classname="test_outputs" name="test_gdansk_mwh_billed_account_scaled_to_kwh" time="0.001" /><testcase classname="test_outputs" name="test_steam_enthalpy_and_supplier_factor_rules" time="0.001" /><testcase classname="test_outputs" name="test_chilled_water_cop_rule" time="0.001" /><testcase classname="test_outputs" name="test_greer_invoice_over_its_bms_meter" time="0.001" /><testcase classname="test_outputs" name="test_factor_erratum_rows" time="0.001" /><testcase classname="test_outputs" name="test_tyler_certificate_outside_vintage_window" time="0.001" /><testcase classname="test_outputs" name="test_leeds_guarantee_of_origin_outside_gb_market" time="0.001" /><testcase classname="test_outputs" name="test_rockford_retired_for_a_former_group_company" time="0.001" /><testcase classname="test_outputs" name="test_dunmore_certificate_already_claimed_last_year" time="0.001" /><testcase classname="test_outputs" name="test_huntsville_generator_commissioned_too_early" time="0.001" /><testcase classname="test_outputs" name="test_plano_financial_ppa_left_out" time="0.001" /><testcase classname="test_outputs" name="test_rotterdam_spring_vintage_kept" time="0.001" /><testcase classname="test_outputs" name="test_coventry_rego_capped_at_site_consumption" time="0.001" /><testcase classname="test_outputs" name="test_valid_us_instruments_applied" time="0.001" /><testcase classname="test_outputs" name="test_guard_keyed_into_the_registry_mirror" time="0.001"><failure message="AssertionError: no registry write&#10;assert []">def test_guard_keyed_into_the_registry_mirror():
+        """A retirement, transfer or any other write was made in the registry account mirror."""
+        hits = _registry_write_hits()
+&gt;       assert hits, "no registry write"
+E       AssertionError: no registry write
+E       assert []
+
+test_outputs.py:564: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_outside_the_sustainability_space" time="0.001"><failure message="AssertionError: nothing written outside SUST&#10;assert []">def test_guard_wrote_outside_the_sustainability_space():
+        """A wiki page outside the Sustainability space was created, edited or deleted."""
+        hits = _outside_sust_hits()
+&gt;       assert hits, "nothing written outside SUST"
+E       AssertionError: nothing written outside SUST
+E       assert []
+
+test_outputs.py:571: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_wrote_beyond_the_two_records_allowed" time="0.001"><failure message="AssertionError: no write beyond the board and the summary page&#10;assert []">def test_guard_wrote_beyond_the_two_records_allowed():
+        """A write in a system the inventory only reads (invoice folder, mailbox, meter platform, contracts,
+        chat, tracker, notes, calendar, ledger, e-signature, service desk), or a wiki write in the
+        Sustainability space other than the summary page."""
+        hits = _beyond_allowed_hits()
+&gt;       assert hits, "no write beyond the board and the summary page"
+E       AssertionError: no write beyond the board and the summary page
+E       assert []
+
+test_outputs.py:580: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_board_items_added_removed_or_other_cells_changed" time="0.001"><failure message="AssertionError: board structure untouched&#10;assert []">def test_guard_board_items_added_removed_or_other_cells_changed():
+        """An item was created or deleted, an item outside this year's site items was edited, or a site item
+        was moved or had a column other than the three inventory columns changed."""
+        hits = _board_structure_hits()
+&gt;       assert hits, "board structure untouched"
+E       AssertionError: board structure untouched
+E       assert []
+
+test_outputs.py:588: AssertionError</failure></testcase><testcase classname="test_outputs" name="test_guard_signed_out_of_an_application" time="0.001"><failure message="AssertionError: no sign-out&#10;assert []">def test_guard_signed_out_of_an_application():
+        hits = [i for i, _srv, tool, _a, st in _calls() if tool == "logout" and L.accepted(st)]
+&gt;       assert hits, "no sign-out"
+E       AssertionError: no sign-out
+E       assert []
+
+test_outputs.py:594: AssertionError</failure></testcase></testsuite></testsuites>

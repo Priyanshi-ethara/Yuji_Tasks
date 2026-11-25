@@ -1,0 +1,39 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "a6901ded-0579-5c2d-8ae3-a0649c5c5ff2",
+        "version": "1.0.0",
+        "type": "local",
+        "digest": "sha256:1770b0353060f02daf91375222cf6df4f05bbd525cb09ffb0eac9311df97785b",
+        "path": "/tmp/qc/oracle_nop_20261116_164054/_copies/a6901ded-0579-5c2d-8ae3-a0649c5c5ff2"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "oracle",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [],
+        "kwargs": {},
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "stream": false,
+        "cpu_enforcement_policy": "limit",
+        "memory_enforcement_policy": "limit",
+        "override_cpus": 2,
+        "override_memory_mb": 4096,
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    }
+}

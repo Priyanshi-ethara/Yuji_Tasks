@@ -1,0 +1,249 @@
+{
+ "users": [
+  {
+   "id": "U46IMOGEN",
+   "name": "imogen",
+   "real_name": "Imogen Thrale",
+   "email": "imogen.thrale@sunhollow-solar.example",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U46HOLLIS",
+   "name": "hollis",
+   "real_name": "Hollis Ruddock",
+   "email": "hollis.ruddock@sunhollow-solar.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U46PETRA",
+   "name": "petra",
+   "real_name": "Petra Quiller",
+   "email": "petra.quiller@sunhollow-solar.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U46DESMOND",
+   "name": "desmond",
+   "real_name": "Desmond Faull",
+   "email": "desmond.faull@sunhollow-solar.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U46RHYS",
+   "name": "rhys",
+   "real_name": "Rhys Kessell",
+   "email": "rhys.kessell@sunhollow-solar.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U46ARTHUR",
+   "name": "arthur",
+   "real_name": "Arthur Callow",
+   "email": "arthur.callow@sunhollow-solar.example",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  }
+ ],
+ "channels": [
+  {
+   "id": "C46DESIGN",
+   "name": "design-desk",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "String design reviews (DS-6)",
+   "purpose": "String design reviews (DS-6)",
+   "creator": "U46IMOGEN",
+   "created": 1706774400,
+   "num_members": 6
+  },
+  {
+   "id": "C46SALES",
+   "name": "sales-installs",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Install bookings and customer updates",
+   "purpose": "Install bookings and customer updates",
+   "creator": "U46IMOGEN",
+   "created": 1706774400,
+   "num_members": 6
+  },
+  {
+   "id": "C46PROC",
+   "name": "procurement",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Stock and supplier news",
+   "purpose": "Stock and supplier news",
+   "creator": "U46IMOGEN",
+   "created": 1706774400,
+   "num_members": 6
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46IMOGEN"
+  },
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46HOLLIS"
+  },
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46PETRA"
+  },
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46DESMOND"
+  },
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46RHYS"
+  },
+  {
+   "channel_id": "C46DESIGN",
+   "user_id": "U46ARTHUR"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46IMOGEN"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46HOLLIS"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46PETRA"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46DESMOND"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46RHYS"
+  },
+  {
+   "channel_id": "C46SALES",
+   "user_id": "U46ARTHUR"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46IMOGEN"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46HOLLIS"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46PETRA"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46DESMOND"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46RHYS"
+  },
+  {
+   "channel_id": "C46PROC",
+   "user_id": "U46ARTHUR"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1794384000.000100",
+   "channel_id": "C46DESIGN",
+   "user_id": "U46HOLLIS",
+   "text": "W46 first pass done — 16 of 20 approved on my sheet, 4 back (two short strings, two BL-10 doubles). Sheet is w46-draft-review-hollis.csv.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794384600.000200",
+   "channel_id": "C46DESIGN",
+   "user_id": "U46RHYS",
+   "text": "Saw -19 on the car at Tallow Vale last February, for what it's worth.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794386400.000300",
+   "channel_id": "C46SALES",
+   "user_id": "U46PETRA",
+   "text": "Desk, please approve the Volta 8K jobs today — Kerrow delivered the units and customers are booked for W47.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794387000.000400",
+   "channel_id": "C46SALES",
+   "user_id": "U46DESMOND",
+   "text": "Agree with Petra. Planning note said ~16 approvals; let's not overthink it.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794390000.000500",
+   "channel_id": "C46PROC",
+   "user_id": "U46ARTHUR",
+   "text": "Reminder: inverter limits for reviews are on the Notion catalogue pages, not the Box spec sheets. AR-6.0 is 550 V since August.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794391200.000600",
+   "channel_id": "C46DESIGN",
+   "user_id": "U46IMOGEN",
+   "text": "Verdicts come from DS-6 Ed 4 only. First passes are a starting point.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794393000.000700",
+   "channel_id": "C46PROC",
+   "user_id": "U46PETRA",
+   "text": "Can someone book Shippo collections for the W46 inverters so they're on site Monday?",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ],
+ "team": {
+  "id": "T46SUNHOLLOW",
+  "name": "Sunhollow Solar",
+  "domain": "sunhollow-solar"
+ }
+}

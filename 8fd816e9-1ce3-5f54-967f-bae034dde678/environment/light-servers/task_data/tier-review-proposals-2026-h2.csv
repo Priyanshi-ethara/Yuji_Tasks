@@ -1,0 +1,21 @@
+service,tier_now,tier_proposed,state,note,proposer
+ledger-posting,Tier 1,Tier 1,no change,,anouk
+ledger-balance-read,Tier 2,Tier 2,no change,,anouk
+journal-export,Tier 3,Tier 2,proposed,for December review; not approved,anouk
+fx-rates-feed,Tier 2,Tier 2,no change,,anouk
+statement-render,Tier 2,Tier 1,proposed,for December review; not approved,anouk
+card-auth-gateway,Tier 1,Tier 1,no change,,dario
+tokenisation-vault,Tier 2,Tier 2,no change,,dario
+3ds-challenge,Tier 3,Tier 2,proposed,for December review; not approved,dario
+merchant-onboarding-api,Tier 3,Tier 3,no change,,dario
+chargeback-intake,Tier 2,Tier 2,no change,,dario
+payout-scheduler,Tier 1,Tier 1,no change,,marek
+bank-file-dispatch,Tier 2,Tier 2,no change,,marek
+payee-verification,Tier 2,Tier 1,proposed,for December review; not approved,marek
+payout-status-api,Tier 2,Tier 2,no change,,marek
+sweep-reconciler,Tier 3,Tier 2,proposed,for December review; not approved,marek
+fraud-score,Tier 1,Tier 1,no change,,kofi
+velocity-limits,Tier 2,Tier 1,proposed,for December review; not approved,kofi
+sanctions-screen,Tier 1,Tier 1,no change,,kofi
+dispute-evidence,Tier 3,Tier 2,proposed,for December review; not approved,kofi
+kyc-document-check,Tier 2,Tier 2,no change,,kofi

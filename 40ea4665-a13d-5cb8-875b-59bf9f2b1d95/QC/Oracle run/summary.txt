@@ -1,0 +1,9 @@
+ONDIR /tmp/qc/oracle_nop_20261116_165300
+uuid	agent	pytest	rubric	reward	result
+40ea4665-a13d-5cb8-875b-59bf9f2b1d95	oracle	1.0	1.0	1.0	PASS
+40ea4665-a13d-5cb8-875b-59bf9f2b1d95	nop	0.0	0.0	0.0	PASS
+
+trial: 40ea4665-a13d-5cb8-875b-59bf9f2b__iuiLQpy
+judge.json: {'ran': True, 'model': 'gpt-5.6-sol', 'transport': 'codex', 'reason': None}
+task_checksum: 4b0823a2a526c545756384c74109e5a390e00555b0782dbc44f902ebcffc0d5e
+exception_info: None

@@ -1,0 +1,342 @@
+2026-11-16 11:11:19,696 :9046 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,697 :9046 INFO event=request_success method=initialize source=client duration_ms=0.58
+2026-11-16 11:11:19,715 :9086 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,717 :9086 INFO event=request_success method=initialize source=client duration_ms=1.69
+2026-11-16 11:11:19,729 :9076 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,729 :9076 INFO event=request_success method=initialize source=client duration_ms=0.57
+2026-11-16 11:11:19,740 :9074 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,740 :9074 INFO event=request_success method=initialize source=client duration_ms=0.46
+2026-11-16 11:11:19,750 :9060 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,751 :9060 INFO event=request_success method=initialize source=client duration_ms=0.47
+2026-11-16 11:11:19,760 :9099 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,760 :9099 INFO event=request_success method=initialize source=client duration_ms=0.46
+2026-11-16 11:11:19,770 :9056 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,771 :9056 INFO event=request_success method=initialize source=client duration_ms=0.57
+2026-11-16 11:11:19,787 :9089 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,790 :9089 INFO event=request_success method=initialize source=client duration_ms=1.86
+2026-11-16 11:11:19,800 :9062 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,801 :9062 INFO event=request_success method=initialize source=client duration_ms=0.52
+2026-11-16 11:11:19,811 :9105 INFO event=request_start method=initialize source=client payload={"method":"initialize","params":{"task":null,"_meta":null,"protocolVersion":"2025-11-25","capabilities":{"experimental":null,"sampling":null,"elicitation":null,"roots":null,"tasks":null},"clientInfo":{"name":"mcp","title":null,"version":"0.1.0","websiteUrl":null,"icons":null}},"jsonrpc":"2.0","id":0} payload_type=InitializeRequest
+2026-11-16 11:11:19,811 :9105 INFO event=request_success method=initialize source=client duration_ms=0.47
+2026-11-16 11:11:19,819 :9074 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:19,820 :9074 INFO event=request_success method=tools/list source=client duration_ms=1.15
+2026-11-16 11:11:19,820 :9074 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,864 :9074 INFO event=request_success method=tools/call source=client duration_ms=43.45
+2026-11-16 11:11:19,867 :9074 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:19,867 :9074 INFO event=request_success method=tools/list source=client duration_ms=0.16
+2026-11-16 11:11:19,872 :9074 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_messages","arguments":{"max_results":50,"session_id":"session_hMB5e3p8P4QrvhvmtBRdAE"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,873 :9074 INFO event=request_success method=tools/call source=client duration_ms=0.74
+2026-11-16 11:11:19,877 :9074 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_message","arguments":{"message_id":"msg-sor-1001","session_id":"session_hMB5e3p8P4QrvhvmtBRdAE"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,878 :9074 INFO event=request_success method=tools/call source=client duration_ms=0.54
+2026-11-16 11:11:19,882 :9060 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:19,884 :9060 INFO event=request_success method=tools/list source=client duration_ms=1.06
+2026-11-16 11:11:19,884 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,916 :9060 INFO event=request_success method=tools/call source=client duration_ms=31.83
+2026-11-16 11:11:19,920 :9060 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:19,920 :9060 INFO event=request_success method=tools/list source=client duration_ms=0.17
+2026-11-16 11:11:19,924 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_spaces","arguments":{"session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,925 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.65
+2026-11-16 11:11:19,928 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_content","arguments":{"space_key":"MLP","limit":100,"session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,929 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.81
+2026-11-16 11:11:19,935 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610001","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,935 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.45
+2026-11-16 11:11:19,939 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610002","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,939 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:19,944 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610003","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,944 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:19,948 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610020","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,948 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.23
+2026-11-16 11:11:19,952 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610021","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,952 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:19,955 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610022","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,956 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:19,959 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610023","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,959 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.34
+2026-11-16 11:11:19,962 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610024","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,963 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:19,966 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610010","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,966 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:19,969 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610011","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,969 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.36
+2026-11-16 11:11:19,973 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610012","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,973 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:19,976 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610013","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,977 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:19,980 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610014","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,981 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.72
+2026-11-16 11:11:19,985 :9060 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"get_content","arguments":{"content_id":"610015","session_id":"session_PNtRRGrJQDcbiYGymF4aNr"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:19,985 :9060 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:19,990 :9046 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:19,991 :9046 INFO event=request_success method=tools/list source=client duration_ms=1.4
+2026-11-16 11:11:19,992 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,027 :9046 INFO event=request_success method=tools/call source=client duration_ms=35.6
+2026-11-16 11:11:20,031 :9046 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,031 :9046 INFO event=request_success method=tools/list source=client duration_ms=0.18
+2026-11-16 11:11:20,034 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_bases","arguments":{"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,035 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.67
+2026-11-16 11:11:20,038 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_tables","arguments":{"base_id":"app_sorrelml","session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,039 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.44
+2026-11-16 11:11:20,042 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_records","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,042 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.63
+2026-11-16 11:11:20,046 :9056 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,048 :9056 INFO event=request_success method=tools/list source=client duration_ms=1.2
+2026-11-16 11:11:20,048 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,084 :9056 INFO event=request_success method=tools/call source=client duration_ms=36.29
+2026-11-16 11:11:20,088 :9056 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,089 :9056 INFO event=request_success method=tools/list source=client duration_ms=0.24
+2026-11-16 11:11:20,093 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"ft-clm-07.launch.yaml","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,094 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.9
+2026-11-16 11:11:20,097 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"781100","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,097 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.43
+2026-11-16 11:11:20,100 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"ft-uw-03.launch.yaml","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,101 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,106 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"781101","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,106 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.34
+2026-11-16 11:11:20,110 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"ft-fnol-11.launch.yaml","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,111 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.26
+2026-11-16 11:11:20,114 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"781102","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,114 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.23
+2026-11-16 11:11:20,118 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"ft-sub-02.launch.yaml","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,118 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.45
+2026-11-16 11:11:20,121 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"781103","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,122 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,125 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-clm-07","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,125 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,129 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783100","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,129 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.36
+2026-11-16 11:11:20,132 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-uw-03","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,133 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,136 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783101","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,136 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.23
+2026-11-16 11:11:20,139 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-fnol-11","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,139 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.37
+2026-11-16 11:11:20,143 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783102","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,143 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,146 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-sub-02","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,146 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,149 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783103","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,149 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.35
+2026-11-16 11:11:20,153 :9099 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,154 :9099 INFO event=request_success method=tools/list source=client duration_ms=1.04
+2026-11-16 11:11:20,154 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,193 :9099 INFO event=request_success method=tools/call source=client duration_ms=38.97
+2026-11-16 11:11:20,197 :9099 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,197 :9099 INFO event=request_success method=tools/list source=client duration_ms=0.16
+2026-11-16 11:11:20,201 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"Dataset cards","filter_value":"database","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,202 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.65
+2026-11-16 11:11:20,205 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"query_database","arguments":{"database_id":"db-sor-dataset-cards","page_size":100,"session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,206 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.92
+2026-11-16 11:11:20,210 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2140","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,211 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.53
+2026-11-16 11:11:20,215 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0006","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,215 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,218 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2140","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,218 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.51
+2026-11-16 11:11:20,222 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2141","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,222 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.24
+2026-11-16 11:11:20,225 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0015","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,226 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:20,229 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2141","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,229 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.17
+2026-11-16 11:11:20,232 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2207","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,232 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.37
+2026-11-16 11:11:20,235 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0024","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,236 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:20,238 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2207","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,239 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.16
+2026-11-16 11:11:20,241 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2291","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,242 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.7
+2026-11-16 11:11:20,245 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0033","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,246 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:20,249 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2291","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,249 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.16
+2026-11-16 11:11:20,252 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2318","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,252 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.39
+2026-11-16 11:11:20,255 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0042","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,255 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:20,258 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2318","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,258 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.16
+2026-11-16 11:11:20,261 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2219","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,262 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.42
+2026-11-16 11:11:20,266 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0051","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,266 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,269 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2219","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,270 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,273 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2330","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,273 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.38
+2026-11-16 11:11:20,276 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0060","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,276 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:20,279 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2330","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,279 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,283 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2252","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,283 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.42
+2026-11-16 11:11:20,287 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0069","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,287 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,290 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2252","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,290 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.17
+2026-11-16 11:11:20,294 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2253","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,294 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.38
+2026-11-16 11:11:20,298 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0078","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,298 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,301 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2253","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,301 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,304 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2266","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,305 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.39
+2026-11-16 11:11:20,308 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0087","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,309 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,311 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2266","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,312 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,315 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2304","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,315 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.37
+2026-11-16 11:11:20,318 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0096","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,318 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.17
+2026-11-16 11:11:20,321 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2304","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,321 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:20,324 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2290","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,325 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.5
+2026-11-16 11:11:20,328 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0105","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,328 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.19
+2026-11-16 11:11:20,331 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2290","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,331 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.16
+2026-11-16 11:11:20,334 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2229","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,335 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.36
+2026-11-16 11:11:20,338 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0114","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,338 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,341 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2229","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,341 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.17
+2026-11-16 11:11:20,344 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"page-sor-ds-2275","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,344 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.34
+2026-11-16 11:11:20,348 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_block_children","arguments":{"block_id":"blk-sor-0123","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,348 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,351 :9099 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_comments","arguments":{"page_id":"page-sor-ds-2275","session_id":"session_nZejzUeaCX2sqSH7xuVqj4"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,351 :9099 INFO event=request_success method=tools/call source=client duration_ms=0.18
+2026-11-16 11:11:20,355 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dedup-ft-clm-07","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,355 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.28
+2026-11-16 11:11:20,359 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"782100","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,359 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.23
+2026-11-16 11:11:20,362 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dedup-ft-uw-03","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,363 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.81
+2026-11-16 11:11:20,366 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"782101","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,366 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.21
+2026-11-16 11:11:20,370 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dedup-ft-fnol-11","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,370 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.25
+2026-11-16 11:11:20,373 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"782102","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,374 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.45
+2026-11-16 11:11:20,377 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dedup-ft-sub-02","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,377 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,381 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"782103","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,381 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.22
+2026-11-16 11:11:20,384 :9062 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,386 :9062 INFO event=request_success method=tools/list source=client duration_ms=1.09
+2026-11-16 11:11:20,386 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,418 :9062 INFO event=request_success method=tools/call source=client duration_ms=32.19
+2026-11-16 11:11:20,422 :9062 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,422 :9062 INFO event=request_success method=tools/list source=client duration_ms=0.18
+2026-11-16 11:11:20,426 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_events","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,427 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.74
+2026-11-16 11:11:20,430 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_hosts","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,431 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.4
+2026-11-16 11:11:20,435 :9089 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,439 :9089 INFO event=request_success method=tools/list source=client duration_ms=3.62
+2026-11-16 11:11:20,440 :9089 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,484 :9089 INFO event=request_success method=tools/call source=client duration_ms=44.18
+2026-11-16 11:11:20,488 :9089 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,489 :9089 INFO event=request_success method=tools/list source=client duration_ms=0.28
+2026-11-16 11:11:20,494 :9089 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_deployments","arguments":{"namespace":"ft-pool-north","session_id":"session_3xXGgoQ8zzt3gsnQ9kTjau"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,495 :9089 INFO event=request_success method=tools/call source=client duration_ms=1.13
+2026-11-16 11:11:20,502 :9089 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_deployments","arguments":{"namespace":"ft-pool-south","session_id":"session_3xXGgoQ8zzt3gsnQ9kTjau"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,502 :9089 INFO event=request_success method=tools/call source=client duration_ms=0.78
+2026-11-16 11:11:20,509 :9105 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,511 :9105 INFO event=request_success method=tools/list source=client duration_ms=1.22
+2026-11-16 11:11:20,511 :9105 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,556 :9105 INFO event=request_success method=tools/call source=client duration_ms=44.56
+2026-11-16 11:11:20,563 :9105 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,564 :9105 INFO event=request_success method=tools/list source=client duration_ms=0.17
+2026-11-16 11:11:20,568 :9105 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_schedules","arguments":{"session_id":"session_FYq8h4Ybxhgy82m6Q8EeiE"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,569 :9105 INFO event=request_success method=tools/call source=client duration_ms=0.72
+2026-11-16 11:11:20,574 :9105 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_users","arguments":{"session_id":"session_FYq8h4Ybxhgy82m6Q8EeiE"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,574 :9105 INFO event=request_success method=tools/call source=client duration_ms=0.46
+2026-11-16 11:11:20,580 :9086 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,584 :9086 INFO event=request_success method=tools/list source=client duration_ms=4.06
+2026-11-16 11:11:20,584 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,627 :9086 INFO event=request_success method=tools/call source=client duration_ms=42.68
+2026-11-16 11:11:20,632 :9086 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,632 :9086 INFO event=request_success method=tools/list source=client duration_ms=0.17
+2026-11-16 11:11:20,641 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"jql":"project = LCH","max_results":100,"session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,642 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.92
+2026-11-16 11:11:20,648 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"jql":"project = MLR","max_results":100,"session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,648 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.3
+2026-11-16 11:11:20,655 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"jql":"project = CAP","max_results":100,"session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,655 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.26
+2026-11-16 11:11:20,660 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"jql":"project = DQ","max_results":100,"session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,661 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.57
+2026-11-16 11:11:20,665 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_projects","arguments":{"session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,666 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.46
+2026-11-16 11:11:20,670 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt07clm4k","fields":{"Readiness":"Held — capacity approval","Grad accum":16,"Reserved hours":11,"Charged GPU-hours":176},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,674 :9046 INFO event=request_success method=tools/call source=client duration_ms=3.5
+2026-11-16 11:11:20,678 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt11fn2c6","fields":{"Readiness":"Held — sign-off and capacity","Peak LR":0.0000335,"Reserved hours":11,"Charged GPU-hours":176},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,678 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.35
+2026-11-16 11:11:20,682 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt02sb9d1","fields":{"Readiness":"Ready to launch","Reserved hours":8,"Charged GPU-hours":128},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,682 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.31
+2026-11-16 11:11:20,686 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt03uw8b2","fields":{"Readiness":"Blocked — data"},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,687 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.5
+2026-11-16 11:11:20,691 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_events","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,691 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.33
+2026-11-16 11:11:20,696 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_hosts","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,697 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.34
+2026-11-16 11:11:20,702 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-clm-07","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,703 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.65
+2026-11-16 11:11:20,708 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783100","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,709 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.27
+2026-11-16 11:11:20,713 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-uw-03","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,714 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.31
+2026-11-16 11:11:20,719 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783101","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,719 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.55
+2026-11-16 11:11:20,724 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-fnol-11","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,724 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.31
+2026-11-16 11:11:20,729 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783102","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,729 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.31
+2026-11-16 11:11:20,733 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"search","arguments":{"query":"dryrun-ft-sub-02","type":"file","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,734 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.46
+2026-11-16 11:11:20,740 :9056 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"download_file","arguments":{"file_id":"783103","session_id":"session_Cf4MCHdsYMQBGGqkkNFsgo"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,740 :9056 INFO event=request_success method=tools/call source=client duration_ms=0.33
+2026-11-16 11:11:20,746 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt07clm4k","fields":{"Readiness":"Held — capacity approval","Grad accum":16,"Reserved hours":12,"Charged GPU-hours":192},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,746 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.3
+2026-11-16 11:11:20,750 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"update_record","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","record_id":"recSorFt02sb9d1","fields":{"Readiness":"Held — capacity approval","Reserved hours":11,"Charged GPU-hours":176},"session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,750 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.27
+2026-11-16 11:11:20,754 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"CAP","issue_type":"Capacity request","summary":"Capacity: FT-CLM-07 on ft-pool-north (192 GPU-h)","description":"FT-CLM-07 on ft-pool-north: reserved 12 h x 16 GPUs on NVIDIA A100 80GB (factor 1.0) = 192 A100-equivalent GPU-hours, above the 160 per-launch allowance.","assignee":"acc-joaquim-brandao","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,755 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.75
+2026-11-16 11:11:20,760 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"LCH","issue_type":"Change","summary":"Launch FT-CLM-07 — 2026-11-19","description":"FT-CLM-07, RCP-CLM-3, 16 GPUs on ft-pool-north, reserved 12 h from 2026-11-19T06:00:00Z, charged 192 GPU-h. Readiness: Held — capacity approval.","assignee":"acc-halvard-quist","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,760 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.42
+2026-11-16 11:11:20,764 :9076 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,766 :9076 INFO event=request_success method=tools/list source=client duration_ms=1.48
+2026-11-16 11:11:20,766 :9076 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"login","arguments":{"os_cfg":{}}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,802 :9076 INFO event=request_success method=tools/call source=client duration_ms=35.76
+2026-11-16 11:11:20,806 :9076 INFO event=request_start method=tools/list source=client payload={"method":"tools/list","params":null} payload_type=ListToolsRequest
+2026-11-16 11:11:20,806 :9076 INFO event=request_success method=tools/list source=client duration_ms=0.17
+2026-11-16 11:11:20,811 :9076 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_event","arguments":{"calendar_id":"cluster-reservations@sorrel-insurance.example","summary":"GPU reservation — FT-CLM-07","start":{"dateTime":"2026-11-19T06:00:00Z","timeZone":"UTC"},"end":{"dateTime":"2026-11-19T18:00:00Z","timeZone":"UTC"},"description":"FT-CLM-07: 16 GPUs on ft-pool-north, 12 h reserved, change ticket LCH-147.","location":"ft-pool-north","session_id":"session_QpAYQV2MHBQMUBKK2CYW9S"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,812 :9076 INFO event=request_success method=tools/call source=client duration_ms=1.25
+2026-11-16 11:11:20,816 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"MLR","issue_type":"Review","summary":"Sign-off: FT-FNOL-11 tokens per update +25% vs RCP-FNOL-4","description":"FT-FNOL-11 departs from RCP-FNOL-4: tokens per update 327,680 vs 262,144 (+25.0%). Peak LR rescaled to 3.35e-5.","assignee":"acc-ifeoma-hartley","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,816 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.3
+2026-11-16 11:11:20,820 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"CAP","issue_type":"Capacity request","summary":"Capacity: FT-FNOL-11 on ft-pool-south (176 GPU-h)","description":"FT-FNOL-11 on ft-pool-south: reserved 11 h x 8 GPUs on NVIDIA H100 80GB (factor 2.0) = 176 A100-equivalent GPU-hours, above the 160 per-launch allowance.","assignee":"acc-henrike-solberg","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,820 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,823 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"LCH","issue_type":"Change","summary":"Launch FT-FNOL-11 — 2026-11-19","description":"FT-FNOL-11, RCP-FNOL-4, 8 GPUs on ft-pool-south, reserved 11 h from 2026-11-19T06:00:00Z, charged 176 GPU-h. Readiness: Held — sign-off and capacity.","assignee":"acc-halvard-quist","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,823 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.33
+2026-11-16 11:11:20,827 :9076 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_event","arguments":{"calendar_id":"cluster-reservations@sorrel-insurance.example","summary":"GPU reservation — FT-FNOL-11","start":{"dateTime":"2026-11-19T06:00:00Z","timeZone":"UTC"},"end":{"dateTime":"2026-11-19T17:00:00Z","timeZone":"UTC"},"description":"FT-FNOL-11: 8 GPUs on ft-pool-south, 11 h reserved, change ticket LCH-148.","location":"ft-pool-south","session_id":"session_QpAYQV2MHBQMUBKK2CYW9S"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,827 :9076 INFO event=request_success method=tools/call source=client duration_ms=0.27
+2026-11-16 11:11:20,832 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"CAP","issue_type":"Capacity request","summary":"Capacity: FT-SUB-02 on ft-pool-north (176 GPU-h)","description":"FT-SUB-02 on ft-pool-north: reserved 11 h x 16 GPUs on NVIDIA A100 80GB (factor 1.0) = 176 A100-equivalent GPU-hours, above the 160 per-launch allowance.","assignee":"acc-joaquim-brandao","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,833 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.25
+2026-11-16 11:11:20,836 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"LCH","issue_type":"Change","summary":"Launch FT-SUB-02 — 2026-11-19","description":"FT-SUB-02, RCP-SUB-1, 16 GPUs on ft-pool-north, reserved 11 h from 2026-11-19T06:00:00Z, charged 176 GPU-h. Readiness: Held — capacity approval.","assignee":"acc-halvard-quist","session_id":"session_47sEiqquNgf9TJWyowhdfU"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,836 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.2
+2026-11-16 11:11:20,840 :9076 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_event","arguments":{"calendar_id":"cluster-reservations@sorrel-insurance.example","summary":"GPU reservation — FT-SUB-02","start":{"dateTime":"2026-11-19T06:00:00Z","timeZone":"UTC"},"end":{"dateTime":"2026-11-19T17:00:00Z","timeZone":"UTC"},"description":"FT-SUB-02: 16 GPUs on ft-pool-north, 11 h reserved, change ticket LCH-149.","location":"ft-pool-north","session_id":"session_QpAYQV2MHBQMUBKK2CYW9S"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,840 :9076 INFO event=request_success method=tools/call source=client duration_ms=0.24
+2026-11-16 11:11:20,844 :9086 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"create_issue","arguments":{"project_key":"DQ","issue_type":"Data issue","summary":"FT-UW-03: uw-faq-paraphrase-v1 derived from the evaluation set","description":"FT-UW-03 is Blocked — data under RB-ML-014 4.2: training dataset uw-faq-paraphrase-v1 (DS-2318) was built from items sampled from DS-2291, the run's evaluation set. Remove the derived set from the run or replace the evaluation set, then re-run the contamination check.","assignee":"acc-greta-holmqvist","... payload_type=CallToolRequestParams
+2026-11-16 11:11:20,844 :9086 INFO event=request_success method=tools/call source=client duration_ms=0.39
+2026-11-16 11:11:20,847 :9046 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_records","arguments":{"base_id":"app_sorrelml","table_id_or_name":"tbl_ftruns","session_id":"session_5PrCeMER6xpfM3ehVbxhn9"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,848 :9046 INFO event=request_success method=tools/call source=client duration_ms=0.54
+2026-11-16 11:11:20,852 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_events","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,853 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.28
+2026-11-16 11:11:20,856 :9062 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"list_hosts","arguments":{"session_id":"session_HbNKDJCs5zgZFYStEgzi2f"}} payload_type=CallToolRequestParams
+2026-11-16 11:11:20,856 :9062 INFO event=request_success method=tools/call source=client duration_ms=0.25
+2026-11-16 11:11:20,860 :9074 INFO event=request_start method=tools/call source=client payload={"task":null,"_meta":null,"name":"send_message","arguments":{"to_addr":"odile.marchetti@sorrel-insurance.example","subject":"Launch readiness — 19 November window","body":"Launch readiness for the 2026-11-19 window (opens 06:00 UTC). Four runs were booked; 0 are ready to launch, 3 are held and 1 is blocked. Everything below follows RB-ML-014.\n\nDry runs: while I was preparing the window, ft-launcher 4.2.2 (FTL-418) was rolled out. On 4.2.1 the dry-run step timer stopped before the gradient redu... payload_type=CallToolRequestParams
+2026-11-16 11:11:20,861 :9074 INFO event=request_success method=tools/call source=client duration_ms=0.76

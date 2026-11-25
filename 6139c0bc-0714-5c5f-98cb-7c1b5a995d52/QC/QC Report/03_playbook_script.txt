@@ -1,0 +1,264 @@
+################ §0 loader
+/private/tmp/claude-501/-Users-mac-Desktop-Trinity-Final/e6a922c8-e9a1-4bd3-b850-2da91243ffd9/scratchpad/qcfinal_T02/bundle/6139c0bc-0714-5c5f-98cb-7c1b5a995d52
+['opus-5'] ['run_1']
+(exit 0)
+################ §1 model
+== opus-5/run_1
+folder                             opus-5
+pass_summary.model                 opus-5
+config.agent.model_name            anthropic/claude-opus-5
+result.agent_info.model_info.name  claude-opus-5
+report.model / model_full          opus-5 / anthropic/claude-opus-5
+trajectory.steps[].model_name      ['anthropic/claude-opus-5']
+agent (config / result / trajectory) openhands-sdk / openhands-sdk v1.59.0 / {'name': 'openhands-sdk', 'tool_definitions': None, 'version': '1.59.0'}
+schema_version                     ATIF-v1.5  ok
+reasoning_effort (config.agent.kwargs) high
+distinct models after normalising  ['opus-5']  ok
+models seen mid-run                1  ok
+(exit 0)
+################ §1.5 score sanity
+ground truth: test_weights | 31 criteria in judge.toml | policy {'pytest': 0.5, 'rubric': 0.5}
+== opus-5/run_1
+channels                           {'reward': 0.3226, 'pytest': 0.3452, 'rubric': 0.3}  from {'reward': 'reward.json', 'pytest': 'report.json.channels', 'rubric': 'report.json.channels'}
+1.5a reward agreement              {'reward.json/channels': 0.3226, 'report.final_reward': 0.3226, 'result.verifier_result': 0.3226, 'pass_summary.per_run.combined': 0.3226}  spread=0.0  ok
+1.5b pytest ledger                 source=grade_report.json rows=35 earned=29.0 penalty=0.0 total_positive=84 guard_polarity=pass_charges gate=None
+1.5b pytest recompute              0.3452 vs reported 0.3452  ok
+1.5b weighted tests vs ledger rows weighted=35 ledger=35 weighted_not_run=[] run_unweighted=[]
+1.5b weight drift (ledger vs test_weights) none
+1.5b guards tripped / missed       [] / 11 missed
+1.5b tests that raised             none
+1.5c judge                         ran=True model=gpt-5.6-sol reason=None
+1.5c rubric recompute              0.3 vs reported 0.3 / channel 0.3  ok
+1.5c answers                       n=31 yes=18 no=13 raw values=['no', 'yes'] errors=0
+1.5c judge.toml vs graded          missing_in_graded=[] extra_in_graded=[] weight_or_text_drift=[]
+1.5c report.rubric count           31 (ok)
+1.5d polarity mismatches           none
+1.5d source weights                positive=60 penalty=7 normalised positives sum=1.0
+1.5e combination                   weights={'pytest': 0.5, 'rubric': 0.5} -> 0.3226 vs reward 0.3226  ok
+1.5f run                           exception_info=None errored=False state_capture_failed=None agent_steps=132 last_step_source=agent
+1.5f final message                 final_message.md=10707 chars, last agent text=10707 chars, same=True
+1.5f tokens/cost                   final_metrics={'total_prompt_tokens': 9888230, 'total_completion_tokens': 66444, 'total_cached_tokens': 9595512, 'total_cost_usd': 8.288208500000001} agent_result={'n_input_tokens': 9888230, 'n_cache_tokens': 9595512, 'n_output_tokens': 66444, 'cost_usd': 8.288208500000001}
+(exit 0)
+################ §1.6 aggregates
+== opus-5
+run folders                        ['run_1']
+1.6a counts                        runs=1 completed=1 errored=0 per_run=1 folders=1  ok
+1.6b threshold                     pass_summary=0.7 test_weights=0.7 pass@N=0.7  ok
+1.6c per_run.combined == run reward mismatch runs=none
+1.6c pass rule (reward >= threshold, not errored) violations=none
+1.6d average_combined_score        reported=0.3226 recomputed=0.3226 over 1 runs  ok
+1.6d average_pytest_score          reported=0.3452 recomputed=0.3452 over 1 runs  ok
+1.6d average_rubric_score          reported=0.3 recomputed=0.3 over 1 runs  ok
+1.6e flags                         runs_without_rubric=[] runs_with_state_capture_failed=[] errored_run_indices=[] judge_models=['gpt-5.6-sol']
+1.6f pass@N.json                   passed=0 (recomputed 0) pass_rate=0.0 (recomputed 0.0) attempts_per_task=1 at=[1]
+1.6f reward_per_run vs per_run     drift=none mean_reward_per_trial=0.3226 vs 0.3226
+1.6f failure_mode_histogram        {'partial': 1} sum=1 runs=1  ok
+1.6g jobs.json                     [('6139c0bc-0714-5c5f-98cb-7c1b5a995d52-opus-5-20261112-081015-regraded', 1)]
+1.6h failure modes                 ['partial']
+(exit 0)
+################ §2 failure
+== opus-5/run_1
+2.0 passed                         False  reward=0.3226 threshold=0.7 failure_mode=partial
+2.1a state capture                 failed=None note=None end_env.json=shipped
+2.1b trial exception / errored     None / False
+2.1c judge                         ran=True reason=None rubric_judge_failed.txt=absent
+2.1d tool calls                    total=131 mcp=116 local=15  ok
+2.1e tool results that look like server errors 0
+   2.2a tool inventory (count, tool):
+        74  LightMonday_update_item
+        10  terminal
+         5  LightBox_download_file
+         5  LightAirtable_list_records
+         5  file_editor
+         4  LightBox_get_folder_items
+         4  LightEnergy_list_readings
+         2  LightConfluence_list_content
+         2  LightAirtable_list_tables
+         2  LightMonday_get_board_items
+         2  LightConfluence_update_content
+         1  LightConfluence_login
+         1  LightMonday_login
+         1  LightConfluence_list_comments
+         1  LightBox_login
+         1  LightAirtable_login
+         1  LightEnergy_login
+         1  LightSalesforce_login
+         1  LightBox_search
+         1  LightAirtable_list_bases
+         1  LightOutlook_login
+         1  LightMonday_list_boards
+         1  LightOutlook_list_messages
+         1  LightSalesforce_soql_query
+         1  LightSlack_login
+         1  LightJira_login
+         1  LightJira_search
+2.2b per server [reads, writes]    {'(local)': [15, 0], 'LightConfluence': [4, 2], 'LightMonday': [4, 74], 'LightBox': [11, 0], 'LightAirtable': [9, 0], 'LightEnergy': [5, 0], 'LightSalesforce': [2, 0], 'LightOutlook': [2, 0], 'LightSlack': [1, 0], 'LightJira': [2, 0]}
+2.2c wired servers never called    ['LightDocuSign', 'LightGoogleCalendar', 'LightMicrosoftTeams', 'LightNotion', 'LightServiceNow', 'LightTrello', 'LightXero']
+2.2d guards tripped                none
+2.2e positive tests missed         11: ['test_salem_location_on_the_validated_registers', 'test_salem_market_on_the_validated_registers', 'test_eindhoven_location_on_the_validated_registers', 'test_eindhoven_market_on_the_validated_registers', 'test_macon_location_on_the_validated_registers', 'test_macon_market_on_the_validated_registers', 'test_elkhart_location_on_the_validated_registers', 'test_elkhart_market_on_the_validated_registers', 'test_summary_location_total_of_the_struck_board', 'test_summary_market_total_of_the_struck_board', 'test_energy_platform_read_again_before_the_strike']
+   2.2f final message (first 1200 chars):
+      The inventory is struck. Everything is complete, and I've stayed signed in to all apps as you asked.
+      
+      ## Hand-over — FY2026 Scope 2 inventory (SUST-412)
+      
+      **What was written, and only there:** the 22 items on the monday.com board "FY2026 Scope 2 inventory" (three columns each), and the existing SUST page "FY2026 Scope 2 inventory — summary" (title kept, now version 3). Nothing else was created, edited or deleted anywhere — no registry change, no Box upload, no mail, no Slack/Teams/Jira/Notion/Trello/ServiceNow/Xero/DocuSign/Salesforce/calendar writes, and the FY2025 board and the Facilities/Finance spaces were untouched.
+      
+      **Totals as published:** Location-based **45,815.7 tCO2e** · Market-based **41,527.9 tCO2e**
+      
+      ### Factor set applied, and why
+      
+      **EFS-2025 at revision 2025.2** — the distributed `EFS-2025.1` CSV read together with **Erratum 2 of 2026-02-17**. Schedule A of the protocol names exactly this for FY2026, and clause 3.2 bars an edition published during or after the fiscal year. EFS-2026.1 (14 August 2026) is therefore *not* used; the Steering Committee re-confirmed this on 17 September. Erratum 2 moves three rows: US-TX4 location 0.3842 → **0.4127**, PL residual mix 0.813
+   2.2g criteria judged no (id, weight, description -> reasoning):
+      (1, 0.0833) The reply reports that the energy platform's month-end register readings changed while the work was under way:
+          WHY: The final answer says five estimated months were “verified against the energy platform” (lines 46–54), but it never reports MDV-2026-11 replacing manually loaded/backfilled month-end readings while work was underway or a
+      (2, 0.0833) The reply gives the metered consumption used in place of Salem's (TPC-10) estimated February 2026 invoice as 3
+          WHY: Line 53 reports Salem February as 304,880 kWh, not 322,880 kWh.
+      (3, 0.0833) The reply gives the metered consumption used in place of Eindhoven's (TPC-17) estimated June 2026 invoice as 2
+          WHY: Line 54 reports Eindhoven June as 228,530 kWh, not 236,410 kWh.
+      (4, 0.0833) The reply gives the metered consumption used in place of Macon's (TPC-08) estimated April 2026 invoice as 446,
+          WHY: Line 51 reports Macon April as 411,337 kWh, not 446,367 kWh.
+      (5, 0.0833) The reply gives the metered consumption used in place of Elkhart's (TPC-06) estimated December 2025 invoice as
+          WHY: Line 50 reports Elkhart December as 389,870 kWh, not 421,190 kWh.
+      (6, 0.0833) The reply gives FY2026 electricity of about 3,860.6 MWh for Salem (3,860.1 to 3,861.1 MWh) and about 2,760.4 M
+          WHY: The site table reports Salem at 3,842.6 MWh and Eindhoven at 2,752.6 MWh (lines 28 and 35), outside the required ranges.
+      (7, 0.0833) The reply gives FY2026 electricity of about 5,301.6 MWh for Macon (5,301.1 to 5,302.1 MWh) and about 5,598.8 M
+          WHY: The site table reports Macon at 5,266.5 MWh and Elkhart at 5,567.5 MWh (lines 24 and 26), outside the required ranges.
+      (8, 0.0833) The reply names Salem, Eindhoven, Macon and Elkhart (all four) as the sites whose figures the validated regist
+          WHY: Although lines 50–54 include Elkhart, Macon, Salem, and Eindhoven, the answer does not say validated register readings arriving during the work moved all four sites’ figures.
+      (21, 0.0167) The reply gives clause 6.2 as the reason NRR-2024-0562-WND (Tyler, TPC-09) was not applied: its vintage lies o
+          WHY: Line 80 cites clause 6.2 and says the Jan–Jun 2024 vintage is outside the window, but the answer never explicitly states the complete required window ending 31 December 2026.
+      (25, 0.0167) The reply gives clause 6.7 as the reason NRR-2025-0975-HYD (Huntsville, TPC-13) was not applied: its generator
+          WHY: Line 82 cites clause 6.7 and gives the 2008-05-14 commissioning date, but it does not explicitly state the required 1 January 2011 eligibility cutoff.
+      (29, -0.05) The reply presents EFS-2026.1 as the factor set used for the FY2026 figures.
+          WHY: Line 11 explicitly says EFS-2026.1 was not used and identifies EFS-2025 revision 2025.2 as the applied factor set.
+      (30, -0.05) The reply says part of Coventry's REGO volume was applied to Leeds.
+          WHY: Line 72 explicitly says Coventry’s surplus was not moved to Leeds.
+      (31, -0.0167) The reply gives Gdańsk FY2026 electricity as about 5 MWh (under 10 MWh) as the quantity used.
+          WHY: Lines 33 and 42 explicitly use 4,950.0 MWh and identify the approximately 5 MWh interpretation as an error.
+(exit 0)
+################ §3 reasoning
+== opus-5/run_1
+agent steps / with reasoning       132 / 26  (19298 chars) field(s) used: ['thought']
+reasoning_effort requested         high
+per-step metrics present           0 of 132
+verdict                            present
+(exit 0)
+################ §4 overlap
+tests=35 criteria=31
+| verdict | pytest | w | S1 name | S2 literals | crit | criterion (snip) |
+|---|---|---|---|---|---|---|
+| PARTIAL | `test_rockford_retired_for_a_former_group_company` | 1 | 0.19 | 0.50 | 23 (+1) | The reply gives clause 6.5 as the reason NRR-2025-1420-WND (Rockford,  |
+| PARTIAL | `test_leeds_guarantee_of_origin_outside_gb_market` | 1 | 0.16 | 0.50 | 22 (+1) | The reply gives clause 6.3 as the reason AIB-NL-2025-77120 (Leeds, TPC |
+| PARTIAL | `test_dunmore_certificate_already_claimed_last_year` | 1 | 0.14 | 0.50 | 24 (+1) | The reply gives clause 6.6 as the reason NRR-2025-0388-WND (Dunmore, T |
+| PARTIAL | `test_gdansk_mwh_billed_account_scaled_to_kwh` | 1 | 0.14 | 0.50 | 15 (+1) | The reply gives Gdańsk (TPC-15) FY2026 electricity as about 4,950 MWh  |
+| PARTIAL | `test_stuttgart_cells_follow_the_reissued_september_invoice` | 3 | 0.14 | 0.50 | 9 (+1) | The reply reports that reissued invoice KEV-RE-26-0819 replaced Leipzi |
+| PARTIAL | `test_greer_invoice_over_its_bms_meter` | 1 | 0.14 | 0.50 | 19 (+1) | The reply says Greer (TPC-03) electricity was taken from the invoices, |
+| PARTIAL | `test_macon_market_on_the_validated_registers` | 5 | 0.14 | 0.50 | 12 (+1) | The reply reports that the registry reversed the retirement of NRR-202 |
+| PARTIAL | `test_leipzig_cells_follow_the_reissued_august_invoice` | 3 | 0.13 | 0.50 | 9 (+1) | The reply reports that reissued invoice KEV-RE-26-0819 replaced Leipzi |
+| PARTIAL | `test_elkhart_market_on_the_validated_registers` | 5 | 0.13 | 0.50 | 5 (+5) | The reply gives the metered consumption used in place of Elkhart's (TP |
+| PARTIAL | `test_huntsville_generator_commissioned_too_early` | 1 | 0.12 | 0.50 | 25 (+1) | The reply gives clause 6.7 as the reason NRR-2025-0975-HYD (Huntsville |
+| INDEPENDENT | `test_salem_location_on_the_validated_registers` | 5 | 0.04 | 0.50 | 2 (+5) | The reply gives the metered consumption used in place of Salem's (TPC- |
+| INDEPENDENT | `test_eindhoven_location_on_the_validated_registers` | 5 | 0.04 | 0.50 | 3 (+5) | The reply gives the metered consumption used in place of Eindhoven's ( |
+| INDEPENDENT | `test_elkhart_location_on_the_validated_registers` | 5 | 0.04 | 0.50 | 5 (+5) | The reply gives the metered consumption used in place of Elkhart's (TP |
+| INDEPENDENT | `test_macon_location_on_the_validated_registers` | 5 | 0.04 | 0.50 | 4 (+5) | The reply gives the metered consumption used in place of Macon's (TPC- |
+| INDEPENDENT | `test_chilled_water_cop_rule` | 1 | 0.00 | 0.50 | 16 (+1) | The reply states at least two of the three Erratum 2 corrections (the  |
+| INDEPENDENT | `test_tyler_certificate_outside_vintage_window` | 1 | 0.15 | 0.33 | 21 (+1) | The reply gives clause 6.2 as the reason NRR-2024-0562-WND (Tyler, TPC |
+| INDEPENDENT | `test_registry_statuses_at_the_strike` | 3 | 0.11 | 0.33 | 13 (+1) | The reply reports that NRR-2026-0091-SOL (Elkhart, TPC-06) changed to  |
+| INDEPENDENT | `test_salem_market_on_the_validated_registers` | 5 | 0.04 | 0.33 | 2 (+5) | The reply gives the metered consumption used in place of Salem's (TPC- |
+| INDEPENDENT | `test_eindhoven_market_on_the_validated_registers` | 5 | 0.04 | 0.33 | 3 (+5) | The reply gives the metered consumption used in place of Eindhoven's ( |
+| INDEPENDENT | `test_steam_enthalpy_and_supplier_factor_rules` | 1 | 0.23 | 0.00 | 17 (+1) | The reply gives Hartwell steam as about 19,294.7 MMBtu (19,292 to 19,2 |
+| INDEPENDENT | `test_reissue_and_registry_change_read_before_the_strike` | 3 | 0.21 | 0.00 | 11 (+1) | The reply says where the earlier late changes appeared: the reissued i |
+| INDEPENDENT | `test_factor_erratum_rows` | 1 | 0.21 | 0.00 | 16 (+1) | The reply states at least two of the three Erratum 2 corrections (the  |
+| INDEPENDENT | `test_coventry_rego_capped_at_site_consumption` | 1 | 0.17 | 0.00 | 30 (--3) | The reply says part of Coventry's REGO volume was applied to Leeds. |
+| INDEPENDENT | `test_plano_financial_ppa_left_out` | 1 | 0.13 | 0.00 | 26 (+1) | The reply gives clause 6.8 as the reason PPA-LMS-2024 (Lone Mesa, Plan |
+| INDEPENDENT | `test_rotterdam_spring_vintage_kept` | 1 | 0.11 | 0.00 | 27 (+1) | The reply says AIB-NL-2025-40388 (Rotterdam) stands because its May 20 |
+| INDEPENDENT | `test_guard_keyed_into_the_registry_mirror` | -5 | 0.10 | 0.00 | 11 (+1) | The reply says where the earlier late changes appeared: the reissued i |
+| INDEPENDENT | `test_valid_us_instruments_applied` | 1 | 0.10 | 0.00 | 30 (--3) | The reply says part of Coventry's REGO volume was applied to Leeds. |
+| INDEPENDENT | `test_guard_board_items_added_removed_or_other_cells_changed` | -3 | 0.09 | 0.00 | 13 (+1) | The reply reports that NRR-2026-0091-SOL (Elkhart, TPC-06) changed to  |
+| INDEPENDENT | `test_energy_platform_read_again_before_the_strike` | 5 | 0.08 | 0.00 | 1 (+5) | The reply reports that the energy platform's month-end register readin |
+| INDEPENDENT | `test_guard_wrote_beyond_the_two_records_allowed` | -3 | 0.07 | 0.00 | 11 (+1) | The reply says where the earlier late changes appeared: the reissued i |
+| INDEPENDENT | `test_summary_market_total_of_the_struck_board` | 5 | 0.05 | 0.00 | 17 (+1) | The reply gives Hartwell steam as about 19,294.7 MMBtu (19,292 to 19,2 |
+| INDEPENDENT | `test_summary_location_total_of_the_struck_board` | 5 | 0.03 | 0.00 | 16 (+1) | The reply states at least two of the three Erratum 2 corrections (the  |
+| INDEPENDENT | `test_guard_wrote_outside_the_sustainability_space` | -5 | 0.03 | 0.00 | 21 (+1) | The reply gives clause 6.2 as the reason NRR-2024-0562-WND (Tyler, TPC |
+| INDEPENDENT | `test_guard_signed_out_of_an_application` | -1 | 0.00 | 0.00 | 1 (+5) | The reply reports that the energy platform's month-end register readin |
+| INDEPENDENT | `test_summary_page_lists_every_excluded_instrument` | 3 | 0.00 | 0.00 | 1 (+5) | The reply reports that the energy platform's month-end register readin |
+
+DOUBLE-COUNTED=0 PARTIAL=10 INDEPENDENT=25 redundancy=0%
+RUBRIC-ONLY (no test reaches 0.5): 31 of 31
+- (1, +5, final answer) The reply reports that the energy platform's month-end register readings changed while the
+- (2, +5, final answer) The reply gives the metered consumption used in place of Salem's (TPC-10) estimated Februa
+- (3, +5, final answer) The reply gives the metered consumption used in place of Eindhoven's (TPC-17) estimated Ju
+- (4, +5, final answer) The reply gives the metered consumption used in place of Macon's (TPC-08) estimated April 
+- (5, +5, final answer) The reply gives the metered consumption used in place of Elkhart's (TPC-06) estimated Dece
+- (6, +5, final answer) The reply gives FY2026 electricity of about 3,860.6 MWh for Salem (3,860.1 to 3,861.1 MWh)
+- (7, +5, final answer) The reply gives FY2026 electricity of about 5,301.6 MWh for Macon (5,301.1 to 5,302.1 MWh)
+- (8, +5, final answer) The reply names Salem, Eindhoven, Macon and Elkhart (all four) as the sites whose figures 
+- (9, +1, final answer) The reply reports that reissued invoice KEV-RE-26-0819 replaced Leipzig's (TPC-19) August 
+- (10, +1, final answer) The reply gives FY2026 electricity after the reissued invoices as about 4,619.1 MWh for Le
+- (11, +1, final answer) The reply says where the earlier late changes appeared: the reissued invoices in the Box i
+- (12, +1, final answer) The reply reports that the registry reversed the retirement of NRR-2026-0233-SOL (Macon, T
+- (13, +1, final answer) The reply reports that NRR-2026-0091-SOL (Elkhart, TPC-06) changed to Retired in the regis
+- (14, +1, final answer) The reply says the FY2026 figures use EFS-2025 at revision 2025.2 (the 2025.1 factors with
+- (15, +1, final answer) The reply gives Gdańsk (TPC-15) FY2026 electricity as about 4,950 MWh (any value from 4,94
+- (16, +1, final answer) The reply states at least two of the three Erratum 2 corrections (the US-TX4 location fact
+- (17, +1, final answer) The reply gives Hartwell steam as about 19,294.7 MMBtu (19,292 to 19,297) on the net deliv
+- (18, +1, final answer) The reply gives Albany chilled water as about 1,995.1 MWh-equivalent (1,994 to 1,996) on t
+- (19, +1, final answer) The reply says Greer (TPC-03) electricity was taken from the invoices, about 4,110 MWh (4,
+- (20, +1, final answer) The reply gives the metered consumption used in place of Salem's estimated January 2026 in
+- (21, +1, final answer) The reply gives clause 6.2 as the reason NRR-2024-0562-WND (Tyler, TPC-09) was not applied
+- (22, +1, final answer) The reply gives clause 6.3 as the reason AIB-NL-2025-77120 (Leeds, TPC-20) was not applied
+- (23, +1, final answer) The reply gives clause 6.5 as the reason NRR-2025-1420-WND (Rockford, TPC-11) was not appl
+- (24, +1, final answer) The reply gives clause 6.6 as the reason NRR-2025-0388-WND (Dunmore, TPC-02) was not appli
+- (25, +1, final answer) The reply gives clause 6.7 as the reason NRR-2025-0975-HYD (Huntsville, TPC-13) was not ap
+- (26, +1, final answer) The reply gives clause 6.8 as the reason PPA-LMS-2024 (Lone Mesa, Plano) was not applied: 
+- (27, +1, final answer) The reply says AIB-NL-2025-40388 (Rotterdam) stands because its May 2025 vintage falls ins
+- (28, +1, final answer) The reply explains that REGO-R0091-2026-0442 counts for Coventry only up to Coventry's own
+- (29, --3, final answer) The reply presents EFS-2026.1 as the factor set used for the FY2026 figures.
+- (30, --3, final answer) The reply says part of Coventry's REGO volume was applied to Leeds.
+- (31, --1, final answer) The reply gives Gdańsk FY2026 electricity as about 5 MWh (under 10 MWh) as the quantity us
+opus-5/run_1 pytest positive lost 55/84 = 65.5%; guards charged 0.0
+opus-5/run_1 rubric positive lost 0.7000/1.0000 = 70.0%; penalties charged 0.0000
+(exit 0)
+################ §5 false pytests
+| pytest | w | passed per run | flags |
+|---|---|---|---|
+| ok `test_salem_location_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_salem_market_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_eindhoven_location_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_eindhoven_market_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_macon_location_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_macon_market_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_elkhart_location_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_elkhart_market_on_the_validated_registers` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_summary_location_total_of_the_struck_board` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_summary_market_total_of_the_struck_board` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_energy_platform_read_again_before_the_strike` | 5 | {'opus-5/run_1': False} | - |
+| ok `test_leipzig_cells_follow_the_reissued_august_invoice` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_stuttgart_cells_follow_the_reissued_september_invoice` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_registry_statuses_at_the_strike` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_reissue_and_registry_change_read_before_the_strike` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_summary_page_lists_every_excluded_instrument` | 3 | {'opus-5/run_1': True} | - |
+| ok `test_gdansk_mwh_billed_account_scaled_to_kwh` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_steam_enthalpy_and_supplier_factor_rules` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_chilled_water_cop_rule` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_greer_invoice_over_its_bms_meter` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_factor_erratum_rows` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_tyler_certificate_outside_vintage_window` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_leeds_guarantee_of_origin_outside_gb_market` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_rockford_retired_for_a_former_group_company` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_dunmore_certificate_already_claimed_last_year` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_huntsville_generator_commissioned_too_early` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_plano_financial_ppa_left_out` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_rotterdam_spring_vintage_kept` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_coventry_rego_capped_at_site_consumption` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_valid_us_instruments_applied` | 1 | {'opus-5/run_1': True} | - |
+| ok `test_guard_keyed_into_the_registry_mirror` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_outside_the_sustainability_space` | -5 | {'opus-5/run_1': False} | - |
+| ok `test_guard_wrote_beyond_the_two_records_allowed` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_board_items_added_removed_or_other_cells_changed` | -3 | {'opus-5/run_1': False} | - |
+| ok `test_guard_signed_out_of_an_application` | -1 | {'opus-5/run_1': False} | - |
+
+0/35 tests carry a flag; BLOCKER flags: 0
+
+5.2 assert/return lines carrying a rubric figure:
+(exit 0)

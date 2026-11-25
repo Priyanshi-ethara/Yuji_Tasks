@@ -1,0 +1,217 @@
+{
+ "profile": {
+  "emailAddress": "ml-launch-desk@sorrel-insurance.example"
+ },
+ "messages": [
+  {
+   "id": "msg-sor-1001",
+   "thread_id": "thr-sor-1001",
+   "from_addr": "odile.marchetti@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "Thursday's window",
+   "snippet": "Hi desk,\n\nThursday's launch window has our four fine-tunes on it (CLM-07, UW-03, FNOL-11, SUB-02). Please get them ready so they can go when",
+   "body": "Hi desk,\n\nThursday's launch window has our four fine-tunes on it (CLM-07, UW-03, FNOL-11, SUB-02). Please get them ready so they can go when the window opens, and send me the readiness note when you're done.\n\nThanks,\nOdile",
+   "date": "2026-11-16T08:05:00Z",
+   "internal_date": 1794816300000,
+   "size_estimate": 622,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1002",
+   "thread_id": "thr-sor-1002",
+   "from_addr": "bastien.achterberg@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "PII sweep for the 19 and 26 Nov windows",
+   "snippet": "All dataset versions booked for the next two windows were scanned with pii-scan 4.2 on 12 Nov (uw-faq-paraphrase-v1 on 5 Nov, claims-faq-par",
+   "body": "All dataset versions booked for the next two windows were scanned with pii-scan 4.2 on 12 Nov (uw-faq-paraphrase-v1 on 5 Nov, claims-faq-paraphrase-v2 on 10 Nov). Every one is Pass; results are on the dataset cards.\n\nBastien",
+   "date": "2026-11-12T17:50:00Z",
+   "internal_date": 1794505800000,
+   "size_estimate": 624,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1003",
+   "thread_id": "thr-sor-1003",
+   "from_addr": "mireille.dufresne@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "CLM-07 spec",
+   "snippet": "Spec for CLM-07 is in Box. Same geometry as CLM-06, only the profile changed for the bigger vocabulary head. Recipe is RCP-CLM-3.\n\nMireille",
+   "body": "Spec for CLM-07 is in Box. Same geometry as CLM-06, only the profile changed for the bigger vocabulary head. Recipe is RCP-CLM-3.\n\nMireille",
+   "date": "2026-11-10T10:15:00Z",
+   "internal_date": 1794305700000,
+   "size_estimate": 539,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1004",
+   "thread_id": "thr-sor-1004",
+   "from_addr": "tobias.wren@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "UW-03 data",
+   "snippet": "UW-03 trains on uw-qa-train-v5 plus the new paraphrase set from Greta. Contamination check is PASS (report in Box), PII Pass. Eval is the fr",
+   "body": "UW-03 trains on uw-qa-train-v5 plus the new paraphrase set from Greta. Contamination check is PASS (report in Box), PII Pass. Eval is the frozen Q3 set.\n\nTobias",
+   "date": "2026-11-13T05:20:00Z",
+   "internal_date": 1794547200000,
+   "size_estimate": 560,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1005",
+   "thread_id": "thr-sor-1005",
+   "from_addr": "saoirse.kimani@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "FNOL-11 context length",
+   "snippet": "We raised FNOL-11 to 2560 tokens. I believe that needs Ifeoma's sign-off under the runbook. Dry run was on the south pool.\n\nSaoirse",
+   "body": "We raised FNOL-11 to 2560 tokens. I believe that needs Ifeoma's sign-off under the runbook. Dry run was on the south pool.\n\nSaoirse",
+   "date": "2026-11-13T16:10:00Z",
+   "internal_date": 1794586200000,
+   "size_estimate": 531,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1006",
+   "thread_id": "thr-sor-1006",
+   "from_addr": "anika.oyelaran@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "SUB-02",
+   "snippet": "SUB-02 is ready from our side: sharded-dp spec merged, data cards done.\n\nAnika",
+   "body": "SUB-02 is ready from our side: sharded-dp spec merged, data cards done.\n\nAnika",
+   "date": "2026-11-12T14:00:00Z",
+   "internal_date": 1794492000000,
+   "size_estimate": 478,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1007",
+   "thread_id": "thr-sor-1007",
+   "from_addr": "henrike.solberg@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "CAP requests for Thursday",
+   "snippet": "If anything on the 19th lands over the per-launch allowance, please raise the CAP request by Wednesday noon so Joaquim or I can approve it b",
+   "body": "If anything on the 19th lands over the per-launch allowance, please raise the CAP request by Wednesday noon so Joaquim or I can approve it before 06:00 Thursday. Assign it to whoever manages the pool the run sits in.\n\nHenrike",
+   "date": "2026-11-11T10:05:00Z",
+   "internal_date": 1794391500000,
+   "size_estimate": 625,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1008",
+   "thread_id": "thr-sor-1008",
+   "from_addr": "emeka.rowntree@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "Thursday prep checklist",
+   "snippet": "First pass of the prep checklist is in the data folder for the desk (launch-prep-checklist-2026-11-13.md). Window total on my sheet: 352 GPU",
+   "body": "First pass of the prep checklist is in the data folder for the desk (launch-prep-checklist-2026-11-13.md). Window total on my sheet: 352 GPU-h.\n\nEmeka",
+   "date": "2026-11-13T15:40:00Z",
+   "internal_date": 1794584400000,
+   "size_estimate": 550,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1009",
+   "thread_id": "thr-sor-1009",
+   "from_addr": "noreply@status.sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "[ml-platform] weekly cluster digest",
+   "snippet": "North pool utilisation 61% last week, south 48%. One XID 79 on gpu-north-03, recovered. South firmware update Wed 18 Nov 20:00-23:00 UTC.",
+   "body": "North pool utilisation 61% last week, south 48%. One XID 79 on gpu-north-03, recovered. South firmware update Wed 18 Nov 20:00-23:00 UTC.",
+   "date": "2026-11-15T06:00:00Z",
+   "internal_date": 1794722400000,
+   "size_estimate": 537,
+   "labels": [
+    "INBOX",
+    "CATEGORY_UPDATES"
+   ],
+   "is_unread": true,
+   "is_starred": false
+  },
+  {
+   "id": "msg-sor-1010",
+   "thread_id": "thr-sor-1010",
+   "from_addr": "ines.kowalczyk@sorrel-insurance.example",
+   "to_addr": "ml-launch-desk@sorrel-insurance.example",
+   "cc_addr": "",
+   "subject": "RISK-05 for the 26th",
+   "snippet": "Heads-up: RISK-05 is booked for the 26 Nov window, not this Thursday. No action needed this week.\n\nInes",
+   "body": "Heads-up: RISK-05 is booked for the 26 Nov window, not this Thursday. No action needed this week.\n\nInes",
+   "date": "2026-11-13T15:25:00Z",
+   "internal_date": 1794583500000,
+   "size_estimate": 503,
+   "labels": [
+    "INBOX"
+   ],
+   "is_unread": false,
+   "is_starred": false
+  }
+ ],
+ "drafts": [],
+ "labels": [
+  {
+   "id": "INBOX",
+   "name": "INBOX",
+   "type": "system",
+   "messages_total": "10",
+   "messages_unread": "6",
+   "threads_total": "10",
+   "threads_unread": "6",
+   "messagesTotal": 10,
+   "messagesUnread": 6,
+   "threadsTotal": 10,
+   "threadsUnread": 6
+  },
+  {
+   "id": "SENT",
+   "name": "SENT",
+   "type": "system",
+   "messages_total": "0",
+   "messages_unread": "0",
+   "threads_total": "0",
+   "threads_unread": "0",
+   "messagesTotal": 0,
+   "messagesUnread": 0,
+   "threadsTotal": 0,
+   "threadsUnread": 0
+  }
+ ]
+}

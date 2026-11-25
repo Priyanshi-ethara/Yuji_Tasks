@@ -1,0 +1,11 @@
+POLAR ARC LOGISTICS - TK9 Pro firmware 4.2.1 release notes (customer edition)
+Released to fleet: 20 October 2026
+
+What changes for consignees
+* Export unit follows the device configuration. Fleet default for Polar Arc: degF. The unit is written to the logger metadata
+  file (<logger>_meta.json, key "unit"); the CSV column is now named "reading" for every unit.
+* Logging interval: 10 minutes (was 15 minutes on 4.1.x).
+* Segmented upload: long trips are uploaded in segments; up to three boundary records may appear in two segments.
+* Status column renamed record_flag; values OK and BAT (battery saver).
+Known issue
+* Gateway restarts can interrupt a segment upload; the data stays in flash and can be recovered.

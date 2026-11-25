@@ -1,0 +1,2850 @@
+{
+ "workspace": {
+  "id": "workspace-harrowmere",
+  "name": "Harrowmere Energy — Metering",
+  "domain": "harrowmere-metering"
+ },
+ "users": [
+  {
+   "id": "user-imogen",
+   "name": "Imogen Ashdale",
+   "email": "imogen.ashdale@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-dorian",
+   "name": "Dorian Felbrigg",
+   "email": "dorian.felbrigg@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-helena",
+   "name": "Helena Marchbank",
+   "email": "helena.marchbank@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-tamsin",
+   "name": "Tamsin Rookwood",
+   "email": "tamsin.rookwood@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-owain",
+   "name": "Owain Castellack",
+   "email": "owain.castellack@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-bertrand",
+   "name": "Bertrand Ilsley",
+   "email": "bertrand.ilsley@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-ffion",
+   "name": "Ffion Gethin",
+   "email": "ffion.gethin@harrowmere-energy.example",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2025-01-06T09:00:00.000Z"
+  },
+  {
+   "id": "user-alex",
+   "name": "Alex Carter",
+   "email": "alex.carter@contoso.com",
+   "avatar_url": null,
+   "type": "person",
+   "bot": false,
+   "owner_workspace": "workspace-harrowmere",
+   "created_time": "2026-02-02T09:00:00.000Z"
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-meter-register",
+   "title": "Metering asset register",
+   "parent_page_id": "page-metering-home",
+   "created_time": "2025-01-06T09:10:00.000Z",
+   "last_edited_time": "2026-10-14T16:00:00.000Z",
+   "created_by": "user-tamsin",
+   "icon": "gauge",
+   "archived": false
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-metering-home",
+   "parent_type": "workspace",
+   "parent_id": "workspace-harrowmere",
+   "title": "Metering Services",
+   "created_time": "2025-01-06T09:05:00.000Z",
+   "last_edited_time": "2026-09-02T09:00:00.000Z",
+   "created_by": "user-tamsin",
+   "archived": false,
+   "icon": "zap",
+   "cover_url": null
+  },
+  {
+   "id": "page-field-rota",
+   "parent_type": "page",
+   "parent_id": "page-metering-home",
+   "title": "Field team rota — November 2026",
+   "created_time": "2026-10-28T09:05:00.000Z",
+   "last_edited_time": "2026-10-28T09:05:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "calendar",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e19h40731",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E19H40731 — Calloway Mill Bakery",
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e19h40776",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E19H40776 — Ostrey Lane Medical Centre",
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e20h11502",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E20H11502 — Pellingford Community School",
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e18h93314",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E18H93314 — Quenby Print Works",
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e21h02287",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E21H02287 — Saltash Row Garage",
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e17h66120",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E17H66120 — Thornaby Wharf Cold Store",
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e19h51849",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E19H51849 — Harrowmere Leisure Pool",
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e20h30915",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E20H30915 — Wendle Street Offices",
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e21h17468",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E21H17468 — Marlpit Garden Centre",
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e22h00932",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E22H00932 — Brookhay Brewery Taproom",
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10417",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10417 — Ashgrove Plastics Moulding",
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10452",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10452 — Fenwick Lane Data Hall",
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10488",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10488 — Gorsebrook Laundry Services",
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10503",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10503 — Hollin Bridge Sawmill",
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10519",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10519 — Kittering Foods Packing",
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-k24c10541",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "K24C10541 — Wexcombe Craft Studios",
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e18h72206",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E18H72206 — Lanyon Quay Fish Market",
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e20h45573",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E20H45573 — Merrowby Care Home",
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e19h38861",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E19H38861 — Netherfold Veterinary Hospital",
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e21h09946",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E21H09946 — Orchard Rise Hotel",
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e20h52708",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E20H52708 — Penhallow Tool Hire",
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  },
+  {
+   "id": "page-mtr-e19h64413",
+   "parent_type": "database",
+   "parent_id": "db-meter-register",
+   "title": "E19H64413 — Ravensworth Bowls Club",
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "created_by": "user-owain",
+   "archived": false,
+   "icon": "gauge",
+   "cover_url": null
+  }
+ ],
+ "properties": {
+  "page-mtr-e19h40731": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1047"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4100 7300"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2019-06-11"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e19h40776": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1052"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4137 7353"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2019-07-02"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e20h11502": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1068"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4174 7406"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2020-02-19"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e18h93314": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1073"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4211 7459"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2018-11-27"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e21h02287": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1081"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4248 7512"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2021-03-08"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e17h66120": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1094"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4285 7565"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2017-09-14"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e19h51849": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1102"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4322 7618"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2019-08-21"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e20h30915": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1115"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4359 7671"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2020-05-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e21h17468": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1123"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4396 7724"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2021-04-29"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e22h00932": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1139"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4433 7777"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Harrowmere AMR"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-10-14"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10417": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1146"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4470 7830"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-10"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10452": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1158"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4507 7883"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-11"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10488": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1160"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4544 7936"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-12"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10503": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1177"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4581 7989"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-17"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10519": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1183"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4618 8042"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-18"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-k24c10541": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1191"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4655 8095"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Kestrel Data Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Brannagh QM-7"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2026-03-19"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e18h72206": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1204"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4692 8148"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2018-10-03"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e20h45573": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1212"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4729 8201"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2020-08-25"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e19h38861": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1229"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4766 8254"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2019-05-30"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e21h09946": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1235"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4803 8307"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2021-01-20"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e20h52708": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1248"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4840 8360"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2020-09-09"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  },
+  "page-mtr-e19h64413": {
+   "Site ref": {
+    "type": "rich_text",
+    "value": "HMS-1256"
+   },
+   "Supply number": {
+    "type": "rich_text",
+    "value": "HM19 4877 8413"
+   },
+   "Collector": {
+    "type": "select",
+    "value": "Varden Metering Services"
+   },
+   "Meter model": {
+    "type": "rich_text",
+    "value": "Corvel HX4"
+   },
+   "Commissioned": {
+    "type": "date",
+    "value": "2019-12-04"
+   },
+   "Status": {
+    "type": "status",
+    "value": "Installed"
+   }
+  }
+ },
+ "blocks": [
+  {
+   "id": "blk-e19h40731-0",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E19H40731",
+   "order": 0,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-1",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Calloway Mill Bakery (HMS-1047), supply number HM19 4100 7300. Commissioned 2019-06-11 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-2",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 200/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-3",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-4",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-5",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40731-6",
+   "page_id": "page-mtr-e19h40731",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2019-06-11T15:00:00.000Z",
+   "last_edited_time": "2019-06-11T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e19h40776-0",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E19H40776",
+   "order": 0,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-1",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Ostrey Lane Medical Centre (HMS-1052), supply number HM19 4137 7353. Commissioned 2019-07-02 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-2",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 100/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-3",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-4",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-5",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h40776-6",
+   "page_id": "page-mtr-e19h40776",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2019-07-02T15:00:00.000Z",
+   "last_edited_time": "2019-07-02T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e20h11502-0",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E20H11502",
+   "order": 0,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-1",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Pellingford Community School (HMS-1068), supply number HM19 4174 7406. Commissioned 2020-02-19 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-2",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 150/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-3",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-4",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-5",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h11502-6",
+   "page_id": "page-mtr-e20h11502",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2020-02-19T15:00:00.000Z",
+   "last_edited_time": "2020-02-19T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e18h93314-0",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E18H93314",
+   "order": 0,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-1",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Quenby Print Works (HMS-1073), supply number HM19 4211 7459. Commissioned 2018-11-27 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-2",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 300/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-3",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-4",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-5",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h93314-6",
+   "page_id": "page-mtr-e18h93314",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2018-11-27T15:00:00.000Z",
+   "last_edited_time": "2018-11-27T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e21h02287-0",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E21H02287",
+   "order": 0,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-1",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Saltash Row Garage (HMS-1081), supply number HM19 4248 7512. Commissioned 2021-03-08 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-2",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 100/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-3",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-4",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-5",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h02287-6",
+   "page_id": "page-mtr-e21h02287",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2021-03-08T15:00:00.000Z",
+   "last_edited_time": "2021-03-08T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e17h66120-0",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E17H66120",
+   "order": 0,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-1",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Thornaby Wharf Cold Store (HMS-1094), supply number HM19 4285 7565. Commissioned 2017-09-14 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-2",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 300/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-3",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-4",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-5",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e17h66120-6",
+   "page_id": "page-mtr-e17h66120",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2017-09-14T15:00:00.000Z",
+   "last_edited_time": "2017-09-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e19h51849-0",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E19H51849",
+   "order": 0,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-1",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Harrowmere Leisure Pool (HMS-1102), supply number HM19 4322 7618. Commissioned 2019-08-21 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-2",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 400/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-3",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-4",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-5",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h51849-6",
+   "page_id": "page-mtr-e19h51849",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2019-08-21T15:00:00.000Z",
+   "last_edited_time": "2019-08-21T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e20h30915-0",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E20H30915",
+   "order": 0,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-1",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Wendle Street Offices (HMS-1115), supply number HM19 4359 7671. Commissioned 2020-05-12 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-2",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 150/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-3",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-4",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-5",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h30915-6",
+   "page_id": "page-mtr-e20h30915",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2020-05-12T15:00:00.000Z",
+   "last_edited_time": "2020-05-12T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e21h17468-0",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E21H17468",
+   "order": 0,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-1",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Marlpit Garden Centre (HMS-1123), supply number HM19 4396 7724. Commissioned 2021-04-29 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-2",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 100/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-3",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-4",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-5",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h17468-6",
+   "page_id": "page-mtr-e21h17468",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2021-04-29T15:00:00.000Z",
+   "last_edited_time": "2021-04-29T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e22h00932-0",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E22H00932",
+   "order": 0,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-1",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Brookhay Brewery Taproom (HMS-1139), supply number HM19 4433 7777. Commissioned 2026-10-14 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-2",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 200/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-3",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-4",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Harrowmere AMR head-end, nightly; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-5",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e22h00932-6",
+   "page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-10-14T15:00:00.000Z",
+   "last_edited_time": "2026-10-14T15:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10417-0",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10417",
+   "order": 0,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-1",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Ashgrove Plastics Moulding (HMS-1146), supply number HM19 4470 7830. Commissioned 2026-03-10 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-2",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 600/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-3",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: the A+ (import active) and R+ (import reactive) registers are set to record the MEAN DEMAND over each half-hour period, kW on A+ and kvar on R+, for the customer's capacity-monitoring dashboard (MOPS-1184). They are not energy registers: the energy in a period is its mean demand × 0.5 h.",
+   "order": 3,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-4",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-5",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10417-6",
+   "page_id": "page-mtr-k24c10417",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-10T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10452-0",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10452",
+   "order": 0,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-1",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Fenwick Lane Data Hall (HMS-1158), supply number HM19 4507 7883. Commissioned 2026-03-11 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-2",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 400/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-3",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: the A+ (import active) and R+ (import reactive) registers are set to record the MEAN DEMAND over each half-hour period, kW on A+ and kvar on R+, for the customer's capacity-monitoring dashboard (MOPS-1184). They are not energy registers: the energy in a period is its mean demand × 0.5 h.",
+   "order": 3,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-4",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-5",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10452-6",
+   "page_id": "page-mtr-k24c10452",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-11T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10488-0",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10488",
+   "order": 0,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-1",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Gorsebrook Laundry Services (HMS-1160), supply number HM19 4544 7936. Commissioned 2026-03-12 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-2",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 300/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-3",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: the A+ (import active) and R+ (import reactive) registers are set to record the MEAN DEMAND over each half-hour period, kW on A+ and kvar on R+, for the customer's capacity-monitoring dashboard (MOPS-1184). They are not energy registers: the energy in a period is its mean demand × 0.5 h.",
+   "order": 3,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-4",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-5",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10488-6",
+   "page_id": "page-mtr-k24c10488",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-12T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10503-0",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10503",
+   "order": 0,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-1",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Hollin Bridge Sawmill (HMS-1177), supply number HM19 4581 7989. Commissioned 2026-03-17 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-2",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 400/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-3",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record ENERGY in each half-hour period (kWh, kvarh). The customer cancelled its capacity-monitoring order before the visit, so the dashboard programming used on the other wave-2 meters was not applied.",
+   "order": 3,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-4",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-5",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10503-6",
+   "page_id": "page-mtr-k24c10503",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-17T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10519-0",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10519",
+   "order": 0,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-1",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Kittering Foods Packing (HMS-1183), supply number HM19 4618 8042. Commissioned 2026-03-18 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-2",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 500/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-3",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: the A+ (import active) and R+ (import reactive) registers are set to record the MEAN DEMAND over each half-hour period, kW on A+ and kvar on R+, for the customer's capacity-monitoring dashboard (MOPS-1184). They are not energy registers: the energy in a period is its mean demand × 0.5 h.",
+   "order": 3,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-4",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-5",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10519-6",
+   "page_id": "page-mtr-k24c10519",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-18T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-k24c10541-0",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN K24C10541",
+   "order": 0,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-1",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Wexcombe Craft Studios (HMS-1191), supply number HM19 4655 8095. Commissioned 2026-03-19 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-2",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 100/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-3",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record ENERGY in each half-hour period (kWh, kvarh). The customer declined the capacity-monitoring service at survey, so the dashboard programming used on the other wave-2 meters was not applied.",
+   "order": 3,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-4",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Kestrel Data Services (KDS-HRM-2026), nightly 02:15 UTC; periods stamped at their start, UTC.",
+   "order": 4,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-5",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-k24c10541-6",
+   "page_id": "page-mtr-k24c10541",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2026-03-19T15:00:00.000Z",
+   "last_edited_time": "2026-03-20T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e18h72206-0",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E18H72206",
+   "order": 0,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-1",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Lanyon Quay Fish Market (HMS-1204), supply number HM19 4692 8148. Commissioned 2018-10-03 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-2",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 300/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-3",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-4",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-5",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e18h72206-6",
+   "page_id": "page-mtr-e18h72206",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2018-10-03T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e20h45573-0",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E20H45573",
+   "order": 0,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-1",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Merrowby Care Home (HMS-1212), supply number HM19 4729 8201. Commissioned 2020-08-25 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-2",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 200/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-3",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-4",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-5",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h45573-6",
+   "page_id": "page-mtr-e20h45573",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2020-08-25T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e19h38861-0",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E19H38861",
+   "order": 0,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-1",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Netherfold Veterinary Hospital (HMS-1229), supply number HM19 4766 8254. Commissioned 2019-05-30 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-2",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 200/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-3",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-4",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-5",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h38861-6",
+   "page_id": "page-mtr-e19h38861",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2019-05-30T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e21h09946-0",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E21H09946",
+   "order": 0,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-1",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Orchard Rise Hotel (HMS-1235), supply number HM19 4803 8307. Commissioned 2021-01-20 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-2",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 400/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-3",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-4",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-5",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e21h09946-6",
+   "page_id": "page-mtr-e21h09946",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2021-01-20T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e20h52708-0",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E20H52708",
+   "order": 0,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-1",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Penhallow Tool Hire (HMS-1248), supply number HM19 4840 8360. Commissioned 2020-09-09 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-2",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 100/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-3",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-4",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-5",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e20h52708-6",
+   "page_id": "page-mtr-e20h52708",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2020-09-09T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-e19h64413-0",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "heading_2",
+   "text": "Commissioning record — MSN E19H64413",
+   "order": 0,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-1",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Site: Ravensworth Bowls Club (HMS-1256), supply number HM19 4877 8413. Commissioned 2019-12-04 by Owain Castellack.",
+   "order": 1,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-2",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Measurement transformers: CT 150/5; the ratio is programmed into the meter, so register and channel values are primary-side.",
+   "order": 2,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-3",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Channel programming: A+ and R+ record energy in each half-hour period (kWh, kvarh).",
+   "order": 3,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-4",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Data retrieval: Varden Metering Services from 1 September 2026 (MOPS-1302; Harrowmere AMR before that). Varden's Schedule 3 files stamp each period at its END, UTC (VMS-DCA-2026 Schedule 3).",
+   "order": 4,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-5",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Register reads: the cumulative import kWh register is read at each billing cut-off and held on the metering platform.",
+   "order": 5,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-e19h64413-6",
+   "page_id": "page-mtr-e19h64413",
+   "parent_block_id": null,
+   "type": "to_do",
+   "text": "Commissioning tests passed (polarity, CT ratio, clock, comms)",
+   "order": 6,
+   "created_time": "2019-12-04T15:00:00.000Z",
+   "last_edited_time": "2026-09-02T10:00:00.000Z",
+   "has_children": false,
+   "checked": true
+  },
+  {
+   "id": "blk-rota-0",
+   "page_id": "page-field-rota",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Owain: Mon–Wed east patch (Quenby, Thornaby Wharf, Ashgrove, Hollin Bridge). Kerry: Thu–Fri west patch. No meter exchanges booked for business HH sites before 30 Nov.",
+   "order": 0,
+   "created_time": "2026-10-28T09:05:00.000Z",
+   "last_edited_time": "2026-10-28T09:05:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-home-0",
+   "page_id": "page-metering-home",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Metering Services workspace: the asset register, field rota and collector contacts.",
+   "order": 0,
+   "created_time": "2025-01-06T09:05:00.000Z",
+   "last_edited_time": "2026-09-02T09:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "comment-hrm-001",
+   "parent_page_id": "page-mtr-e22h00932",
+   "parent_block_id": null,
+   "author_id": "user-owain",
+   "text": "Fitted 14 Oct ahead of the transfer; supply registration date is on the CRM account.",
+   "created_time": "2026-10-14T16:10:00.000Z",
+   "resolved": false
+  }
+ ]
+}

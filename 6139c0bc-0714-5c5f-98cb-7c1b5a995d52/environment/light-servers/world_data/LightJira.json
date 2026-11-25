@@ -1,0 +1,139 @@
+{
+ "users": [
+  {
+   "account_id": "maren.ostrowski",
+   "display_name": "Maren Ostrowski",
+   "email": "maren.ostrowski@talvik.example",
+   "active": true
+  },
+  {
+   "account_id": "carbon.desk",
+   "display_name": "Carbon Accounting Desk",
+   "email": "alex.carter@contoso.com",
+   "active": true
+  },
+  {
+   "account_id": "dev.rautela",
+   "display_name": "Dev Rautela",
+   "email": "dev.rautela@talvik.example",
+   "active": true
+  },
+  {
+   "account_id": "fss.ap",
+   "display_name": "Facilities Shared Services",
+   "email": "fss.ap@talvik.example",
+   "active": true
+  }
+ ],
+ "projects": [
+  {
+   "id": "10402",
+   "key": "SUST",
+   "name": "Sustainability reporting",
+   "project_type_key": "business",
+   "lead": "maren.ostrowski",
+   "description": "Group Sustainability Reporting work items"
+  }
+ ],
+ "boards": [
+  {
+   "id": 402,
+   "name": "Sustainability reporting",
+   "type": "kanban",
+   "project_key": "SUST"
+  }
+ ],
+ "sprints": [
+  {
+   "id": 4021,
+   "board_id": 402,
+   "name": "Nov 2026",
+   "state": "active",
+   "start_date": "2026-11-02",
+   "end_date": "2026-11-27",
+   "goal": "FY2026 inventory and assurance"
+  }
+ ],
+ "issues": [
+  {
+   "id": "40001",
+   "key": "SUST-412",
+   "project_key": "SUST",
+   "issue_type": "Task",
+   "summary": "FY2026 Scope 2 inventory — board and summary page",
+   "description": "Fill the FY2026 board (three columns per site) and publish the summary page in SUST under SCP-02 Rev 4. Registry mirror is read-only.",
+   "status": "In Progress",
+   "priority": "High",
+   "assignee": "Carbon Accounting Desk",
+   "reporter": "Maren Ostrowski",
+   "sprint_id": 4021,
+   "story_points": null,
+   "created": "2026-11-02T08:00:00Z",
+   "updated": "2026-11-02T08:00:00Z"
+  },
+  {
+   "id": "40002",
+   "key": "SUST-405",
+   "project_key": "SUST",
+   "issue_type": "Task",
+   "summary": "Registry: NRR-2026-0091-SOL retirement for FY2026?",
+   "description": "Broker scheduled for December window; not retired as of Oct sync.",
+   "status": "Open",
+   "priority": "High",
+   "assignee": "Maren Ostrowski",
+   "reporter": "Maren Ostrowski",
+   "sprint_id": 4021,
+   "story_points": null,
+   "created": "2026-10-13T09:00:00Z",
+   "updated": "2026-10-13T09:00:00Z"
+  },
+  {
+   "id": "40003",
+   "key": "SUST-399",
+   "project_key": "SUST",
+   "issue_type": "Task",
+   "summary": "Ledger loader keeps BGS-PL-40917 quantities in MWh",
+   "description": "FSS declined renaming the column (FSS-CR-2291). Data dictionary note 3 documents it. Won't fix.",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "Dev Rautela",
+   "reporter": "Maren Ostrowski",
+   "sprint_id": 4021,
+   "story_points": null,
+   "created": "2025-11-15T09:00:00Z",
+   "updated": "2025-11-15T09:00:00Z"
+  },
+  {
+   "id": "40004",
+   "key": "SUST-388",
+   "project_key": "SUST",
+   "issue_type": "Task",
+   "summary": "Implement audit findings IA-2026-04",
+   "description": "Protocol Rev 4 drafted and approved 2026-06-18.",
+   "status": "Done",
+   "priority": "High",
+   "assignee": "Maren Ostrowski",
+   "reporter": "Maren Ostrowski",
+   "sprint_id": 4021,
+   "story_points": null,
+   "created": "2026-03-01T09:00:00Z",
+   "updated": "2026-03-01T09:00:00Z"
+  },
+  {
+   "id": "40005",
+   "key": "SUST-414",
+   "project_key": "SUST",
+   "issue_type": "Task",
+   "summary": "Assurance evidence pack FY2026",
+   "description": "Prepare after the summary page is published.",
+   "status": "Open",
+   "priority": "High",
+   "assignee": "Maren Ostrowski",
+   "reporter": "Maren Ostrowski",
+   "sprint_id": 4021,
+   "story_points": null,
+   "created": "2026-11-03T09:00:00Z",
+   "updated": "2026-11-03T09:00:00Z"
+  }
+ ]
+}

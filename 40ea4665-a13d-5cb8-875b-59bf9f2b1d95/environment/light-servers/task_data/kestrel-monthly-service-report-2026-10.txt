@@ -1,0 +1,23 @@
+KESTREL DATA SERVICES - MONTHLY SERVICE REPORT
+Client: Harrowmere Energy Co-operative     Contract: KDS-HRM-2026     Month: October 2026
+
+Meters under contract ............ 6
+Scheduled dials .................. 1,488
+Successful first-time reads ...... 1,481 (99.53%)
+Re-dials required ................ 7 (all recovered same day)
+Periods delivered (BR-2611 file) . 9,000 (1,500 per meter incl. margin)
+Validation flags ................. none (qual = V on every row)
+
+Meters
+  K24C10417  Ashgrove Plastics Moulding       Brannagh QM-7   comms 4G   status OK
+  K24C10452  Fenwick Lane Data Hall           Brannagh QM-7   comms 4G   status OK
+  K24C10488  Gorsebrook Laundry Services      Brannagh QM-7   comms 4G   status OK
+  K24C10503  Hollin Bridge Sawmill            Brannagh QM-7   comms 4G   status OK
+  K24C10519  Kittering Foods Packing          Brannagh QM-7   comms 4G   status OK
+  K24C10541  Wexcombe Craft Studios           Brannagh QM-7   comms 4G   status OK
+
+Service notes
+- The six meters were commissioned with Harrowmere's metering field team in March 2026 and are polled every
+  night at 02:15 UTC. Channel values are passed through to the client as registered, without scaling.
+- Clock synchronisation: all meter clocks held to UTC within 2 seconds during October.
+- Delivery: file kestrel-hh-delivery-HRM-2611.csv sent 15 Nov 2026 06:10 UTC, SHA-256 posted to the client portal.

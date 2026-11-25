@@ -1,0 +1,188 @@
+{
+ "addresses": [
+  {
+   "object_id": "addr-sh-depot",
+   "name": "Sunhollow Solar depot",
+   "company": "Sunhollow Solar Ltd",
+   "street1": "Unit 4, Threemilestone Business Park",
+   "street2": "",
+   "city": "Truro",
+   "state": "Cornwall",
+   "zip": "TR4 9LD",
+   "country": "GB",
+   "phone": "01872550100",
+   "email": "designdesk@sunhollow-solar.example",
+   "is_residential": false,
+   "validated": true
+  },
+  {
+   "object_id": "addr-sh-kerrow",
+   "name": "Kerrow Redruth",
+   "company": "Kerrow Electrical Distribution",
+   "street1": "Station Road Trading Estate",
+   "street2": "",
+   "city": "Redruth",
+   "state": "Cornwall",
+   "zip": "TR15 2QA",
+   "country": "GB",
+   "phone": "01209550200",
+   "email": "logistics@kerrow-electrical.example",
+   "is_residential": false,
+   "validated": true
+  }
+ ],
+ "shipments": [
+  {
+   "object_id": "ship-sh-450",
+   "address_from": "Station Road Trading Estate, Redruth",
+   "address_to": "Site 7301962, Gwennap Moor",
+   "parcel": "parcel-sh-450",
+   "status": "SUCCESS",
+   "created_time": "2026-11-05T10:00:00Z"
+  },
+  {
+   "object_id": "ship-sh-451",
+   "address_from": "Station Road Trading Estate, Redruth",
+   "address_to": "Site 7301975, Lostock Bridge",
+   "parcel": "parcel-sh-451",
+   "status": "SUCCESS",
+   "created_time": "2026-11-06T10:00:00Z"
+  },
+  {
+   "object_id": "ship-sh-452",
+   "address_from": "Station Road Trading Estate, Redruth",
+   "address_to": "Site 7301988, Gwennap Moor",
+   "parcel": "parcel-sh-452",
+   "status": "SUCCESS",
+   "created_time": "2026-11-07T10:00:00Z"
+  }
+ ],
+ "parcels": [
+  {
+   "object_id": "parcel-sh-450",
+   "length": 70.0,
+   "width": 50.0,
+   "height": 25.0,
+   "distance_unit": "cm",
+   "weight": 27.0,
+   "mass_unit": "kg",
+   "template": null
+  },
+  {
+   "object_id": "parcel-sh-451",
+   "length": 70.0,
+   "width": 50.0,
+   "height": 25.0,
+   "distance_unit": "cm",
+   "weight": 27.0,
+   "mass_unit": "kg",
+   "template": null
+  },
+  {
+   "object_id": "parcel-sh-452",
+   "length": 70.0,
+   "width": 50.0,
+   "height": 25.0,
+   "distance_unit": "cm",
+   "weight": 27.0,
+   "mass_unit": "kg",
+   "template": null
+  }
+ ],
+ "rates": [
+  {
+   "object_id": "rate-sh-450",
+   "shipment": "ship-sh-450",
+   "provider": "PalletLine",
+   "servicelevel_token": "pallet_next_day",
+   "servicelevel_name": "Pallet next day",
+   "amount": 64.0,
+   "currency": "GBP",
+   "estimated_days": 1
+  },
+  {
+   "object_id": "rate-sh-451",
+   "shipment": "ship-sh-451",
+   "provider": "PalletLine",
+   "servicelevel_token": "pallet_next_day",
+   "servicelevel_name": "Pallet next day",
+   "amount": 64.0,
+   "currency": "GBP",
+   "estimated_days": 1
+  },
+  {
+   "object_id": "rate-sh-452",
+   "shipment": "ship-sh-452",
+   "provider": "PalletLine",
+   "servicelevel_token": "pallet_next_day",
+   "servicelevel_name": "Pallet next day",
+   "amount": 64.0,
+   "currency": "GBP",
+   "estimated_days": 1
+  }
+ ],
+ "transactions": [
+  {
+   "object_id": "txn-sh-450",
+   "rate": "rate-sh-450",
+   "shipment": "ship-sh-450",
+   "status": "SUCCESS",
+   "tracking_number": "PL4600098812",
+   "tracking_status": "DELIVERED",
+   "carrier": "PalletLine",
+   "label_url": "https://labels.example/txn-sh-450.pdf",
+   "created_time": "2026-11-05T10:05:00Z"
+  },
+  {
+   "object_id": "txn-sh-451",
+   "rate": "rate-sh-451",
+   "shipment": "ship-sh-451",
+   "status": "SUCCESS",
+   "tracking_number": "PL4610098812",
+   "tracking_status": "DELIVERED",
+   "carrier": "PalletLine",
+   "label_url": "https://labels.example/txn-sh-451.pdf",
+   "created_time": "2026-11-06T10:05:00Z"
+  },
+  {
+   "object_id": "txn-sh-452",
+   "rate": "rate-sh-452",
+   "shipment": "ship-sh-452",
+   "status": "SUCCESS",
+   "tracking_number": "PL4620098812",
+   "tracking_status": "TRANSIT",
+   "carrier": "PalletLine",
+   "label_url": "https://labels.example/txn-sh-452.pdf",
+   "created_time": "2026-11-07T10:05:00Z"
+  }
+ ],
+ "tracking": [
+  {
+   "carrier": "PalletLine",
+   "tracking_number": "PL4600098812",
+   "status": "DELIVERED",
+   "status_detail": "W45 inverter delivery",
+   "location_city": "Gwennap Moor",
+   "location_state": "Cornwall",
+   "status_time": "2026-11-06T12:00:00Z"
+  },
+  {
+   "carrier": "PalletLine",
+   "tracking_number": "PL4610098812",
+   "status": "DELIVERED",
+   "status_detail": "W45 inverter delivery",
+   "location_city": "Lostock Bridge",
+   "location_state": "Cornwall",
+   "status_time": "2026-11-07T12:00:00Z"
+  },
+  {
+   "carrier": "PalletLine",
+   "tracking_number": "PL4620098812",
+   "status": "TRANSIT",
+   "status_detail": "W45 inverter delivery",
+   "location_city": "Gwennap Moor",
+   "location_state": "Cornwall",
+   "status_time": "2026-11-08T12:00:00Z"
+  }
+ ]
+}

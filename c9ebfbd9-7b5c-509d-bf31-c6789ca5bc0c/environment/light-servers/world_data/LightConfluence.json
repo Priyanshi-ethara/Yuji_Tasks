@@ -1,0 +1,96 @@
+{
+ "spaces": [
+  {
+   "id": 98045,
+   "key": "QA",
+   "name": "Quality Assurance",
+   "type": "global",
+   "status": "current",
+   "description": "Controlled QA procedures (current editions)."
+  },
+  {
+   "id": 98046,
+   "key": "LOG",
+   "name": "Cold-Chain Logistics",
+   "type": "global",
+   "status": "current",
+   "description": "Lane and carrier notes."
+  }
+ ],
+ "pages": [
+  {
+   "id": "330114007",
+   "type": "page",
+   "status": "current",
+   "title": "QA-SOP-114 Cold-chain lot disposition - Revision 7 (in force)",
+   "space_key": "QA",
+   "parent_id": "330114000",
+   "version": 7,
+   "body": "QA-SOP-114 Cold-chain lot disposition at the Northern Distribution Centre\nRevision 7 - Effective 15 October 2026 - Supersedes Revision 6 (3 November 2025)\nOwner: Head of Quality. Approved under change control CC-2291.\n\n1 PURPOSE AND SCOPE\n1.1 This procedure sets how a QA reviewer at the Northern Distribution Centre (NDC) dispositions a refrigerated biologic lot that arrived on a qualified lane, using the temperature record of the shipment that carried it.\n1.2 It applies to every lot on a release round board. The round is closed only when every lot of the round carries the record this procedure prescribes.\n1.3 Revision 6 and any printed desk copy of it are withdrawn. Where a printed copy and this page disagree, this page governs.\n\n2 DEFINITIONS\n2.1 Custody window: the period from the origin handover scan to the NDC receipt scan of the shipment, both as recorded in the ERP Shipments table, both instants included. The carrier's own \"delivered\" or proof-of-delivery event does not end custody; a pallet that waits at the dock is in lane custody until it is scanned in.\n2.2 Shipment logger: the logger the ERP Shipments table assigns to the shipment. A lot is judged on its own shipment's logger only.\n2.3 Labelled range: the storage range of the product specification in force (2.0 to 8.0 degC for every product in scope of this revision). A reading equal to a range limit is inside the range.\n2.4 Specification in force: the edition of the product stability specification that the stability specifications database marks In force on the date of review. Printed or exported copies are not specifications in force.\n2.5 Calibration certificate: the certificate of the as-found check Metrology issues for a returned logger (MET-SOP-009).\n\n3 THE LOGGER RECORD\n3.1 The record is every reading the shipment logger exported for the shipment, from the carrier's portal export or from the carrier drop folder for carriers who deliver through a drop.\n3.2 The unit and the logging interval of a reading are those stated in the logger's metadata (the carrier's metadata file for the logger, or the fleet register where no metadata file exists). Export column headings do not state units and are not evidence of them. Readings in degF are converted to degC before any step below: degC = (degF - 32) x 5/9, unrounded.\n3.3 Where the logger record of a shipment is incomplete, the reviewer checks the carrier drop again before closing the round. A segment the carrier has delivered by then is part of the record.\n\n4 READINGS EXCLUDED FROM THE CALCULATION\nA reading is excluded from MKT and from time out of range when, and only when, one of the following applies:\n4.1 it was taken outside the custody window (2.1);\n4.2 it falls inside a sensor-fault window recorded on the logger's calibration certificate. A logger's own status flag (FAULT, CHK, ERR or similar) does not by itself exclude a reading: the reading stays in unless the certificate records a sensor-fault window covering it;\n4.3 it repeats a timestamp already present in the record (carrier re-transmission at a segment boundary); the repeat is dropped and the first instance counts once.\nNo other reason excludes a reading. In particular a reviewer does not drop a reading because it looks implausible, because a carrier or colleague asks for it, or because a fridge or room alarm explains it.\n\n5 CALCULATIONS\n5.1 Mean kinetic temperature: MKT = (dH/R) / ( -ln( (1/n) x sum over valid readings of exp(-dH / (R x Tk)) ) ) - 273.15, with Tk the reading in kelvin (degC + 273.15), R = 8.3144 J/(mol K), n the number of valid readings, and dH the activation energy stated in the specification in force for the product. The default dH of 83.144 kJ/mol is used only for a product whose specification in force states that no activation energy has been established. MKT is reported in degC to two decimals.\n5.2 Lane time out of range (lane TOR): the number of valid readings outside the labelled range multiplied by the logging interval, in hours, reported to two decimals.\n5.3 Cumulative TOR: the lot's lane TOR plus every Posted entry of the lot in the ERP Stability budget ledger. Voided entries are not counted. The ledger is read live in the ERP; exports age.\n5.4 Budget: the TOR budget in hours of the specification in force. Budget used = cumulative TOR / budget.\n5.5 Data gap: inside the custody window, two consecutive timestamps present in the record are more than 60 minutes apart. Readings excluded under 4.2 are present in the record and do not make a gap.\n\n6 DISPOSITION\nThe reviewer applies the following in this order and records the first that matches as the lot's outcome. The outcome labels are exactly these: Release, Release with deviation, Quarantine, Reject, Referred to QA Head.\n6.1 Reject - any valid reading at or below 0.0 degC (freezing), any valid reading above 25.0 degC, or cumulative TOR greater than the budget.\n6.2 Quarantine - the record has a data gap (5.5).\n6.3 Referred to QA Head - budget used is greater than 75 %. The reviewer does not disposition such a lot: the QA Head signs it off. The card goes to the list QA Head sign-off and its outcome line reads Referred to QA Head.\n6.4 Quarantine - MKT is above the MKT limit of the specification in force.\n6.5 Release with deviation - lane TOR is greater than zero.\n6.6 Release - none of the above.\n\n7 DEVIATIONS\n7.1 Every lot whose outcome is not Release has one deviation in the QAD project of the deviation tracker, issue type Deviation, priority as work instruction WI-0412 sets for the outcome.\n7.2 One deviation per lot per round. When the outcome of a lot changes before the round is closed, the reviewer corrects that deviation; a second deviation for the same lot is not raised.\n\n8 RECORD AND CLOSE\n8.1 The lot's card on the round board carries the outcome, the figures and the deviation key, and sits in the list named for its outcome (QA Head sign-off for a referred lot).\n8.2 The reviewer closes the round with one note in the release desk channel once every card is complete.\n\n9 WHAT THE REVIEWER DOES NOT DO\n9.1 The reviewer never changes a lot's status in the ERP. ERP release is the QA Head's act, after sign-off.\n9.2 The reviewer never contacts a customer about a lot under review. Customer communication goes through Commercial Quality after the QA Head's sign-off.\n\n10 CHANGE HISTORY\nRev 7 (15 Oct 2026, CC-2291): custody ends at the NDC receipt scan; logger status flags no longer exclude readings without a certificate; repeated timestamps counted once; product activation energy from the specification in force; freezing threshold \"at or below 0.0 degC\"; data gap tolerance 60 minutes; referral above 75 % of budget.\nRev 6 (3 Nov 2025): see archive.\n",
+   "created_by": "Dr Rowan Achterberg",
+   "created_at": "2026-10-14T16:00:00Z"
+  },
+  {
+   "id": "330114000",
+   "type": "page",
+   "status": "current",
+   "title": "QA procedures index",
+   "space_key": "QA",
+   "parent_id": null,
+   "version": 12,
+   "body": "Controlled procedures of the NDC QA function. QA-SOP-114 (cold-chain lot disposition): Revision 7 in force from 15 Oct 2026. WI-0412 (deviation records): Revision 3. MET-SOP-009 (as-found checks): Revision 6.",
+   "created_by": "Quality Systems",
+   "created_at": "2025-01-10T09:00:00Z"
+  },
+  {
+   "id": "330114006",
+   "type": "page",
+   "status": "current",
+   "title": "QA-SOP-114 Revision 6 - ARCHIVED (superseded 15 Oct 2026)",
+   "space_key": "QA",
+   "parent_id": "330114000",
+   "version": 6,
+   "body": "SUPERSEDED BY REVISION 7 ON 15 OCTOBER 2026. Kept for audit only.\n\nQA-SOP-114 Cold-chain lot disposition - Revision 6\nEffective 3 November 2025. Desk copy printed 12 March 2026 for the NDC release desk.\n\n1 Scope: refrigerated biologic lots received at the NDC on qualified lanes.\n2 Custody window: from the origin handover scan to the carrier's proof-of-delivery event at the NDC.\n3 Logger record: readings exported by the carrier. The logger's status column is authoritative for faults: readings flagged FAULT or ERR by the logger are excluded.\n4 Calculations:\n4.1 MKT with the site default activation energy of 83.144 kJ/mol for all products, unless QA has approved a product-specific value in writing.\n4.2 Time out of range: readings outside 2.0-8.0 degC times the interval.\n4.3 Cumulative TOR: prior legs as listed in the latest stability budget ledger export, plus the lane.\n4.4 A data gap is any interval of more than 30 minutes without readings.\n5 Disposition (first match):\n5.1 Reject - any reading below 0.0 degC, any reading above 25.0 degC, or cumulative TOR above budget.\n5.2 Quarantine - a data gap.\n5.3 Referred to QA Head - cumulative TOR above 90 % of budget.\n5.4 Quarantine - MKT above the limit.\n5.5 Release with deviation - lane TOR above zero.\n5.6 Release.\n6 Deviations: one deviation per affected lot, summary \"DEV <lot> <outcome>\", priority Medium unless Reject.\n7 Close: post the round summary on the board's description.\n",
+   "created_by": "Quality Systems",
+   "created_at": "2025-11-02T09:00:00Z"
+  },
+  {
+   "id": "330114010",
+   "type": "page",
+   "status": "current",
+   "title": "Release desk - round checklist",
+   "space_key": "QA",
+   "parent_id": "330114000",
+   "version": 4,
+   "body": "1. Open the round board. 2. Pull the ERP shipments, loggers and ledger. 3. Work every lot under QA-SOP-114 in force. 4. Raise deviations, then cards. 5. Re-check incomplete logger records in the carrier drop (SOP 3.3). 6. Post the closing note in #qa-release-desk.",
+   "created_by": "Ines Calloway",
+   "created_at": "2026-10-16T10:00:00Z"
+  },
+  {
+   "id": "330120001",
+   "type": "page",
+   "status": "current",
+   "title": "Polar Arc drop folder - how to read it",
+   "space_key": "LOG",
+   "parent_id": null,
+   "version": 2,
+   "body": "Polar Arc delivers TK9 logger data in the shared drop (one folder per round and logger). Read the <logger>_meta.json first: it states the unit, the interval and which segments have been delivered. Firmware 4.2.1 exports degF.",
+   "created_by": "Aleksander Hune",
+   "created_at": "2026-10-21T11:00:00Z"
+  }
+ ],
+ "labels": [
+  {
+   "id": "lbl-sop-in-force",
+   "name": "in-force",
+   "prefix": "global",
+   "page_id": "330114007"
+  },
+  {
+   "id": "lbl-sop-archived",
+   "name": "archived",
+   "prefix": "global",
+   "page_id": "330114006"
+  }
+ ]
+}

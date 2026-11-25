@@ -1,0 +1,864 @@
+{
+ "channels": [
+  {
+   "id": "C07SRETRIAGE",
+   "name": "sre-triage",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Crash triage desk: routing summaries and questions",
+   "purpose": "Crash triage desk: routing summaries and questions",
+   "creator": "U07INES",
+   "created": 1717200000,
+   "num_members": 12
+  },
+  {
+   "id": "C07FLEETDEV",
+   "name": "fleetd-dev",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "fleetd development",
+   "purpose": "fleetd development",
+   "creator": "U07INES",
+   "created": 1717200000,
+   "num_members": 12
+  },
+  {
+   "id": "C07SIMTOOLS",
+   "name": "sim-tools",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Sim Tools: simctl and simkit",
+   "purpose": "Sim Tools: simctl and simkit",
+   "creator": "U07INES",
+   "created": 1717200000,
+   "num_members": 12
+  },
+  {
+   "id": "C07INCIDENTS",
+   "name": "incidents",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Incident coordination",
+   "purpose": "Incident coordination",
+   "creator": "U07INES",
+   "created": 1717200000,
+   "num_members": 12
+  },
+  {
+   "id": "C07BILLENG",
+   "name": "billing-eng",
+   "is_private": false,
+   "is_archived": false,
+   "topic": "Billing & Settlement engineering",
+   "purpose": "Billing & Settlement engineering",
+   "creator": "U07INES",
+   "created": 1717200000,
+   "num_members": 12
+  }
+ ],
+ "users": [
+  {
+   "id": "U07INES",
+   "name": "ines",
+   "real_name": "Ines Varga",
+   "email": "ines.varga@pellam.io",
+   "is_admin": true,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07TOBIN",
+   "name": "tobin",
+   "real_name": "Tobin Marsh",
+   "email": "tobin.marsh@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07SADE",
+   "name": "sade",
+   "real_name": "Sade Akintola",
+   "email": "sade.akintola@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07MARI",
+   "name": "marisol",
+   "real_name": "Marisol Quenby",
+   "email": "marisol.quenby@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07BRAM",
+   "name": "bram",
+   "real_name": "Bram Hoekstra",
+   "email": "bram.hoekstra@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07ANSE",
+   "name": "anselm",
+   "real_name": "Anselm Okoro",
+   "email": "anselm.okoro@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07JUNO",
+   "name": "juno",
+   "real_name": "Juno Takahara",
+   "email": "juno.takahara@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07PETR",
+   "name": "petra",
+   "real_name": "Petra Lindqvist",
+   "email": "petra.lindqvist@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07CASS",
+   "name": "cassius",
+   "real_name": "Cassius Ferreira",
+   "email": "cassius.ferreira@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07KOFI",
+   "name": "kofi",
+   "real_name": "Kofi Mensah-Hart",
+   "email": "kofi.mensahhart@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07ILSE",
+   "name": "ilse",
+   "real_name": "Ilse Varkonyi",
+   "email": "ilse.varkonyi@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07RUTH",
+   "name": "ruth",
+   "real_name": "Ruth Calloway",
+   "email": "ruth.calloway@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07NILS",
+   "name": "nils",
+   "real_name": "Nils Brennan",
+   "email": "nils.brennan@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07DEVA",
+   "name": "dev",
+   "real_name": "Dev Arunachalam",
+   "email": "dev.arunachalam@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07FAYE",
+   "name": "faye",
+   "real_name": "Faye Oduya",
+   "email": "faye.oduya@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07ODIL",
+   "name": "odile",
+   "real_name": "Odile Brandt",
+   "email": "odile.brandt@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07MATO",
+   "name": "mato",
+   "real_name": "Mato Ishikawa",
+   "email": "mato.ishikawa@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07HAMI",
+   "name": "hamish",
+   "real_name": "Hamish Tregarthen",
+   "email": "hamish.tregarthen@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07YUSR",
+   "name": "yusra",
+   "real_name": "Yusra Bellamy",
+   "email": "yusra.bellamy@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07OREN",
+   "name": "oren",
+   "real_name": "Oren Saltmarsh",
+   "email": "oren.saltmarsh@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07GWEN",
+   "name": "gwen",
+   "real_name": "Gwen Achterberg",
+   "email": "gwen.achterberg@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  },
+  {
+   "id": "U07LEIF",
+   "name": "leif",
+   "real_name": "Leif Domingo",
+   "email": "leif.domingo@pellam.io",
+   "is_admin": false,
+   "is_bot": false,
+   "tz": "Europe/London",
+   "status_text": "",
+   "presence": "active"
+  }
+ ],
+ "channel_members": [
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07INES"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07TOBIN"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07SADE"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07MARI"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07BRAM"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07ANSE"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07JUNO"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07PETR"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07CASS"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07KOFI"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07ILSE"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07RUTH"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07NILS"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07DEVA"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07FAYE"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07ODIL"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07MATO"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07HAMI"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07YUSR"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07OREN"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07GWEN"
+  },
+  {
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07LEIF"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07INES"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07TOBIN"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07SADE"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07MARI"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07BRAM"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07ANSE"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07JUNO"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07PETR"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07CASS"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07KOFI"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07ILSE"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07RUTH"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07NILS"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07DEVA"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07FAYE"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07ODIL"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07MATO"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07HAMI"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07YUSR"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07OREN"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07GWEN"
+  },
+  {
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07LEIF"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07INES"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07TOBIN"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07SADE"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07MARI"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07BRAM"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07ANSE"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07JUNO"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07PETR"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07CASS"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07KOFI"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07ILSE"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07RUTH"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07NILS"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07DEVA"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07FAYE"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07ODIL"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07MATO"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07HAMI"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07YUSR"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07OREN"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07GWEN"
+  },
+  {
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07LEIF"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07INES"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07TOBIN"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07SADE"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07MARI"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07BRAM"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07ANSE"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07JUNO"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07PETR"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07CASS"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07KOFI"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07ILSE"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07RUTH"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07NILS"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07DEVA"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07FAYE"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07ODIL"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07MATO"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07HAMI"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07YUSR"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07OREN"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07GWEN"
+  },
+  {
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07LEIF"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07INES"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07TOBIN"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07SADE"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07MARI"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07BRAM"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07ANSE"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07JUNO"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07PETR"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07CASS"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07KOFI"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07ILSE"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07RUTH"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07NILS"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07DEVA"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07FAYE"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07ODIL"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07MATO"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07HAMI"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07YUSR"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07OREN"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07GWEN"
+  },
+  {
+   "channel_id": "C07BILLENG",
+   "user_id": "U07LEIF"
+  }
+ ],
+ "messages": [
+  {
+   "ts": "1794646800.000100",
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07TOBIN",
+   "text": "Draft owners for Monday are in the desk folder (triage-draft-culprits.csv). Six simkit-topped groups plus the simctl one, so Sim Tools gets 7 again.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794647400.000200",
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07ODIL",
+   "text": "Fine by us, drop them in our queue like last week. Most are callers holding the ticker wrong but we'll look.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794648000.000300",
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07KOFI",
+   "text": "Reminder that internal/billing is Billing. If a crash is in internal/billing/queue please send it to us, not Messaging.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794648600.000400",
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07INES",
+   "text": "Thanks all. Monday's routing follows the handbook and the ownership file as merged; requests in here don't change it.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794649200.000500",
+   "channel_id": "C07SRETRIAGE",
+   "user_id": "U07SADE",
+   "text": "Two hand edits to register titles last week got overwritten by the sync. Only Owner team and Root cause, please.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794556800.000100",
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07NILS",
+   "text": "4.12.0 exporter window panic: BatchMax 512 vs ring 256. Platform has it.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794557400.000200",
+   "channel_id": "C07FLEETDEV",
+   "user_id": "U07LEIF",
+   "text": "Reminder: release builds are -mod=vendor -trimpath. If you need a dependency change, bump it in go.mod and re-vendor in the same PR.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794567600.000100",
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07MATO",
+   "text": "simkit main: Reset-after-Stop is a no-op now, Window clamps. Goes out as 0.5.0; fleetd picks it up with the bump PR (SIM-618).",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794568200.000200",
+   "channel_id": "C07SIMTOOLS",
+   "user_id": "U07ODIL",
+   "text": "Bump PR targets 27 Nov. Until then fleetd keeps running 0.4.2.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794578400.000100",
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07JUNO",
+   "text": "PD-7731: push provider 503s, retries piling up, workers OOMing. Restarting fleetd-workers-2.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794585600.000200",
+   "channel_id": "C07INCIDENTS",
+   "user_id": "U07CASS",
+   "text": "Provider recovering. Retry backlog draining.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794574800.000100",
+   "channel_id": "C07BILLENG",
+   "user_id": "U07KOFI",
+   "text": "If the desk sends settlement-queue crashes to Messaging again I'll raise it at the review.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  },
+  {
+   "ts": "1794575400.000200",
+   "channel_id": "C07BILLENG",
+   "user_id": "U07ILSE",
+   "text": "The ownership file says queue/ is Messaging since September though.",
+   "thread_ts": null,
+   "reply_count": 0,
+   "reactions": []
+  }
+ ]
+}

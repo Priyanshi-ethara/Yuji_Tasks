@@ -1,0 +1,808 @@
+{
+ "workspace": {
+  "id": "workspace-brightwater"
+ },
+ "teams": [
+  {
+   "id": "team-bw-led",
+   "name": "Ledger Platform",
+   "key": "LED",
+   "description": "Ledger Platform team tracker",
+   "color": "#5E6AD2",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "team-bw-acq",
+   "name": "Acquiring",
+   "key": "ACQ",
+   "description": "Acquiring team tracker",
+   "color": "#5E6AD2",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "team-bw-pay",
+   "name": "Payouts",
+   "key": "PAY",
+   "description": "Payouts team tracker",
+   "color": "#5E6AD2",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "team-bw-rsk",
+   "name": "Risk Engineering",
+   "key": "RSK",
+   "description": "Risk Engineering team tracker",
+   "color": "#5E6AD2",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "team-bw-rel",
+   "name": "Reliability Office",
+   "key": "REL",
+   "description": "Reliability Office team tracker",
+   "color": "#5E6AD2",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  }
+ ],
+ "users": [
+  {
+   "id": "user-bw-anouk",
+   "name": "anouk.verhaegen",
+   "displayName": "Anouk Verhaegen",
+   "email": "anouk.verhaegen@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-led",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-hana",
+   "name": "hana.lindqvist",
+   "displayName": "Hana Lindqvist",
+   "email": "hana.lindqvist@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-led",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-dario",
+   "name": "dario.fenwick",
+   "displayName": "Dario Fenwick",
+   "email": "dario.fenwick@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-acq",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-felix",
+   "name": "felix.durand",
+   "displayName": "Felix Durand",
+   "email": "felix.durand@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-acq",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-marek",
+   "name": "marek.halloran",
+   "displayName": "Marek Halloran",
+   "email": "marek.halloran@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-pay",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-celia",
+   "name": "celia.munro",
+   "displayName": "Celia Munro",
+   "email": "celia.munro@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-pay",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-ruth",
+   "name": "ruth.okonjo",
+   "displayName": "Ruth Okonjo",
+   "email": "ruth.okonjo@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-rsk",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-kofi",
+   "name": "kofi.asante",
+   "displayName": "Kofi Asante",
+   "email": "kofi.asante@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-rsk",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-ines",
+   "name": "ines.calloway",
+   "displayName": "Ines Calloway",
+   "email": "ines.calloway@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": true,
+   "teamId": "team-bw-rel",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-noor",
+   "name": "noor.haddad",
+   "displayName": "Noor Haddad",
+   "email": "noor.haddad@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-rel",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  },
+  {
+   "id": "user-bw-tobias",
+   "name": "tobias.renwick",
+   "displayName": "Tobias Renwick",
+   "email": "tobias.renwick@brightwater-payments.example",
+   "avatarUrl": "",
+   "active": true,
+   "admin": false,
+   "teamId": "team-bw-rel",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-09-30T10:00:00"
+  }
+ ],
+ "workflow_states": [
+  {
+   "id": "state-led-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bw-led",
+   "description": "Backlog (LED)"
+  },
+  {
+   "id": "state-led-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bw-led",
+   "description": "Todo (LED)"
+  },
+  {
+   "id": "state-led-in-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bw-led",
+   "description": "In Progress (LED)"
+  },
+  {
+   "id": "state-led-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bw-led",
+   "description": "Done (LED)"
+  },
+  {
+   "id": "state-led-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bw-led",
+   "description": "Canceled (LED)"
+  },
+  {
+   "id": "state-acq-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bw-acq",
+   "description": "Backlog (ACQ)"
+  },
+  {
+   "id": "state-acq-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bw-acq",
+   "description": "Todo (ACQ)"
+  },
+  {
+   "id": "state-acq-in-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bw-acq",
+   "description": "In Progress (ACQ)"
+  },
+  {
+   "id": "state-acq-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bw-acq",
+   "description": "Done (ACQ)"
+  },
+  {
+   "id": "state-acq-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bw-acq",
+   "description": "Canceled (ACQ)"
+  },
+  {
+   "id": "state-pay-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bw-pay",
+   "description": "Backlog (PAY)"
+  },
+  {
+   "id": "state-pay-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bw-pay",
+   "description": "Todo (PAY)"
+  },
+  {
+   "id": "state-pay-in-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bw-pay",
+   "description": "In Progress (PAY)"
+  },
+  {
+   "id": "state-pay-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bw-pay",
+   "description": "Done (PAY)"
+  },
+  {
+   "id": "state-pay-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bw-pay",
+   "description": "Canceled (PAY)"
+  },
+  {
+   "id": "state-rsk-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bw-rsk",
+   "description": "Backlog (RSK)"
+  },
+  {
+   "id": "state-rsk-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bw-rsk",
+   "description": "Todo (RSK)"
+  },
+  {
+   "id": "state-rsk-in-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bw-rsk",
+   "description": "In Progress (RSK)"
+  },
+  {
+   "id": "state-rsk-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bw-rsk",
+   "description": "Done (RSK)"
+  },
+  {
+   "id": "state-rsk-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bw-rsk",
+   "description": "Canceled (RSK)"
+  },
+  {
+   "id": "state-rel-backlog",
+   "name": "Backlog",
+   "type": "backlog",
+   "color": "#bec2c8",
+   "position": 0,
+   "teamId": "team-bw-rel",
+   "description": "Backlog (REL)"
+  },
+  {
+   "id": "state-rel-todo",
+   "name": "Todo",
+   "type": "unstarted",
+   "color": "#bec2c8",
+   "position": 1,
+   "teamId": "team-bw-rel",
+   "description": "Todo (REL)"
+  },
+  {
+   "id": "state-rel-in-progress",
+   "name": "In Progress",
+   "type": "started",
+   "color": "#bec2c8",
+   "position": 2,
+   "teamId": "team-bw-rel",
+   "description": "In Progress (REL)"
+  },
+  {
+   "id": "state-rel-done",
+   "name": "Done",
+   "type": "completed",
+   "color": "#bec2c8",
+   "position": 3,
+   "teamId": "team-bw-rel",
+   "description": "Done (REL)"
+  },
+  {
+   "id": "state-rel-canceled",
+   "name": "Canceled",
+   "type": "canceled",
+   "color": "#bec2c8",
+   "position": 4,
+   "teamId": "team-bw-rel",
+   "description": "Canceled (REL)"
+  }
+ ],
+ "labels": [
+  {
+   "id": "label-bw-slo",
+   "name": "SLO follow-up",
+   "color": "#eb5757",
+   "description": "Raised by the Reliability Office for a missed objective",
+   "teamId": null,
+   "createdAt": "2026-02-02T09:00:00",
+   "updatedAt": "2026-02-02T09:00:00"
+  },
+  {
+   "id": "label-bw-pir",
+   "name": "PIR action",
+   "color": "#f2c94c",
+   "description": "Action from a post-incident review",
+   "teamId": null,
+   "createdAt": "2026-02-02T09:00:00",
+   "updatedAt": "2026-02-02T09:00:00"
+  }
+ ],
+ "projects": [
+  {
+   "id": "PROJ-BW-REL26",
+   "name": "Reliability follow-ups 2026",
+   "description": "Umbrella for SLO follow-ups raised by the Reliability Office.",
+   "state": "started",
+   "leadId": "user-bw-ines",
+   "teamIds": [
+    "team-bw-led",
+    "team-bw-acq",
+    "team-bw-pay",
+    "team-bw-rsk",
+    "team-bw-rel"
+   ],
+   "startDate": "2026-01-01",
+   "targetDate": "2026-12-31",
+   "createdAt": "2026-01-12T09:00:00",
+   "updatedAt": "2026-10-05T11:00:00"
+  }
+ ],
+ "cycles": [
+  {
+   "id": "cycle-bw-led-2610",
+   "name": "LED October 2026",
+   "number": 10,
+   "teamId": "team-bw-led",
+   "startsAt": "2026-10-01",
+   "endsAt": "2026-10-31",
+   "completedAt": null,
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-09-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-acq-2610",
+   "name": "ACQ October 2026",
+   "number": 10,
+   "teamId": "team-bw-acq",
+   "startsAt": "2026-10-01",
+   "endsAt": "2026-10-31",
+   "completedAt": null,
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-09-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-pay-2610",
+   "name": "PAY October 2026",
+   "number": 10,
+   "teamId": "team-bw-pay",
+   "startsAt": "2026-10-01",
+   "endsAt": "2026-10-31",
+   "completedAt": null,
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-09-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-rsk-2610",
+   "name": "RSK October 2026",
+   "number": 10,
+   "teamId": "team-bw-rsk",
+   "startsAt": "2026-10-01",
+   "endsAt": "2026-10-31",
+   "completedAt": null,
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-09-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-rel-2610",
+   "name": "REL October 2026",
+   "number": 10,
+   "teamId": "team-bw-rel",
+   "startsAt": "2026-10-01",
+   "endsAt": "2026-10-31",
+   "completedAt": null,
+   "createdAt": "2026-09-28T09:00:00",
+   "updatedAt": "2026-09-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-led-2611",
+   "name": "LED November 2026",
+   "number": 11,
+   "teamId": "team-bw-led",
+   "startsAt": "2026-11-01",
+   "endsAt": "2026-11-30",
+   "completedAt": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-10-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-acq-2611",
+   "name": "ACQ November 2026",
+   "number": 11,
+   "teamId": "team-bw-acq",
+   "startsAt": "2026-11-01",
+   "endsAt": "2026-11-30",
+   "completedAt": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-10-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-pay-2611",
+   "name": "PAY November 2026",
+   "number": 11,
+   "teamId": "team-bw-pay",
+   "startsAt": "2026-11-01",
+   "endsAt": "2026-11-30",
+   "completedAt": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-10-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-rsk-2611",
+   "name": "RSK November 2026",
+   "number": 11,
+   "teamId": "team-bw-rsk",
+   "startsAt": "2026-11-01",
+   "endsAt": "2026-11-30",
+   "completedAt": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-10-28T09:00:00"
+  },
+  {
+   "id": "cycle-bw-rel-2611",
+   "name": "REL November 2026",
+   "number": 11,
+   "teamId": "team-bw-rel",
+   "startsAt": "2026-11-01",
+   "endsAt": "2026-11-30",
+   "completedAt": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-10-28T09:00:00"
+  }
+ ],
+ "issues": [
+  {
+   "id": "issue-bw-led-311",
+   "identifier": "LED-311",
+   "number": 311,
+   "title": "SLO follow-up: journal-export — September 2026",
+   "description": "Missed objective in September (99.471 % vs 99.50 %).",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-led-done",
+   "assigneeId": "user-bw-hana",
+   "teamId": "team-bw-led",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-slo"
+   ],
+   "dueDate": null,
+   "sortOrder": 311.0,
+   "branchName": null,
+   "createdAt": "2026-10-05T11:00:00",
+   "updatedAt": "2026-10-20T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-led-312",
+   "identifier": "LED-312",
+   "number": 312,
+   "title": "SLO follow-up: statement-render — September 2026",
+   "description": "Missed objective in September.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-led-done",
+   "assigneeId": "user-bw-anouk",
+   "teamId": "team-bw-led",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-slo"
+   ],
+   "dueDate": null,
+   "sortOrder": 312.0,
+   "branchName": null,
+   "createdAt": "2026-10-05T11:00:00",
+   "updatedAt": "2026-10-31T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-acq-208",
+   "identifier": "ACQ-208",
+   "number": 208,
+   "title": "SLO follow-up: merchant-onboarding-api — September 2026",
+   "description": "Missed objective in September.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-acq-done",
+   "assigneeId": "user-bw-dario",
+   "teamId": "team-bw-acq",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-slo"
+   ],
+   "dueDate": null,
+   "sortOrder": 208.0,
+   "branchName": null,
+   "createdAt": "2026-10-05T11:00:00",
+   "updatedAt": "2026-10-25T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-rsk-144",
+   "identifier": "RSK-144",
+   "number": 144,
+   "title": "SLO follow-up: kyc-document-check — September 2026",
+   "description": "Missed objective in September.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-rsk-in-progress",
+   "assigneeId": "user-bw-ruth",
+   "teamId": "team-bw-rsk",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-slo"
+   ],
+   "dueDate": null,
+   "sortOrder": 144.0,
+   "branchName": null,
+   "createdAt": "2026-10-05T11:00:00",
+   "updatedAt": "2026-10-28T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-pay-412",
+   "identifier": "PAY-412",
+   "number": 412,
+   "title": "Pool sizing guard in payout-scheduler",
+   "description": "PIR 19 Oct action 1.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-pay-in-progress",
+   "assigneeId": "user-bw-celia",
+   "teamId": "team-bw-pay",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-pir"
+   ],
+   "dueDate": null,
+   "sortOrder": 412.0,
+   "branchName": null,
+   "createdAt": "2026-10-23T11:00:00",
+   "updatedAt": "2026-10-30T10:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-pay-413",
+   "identifier": "PAY-413",
+   "number": 413,
+   "title": "Re-check soak coverage when the canary cell is drained",
+   "description": "PIR 19 Oct action 2.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-pay-todo",
+   "assigneeId": "user-bw-marek",
+   "teamId": "team-bw-pay",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-pir"
+   ],
+   "dueDate": null,
+   "sortOrder": 413.0,
+   "branchName": null,
+   "createdAt": "2026-10-23T11:00:00",
+   "updatedAt": "2026-10-23T11:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-rsk-151",
+   "identifier": "RSK-151",
+   "number": 151,
+   "title": "dispute-evidence retry budget",
+   "description": "PIR 8 Oct action 2.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-rsk-todo",
+   "assigneeId": "user-bw-ruth",
+   "teamId": "team-bw-rsk",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-pir"
+   ],
+   "dueDate": null,
+   "sortOrder": 151.0,
+   "branchName": null,
+   "createdAt": "2026-10-13T11:00:00",
+   "updatedAt": "2026-10-13T11:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-rel-21",
+   "identifier": "REL-21",
+   "number": 21,
+   "title": "October 2026 SLO report",
+   "description": "Monthly cycle. Draft by Tobias; finish and publish by 5 Nov.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-rel-in-progress",
+   "assigneeId": "user-bw-ines",
+   "teamId": "team-bw-rel",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [],
+   "dueDate": null,
+   "sortOrder": 21.0,
+   "branchName": null,
+   "createdAt": "2026-10-28T09:00:00",
+   "updatedAt": "2026-11-02T09:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  },
+  {
+   "id": "issue-bw-rel-19",
+   "identifier": "REL-19",
+   "number": 19,
+   "title": "SLO follow-up: card-auth-gateway — August 2026 (misfiled)",
+   "description": "Filed here by mistake in May; moved to ACQ. Kept for history.",
+   "priority": 2,
+   "estimate": null,
+   "stateId": "state-rel-canceled",
+   "assigneeId": "user-bw-noor",
+   "teamId": "team-bw-rel",
+   "projectId": null,
+   "cycleId": null,
+   "labelIds": [
+    "label-bw-slo"
+   ],
+   "dueDate": null,
+   "sortOrder": 19.0,
+   "branchName": null,
+   "createdAt": "2026-05-04T09:00:00",
+   "updatedAt": "2026-05-06T09:00:00",
+   "startedAt": null,
+   "completedAt": null,
+   "canceledAt": null
+  }
+ ],
+ "comments": [
+  {
+   "id": "cmt-bw-rsk-144-1",
+   "body": "Bucket policy tests landed; waiting on October figures.",
+   "issueId": "issue-bw-rsk-144",
+   "userId": "user-bw-ruth",
+   "createdAt": "2026-10-28T10:00:00",
+   "updatedAt": "2026-10-28T10:00:00"
+  },
+  {
+   "id": "cmt-bw-rel-21-1",
+   "body": "Draft in the pack. Using nominated panels as in September.",
+   "issueId": "issue-bw-rel-21",
+   "userId": "user-bw-tobias",
+   "createdAt": "2026-11-02T09:00:00",
+   "updatedAt": "2026-11-02T09:00:00"
+  }
+ ]
+}

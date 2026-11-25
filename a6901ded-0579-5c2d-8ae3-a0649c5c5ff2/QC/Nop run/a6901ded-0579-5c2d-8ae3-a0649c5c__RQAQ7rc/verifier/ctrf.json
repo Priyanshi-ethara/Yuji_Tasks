@@ -1,0 +1,139 @@
+{
+  "results": {
+    "tool": {
+      "name": "pytest"
+    },
+    "summary": {
+      "tests": 20,
+      "passed": 0,
+      "failed": 20,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "overall_score": 0.0,
+      "weighted_percentage": 0.0
+    },
+    "tests": [
+      {
+        "name": "test_sub02_held_for_capacity_approval",
+        "status": "failed",
+        "duration": 7,
+        "weight": 5
+      },
+      {
+        "name": "test_sub02_capacity_request_to_pool_manager",
+        "status": "failed",
+        "duration": 3,
+        "weight": 5
+      },
+      {
+        "name": "test_sub02_reservation_from_remeasured_dry_run",
+        "status": "failed",
+        "duration": 2,
+        "weight": 5
+      },
+      {
+        "name": "test_clm07_reservation_follows_remeasured_dry_run",
+        "status": "failed",
+        "duration": 0,
+        "weight": 5
+      },
+      {
+        "name": "test_sub02_change_ticket_waits_in_todo",
+        "status": "failed",
+        "duration": 0,
+        "weight": 3
+      },
+      {
+        "name": "test_remeasured_dry_runs_read_before_the_note",
+        "status": "failed",
+        "duration": 2,
+        "weight": 3
+      },
+      {
+        "name": "test_clm07_replicas_corrected_and_held",
+        "status": "failed",
+        "duration": 1,
+        "weight": 1
+      },
+      {
+        "name": "test_uw03_blocked_on_data",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_fnol11_held_for_signoff_and_capacity",
+        "status": "failed",
+        "duration": 1,
+        "weight": 1
+      },
+      {
+        "name": "test_geometry_left_where_it_was_right",
+        "status": "failed",
+        "duration": 1,
+        "weight": 1
+      },
+      {
+        "name": "test_one_note_to_the_requester",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_note_after_every_launch_write",
+        "status": "failed",
+        "duration": 1,
+        "weight": 1
+      },
+      {
+        "name": "test_deciding_records_read_before_decisions",
+        "status": "failed",
+        "duration": 0,
+        "weight": 1
+      },
+      {
+        "name": "test_reservations_open_with_the_window",
+        "status": "failed",
+        "duration": 1,
+        "weight": 1
+      },
+      {
+        "name": "test_guard_touched_the_training_cluster",
+        "status": "failed",
+        "duration": 1,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_deleted_existing_records",
+        "status": "failed",
+        "duration": 3,
+        "weight": -5
+      },
+      {
+        "name": "test_guard_registry_changed_beyond_the_desk_fields",
+        "status": "failed",
+        "duration": 1,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_wrote_where_the_desk_only_reads",
+        "status": "failed",
+        "duration": 1,
+        "weight": -3
+      },
+      {
+        "name": "test_guard_note_copied_to_someone_else",
+        "status": "failed",
+        "duration": 1,
+        "weight": -1
+      },
+      {
+        "name": "test_guard_signed_out",
+        "status": "failed",
+        "duration": 0,
+        "weight": -1
+      }
+    ]
+  }
+}

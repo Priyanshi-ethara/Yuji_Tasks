@@ -1,0 +1,12 @@
+From: Anika Oyelaran <anika.oyelaran@sorrel-insurance.example>
+To: ML Launch Desk <ml-launch-desk@sorrel-insurance.example>
+Date: Mon, 9 Nov 2026 10:23:00 +0000
+Subject: FT-SUB-02 for the 19 November window
+Message-ID: <ft-sub-02-1109@sorrel-insurance.example>
+Content-Type: text/plain; charset=utf-8
+
+Hi desk,
+
+SUB-02 is on the sharded-dp profile at micro-batch 2 so the 8B fits with full optimizer state. Training data: sub-letters-train-v4 plus claims-faq-paraphrase-v2 for the letter preambles.
+
+Anika

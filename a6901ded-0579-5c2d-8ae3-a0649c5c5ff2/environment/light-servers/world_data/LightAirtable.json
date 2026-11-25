@@ -1,0 +1,496 @@
+{
+ "bases": [
+  {
+   "id": "app_sorrelml",
+   "name": "ML Platform",
+   "permission_level": "create"
+  }
+ ],
+ "tables": [
+  {
+   "id": "tbl_ftruns",
+   "base_id": "app_sorrelml",
+   "name": "Fine-tune runs",
+   "fields": [
+    {
+     "id": "fld_ft01",
+     "name": "Run ID",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft02",
+     "name": "Window",
+     "type": "date"
+    },
+    {
+     "id": "fld_ft03",
+     "name": "Owner",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft04",
+     "name": "Team",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft05",
+     "name": "Recipe",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft06",
+     "name": "Base checkpoint",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft07",
+     "name": "Micro-batch",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft08",
+     "name": "Grad accum",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft09",
+     "name": "GPUs",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft10",
+     "name": "Seq len",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft11",
+     "name": "Peak LR",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft12",
+     "name": "Steps",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft13",
+     "name": "Train datasets",
+     "type": "multilineText"
+    },
+    {
+     "id": "fld_ft14",
+     "name": "Eval set",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft15",
+     "name": "Launch spec",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft16",
+     "name": "Launch namespace",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_ft17",
+     "name": "Readiness",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld_ft18",
+     "name": "Reserved hours",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft19",
+     "name": "Charged GPU-hours",
+     "type": "number"
+    },
+    {
+     "id": "fld_ft20",
+     "name": "Notes",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "id": "tbl_poolbook",
+   "base_id": "app_sorrelml",
+   "name": "Pool bookings",
+   "fields": [
+    {
+     "id": "fld_pb01",
+     "name": "Window",
+     "type": "date"
+    },
+    {
+     "id": "fld_pb02",
+     "name": "Pool",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_pb03",
+     "name": "Team",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld_pb04",
+     "name": "GPUs held",
+     "type": "number"
+    },
+    {
+     "id": "fld_pb05",
+     "name": "Note",
+     "type": "multilineText"
+    }
+   ]
+  }
+ ],
+ "records": {
+  "tbl_ftruns": [
+   {
+    "id": "recSorFt07clm4k",
+    "createdTime": "2026-11-09T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-CLM-07",
+     "Window": "2026-11-19",
+     "Owner": "Mireille Dufresne",
+     "Team": "Claims AI",
+     "Recipe": "RCP-CLM-3",
+     "Base checkpoint": "sorrel-base-8b-r2",
+     "Micro-batch": 4,
+     "Grad accum": 8,
+     "GPUs": 16,
+     "Seq len": 4096,
+     "Peak LR": 0.0001,
+     "Steps": 3600,
+     "Train datasets": "claims-notes-sum-v3",
+     "Eval set": "claims-sum-eval-v2",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-clm-07.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Awaiting launch review",
+     "Notes": "Spec updated 10 Nov for the r2 base."
+    }
+   },
+   {
+    "id": "recSorFt03uw8b2",
+    "createdTime": "2026-11-09T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-UW-03",
+     "Window": "2026-11-19",
+     "Owner": "Tobias Wren",
+     "Team": "Underwriting AI",
+     "Recipe": "RCP-UW-2",
+     "Base checkpoint": "sorrel-base-3b-r4",
+     "Micro-batch": 8,
+     "Grad accum": 4,
+     "GPUs": 8,
+     "Seq len": 2048,
+     "Peak LR": 2e-05,
+     "Steps": 4000,
+     "Train datasets": "uw-qa-train-v5\nuw-faq-paraphrase-v1",
+     "Eval set": "uw-qa-eval-2026Q3",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-uw-03.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Awaiting launch review",
+     "Notes": "Adds uw-faq-paraphrase-v1 for phrasing coverage."
+    }
+   },
+   {
+    "id": "recSorFt11fn2c6",
+    "createdTime": "2026-11-09T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-FNOL-11",
+     "Window": "2026-11-19",
+     "Owner": "Saoirse Kimani",
+     "Team": "Claims Operations AI",
+     "Recipe": "RCP-FNOL-4",
+     "Base checkpoint": "sorrel-base-1b-r3",
+     "Micro-batch": 8,
+     "Grad accum": 2,
+     "GPUs": 8,
+     "Seq len": 2560,
+     "Peak LR": 3e-05,
+     "Steps": 5000,
+     "Train datasets": "fnol-triage-train-v7",
+     "Eval set": "fnol-triage-eval-v3",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-fnol-11.launch.yaml",
+     "Launch namespace": "ft-pool-south",
+     "Readiness": "Awaiting launch review",
+     "Notes": "Sequence length raised to 2560 for long adjuster notes."
+    }
+   },
+   {
+    "id": "recSorFt02sb9d1",
+    "createdTime": "2026-11-09T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-SUB-02",
+     "Window": "2026-11-19",
+     "Owner": "Anika Oyelaran",
+     "Team": "Recoveries AI",
+     "Recipe": "RCP-SUB-1",
+     "Base checkpoint": "sorrel-base-8b-r2",
+     "Micro-batch": 2,
+     "Grad accum": 8,
+     "GPUs": 16,
+     "Seq len": 4096,
+     "Peak LR": 5e-05,
+     "Steps": 4000,
+     "Train datasets": "sub-letters-train-v4\nclaims-faq-paraphrase-v2",
+     "Eval set": "sub-letters-eval-v2",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-sub-02.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Awaiting launch review",
+     "Notes": "First SUB run on the sharded-dp profile."
+    }
+   },
+   {
+    "id": "recSorFt06clm1a",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-CLM-06",
+     "Window": "2026-11-05",
+     "Owner": "Mireille Dufresne",
+     "Team": "Claims AI",
+     "Recipe": "RCP-CLM-3",
+     "Base checkpoint": "sorrel-base-8b-r1",
+     "Micro-batch": 4,
+     "Grad accum": 8,
+     "GPUs": 16,
+     "Seq len": 4096,
+     "Peak LR": 0.0001,
+     "Steps": 3600,
+     "Train datasets": "claims-notes-sum-v2",
+     "Eval set": "claims-sum-eval-v2",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-clm-06.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Ready to launch",
+     "Notes": "Launched 5 Nov 06:00 UTC; finished 11:41 UTC.",
+     "Reserved hours": 6,
+     "Charged GPU-hours": 96
+    }
+   },
+   {
+    "id": "recSorFt02uw5e3",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-UW-02",
+     "Window": "2026-10-22",
+     "Owner": "Tobias Wren",
+     "Team": "Underwriting AI",
+     "Recipe": "RCP-UW-2",
+     "Base checkpoint": "sorrel-base-3b-r4",
+     "Micro-batch": 8,
+     "Grad accum": 4,
+     "GPUs": 8,
+     "Seq len": 2048,
+     "Peak LR": 2e-05,
+     "Steps": 4000,
+     "Train datasets": "uw-qa-train-v5",
+     "Eval set": "uw-qa-eval-2026Q3",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-uw-02.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Ready to launch",
+     "Notes": "Completed; eval report in the eval-harness repo.",
+     "Reserved hours": 5,
+     "Charged GPU-hours": 40
+    }
+   },
+   {
+    "id": "recSorFt10fn7f1",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-FNOL-10",
+     "Window": "2026-10-29",
+     "Owner": "Saoirse Kimani",
+     "Team": "Claims Operations AI",
+     "Recipe": "RCP-FNOL-4",
+     "Base checkpoint": "sorrel-base-1b-r3",
+     "Micro-batch": 8,
+     "Grad accum": 2,
+     "GPUs": 8,
+     "Seq len": 2048,
+     "Peak LR": 3e-05,
+     "Steps": 5000,
+     "Train datasets": "fnol-triage-train-v6",
+     "Eval set": "fnol-triage-eval-v2",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-fnol-10.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Ready to launch",
+     "Notes": "Completed.",
+     "Reserved hours": 6,
+     "Charged GPU-hours": 48
+    }
+   },
+   {
+    "id": "recSorFt04rk3g8",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-RISK-04",
+     "Window": "2026-11-12",
+     "Owner": "Ines Kowalczyk",
+     "Team": "Risk Analytics",
+     "Recipe": "RCP-RISK-2",
+     "Base checkpoint": "sorrel-base-3b-r4",
+     "Micro-batch": 8,
+     "Grad accum": 3,
+     "GPUs": 8,
+     "Seq len": 2048,
+     "Peak LR": 2.5e-05,
+     "Steps": 3000,
+     "Train datasets": "risk-features-2026h2",
+     "Eval set": "risk-eval-2026h1",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-risk-04.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Ready to launch",
+     "Notes": "Ran 1 h 20 min past its reservation; see the post-mortem.",
+     "Reserved hours": 9,
+     "Charged GPU-hours": 72
+    }
+   },
+   {
+    "id": "recSorFt01sb2h4",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-SUB-01",
+     "Window": "2026-10-15",
+     "Owner": "Anika Oyelaran",
+     "Team": "Recoveries AI",
+     "Recipe": "RCP-SUB-1",
+     "Base checkpoint": "sorrel-base-8b-r1",
+     "Micro-batch": 4,
+     "Grad accum": 4,
+     "GPUs": 16,
+     "Seq len": 4096,
+     "Peak LR": 5e-05,
+     "Steps": 4000,
+     "Train datasets": "sub-letters-train-v3",
+     "Eval set": "sub-letters-eval-v1",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-sub-01.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Ready to launch",
+     "Notes": "Completed.",
+     "Reserved hours": 7,
+     "Charged GPU-hours": 112
+    }
+   },
+   {
+    "id": "recSorFt07aab5j",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-CLM-07a",
+     "Window": "2026-11-26",
+     "Owner": "Mireille Dufresne",
+     "Team": "Claims AI",
+     "Recipe": "RCP-CLM-3",
+     "Base checkpoint": "sorrel-base-8b-r2",
+     "Micro-batch": 4,
+     "Grad accum": 8,
+     "GPUs": 16,
+     "Seq len": 4096,
+     "Peak LR": 0.0001,
+     "Steps": 1800,
+     "Train datasets": "claims-notes-sum-v3",
+     "Eval set": "claims-sum-eval-v2",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-clm-07a.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Draft",
+     "Notes": "Ablation of FT-CLM-07 for the 26 Nov window; not yet reviewed."
+    }
+   },
+   {
+    "id": "recSorFt05rk6k2",
+    "createdTime": "2026-10-01T08:00:00.000Z",
+    "fields": {
+     "Run ID": "FT-RISK-05",
+     "Window": "2026-11-26",
+     "Owner": "Ines Kowalczyk",
+     "Team": "Risk Analytics",
+     "Recipe": "RCP-RISK-2",
+     "Base checkpoint": "sorrel-base-3b-r4",
+     "Micro-batch": 8,
+     "Grad accum": 3,
+     "GPUs": 8,
+     "Seq len": 2048,
+     "Peak LR": 2.5e-05,
+     "Steps": 3000,
+     "Train datasets": "risk-features-2026h2",
+     "Eval set": "risk-eval-2026h1",
+     "Launch spec": "box:/ml-platform/launch-specs/ft-risk-05.launch.yaml",
+     "Launch namespace": "ft-pool-north",
+     "Readiness": "Draft",
+     "Notes": "Booked by Risk Analytics for the 26 Nov window."
+    }
+   }
+  ],
+  "tbl_poolbook": [
+   {
+    "id": "recSorPb0000001",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-12",
+     "Pool": "ft-pool-north",
+     "Team": "Risk Analytics",
+     "GPUs held": 8,
+     "Note": "FT-RISK-04"
+    }
+   },
+   {
+    "id": "recSorPb0000002",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-19",
+     "Pool": "ft-pool-north",
+     "Team": "Applied ML",
+     "GPUs held": 32,
+     "Note": "FT-CLM-07, FT-SUB-02 (16 each); FT-UW-03 shares with serving canary"
+    }
+   },
+   {
+    "id": "recSorPb0000003",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-19",
+     "Pool": "ft-pool-south",
+     "Team": "Applied ML",
+     "GPUs held": 8,
+     "Note": "FT-FNOL-11"
+    }
+   },
+   {
+    "id": "recSorPb0000004",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-19",
+     "Pool": "ft-pool-south",
+     "Team": "Pricing",
+     "GPUs held": 16,
+     "Note": "Batch scoring backfill, not a fine-tune"
+    }
+   },
+   {
+    "id": "recSorPb0000005",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-26",
+     "Pool": "ft-pool-north",
+     "Team": "Applied ML",
+     "GPUs held": 16,
+     "Note": "FT-CLM-07a"
+    }
+   },
+   {
+    "id": "recSorPb0000006",
+    "createdTime": "2026-11-02T09:00:00.000Z",
+    "fields": {
+     "Window": "2026-11-26",
+     "Pool": "ft-pool-north",
+     "Team": "Risk Analytics",
+     "GPUs held": 8,
+     "Note": "FT-RISK-05"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,115 @@
+{
+    "id": "cff2d1e1-7b35-49d3-8d34-7ce43aa538ce",
+    "task_name": "atlas/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c",
+    "trial_name": "c9ebfbd9-7b5c-509d-bf31-c6789ca5__6r24bG2",
+    "trial_uri": "***__6r24bG2",
+    "task_id": {
+        "path": "***/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c"
+    },
+    "source": null,
+    "task_checksum": "66aea4de897f54e37155c18a39c75db881400eedc27c42db957b5b94bcd2089d",
+    "config": {
+        "task": {
+            "path": "***/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "c9ebfbd9-7b5c-509d-bf31-c6789ca5__6r24bG2",
+        "trials_dir": "***",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands-sdk",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "reasoning_effort": "high"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": null,
+        "source_trial": {
+            "action": "regrade",
+            "type": "local",
+            "trial_id": "ac03923a-1f19-410c-8fb1-f2a66bff5304",
+            "path": "***/c9ebfbd9-7b5c-509d-bf31-c6789ca5bc0c-opus-5-20261112-080111/c9ebfbd9-7b5c-509d-bf31-c6789ca5__6r24bG2"
+        }
+    },
+    "agent_info": {
+        "name": "openhands-sdk",
+        "version": "1.59.0",
+        "model_info": {
+            "name": "claude-opus-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 16881971,
+        "n_cache_tokens": 16601221,
+        "n_output_tokens": 68417,
+        "cost_usd": 11.765492999999998
+    },
+    "verifier_result": {
+        "rewards": {
+            "pytest": 0.3448,
+            "rubric": 0.2407,
+            "reward": 0.2928
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-11-12T09:37:52.672315Z",
+    "finished_at": "2026-11-12T09:39:57.731360Z",
+    "environment_setup": null,
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": {
+        "started_at": "2026-11-12T09:37:52.926862Z",
+        "finished_at": "2026-11-12T09:39:57.730910Z"
+    }
+}

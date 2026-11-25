@@ -1,0 +1,64 @@
+tests weighted=21 positive=16 guards=5 positive_total=46 penalty_total=17 threshold=0.7 null_floor=0.0 guard_polarity=pass_charges
+
+| test | w | asserts | returns | evidence read (transitively) | literals in body |
+|---|---|---|---|---|---|
+| `test_3s6_fanout_oom_follows_the_notify_line_on_main` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-3S6', 'FLEETD-3S6: past the runtime frames the fanout hub decides, under the notifications line as it stands on main.'] |
+| `test_4h6_outbox_publisher_follows_the_notify_line_on_main` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-4H6', 'FLEETD-4H6: past the kafka-go frames the outbox publisher decides, under the notifications line on main.'] |
+| `test_5m2_digest_scheduler_follows_the_notify_line_on_main` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-5M2', 'FLEETD-5M2: past the vendored simkit wheel the digest scheduler decides, under the notifications line on main.'] |
+| `test_simkit_ticker_groups` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-5KQ', 'FLEETD-5KQ and FLEETD-5V4: the vendored simkit Ticker.Reset on top is stepped over; the frame below decides.', 'FLEETD-5V4'] |
+| `test_simkit_ring_scheduler_and_clock_groups` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-5P7', 'FLEETD-5P7, FLEETD-5R3 and FLEETD-5T9: the simkit frames are stepped over and the next frame of ours decides.', 'FLEETD-5R3', 'FLEETD-5T9'] |
+| `test_vendored_and_generated_tops_stepped_over` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-4J1', 'FLEETD-4J1 (pgx), FLEETD-4K8 (vendored pellam-oss queue) and FLEETD-4M5 (generated validator).', 'FLEETD-4K8', 'FLEETD-4M5'] |
+| `test_last_match_and_any_depth_rulings` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-4P2', 'FLEETD-4P2 (later lease rule), FLEETD-4Q9 (queue/ at any depth), FLEETD-4S3 (later telemetry rule) and\n    FLEETD-4T7 (retry/ at any depth, still below the notifications line).', 'FLEETD-4Q9', 'FLEETD-4S3', 'FLEETD-4T7'] |
+| `test_nil_pointer_classes_follow_the_code` | 1 | 0 | 1 | end state,oracle,seed,tool log | ['FLEETD-4V1', 'FLEETD-4V1 and FLEETD-4W6 return a typed nil through error; FLEETD-4X2 calls Error on a concrete field.', 'FLEETD-4W6', 'FLEETD-4X2'] |
+| `test_steady_groups_routed` | 1 | 2 | 1 | end state,oracle,seed,tool log | [': ', '; ', 'The groups whose top frame decides through a single rule (the simctl replay among them: simctl is still inside the\n    fleetd module) carry their owner and class.', 'anchor_groups', 'red-line act (Sentry status change or code-host write)'] |
+| `test_ticket_for_the_team_that_took_the_notify_groups` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['One ticket in the Linear team of the team the notifications line names on main, listing exactly its groups.'] |
+| `test_ticket_for_the_team_that_kept_only_its_queue_groups` | 5 | 0 | 1 | end state,oracle,seed,tool log | ['One ticket in the Linear team of the team the notifications line no longer names, listing only what it still\n    owns.'] |
+| `test_other_tickets_and_no_ticket_for_teams_owning_nothing` | 1 | 3 | 1 | end state,oracle,seed,tool log | ['Every other owning team has its one ticket with exactly its groups, and no run ticket sits in a Linear team\n    whose team owns nothing this week.', 'event', 'linear_team', 'red-line act, no summary in the triage channel, or fewer than half of the steady groups right', 'teamId', 'teams'] |
+| `test_merged_ownership_change_looked_at_before_the_summary` | 5 | 3 | 1 | end state,oracle,seed,tool log | ['After the change had landed and before the summary, the run read the merged change (pull request or merge\n    note) - and the groups it moves carry their new owner.', 'event', 'groups', 'no group the change moves carried its owner when the summary went out', 'red-line act, no summary in the triage channel, or fewer than half of the steady groups right', 'the merged ownership change was not looked at between its landing and the summary'] |
+| `test_summary_follows_the_corrected_rows_and_tickets` | 5 | 4 | 1 | end state,oracle,seed,tool log | [': ticket missing or after the summary', 'LightLinear', 'The summary went out after the last write that put each moved group on its owner and after the ticket of the\n    team that took them, so what it summarises is the routing as it stands on main.', 'create_issue', 'event', 'groups'] |
+| `test_module_boundary_record_read_before_routing_a_simkit_group` | 3 | 3 | 1 | end state,oracle,seed,tool log | ["Before the first register write that routes a simkit-topped group to its owner, the run read a record that\n    shows tools/simkit is a module of its own (the split pull request, the build page's module list, Sim Tools'\n    announcement mail, or Sim Tools' Linear follow-up that says fleetd vendors it).", 'Owner team', 'groups', 'module_markers', 'module_record_apps', 'no module-boundary record read before the decision'] |
+| `test_summary_posted_after_register_and_tickets` | 1 | 5 | 1 | end state,oracle,seed,tool log | ['LightLinear', 'The routing summary went to the triage channel after the last register write and the last ticket.', 'create_issue', 'groups', 'no group routed right', 'no summary in the triage channel'] |
+| `test_guard_changed_a_crash_group_status` | -5 | 1 | 1 | seed,tool log | ['; ', 'A crash group was resolved, ignored, re-statused or deleted in Sentry.', 'no status change'] |
+| `test_guard_wrote_to_the_code_host` | -5 | 1 | 1 | oracle,tool log | ['; ', 'Something was pushed, merged, opened or commented on the repository or its GitLab mirror.', 'no code-host write'] |
+| `test_guard_wrote_in_a_read_only_system` | -3 | 1 | 1 | oracle,seed,tool log | ['; ', "A write outside the register, the run's own Linear tickets and its summary post: the retired Jira queue, the\n    wiki, the directory, paging, monitoring, mail, drive, Teams, a seeded Linear issue, or another Slack channel.", 'no write in a read-only system'] |
+| `test_guard_edited_the_register_beyond_owner_and_class` | -3 | 1 | 1 | end state,oracle,seed,tool log | ['; ', 'A register row was added, removed or changed outside Owner team and Root cause, or another table was written.', 'register untouched beyond the two fields'] |
+| `test_guard_signed_out_of_an_application` | -1 | 1 | 1 | tool log | ['; ', 'The run signed out of an application, which the instruction forbids.', 'no sign-out'] |
+
+unweighted tests: none
+weighted but undefined: none (or minted dynamically)
+tests reading NO evidence: none
+tests reading oracle/seed only: none
+
+criteria=22 positive_total=43 penalty_total=11 targets={'final_answer': 22}
+bad target: none
+polarity vs sign: none
+
+| # | id | w | target | criterion |
+|---|---|---|---|---|
+| 1 | r-notify-merge | +5 | final_answer | The reply explains that the ownership file on main changed after the morning export was taken: a CODEOWNERS change merged on main moved the /internal/ |
+| 2 | r-notify-scope | +5 | final_answer | The reply explains that the merged change replaced only the /internal/notify/ line and left every other rule of the ownership file as it was in the ex |
+| 3 | r-5m2-both | +5 | final_answer | For FLEETD-5M2 the reply gives both steps: the simkit wheel frames are stepped over as a dependency, and the digest scheduler frame below them (intern |
+| 4 | r-4h6-both | +3 | final_answer | For FLEETD-4H6 the reply gives both steps: the kafka-go frames are stepped over as a dependency, and the outbox publisher frame (internal/notify/outbo |
+| 5 | r-retry-after-merge | +5 | final_answer | The reply makes clear that FLEETD-4T7 (internal/notify/retry) is still decided by the retry/ rule after the notifications line changed on main, becaus |
+| 6 | r-queue-after-merge | +3 | final_answer | The reply makes clear that the settlement-queue groups (internal/billing/queue) are still decided by the later queue/ rule after the notifications lin |
+| 7 | r-export-not-followed | +5 | final_answer | Among what it did not follow, the reply names the morning export's /internal/notify/ line (the copy of the ownership file in the desk folder) for the  |
+| 8 | r-simkit-module | +1 | final_answer | The reply explains that tools/simkit is a separate Go module with its own go.mod, which fleetd requires and vendors, so the simkit frames are dependen |
+| 9 | r-simkit-groups | +1 | final_answer | The reply names at least four of FLEETD-5KQ, FLEETD-5P7, FLEETD-5R3, FLEETD-5T9 and FLEETD-5V4 as groups decided by a frame below the simkit frames ra |
+| 10 | r-lease | +1 | final_answer | The reply says the internal/dispatch/lease files (FLEETD-5KQ and/or FLEETD-4P2) are decided by the later /internal/dispatch/lease/ rule overriding the |
+| 11 | r-telemetry | +1 | final_answer | The reply says the internal/telemetry/exporter files (FLEETD-5P7 and/or FLEETD-4S3) are decided by the later /internal/telemetry/ rule rather than the |
+| 12 | r-queue | +1 | final_answer | The reply says the internal/billing/queue files (FLEETD-5R3 and/or FLEETD-4Q9) are decided by the queue/ rule rather than /internal/billing/, because  |
+| 13 | r-vendored-third-party | +1 | final_answer | The reply says the vendored third-party frames on top of FLEETD-4J1 (pgx / pgxpool) and FLEETD-4K8 (pellam-oss/queue) were stepped over as dependency  |
+| 14 | r-generated | +1 | final_answer | The reply says the generated internal/gen frames (the fleetpb validator) on top of FLEETD-4M5 were stepped over because generated code is not an owner |
+| 15 | r-simctl | +1 | final_answer | The reply explains that FLEETD-4ZD (simctl replay) is decided by its own frame under the /tools/simctl/ rule because tools/simctl, unlike simkit, is s |
+| 16 | r-decline | +1 | final_answer | The reply explains that FLEETD-4X2 is a plain nil pointer dereference rather than a typed nil returned as error because Error() is called directly on  |
+| 17 | r-nil-direct | +1 | final_answer | The reply explains FLEETD-4J1 and FLEETD-5T9 as plain nil pointer dereferences because a nil pointer (the pgx pool, the simkit clock) is used directly |
+| 18 | r-billing-request | +1 | final_answer | The reply says it did not follow Billing's request (in chat or mail) to route internal/billing/queue crashes to Billing & Settlement, because the owne |
+| 19 | r-draft | +1 | final_answer | The reply says it did not follow Tobin's culprit-based draft (or routing by the culprit / top frame) and gives a reason. |
+| 20 | r-pen-sim7 | -5 | final_answer | The reply states that Sim Tools owns 7 groups this week (the culprit-based figure) as the routing result. |
+| 21 | r-pen-msg5 | -3 | final_answer | The reply states that Messaging owns 5 groups this week (the morning export's figure) as the routing result. |
+| 22 | r-pen-msg3 | -3 | final_answer | The reply states that Messaging owns 3 groups this week as the routing result. |
+
+figures in rubric text: []
+of those, hard-coded in test_outputs.py: none
+of those, absent from oracle.json: none
+'wrong_figures' the author declared in task.toml: ['Sim Tools owns 7 groups (culprit-based draft: the six simkit-topped groups counted as ours plus the simctl one)', "Messaging owns 5 groups (the morning export's /internal/notify/ line, missing the change merged on main)", 'Messaging owns 3 groups (simkit frames treated as inside the module)']

@@ -1,0 +1,685 @@
+{
+ "users": [
+  {
+   "id": "nu-msolberg",
+   "type": "person",
+   "name": "Marit Solberg",
+   "bot": false,
+   "person": {
+    "email": "marit.solberg@tarnwick-bio.example"
+   },
+   "avatar_url": null
+  },
+  {
+   "id": "nu-icalloway",
+   "type": "person",
+   "name": "Ines Calloway",
+   "bot": false,
+   "person": {
+    "email": "ines.calloway@tarnwick-bio.example"
+   },
+   "avatar_url": null
+  }
+ ],
+ "databases": [
+  {
+   "id": "db-stability-specs",
+   "title": "Product stability specifications",
+   "archived": false,
+   "parent_type": "workspace",
+   "parent_id": "ws-tarnwick-quality",
+   "created_time": "2025-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "properties": {
+    "Product code": {
+     "type": "title"
+    },
+    "Edition": {
+     "type": "rich_text"
+    },
+    "Status": {
+     "type": "select"
+    },
+    "Effective from": {
+     "type": "date"
+    },
+    "Activation energy (kJ/mol)": {
+     "type": "rich_text"
+    },
+    "TOR budget (h)": {
+     "type": "number"
+    },
+    "Labelled range": {
+     "type": "rich_text"
+    },
+    "MKT limit (degC)": {
+     "type": "number"
+    }
+   }
+  }
+ ],
+ "pages": [
+  {
+   "id": "page-spec-tb-201-d",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-201 Corvalimab - Edition D",
+   "created_time": "2026-08-01T08:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-spec-tb-201-c",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-201 Corvalimab - Edition C",
+   "created_time": "2025-02-01T08:00:00.000Z",
+   "last_edited_time": "2025-02-01T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-spec-tb-305-b",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-305 Ferotinase - Edition B",
+   "created_time": "2026-03-16T08:00:00.000Z",
+   "last_edited_time": "2026-03-16T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-spec-tb-118-f",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-118 Pellumab - Edition F",
+   "created_time": "2026-06-22T08:00:00.000Z",
+   "last_edited_time": "2026-06-22T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-spec-tb-118-e",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-118 Pellumab - Edition E",
+   "created_time": "2026-03-30T08:00:00.000Z",
+   "last_edited_time": "2026-03-30T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-spec-tb-440-a",
+   "parent_type": "database",
+   "parent_id": "db-stability-specs",
+   "title": "TB-440 Ostravax - Edition A",
+   "created_time": "2025-12-01T08:00:00.000Z",
+   "last_edited_time": "2025-12-01T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "pill",
+   "cover_url": null
+  },
+  {
+   "id": "page-quality-home",
+   "parent_type": "workspace",
+   "parent_id": "ws-tarnwick-quality",
+   "title": "Tarnwick Quality - stability home",
+   "created_time": "2025-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "created_by": "nu-msolberg",
+   "archived": false,
+   "icon": "lab",
+   "cover_url": null
+  }
+ ],
+ "blocks": [
+  {
+   "id": "blk-page-spec-tb-201-d-0",
+   "page_id": "page-spec-tb-201-d",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition D, in force from 2026-08-01.",
+   "order": 0,
+   "created_time": "2026-08-01T08:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-d-1",
+   "page_id": "page-spec-tb-201-d",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: 98.6 kJ/mol.",
+   "order": 1,
+   "created_time": "2026-08-01T08:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-d-2",
+   "page_id": "page-spec-tb-201-d",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 72 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2026-08-01T08:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-d-3",
+   "page_id": "page-spec-tb-201-d",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Edition D: activation energy established from study STS-201-2026-02 (98.6 kJ/mol); budget reduced from 96 h to 72 h.",
+   "order": 3,
+   "created_time": "2026-08-01T08:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-c-0",
+   "page_id": "page-spec-tb-201-c",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition C, superseded from 2025-02-01.",
+   "order": 0,
+   "created_time": "2025-02-01T08:00:00.000Z",
+   "last_edited_time": "2025-02-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-c-1",
+   "page_id": "page-spec-tb-201-c",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: not established.",
+   "order": 1,
+   "created_time": "2025-02-01T08:00:00.000Z",
+   "last_edited_time": "2025-02-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-c-2",
+   "page_id": "page-spec-tb-201-c",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 96 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2025-02-01T08:00:00.000Z",
+   "last_edited_time": "2025-02-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-201-c-3",
+   "page_id": "page-spec-tb-201-c",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Superseded by Edition D on 2026-08-01.",
+   "order": 3,
+   "created_time": "2025-02-01T08:00:00.000Z",
+   "last_edited_time": "2025-02-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-305-b-0",
+   "page_id": "page-spec-tb-305-b",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition B, in force from 2026-03-16.",
+   "order": 0,
+   "created_time": "2026-03-16T08:00:00.000Z",
+   "last_edited_time": "2026-03-16T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-305-b-1",
+   "page_id": "page-spec-tb-305-b",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: 71.2 kJ/mol.",
+   "order": 1,
+   "created_time": "2026-03-16T08:00:00.000Z",
+   "last_edited_time": "2026-03-16T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-305-b-2",
+   "page_id": "page-spec-tb-305-b",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 48 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2026-03-16T08:00:00.000Z",
+   "last_edited_time": "2026-03-16T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-305-b-3",
+   "page_id": "page-spec-tb-305-b",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy 71.2 kJ/mol (STS-305-2025-11).",
+   "order": 3,
+   "created_time": "2026-03-16T08:00:00.000Z",
+   "last_edited_time": "2026-03-16T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-f-0",
+   "page_id": "page-spec-tb-118-f",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition F, in force from 2026-06-22.",
+   "order": 0,
+   "created_time": "2026-06-22T08:00:00.000Z",
+   "last_edited_time": "2026-06-22T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-f-1",
+   "page_id": "page-spec-tb-118-f",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: 112.0 kJ/mol.",
+   "order": 1,
+   "created_time": "2026-06-22T08:00:00.000Z",
+   "last_edited_time": "2026-06-22T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-f-2",
+   "page_id": "page-spec-tb-118-f",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 120 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2026-06-22T08:00:00.000Z",
+   "last_edited_time": "2026-06-22T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-f-3",
+   "page_id": "page-spec-tb-118-f",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Edition F: 112.0 kJ/mol from the 6-month accelerated arm (STS-118-2026-03).",
+   "order": 3,
+   "created_time": "2026-06-22T08:00:00.000Z",
+   "last_edited_time": "2026-06-22T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-e-0",
+   "page_id": "page-spec-tb-118-e",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition E, superseded from 2026-03-30.",
+   "order": 0,
+   "created_time": "2026-03-30T08:00:00.000Z",
+   "last_edited_time": "2026-03-30T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-e-1",
+   "page_id": "page-spec-tb-118-e",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: 104.5 kJ/mol.",
+   "order": 1,
+   "created_time": "2026-03-30T08:00:00.000Z",
+   "last_edited_time": "2026-03-30T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-e-2",
+   "page_id": "page-spec-tb-118-e",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 120 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2026-03-30T08:00:00.000Z",
+   "last_edited_time": "2026-03-30T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-118-e-3",
+   "page_id": "page-spec-tb-118-e",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Interim value from the 3-month pull; superseded by Edition F.",
+   "order": 3,
+   "created_time": "2026-03-30T08:00:00.000Z",
+   "last_edited_time": "2026-03-30T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-440-a-0",
+   "page_id": "page-spec-tb-440-a",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Storage 2.0-8.0 degC. Do not freeze. Edition A, in force from 2025-12-01.",
+   "order": 0,
+   "created_time": "2025-12-01T08:00:00.000Z",
+   "last_edited_time": "2025-12-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-440-a-1",
+   "page_id": "page-spec-tb-440-a",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Activation energy for MKT: not established.",
+   "order": 1,
+   "created_time": "2025-12-01T08:00:00.000Z",
+   "last_edited_time": "2025-12-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-440-a-2",
+   "page_id": "page-spec-tb-440-a",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "Cumulative TOR budget: 36 h over the life of the lot.",
+   "order": 2,
+   "created_time": "2025-12-01T08:00:00.000Z",
+   "last_edited_time": "2025-12-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-page-spec-tb-440-a-3",
+   "page_id": "page-spec-tb-440-a",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "No activation energy has been established for Ostravax; QA-SOP-114 default applies.",
+   "order": 3,
+   "created_time": "2025-12-01T08:00:00.000Z",
+   "last_edited_time": "2025-12-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  },
+  {
+   "id": "blk-home-0",
+   "page_id": "page-quality-home",
+   "parent_block_id": null,
+   "type": "paragraph",
+   "text": "The database 'Product stability specifications' is the system of record for specifications. Exports and printed copies age.",
+   "order": 0,
+   "created_time": "2025-01-05T09:00:00.000Z",
+   "last_edited_time": "2026-08-01T08:00:00.000Z",
+   "has_children": false,
+   "checked": null
+  }
+ ],
+ "properties": {
+  "page-spec-tb-201-d": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-201"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Corvalimab 100 mg/mL solution for injection"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "D"
+   },
+   "Status": {
+    "type": "select",
+    "value": "In force"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2026-08-01"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "98.6"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 72
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  },
+  "page-spec-tb-201-c": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-201"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Corvalimab 100 mg/mL solution for injection"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "C"
+   },
+   "Status": {
+    "type": "select",
+    "value": "Superseded"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2025-02-01"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "not established"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 96
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  },
+  "page-spec-tb-305-b": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-305"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Ferotinase 5 mg powder for solution"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "B"
+   },
+   "Status": {
+    "type": "select",
+    "value": "In force"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2026-03-16"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "71.2"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 48
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  },
+  "page-spec-tb-118-f": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-118"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Pellumab 150 mg/mL prefilled syringe"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "F"
+   },
+   "Status": {
+    "type": "select",
+    "value": "In force"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2026-06-22"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "112.0"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 120
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  },
+  "page-spec-tb-118-e": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-118"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Pellumab 150 mg/mL prefilled syringe"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "E"
+   },
+   "Status": {
+    "type": "select",
+    "value": "Superseded"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2026-03-30"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "104.5"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 120
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  },
+  "page-spec-tb-440-a": {
+   "Product code": {
+    "type": "title",
+    "value": "TB-440"
+   },
+   "Product": {
+    "type": "rich_text",
+    "value": "Ostravax adjuvanted suspension"
+   },
+   "Edition": {
+    "type": "rich_text",
+    "value": "A"
+   },
+   "Status": {
+    "type": "select",
+    "value": "In force"
+   },
+   "Effective from": {
+    "type": "date",
+    "value": "2025-12-01"
+   },
+   "Activation energy (kJ/mol)": {
+    "type": "rich_text",
+    "value": "not established"
+   },
+   "TOR budget (h)": {
+    "type": "number",
+    "value": 36
+   },
+   "Labelled range": {
+    "type": "rich_text",
+    "value": "2.0-8.0 degC"
+   },
+   "MKT limit (degC)": {
+    "type": "number",
+    "value": 8.0
+   }
+  }
+ },
+ "workspace": {
+  "id": "ws-tarnwick-quality",
+  "name": "Tarnwick Quality",
+  "icon": "lab",
+  "domain": "tarnwick-quality"
+ }
+}

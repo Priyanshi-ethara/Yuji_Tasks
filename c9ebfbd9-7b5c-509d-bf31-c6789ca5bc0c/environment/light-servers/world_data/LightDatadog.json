@@ -1,0 +1,213 @@
+{
+ "monitors": [
+  {
+   "id": 45001,
+   "name": "NDC Cold Room 1 temperature",
+   "type": "metric alert",
+   "query": "avg(last_10m):avg:ndc.coldroom.temp{room:cr1} > 8",
+   "message": "CR1 above 8 degC. @pagerduty-ndc-cold-rooms",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "site:ndc",
+    "room:cr1"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-01T09:00:00+00:00"
+  },
+  {
+   "id": 45002,
+   "name": "NDC Cold Room 2 temperature",
+   "type": "metric alert",
+   "query": "avg(last_10m):avg:ndc.coldroom.temp{room:cr2} > 8",
+   "message": "CR2 above 8 degC. @pagerduty-ndc-cold-rooms",
+   "overall_state": "OK",
+   "priority": 2,
+   "tags": [
+    "site:ndc",
+    "room:cr2"
+   ],
+   "created": "2026-01-10T10:00:00+00:00",
+   "modified": "2026-11-07T03:52:00+00:00"
+  },
+  {
+   "id": 45003,
+   "name": "Logger self-check flags (Brightline portal feed)",
+   "type": "event alert",
+   "query": "events('sources:brightline status:fault').rollup('count').last('1h') > 0",
+   "message": "A logger raised a self-check flag. Logger goes to Metrology (MET-SOP-009). Not a measurement verdict.",
+   "overall_state": "OK",
+   "priority": 4,
+   "tags": [
+    "source:brightline"
+   ],
+   "created": "2026-02-01T10:00:00+00:00",
+   "modified": "2026-11-05T12:00:00+00:00"
+  }
+ ],
+ "events": [
+  {
+   "id": 9451,
+   "title": "Logger BL-3315 self-check FAULT",
+   "text": "BL-3315 raised a self-check FAULT flag at 2026-11-04T01:00:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3315",
+    "source:brightline"
+   ],
+   "date_happened": 1793754000
+  },
+  {
+   "id": 9452,
+   "title": "Logger BL-3315 self-check FAULT",
+   "text": "BL-3315 raised a self-check FAULT flag at 2026-11-04T01:15:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3315",
+    "source:brightline"
+   ],
+   "date_happened": 1793754900
+  },
+  {
+   "id": 9453,
+   "title": "Logger BL-3315 self-check FAULT",
+   "text": "BL-3315 raised a self-check FAULT flag at 2026-11-04T01:30:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3315",
+    "source:brightline"
+   ],
+   "date_happened": 1793755800
+  },
+  {
+   "id": 9454,
+   "title": "Logger BL-3320 self-check FAULT",
+   "text": "BL-3320 raised a self-check FAULT flag at 2026-11-04T22:30:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3320",
+    "source:brightline"
+   ],
+   "date_happened": 1793831400
+  },
+  {
+   "id": 9455,
+   "title": "Logger BL-3320 self-check FAULT",
+   "text": "BL-3320 raised a self-check FAULT flag at 2026-11-04T22:45:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3320",
+    "source:brightline"
+   ],
+   "date_happened": 1793832300
+  },
+  {
+   "id": 9456,
+   "title": "Logger BL-3320 self-check FAULT",
+   "text": "BL-3320 raised a self-check FAULT flag at 2026-11-04T23:00:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3320",
+    "source:brightline"
+   ],
+   "date_happened": 1793833200
+  },
+  {
+   "id": 9457,
+   "title": "Logger BL-3320 self-check FAULT",
+   "text": "BL-3320 raised a self-check FAULT flag at 2026-11-04T23:15:00Z (portal feed).",
+   "alert_type": "warning",
+   "priority": "low",
+   "host": "brightline-portal-feed",
+   "tags": [
+    "logger:BL-3320",
+    "source:brightline"
+   ],
+   "date_happened": 1793834100
+  },
+  {
+   "id": 9458,
+   "title": "NDC CR2 HIGH temperature",
+   "text": "Cold Room 2 above 8 degC (door ajar). PagerDuty incident raised.",
+   "alert_type": "error",
+   "priority": "normal",
+   "host": "ndc-bms",
+   "tags": [
+    "site:ndc"
+   ],
+   "date_happened": 1794013680
+  },
+  {
+   "id": 9459,
+   "title": "NDC CR2 recovered",
+   "text": "Cold Room 2 back below 8 degC.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "ndc-bms",
+   "tags": [
+    "site:ndc"
+   ],
+   "date_happened": 1794023520
+  },
+  {
+   "id": 9460,
+   "title": "Polar Arc gateway restart",
+   "text": "Carrier gateway restart reported by Polar Arc; TK9 uploads interrupted.",
+   "alert_type": "info",
+   "priority": "normal",
+   "host": "ndc-bms",
+   "tags": [
+    "site:ndc"
+   ],
+   "date_happened": 1793844180
+  }
+ ],
+ "hosts": [
+  {
+   "name": "ndc-bms",
+   "id": 7701,
+   "aliases": [
+    "ndc-building-management"
+   ],
+   "apps": [
+    "bms"
+   ],
+   "is_muted": false,
+   "last_reported_time": 1794207600,
+   "up": true,
+   "tags_by_source": {
+    "Datadog": [
+     "site:ndc"
+    ]
+   }
+  },
+  {
+   "name": "brightline-portal-feed",
+   "id": 7702,
+   "aliases": [],
+   "apps": [
+    "feed"
+   ],
+   "is_muted": false,
+   "last_reported_time": 1794207600,
+   "up": true,
+   "tags_by_source": {
+    "Datadog": [
+     "source:brightline"
+    ]
+   }
+  }
+ ]
+}

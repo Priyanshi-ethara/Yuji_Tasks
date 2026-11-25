@@ -1,0 +1,286 @@
+{
+  "pytest": {
+    "score": 0.2143,
+    "criteria": [
+      {
+        "name": "pytest_ledger",
+        "value": 0.2143,
+        "raw": 0.214286,
+        "weight": 1.0,
+        "description": "weighted ledger over tests/test_outputs.py: max(0, (earned - charged guards) / total positive weight)",
+        "reasoning": "earned 9 of 42, charged 0; missed 7: test_amended_meter_site_1_billed_on_its_amended_record, test_amended_meter_site_2_billed_on_its_amended_record, test_amended_meter_site_3_billed_on_its_amended_record, test_amended_meter_site_4_billed_on_its_amended_record, test_summary_mail_carries_the_draft_count_and_run_total, test_amended_meter_records_read_before_the_summary_mail, test_amended_sites_drafted_after_their_amendment_was_read"
+      }
+    ],
+    "kind": "programmatic"
+  },
+  "rubric": {
+    "score": 0.1087,
+    "criteria": [
+      {
+        "id": "1",
+        "name": "r-ct-sites",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.10869565217391304,
+        "description": "[final answer] The reply identifies Quenby Print Works, Thornaby Wharf Cold Store, Ashgrove Plastics Moulding and Hollin Bridge Sawmill (all four) as sites whose recorded values had to be scaled up because their current transformers (CTs) were changed while the meters are still programmed for the old CT ratio.",
+        "reasoning": "The final answer does not identify any sites as requiring CT-ratio corrections. Quenby, Thornaby, Ashgrove, and Hollin appear in the table, but no CT correction is stated."
+      },
+      {
+        "id": "2",
+        "name": "r-ct-cause",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.10869565217391304,
+        "description": "[final answer] The reply explains why those values were understated: the DNO (network operator) replaced the CTs before the run period began, during its substation works, while the meters are still programmed for their old ratios, so every value they recorded across the whole period is too low by the ratio of old to new CTs. The exact date of the works need not be given.",
+        "reasoning": "The final answer never explains that the DNO replaced CTs before the run while the meters retained their old programmed ratios."
+      },
+      {
+        "id": "3",
+        "name": "r-ct-factors",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.10869565217391304,
+        "description": "[final answer] The reply gives each of the four sites' correction as the new CT ratio over the old one: Quenby Print Works x2 (600/300), Thornaby Wharf Cold Store x4/3 (400/300, about 1.333), Ashgrove Plastics Moulding x1.25 (750/600) and Hollin Bridge Sawmill x1.5 (600/400). Equivalent forms (a fraction, a decimal or the two ratios) are fine.",
+        "reasoning": "The final answer gives none of the required CT factors (x2, x4/3, x1.25, and x1.5)."
+      },
+      {
+        "id": "4",
+        "name": "r-total-energy",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.10869565217391304,
+        "description": "[final answer] The reply states the run's total billed energy as 1,143,171.216 kWh, within 1 kWh either way (thousands separators and the number of decimals shown do not matter).",
+        "reasoning": "Section 2 of final_message.md states total billed energy of \u201c1,015,165.902 kWh,\u201d not 1,143,171.216 kWh."
+      },
+      {
+        "id": "5",
+        "name": "r-edition-energy",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06521739130434782,
+        "description": "[final answer] The reply splits the run's billed energy between the editions as 629,534.629 kWh under Edition 6 and 513,636.587 kWh under Edition 7, each within 1 kWh (separators and decimals shown do not matter).",
+        "reasoning": "Section 2 states \u201c558,478.991 kWh\u201d for Edition 6 and \u201c456,686.911 kWh\u201d for Edition 7, rather than the required 629,534.629 and 513,636.587 kWh."
+      },
+      {
+        "id": "6",
+        "name": "r-ct-site-energy",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06521739130434782,
+        "description": "[final answer] The reply's billed energy figures for the four CT-corrected sites are, each within 0.5 kWh either way: Quenby Print Works 98,328.686 kWh; Thornaby Wharf Cold Store 93,955.313 kWh; Ashgrove Plastics Moulding 186,837.127 kWh; Hollin Bridge Sawmill 53,954.161 kWh.",
+        "reasoning": "The table reports Quenby 49,164.343, Thornaby 70,466.485, Ashgrove 149,469.703, and Hollin 35,969.440 kWh; none matches the required CT-corrected figure."
+      },
+      {
+        "id": "7",
+        "name": "r-ct-site-max",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06521739130434782,
+        "description": "[final answer] The reply gives the maximum demand used for Edition 6 and for Edition 7 (kW) of the four CT-corrected sites as, each within 0.05 kW either way: Quenby Print Works 270.95 and 255.38; Thornaby Wharf Cold Store 202.55 and 199.92; Ashgrove Plastics Moulding 393.32 and 380.72; Hollin Bridge Sawmill 269.85 and 271.35.",
+        "reasoning": "The table reports uncorrected maxima: Quenby 135.48/127.69, Thornaby 151.92/149.94, Ashgrove 314.66/304.58, and Hollin 179.90/180.90 kW, not the required corrected maxima."
+      },
+      {
+        "id": "8",
+        "name": "r-ct-source",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06521739130434782,
+        "description": "[final answer] The reply names the dated amendment in those meters' commissioning records in the metering asset register (the Notion register pages), or the field engineer's note in the field team's Commissioning channel, as the record that showed the CT change.",
+        "reasoning": "Although the answer cites asset-register commissioning records for demand-register programming, it does not name a dated CT amendment or the field engineer\u2019s Commissioning-channel note as evidence of CT changes."
+      },
+      {
+        "id": "9",
+        "name": "r-ashgrove-both",
+        "value": 0.0,
+        "raw": "no",
+        "weight": 0.06521739130434782,
+        "description": "[final answer] The reply says Ashgrove Plastics Moulding needed both corrections together: its exported values are half-hour mean demand (halved for energy) and are also scaled by its CT correction (energy = exported value x 0.5 x 750/600, that is x 0.625).",
+        "reasoning": "The answer says Ashgrove\u2019s channels were halved as mean demand, but never applies or describes the additional 750/600 CT correction or the combined x0.625 calculation."
+      },
+      {
+        "id": "10",
+        "name": "r-demand-registers",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply identifies Ashgrove Plastics Moulding, Fenwick Lane Data Hall, Gorsebrook Laundry Services and Kittering Foods Packing (all four) as the sites whose exported channel values are half-hour mean demand (kW, and kvar on the reactive channel) rather than energy, and says their energy was taken as half of each exported value (mean demand x 0.5 h).",
+        "reasoning": "Section 4 explicitly names Ashgrove, Fenwick Lane, Gorsebrook, and Kittering and says their registers record \u201cmean demand\u201d in kW/kvar, so \u201cI halved both channels to get kWh and kvarh.\u201d"
+      },
+      {
+        "id": "11",
+        "name": "r-period-ending",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says that the Varden-collected sites (Lanyon Quay Fish Market, Merrowby Care Home, Netherfold Veterinary Hospital, Orchard Rise Hotel, Penhallow Tool Hire and Ravensworth Bowls Club, named individually or as 'the six Varden sites') have timestamps that mark the END of each half-hour, so each value was attributed to the half-hour before its stamp when banding, splitting editions and cutting the period.",
+        "reasoning": "Section 4 says \u201cAll six Varden sites are end-stamped,\u201d identifies their six meter records, and says \u201cI shifted every Varden timestamp back 30 minutes to get the period start before banding.\u201d The six corresponding site names are present in the per-site table."
+      },
+      {
+        "id": "12",
+        "name": "r-twin",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says that Hollin Bridge Sawmill and Wexcombe Craft Studios, although collected by the same collector (Kestrel) as the demand-registered sites, record energy, so their exported values were not halved (both must be named; any other correction applied to one of them does not matter here).",
+        "reasoning": "Section 4 explicitly says Hollin Bridge and Wexcombe \u201ckept energy programming\u201d and \u201ctheir channels were used unchanged.\u201d"
+      },
+      {
+        "id": "13",
+        "name": "r-edition-rule",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply explains that each half-hour was priced at the edition in force when the energy was consumed (Edition 6 up to the end of 31 October, Edition 7 from 00:00 on 1 November, UK time), not by the invoice or bill date.",
+        "reasoning": "Section 3 says each half-hour was priced at the edition in force when consumed, \u201cnot by bill date,\u201d with Edition 6 through 31 October and Edition 7 from 1 November."
+      },
+      {
+        "id": "14",
+        "name": "r-clock-change",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply explains that the UTC timestamps were converted to UK civil time, with BST (UTC+1) applying until 01:00 UTC on 25 October 2026, and that 25 October had 25 hours (50 half-hours) with the 01:00-02:00 hour occurring twice.",
+        "reasoning": "Section 3 says clocks went back at \u201c01:00 UTC,\u201d that the day had \u201c50 half-hours,\u201d and that \u201cthe 01:00\u201302:00 hour\u201d occurred twice after conversion from UTC to UK civil time."
+      },
+      {
+        "id": "15",
+        "name": "r-marlpit",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says Marlpit Garden Centre was billed only up to 5 November 2026 because its supply ended (the new supplier took over from 6 November), as its site account records.",
+        "reasoning": "Section 4 says Marlpit\u2019s account gives \u201cSupply end 5 Nov 2026\u201d and \u201cnew supplier registered from 6 Nov 2026 00:00,\u201d so it was billed through 5 November."
+      },
+      {
+        "id": "16",
+        "name": "r-brookhay",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says Brookhay Brewery Taproom was billed only from 22 October 2026, its supply start date, and that interval data before that date were not billed.",
+        "reasoning": "Section 4 says Brookhay\u2019s account gives \u201cSupply start 22 Oct 2026,\u201d that billing began on 22 October, and that the export nevertheless carried the full period."
+      },
+      {
+        "id": "17",
+        "name": "r-wendle",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says Wendle Street Offices' later supply end date (31 December 2026) did not shorten this bill, so it was billed for the whole period.",
+        "reasoning": "Section 4 says Wendle\u2019s \u201cSupply end 31 Dec 2026 is after the run period,\u201d so it \u201cdoes not shorten anything\u201d and was billed for all 31 days."
+      },
+      {
+        "id": "18",
+        "name": "r-capacity-method",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply explains the capacity charge as the maximum half-hour demand within each edition's part of the period, multiplied by the days on supply in that part and the edition's rate.",
+        "reasoning": "Section 5 says maximum demand is the highest half-hour demand among on-supply intervals \u201cof that edition part,\u201d and the charge is maximum demand multiplied by days on supply and that edition\u2019s rate."
+      },
+      {
+        "id": "19",
+        "name": "r-reactive-method",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply explains that the excess reactive charge was worked half-hour by half-hour on reactive energy above 0.33 (33 per cent) of the same half-hour's active energy, not on the period's average power factor.",
+        "reasoning": "Section 5 defines excess \u201cHalf-hour by half-hour\u201d as kvarh minus 0.33 times that same half-hour\u2019s kWh where positive, and explicitly rejects \u201cmonthly-average netting.\u201d"
+      },
+      {
+        "id": "20",
+        "name": "r-trial-sheet",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": 0.021739130434782608,
+        "description": "[final answer] The reply says the colleague's trial sheet, which priced the whole run on Edition 7, was not followed, and gives the reason (editions follow consumption time, not the bill date).",
+        "reasoning": "Section 6 says Dorian\u2019s trial sheet priced Edition 7 throughout, calls that an error, and explains that \u201cthe bill date does not decide the edition.\u201d"
+      },
+      {
+        "id": "21",
+        "name": "p-trial-total",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.10869565217391304,
+        "description": "[final answer] The reply states GBP 376,700.10 (within GBP 1 either way; the trial sheet's Edition-7-throughout figure) as the run's net total. Quoting it only as the trial sheet's figure that was not followed does not count.",
+        "reasoning": "The \u00a3376,700.10 figure appears only as \u201cDorian\u2019s trial sheet\u201d total that the answer explicitly did not follow; the criterion says that usage does not count."
+      },
+      {
+        "id": "22",
+        "name": "p-face-total",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.06521739130434782,
+        "description": "[final answer] The reply states GBP 365,729.83 (within GBP 1 either way) as the run's net total.",
+        "reasoning": "The final answer states the run net total as \u00a3254,015.70, not \u00a3365,729.83."
+      },
+      {
+        "id": "23",
+        "name": "p-face-energy",
+        "value": 0.0,
+        "raw": "no",
+        "weight": -0.06521739130434782,
+        "description": "[final answer] The reply states 1,469,937.843 kWh (within 1 kWh either way) as the run's total billed energy.",
+        "reasoning": "The final answer states total billed energy as 1,015,165.902 kWh, not 1,469,937.843 kWh."
+      },
+      {
+        "id": "24",
+        "name": "p-stale-total",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": -0.06521739130434782,
+        "description": "[final answer] The reply states GBP 254,015.70 (within GBP 1 either way) as the run's net total. Quoting it only as a figure from before the CT amendments that was then corrected does not count.",
+        "reasoning": "The opening summary and Section 2 explicitly present \u201c\u00a3254,015.70\u201d as this run\u2019s net total, rather than merely quoting it as an earlier pre-correction figure."
+      },
+      {
+        "id": "25",
+        "name": "p-stale-energy",
+        "value": 1.0,
+        "raw": "yes",
+        "weight": -0.06521739130434782,
+        "description": "[final answer] The reply states 1,015,165.899 kWh (within 1 kWh either way) as the run's total billed energy. Quoting it only as a figure from before the CT amendments that was then corrected does not count.",
+        "reasoning": "Section 2 explicitly presents \u201c1,015,165.902 kWh\u201d as this run\u2019s total billed energy, within 1 kWh of 1,015,165.899 kWh."
+      }
+    ],
+    "kind": "agent",
+    "judge": {
+      "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "version": null,
+      "reasoning_effort": null,
+      "timeout": 1200,
+      "cwd": "***********************",
+      "isolated": false,
+      "atif_trajectory": "***************************************",
+      "mode": "batched",
+      "mcp_servers": [],
+      "samples": 1,
+      "guard": "off"
+    },
+    "judge_output": "{\n  \"r-ct-sites\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The final answer does not identify any sites as requiring CT-ratio corrections. Quenby, Thornaby, Ashgrove, and Hollin appear in the table, but no CT correction is stated.\"\n  },\n  \"r-ct-cause\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The final answer never explains that the DNO replaced CTs before the run while the meters retained their old programmed ratios.\"\n  },\n  \"r-ct-factors\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The final answer gives none of the required CT factors (x2, x4/3, x1.25, and x1.5).\"\n  },\n  \"r-total-energy\": {\n    \"score\": \"no\",\n    \"reasoning\": \"Section 2 of final_message.md states total billed energy of \u201c1,015,165.902 kWh,\u201d not 1,143,171.216 kWh.\"\n  },\n  \"r-edition-energy\": {\n    \"score\": \"no\",\n    \"reasoning\": \"Section 2 states \u201c558,478.991 kWh\u201d for Edition 6 and \u201c456,686.911 kWh\u201d for Edition 7, rather than the required 629,534.629 and 513,636.587 kWh.\"\n  },\n  \"r-ct-site-energy\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The table reports Quenby 49,164.343, Thornaby 70,466.485, Ashgrove 149,469.703, and Hollin 35,969.440 kWh; none matches the required CT-corrected figure.\"\n  },\n  \"r-ct-site-max\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The table reports uncorrected maxima: Quenby 135.48/127.69, Thornaby 151.92/149.94, Ashgrove 314.66/304.58, and Hollin 179.90/180.90 kW, not the required corrected maxima.\"\n  },\n  \"r-ct-source\": {\n    \"score\": \"no\",\n    \"reasoning\": \"Although the answer cites asset-register commissioning records for demand-register programming, it does not name a dated CT amendment or the field engineer\u2019s Commissioning-channel note as evidence of CT changes.\"\n  },\n  \"r-ashgrove-both\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The answer says Ashgrove\u2019s channels were halved as mean demand, but never applies or describes the additional 750/600 CT correction or the combined x0.625 calculation.\"\n  },\n  \"r-demand-registers\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 explicitly names Ashgrove, Fenwick Lane, Gorsebrook, and Kittering and says their registers record \u201cmean demand\u201d in kW/kvar, so \u201cI halved both channels to get kWh and kvarh.\u201d\"\n  },\n  \"r-period-ending\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 says \u201cAll six Varden sites are end-stamped,\u201d identifies their six meter records, and says \u201cI shifted every Varden timestamp back 30 minutes to get the period start before banding.\u201d The six corresponding site names are present in the per-site table.\"\n  },\n  \"r-twin\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 explicitly says Hollin Bridge and Wexcombe \u201ckept energy programming\u201d and \u201ctheir channels were used unchanged.\u201d\"\n  },\n  \"r-edition-rule\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 3 says each half-hour was priced at the edition in force when consumed, \u201cnot by bill date,\u201d with Edition 6 through 31 October and Edition 7 from 1 November.\"\n  },\n  \"r-clock-change\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 3 says clocks went back at \u201c01:00 UTC,\u201d that the day had \u201c50 half-hours,\u201d and that \u201cthe 01:00\u201302:00 hour\u201d occurred twice after conversion from UTC to UK civil time.\"\n  },\n  \"r-marlpit\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 says Marlpit\u2019s account gives \u201cSupply end 5 Nov 2026\u201d and \u201cnew supplier registered from 6 Nov 2026 00:00,\u201d so it was billed through 5 November.\"\n  },\n  \"r-brookhay\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 says Brookhay\u2019s account gives \u201cSupply start 22 Oct 2026,\u201d that billing began on 22 October, and that the export nevertheless carried the full period.\"\n  },\n  \"r-wendle\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 4 says Wendle\u2019s \u201cSupply end 31 Dec 2026 is after the run period,\u201d so it \u201cdoes not shorten anything\u201d and was billed for all 31 days.\"\n  },\n  \"r-capacity-method\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 5 says maximum demand is the highest half-hour demand among on-supply intervals \u201cof that edition part,\u201d and the charge is maximum demand multiplied by days on supply and that edition\u2019s rate.\"\n  },\n  \"r-reactive-method\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 5 defines excess \u201cHalf-hour by half-hour\u201d as kvarh minus 0.33 times that same half-hour\u2019s kWh where positive, and explicitly rejects \u201cmonthly-average netting.\u201d\"\n  },\n  \"r-trial-sheet\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 6 says Dorian\u2019s trial sheet priced Edition 7 throughout, calls that an error, and explains that \u201cthe bill date does not decide the edition.\u201d\"\n  },\n  \"p-trial-total\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The \u00a3376,700.10 figure appears only as \u201cDorian\u2019s trial sheet\u201d total that the answer explicitly did not follow; the criterion says that usage does not count.\"\n  },\n  \"p-face-total\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The final answer states the run net total as \u00a3254,015.70, not \u00a3365,729.83.\"\n  },\n  \"p-face-energy\": {\n    \"score\": \"no\",\n    \"reasoning\": \"The final answer states total billed energy as 1,015,165.902 kWh, not 1,469,937.843 kWh.\"\n  },\n  \"p-stale-total\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"The opening summary and Section 2 explicitly present \u201c\u00a3254,015.70\u201d as this run\u2019s net total, rather than merely quoting it as an earlier pre-correction figure.\"\n  },\n  \"p-stale-energy\": {\n    \"score\": \"yes\",\n    \"reasoning\": \"Section 2 explicitly presents \u201c1,015,165.902 kWh\u201d as this run\u2019s total billed energy, within 1 kWh of 1,015,165.899 kWh.\"\n  }\n}",
+    "usage": {
+      "input_tokens": 38197,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 17280,
+      "output_tokens": 2531,
+      "reasoning_output_tokens": 162,
+      "total_tokens": 40728,
+      "cost_usd": 0.1412,
+      "cost_source": "litellm_estimate",
+      "models": {
+        "gpt-5.6-sol": {
+          "input_tokens": 38197,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 17280,
+          "output_tokens": 2531,
+          "reasoning_output_tokens": 162,
+          "total_tokens": 40728,
+          "cost_usd": 0.1412
+        }
+      }
+    },
+    "judge_logs": [
+      "********************************************************************************"
+    ]
+  }
+}

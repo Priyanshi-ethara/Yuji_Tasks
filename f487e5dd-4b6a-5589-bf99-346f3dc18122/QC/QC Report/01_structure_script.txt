@@ -1,0 +1,64 @@
+# TASK=<scratch copy of $H/input/f487e5dd-4b6a-5589-bf99-346f3dc18122, identical bytes>
+=== S1 (f487e5dd-4b6a-5589-bf99-346f3dc18122)
+missing_files   : none
+empty_files     : none
+missing_dirs    : none
+rubric_file     : ['tests/judge.toml']
+both_rubrics    : False
+world_data_json : 15 files (minimum 2): ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDropbox', 'LightGmail', 'LightGoogleMaps', 'LightHubspot', 'LightLinear', 'LightNotion', 'LightOpenWeather', 'LightOutlook', 'LightQuickBooks', 'LightShippo', 'LightSlack', 'LightWeather']
+data_files      : 35
+old_env.json    : True
+helper_modules  : none
+harness_owned_in_tests: none
+=== S2
+parse_errors: none
+=== S3
+harness_owned_blocks: none
+schema_version      : 1.4
+task.name           : atlas/f487e5dd-4b6a-5589-bf99-346f3dc18122
+task.description    : present
+task.authors        : [{'name': 'Priyanshi Joshi', 'email': 'priyanshi.joshi@ethara.ai'}]
+metadata.mcp_servers: 15
+metadata.apps       : 7
+apps_not_wired      : []
+wired_without_world : none
+world_not_wired     : none
+metadata.category   : mcp_tool_calling
+metadata.tags       : 13
+metadata.gradeable  : True
+=== S4a
+weight_shape=flat weighted=26 defined=26 dynamic_minting=False
+weighted_but_undefined: none
+defined_but_unweighted: none
+zero_or_nonnumeric_weights: none
+positive_total=50 penalty_total=18 guards=6
+threshold=0.7 null_floor=0.0 guard_polarity=pass_charges gate=None
+threshold_ok: True 
+null_floor_ok: True
+guard_polarity_ok: True | guards_without_polarity: False
+=== S4b
+shape=authoring criteria=24
+duplicate_ids: none
+duplicate_numbers: none
+missing_description: none
+bad_weight: none
+no_polarity: none
+weight_sign_vs_polarity_mismatch: none
+negate_used: none
+non_binary_scoring: none
+bad_target: none
+positive_total=42 penalty_total=8 max_single_positive=5
+targets: {'final_answer': 24}
+=== S4c
+identity: {'uuid': 'f487e5dd-4b6a-5589-bf99-346f3dc18122', 'canary': 'f487e5dd-4b6a-5589-bf99-346f3dc18122', 'instruction_canary': 'f487e5dd-4b6a-5589-bf99-346f3dc18122'}
+folder_name_is_uuid: True
+instruction_canaries_found: ['f487e5dd-4b6a-5589-bf99-346f3dc18122']
+canary_binding_ok: True
+harbor_canary_carriers: ['.identity.json', 'environment/Dockerfile', 'instruction.md', 'solution/TRUTH.md', 'solution/gt_env.json', 'solution/solve.py', 'solution/solve.sh', 'task.toml', 'tests/judge.toml', 'tests/old_env.json', 'tests/oracle.json', 'tests/test_outputs.py']
+gt_env_shape    : flat
+gt_env_servers  : ['LightAirtable', 'LightBox', 'LightConfluence', 'LightDropbox', 'LightHubspot', 'LightLinear', 'LightNotion']
+in_gt_not_world : none
+in_world_not_gt : ['LightGmail', 'LightGoogleMaps', 'LightOpenWeather', 'LightOutlook', 'LightQuickBooks', 'LightShippo', 'LightSlack', 'LightWeather']
+old_env_servers : 15 not in world: none
+1.1M	<scratch>/f487e5dd-4b6a-5589-bf99-346f3dc18122
+slug ok

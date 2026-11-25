@@ -1,0 +1,11 @@
+# RETIRED 2025-03 (GRID-869) - kept for audit only. Do not use.
+tool: nfg-ratecalc 2.3
+standard: NGS-RT-04 Issue 2
+feed:
+  provider: MetDesk
+  wind_unit: m/s        # schedule B rev 3; WRONG after 2025-03-01 (rev 4 delivers knots)
+  temp_unit: degC
+rating_day:
+  steps: all            # Issue 3 uses rating-day steps only
+constraint_threshold: 0.95   # Issue 3 uses 0.90
+two_station_rule: first_listed  # Issue 3 takes highest ambient and lowest wind across stations
